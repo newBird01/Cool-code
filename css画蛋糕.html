@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Birthday Code</title>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+        <style>
+          body{
+    background-color:grey;
+}
+#candles{
+    position:fixed;
+    top:-60px;
+    left:40px;
+}
+.candle{
+    float:left;
+    transform:scale(0.4);
+}
+.flame{
+    animation-name: flicker;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(.65,.48,.35,.54);
+}
+.flameborder{
+    position:relative;
+    left:10px;
+    background-color:orangered;
+    height:80px;
+    width:40px;
+    border-radius:20px/70px 70px 10px 10px;
+    box-shadow:0px 0px 10px orangered;
+}
+.flameinner{
+    position:relative;
+    left:13px;
+    top:-77px;
+    background-color:lightyellow;
+    height:74px;
+    width:34px;
+    border-radius:20px/70px 70px 10px 10px;
+    box-shadow:0px 0px 2px 2px lightyellow;
+}
+.flamebottom{
+    position:relative;
+    left:13px;
+    top:-95px;
+    background-color:#ea6912;
+    opacity:0.70;
+    height:18px;
+    width:34px;
+    border-radius:20px/14px 14px 4px 4px;
+    box-shadow:0px 0px 12px 12px #ea6912;
+    z-index:2;
+}
+.wick{
+    position:relative;
+    top:-108px;
+    left:25px;
+    height:30px;
+    width:10px;
+    background-color:black;
+    z-index:1;
+    border-radius:2px 2px 1px 1px/12px 12px 2px 2px;
+    box-shadow:0px 0px 2px 2px black;
+}
+.actualcandle-part1{
+    position:relative;
+    left:7px;
+    top:-130px;
+    width:30px;
+    border-bottom: 10px solid #0112aa;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    height: 20px;
+    z-index:-1;
+}
+.actualcandle-part2{
+    position:relative;
+    left:7px;
+    top:-130px;
+    height:150px;
+    width:50px;
+    background:repeating-linear-gradient(
+    45deg,
+    #0112aa,
+    #0112aa 10px,
+    #ccc 10px,
+    #ccc 20px
+    );
+}
+.caketop{
+    position:fixed;
+    top:130px;
+    left:30px;
+    height:40px;
+    width:180px;
+    border-radius:50%;
+    background-color:#f4f5ff;
+    z-index:-1;
+}
+.cakebody{
+    position:fixed;
+    top:150px;
+    left:30px;
+    height:80px;
+    width:180px;
+    background-color:#682a0b;
+    border-radius:0px 0px 90px 90px / 0px 0px 20px 20px;
+    z-index:-3;
+}
+.icing-1{
+    position:fixed;
+    top:165px;
+    left:70px;
+    height:20px;
+    width:40px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color:#e6e7f2;
+    z-index:-2;
+}
+.icing-2{
+    position:fixed;
+    top:151px;
+    left:38px;
+    height:20px;
+    width:20px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color:#e6e7f2;
+    z-index:-2;
+}
+.icing-3{
+    position:fixed;
+    top:165px;
+    left:120px;
+    height:50px;
+    width:30px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color:#e6e7f2;
+    z-index:-2;
+}
+.icing-4{
+    position:fixed;
+    top:156px;
+    left:170px;
+    height:25px;
+    width:32px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background-color:#e6e7f2;
+    z-index:-2;
+}
+.platetop{
+    position:fixed;
+    top:190px;
+    left:7.5px;
+    height:50px;
+    width:225px;
+    border-radius:50%;
+    background-color:#ccc;
+    z-index:-4;
+}
+@keyframes flicker{
+    0%{
+        transform:skewX(0deg);
+    }
+    25%{
+        transform:skewX(5deg);
+    }
+    50%{
+        transform:skewX(0deg);
+    }
+    75%{
+        transform:skewX(-5deg);
+    }
+    100%{
+        transform:skewX(0deg);
+    }
+}
+        </style>
+    </head>
+    <body>
+    <div id="candles">
+        <div class="candle">
+            <div class="flame">
+                <div class="flameborder"></div>
+                <div class="flameinner"></div>
+                <div class="flamebottom"></div>
+            </div>
+            <div class="main">
+                <div class="wick"></div>
+                <div class="actualcandle-part1"></div>
+                <div class="actualcandle-part2"></div>
+            </div>
+        </div>
+        <div class="candle">
+            <div class="flame">
+                <div class="flameborder"></div>
+                <div class="flameinner"></div>
+                <div class="flamebottom"></div>
+            </div>
+            <div class="main">
+                <div class="wick"></div>
+                <div class="actualcandle-part1"></div>
+                <div class="actualcandle-part2"></div>
+            </div>
+        </div>
+        <div class="candle">
+            <div class="flame">
+                <div class="flameborder"></div>
+                <div class="flameinner"></div>
+                <div class="flamebottom"></div>
+            </div>
+            <div class="main">
+                <div class="wick"></div>
+                <div class="actualcandle-part1"></div>
+                <div class="actualcandle-part2"></div>
+            </div>
+        </div>
+    </div>
+    <div class="cake">
+        <div class="caketop"></div>
+        <div class="cakebody"></div>
+        <div class="icing-1"></div>
+        <div class="icing-2"></div>
+        <div class="icing-3"></div>
+        <div class="icing-4"></div>
+    </div>
+    <div class="plate">
+        <div class="platetop"></div>
+        <div class="platebottom"></div>
+    </div>
+    <h3 style="position:absolute;top:230px;left:30px;color:white;">Today is my birthday!</h3>
+    <h3 style="position:absolute;top:255px;left:45px;color:white;">Hope you love my</h3>
+    <h3 style="position:absolute;top:280px;left:43px;color:white;">3rd birthday code!</h3>
+    </body>
+</html>

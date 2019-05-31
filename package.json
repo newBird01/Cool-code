@@ -1,0 +1,26 @@
+{
+  "name": "cool-code",
+  "version": "1.0.0",
+  "description": "很酷的代码",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newBird01/Cool-code.git"
+  },
+  "keywords": [
+    "js",
+    "html",
+    "css",
+    "动效",
+    "代码片段"
+  ],
+  "author": "曹泽鹏",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/newBird01/Cool-code/issues"
+  },
+  "homepage": "https://github.com/newBird01/Cool-code#readme"
+}
