@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body {
+      background: #323943;
+      text-align: center;
+      width: 960px;
+      max-width: 100%;
+      margin: 0 auto;
+      box-sizing: border-box;
+      font-family: sans-serif;
+      color: rgba(200, 200, 200, 0.5);
+    }
+
+    body *,
+    body *:before,
+    body *:after {
+      box-sizing: inherit;
+    }
+
+    .box {
+      display: inline-block;
+      width: 100%;
+      height: 80px;
+      border: 1px solid red;
+      line-height: 80px;
+      color: red;
+    }
+    [class*="loader-"] {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      color: blue;
+      pointer-events: none;
+      font-size: 40px;
+      vertical-align: middle;
+    }
+
+    @keyframes spin {
+
+      0%,
+      100% {
+        box-shadow: .2em 0px 0 0px currentcolor;
+      }
+
+      12% {
+        box-shadow: .2em .2em 0 0 currentcolor;
+      }
+
+      25% {
+        box-shadow: 0 .2em 0 0px currentcolor;
+      }
+
+      37% {
+        box-shadow: -.2em .2em 0 0 currentcolor;
+      }
+
+      50% {
+        box-shadow: -.2em 0 0 0 currentcolor;
+      }
+
+      62% {
+        box-shadow: -.2em -.2em 0 0 currentcolor;
+      }
+
+      75% {
+        box-shadow: 0px -.2em 0 0 currentcolor;
+      }
+
+      87% {
+        box-shadow: .2em -.2em 0 0 currentcolor;
+      }
+    }
+
+    .loader-16 {
+      -webkit-transform: rotateZ(45deg);
+      transform: rotateZ(45deg);
+      -webkit-perspective: 1000px;
+      perspective: 1000px;
+      border-radius: 50%;
+    }
+
+    .loader-16:before,
+    .loader-16:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: inherit;
+      height: inherit;
+      border-radius: 50%;
+      -webkit-animation: 1s spin linear infinite;
+      animation: 1s spin linear infinite;
+    }
+
+    .loader-16:before {
+      -webkit-transform: rotateX(70deg);
+      transform: rotateX(70deg);
+    }
+
+    .loader-16:after {
+      -webkit-transform: rotateY(70deg);
+      transform: rotateY(70deg);
+      -webkit-animation-delay: .4s;
+      animation-delay: .4s;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    为时发挥地方和速度回复速递和覅u
+    <div class="loader-16"></div>
+  </div>
+</body>
+
+</html>
