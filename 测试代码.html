@@ -1,124 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>文字下沉效果</title>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+        <style type="text/css">
+            .btn{
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                color: white;
+                text-align: center;
+                font-size: 16px;;
+                display: inline-block;
+                border-radius: 50%;
+                background: gray;
+                cursor: pointer;
+            }
+            .btn:active{
+                text-indent: 2px;
+            }
+            .vertical-text{
+                 writing-mode: tb-rl;
+                -webkit-writing-mode: vertical-rl;      
+                writing-mode: vertical-rl;
+                *writing-mode: tb-rl;
+            }
+            .reddiv
+              {
+                width:100px;
+                height:100px;
+                background:red;
+                
+                transition-property:margin-top, width, height;
+                transition-duration:2s;
+                
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <style>
-    body {
-      background: #323943;
-      text-align: center;
-      width: 960px;
-      max-width: 100%;
-      margin: 0 auto;
-      box-sizing: border-box;
-      font-family: sans-serif;
-      color: rgba(200, 200, 200, 0.5);
-    }
+              }
 
-    body *,
-    body *:before,
-    body *:after {
-      box-sizing: inherit;
-    }
+              .reddiv:hover
+              {	margin-top:100px;
+                width:300px;
+                height:300px;
 
-    .box {
-      display: inline-block;
-      width: 100%;
-      height: 80px;
-      border: 1px solid red;
-      line-height: 80px;
-      color: red;
-    }
-    [class*="loader-"] {
-      display: inline-block;
-      width: 1em;
-      height: 1em;
-      color: blue;
-      pointer-events: none;
-      font-size: 40px;
-      vertical-align: middle;
-    }
+              }
+              .guide-text {
+                height: 22px;
+                overflow: hidden;
+              }
+        </style>
+    </head>
+    <body>
+        <span>点击领红包</span>
+        <p class="vertical-text btn">开 </p>
+        <ul class="guide-text ">
+            <li style="margin-top: 0px;">
+            <a href="http://api.zhuge.com/newhouse/c?mid=2865&amp;ct=1559491200&amp;bi=374&amp;c=10112101109&amp;pi=2232&amp;u=BhJR7%2FhkH3QTXAvqpeYNkKvSr8UB7qK3URK9band3bL5nFhL0jlAwjaX2fdx%2FzR8" class="ellipsis sc-house-guide headline_button" rel="nofollow" sensors-data="headline_button"><span>东方美学 山居大境 檀香府x樊登读书会圆满落幕</span></a>
+            </li><li style="margin-top: 0px;">
+            <a href="http://m.zhuge.com/news/bj/yaowen-202945.html" class="ellipsis sc-house-guide headline_button" rel="nofollow" sensors-data="headline_button"><span>门头沟房价“奔6”的底气 让置业向西成为现实</span></a>
+            </li><li style="margin-top: 0px;">
+            <a href="http://m.zhuge.com/news/bj/yaowen-201901.html" class="ellipsis sc-house-guide headline_button" rel="nofollow" sensors-data="headline_button"><span>锦动全城！中海首钢•长安云锦首期开盘劲揽18.5亿</span></a>
+            </li><li style="margin-top: 0px;">
+            <a href="http://m.zhuge.com/news/bj/yaowen-201898.html" class="ellipsis sc-house-guide headline_button" rel="nofollow" sensors-data="headline_button"><span>房价增长7.6% 购房者慌了？——525诸葛找房看房团火热收官</span></a>
+            </li><li style="margin-top: 0px;">
+            <a href="http://m.zhuge.com/news/bj/yaowen-203358.html" class="ellipsis sc-house-guide headline_button" rel="nofollow" sensors-data="headline_button"><span>西山之麓览古香建筑 “看山”之中品山居人生</span></a>
+            </li>
+        </ul>
+        <div class="reddiv"></div>
 
-    @keyframes spin {
-
-      0%,
-      100% {
-        box-shadow: .2em 0px 0 0px currentcolor;
-      }
-
-      12% {
-        box-shadow: .2em .2em 0 0 currentcolor;
-      }
-
-      25% {
-        box-shadow: 0 .2em 0 0px currentcolor;
-      }
-
-      37% {
-        box-shadow: -.2em .2em 0 0 currentcolor;
-      }
-
-      50% {
-        box-shadow: -.2em 0 0 0 currentcolor;
-      }
-
-      62% {
-        box-shadow: -.2em -.2em 0 0 currentcolor;
-      }
-
-      75% {
-        box-shadow: 0px -.2em 0 0 currentcolor;
-      }
-
-      87% {
-        box-shadow: .2em -.2em 0 0 currentcolor;
-      }
-    }
-
-    .loader-16 {
-      -webkit-transform: rotateZ(45deg);
-      transform: rotateZ(45deg);
-      -webkit-perspective: 1000px;
-      perspective: 1000px;
-      border-radius: 50%;
-    }
-
-    .loader-16:before,
-    .loader-16:after {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: inherit;
-      height: inherit;
-      border-radius: 50%;
-      -webkit-animation: 1s spin linear infinite;
-      animation: 1s spin linear infinite;
-    }
-
-    .loader-16:before {
-      -webkit-transform: rotateX(70deg);
-      transform: rotateX(70deg);
-    }
-
-    .loader-16:after {
-      -webkit-transform: rotateY(70deg);
-      transform: rotateY(70deg);
-      -webkit-animation-delay: .4s;
-      animation-delay: .4s;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="box">
-    为时发挥地方和速度回复速递和覅u
-    <div class="loader-16"></div>
-  </div>
-</body>
-
+        <script>
+          $(function() {
+            function move() {
+                var $parent = $('.guide-text');
+                var $first = $parent.find('li').first();
+                var height = $first.height();
+                $first.animate({
+                    marginTop: -height + 'px'
+                }, 500, function() {
+                    $first.appendTo($parent).css('marginTop', 0);
+                })
+            }
+            if ($('.guide-text').find('li').length > 1) {
+                setInterval(function() {
+                    move();
+                }, 2000)
+            }
+          })
+        </script>
+    </body>
 </html>

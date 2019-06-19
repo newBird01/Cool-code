@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <ul id='ul'>
+            <li>
+                <lable>文件夹名<input type="text"></lable>
+                <lable>产品地址<input type="text"></lable>
+                <button>删除</button>
+            </li>
+        </ul>
+        <button id='addInput'>添加输入</button>
+        <button  id='btn'>下载</button>
+    </div>
+    <script>
+        var btn = document.getElementById('btn');
+        var addInput = document.getElementById('addInput');
+        var oUl = document.getElementById('ul');
+        function addLi () {
+            var li = document.createElement('li');
+            var labledir = document.createElement('lable');
+            var lableurl = document.createElement('lable');
+            var textdir = document.createTextNode('文件夹名');
+            var texturl = document.createTextNode('产品地址');
+            var inputdir = document.createElement('input');
+            var inputurl = document.createElement('input');
+            var delbtn = document.createElement('button');
+            delbtn.innerHTML ='删除'
+            labledir.appendChild(textdir);
+            labledir.appendChild(inputdir);
+            
+            lableurl.appendChild(texturl)
+            lableurl.appendChild(inputurl);
+            li.appendChild(labledir);
+            li.appendChild(lableurl);
+            li.appendChild(delbtn);
+            oUl.appendChild(li) ;
+            console.log(oUl)
+        }
+
+        function download(filename, text) {
+            var element = document.createElement('a');
+            element.setAttribute('href', 'data:application/json,' + encodeURIComponent(text));
+            element.setAttribute('download', filename);
+            element.style.display = 'none';
+            document.body.appendChild(element);
+            element.click();
+            document.body.removeChild(element);
+        }
+        btn.onclick = function (e) {
+            var aInputs = document.querySelectorAll('input');
+            console.log(aInputs);
+            var arr = [];
+            aInputs.forEach((v,index) => {
+                console.log(v.value,index);
+                var obj = {};
+                if(index % 2 == 0) {
+                    obj.dirname = v.value; 
+                    arr.push(obj)
+                } else {
+                    arr[arr.length-1].url = v.value;
+                }
+            })
+            console.log(arr)
+            download('需要爬取的商品地址',JSON.stringify(arr))
+        }
+        addInput.onclick =function(){
+            addLi()
+        }
+            
+       
+    </script>
+</body>
+</html>
