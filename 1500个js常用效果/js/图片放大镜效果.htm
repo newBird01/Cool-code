@@ -1,0 +1,597 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--图片放大镜效果</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body bgcolor="#ffffff" onload=init()>
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">图片放大镜效果</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=605" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<STYLE type=text/css>#mglass {
+	LEFT: -2000px; POSITION: absolute; TOP: 50px
+}
+#thumb {
+	LEFT: -2000px; POSITION: absolute; TOP: 50px
+}
+#large {
+	LEFT: -2000px; POSITION: absolute; TOP: 50px
+}
+#framegif {
+	LEFT: -2000px; POSITION: absolute; TOP: 50px
+}
+.baseline {
+	COLOR: #000000; FONT-FAMILY: Arial; FONT-SIZE: 9pt; LEFT: 50px; POSITION: absolute; TOP: 260px
+}
+</STYLE>
+<SCRIPT language=JavaScript>
+<!-- Beginning of JavaScript -
+var isNav, isIE
+var offsetX, offsetY
+var selectedObj 
+
+var enlargefactor=5
+
+var largewidth = 455
+var largeheight = 523
+var largeleft = 250
+var largetop = 30
+
+var thumbwidth = Math.floor(largewidth/enlargefactor)
+var thumbheight = Math.floor(largeheight/enlargefactor)
+var thumbleft = 50
+var thumbtop = 30
+
+var mglasswidth = 32
+var mglassheight = 32
+var mglassleft = 120
+var mglasstop = 110
+
+var difleft= largeleft-thumbleft
+var diftop= largetop-thumbtop
+
+var clippoints
+
+var cliptop = (thumbheight-mglassheight)*enlargefactor
+var clipbottom = cliptop+(mglassheight*enlargefactor)
+var clipleft =(thumbwidth-mglasswidth)*enlargefactor
+var clipright = clipleft+(mglasswidth*enlargefactor)
+
+
+if (parseInt(navigator.appVersion) >= 4) {
+	if (navigator.appName == "Netscape") {
+		isNav = true
+	} else {
+		isIE = true
+	}
+}
+
+function setZIndex(obj, zOrder) {
+	obj.zIndex = zOrder
+}
+
+function shiftTo(obj, x, y) {
+	if (isNav) {
+		obj.moveTo(x,y)
+	} else {
+		obj.pixelLeft = x
+		obj.pixelTop = y
+	}	
+	cliptop = (y-thumbtop)*enlargefactor
+	clipbottom = cliptop+(mglassheight*enlargefactor)
+	clipleft = (x-thumbleft)*enlargefactor
+	clipright = clipleft+(mglasswidth*enlargefactor)
+
+	
+	if (document.all) {
+		clippoints ="rect("+cliptop+" "+clipright+" "+clipbottom+" "+clipleft+")"
+		document.all.large.style.posTop=largetop-cliptop
+		document.all.large.style.posLeft=largeleft-clipleft
+		document.all.large.style.clip=clippoints
+	}
+	if (document.layers) {
+		document.large.top=largetop-cliptop
+		document.large.left=largeleft-clipleft
+		document.large.clip.left = clipleft
+		document.large.clip.right = clipright
+		document.large.clip.top = cliptop
+		document.large.clip.bottom = clipbottom
+	}
+}
+
+function setSelectedElem(evt) {
+	if (isNav) {
+		var testObj
+		var clickX = evt.pageX
+		var clickY = evt.pageY
+		for (var i = document.layers.length - 1; i >= 0; i--) {
+			testObj = document.layers[i]
+			if ((clickX > testObj.left) && 
+				(clickX < testObj.left + testObj.clip.width) && 
+				(clickY > testObj.top) && 
+				(clickY < testObj.top + testObj.clip.height)) {
+					selectedObj = testObj
+					setZIndex(selectedObj, 100)
+					return
+			}
+		}
+	} else {
+		var imgObj = window.event.srcElement
+		if (imgObj.parentElement.id.indexOf("mglass") != -1) {
+			selectedObj = imgObj.parentElement.style
+			setZIndex(selectedObj,100)
+			return
+		}
+	}
+	selectedObj = null
+	return
+}
+
+function dragIt(evt) {
+	if (selectedObj) {
+		if (isNav) {
+			shiftTo(selectedObj, (evt.pageX - offsetX), (evt.pageY - offsetY))
+		} else {
+			shiftTo(selectedObj, (window.event.clientX - offsetX), (window.event.clientY - offsetY))
+			return false
+		}
+	}
+}
+
+function engage(evt) {
+	setSelectedElem(evt)
+	if (selectedObj) {
+		if (isNav) {
+			offsetX = evt.pageX - selectedObj.left
+			offsetY = evt.pageY - selectedObj.top
+		} else {
+			offsetX = window.event.offsetX
+			offsetY = window.event.offsetY
+		}
+	}
+	return false
+}
+
+function release(evt) {
+	if (selectedObj) {
+		setZIndex(selectedObj, 0)
+		selectedObj = null
+	}
+}
+
+function setNavEventCapture() {
+	if (isNav) {
+		document.captureEvents(Event.MOUSEDOWN | Event.MOUSEMOVE | Event.MOUSEUP)
+	}
+}
+
+function init() {
+
+	if (document.layers) {
+		document.large.left=largeleft
+		document.large.top=largetop
+		
+		document.framegif.left=largeleft-3
+		document.framegif.top=largetop-3
+	
+		document.thumb.left=thumbleft
+		document.thumb.top=thumbtop
+	
+		document.mglass.left=mglassleft
+		document.mglass.top=mglasstop
+		
+		document.large.clip.left = 0
+		document.large.clip.right = 0
+		document.large.clip.top = 0
+		document.large.clip.bottom = 0
+		
+		setNavEventCapture()
+	}
+	
+	if (document.all) {
+		document.all.large.style.posLeft=largeleft
+		document.all.large.style.posTop=largetop
+		
+		document.all.framegif.style.posLeft=largeleft-3
+		document.all.framegif.style.posTop=largetop-3
+	
+		document.all.thumb.style.posLeft=thumbleft
+		document.all.thumb.style.posTop=thumbtop
+	
+		document.all.mglass.style.posLeft=mglassleft
+		document.all.mglass.style.posTop=mglasstop
+		document.all.large.style.clip="rect(0 0 0 0)"
+	}
+	
+	document.onmousedown = engage
+	document.onmousemove = dragIt
+	document.onmouseup = release
+}
+// - End of JavaScript - -->
+</SCRIPT>
+<span id=thumb><IMG name=thumbpic src="photo/portrait2311.jpg" width=91> 
+</span>
+<span id=framegif><IMG height=166 name=framepic src="photo/frame2311.gif" 
+width=166> </span>
+<span id=large><IMG name=largepic src="photo/portrait2311.jpg" width=455> 
+</span>
+<span id=mglass><IMG height=50 name=mglasspic src="photo/mglass.gif" 
+width=50> </span></fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+第一步:把如下代码加入<body>区域中
+&nbsp;&lt;STYLE type=text/css&gt;#mglass {
+	LEFT: -2000px; POSITION: absolute; TOP: 50px
+}
+#thumb {
+	LEFT: -2000px; POSITION: absolute; TOP: 50px
+}
+#large {
+	LEFT: -2000px; POSITION: absolute; TOP: 50px
+}
+#framegif {
+	LEFT: -2000px; POSITION: absolute; TOP: 50px
+}
+.baseline {
+	COLOR: #000000; FONT-FAMILY: Arial; FONT-SIZE: 9pt; LEFT: 50px; POSITION: absolute; TOP: 260px
+}
+&lt;/STYLE&gt;
+&lt;SCRIPT language=JavaScript&gt;
+&lt;!-- Beginning of JavaScript -
+var isNav, isIE
+var offsetX, offsetY
+var selectedObj 
+
+var enlargefactor=5
+
+var largewidth = 455
+var largeheight = 523
+var largeleft = 250
+var largetop = 30
+
+var thumbwidth = Math.floor(largewidth/enlargefactor)
+var thumbheight = Math.floor(largeheight/enlargefactor)
+var thumbleft = 50
+var thumbtop = 30
+
+var mglasswidth = 32
+var mglassheight = 32
+var mglassleft = 120
+var mglasstop = 110
+
+var difleft= largeleft-thumbleft
+var diftop= largetop-thumbtop
+
+var clippoints
+
+var cliptop = (thumbheight-mglassheight)*enlargefactor
+var clipbottom = cliptop+(mglassheight*enlargefactor)
+var clipleft =(thumbwidth-mglasswidth)*enlargefactor
+var clipright = clipleft+(mglasswidth*enlargefactor)
+
+
+if (parseInt(navigator.appVersion) &gt;= 4) {
+	if (navigator.appName == &quot;Netscape&quot;) {
+		isNav = true
+	} else {
+		isIE = true
+	}
+}
+
+function setZIndex(obj, zOrder) {
+	obj.zIndex = zOrder
+}
+
+function shiftTo(obj, x, y) {
+	if (isNav) {
+		obj.moveTo(x,y)
+	} else {
+		obj.pixelLeft = x
+		obj.pixelTop = y
+	}	
+	cliptop = (y-thumbtop)*enlargefactor
+	clipbottom = cliptop+(mglassheight*enlargefactor)
+	clipleft = (x-thumbleft)*enlargefactor
+	clipright = clipleft+(mglasswidth*enlargefactor)
+
+	
+	if (document.all) {
+		clippoints =&quot;rect(&quot;+cliptop+&quot; &quot;+clipright+&quot; &quot;+clipbottom+&quot; &quot;+clipleft+&quot;)&quot;
+		document.all.large.style.posTop=largetop-cliptop
+		document.all.large.style.posLeft=largeleft-clipleft
+		document.all.large.style.clip=clippoints
+	}
+	if (document.layers) {
+		document.large.top=largetop-cliptop
+		document.large.left=largeleft-clipleft
+		document.large.clip.left = clipleft
+		document.large.clip.right = clipright
+		document.large.clip.top = cliptop
+		document.large.clip.bottom = clipbottom
+	}
+}
+
+function setSelectedElem(evt) {
+	if (isNav) {
+		var testObj
+		var clickX = evt.pageX
+		var clickY = evt.pageY
+		for (var i = document.layers.length - 1; i &gt;= 0; i--) {
+			testObj = document.layers[i]
+			if ((clickX &gt; testObj.left) &amp;&amp; 
+				(clickX &lt; testObj.left + testObj.clip.width) &amp;&amp; 
+				(clickY &gt; testObj.top) &amp;&amp; 
+				(clickY &lt; testObj.top + testObj.clip.height)) {
+					selectedObj = testObj
+					setZIndex(selectedObj, 100)
+					return
+			}
+		}
+	} else {
+		var imgObj = window.event.srcElement
+		if (imgObj.parentElement.id.indexOf(&quot;mglass&quot;) != -1) {
+			selectedObj = imgObj.parentElement.style
+			setZIndex(selectedObj,100)
+			return
+		}
+	}
+	selectedObj = null
+	return
+}
+
+function dragIt(evt) {
+	if (selectedObj) {
+		if (isNav) {
+			shiftTo(selectedObj, (evt.pageX - offsetX), (evt.pageY - offsetY))
+		} else {
+			shiftTo(selectedObj, (window.event.clientX - offsetX), (window.event.clientY - offsetY))
+			return false
+		}
+	}
+}
+
+function engage(evt) {
+	setSelectedElem(evt)
+	if (selectedObj) {
+		if (isNav) {
+			offsetX = evt.pageX - selectedObj.left
+			offsetY = evt.pageY - selectedObj.top
+		} else {
+			offsetX = window.event.offsetX
+			offsetY = window.event.offsetY
+		}
+	}
+	return false
+}
+
+function release(evt) {
+	if (selectedObj) {
+		setZIndex(selectedObj, 0)
+		selectedObj = null
+	}
+}
+
+function setNavEventCapture() {
+	if (isNav) {
+		document.captureEvents(Event.MOUSEDOWN | Event.MOUSEMOVE | Event.MOUSEUP)
+	}
+}
+
+function init() {
+
+	if (document.layers) {
+		document.large.left=largeleft
+		document.large.top=largetop
+		
+		document.framegif.left=largeleft-3
+		document.framegif.top=largetop-3
+	
+		document.thumb.left=thumbleft
+		document.thumb.top=thumbtop
+	
+		document.mglass.left=mglassleft
+		document.mglass.top=mglasstop
+		
+		document.large.clip.left = 0
+		document.large.clip.right = 0
+		document.large.clip.top = 0
+		document.large.clip.bottom = 0
+		
+		setNavEventCapture()
+	}
+	
+	if (document.all) {
+		document.all.large.style.posLeft=largeleft
+		document.all.large.style.posTop=largetop
+		
+		document.all.framegif.style.posLeft=largeleft-3
+		document.all.framegif.style.posTop=largetop-3
+	
+		document.all.thumb.style.posLeft=thumbleft
+		document.all.thumb.style.posTop=thumbtop
+	
+		document.all.mglass.style.posLeft=mglassleft
+		document.all.mglass.style.posTop=mglasstop
+		document.all.large.style.clip=&quot;rect(0 0 0 0)&quot;
+	}
+	
+	document.onmousedown = engage
+	document.onmousemove = dragIt
+	document.onmouseup = release
+}
+// - End of JavaScript - --&gt;
+&lt;/SCRIPT&gt;
+&lt;span id=thumb&gt;&lt;IMG name=thumbpic src=&quot;photo/portrait2311.jpg&quot; width=91&gt; 
+&lt;/span&gt;
+&lt;span id=framegif&gt;&lt;IMG height=166 name=framepic src=&quot;photo/frame2311.gif&quot; 
+width=166&gt; &lt;/span&gt;
+&lt;span id=large&gt;&lt;IMG name=largepic src=&quot;photo/portrait2311.jpg&quot; width=455&gt; 
+&lt;/span&gt;
+&lt;span id=mglass&gt;&lt;IMG height=50 name=mglasspic src=&quot;photo/mglass.gif&quot; 
+width=50&gt; &lt;/span&gt;
+
+
+
+&nbsp;
+第二步:把如下代码加入<body>区域中<body bgcolor="#ffffff" onload=init()>
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

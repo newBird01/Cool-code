@@ -1,0 +1,375 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--变换的下拉选择菜单</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body bgcolor=#FFFFFF>
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">变换的下拉选择菜单</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=1191" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<style>
+	#sub1, #sub2, #sub3
+	{ position: absolute;
+	  left: 480px;
+	  visibility: hidden;
+	  z-index: 3
+	}
+</style>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+catnumber = 3
+offset = 150
+performOnchange = false
+if (document.all) {
+  docObj = "document.all."
+  styleObj = ".style"
+  } else {
+  docObj = "document."
+  styleObj = ""
+}
+function openselect(subcat) {
+  popupselect = eval(docObj + subcat + styleObj)
+  popupselect.visibility = "visible"
+}
+function closeselect(submenu,subcat){
+  popupselect = eval(docObj + subcat + styleObj)
+  if (submenu.selectedIndex != 0) {
+    popupselect.visibility = "hidden"
+    numchoice = submenu.selectedIndex
+    choice = submenu[numchoice].value
+    subcategory.value = choice
+    submenu.selectedIndex = 0
+  }
+}
+function lock() {
+  performOnchange = false
+}
+function unlock() {
+  performOnchange = true
+}
+function selectSub(cat) {
+  for (i=1; i <= catnumber; i++) {
+    subcat = "sub" + i
+    popupselect = eval(docObj + subcat + styleObj)
+    popupselect.visibility = "hidden"
+  }
+  if (performOnchange == true) {
+    letsopen = "sub" + cat.selectedIndex
+    if (letsopen == "sub0") {
+      alert("No category selected")
+      choice = "- subcategory -"
+      subcategory.value = choice
+      cat.focus()
+      } else {
+      openselect(letsopen)
+      lock()
+    }
+  }
+}
+//  End -->
+</script>
+<div align="center">
+<span id="sub1">
+  <select name="subannounce" onchange="closeselect(this,'sub1')">
+    <option selected value="">- 综合性站点 -
+    <option value="新浪网">新浪网
+    <option value="搜狐">搜狐
+    <option value="网易">网易
+  </select>
+</span>
+<span id="sub2">
+  <select name="subarts" onchange="closeselect(this,'sub2')">
+    <option selected value="">- 艺术性站点 -
+    <option value="chinamp3">chinamp3
+    <option value="通海微雕">通海微雕
+    <option value="painting">painting
+  </select>
+</span>
+<span id="sub3">
+  <select name="subsoftware" onchange="closeselect(this,'sub3')">
+    <option selected value="">- 体育类站点 -
+    <option value="中国足球网">中国足球网
+    <option value="中国篮球网">中国篮球网
+    <option value="NBA">NBA
+    <option value="新浪体育">新浪体育
+  </select>
+</span>
+  <select name="categoria" onmouseover="unlock()" onchange="selectSub(this)">
+    <option selected value="">-- 选择站点类型 --
+    <option value="综合性站点">综合性站点
+    <option value="艺术性站点">艺术性站点
+    <option value="体育类站点">体育类站点
+  </select><br>
+<input type="text" name="subcategory" readonly="readonly" value="- 选择具体站点 -">
+</div>
+
+</fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+把如下代码加入<body>区域中
+&nbsp;&lt;style&gt;
+	#sub1, #sub2, #sub3
+	{ position: absolute;
+	  left: 480px;
+	  visibility: hidden;
+	  z-index: 3
+	}
+&lt;/style&gt;
+
+&lt;SCRIPT LANGUAGE=&quot;JavaScript&quot;&gt;
+&lt;!-- Begin
+catnumber = 3
+offset = 150
+performOnchange = false
+if (document.all) {
+  docObj = &quot;document.all.&quot;
+  styleObj = &quot;.style&quot;
+  } else {
+  docObj = &quot;document.&quot;
+  styleObj = &quot;&quot;
+}
+function openselect(subcat) {
+  popupselect = eval(docObj + subcat + styleObj)
+  popupselect.visibility = &quot;visible&quot;
+}
+function closeselect(submenu,subcat){
+  popupselect = eval(docObj + subcat + styleObj)
+  if (submenu.selectedIndex != 0) {
+    popupselect.visibility = &quot;hidden&quot;
+    numchoice = submenu.selectedIndex
+    choice = submenu[numchoice].value
+    subcategory.value = choice
+    submenu.selectedIndex = 0
+  }
+}
+function lock() {
+  performOnchange = false
+}
+function unlock() {
+  performOnchange = true
+}
+function selectSub(cat) {
+  for (i=1; i &lt;= catnumber; i++) {
+    subcat = &quot;sub&quot; + i
+    popupselect = eval(docObj + subcat + styleObj)
+    popupselect.visibility = &quot;hidden&quot;
+  }
+  if (performOnchange == true) {
+    letsopen = &quot;sub&quot; + cat.selectedIndex
+    if (letsopen == &quot;sub0&quot;) {
+      alert(&quot;No category selected&quot;)
+      choice = &quot;- subcategory -&quot;
+      subcategory.value = choice
+      cat.focus()
+      } else {
+      openselect(letsopen)
+      lock()
+    }
+  }
+}
+//  End --&gt;
+&lt;/script&gt;
+&lt;div align=&quot;center&quot;&gt;
+&lt;span id=&quot;sub1&quot;&gt;
+  &lt;select name=&quot;subannounce&quot; onchange=&quot;closeselect(this,'sub1')&quot;&gt;
+    &lt;option selected value=&quot;&quot;&gt;- 综合性站点 -
+    &lt;option value=&quot;新浪网&quot;&gt;新浪网
+    &lt;option value=&quot;搜狐&quot;&gt;搜狐
+    &lt;option value=&quot;网易&quot;&gt;网易
+  &lt;/select&gt;
+&lt;/span&gt;
+&lt;span id=&quot;sub2&quot;&gt;
+  &lt;select name=&quot;subarts&quot; onchange=&quot;closeselect(this,'sub2')&quot;&gt;
+    &lt;option selected value=&quot;&quot;&gt;- 艺术性站点 -
+    &lt;option value=&quot;chinamp3&quot;&gt;chinamp3
+    &lt;option value=&quot;通海微雕&quot;&gt;通海微雕
+    &lt;option value=&quot;painting&quot;&gt;painting
+  &lt;/select&gt;
+&lt;/span&gt;
+&lt;span id=&quot;sub3&quot;&gt;
+  &lt;select name=&quot;subsoftware&quot; onchange=&quot;closeselect(this,'sub3')&quot;&gt;
+    &lt;option selected value=&quot;&quot;&gt;- 体育类站点 -
+    &lt;option value=&quot;中国足球网&quot;&gt;中国足球网
+    &lt;option value=&quot;中国篮球网&quot;&gt;中国篮球网
+    &lt;option value=&quot;NBA&quot;&gt;NBA
+    &lt;option value=&quot;新浪体育&quot;&gt;新浪体育
+  &lt;/select&gt;
+&lt;/span&gt;
+  &lt;select name=&quot;categoria&quot; onmouseover=&quot;unlock()&quot; onchange=&quot;selectSub(this)&quot;&gt;
+    &lt;option selected value=&quot;&quot;&gt;-- 选择站点类型 --
+    &lt;option value=&quot;综合性站点&quot;&gt;综合性站点
+    &lt;option value=&quot;艺术性站点&quot;&gt;艺术性站点
+    &lt;option value=&quot;体育类站点&quot;&gt;体育类站点
+  &lt;/select&gt;&lt;br&gt;
+&lt;input type=&quot;text&quot; name=&quot;subcategory&quot; readonly=&quot;readonly&quot; value=&quot;- 选择具体站点 -&quot;&gt;
+&lt;/div&gt;
+
+
+
+
+
+&nbsp;
+
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

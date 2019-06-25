@@ -1,0 +1,327 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--驱动页面自动下移</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body bgcolor=#FFFFFF>
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">驱动页面自动下移</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=1223" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<script language="JavaScript"> 
+function click() {
+if (event.button==2) {
+	if(document.all.auto.status==true){document.all.auto.status=false;alert("自动滚屏已经停止了！")}
+	scroller();
+	}
+}
+document.onmousedown=click
+
+var position = 0; 
+function scroller() {
+if (document.all.auto.status==true){ 
+	position++; 
+	scroll(0,position); 
+	clearTimeout(timer); 
+	var timer = setTimeout("scroller()",50); 
+	timer;
+	}
+else{
+	clearTimeout(timer);
+	}
+} 
+</script> 
+
+<script language="JavaScript">
+<!--
+function MM_callJS(jsStr) { //v2.0
+  return eval(jsStr)
+}
+//-->
+</script>
+<table width="95%" border="0" align="center">
+  <tr> 
+    <td>
+      <div align="right">
+        <input type="checkbox" name="auto" value="on" onClick="MM_callJS('scroller() ; ')" >
+        自动滚屏(右键暂停)</div>
+    </td>
+  </tr>
+  <tr> 
+    <td> 
+      <table width="100%" border="0" align="center" cellspacing="0" cellpadding="5" bordercolordark="#FFFFFF" bordercolorlight="#000000">
+        <tr> 
+          <td width="100%" style="TEXT-DECORATION:NONE;COLOR:#4E516C;" class="greentitle168" align="center">十强赛-卡塔尔两次射中门柱 阿曼客场爆冷取一分</td>
+        </tr>
+        <tr> 
+          <td width="50%" style="TEXT-DECORATION:NONE;COLOR:#4E516C;" class="news" height="144">
+<p>　　双方均排出3-5-2阵型，比赛在湿热的天气下进行，卡塔尔队一开始便主动进攻，阿曼队一名队员“堵枪眼”时受伤倒地。第7分钟，卡塔尔队头号球星恩纳济在门前20米处左脚射门，球越过门将马兹罗伊之后下坠，却打在横梁上。第12分钟，卡塔尔队中场奎西在禁区前沿右脚外脚背射门，打在球门上方的球网上。</p>
+
+<p>　　两支球队的节奏都比较慢，阿曼队基本上被压制在本方半场，只能寻找机会打反击，但是他们的配合比较细腻，推进速度不快，卡塔尔则比阿曼队快速简练一些。第25分钟，阿曼队法利德故意手球，被黄牌警告，哈里发主罚的任意球直飞底角，门将马兹罗伊飞身将球扑出左门柱。</p>
+
+<p>　　卡塔尔队在占据优势的情况下无法破门，但队员们并没有急躁的表现。第29分钟，卡塔尔左前卫纳伊米门前18米处左脚射门，球又被横梁挡出。在前半个小时内，卡塔尔队竟然两次射中门框，两队的射门次数之比为5比1。第34分钟，卡塔尔队中场纳伊米铲球犯规，被黄牌警告。</p>
+
+<p>　　卡塔尔队回防的速度不快，留给阿曼队组织进攻的空间。第38分钟，卡塔尔队阿卜杜拉赫曼一记飞铲，将对方球员纳塞尔铲伤，裁判没有出牌。第42分钟，阿曼队前锋达巴赫与对方中卫穆罕迈德形成一对一，但穆罕迈德经验非常丰富，禁区前沿将球断下。第44分钟，阿曼队左路传中，前锋西亚比斯在远门柱头球攻门，但力量不够，球弹地后被门将鲁迈西没收。</p>
+
+<p>　　下半时一开始，卡塔尔队在右路发动连续攻势，恩纳济门前不到五米将球顶偏。第49分钟，奎西右路传中，中路同伴头球摆渡，恩纳济远端铲射打在边网上。第49分钟，卡塔尔队右路传中，恩纳济门前用手击球，球偏出远门柱，恩纳济被黄牌警告。不到一分钟，卡塔尔队前锋达巴赫禁区内左脚挑射高出横梁。</p>
+
+<p>　　第54分钟，卡塔尔队阿卜杜拉赫曼中场铲翻对方球员，被黄牌警告。第56分钟，卡塔尔队快速反击，前腰哈里法在门前25米处吊射，球高出横梁。第59分钟，卡塔尔队法兹利突入禁区右侧，一脚劲射被门将马兹罗伊扑出。第63分钟，阿曼队左侧掷出边线球，前腰西亚比斯几乎形成射门机会，但门将鲁迈西抢先将球得到。</p>
+
+<p>　　第65分钟，阿曼队门将马兹罗伊出击失误，幸亏中后卫穆罕迈德比较沉着，将球带出了危险区域。第68分钟，阿曼队法兹边路战术犯规，得到一张黄牌。第70分钟，阿曼队禁区前沿任意球打飞。第74分钟，卡塔尔队员突入禁区，被对方后卫铲倒，裁判没有判罚点球。</p>
+
+<p>　　阿曼队达巴赫一次头球险些得手。第75分钟，卡塔尔队替补阿齐兹在门前20米赢得一个任意球，球开出后被挡出底线，卡塔尔队开出角球，塔利米的头球贴着横梁飞出。第81分钟，卡塔尔队右侧将球挑到远门柱，恩纳济头球顶回到右侧，法兹利凌空射门打在边网上。伤停补时阶段，阿曼队两次远射打高。</p>
+
+<p>　　卡塔尔队主教练哈吉在赛后失望的说：“我们错过了几次机会，我们本来可以轻松的赢得这场比赛，我们的队员看上去有点太放松了。话又说回来，平局总比什么都没有好，因为在法国世界杯的预选赛中，我们在主场输了两场球，为此付出了惨痛的代价，只要其中一场平了，我们就可以出线了。”(马舸)
+</p>
+            
+           
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+把如下代码加入<body>区域中
+&nbsp;&lt;script language=&quot;JavaScript&quot;&gt; 
+function click() {
+if (event.button==2) {
+	if(document.all.auto.status==true){document.all.auto.status=false;alert(&quot;自动滚屏已经停止了！&quot;)}
+	scroller();
+	}
+}
+document.onmousedown=click
+
+var position = 0; 
+function scroller() {
+if (document.all.auto.status==true){ 
+	position++; 
+	scroll(0,position); 
+	clearTimeout(timer); 
+	var timer = setTimeout(&quot;scroller()&quot;,50); 
+	timer;
+	}
+else{
+	clearTimeout(timer);
+	}
+} 
+&lt;/script&gt; 
+
+&lt;script language=&quot;JavaScript&quot;&gt;
+&lt;!--
+function MM_callJS(jsStr) { //v2.0
+  return eval(jsStr)
+}
+//--&gt;
+&lt;/script&gt;
+&lt;table width=&quot;95%&quot; border=&quot;0&quot; align=&quot;center&quot;&gt;
+  &lt;tr&gt; 
+    &lt;td&gt;
+      &lt;div align=&quot;right&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; name=&quot;auto&quot; value=&quot;on&quot; onClick=&quot;MM_callJS('scroller() ; ')&quot; &gt;
+        自动滚屏(右键暂停)&lt;/div&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt; 
+    &lt;td&gt; 
+      &lt;table width=&quot;100%&quot; border=&quot;0&quot; align=&quot;center&quot; cellspacing=&quot;0&quot; cellpadding=&quot;5&quot; bordercolordark=&quot;#FFFFFF&quot; bordercolorlight=&quot;#000000&quot;&gt;
+        &lt;tr&gt; 
+          &lt;td width=&quot;100%&quot; style=&quot;TEXT-DECORATION:NONE;COLOR:#4E516C;&quot; class=&quot;greentitle168&quot; align=&quot;center&quot;&gt;十强赛-卡塔尔两次射中门柱 阿曼客场爆冷取一分&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt; 
+          &lt;td width=&quot;50%&quot; style=&quot;TEXT-DECORATION:NONE;COLOR:#4E516C;&quot; class=&quot;news&quot; height=&quot;144&quot;&gt;
+&lt;p&gt;　　双方均排出3-5-2阵型，比赛在湿热的天气下进行，卡塔尔队一开始便主动进攻，阿曼队一名队员“堵枪眼”时受伤倒地。第7分钟，卡塔尔队头号球星恩纳济在门前20米处左脚射门，球越过门将马兹罗伊之后下坠，却打在横梁上。第12分钟，卡塔尔队中场奎西在禁区前沿右脚外脚背射门，打在球门上方的球网上。&lt;/p&gt;
+
+&lt;p&gt;　　两支球队的节奏都比较慢，阿曼队基本上被压制在本方半场，只能寻找机会打反击，但是他们的配合比较细腻，推进速度不快，卡塔尔则比阿曼队快速简练一些。第25分钟，阿曼队法利德故意手球，被黄牌警告，哈里发主罚的任意球直飞底角，门将马兹罗伊飞身将球扑出左门柱。&lt;/p&gt;
+
+&lt;p&gt;　　卡塔尔队在占据优势的情况下无法破门，但队员们并没有急躁的表现。第29分钟，卡塔尔左前卫纳伊米门前18米处左脚射门，球又被横梁挡出。在前半个小时内，卡塔尔队竟然两次射中门框，两队的射门次数之比为5比1。第34分钟，卡塔尔队中场纳伊米铲球犯规，被黄牌警告。&lt;/p&gt;
+
+&lt;p&gt;　　卡塔尔队回防的速度不快，留给阿曼队组织进攻的空间。第38分钟，卡塔尔队阿卜杜拉赫曼一记飞铲，将对方球员纳塞尔铲伤，裁判没有出牌。第42分钟，阿曼队前锋达巴赫与对方中卫穆罕迈德形成一对一，但穆罕迈德经验非常丰富，禁区前沿将球断下。第44分钟，阿曼队左路传中，前锋西亚比斯在远门柱头球攻门，但力量不够，球弹地后被门将鲁迈西没收。&lt;/p&gt;
+
+&lt;p&gt;　　下半时一开始，卡塔尔队在右路发动连续攻势，恩纳济门前不到五米将球顶偏。第49分钟，奎西右路传中，中路同伴头球摆渡，恩纳济远端铲射打在边网上。第49分钟，卡塔尔队右路传中，恩纳济门前用手击球，球偏出远门柱，恩纳济被黄牌警告。不到一分钟，卡塔尔队前锋达巴赫禁区内左脚挑射高出横梁。&lt;/p&gt;
+
+&lt;p&gt;　　第54分钟，卡塔尔队阿卜杜拉赫曼中场铲翻对方球员，被黄牌警告。第56分钟，卡塔尔队快速反击，前腰哈里法在门前25米处吊射，球高出横梁。第59分钟，卡塔尔队法兹利突入禁区右侧，一脚劲射被门将马兹罗伊扑出。第63分钟，阿曼队左侧掷出边线球，前腰西亚比斯几乎形成射门机会，但门将鲁迈西抢先将球得到。&lt;/p&gt;
+
+&lt;p&gt;　　第65分钟，阿曼队门将马兹罗伊出击失误，幸亏中后卫穆罕迈德比较沉着，将球带出了危险区域。第68分钟，阿曼队法兹边路战术犯规，得到一张黄牌。第70分钟，阿曼队禁区前沿任意球打飞。第74分钟，卡塔尔队员突入禁区，被对方后卫铲倒，裁判没有判罚点球。&lt;/p&gt;
+
+&lt;p&gt;　　阿曼队达巴赫一次头球险些得手。第75分钟，卡塔尔队替补阿齐兹在门前20米赢得一个任意球，球开出后被挡出底线，卡塔尔队开出角球，塔利米的头球贴着横梁飞出。第81分钟，卡塔尔队右侧将球挑到远门柱，恩纳济头球顶回到右侧，法兹利凌空射门打在边网上。伤停补时阶段，阿曼队两次远射打高。&lt;/p&gt;
+
+&lt;p&gt;　　卡塔尔队主教练哈吉在赛后失望的说：“我们错过了几次机会，我们本来可以轻松的赢得这场比赛，我们的队员看上去有点太放松了。话又说回来，平局总比什么都没有好，因为在法国世界杯的预选赛中，我们在主场输了两场球，为此付出了惨痛的代价，只要其中一场平了，我们就可以出线了。”(马舸)
+&lt;/p&gt;
+            
+           
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+
+
+
+&nbsp;
+
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

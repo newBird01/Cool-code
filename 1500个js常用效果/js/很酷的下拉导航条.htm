@@ -1,0 +1,2263 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--很酷的下拉导航条</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body bgcolor=#FFFFFF>
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">很酷的下拉导航条</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=283" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<STYLE type=text/css>#menubar {
+	BACKGROUND: rgb(212,208,200); FONT: menu; CURSOR: default; POSITION: relative
+}
+#menubar .root {
+	BORDER-RIGHT: rgb(212,208,200) 1px solid; PADDING-RIGHT: 2pt; BORDER-TOP: rgb(212,208,200) 1px solid; PADDING-LEFT: 2pt; BORDER-LEFT: rgb(212,208,200) 1px solid; BORDER-BOTTOM: rgb(212,208,200) 1px solid
+}
+#menubar TABLE {
+	BORDER-RIGHT: gray 2px solid; PADDING-RIGHT: 0pt; BORDER-TOP: #eeeeee 2px solid; DISPLAY: none; PADDING-LEFT: 0pt; BACKGROUND: rgb(212,208,200); PADDING-BOTTOM: 0pt; MARGIN: 0pt; FONT: menu; BORDER-LEFT: #eeeeee 2px solid; PADDING-TOP: 0pt; BORDER-BOTTOM: gray 2px solid; POSITION: absolute
+}
+#menubar TABLE TD {
+	PADDING-RIGHT: 15pt; PADDING-LEFT: 12pt; PADDING-BOTTOM: 2pt; MARGIN: 0pt; PADDING-TOP: 2pt
+}
+#menubar .highlight {
+	BACKGROUND: #08246B; COLOR: white;
+}
+#menubar .disabledhighlight {
+	BACKGROUND: rgb(212,208,200); COLOR: gray
+}
+#menubar #break {
+	COLOR: gray
+}
+#menubar .disabled {
+	COLOR: gray
+}
+#menubar #break {
+	PADDING-RIGHT: 0pt; PADDING-LEFT: 0pt; PADDING-BOTTOM: 0pt; MARGIN: 0pt; PADDING-TOP: 0pt
+}
+#menubar SPAN.more {
+	PADDING-RIGHT: 0pt; PADDING-LEFT: 0pt; LEFT: 14pt; FLOAT: right; PADDING-BOTTOM: 0pt; MARGIN: 0pt; FONT: 9pt webdings; WIDTH: 0.8em; PADDING-TOP: 0pt; POSITION: relative; TOP: -2pt; HEIGHT: 9pt
+}
+#menubar .TBHandle {
+    BACKGROUND-COLOR: menu;
+    BORDER-LEFT: buttonhighlight 1px solid;
+    BORDER-RIGHT: buttonshadow 1px solid;
+    BORDER-TOP:	buttonhighlight	1px solid;
+    FONT-SIZE: 1px;
+    HEIGHT: 22px;
+    POSITION: absolute;
+    TOP: 1px;
+    WIDTH: 3px
+}
+#menubar .yToolbar {
+    BACKGROUND-COLOR: menu;
+    BORDER-BOTTOM: buttonshadow	1px solid;
+    BORDER-LEFT: buttonhighlight 1px solid;
+    BORDER-RIGHT: buttonshadow 1px solid;
+    BORDER-TOP:	buttonhighlight	1px solid;
+    HEIGHT: 27px;
+    LEFT: 0px;
+    POSITION: relative;
+    TOP: 0px;    
+}
+.handbtn {
+	BACKGROUND: buttonface; BORDER-BOTTOM: buttonshadow 1px solid; BORDER-LEFT: buttonhighlight 1px solid; BORDER-RIGHT: buttonshadow 1px solid; BORDER-TOP: buttonhighlight 1px solid; HEIGHT: 21px; WIDTH: 3px
+}
+.sepbtn1 {
+	BORDER-LEFT: buttonshadow 1px ridge; BORDER-RIGHT: buttonhighlight 1px solid; WIDTH: 2px
+}
+
+</STYLE>
+<script language=javascript>
+
+//数组名+次序号码
+
+//数组内容第一个值为标题
+
+//"样式名称","字体颜色","名称","连接","目标窗口"
+
+OutBarFolder1=new Array(
+
+"系统功能",
+
+"none","default","新建管理人员","add","_blank",
+
+"none","default","浏览管理人员","none","_blank",
+
+"none","default","修改管理人员资料","none","_blank",
+
+"none","default","更改密码","none","_blank",
+
+"none","default","权限分配","none","none",
+
+"break","default","<hr>","none","none",
+
+"none","default","新建管理人员","add","_blank",
+
+"none","default","新建管理人员","add","_blank",
+
+"none","default","新建管理人员","add","_blank",
+
+"none","default","新建管理人员","add","_blank",
+
+"none","default","新建管理人员","add","_blank",
+
+"break","default","<hr>","none","none",
+
+"none","default","备份数据","none","_top",
+
+"none","default","恢复数据","none","_top",
+
+"break","default","<hr>","none","none",
+
+"none","default","更改个人资料","none","_blank",
+
+"none","default","更改个人密码","none","_blank",
+
+"break","default","<hr>","none","none",
+
+"none","default","退出管理系统","none","_top"
+
+);
+
+OutBarFolder2=new Array(
+
+"系统功能",
+
+"none","default","新建管理人员","add","_blank",
+
+"none","default","浏览管理人员","none","_blank",
+
+"none","default","修改管理人员资料","none","_blank",
+
+"none","default","更改密码","none","_blank",
+
+"none","default","权限分配","none","none",
+
+"break","default","<hr>","none","none",
+
+"none","default","新建管理人员","add","_blank",
+
+"none","default","新建管理人员","add","_blank",
+
+"none","default","新建管理人员","add","_blank",
+
+"none","default","新建管理人员","add","_blank",
+
+"none","default","新建管理人员","add","_blank",
+
+"break","default","<hr>","none","none",
+
+"none","default","备份数据","none","_top",
+
+"none","default","恢复数据","none","_top",
+
+"break","default","<hr>","none","none",
+
+"none","default","更改个人资料","none","_blank",
+
+"none","default","更改个人密码","none","_blank",
+
+"break","default","<hr>","none","none",
+
+"none","default","退出管理系统","none","_top"
+
+);
+
+OutBarFolder3=new Array(
+
+"系统功能",
+
+"none","default","新建管理人员","add","_blank",
+
+"none","default","浏览管理人员","none","_blank",
+
+"none","default","修改管理人员资料","none","_blank",
+
+"none","default","更改密码","none","_blank",
+
+"none","default","权限分配","none","none",
+
+"break","default","<hr>","none","none",
+
+"none","default","新建管理人员","add","_blank",
+
+"none","default","新建管理人员","add","_blank",
+
+"none","default","新建管理人员","add","_blank",
+
+"none","default","新建管理人员","add","_blank",
+
+"none","default","新建管理人员","add","_blank",
+
+"break","default","<hr>","none","none",
+
+"none","default","备份数据","none","_top",
+
+"none","default","恢复数据","none","_top",
+
+"break","default","<hr>","none","none",
+
+"none","default","更改个人资料","none","_blank",
+
+"none","default","更改个人密码","none","_blank",
+
+"break","default","<hr>","none","none",
+
+"none","default","退出管理系统","none","_top"
+
+);
+
+	var childActive = null 
+
+    var menuActive = null
+
+    var lastHighlight = null
+
+    var active = false
+
+   
+
+    function getReal(el) {
+
+      // Find a table cell element in the parent chain */
+
+      temp = el
+
+      while ((temp!=null) && (temp.tagName!="TABLE") && (temp.className!="root") && (temp.id!="menuBar")) {
+
+        if (temp.tagName=="TD")
+
+          el = temp
+
+        temp = temp.parentElement
+
+      }
+
+      return el
+
+    }
+
+
+
+    function raiseMenu(el) {
+
+      el.style.borderLeft = "1px #08246B solid"
+
+      el.style.borderTop = "1px #08246B solid"
+
+      el.style.borderRight = "1px #08246B solid"
+
+      el.style.borderBottom = "1px #08246B solid"
+
+      el.style.background = "#B5BED6"
+
+    }
+
+
+
+    function clearHighlight(el) {
+
+      if (el==null) return
+
+      el.style.borderRight = "1px lightgrey solid"
+
+      el.style.borderBottom = "1px lightgrey solid"
+
+      el.style.borderTop = "1px lightgrey solid"
+
+      el.style.borderLeft = "1px lightgrey solid" 
+
+      el.style.background = "rgb(212,208,200)"
+
+    }
+
+
+
+    function sinkMenu(el) {
+
+      el.style.borderRight = "1px #EEEEEE solid"
+
+      el.style.borderBottom = "1px #EEEEEE solid"
+
+      el.style.borderTop = "1px gray solid"
+
+      el.style.borderLeft = "1px gray solid"
+
+      el.style.background = "rgb(212,208,200)"
+
+    }
+
+
+
+    function menuHandler(menuItem) {
+
+      // Write generic menu handlers here!
+
+      // Returning true collapses the menu. Returning false does not collapse the menu
+
+      return true
+
+    }
+
+
+
+    function getOffsetPos(which,el,tagName) {
+
+      var pos = 0 // el["offset" + which]
+
+      while (el.tagName!=tagName) {
+
+        pos+=el["offset" + which]
+
+        el = el.offsetParent
+
+      }
+
+      return pos	
+
+    }
+
+
+
+    function getRootTable(el) {
+
+      el = el.offsetParent
+
+      if (el.tagName=="TR") 
+
+        el = el.offsetParent
+
+      return el
+
+    }
+
+
+
+    function getElement(el,tagName) {
+
+      while ((el!=null) && (el.tagName!=tagName) )
+
+        el = el.parentElement
+
+      return el
+
+    }
+
+
+
+    function processClick() {
+
+      var el = getReal(event.srcElement)
+
+      if ((getRootTable(el).id=="menuBar") && (active)) {        
+
+        cleanupMenu(menuActive)
+
+        clearHighlight(menuActive)
+
+        active=false
+
+        lastHighlight=null
+
+        doHighlight(el)
+
+      }
+
+      else {
+
+        if ((el.className=="root") || (!menuHandler(el)))
+
+          doMenuDown(el)
+
+        else {
+
+          if (el._childItem==null) 
+
+            el._childItem = getChildren(el)
+
+          if (el._childItem!=null)  return;
+
+          if ((el.id!="break") && (el.className!="disabled") && (el.className!="disabledhighlight") && (el.className!="clear"))  {
+
+            if (menuHandler(el)) {
+
+              cleanupMenu(menuActive)
+
+              clearHighlight(menuActive)
+
+              active=false
+
+              lastHighlight=null
+
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+
+
+    function getChildren(el) {
+
+      var tList = el.children.tags("TABLE")
+
+      var i = 0
+
+      while ((i<tList.length) && (tList[i].tagName!="TABLE"))
+
+        i++
+
+      if (i==tList.length)
+
+        return null
+
+      else
+
+        return tList[i]
+
+    }
+
+
+
+    function doMenuDown(el) {
+
+      if (el._childItem==null) 
+
+        el._childItem = getChildren(el)
+
+      if ((el._childItem!=null) && (el.className!="disabled") && (el.className!="disabledhighlight")) {
+
+        // Performance Optimization - Cache child element
+
+        ch = el._childItem
+
+        if (ch.style.display=="block") {
+
+          removeHighlight(ch.active)
+
+          return
+
+        }
+
+        ch.style.display = "block"
+
+        if (el.className=="root") {
+
+          ch.style.pixelTop = el.offsetHeight + el.offsetTop + 2
+
+          ch.style.pixelLeft = el.offsetLeft + 1
+
+	  if (ch.style.pixelWidth==0)
+
+            ch.style.pixelWidth = ch.rows[0].offsetWidth+50
+
+          sinkMenu(el)
+
+          active = true
+
+          menuActive = el
+
+        } else {
+
+          childActive = el
+
+          ch.style.pixelTop = getOffsetPos("Top",el,"TABLE") -3 // el.offsetTop + el.offsetParent.offsetTop - 3
+
+          ch.style.pixelLeft = el.offsetLeft + el.offsetWidth
+
+	  if (ch.style.pixelWidth==0)
+
+            ch.style.pixelWidth = ch.offsetWidth+50
+
+        }     
+
+      }
+
+    }
+
+ 
+
+    function doHighlight(el) {
+
+      el = getReal(el)
+
+      if ("root"==el.className) {
+
+        if ((menuActive!=null) && (menuActive!=el)) {
+
+          clearHighlight(menuActive)
+
+        }
+
+        if (!active) {
+
+          raiseMenu(el)
+
+        }          
+
+        else 
+
+          sinkMenu(el)
+
+        if ((active) && (menuActive!=el)) {
+
+          cleanupMenu(menuActive)          
+
+          doMenuDown(el)
+
+        }
+
+        menuActive = el  
+
+        lastHighlight=null
+
+      }
+
+      else {
+
+        if (childActive!=null) 
+
+          if (!childActive.contains(el)) 
+
+            closeMenu(childActive, el)    
+
+
+
+        if (("TD"==el.tagName) && ("clear"!=el.className)) {
+
+          var ch = getRootTable(el)         
+
+          if (ch.active!=null) {
+
+            if (ch.active!=el) {
+
+              if (ch.active.className=="disabledhighlight")  
+
+                ch.active.className="disabled"
+
+              else
+
+                ch.active.className=""
+
+              }
+
+            }
+
+          ch.active = el
+
+          lastHighlight = el
+
+          if ((el.className=="disabled") || (el.className=="disabledhighlight") || (el.id=="break")) 
+
+            el.className = "disabledhighlight"
+
+          else {
+
+            if (el.id!="break") {
+
+              el.className = "highlight"
+
+              if (el._childItem==null) 
+
+                el._childItem = getChildren(el)
+
+              if (el._childItem!=null) {
+
+                doMenuDown(el)
+
+              }
+
+            }  
+
+          }
+
+        }
+
+      }
+
+    }
+
+
+
+    function removeHighlight(el) {
+
+      if (el!=null)
+
+        if ((el.className=="disabled") || (el.className=="disabledhighlight"))  
+
+          el.className="disabled"
+
+        else
+
+          el.className=""
+
+    }
+
+
+
+    function cleanupMenu(el) {
+
+      if (el==null) return
+
+      for (var i = 0; i < el.all.length; i++) {
+
+        var item = el.all[i]
+
+        if (item.tagName=="TABLE")
+
+         item.style.display = ""
+
+        removeHighlight(item.active)
+
+        item.active=null
+
+      }
+
+    }
+
+
+
+
+
+    function closeMenu(ch, el) {
+
+      var start = ch
+
+      while (ch.className!="root") {
+
+          ch = ch.parentElement
+
+          if (((!ch.contains(el)) && (ch.className!="root"))) {
+
+            start=ch
+
+          }
+
+      }
+
+      cleanupMenu(start)
+
+    }
+
+ 
+
+    function checkMenu() {      
+
+      if (document.all.menuBar==null) return
+
+      if ((!document.all.menuBar.contains(event.srcElement)) && (menuActive!=null)) {
+
+        clearHighlight(menuActive)
+
+        closeMenu(menuActive)
+
+        active = false
+
+        menuActive=null
+
+        choiceActive = null
+
+      }
+
+    }
+
+
+
+    function doCheckOut() {
+
+      var el = event.toElement      
+
+      if ((!active) && (menuActive!=null) && (!menuActive.contains(el))) {
+
+        clearHighlight(menuActive)
+
+        menuActive=null
+
+      }
+
+    }
+
+
+
+
+
+    function processKey() {
+
+      if (active) {
+
+        switch (event.keyCode) {
+
+         case 13: lastHighlight.click(); break;
+
+         case 39:  // right
+
+           if ((lastHighlight==null) || (lastHighlight._childItem==null)) {
+
+             var idx = menuActive.cellIndex
+
+//             if (idx==menuActive.offsetParent.cells.length-2)
+
+             if (idx==getElement(menuActive,"TR").cells.length-2)
+
+               idx = 0
+
+             else
+
+               idx++
+
+             newItem = getElement(menuActive,"TR").cells[idx]
+
+           } else
+
+           {
+
+             newItem = lastHighlight._childItem.rows[0].cells[0]
+
+           }
+
+           doHighlight(newItem)
+
+           break; 
+
+         case 37: //left
+
+           if ((lastHighlight==null) || (getElement(getRootTable(lastHighlight),"TR").id=="menuBar")) {
+
+             var idx = menuActive.cellIndex
+
+             if (idx==0)
+
+               idx = getElement(menuActive,"TR").cells.length-2
+
+             else
+
+               idx--
+
+             newItem = getElement(menuActive,"TR").cells[idx]
+
+           } else
+
+           {
+
+             newItem = getElement(lastHighlight,"TR")
+
+             while (newItem.tagName!="TD")
+
+               newItem = newItem.parentElement
+
+           }
+
+           doHighlight(newItem)
+
+           break; 
+
+         case 40: // down
+
+            if (lastHighlight==null) {
+
+              itemCell = menuActive._childItem
+
+              curCell=0
+
+              curRow = 0
+
+            }
+
+            else {
+
+              itemCell = getRootTable(lastHighlight)
+
+              if (lastHighlight.cellIndex==getElement(lastHighlight,"TR").cells.length-1) {
+
+                curCell = 0
+
+                curRow = getElement(lastHighlight,"TR").rowIndex+1
+
+                if (getElement(lastHighlight,"TR").rowIndex==itemCell.rows.length-1)
+
+                  curRow = 0
+
+              } else {
+
+                curCell = lastHighlight.cellIndex+1
+
+                curRow = getElement(lastHighlight,"TR").rowIndex
+
+              }
+
+            }
+
+            doHighlight(itemCell.rows[curRow].cells[curCell])
+
+            break;
+
+         case 38: // up
+
+            if (lastHighlight==null) {
+
+              itemCell = menuActive._childItem
+
+              curRow = itemCell.rows.length-1
+
+              curCell= itemCell.rows[curRow].cells.length-1
+
+
+
+            }
+
+            else {
+
+              itemCell = getRootTable(lastHighlight)
+
+              if (lastHighlight.cellIndex==0) {
+
+                curRow = getElement(lastHighlight,"TR").rowIndex-1
+
+                if (curRow==-1)
+
+                  curRow = itemCell.rows.length-1
+
+                curCell= itemCell.rows[curRow].cells.length-1
+
+
+
+              } else {
+
+                curCell = lastHighlight.cellIndex - 1
+
+                curRow = getElement(lastHighlight,"TR").rowIndex
+
+              }
+
+            }
+
+            doHighlight(itemCell.rows[curRow].cells[curCell])
+
+            break;
+
+           if (lastHighlight==null) {
+
+              curCell = menuActive._childItem
+
+              curRow = curCell.rows.length-1
+
+            }
+
+            else {
+
+              curCell = getRootTable(lastHighlight)
+
+              if (getElement(lastHighlight,"TR").rowIndex==0)
+
+                curRow = curCell.rows.length-1
+
+              else
+
+                curRow = getElement(lastHighlight,"TR").rowIndex-1
+
+            }
+
+            doHighlight(curCell.rows[curRow].cells[0])
+
+            break;
+
+        }
+
+      }
+
+    }
+
+
+
+
+
+function make_menu() {
+
+document.write("<table width='100%' cellpadding='0' cellspacing='0' border='0' style='background=rgb(212,208,200); BACKGROUND: buttonface; BORDER-BOTTOM: buttonshadow 1px solid; BORDER-LEFT: buttonhighlight 1px solid; BORDER-RIGHT: buttonshadow 1px solid; BORDER-TOP: buttonhighlight 1px solid;'>");
+
+document.write("<tr><TD><SPAN class=handbtn></SPAN></TD><td>");
+
+document.write("<TABLE ID=menuBar ONSELECTSTART='return false' ONCLICK='processClick()' ONMOUSEOVER='doHighlight(event.toElement)' ONMOUSEOUT='doCheckOut()' ONKEYDOWN='processKey()'><TR>");
+
+
+
+	j=1;
+
+	while(eval("window.OutBarFolder"+j))
+
+		j++;
+
+	i=1;
+
+	while(i<j)
+
+	{
+
+		Folder=eval("OutBarFolder"+i)
+
+        document.write("<TD NOWRAP CLASS=root>"+Folder[0]+"<TABLE CELLSPACING=0 CELLPADDING=0>");
+
+		MakeItems(Folder);
+
+        document.write("</TABLE>");
+
+		i++;
+
+	}
+
+document.write("</TD></TR></TABLE>");
+
+document.write("</td><td width=100% ONMOUSEOVER='processClick()'></td></tr></table>");
+
+
+
+}
+
+
+
+function MakeItems(Folder)
+
+{
+
+	var items=0;
+
+	while(Folder[items+1])
+
+		items+=5;
+
+	items/=5;
+
+	for(var i=1;i<items*5;i+=5)
+
+	{
+
+/*
+
+		if(Folder[i+1]=="BREAK") {
+
+			document.write("<TD NOWRAP ID=break><HR></TD>");
+
+		}
+
+		else {
+
+			document.write("<TR><TD NOWRAP>"+Folder[i+1]+"</TD></TR>");
+
+		}
+
+*/
+
+			document.write("<TR><TD NOWRAP"+((Folder[i+0]=="none")?"":" ID='"+Folder[i+0]+"'")+((Folder[i+3]=="none")?"":" onclick=\"go(1,'"+Folder[i+3]+"')\"")+">"+((Folder[i+1]=="default")?"":"<font color="+Folder[i+1]+">")+Folder[i+2]+((Folder[i+1]=="default")?"":"</font>")+"</TD></TR>");
+
+//alert("<TR><TD NOWRAP "+((Folder[i+0]=="none")?"":"ID='"+Folder[i+0]+"'")+((Folder[i+3]=="none")?"":" onclick=go(1,'"+Folder[i+3]+"')")+">"+((Folder[i+1]=="default")?"":"<font color="+Folder[i+1]+">")+Folder[i+2]+((Folder[i+1]=="default")?"":"</font>")+"</TD></TR>");
+
+	}	
+
+}
+
+
+
+function go(i,iurl) {
+
+	switch (i) 
+
+	{
+
+		case 1 : parent.location=iurl;break; //返回首页
+
+		case 2 : top.main.location='login.htm';break;  //登录
+
+		case 3 : top.main.location='shenqing.htm';break;  //注册
+
+		case 4 : top.main.location='addnew.asp';break;   //增加新贴
+
+		case 5 : top.main.location='index1.asp';break;   //第一页
+
+		case 6 : //上一页
+
+			var obj=top.main
+
+			var str=obj.location.href;	
+
+			if(str.indexOf("index1")>0)
+
+				obj.location="index1.asp@page="+obj.document.all("ppage").value;
+
+			else
+
+				obj.location="index1.asp";
+
+			break;   
+
+		case 7 : //下一页
+
+			var obj=top.main
+
+			var str=obj.location.href;	
+
+			if(str.indexOf("index1")>0)
+
+				obj.location="index1.asp@page="+obj.document.all("npage").value;
+
+			else
+
+				obj.location="index1.asp";
+
+			break;   
+
+		case 8 :  //最后一页
+
+			var obj=top.main
+
+			var str=obj.location.href;	
+
+			if(str.indexOf("index1")>0)
+
+				obj.location="index1.asp@page="+obj.document.all("epage").value;
+
+			else
+
+				obj.location="index1.asp";
+
+			break;   
+
+		case 9: top.main.location='editinfo.asp';break;
+
+		case 10: top.main.location='quit.asp';break;
+
+		case 11: top.main.location='userinfo.asp';break;			
+
+		case 12: 
+
+			var newwin=top.open("../../../../waha.3322.net/default.htm");
+
+			newwin.focus();
+
+			break;
+
+	}
+
+}
+
+
+
+make_menu();
+
+</script>
+</fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+把如下代码加入<body>区域中
+&nbsp;&lt;STYLE type=text/css&gt;#menubar {
+	BACKGROUND: rgb(212,208,200); FONT: menu; CURSOR: default; POSITION: relative
+}
+#menubar .root {
+	BORDER-RIGHT: rgb(212,208,200) 1px solid; PADDING-RIGHT: 2pt; BORDER-TOP: rgb(212,208,200) 1px solid; PADDING-LEFT: 2pt; BORDER-LEFT: rgb(212,208,200) 1px solid; BORDER-BOTTOM: rgb(212,208,200) 1px solid
+}
+#menubar TABLE {
+	BORDER-RIGHT: gray 2px solid; PADDING-RIGHT: 0pt; BORDER-TOP: #eeeeee 2px solid; DISPLAY: none; PADDING-LEFT: 0pt; BACKGROUND: rgb(212,208,200); PADDING-BOTTOM: 0pt; MARGIN: 0pt; FONT: menu; BORDER-LEFT: #eeeeee 2px solid; PADDING-TOP: 0pt; BORDER-BOTTOM: gray 2px solid; POSITION: absolute
+}
+#menubar TABLE TD {
+	PADDING-RIGHT: 15pt; PADDING-LEFT: 12pt; PADDING-BOTTOM: 2pt; MARGIN: 0pt; PADDING-TOP: 2pt
+}
+#menubar .highlight {
+	BACKGROUND: #08246B; COLOR: white;
+}
+#menubar .disabledhighlight {
+	BACKGROUND: rgb(212,208,200); COLOR: gray
+}
+#menubar #break {
+	COLOR: gray
+}
+#menubar .disabled {
+	COLOR: gray
+}
+#menubar #break {
+	PADDING-RIGHT: 0pt; PADDING-LEFT: 0pt; PADDING-BOTTOM: 0pt; MARGIN: 0pt; PADDING-TOP: 0pt
+}
+#menubar SPAN.more {
+	PADDING-RIGHT: 0pt; PADDING-LEFT: 0pt; LEFT: 14pt; FLOAT: right; PADDING-BOTTOM: 0pt; MARGIN: 0pt; FONT: 9pt webdings; WIDTH: 0.8em; PADDING-TOP: 0pt; POSITION: relative; TOP: -2pt; HEIGHT: 9pt
+}
+#menubar .TBHandle {
+    BACKGROUND-COLOR: menu;
+    BORDER-LEFT: buttonhighlight 1px solid;
+    BORDER-RIGHT: buttonshadow 1px solid;
+    BORDER-TOP:	buttonhighlight	1px solid;
+    FONT-SIZE: 1px;
+    HEIGHT: 22px;
+    POSITION: absolute;
+    TOP: 1px;
+    WIDTH: 3px
+}
+#menubar .yToolbar {
+    BACKGROUND-COLOR: menu;
+    BORDER-BOTTOM: buttonshadow	1px solid;
+    BORDER-LEFT: buttonhighlight 1px solid;
+    BORDER-RIGHT: buttonshadow 1px solid;
+    BORDER-TOP:	buttonhighlight	1px solid;
+    HEIGHT: 27px;
+    LEFT: 0px;
+    POSITION: relative;
+    TOP: 0px;    
+}
+.handbtn {
+	BACKGROUND: buttonface; BORDER-BOTTOM: buttonshadow 1px solid; BORDER-LEFT: buttonhighlight 1px solid; BORDER-RIGHT: buttonshadow 1px solid; BORDER-TOP: buttonhighlight 1px solid; HEIGHT: 21px; WIDTH: 3px
+}
+.sepbtn1 {
+	BORDER-LEFT: buttonshadow 1px ridge; BORDER-RIGHT: buttonhighlight 1px solid; WIDTH: 2px
+}
+
+&lt;/STYLE&gt;
+&lt;script language=javascript&gt;
+
+//数组名+次序号码
+
+//数组内容第一个值为标题
+
+//&quot;样式名称&quot;,&quot;字体颜色&quot;,&quot;名称&quot;,&quot;连接&quot;,&quot;目标窗口&quot;
+
+OutBarFolder1=new Array(
+
+&quot;系统功能&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;新建管理人员&quot;,&quot;add&quot;,&quot;_blank&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;浏览管理人员&quot;,&quot;none&quot;,&quot;_blank&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;修改管理人员资料&quot;,&quot;none&quot;,&quot;_blank&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;更改密码&quot;,&quot;none&quot;,&quot;_blank&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;权限分配&quot;,&quot;none&quot;,&quot;none&quot;,
+
+&quot;break&quot;,&quot;default&quot;,&quot;&lt;hr&gt;&quot;,&quot;none&quot;,&quot;none&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;新建管理人员&quot;,&quot;add&quot;,&quot;_blank&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;新建管理人员&quot;,&quot;add&quot;,&quot;_blank&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;新建管理人员&quot;,&quot;add&quot;,&quot;_blank&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;新建管理人员&quot;,&quot;add&quot;,&quot;_blank&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;新建管理人员&quot;,&quot;add&quot;,&quot;_blank&quot;,
+
+&quot;break&quot;,&quot;default&quot;,&quot;&lt;hr&gt;&quot;,&quot;none&quot;,&quot;none&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;备份数据&quot;,&quot;none&quot;,&quot;_top&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;恢复数据&quot;,&quot;none&quot;,&quot;_top&quot;,
+
+&quot;break&quot;,&quot;default&quot;,&quot;&lt;hr&gt;&quot;,&quot;none&quot;,&quot;none&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;更改个人资料&quot;,&quot;none&quot;,&quot;_blank&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;更改个人密码&quot;,&quot;none&quot;,&quot;_blank&quot;,
+
+&quot;break&quot;,&quot;default&quot;,&quot;&lt;hr&gt;&quot;,&quot;none&quot;,&quot;none&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;退出管理系统&quot;,&quot;none&quot;,&quot;_top&quot;
+
+);
+
+OutBarFolder2=new Array(
+
+&quot;系统功能&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;新建管理人员&quot;,&quot;add&quot;,&quot;_blank&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;浏览管理人员&quot;,&quot;none&quot;,&quot;_blank&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;修改管理人员资料&quot;,&quot;none&quot;,&quot;_blank&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;更改密码&quot;,&quot;none&quot;,&quot;_blank&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;权限分配&quot;,&quot;none&quot;,&quot;none&quot;,
+
+&quot;break&quot;,&quot;default&quot;,&quot;&lt;hr&gt;&quot;,&quot;none&quot;,&quot;none&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;新建管理人员&quot;,&quot;add&quot;,&quot;_blank&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;新建管理人员&quot;,&quot;add&quot;,&quot;_blank&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;新建管理人员&quot;,&quot;add&quot;,&quot;_blank&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;新建管理人员&quot;,&quot;add&quot;,&quot;_blank&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;新建管理人员&quot;,&quot;add&quot;,&quot;_blank&quot;,
+
+&quot;break&quot;,&quot;default&quot;,&quot;&lt;hr&gt;&quot;,&quot;none&quot;,&quot;none&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;备份数据&quot;,&quot;none&quot;,&quot;_top&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;恢复数据&quot;,&quot;none&quot;,&quot;_top&quot;,
+
+&quot;break&quot;,&quot;default&quot;,&quot;&lt;hr&gt;&quot;,&quot;none&quot;,&quot;none&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;更改个人资料&quot;,&quot;none&quot;,&quot;_blank&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;更改个人密码&quot;,&quot;none&quot;,&quot;_blank&quot;,
+
+&quot;break&quot;,&quot;default&quot;,&quot;&lt;hr&gt;&quot;,&quot;none&quot;,&quot;none&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;退出管理系统&quot;,&quot;none&quot;,&quot;_top&quot;
+
+);
+
+OutBarFolder3=new Array(
+
+&quot;系统功能&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;新建管理人员&quot;,&quot;add&quot;,&quot;_blank&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;浏览管理人员&quot;,&quot;none&quot;,&quot;_blank&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;修改管理人员资料&quot;,&quot;none&quot;,&quot;_blank&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;更改密码&quot;,&quot;none&quot;,&quot;_blank&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;权限分配&quot;,&quot;none&quot;,&quot;none&quot;,
+
+&quot;break&quot;,&quot;default&quot;,&quot;&lt;hr&gt;&quot;,&quot;none&quot;,&quot;none&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;新建管理人员&quot;,&quot;add&quot;,&quot;_blank&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;新建管理人员&quot;,&quot;add&quot;,&quot;_blank&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;新建管理人员&quot;,&quot;add&quot;,&quot;_blank&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;新建管理人员&quot;,&quot;add&quot;,&quot;_blank&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;新建管理人员&quot;,&quot;add&quot;,&quot;_blank&quot;,
+
+&quot;break&quot;,&quot;default&quot;,&quot;&lt;hr&gt;&quot;,&quot;none&quot;,&quot;none&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;备份数据&quot;,&quot;none&quot;,&quot;_top&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;恢复数据&quot;,&quot;none&quot;,&quot;_top&quot;,
+
+&quot;break&quot;,&quot;default&quot;,&quot;&lt;hr&gt;&quot;,&quot;none&quot;,&quot;none&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;更改个人资料&quot;,&quot;none&quot;,&quot;_blank&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;更改个人密码&quot;,&quot;none&quot;,&quot;_blank&quot;,
+
+&quot;break&quot;,&quot;default&quot;,&quot;&lt;hr&gt;&quot;,&quot;none&quot;,&quot;none&quot;,
+
+&quot;none&quot;,&quot;default&quot;,&quot;退出管理系统&quot;,&quot;none&quot;,&quot;_top&quot;
+
+);
+
+	var childActive = null 
+
+    var menuActive = null
+
+    var lastHighlight = null
+
+    var active = false
+
+   
+
+    function getReal(el) {
+
+      // Find a table cell element in the parent chain */
+
+      temp = el
+
+      while ((temp!=null) &amp;&amp; (temp.tagName!=&quot;TABLE&quot;) &amp;&amp; (temp.className!=&quot;root&quot;) &amp;&amp; (temp.id!=&quot;menuBar&quot;)) {
+
+        if (temp.tagName==&quot;TD&quot;)
+
+          el = temp
+
+        temp = temp.parentElement
+
+      }
+
+      return el
+
+    }
+
+
+
+    function raiseMenu(el) {
+
+      el.style.borderLeft = &quot;1px #08246B solid&quot;
+
+      el.style.borderTop = &quot;1px #08246B solid&quot;
+
+      el.style.borderRight = &quot;1px #08246B solid&quot;
+
+      el.style.borderBottom = &quot;1px #08246B solid&quot;
+
+      el.style.background = &quot;#B5BED6&quot;
+
+    }
+
+
+
+    function clearHighlight(el) {
+
+      if (el==null) return
+
+      el.style.borderRight = &quot;1px lightgrey solid&quot;
+
+      el.style.borderBottom = &quot;1px lightgrey solid&quot;
+
+      el.style.borderTop = &quot;1px lightgrey solid&quot;
+
+      el.style.borderLeft = &quot;1px lightgrey solid&quot; 
+
+      el.style.background = &quot;rgb(212,208,200)&quot;
+
+    }
+
+
+
+    function sinkMenu(el) {
+
+      el.style.borderRight = &quot;1px #EEEEEE solid&quot;
+
+      el.style.borderBottom = &quot;1px #EEEEEE solid&quot;
+
+      el.style.borderTop = &quot;1px gray solid&quot;
+
+      el.style.borderLeft = &quot;1px gray solid&quot;
+
+      el.style.background = &quot;rgb(212,208,200)&quot;
+
+    }
+
+
+
+    function menuHandler(menuItem) {
+
+      // Write generic menu handlers here!
+
+      // Returning true collapses the menu. Returning false does not collapse the menu
+
+      return true
+
+    }
+
+
+
+    function getOffsetPos(which,el,tagName) {
+
+      var pos = 0 // el[&quot;offset&quot; + which]
+
+      while (el.tagName!=tagName) {
+
+        pos+=el[&quot;offset&quot; + which]
+
+        el = el.offsetParent
+
+      }
+
+      return pos	
+
+    }
+
+
+
+    function getRootTable(el) {
+
+      el = el.offsetParent
+
+      if (el.tagName==&quot;TR&quot;) 
+
+        el = el.offsetParent
+
+      return el
+
+    }
+
+
+
+    function getElement(el,tagName) {
+
+      while ((el!=null) &amp;&amp; (el.tagName!=tagName) )
+
+        el = el.parentElement
+
+      return el
+
+    }
+
+
+
+    function processClick() {
+
+      var el = getReal(event.srcElement)
+
+      if ((getRootTable(el).id==&quot;menuBar&quot;) &amp;&amp; (active)) {        
+
+        cleanupMenu(menuActive)
+
+        clearHighlight(menuActive)
+
+        active=false
+
+        lastHighlight=null
+
+        doHighlight(el)
+
+      }
+
+      else {
+
+        if ((el.className==&quot;root&quot;) || (!menuHandler(el)))
+
+          doMenuDown(el)
+
+        else {
+
+          if (el._childItem==null) 
+
+            el._childItem = getChildren(el)
+
+          if (el._childItem!=null)  return;
+
+          if ((el.id!=&quot;break&quot;) &amp;&amp; (el.className!=&quot;disabled&quot;) &amp;&amp; (el.className!=&quot;disabledhighlight&quot;) &amp;&amp; (el.className!=&quot;clear&quot;))  {
+
+            if (menuHandler(el)) {
+
+              cleanupMenu(menuActive)
+
+              clearHighlight(menuActive)
+
+              active=false
+
+              lastHighlight=null
+
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+
+
+    function getChildren(el) {
+
+      var tList = el.children.tags(&quot;TABLE&quot;)
+
+      var i = 0
+
+      while ((i&lt;tList.length) &amp;&amp; (tList[i].tagName!=&quot;TABLE&quot;))
+
+        i++
+
+      if (i==tList.length)
+
+        return null
+
+      else
+
+        return tList[i]
+
+    }
+
+
+
+    function doMenuDown(el) {
+
+      if (el._childItem==null) 
+
+        el._childItem = getChildren(el)
+
+      if ((el._childItem!=null) &amp;&amp; (el.className!=&quot;disabled&quot;) &amp;&amp; (el.className!=&quot;disabledhighlight&quot;)) {
+
+        // Performance Optimization - Cache child element
+
+        ch = el._childItem
+
+        if (ch.style.display==&quot;block&quot;) {
+
+          removeHighlight(ch.active)
+
+          return
+
+        }
+
+        ch.style.display = &quot;block&quot;
+
+        if (el.className==&quot;root&quot;) {
+
+          ch.style.pixelTop = el.offsetHeight + el.offsetTop + 2
+
+          ch.style.pixelLeft = el.offsetLeft + 1
+
+	  if (ch.style.pixelWidth==0)
+
+            ch.style.pixelWidth = ch.rows[0].offsetWidth+50
+
+          sinkMenu(el)
+
+          active = true
+
+          menuActive = el
+
+        } else {
+
+          childActive = el
+
+          ch.style.pixelTop = getOffsetPos(&quot;Top&quot;,el,&quot;TABLE&quot;) -3 // el.offsetTop + el.offsetParent.offsetTop - 3
+
+          ch.style.pixelLeft = el.offsetLeft + el.offsetWidth
+
+	  if (ch.style.pixelWidth==0)
+
+            ch.style.pixelWidth = ch.offsetWidth+50
+
+        }     
+
+      }
+
+    }
+
+ 
+
+    function doHighlight(el) {
+
+      el = getReal(el)
+
+      if (&quot;root&quot;==el.className) {
+
+        if ((menuActive!=null) &amp;&amp; (menuActive!=el)) {
+
+          clearHighlight(menuActive)
+
+        }
+
+        if (!active) {
+
+          raiseMenu(el)
+
+        }          
+
+        else 
+
+          sinkMenu(el)
+
+        if ((active) &amp;&amp; (menuActive!=el)) {
+
+          cleanupMenu(menuActive)          
+
+          doMenuDown(el)
+
+        }
+
+        menuActive = el  
+
+        lastHighlight=null
+
+      }
+
+      else {
+
+        if (childActive!=null) 
+
+          if (!childActive.contains(el)) 
+
+            closeMenu(childActive, el)    
+
+
+
+        if ((&quot;TD&quot;==el.tagName) &amp;&amp; (&quot;clear&quot;!=el.className)) {
+
+          var ch = getRootTable(el)         
+
+          if (ch.active!=null) {
+
+            if (ch.active!=el) {
+
+              if (ch.active.className==&quot;disabledhighlight&quot;)  
+
+                ch.active.className=&quot;disabled&quot;
+
+              else
+
+                ch.active.className=&quot;&quot;
+
+              }
+
+            }
+
+          ch.active = el
+
+          lastHighlight = el
+
+          if ((el.className==&quot;disabled&quot;) || (el.className==&quot;disabledhighlight&quot;) || (el.id==&quot;break&quot;)) 
+
+            el.className = &quot;disabledhighlight&quot;
+
+          else {
+
+            if (el.id!=&quot;break&quot;) {
+
+              el.className = &quot;highlight&quot;
+
+              if (el._childItem==null) 
+
+                el._childItem = getChildren(el)
+
+              if (el._childItem!=null) {
+
+                doMenuDown(el)
+
+              }
+
+            }  
+
+          }
+
+        }
+
+      }
+
+    }
+
+
+
+    function removeHighlight(el) {
+
+      if (el!=null)
+
+        if ((el.className==&quot;disabled&quot;) || (el.className==&quot;disabledhighlight&quot;))  
+
+          el.className=&quot;disabled&quot;
+
+        else
+
+          el.className=&quot;&quot;
+
+    }
+
+
+
+    function cleanupMenu(el) {
+
+      if (el==null) return
+
+      for (var i = 0; i &lt; el.all.length; i++) {
+
+        var item = el.all[i]
+
+        if (item.tagName==&quot;TABLE&quot;)
+
+         item.style.display = &quot;&quot;
+
+        removeHighlight(item.active)
+
+        item.active=null
+
+      }
+
+    }
+
+
+
+
+
+    function closeMenu(ch, el) {
+
+      var start = ch
+
+      while (ch.className!=&quot;root&quot;) {
+
+          ch = ch.parentElement
+
+          if (((!ch.contains(el)) &amp;&amp; (ch.className!=&quot;root&quot;))) {
+
+            start=ch
+
+          }
+
+      }
+
+      cleanupMenu(start)
+
+    }
+
+ 
+
+    function checkMenu() {      
+
+      if (document.all.menuBar==null) return
+
+      if ((!document.all.menuBar.contains(event.srcElement)) &amp;&amp; (menuActive!=null)) {
+
+        clearHighlight(menuActive)
+
+        closeMenu(menuActive)
+
+        active = false
+
+        menuActive=null
+
+        choiceActive = null
+
+      }
+
+    }
+
+
+
+    function doCheckOut() {
+
+      var el = event.toElement      
+
+      if ((!active) &amp;&amp; (menuActive!=null) &amp;&amp; (!menuActive.contains(el))) {
+
+        clearHighlight(menuActive)
+
+        menuActive=null
+
+      }
+
+    }
+
+
+
+
+
+    function processKey() {
+
+      if (active) {
+
+        switch (event.keyCode) {
+
+         case 13: lastHighlight.click(); break;
+
+         case 39:  // right
+
+           if ((lastHighlight==null) || (lastHighlight._childItem==null)) {
+
+             var idx = menuActive.cellIndex
+
+//             if (idx==menuActive.offsetParent.cells.length-2)
+
+             if (idx==getElement(menuActive,&quot;TR&quot;).cells.length-2)
+
+               idx = 0
+
+             else
+
+               idx++
+
+             newItem = getElement(menuActive,&quot;TR&quot;).cells[idx]
+
+           } else
+
+           {
+
+             newItem = lastHighlight._childItem.rows[0].cells[0]
+
+           }
+
+           doHighlight(newItem)
+
+           break; 
+
+         case 37: //left
+
+           if ((lastHighlight==null) || (getElement(getRootTable(lastHighlight),&quot;TR&quot;).id==&quot;menuBar&quot;)) {
+
+             var idx = menuActive.cellIndex
+
+             if (idx==0)
+
+               idx = getElement(menuActive,&quot;TR&quot;).cells.length-2
+
+             else
+
+               idx--
+
+             newItem = getElement(menuActive,&quot;TR&quot;).cells[idx]
+
+           } else
+
+           {
+
+             newItem = getElement(lastHighlight,&quot;TR&quot;)
+
+             while (newItem.tagName!=&quot;TD&quot;)
+
+               newItem = newItem.parentElement
+
+           }
+
+           doHighlight(newItem)
+
+           break; 
+
+         case 40: // down
+
+            if (lastHighlight==null) {
+
+              itemCell = menuActive._childItem
+
+              curCell=0
+
+              curRow = 0
+
+            }
+
+            else {
+
+              itemCell = getRootTable(lastHighlight)
+
+              if (lastHighlight.cellIndex==getElement(lastHighlight,&quot;TR&quot;).cells.length-1) {
+
+                curCell = 0
+
+                curRow = getElement(lastHighlight,&quot;TR&quot;).rowIndex+1
+
+                if (getElement(lastHighlight,&quot;TR&quot;).rowIndex==itemCell.rows.length-1)
+
+                  curRow = 0
+
+              } else {
+
+                curCell = lastHighlight.cellIndex+1
+
+                curRow = getElement(lastHighlight,&quot;TR&quot;).rowIndex
+
+              }
+
+            }
+
+            doHighlight(itemCell.rows[curRow].cells[curCell])
+
+            break;
+
+         case 38: // up
+
+            if (lastHighlight==null) {
+
+              itemCell = menuActive._childItem
+
+              curRow = itemCell.rows.length-1
+
+              curCell= itemCell.rows[curRow].cells.length-1
+
+
+
+            }
+
+            else {
+
+              itemCell = getRootTable(lastHighlight)
+
+              if (lastHighlight.cellIndex==0) {
+
+                curRow = getElement(lastHighlight,&quot;TR&quot;).rowIndex-1
+
+                if (curRow==-1)
+
+                  curRow = itemCell.rows.length-1
+
+                curCell= itemCell.rows[curRow].cells.length-1
+
+
+
+              } else {
+
+                curCell = lastHighlight.cellIndex - 1
+
+                curRow = getElement(lastHighlight,&quot;TR&quot;).rowIndex
+
+              }
+
+            }
+
+            doHighlight(itemCell.rows[curRow].cells[curCell])
+
+            break;
+
+           if (lastHighlight==null) {
+
+              curCell = menuActive._childItem
+
+              curRow = curCell.rows.length-1
+
+            }
+
+            else {
+
+              curCell = getRootTable(lastHighlight)
+
+              if (getElement(lastHighlight,&quot;TR&quot;).rowIndex==0)
+
+                curRow = curCell.rows.length-1
+
+              else
+
+                curRow = getElement(lastHighlight,&quot;TR&quot;).rowIndex-1
+
+            }
+
+            doHighlight(curCell.rows[curRow].cells[0])
+
+            break;
+
+        }
+
+      }
+
+    }
+
+
+
+
+
+function make_menu() {
+
+document.write(&quot;&lt;table width='100%' cellpadding='0' cellspacing='0' border='0' style='background=rgb(212,208,200); BACKGROUND: buttonface; BORDER-BOTTOM: buttonshadow 1px solid; BORDER-LEFT: buttonhighlight 1px solid; BORDER-RIGHT: buttonshadow 1px solid; BORDER-TOP: buttonhighlight 1px solid;'&gt;&quot;);
+
+document.write(&quot;&lt;tr&gt;&lt;TD&gt;&lt;SPAN class=handbtn&gt;&lt;/SPAN&gt;&lt;/TD&gt;&lt;td&gt;&quot;);
+
+document.write(&quot;&lt;TABLE ID=menuBar ONSELECTSTART='return false' ONCLICK='processClick()' ONMOUSEOVER='doHighlight(event.toElement)' ONMOUSEOUT='doCheckOut()' ONKEYDOWN='processKey()'&gt;&lt;TR&gt;&quot;);
+
+
+
+	j=1;
+
+	while(eval(&quot;window.OutBarFolder&quot;+j))
+
+		j++;
+
+	i=1;
+
+	while(i&lt;j)
+
+	{
+
+		Folder=eval(&quot;OutBarFolder&quot;+i)
+
+        document.write(&quot;&lt;TD NOWRAP CLASS=root&gt;&quot;+Folder[0]+&quot;&lt;TABLE CELLSPACING=0 CELLPADDING=0&gt;&quot;);
+
+		MakeItems(Folder);
+
+        document.write(&quot;&lt;/TABLE&gt;&quot;);
+
+		i++;
+
+	}
+
+document.write(&quot;&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&quot;);
+
+document.write(&quot;&lt;/td&gt;&lt;td width=100% ONMOUSEOVER='processClick()'&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&quot;);
+
+
+
+}
+
+
+
+function MakeItems(Folder)
+
+{
+
+	var items=0;
+
+	while(Folder[items+1])
+
+		items+=5;
+
+	items/=5;
+
+	for(var i=1;i&lt;items*5;i+=5)
+
+	{
+
+/*
+
+		if(Folder[i+1]==&quot;BREAK&quot;) {
+
+			document.write(&quot;&lt;TD NOWRAP ID=break&gt;&lt;HR&gt;&lt;/TD&gt;&quot;);
+
+		}
+
+		else {
+
+			document.write(&quot;&lt;TR&gt;&lt;TD NOWRAP&gt;&quot;+Folder[i+1]+&quot;&lt;/TD&gt;&lt;/TR&gt;&quot;);
+
+		}
+
+*/
+
+			document.write(&quot;&lt;TR&gt;&lt;TD NOWRAP&quot;+((Folder[i+0]==&quot;none&quot;)?&quot;&quot;:&quot; ID='&quot;+Folder[i+0]+&quot;'&quot;)+((Folder[i+3]==&quot;none&quot;)?&quot;&quot;:&quot; onclick=\&quot;go(1,'&quot;+Folder[i+3]+&quot;')\&quot;&quot;)+&quot;&gt;&quot;+((Folder[i+1]==&quot;default&quot;)?&quot;&quot;:&quot;&lt;font color=&quot;+Folder[i+1]+&quot;&gt;&quot;)+Folder[i+2]+((Folder[i+1]==&quot;default&quot;)?&quot;&quot;:&quot;&lt;/font&gt;&quot;)+&quot;&lt;/TD&gt;&lt;/TR&gt;&quot;);
+
+//alert(&quot;&lt;TR&gt;&lt;TD NOWRAP &quot;+((Folder[i+0]==&quot;none&quot;)?&quot;&quot;:&quot;ID='&quot;+Folder[i+0]+&quot;'&quot;)+((Folder[i+3]==&quot;none&quot;)?&quot;&quot;:&quot; onclick=go(1,'&quot;+Folder[i+3]+&quot;')&quot;)+&quot;&gt;&quot;+((Folder[i+1]==&quot;default&quot;)?&quot;&quot;:&quot;&lt;font color=&quot;+Folder[i+1]+&quot;&gt;&quot;)+Folder[i+2]+((Folder[i+1]==&quot;default&quot;)?&quot;&quot;:&quot;&lt;/font&gt;&quot;)+&quot;&lt;/TD&gt;&lt;/TR&gt;&quot;);
+
+	}	
+
+}
+
+
+
+function go(i,iurl) {
+
+	switch (i) 
+
+	{
+
+		case 1 : parent.location=iurl;break; //返回首页
+
+		case 2 : top.main.location='login.htm';break;  //登录
+
+		case 3 : top.main.location='shenqing.htm';break;  //注册
+
+		case 4 : top.main.location='addnew.asp';break;   //增加新贴
+
+		case 5 : top.main.location='index1.asp';break;   //第一页
+
+		case 6 : //上一页
+
+			var obj=top.main
+
+			var str=obj.location.href;	
+
+			if(str.indexOf(&quot;index1&quot;)&gt;0)
+
+				obj.location=&quot;index1.asp@page=&quot;+obj.document.all(&quot;ppage&quot;).value;
+
+			else
+
+				obj.location=&quot;index1.asp&quot;;
+
+			break;   
+
+		case 7 : //下一页
+
+			var obj=top.main
+
+			var str=obj.location.href;	
+
+			if(str.indexOf(&quot;index1&quot;)&gt;0)
+
+				obj.location=&quot;index1.asp@page=&quot;+obj.document.all(&quot;npage&quot;).value;
+
+			else
+
+				obj.location=&quot;index1.asp&quot;;
+
+			break;   
+
+		case 8 :  //最后一页
+
+			var obj=top.main
+
+			var str=obj.location.href;	
+
+			if(str.indexOf(&quot;index1&quot;)&gt;0)
+
+				obj.location=&quot;index1.asp@page=&quot;+obj.document.all(&quot;epage&quot;).value;
+
+			else
+
+				obj.location=&quot;index1.asp&quot;;
+
+			break;   
+
+		case 9: top.main.location='editinfo.asp';break;
+
+		case 10: top.main.location='quit.asp';break;
+
+		case 11: top.main.location='userinfo.asp';break;			
+
+		case 12: 
+
+			var newwin=top.open(&quot;../../../../waha.3322.net/default.htm&quot;);
+
+			newwin.focus();
+
+			break;
+
+	}
+
+}
+
+
+
+make_menu();
+
+&lt;/script&gt;
+
+
+
+
+&nbsp;
+
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

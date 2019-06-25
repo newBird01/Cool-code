@@ -1,0 +1,857 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--页面内的日历显示</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body  onload="init()" onmouseup="hidepcal()">
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">页面内的日历显示</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=123" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<style type=text/css>
+TABLE.cal 	{ COLOR: #c0c0c0; WIDTH: 200px }
+TD.cal 		{ FONT-FAMILY: tahoma; FONT-SIZE: 12pt; TEXT-ALIGN: center }
+INPUT.cal 	{ COLOR: white; BACKGROUND: black; BORDER: none; WIDTH: 20 }
+A		{ TEXT-DECORATION: none; }
+A.cal:link 	{ COLOR: white; }
+A.cal:visited 	{ COLOR: white; }
+A.cal:active 	{ COLOR: white; }
+A.cal:hover 	{ COLOR: gray; }
+A.tdy:link 	{ COLOR: #c5f9c5; }
+A.tdy:visited 	{ COLOR: #c5f9c5; }
+A.tdy:active 	{ COLOR: white; }
+A.tdy:hover 	{ COLOR: gray; }
+A.tdz:link 	{ COLOR: yellow; FONT-WEIGHT: bold; }
+A.tdz:visited 	{ COLOR: yellow; FONT-WEIGHT: bold; }
+#ppcalendar 	{ LEFT: 116px; POSITION: absolute; TOP: 100px }
+#pcmonth 	{ LEFT: 116px; POSITION: absolute; TOP: 100px }
+</style>
+<SCRIPT language=vbscript>
+function mlookup(mnt)
+select case mnt
+	case  1 mlookup="J A N"
+	case  2 mlookup="F E B"
+	case  3 mlookup="M A R"
+	case  4 mlookup="A P R"
+	case  5 mlookup="M A Y"
+	case  6 mlookup="J U N"
+	case  7 mlookup="J U L"	
+	case  8 mlookup="A U G"
+	case  9 mlookup="S E P"
+	case 10 mlookup="O C T"
+	case 11 mlookup="N O V"
+	case 12 mlookup="D E C"
+end select
+end function
+
+function mlookup2(mnt)
+select case mnt
+	case  1 mlookup2="January"
+	case  2 mlookup2="February"
+	case  3 mlookup2="March"
+	case  4 mlookup2="April"
+	case  5 mlookup2="May"
+	case  6 mlookup2="June"
+	case  7 mlookup2="July"	
+	case  8 mlookup2="August"
+	case  9 mlookup2="September"
+	case 10 mlookup2="October"
+	case 11 mlookup2="November"
+	case 12 mlookup2="December"
+end select
+end function
+
+function yformat(yyr)
+	for a=1 to len(yyr)
+		b=b+mid(yyr,a,1)+" "
+	next
+	yformat=mid(b,1,len(b)-1)
+end function
+
+function dlookup(mm, yy)
+	dlookup=31
+	if mm<8 and mm/2=fix(mm/2) then dlookup=30
+	if mm>7 and mm/2<>fix(mm/2) then dlookup=30
+	
+	if mm=2 then
+		lpyr=leapyear(yy)
+		if lpyr=1 then dlookup=29
+		if lpyr=0 then dlookup=28
+	end if
+end function
+
+function leapyear(yyr)
+leapyear=0
+	if yyr/4=fix(yyr/4) then leapyear=1
+	if yyr/100=fix(yyr/100) then leapyear=0
+	if yyr/400=fix(yyr/400) then leapyear=1
+end function
+
+function namedate2(mmddyy)
+	ddate=mmddyy
+	yys=mid(ddate,1,4)
+	mms=mid(ddate,5,2)
+	dds=mid(ddate,7,2) * 1
+	ndate=mlookup2(mms) & " " & dds & ", " & yys
+	namedate2=ndate
+end function
+
+sub init()
+	document.all.mm.value=month(now())
+	document.all.yy.value=year(now())
+	document.all.dd.value=day(now())
+	call pcalendar()
+end sub
+
+sub pcalendar()
+	mnt=document.all.mm.value
+	yyr=document.all.yy.value
+	ddy=document.all.dd.value
+	fday=weekday(mnt & "/1/" & yyr)
+	lday=dlookup(mnt, yyr)
+
+	innerHTML="<a class='tdy' href='javascript: showPcmonth()'>  " & mlookup(mnt) &  "   " & yformat(yyr) & " </a>"
+	document.all.my.innerHTML=innerHTML
+
+	innerHTML="<a class='tdy' href='javascript: hidePcmonth()'> " & yformat(yyr) & " </a>"
+	document.all.y.innerHTML=innerHTML
+
+	for a=1 to 6				' six weeks
+		for b=1 to 7			' seven days
+			c=c+1
+			if c>=fday then
+				d=d+1
+			else 	
+				d=0
+			end if
+			targetId=a & b
+			if d<=lday then 
+				if d=day(now()) and int(mnt)=month(now()) and int(yyr)=year(now()) then
+					innerHTML="<a class='tdz' "
+				else
+					innerHTML="<a class='cal' "
+				end if
+				innerHTML=innerHTML & "href='javascript: outday(" & d & ")'> " & d & " </a>"
+				if d=0 then innerHTML=""
+				document.all(targetId).innerHTML=innerHTML
+			else
+				document.all(targetId).innerHTML=""
+			end if
+		next
+		fday=1
+	next	
+end sub
+
+sub prevyr()
+	showpcmonth()
+	document.all.yy.value=document.all.yy.value-1
+	call pcalendar()
+end sub
+
+sub nextyr()
+	showpcmonth()
+	document.all.yy.value=document.all.yy.value+1
+	call pcalendar()
+end sub
+
+sub prevmo()
+	showpcal()
+	document.all.mm.value=document.all.mm.value-1
+	if document.all.mm.value=0 then 
+		document.all.mm.value=12
+		document.all.yy.value=document.all.yy.value-1
+	end if
+	call pcalendar()
+end sub
+
+sub nextmo()
+	showpcal()
+	document.all.mm.value=document.all.mm.value+1
+	if document.all.mm.value=13 then 
+		document.all.mm.value=1
+		document.all.yy.value=document.all.yy.value+1
+	end if	
+	call pcalendar()
+end sub
+
+sub outday(dd)
+	mms=document.all.mm.value
+	yys=document.all.yy.value
+	dds=document.all.dd.value
+	'dout=yys & right("0" & mms, 2) & right ("0" & dd,2)
+	dout= mms & "/" & dd & "/" & yys
+	dtgo=document.all.cinput.value
+	document.all(dtgo).value=dout	
+	call hidePCal()
+end sub
+
+sub showPCalE(ddd) 
+	ddate=document.all(ddd).value
+	yys=year(ddate)
+	mms=month(ddate)
+	dds=day(ddate)
+
+	if yys-document.all("yy").value<>0 or mms-document.all("mm").value<>0 then
+		document.all("yy").value=yys
+		document.all("mm").value=mms
+		pcalendar()	
+	end if
+
+	showPCal()
+	document.all("cinput").value=ddd
+end sub
+
+sub cmonth(mnt)
+	document.all.mm.value=mnt
+	hidePCmonth()
+	call pcalendar()	
+end sub
+
+sub showPCmonth()
+	document.all("pcmonth").style.display=""
+end sub
+
+sub hidePCmonth()
+	showpcal()
+	document.all("pcmonth").style.display="none"
+end sub
+
+sub showPCal()
+	document.all("ppcalendar").style.display=""
+end sub
+
+sub hidePCal()	
+	document.all("ppcalendar").style.display="none"
+	document.all("pcmonth").style.display="none"	
+end sub
+
+</SCRIPT>
+
+<DIV id=ppcalendar style="display: none">
+<TABLE class="cal" bgColor=black cellPadding=0 cellSpacing=0 height=18>
+  <TBODY>
+  <TR>
+    <TD class="cal" width=20><input class="cal" type="button" value="<" onclick="javascript: prevmo()"></TD>
+    <TD class="cal" id=my width=160>Month Year </TD>
+    <TD class="cal" width=20><input class="cal" type="button" value=">" onclick="javascript: nextmo()"></TD>
+</TR></TBODY></TABLE>
+<TABLE class="cal" bgColor=#555555 cellPadding=0 cellSpacing=0>
+  <TBODY>
+  <TR>
+    <TD class="cal">Su</TD>
+    <TD class="cal">Mo</TD>
+    <TD class="cal">Tu</TD>
+    <TD class="cal">We</TD>
+    <TD class="cal">Th</TD>
+    <TD class="cal">Fr</TD>
+    <TD class="cal">Sa</TD></TR>
+  <TR>
+    <TD></TD></TR></TBODY></TABLE>
+<TABLE class="cal" bgColor=black cellPadding=0 cellSpacing=0 height=120>
+  <TBODY>
+  <TR>
+    <TD class="cal" id=11> </TD>
+    <TD class="cal" id=12> </TD>
+    <TD class="cal" id=13> </TD>
+    <TD class="cal" id=14> </TD>
+    <TD class="cal" id=15> </TD>
+    <TD class="cal" id=16> </TD>
+    <TD class="cal" id=17> </TD></TR>
+  <TR>
+    <TD class="cal" id=21> </TD>
+    <TD class="cal" id=22> </TD>
+    <TD class="cal" id=23> </TD>
+    <TD class="cal" id=24> </TD>
+    <TD class="cal" id=25> </TD>
+    <TD class="cal" id=26> </TD>
+    <TD class="cal" id=27> </TD></TR>
+  <TR>
+    <TD class="cal" id=31> </TD>
+    <TD class="cal" id=32> </TD>
+    <TD class="cal" id=33> </TD>
+    <TD class="cal" id=34> </TD>
+    <TD class="cal" id=35> </TD>
+    <TD class="cal" id=36> </TD>
+    <TD class="cal" id=37> </TD></TR>
+  <TR>
+    <TD class="cal" id=41> </TD>
+    <TD class="cal" id=42> </TD>
+    <TD class="cal" id=43> </TD>
+    <TD class="cal" id=44> </TD>
+    <TD class="cal" id=45> </TD>
+    <TD class="cal" id=46> </TD>
+    <TD class="cal" id=47> </TD></TR>
+  <TR>
+    <TD class="cal" id=51> </TD>
+    <TD class="cal" id=52> </TD>
+    <TD class="cal" id=53> </TD>
+    <TD class="cal" id=54> </TD>
+    <TD class="cal" id=55> </TD>
+    <TD class="cal" id=56> </TD>
+    <TD class="cal" id=57> </TD></TR>
+  <TR>
+    <TD class="cal" id=61> </TD>
+    <TD class="cal" id=62> </TD>
+    <TD class="cal" id=63> </TD>
+    <TD class="cal" id=64> </TD>
+    <TD class="cal" id=65> </TD>
+    <TD class="cal" id=66> </TD>
+    <TD class="cal" id=67> </TD></TR></TBODY></TABLE>
+</DIV>
+
+<DIV id=pcmonth style="DISPLAY: none">
+<TABLE class="cal" bgColor=black cellPadding=0 cellSpacing=0 height=18>
+  <TBODY>
+  <TR>
+    <TD class="cal"  width=20><input class="cal" type="button" value="<" onclick="javascript: prevyr()"></TD>
+    <TD class="cal"  id=y width=160>Month Year </TD>
+    <TD class="cal"  width=20><input class="cal" type="button" value=">" onclick="javascript: nextyr()"></TD>
+  </TD></TR></TBODY></TABLE>
+<TABLE class="cal" bgColor=#555555 cellPadding=0 cellSpacing=0>
+  <TBODY>
+  <TR>
+    <TD class="cal" >Select a month</TD></TR>
+  <TR>
+    <TD></TD></TR></TBODY></TABLE>
+<TABLE class="cal" bgColor=black cellPadding=0 cellSpacing=0 height=120>
+  <TBODY>
+  <TR>
+    <TD class="cal" ><A class="cal" href="javascript: cmonth(1)"> Jan </A></TD>
+    <TD class="cal" ><A class="cal" href="javascript: cmonth(2)"> Feb </A></TD>
+    <TD class="cal" ><A class="cal" href="javascript: cmonth(3)"> Mar </A></TD>
+    <TD class="cal" ><A class="cal" href="javascript: cmonth(4)"> Apr </A></TD></TR>
+  <TR>
+    <TD class="cal" ><A class="cal" href="javascript: cmonth(5)"> May </A></TD>
+    <TD class="cal" ><A class="cal" href="javascript: cmonth(6)"> Jun </A></TD>
+    <TD class="cal" ><A class="cal" href="javascript: cmonth(7)"> Jul </A></TD>
+    <TD class="cal" ><A class="cal" href="javascript: cmonth(8)"> Aug </A></TD></TR>
+  <TR>
+    <TD class="cal" ><A class="cal" href="javascript: cmonth(9)"> Sep </A></TD>
+    <TD class="cal" ><A class="cal" href="javascript: cmonth(10)"> Oct </A></TD>
+    <TD class="cal" ><A class="cal" href="javascript: cmonth(11)"> Nov </A></TD>
+    <TD class="cal" ><A class="cal" href="javascript: cmonth(12)"> Dec </A></TD></TR></TBODY>
+</TABLE>
+</DIV>
+
+<INPUT name=mm type=hidden value="3"> 
+<INPUT name=dd type=hidden value="10"> 
+<INPUT name=yy type=hidden value="1977">
+<INPUT name=cinput type=hidden>
+
+<script language=vbscript>
+sub ck(xt)
+k=document.all(xt).value
+document.all(xt).value=formatdatetime("11/12/1999",2)
+end sub
+</script>
+<input type="text" name="tdat2" value="3/10/77">
+<a href="javascript: showPCalE('tdat2')">显示日历</a>
+</fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+第一步:把如下代码加入<body>区域中
+&nbsp;&lt;style type=text/css&gt;
+TABLE.cal 	{ COLOR: #c0c0c0; WIDTH: 200px }
+TD.cal 		{ FONT-FAMILY: tahoma; FONT-SIZE: 12pt; TEXT-ALIGN: center }
+INPUT.cal 	{ COLOR: white; BACKGROUND: black; BORDER: none; WIDTH: 20 }
+A		{ TEXT-DECORATION: none; }
+A.cal:link 	{ COLOR: white; }
+A.cal:visited 	{ COLOR: white; }
+A.cal:active 	{ COLOR: white; }
+A.cal:hover 	{ COLOR: gray; }
+A.tdy:link 	{ COLOR: #c5f9c5; }
+A.tdy:visited 	{ COLOR: #c5f9c5; }
+A.tdy:active 	{ COLOR: white; }
+A.tdy:hover 	{ COLOR: gray; }
+A.tdz:link 	{ COLOR: yellow; FONT-WEIGHT: bold; }
+A.tdz:visited 	{ COLOR: yellow; FONT-WEIGHT: bold; }
+#ppcalendar 	{ LEFT: 116px; POSITION: absolute; TOP: 100px }
+#pcmonth 	{ LEFT: 116px; POSITION: absolute; TOP: 100px }
+&lt;/style&gt;
+&lt;SCRIPT language=vbscript&gt;
+function mlookup(mnt)
+select case mnt
+	case  1 mlookup=&quot;J A N&quot;
+	case  2 mlookup=&quot;F E B&quot;
+	case  3 mlookup=&quot;M A R&quot;
+	case  4 mlookup=&quot;A P R&quot;
+	case  5 mlookup=&quot;M A Y&quot;
+	case  6 mlookup=&quot;J U N&quot;
+	case  7 mlookup=&quot;J U L&quot;	
+	case  8 mlookup=&quot;A U G&quot;
+	case  9 mlookup=&quot;S E P&quot;
+	case 10 mlookup=&quot;O C T&quot;
+	case 11 mlookup=&quot;N O V&quot;
+	case 12 mlookup=&quot;D E C&quot;
+end select
+end function
+
+function mlookup2(mnt)
+select case mnt
+	case  1 mlookup2=&quot;January&quot;
+	case  2 mlookup2=&quot;February&quot;
+	case  3 mlookup2=&quot;March&quot;
+	case  4 mlookup2=&quot;April&quot;
+	case  5 mlookup2=&quot;May&quot;
+	case  6 mlookup2=&quot;June&quot;
+	case  7 mlookup2=&quot;July&quot;	
+	case  8 mlookup2=&quot;August&quot;
+	case  9 mlookup2=&quot;September&quot;
+	case 10 mlookup2=&quot;October&quot;
+	case 11 mlookup2=&quot;November&quot;
+	case 12 mlookup2=&quot;December&quot;
+end select
+end function
+
+function yformat(yyr)
+	for a=1 to len(yyr)
+		b=b+mid(yyr,a,1)+&quot; &quot;
+	next
+	yformat=mid(b,1,len(b)-1)
+end function
+
+function dlookup(mm, yy)
+	dlookup=31
+	if mm&lt;8 and mm/2=fix(mm/2) then dlookup=30
+	if mm&gt;7 and mm/2&lt;&gt;fix(mm/2) then dlookup=30
+	
+	if mm=2 then
+		lpyr=leapyear(yy)
+		if lpyr=1 then dlookup=29
+		if lpyr=0 then dlookup=28
+	end if
+end function
+
+function leapyear(yyr)
+leapyear=0
+	if yyr/4=fix(yyr/4) then leapyear=1
+	if yyr/100=fix(yyr/100) then leapyear=0
+	if yyr/400=fix(yyr/400) then leapyear=1
+end function
+
+function namedate2(mmddyy)
+	ddate=mmddyy
+	yys=mid(ddate,1,4)
+	mms=mid(ddate,5,2)
+	dds=mid(ddate,7,2) * 1
+	ndate=mlookup2(mms) &amp; &quot; &quot; &amp; dds &amp; &quot;, &quot; &amp; yys
+	namedate2=ndate
+end function
+
+sub init()
+	document.all.mm.value=month(now())
+	document.all.yy.value=year(now())
+	document.all.dd.value=day(now())
+	call pcalendar()
+end sub
+
+sub pcalendar()
+	mnt=document.all.mm.value
+	yyr=document.all.yy.value
+	ddy=document.all.dd.value
+	fday=weekday(mnt &amp; &quot;/1/&quot; &amp; yyr)
+	lday=dlookup(mnt, yyr)
+
+	innerHTML=&quot;&lt;a class='tdy' href='javascript: showPcmonth()'&gt;  &quot; &amp; mlookup(mnt) &amp;  &quot;   &quot; &amp; yformat(yyr) &amp; &quot; &lt;/a&gt;&quot;
+	document.all.my.innerHTML=innerHTML
+
+	innerHTML=&quot;&lt;a class='tdy' href='javascript: hidePcmonth()'&gt; &quot; &amp; yformat(yyr) &amp; &quot; &lt;/a&gt;&quot;
+	document.all.y.innerHTML=innerHTML
+
+	for a=1 to 6				' six weeks
+		for b=1 to 7			' seven days
+			c=c+1
+			if c&gt;=fday then
+				d=d+1
+			else 	
+				d=0
+			end if
+			targetId=a &amp; b
+			if d&lt;=lday then 
+				if d=day(now()) and int(mnt)=month(now()) and int(yyr)=year(now()) then
+					innerHTML=&quot;&lt;a class='tdz' &quot;
+				else
+					innerHTML=&quot;&lt;a class='cal' &quot;
+				end if
+				innerHTML=innerHTML &amp; &quot;href='javascript: outday(&quot; &amp; d &amp; &quot;)'&gt; &quot; &amp; d &amp; &quot; &lt;/a&gt;&quot;
+				if d=0 then innerHTML=&quot;&quot;
+				document.all(targetId).innerHTML=innerHTML
+			else
+				document.all(targetId).innerHTML=&quot;&quot;
+			end if
+		next
+		fday=1
+	next	
+end sub
+
+sub prevyr()
+	showpcmonth()
+	document.all.yy.value=document.all.yy.value-1
+	call pcalendar()
+end sub
+
+sub nextyr()
+	showpcmonth()
+	document.all.yy.value=document.all.yy.value+1
+	call pcalendar()
+end sub
+
+sub prevmo()
+	showpcal()
+	document.all.mm.value=document.all.mm.value-1
+	if document.all.mm.value=0 then 
+		document.all.mm.value=12
+		document.all.yy.value=document.all.yy.value-1
+	end if
+	call pcalendar()
+end sub
+
+sub nextmo()
+	showpcal()
+	document.all.mm.value=document.all.mm.value+1
+	if document.all.mm.value=13 then 
+		document.all.mm.value=1
+		document.all.yy.value=document.all.yy.value+1
+	end if	
+	call pcalendar()
+end sub
+
+sub outday(dd)
+	mms=document.all.mm.value
+	yys=document.all.yy.value
+	dds=document.all.dd.value
+	'dout=yys &amp; right(&quot;0&quot; &amp; mms, 2) &amp; right (&quot;0&quot; &amp; dd,2)
+	dout= mms &amp; &quot;/&quot; &amp; dd &amp; &quot;/&quot; &amp; yys
+	dtgo=document.all.cinput.value
+	document.all(dtgo).value=dout	
+	call hidePCal()
+end sub
+
+sub showPCalE(ddd) 
+	ddate=document.all(ddd).value
+	yys=year(ddate)
+	mms=month(ddate)
+	dds=day(ddate)
+
+	if yys-document.all(&quot;yy&quot;).value&lt;&gt;0 or mms-document.all(&quot;mm&quot;).value&lt;&gt;0 then
+		document.all(&quot;yy&quot;).value=yys
+		document.all(&quot;mm&quot;).value=mms
+		pcalendar()	
+	end if
+
+	showPCal()
+	document.all(&quot;cinput&quot;).value=ddd
+end sub
+
+sub cmonth(mnt)
+	document.all.mm.value=mnt
+	hidePCmonth()
+	call pcalendar()	
+end sub
+
+sub showPCmonth()
+	document.all(&quot;pcmonth&quot;).style.display=&quot;&quot;
+end sub
+
+sub hidePCmonth()
+	showpcal()
+	document.all(&quot;pcmonth&quot;).style.display=&quot;none&quot;
+end sub
+
+sub showPCal()
+	document.all(&quot;ppcalendar&quot;).style.display=&quot;&quot;
+end sub
+
+sub hidePCal()	
+	document.all(&quot;ppcalendar&quot;).style.display=&quot;none&quot;
+	document.all(&quot;pcmonth&quot;).style.display=&quot;none&quot;	
+end sub
+
+&lt;/SCRIPT&gt;
+
+&lt;DIV id=ppcalendar style=&quot;display: none&quot;&gt;
+&lt;TABLE class=&quot;cal&quot; bgColor=black cellPadding=0 cellSpacing=0 height=18&gt;
+  &lt;TBODY&gt;
+  &lt;TR&gt;
+    &lt;TD class=&quot;cal&quot; width=20&gt;&lt;input class=&quot;cal&quot; type=&quot;button&quot; value=&quot;&lt;&quot; onclick=&quot;javascript: prevmo()&quot;&gt;&lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=my width=160&gt;Month Year &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; width=20&gt;&lt;input class=&quot;cal&quot; type=&quot;button&quot; value=&quot;&gt;&quot; onclick=&quot;javascript: nextmo()&quot;&gt;&lt;/TD&gt;
+&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;
+&lt;TABLE class=&quot;cal&quot; bgColor=#555555 cellPadding=0 cellSpacing=0&gt;
+  &lt;TBODY&gt;
+  &lt;TR&gt;
+    &lt;TD class=&quot;cal&quot;&gt;Su&lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot;&gt;Mo&lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot;&gt;Tu&lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot;&gt;We&lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot;&gt;Th&lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot;&gt;Fr&lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot;&gt;Sa&lt;/TD&gt;&lt;/TR&gt;
+  &lt;TR&gt;
+    &lt;TD&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;
+&lt;TABLE class=&quot;cal&quot; bgColor=black cellPadding=0 cellSpacing=0 height=120&gt;
+  &lt;TBODY&gt;
+  &lt;TR&gt;
+    &lt;TD class=&quot;cal&quot; id=11&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=12&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=13&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=14&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=15&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=16&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=17&gt; &lt;/TD&gt;&lt;/TR&gt;
+  &lt;TR&gt;
+    &lt;TD class=&quot;cal&quot; id=21&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=22&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=23&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=24&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=25&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=26&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=27&gt; &lt;/TD&gt;&lt;/TR&gt;
+  &lt;TR&gt;
+    &lt;TD class=&quot;cal&quot; id=31&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=32&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=33&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=34&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=35&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=36&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=37&gt; &lt;/TD&gt;&lt;/TR&gt;
+  &lt;TR&gt;
+    &lt;TD class=&quot;cal&quot; id=41&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=42&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=43&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=44&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=45&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=46&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=47&gt; &lt;/TD&gt;&lt;/TR&gt;
+  &lt;TR&gt;
+    &lt;TD class=&quot;cal&quot; id=51&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=52&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=53&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=54&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=55&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=56&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=57&gt; &lt;/TD&gt;&lt;/TR&gt;
+  &lt;TR&gt;
+    &lt;TD class=&quot;cal&quot; id=61&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=62&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=63&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=64&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=65&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=66&gt; &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; id=67&gt; &lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;
+&lt;/DIV&gt;
+
+&lt;DIV id=pcmonth style=&quot;DISPLAY: none&quot;&gt;
+&lt;TABLE class=&quot;cal&quot; bgColor=black cellPadding=0 cellSpacing=0 height=18&gt;
+  &lt;TBODY&gt;
+  &lt;TR&gt;
+    &lt;TD class=&quot;cal&quot;  width=20&gt;&lt;input class=&quot;cal&quot; type=&quot;button&quot; value=&quot;&lt;&quot; onclick=&quot;javascript: prevyr()&quot;&gt;&lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot;  id=y width=160&gt;Month Year &lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot;  width=20&gt;&lt;input class=&quot;cal&quot; type=&quot;button&quot; value=&quot;&gt;&quot; onclick=&quot;javascript: nextyr()&quot;&gt;&lt;/TD&gt;
+  &lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;
+&lt;TABLE class=&quot;cal&quot; bgColor=#555555 cellPadding=0 cellSpacing=0&gt;
+  &lt;TBODY&gt;
+  &lt;TR&gt;
+    &lt;TD class=&quot;cal&quot; &gt;Select a month&lt;/TD&gt;&lt;/TR&gt;
+  &lt;TR&gt;
+    &lt;TD&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;
+&lt;TABLE class=&quot;cal&quot; bgColor=black cellPadding=0 cellSpacing=0 height=120&gt;
+  &lt;TBODY&gt;
+  &lt;TR&gt;
+    &lt;TD class=&quot;cal&quot; &gt;&lt;A class=&quot;cal&quot; href=&quot;javascript: cmonth(1)&quot;&gt; Jan &lt;/A&gt;&lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; &gt;&lt;A class=&quot;cal&quot; href=&quot;javascript: cmonth(2)&quot;&gt; Feb &lt;/A&gt;&lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; &gt;&lt;A class=&quot;cal&quot; href=&quot;javascript: cmonth(3)&quot;&gt; Mar &lt;/A&gt;&lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; &gt;&lt;A class=&quot;cal&quot; href=&quot;javascript: cmonth(4)&quot;&gt; Apr &lt;/A&gt;&lt;/TD&gt;&lt;/TR&gt;
+  &lt;TR&gt;
+    &lt;TD class=&quot;cal&quot; &gt;&lt;A class=&quot;cal&quot; href=&quot;javascript: cmonth(5)&quot;&gt; May &lt;/A&gt;&lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; &gt;&lt;A class=&quot;cal&quot; href=&quot;javascript: cmonth(6)&quot;&gt; Jun &lt;/A&gt;&lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; &gt;&lt;A class=&quot;cal&quot; href=&quot;javascript: cmonth(7)&quot;&gt; Jul &lt;/A&gt;&lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; &gt;&lt;A class=&quot;cal&quot; href=&quot;javascript: cmonth(8)&quot;&gt; Aug &lt;/A&gt;&lt;/TD&gt;&lt;/TR&gt;
+  &lt;TR&gt;
+    &lt;TD class=&quot;cal&quot; &gt;&lt;A class=&quot;cal&quot; href=&quot;javascript: cmonth(9)&quot;&gt; Sep &lt;/A&gt;&lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; &gt;&lt;A class=&quot;cal&quot; href=&quot;javascript: cmonth(10)&quot;&gt; Oct &lt;/A&gt;&lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; &gt;&lt;A class=&quot;cal&quot; href=&quot;javascript: cmonth(11)&quot;&gt; Nov &lt;/A&gt;&lt;/TD&gt;
+    &lt;TD class=&quot;cal&quot; &gt;&lt;A class=&quot;cal&quot; href=&quot;javascript: cmonth(12)&quot;&gt; Dec &lt;/A&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;
+&lt;/TABLE&gt;
+&lt;/DIV&gt;
+
+&lt;INPUT name=mm type=hidden value=&quot;3&quot;&gt; 
+&lt;INPUT name=dd type=hidden value=&quot;10&quot;&gt; 
+&lt;INPUT name=yy type=hidden value=&quot;1977&quot;&gt;
+&lt;INPUT name=cinput type=hidden&gt;
+
+&lt;script language=vbscript&gt;
+sub ck(xt)
+k=document.all(xt).value
+document.all(xt).value=formatdatetime(&quot;11/12/1999&quot;,2)
+end sub
+&lt;/script&gt;
+&lt;input type=&quot;text&quot; name=&quot;tdat2&quot; value=&quot;3/10/77&quot;&gt;
+&lt;a href=&quot;javascript: showPCalE('tdat2')&quot;&gt;显示日历&lt;/a&gt;
+
+
+
+
+&nbsp;
+第二步:把如下代码加入<body>区域中<body  onload="init()" onmouseup="hidepcal()">
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

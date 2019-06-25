@@ -1,0 +1,1181 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--又一万年历(增加了一些功能)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body bgcolor=#FFFFFF>
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">又一万年历(增加了一些功能)</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=86" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<script>
+var weekend = [0,6];
+var weekendColor = "#e0e0e0";
+var fontface = "Verdana";
+var fontsize = 2;
+var gNow = new Date();
+var ggWinCal;
+isNav = (navigator.appName.indexOf("Netscape") != -1) ? true : false;
+isIE = (navigator.appName.indexOf("Microsoft") != -1) ? true : false;
+Calendar.Months = ["January", "February", "March", "April", "May", "June",
+"July", "August", "September", "October", "November", "December"];
+// Non-Leap year Month days..
+Calendar.DOMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+// Leap year Month days..
+Calendar.lDOMonth = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+function Calendar(p_item, p_WinCal, p_month, p_year, p_format) {
+	if ((p_month == null) && (p_year == null))	return;
+	if (p_WinCal == null)
+		this.gWinCal = ggWinCal;
+	else
+		this.gWinCal = p_WinCal;
+	
+	if (p_month == null) {
+		this.gMonthName = null;
+		this.gMonth = null;
+		this.gYearly = true;
+	} else {
+		this.gMonthName = Calendar.get_month(p_month);
+		this.gMonth = new Number(p_month);
+		this.gYearly = false;
+	}
+	this.gYear = p_year;
+	this.gFormat = p_format;
+	this.gBGColor = "white";
+	this.gFGColor = "black";
+	this.gTextColor = "black";
+	this.gHeaderColor = "black";
+	this.gReturnItem = p_item;
+}
+Calendar.get_month = Calendar_get_month;
+Calendar.get_daysofmonth = Calendar_get_daysofmonth;
+Calendar.calc_month_year = Calendar_calc_month_year;
+Calendar.print = Calendar_print;
+function Calendar_get_month(monthNo) {
+	return Calendar.Months[monthNo];
+}
+function Calendar_get_daysofmonth(monthNo, p_year) {
+	/* 
+	Check for leap year ..
+	1.Years evenly divisible by four are normally leap years, except for... 
+	2.Years also evenly divisible by 100 are not leap years, except for... 
+	3.Years also evenly divisible by 400 are leap years. 
+	*/
+	if ((p_year % 4) == 0) {
+		if ((p_year % 100) == 0 && (p_year % 400) != 0)
+			return Calendar.DOMonth[monthNo];
+	
+		return Calendar.lDOMonth[monthNo];
+	} else
+		return Calendar.DOMonth[monthNo];
+}
+function Calendar_calc_month_year(p_Month, p_Year, incr) {
+	/* 
+	Will return an 1-D array with 1st element being the calculated month 
+	and second being the calculated year 
+	after applying the month increment/decrement as specified by 'incr' parameter.
+	'incr' will normally have 1/-1 to navigate thru the months.
+	*/
+	var ret_arr = new Array();
+	
+	if (incr == -1) {
+		// B A C K W A R D
+		if (p_Month == 0) {
+			ret_arr[0] = 11;
+			ret_arr[1] = parseInt(p_Year) - 1;
+		}
+		else {
+			ret_arr[0] = parseInt(p_Month) - 1;
+			ret_arr[1] = parseInt(p_Year);
+		}
+	} else if (incr == 1) {
+		// F O R W A R D
+		if (p_Month == 11) {
+			ret_arr[0] = 0;
+			ret_arr[1] = parseInt(p_Year) + 1;
+		}
+		else {
+			ret_arr[0] = parseInt(p_Month) + 1;
+			ret_arr[1] = parseInt(p_Year);
+		}
+	}
+	
+	return ret_arr;
+}
+function Calendar_print() {
+	ggWinCal.print();
+}
+function Calendar_calc_month_year(p_Month, p_Year, incr) {
+	/* 
+	Will return an 1-D array with 1st element being the calculated month 
+	and second being the calculated year 
+	after applying the month increment/decrement as specified by 'incr' parameter.
+	'incr' will normally have 1/-1 to navigate thru the months.
+	*/
+	var ret_arr = new Array();
+	
+	if (incr == -1) {
+		// B A C K W A R D
+		if (p_Month == 0) {
+			ret_arr[0] = 11;
+			ret_arr[1] = parseInt(p_Year) - 1;
+		}
+		else {
+			ret_arr[0] = parseInt(p_Month) - 1;
+			ret_arr[1] = parseInt(p_Year);
+		}
+	} else if (incr == 1) {
+		// F O R W A R D
+		if (p_Month == 11) {
+			ret_arr[0] = 0;
+			ret_arr[1] = parseInt(p_Year) + 1;
+		}
+		else {
+			ret_arr[0] = parseInt(p_Month) + 1;
+			ret_arr[1] = parseInt(p_Year);
+		}
+	}
+	
+	return ret_arr;
+}
+// This is for compatibility with Navigator 3, we have to create and discard one object before the prototype object exists.
+new Calendar();
+Calendar.prototype.getMonthlyCalendarCode = function() {
+	var vCode = "";
+	var vHeader_Code = "";
+	var vData_Code = "";
+	
+	// Begin Table Drawing code here..
+	vCode = vCode + "<TABLE BORDER=1 BGCOLOR=\"" + this.gBGColor + "\">";
+	
+	vHeader_Code = this.cal_header();
+	vData_Code = this.cal_data();
+	vCode = vCode + vHeader_Code + vData_Code;
+	
+	vCode = vCode + "</TABLE>";
+	
+	return vCode;
+}
+Calendar.prototype.show = function() {
+	var vCode = "";
+	
+	this.gWinCal.document.open();
+	// Setup the page...
+	this.wwrite("<html>");
+	this.wwrite("<head><title>Calendar</title>");
+	this.wwrite("</head>");
+	this.wwrite("<body " + 
+		"link=\"" + this.gLinkColor + "\" " + 
+		"vlink=\"" + this.gLinkColor + "\" " +
+		"alink=\"" + this.gLinkColor + "\" " +
+		"text=\"" + this.gTextColor + "\">");
+	this.wwriteA("<FONT FACE='" + fontface + "' SIZE=2><B>");
+	this.wwriteA(this.gMonthName + " " + this.gYear);
+	this.wwriteA("</B><BR>");
+	// Show navigation buttons
+	var prevMMYYYY = Calendar.calc_month_year(this.gMonth, this.gYear, -1);
+	var prevMM = prevMMYYYY[0];
+	var prevYYYY = prevMMYYYY[1];
+	var nextMMYYYY = Calendar.calc_month_year(this.gMonth, this.gYear, 1);
+	var nextMM = nextMMYYYY[0];
+	var nextYYYY = nextMMYYYY[1];
+	
+	this.wwrite("<TABLE WIDTH='100%' BORDER=1 CELLSPACING=0 CELLPADDING=0 BGCOLOR='#e0e0e0'><TR><TD ALIGN=center>");
+	this.wwrite("[<A HREF=\"" +
+		"javascript:window.opener.Build(" + 
+		"'" + this.gReturnItem + "', '" + this.gMonth + "', '" + (parseInt(this.gYear)-1) + "', '" + this.gFormat + "'" +
+		");" +
+		"\"><<<\/A>]</TD><TD ALIGN=center>");
+	this.wwrite("[<A HREF=\"" +
+		"javascript:window.opener.Build(" + 
+		"'" + this.gReturnItem + "', '" + prevMM + "', '" + prevYYYY + "', '" + this.gFormat + "'" +
+		");" +
+		"\"><<\/A>]</TD><TD ALIGN=center>");
+	this.wwrite("[<A HREF=\"javascript:window.print();\">Print</A>]</TD><TD ALIGN=center>");
+	this.wwrite("[<A HREF=\"" +
+		"javascript:window.opener.Build(" + 
+		"'" + this.gReturnItem + "', '" + nextMM + "', '" + nextYYYY + "', '" + this.gFormat + "'" +
+		");" +
+		"\">><\/A>]</TD><TD ALIGN=center>");
+	this.wwrite("[<A HREF=\"" +
+		"javascript:window.opener.Build(" + 
+		"'" + this.gReturnItem + "', '" + this.gMonth + "', '" + (parseInt(this.gYear)+1) + "', '" + this.gFormat + "'" +
+		");" +
+		"\">>><\/A>]</TD></TR></TABLE><BR>");
+	// Get the complete calendar code for the month..
+	vCode = this.getMonthlyCalendarCode();
+	this.wwrite(vCode);
+	this.wwrite("</font></body></html>");
+	this.gWinCal.document.close();
+}
+Calendar.prototype.showY = function() {
+	var vCode = "";
+	var i;
+	var vr, vc, vx, vy;		// Row, Column, X-coord, Y-coord
+	var vxf = 285;			// X-Factor
+	var vyf = 200;			// Y-Factor
+	var vxm = 10;			// X-margin
+	var vym;				// Y-margin
+	if (isIE)	vym = 75;
+	else if (isNav)	vym = 25;
+	
+	this.gWinCal.document.open();
+	this.wwrite("<html>");
+	this.wwrite("<head><title>Calendar</title>");
+	this.wwrite("<style type='text/css'>\n<!--");
+	for (i=0; i<12; i++) {
+		vc = i % 3;
+		if (i>=0 && i<= 2)	vr = 0;
+		if (i>=3 && i<= 5)	vr = 1;
+		if (i>=6 && i<= 8)	vr = 2;
+		if (i>=9 && i<= 11)	vr = 3;
+		
+		vx = parseInt(vxf * vc) + vxm;
+		vy = parseInt(vyf * vr) + vym;
+		this.wwrite(".lclass" + i + " {position:absolute;top:" + vy + ";left:" + vx + ";}");
+	}
+	this.wwrite("-->\n</style>");
+	this.wwrite("</head>");
+	this.wwrite("<body " + 
+		"link=\"" + this.gLinkColor + "\" " + 
+		"vlink=\"" + this.gLinkColor + "\" " +
+		"alink=\"" + this.gLinkColor + "\" " +
+		"text=\"" + this.gTextColor + "\">");
+	this.wwrite("<FONT FACE='" + fontface + "' SIZE=2><B>");
+	this.wwrite("Year : " + this.gYear);
+	this.wwrite("</B><BR>");
+	// Show navigation buttons
+	var prevYYYY = parseInt(this.gYear) - 1;
+	var nextYYYY = parseInt(this.gYear) + 1;
+	
+	this.wwrite("<TABLE WIDTH='100%' BORDER=1 CELLSPACING=0 CELLPADDING=0 BGCOLOR='#e0e0e0'><TR><TD ALIGN=center>");
+	this.wwrite("[<A HREF=\"" +
+		"javascript:window.opener.Build(" + 
+		"'" + this.gReturnItem + "', null, '" + prevYYYY + "', '" + this.gFormat + "'" +
+		");" +
+		"\" alt='Prev Year'><<<\/A>]</TD><TD ALIGN=center>");
+	this.wwrite("[<A HREF=\"javascript:window.print();\">Print</A>]</TD><TD ALIGN=center>");
+	this.wwrite("[<A HREF=\"" +
+		"javascript:window.opener.Build(" + 
+		"'" + this.gReturnItem + "', null, '" + nextYYYY + "', '" + this.gFormat + "'" +
+		");" +
+		"\">>><\/A>]</TD></TR></TABLE><BR>");
+	// Get the complete calendar code for each month..
+	var j;
+	for (i=11; i>=0; i--) {
+		if (isIE)
+			this.wwrite("<DIV ID=\"layer" + i + "\" CLASS=\"lclass" + i + "\">");
+		else if (isNav)
+			this.wwrite("<LAYER ID=\"layer" + i + "\" CLASS=\"lclass" + i + "\">");
+		this.gMonth = i;
+		this.gMonthName = Calendar.get_month(this.gMonth);
+		vCode = this.getMonthlyCalendarCode();
+		this.wwrite(this.gMonthName + "/" + this.gYear + "<BR>");
+		this.wwrite(vCode);
+		if (isIE)
+			this.wwrite("</DIV>");
+		else if (isNav)
+			this.wwrite("</LAYER>");
+	}
+	this.wwrite("</font><BR></body></html>");
+	this.gWinCal.document.close();
+}
+Calendar.prototype.wwrite = function(wtext) {
+	this.gWinCal.document.writeln(wtext);
+}
+Calendar.prototype.wwriteA = function(wtext) {
+	this.gWinCal.document.write(wtext);
+}
+Calendar.prototype.cal_header = function() {
+	var vCode = "";
+	
+	vCode = vCode + "<TR>";
+	vCode = vCode + "<TD WIDTH='14%'><FONT SIZE='2' FACE='" + fontface + "' COLOR='" + this.gHeaderColor + "'><B>Sun</B></FONT></TD>";
+	vCode = vCode + "<TD WIDTH='14%'><FONT SIZE='2' FACE='" + fontface + "' COLOR='" + this.gHeaderColor + "'><B>Mon</B></FONT></TD>";
+	vCode = vCode + "<TD WIDTH='14%'><FONT SIZE='2' FACE='" + fontface + "' COLOR='" + this.gHeaderColor + "'><B>Tue</B></FONT></TD>";
+	vCode = vCode + "<TD WIDTH='14%'><FONT SIZE='2' FACE='" + fontface + "' COLOR='" + this.gHeaderColor + "'><B>Wed</B></FONT></TD>";
+	vCode = vCode + "<TD WIDTH='14%'><FONT SIZE='2' FACE='" + fontface + "' COLOR='" + this.gHeaderColor + "'><B>Thu</B></FONT></TD>";
+	vCode = vCode + "<TD WIDTH='14%'><FONT SIZE='2' FACE='" + fontface + "' COLOR='" + this.gHeaderColor + "'><B>Fri</B></FONT></TD>";
+	vCode = vCode + "<TD WIDTH='16%'><FONT SIZE='2' FACE='" + fontface + "' COLOR='" + this.gHeaderColor + "'><B>Sat</B></FONT></TD>";
+	vCode = vCode + "</TR>";
+	
+	return vCode;
+}
+Calendar.prototype.cal_data = function() {
+	var vDate = new Date();
+	vDate.setDate(1);
+	vDate.setMonth(this.gMonth);
+	vDate.setFullYear(this.gYear);
+	var vFirstDay=vDate.getDay();
+	var vDay=1;
+	var vLastDay=Calendar.get_daysofmonth(this.gMonth, this.gYear);
+	var vOnLastDay=0;
+	var vCode = "";
+	/*
+	Get day for the 1st of the requested month/year..
+	Place as many blank cells before the 1st day of the month as necessary. 
+	*/
+	vCode = vCode + "<TR>";
+	for (i=0; i<vFirstDay; i++) {
+		vCode = vCode + "<TD WIDTH='14%'" + this.write_weekend_string(i) + "><FONT SIZE='2' FACE='" + fontface + "'> </FONT></TD>";
+	}
+	// Write rest of the 1st week
+	for (j=vFirstDay; j<7; j++) {
+		vCode = vCode + "<TD WIDTH='14%'" + this.write_weekend_string(j) + "><FONT SIZE='2' FACE='" + fontface + "'>" + 
+			"<A HREF='#' " + 
+				"onClick=\"self.opener.document." + this.gReturnItem + ".value='" + 
+				this.format_data(vDay) + 
+				"';window.close();\">" + 
+				this.format_day(vDay) + 
+			"</A>" + 
+			"</FONT></TD>";
+		vDay=vDay + 1;
+	}
+	vCode = vCode + "</TR>";
+	// Write the rest of the weeks
+	for (k=2; k<7; k++) {
+		vCode = vCode + "<TR>";
+		for (j=0; j<7; j++) {
+			vCode = vCode + "<TD WIDTH='14%'" + this.write_weekend_string(j) + "><FONT SIZE='2' FACE='" + fontface + "'>" + 
+				"<A HREF='#' " + 
+					"onClick=\"self.opener.document." + this.gReturnItem + ".value='" + 
+					this.format_data(vDay) + 
+					"';window.close();\">" + 
+				this.format_day(vDay) + 
+				"</A>" + 
+				"</FONT></TD>";
+			vDay=vDay + 1;
+			if (vDay > vLastDay) {
+				vOnLastDay = 1;
+				break;
+			}
+		}
+		if (j == 6)
+			vCode = vCode + "</TR>";
+		if (vOnLastDay == 1)
+			break;
+	}
+	
+	// Fill up the rest of last week with proper blanks, so that we get proper square blocks
+	for (m=1; m<(7-j); m++) {
+		if (this.gYearly)
+			vCode = vCode + "<TD WIDTH='14%'" + this.write_weekend_string(j+m) + 
+			"><FONT SIZE='2' FACE='" + fontface + "' COLOR='gray'> </FONT></TD>";
+		else
+			vCode = vCode + "<TD WIDTH='14%'" + this.write_weekend_string(j+m) + 
+			"><FONT SIZE='2' FACE='" + fontface + "' COLOR='gray'>" + m + "</FONT></TD>";
+	}
+	
+	return vCode;
+}
+Calendar.prototype.format_day = function(vday) {
+	var vNowDay = gNow.getDate();
+	var vNowMonth = gNow.getMonth();
+	var vNowYear = gNow.getFullYear();
+	if (vday == vNowDay && this.gMonth == vNowMonth && this.gYear == vNowYear)
+		return ("<FONT COLOR=\"RED\"><B>" + vday + "</B></FONT>");
+	else
+		return (vday);
+}
+Calendar.prototype.write_weekend_string = function(vday) {
+	var i;
+	// Return special formatting for the weekend day.
+	for (i=0; i<weekend.length; i++) {
+		if (vday == weekend[i])
+			return (" BGCOLOR=\"" + weekendColor + "\"");
+	}
+	
+	return "";
+}
+Calendar.prototype.format_data = function(p_day) {
+	var vData;
+	var vMonth = 1 + this.gMonth;
+	vMonth = (vMonth.toString().length < 2) ? "0" + vMonth : vMonth;
+	var vMon = Calendar.get_month(this.gMonth).substr(0,3).toUpperCase();
+	var vFMon = Calendar.get_month(this.gMonth).toUpperCase();
+	var vY4 = new String(this.gYear);
+	var vY2 = new String(this.gYear.substr(2,2));
+	var vDD = (p_day.toString().length < 2) ? "0" + p_day : p_day;
+	switch (this.gFormat) {
+		case "MM\/DD\/YYYY" :
+			vData = vMonth + "\/" + vDD + "\/" + vY4;
+			break;
+		case "MM\/DD\/YY" :
+			vData = vMonth + "\/" + vDD + "\/" + vY2;
+			break;
+		case "MM-DD-YYYY" :
+			vData = vMonth + "-" + vDD + "-" + vY4;
+			break;
+		case "MM-DD-YY" :
+			vData = vMonth + "-" + vDD + "-" + vY2;
+			break;
+		case "DD\/MON\/YYYY" :
+			vData = vDD + "\/" + vMon + "\/" + vY4;
+			break;
+		case "DD\/MON\/YY" :
+			vData = vDD + "\/" + vMon + "\/" + vY2;
+			break;
+		case "DD-MON-YYYY" :
+			vData = vDD + "-" + vMon + "-" + vY4;
+			break;
+		case "DD-MON-YY" :
+			vData = vDD + "-" + vMon + "-" + vY2;
+			break;
+		case "DD\/MONTH\/YYYY" :
+			vData = vDD + "\/" + vFMon + "\/" + vY4;
+			break;
+		case "DD\/MONTH\/YY" :
+			vData = vDD + "\/" + vFMon + "\/" + vY2;
+			break;
+		case "DD-MONTH-YYYY" :
+			vData = vDD + "-" + vFMon + "-" + vY4;
+			break;
+		case "DD-MONTH-YY" :
+			vData = vDD + "-" + vFMon + "-" + vY2;
+			break;
+		case "DD\/MM\/YYYY" :
+			vData = vDD + "\/" + vMonth + "\/" + vY4;
+			break;
+		case "DD\/MM\/YY" :
+			vData = vDD + "\/" + vMonth + "\/" + vY2;
+			break;
+		case "DD-MM-YYYY" :
+			vData = vDD + "-" + vMonth + "-" + vY4;
+			break;
+		case "DD-MM-YY" :
+			vData = vDD + "-" + vMonth + "-" + vY2;
+			break;
+		default :
+			vData = vMonth + "\/" + vDD + "\/" + vY4;
+	}
+	return vData;
+}
+function Build(p_item, p_month, p_year, p_format) {
+	var p_WinCal = ggWinCal;
+	gCal = new Calendar(p_item, p_WinCal, p_month, p_year, p_format);
+	// Customize your Calendar here..
+	gCal.gBGColor="white";
+	gCal.gLinkColor="black";
+	gCal.gTextColor="black";
+	gCal.gHeaderColor="darkgreen";
+	// Choose appropriate show function
+	if (gCal.gYearly)	gCal.showY();
+	else	gCal.show();
+}
+function show_calendar() {
+	/* 
+		p_month : 0-11 for Jan-Dec; 12 for All Months.
+		p_year	: 4-digit year
+		p_format: Date format (mm/dd/yyyy, dd/mm/yy, ...)
+		p_item	: Return Item.
+	*/
+	p_item = arguments[0];
+	if (arguments[1] == null)
+		p_month = new String(gNow.getMonth());
+	else
+		p_month = arguments[1];
+	if (arguments[2] == "" || arguments[2] == null)
+		p_year = new String(gNow.getFullYear().toString());
+	else
+		p_year = arguments[2];
+	if (arguments[3] == null)
+		p_format = "MM/DD/YYYY";
+	else
+		p_format = arguments[3];
+	vWinCal = window.open("", "Calendar", 
+		"width=250,height=250,status=no,resizable=no,top=200,left=200");
+	vWinCal.opener = self;
+	ggWinCal = vWinCal;
+	Build(p_item, p_month, p_year, p_format);
+}
+/*
+Yearly Calendar Code Starts here
+*/
+function show_yearly_calendar(p_item, p_year, p_format) {
+	// Load the defaults..
+	if (p_year == null || p_year == "")
+		p_year = new String(gNow.getFullYear().toString());
+	if (p_format == null || p_format == "")
+		p_format = "MM/DD/YYYY";
+	var vWinCal = window.open("", "Calendar", "scrollbars=yes");
+	vWinCal.opener = self;
+	ggWinCal = vWinCal;
+	Build(p_item, null, p_year, p_format);
+}
+</script>
+<center>
+<form name=calform>
+<input type=text name="datebox" size=15><a href="javascript:show_calendar('calform.datebox');" onmouseover="window.status='Date Picker';return true;" onmouseout="window.status='';return true;"><img src="photo/show-calendar.gif" width=24 height=22 border=0></a>
+</form>
+</center>
+</fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+把如下代码加入<body>区域中
+&nbsp;&lt;script&gt;
+var weekend = [0,6];
+var weekendColor = &quot;#e0e0e0&quot;;
+var fontface = &quot;Verdana&quot;;
+var fontsize = 2;
+var gNow = new Date();
+var ggWinCal;
+isNav = (navigator.appName.indexOf(&quot;Netscape&quot;) != -1) ? true : false;
+isIE = (navigator.appName.indexOf(&quot;Microsoft&quot;) != -1) ? true : false;
+Calendar.Months = [&quot;January&quot;, &quot;February&quot;, &quot;March&quot;, &quot;April&quot;, &quot;May&quot;, &quot;June&quot;,
+&quot;July&quot;, &quot;August&quot;, &quot;September&quot;, &quot;October&quot;, &quot;November&quot;, &quot;December&quot;];
+// Non-Leap year Month days..
+Calendar.DOMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+// Leap year Month days..
+Calendar.lDOMonth = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+function Calendar(p_item, p_WinCal, p_month, p_year, p_format) {
+	if ((p_month == null) &amp;&amp; (p_year == null))	return;
+	if (p_WinCal == null)
+		this.gWinCal = ggWinCal;
+	else
+		this.gWinCal = p_WinCal;
+	
+	if (p_month == null) {
+		this.gMonthName = null;
+		this.gMonth = null;
+		this.gYearly = true;
+	} else {
+		this.gMonthName = Calendar.get_month(p_month);
+		this.gMonth = new Number(p_month);
+		this.gYearly = false;
+	}
+	this.gYear = p_year;
+	this.gFormat = p_format;
+	this.gBGColor = &quot;white&quot;;
+	this.gFGColor = &quot;black&quot;;
+	this.gTextColor = &quot;black&quot;;
+	this.gHeaderColor = &quot;black&quot;;
+	this.gReturnItem = p_item;
+}
+Calendar.get_month = Calendar_get_month;
+Calendar.get_daysofmonth = Calendar_get_daysofmonth;
+Calendar.calc_month_year = Calendar_calc_month_year;
+Calendar.print = Calendar_print;
+function Calendar_get_month(monthNo) {
+	return Calendar.Months[monthNo];
+}
+function Calendar_get_daysofmonth(monthNo, p_year) {
+	/* 
+	Check for leap year ..
+	1.Years evenly divisible by four are normally leap years, except for... 
+	2.Years also evenly divisible by 100 are not leap years, except for... 
+	3.Years also evenly divisible by 400 are leap years. 
+	*/
+	if ((p_year % 4) == 0) {
+		if ((p_year % 100) == 0 &amp;&amp; (p_year % 400) != 0)
+			return Calendar.DOMonth[monthNo];
+	
+		return Calendar.lDOMonth[monthNo];
+	} else
+		return Calendar.DOMonth[monthNo];
+}
+function Calendar_calc_month_year(p_Month, p_Year, incr) {
+	/* 
+	Will return an 1-D array with 1st element being the calculated month 
+	and second being the calculated year 
+	after applying the month increment/decrement as specified by 'incr' parameter.
+	'incr' will normally have 1/-1 to navigate thru the months.
+	*/
+	var ret_arr = new Array();
+	
+	if (incr == -1) {
+		// B A C K W A R D
+		if (p_Month == 0) {
+			ret_arr[0] = 11;
+			ret_arr[1] = parseInt(p_Year) - 1;
+		}
+		else {
+			ret_arr[0] = parseInt(p_Month) - 1;
+			ret_arr[1] = parseInt(p_Year);
+		}
+	} else if (incr == 1) {
+		// F O R W A R D
+		if (p_Month == 11) {
+			ret_arr[0] = 0;
+			ret_arr[1] = parseInt(p_Year) + 1;
+		}
+		else {
+			ret_arr[0] = parseInt(p_Month) + 1;
+			ret_arr[1] = parseInt(p_Year);
+		}
+	}
+	
+	return ret_arr;
+}
+function Calendar_print() {
+	ggWinCal.print();
+}
+function Calendar_calc_month_year(p_Month, p_Year, incr) {
+	/* 
+	Will return an 1-D array with 1st element being the calculated month 
+	and second being the calculated year 
+	after applying the month increment/decrement as specified by 'incr' parameter.
+	'incr' will normally have 1/-1 to navigate thru the months.
+	*/
+	var ret_arr = new Array();
+	
+	if (incr == -1) {
+		// B A C K W A R D
+		if (p_Month == 0) {
+			ret_arr[0] = 11;
+			ret_arr[1] = parseInt(p_Year) - 1;
+		}
+		else {
+			ret_arr[0] = parseInt(p_Month) - 1;
+			ret_arr[1] = parseInt(p_Year);
+		}
+	} else if (incr == 1) {
+		// F O R W A R D
+		if (p_Month == 11) {
+			ret_arr[0] = 0;
+			ret_arr[1] = parseInt(p_Year) + 1;
+		}
+		else {
+			ret_arr[0] = parseInt(p_Month) + 1;
+			ret_arr[1] = parseInt(p_Year);
+		}
+	}
+	
+	return ret_arr;
+}
+// This is for compatibility with Navigator 3, we have to create and discard one object before the prototype object exists.
+new Calendar();
+Calendar.prototype.getMonthlyCalendarCode = function() {
+	var vCode = &quot;&quot;;
+	var vHeader_Code = &quot;&quot;;
+	var vData_Code = &quot;&quot;;
+	
+	// Begin Table Drawing code here..
+	vCode = vCode + &quot;&lt;TABLE BORDER=1 BGCOLOR=\&quot;&quot; + this.gBGColor + &quot;\&quot;&gt;&quot;;
+	
+	vHeader_Code = this.cal_header();
+	vData_Code = this.cal_data();
+	vCode = vCode + vHeader_Code + vData_Code;
+	
+	vCode = vCode + &quot;&lt;/TABLE&gt;&quot;;
+	
+	return vCode;
+}
+Calendar.prototype.show = function() {
+	var vCode = &quot;&quot;;
+	
+	this.gWinCal.document.open();
+	// Setup the page...
+	this.wwrite(&quot;&lt;html&gt;&quot;);
+	this.wwrite(&quot;&lt;head&gt;&lt;title&gt;Calendar&lt;/title&gt;&quot;);
+	this.wwrite(&quot;&lt;/head&gt;&quot;);
+	this.wwrite(&quot;&lt;body &quot; + 
+		&quot;link=\&quot;&quot; + this.gLinkColor + &quot;\&quot; &quot; + 
+		&quot;vlink=\&quot;&quot; + this.gLinkColor + &quot;\&quot; &quot; +
+		&quot;alink=\&quot;&quot; + this.gLinkColor + &quot;\&quot; &quot; +
+		&quot;text=\&quot;&quot; + this.gTextColor + &quot;\&quot;&gt;&quot;);
+	this.wwriteA(&quot;&lt;FONT FACE='&quot; + fontface + &quot;' SIZE=2&gt;&lt;B&gt;&quot;);
+	this.wwriteA(this.gMonthName + &quot; &quot; + this.gYear);
+	this.wwriteA(&quot;&lt;/B&gt;&lt;BR&gt;&quot;);
+	// Show navigation buttons
+	var prevMMYYYY = Calendar.calc_month_year(this.gMonth, this.gYear, -1);
+	var prevMM = prevMMYYYY[0];
+	var prevYYYY = prevMMYYYY[1];
+	var nextMMYYYY = Calendar.calc_month_year(this.gMonth, this.gYear, 1);
+	var nextMM = nextMMYYYY[0];
+	var nextYYYY = nextMMYYYY[1];
+	
+	this.wwrite(&quot;&lt;TABLE WIDTH='100%' BORDER=1 CELLSPACING=0 CELLPADDING=0 BGCOLOR='#e0e0e0'&gt;&lt;TR&gt;&lt;TD ALIGN=center&gt;&quot;);
+	this.wwrite(&quot;[&lt;A HREF=\&quot;&quot; +
+		&quot;javascript:window.opener.Build(&quot; + 
+		&quot;'&quot; + this.gReturnItem + &quot;', '&quot; + this.gMonth + &quot;', '&quot; + (parseInt(this.gYear)-1) + &quot;', '&quot; + this.gFormat + &quot;'&quot; +
+		&quot;);&quot; +
+		&quot;\&quot;&gt;&lt;&lt;&lt;\/A&gt;]&lt;/TD&gt;&lt;TD ALIGN=center&gt;&quot;);
+	this.wwrite(&quot;[&lt;A HREF=\&quot;&quot; +
+		&quot;javascript:window.opener.Build(&quot; + 
+		&quot;'&quot; + this.gReturnItem + &quot;', '&quot; + prevMM + &quot;', '&quot; + prevYYYY + &quot;', '&quot; + this.gFormat + &quot;'&quot; +
+		&quot;);&quot; +
+		&quot;\&quot;&gt;&lt;&lt;\/A&gt;]&lt;/TD&gt;&lt;TD ALIGN=center&gt;&quot;);
+	this.wwrite(&quot;[&lt;A HREF=\&quot;javascript:window.print();\&quot;&gt;Print&lt;/A&gt;]&lt;/TD&gt;&lt;TD ALIGN=center&gt;&quot;);
+	this.wwrite(&quot;[&lt;A HREF=\&quot;&quot; +
+		&quot;javascript:window.opener.Build(&quot; + 
+		&quot;'&quot; + this.gReturnItem + &quot;', '&quot; + nextMM + &quot;', '&quot; + nextYYYY + &quot;', '&quot; + this.gFormat + &quot;'&quot; +
+		&quot;);&quot; +
+		&quot;\&quot;&gt;&gt;&lt;\/A&gt;]&lt;/TD&gt;&lt;TD ALIGN=center&gt;&quot;);
+	this.wwrite(&quot;[&lt;A HREF=\&quot;&quot; +
+		&quot;javascript:window.opener.Build(&quot; + 
+		&quot;'&quot; + this.gReturnItem + &quot;', '&quot; + this.gMonth + &quot;', '&quot; + (parseInt(this.gYear)+1) + &quot;', '&quot; + this.gFormat + &quot;'&quot; +
+		&quot;);&quot; +
+		&quot;\&quot;&gt;&gt;&gt;&lt;\/A&gt;]&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&lt;BR&gt;&quot;);
+	// Get the complete calendar code for the month..
+	vCode = this.getMonthlyCalendarCode();
+	this.wwrite(vCode);
+	this.wwrite(&quot;&lt;/font&gt;&lt;/body&gt;&lt;/html&gt;&quot;);
+	this.gWinCal.document.close();
+}
+Calendar.prototype.showY = function() {
+	var vCode = &quot;&quot;;
+	var i;
+	var vr, vc, vx, vy;		// Row, Column, X-coord, Y-coord
+	var vxf = 285;			// X-Factor
+	var vyf = 200;			// Y-Factor
+	var vxm = 10;			// X-margin
+	var vym;				// Y-margin
+	if (isIE)	vym = 75;
+	else if (isNav)	vym = 25;
+	
+	this.gWinCal.document.open();
+	this.wwrite(&quot;&lt;html&gt;&quot;);
+	this.wwrite(&quot;&lt;head&gt;&lt;title&gt;Calendar&lt;/title&gt;&quot;);
+	this.wwrite(&quot;&lt;style type='text/css'&gt;\n&lt;!--&quot;);
+	for (i=0; i&lt;12; i++) {
+		vc = i % 3;
+		if (i&gt;=0 &amp;&amp; i&lt;= 2)	vr = 0;
+		if (i&gt;=3 &amp;&amp; i&lt;= 5)	vr = 1;
+		if (i&gt;=6 &amp;&amp; i&lt;= 8)	vr = 2;
+		if (i&gt;=9 &amp;&amp; i&lt;= 11)	vr = 3;
+		
+		vx = parseInt(vxf * vc) + vxm;
+		vy = parseInt(vyf * vr) + vym;
+		this.wwrite(&quot;.lclass&quot; + i + &quot; {position:absolute;top:&quot; + vy + &quot;;left:&quot; + vx + &quot;;}&quot;);
+	}
+	this.wwrite(&quot;--&gt;\n&lt;/style&gt;&quot;);
+	this.wwrite(&quot;&lt;/head&gt;&quot;);
+	this.wwrite(&quot;&lt;body &quot; + 
+		&quot;link=\&quot;&quot; + this.gLinkColor + &quot;\&quot; &quot; + 
+		&quot;vlink=\&quot;&quot; + this.gLinkColor + &quot;\&quot; &quot; +
+		&quot;alink=\&quot;&quot; + this.gLinkColor + &quot;\&quot; &quot; +
+		&quot;text=\&quot;&quot; + this.gTextColor + &quot;\&quot;&gt;&quot;);
+	this.wwrite(&quot;&lt;FONT FACE='&quot; + fontface + &quot;' SIZE=2&gt;&lt;B&gt;&quot;);
+	this.wwrite(&quot;Year : &quot; + this.gYear);
+	this.wwrite(&quot;&lt;/B&gt;&lt;BR&gt;&quot;);
+	// Show navigation buttons
+	var prevYYYY = parseInt(this.gYear) - 1;
+	var nextYYYY = parseInt(this.gYear) + 1;
+	
+	this.wwrite(&quot;&lt;TABLE WIDTH='100%' BORDER=1 CELLSPACING=0 CELLPADDING=0 BGCOLOR='#e0e0e0'&gt;&lt;TR&gt;&lt;TD ALIGN=center&gt;&quot;);
+	this.wwrite(&quot;[&lt;A HREF=\&quot;&quot; +
+		&quot;javascript:window.opener.Build(&quot; + 
+		&quot;'&quot; + this.gReturnItem + &quot;', null, '&quot; + prevYYYY + &quot;', '&quot; + this.gFormat + &quot;'&quot; +
+		&quot;);&quot; +
+		&quot;\&quot; alt='Prev Year'&gt;&lt;&lt;&lt;\/A&gt;]&lt;/TD&gt;&lt;TD ALIGN=center&gt;&quot;);
+	this.wwrite(&quot;[&lt;A HREF=\&quot;javascript:window.print();\&quot;&gt;Print&lt;/A&gt;]&lt;/TD&gt;&lt;TD ALIGN=center&gt;&quot;);
+	this.wwrite(&quot;[&lt;A HREF=\&quot;&quot; +
+		&quot;javascript:window.opener.Build(&quot; + 
+		&quot;'&quot; + this.gReturnItem + &quot;', null, '&quot; + nextYYYY + &quot;', '&quot; + this.gFormat + &quot;'&quot; +
+		&quot;);&quot; +
+		&quot;\&quot;&gt;&gt;&gt;&lt;\/A&gt;]&lt;/TD&gt;&lt;/TR&gt;&lt;/TABLE&gt;&lt;BR&gt;&quot;);
+	// Get the complete calendar code for each month..
+	var j;
+	for (i=11; i&gt;=0; i--) {
+		if (isIE)
+			this.wwrite(&quot;&lt;DIV ID=\&quot;layer&quot; + i + &quot;\&quot; CLASS=\&quot;lclass&quot; + i + &quot;\&quot;&gt;&quot;);
+		else if (isNav)
+			this.wwrite(&quot;&lt;LAYER ID=\&quot;layer&quot; + i + &quot;\&quot; CLASS=\&quot;lclass&quot; + i + &quot;\&quot;&gt;&quot;);
+		this.gMonth = i;
+		this.gMonthName = Calendar.get_month(this.gMonth);
+		vCode = this.getMonthlyCalendarCode();
+		this.wwrite(this.gMonthName + &quot;/&quot; + this.gYear + &quot;&lt;BR&gt;&quot;);
+		this.wwrite(vCode);
+		if (isIE)
+			this.wwrite(&quot;&lt;/DIV&gt;&quot;);
+		else if (isNav)
+			this.wwrite(&quot;&lt;/LAYER&gt;&quot;);
+	}
+	this.wwrite(&quot;&lt;/font&gt;&lt;BR&gt;&lt;/body&gt;&lt;/html&gt;&quot;);
+	this.gWinCal.document.close();
+}
+Calendar.prototype.wwrite = function(wtext) {
+	this.gWinCal.document.writeln(wtext);
+}
+Calendar.prototype.wwriteA = function(wtext) {
+	this.gWinCal.document.write(wtext);
+}
+Calendar.prototype.cal_header = function() {
+	var vCode = &quot;&quot;;
+	
+	vCode = vCode + &quot;&lt;TR&gt;&quot;;
+	vCode = vCode + &quot;&lt;TD WIDTH='14%'&gt;&lt;FONT SIZE='2' FACE='&quot; + fontface + &quot;' COLOR='&quot; + this.gHeaderColor + &quot;'&gt;&lt;B&gt;Sun&lt;/B&gt;&lt;/FONT&gt;&lt;/TD&gt;&quot;;
+	vCode = vCode + &quot;&lt;TD WIDTH='14%'&gt;&lt;FONT SIZE='2' FACE='&quot; + fontface + &quot;' COLOR='&quot; + this.gHeaderColor + &quot;'&gt;&lt;B&gt;Mon&lt;/B&gt;&lt;/FONT&gt;&lt;/TD&gt;&quot;;
+	vCode = vCode + &quot;&lt;TD WIDTH='14%'&gt;&lt;FONT SIZE='2' FACE='&quot; + fontface + &quot;' COLOR='&quot; + this.gHeaderColor + &quot;'&gt;&lt;B&gt;Tue&lt;/B&gt;&lt;/FONT&gt;&lt;/TD&gt;&quot;;
+	vCode = vCode + &quot;&lt;TD WIDTH='14%'&gt;&lt;FONT SIZE='2' FACE='&quot; + fontface + &quot;' COLOR='&quot; + this.gHeaderColor + &quot;'&gt;&lt;B&gt;Wed&lt;/B&gt;&lt;/FONT&gt;&lt;/TD&gt;&quot;;
+	vCode = vCode + &quot;&lt;TD WIDTH='14%'&gt;&lt;FONT SIZE='2' FACE='&quot; + fontface + &quot;' COLOR='&quot; + this.gHeaderColor + &quot;'&gt;&lt;B&gt;Thu&lt;/B&gt;&lt;/FONT&gt;&lt;/TD&gt;&quot;;
+	vCode = vCode + &quot;&lt;TD WIDTH='14%'&gt;&lt;FONT SIZE='2' FACE='&quot; + fontface + &quot;' COLOR='&quot; + this.gHeaderColor + &quot;'&gt;&lt;B&gt;Fri&lt;/B&gt;&lt;/FONT&gt;&lt;/TD&gt;&quot;;
+	vCode = vCode + &quot;&lt;TD WIDTH='16%'&gt;&lt;FONT SIZE='2' FACE='&quot; + fontface + &quot;' COLOR='&quot; + this.gHeaderColor + &quot;'&gt;&lt;B&gt;Sat&lt;/B&gt;&lt;/FONT&gt;&lt;/TD&gt;&quot;;
+	vCode = vCode + &quot;&lt;/TR&gt;&quot;;
+	
+	return vCode;
+}
+Calendar.prototype.cal_data = function() {
+	var vDate = new Date();
+	vDate.setDate(1);
+	vDate.setMonth(this.gMonth);
+	vDate.setFullYear(this.gYear);
+	var vFirstDay=vDate.getDay();
+	var vDay=1;
+	var vLastDay=Calendar.get_daysofmonth(this.gMonth, this.gYear);
+	var vOnLastDay=0;
+	var vCode = &quot;&quot;;
+	/*
+	Get day for the 1st of the requested month/year..
+	Place as many blank cells before the 1st day of the month as necessary. 
+	*/
+	vCode = vCode + &quot;&lt;TR&gt;&quot;;
+	for (i=0; i&lt;vFirstDay; i++) {
+		vCode = vCode + &quot;&lt;TD WIDTH='14%'&quot; + this.write_weekend_string(i) + &quot;&gt;&lt;FONT SIZE='2' FACE='&quot; + fontface + &quot;'&gt; &lt;/FONT&gt;&lt;/TD&gt;&quot;;
+	}
+	// Write rest of the 1st week
+	for (j=vFirstDay; j&lt;7; j++) {
+		vCode = vCode + &quot;&lt;TD WIDTH='14%'&quot; + this.write_weekend_string(j) + &quot;&gt;&lt;FONT SIZE='2' FACE='&quot; + fontface + &quot;'&gt;&quot; + 
+			&quot;&lt;A HREF='#' &quot; + 
+				&quot;onClick=\&quot;self.opener.document.&quot; + this.gReturnItem + &quot;.value='&quot; + 
+				this.format_data(vDay) + 
+				&quot;';window.close();\&quot;&gt;&quot; + 
+				this.format_day(vDay) + 
+			&quot;&lt;/A&gt;&quot; + 
+			&quot;&lt;/FONT&gt;&lt;/TD&gt;&quot;;
+		vDay=vDay + 1;
+	}
+	vCode = vCode + &quot;&lt;/TR&gt;&quot;;
+	// Write the rest of the weeks
+	for (k=2; k&lt;7; k++) {
+		vCode = vCode + &quot;&lt;TR&gt;&quot;;
+		for (j=0; j&lt;7; j++) {
+			vCode = vCode + &quot;&lt;TD WIDTH='14%'&quot; + this.write_weekend_string(j) + &quot;&gt;&lt;FONT SIZE='2' FACE='&quot; + fontface + &quot;'&gt;&quot; + 
+				&quot;&lt;A HREF='#' &quot; + 
+					&quot;onClick=\&quot;self.opener.document.&quot; + this.gReturnItem + &quot;.value='&quot; + 
+					this.format_data(vDay) + 
+					&quot;';window.close();\&quot;&gt;&quot; + 
+				this.format_day(vDay) + 
+				&quot;&lt;/A&gt;&quot; + 
+				&quot;&lt;/FONT&gt;&lt;/TD&gt;&quot;;
+			vDay=vDay + 1;
+			if (vDay &gt; vLastDay) {
+				vOnLastDay = 1;
+				break;
+			}
+		}
+		if (j == 6)
+			vCode = vCode + &quot;&lt;/TR&gt;&quot;;
+		if (vOnLastDay == 1)
+			break;
+	}
+	
+	// Fill up the rest of last week with proper blanks, so that we get proper square blocks
+	for (m=1; m&lt;(7-j); m++) {
+		if (this.gYearly)
+			vCode = vCode + &quot;&lt;TD WIDTH='14%'&quot; + this.write_weekend_string(j+m) + 
+			&quot;&gt;&lt;FONT SIZE='2' FACE='&quot; + fontface + &quot;' COLOR='gray'&gt; &lt;/FONT&gt;&lt;/TD&gt;&quot;;
+		else
+			vCode = vCode + &quot;&lt;TD WIDTH='14%'&quot; + this.write_weekend_string(j+m) + 
+			&quot;&gt;&lt;FONT SIZE='2' FACE='&quot; + fontface + &quot;' COLOR='gray'&gt;&quot; + m + &quot;&lt;/FONT&gt;&lt;/TD&gt;&quot;;
+	}
+	
+	return vCode;
+}
+Calendar.prototype.format_day = function(vday) {
+	var vNowDay = gNow.getDate();
+	var vNowMonth = gNow.getMonth();
+	var vNowYear = gNow.getFullYear();
+	if (vday == vNowDay &amp;&amp; this.gMonth == vNowMonth &amp;&amp; this.gYear == vNowYear)
+		return (&quot;&lt;FONT COLOR=\&quot;RED\&quot;&gt;&lt;B&gt;&quot; + vday + &quot;&lt;/B&gt;&lt;/FONT&gt;&quot;);
+	else
+		return (vday);
+}
+Calendar.prototype.write_weekend_string = function(vday) {
+	var i;
+	// Return special formatting for the weekend day.
+	for (i=0; i&lt;weekend.length; i++) {
+		if (vday == weekend[i])
+			return (&quot; BGCOLOR=\&quot;&quot; + weekendColor + &quot;\&quot;&quot;);
+	}
+	
+	return &quot;&quot;;
+}
+Calendar.prototype.format_data = function(p_day) {
+	var vData;
+	var vMonth = 1 + this.gMonth;
+	vMonth = (vMonth.toString().length &lt; 2) ? &quot;0&quot; + vMonth : vMonth;
+	var vMon = Calendar.get_month(this.gMonth).substr(0,3).toUpperCase();
+	var vFMon = Calendar.get_month(this.gMonth).toUpperCase();
+	var vY4 = new String(this.gYear);
+	var vY2 = new String(this.gYear.substr(2,2));
+	var vDD = (p_day.toString().length &lt; 2) ? &quot;0&quot; + p_day : p_day;
+	switch (this.gFormat) {
+		case &quot;MM\/DD\/YYYY&quot; :
+			vData = vMonth + &quot;\/&quot; + vDD + &quot;\/&quot; + vY4;
+			break;
+		case &quot;MM\/DD\/YY&quot; :
+			vData = vMonth + &quot;\/&quot; + vDD + &quot;\/&quot; + vY2;
+			break;
+		case &quot;MM-DD-YYYY&quot; :
+			vData = vMonth + &quot;-&quot; + vDD + &quot;-&quot; + vY4;
+			break;
+		case &quot;MM-DD-YY&quot; :
+			vData = vMonth + &quot;-&quot; + vDD + &quot;-&quot; + vY2;
+			break;
+		case &quot;DD\/MON\/YYYY&quot; :
+			vData = vDD + &quot;\/&quot; + vMon + &quot;\/&quot; + vY4;
+			break;
+		case &quot;DD\/MON\/YY&quot; :
+			vData = vDD + &quot;\/&quot; + vMon + &quot;\/&quot; + vY2;
+			break;
+		case &quot;DD-MON-YYYY&quot; :
+			vData = vDD + &quot;-&quot; + vMon + &quot;-&quot; + vY4;
+			break;
+		case &quot;DD-MON-YY&quot; :
+			vData = vDD + &quot;-&quot; + vMon + &quot;-&quot; + vY2;
+			break;
+		case &quot;DD\/MONTH\/YYYY&quot; :
+			vData = vDD + &quot;\/&quot; + vFMon + &quot;\/&quot; + vY4;
+			break;
+		case &quot;DD\/MONTH\/YY&quot; :
+			vData = vDD + &quot;\/&quot; + vFMon + &quot;\/&quot; + vY2;
+			break;
+		case &quot;DD-MONTH-YYYY&quot; :
+			vData = vDD + &quot;-&quot; + vFMon + &quot;-&quot; + vY4;
+			break;
+		case &quot;DD-MONTH-YY&quot; :
+			vData = vDD + &quot;-&quot; + vFMon + &quot;-&quot; + vY2;
+			break;
+		case &quot;DD\/MM\/YYYY&quot; :
+			vData = vDD + &quot;\/&quot; + vMonth + &quot;\/&quot; + vY4;
+			break;
+		case &quot;DD\/MM\/YY&quot; :
+			vData = vDD + &quot;\/&quot; + vMonth + &quot;\/&quot; + vY2;
+			break;
+		case &quot;DD-MM-YYYY&quot; :
+			vData = vDD + &quot;-&quot; + vMonth + &quot;-&quot; + vY4;
+			break;
+		case &quot;DD-MM-YY&quot; :
+			vData = vDD + &quot;-&quot; + vMonth + &quot;-&quot; + vY2;
+			break;
+		default :
+			vData = vMonth + &quot;\/&quot; + vDD + &quot;\/&quot; + vY4;
+	}
+	return vData;
+}
+function Build(p_item, p_month, p_year, p_format) {
+	var p_WinCal = ggWinCal;
+	gCal = new Calendar(p_item, p_WinCal, p_month, p_year, p_format);
+	// Customize your Calendar here..
+	gCal.gBGColor=&quot;white&quot;;
+	gCal.gLinkColor=&quot;black&quot;;
+	gCal.gTextColor=&quot;black&quot;;
+	gCal.gHeaderColor=&quot;darkgreen&quot;;
+	// Choose appropriate show function
+	if (gCal.gYearly)	gCal.showY();
+	else	gCal.show();
+}
+function show_calendar() {
+	/* 
+		p_month : 0-11 for Jan-Dec; 12 for All Months.
+		p_year	: 4-digit year
+		p_format: Date format (mm/dd/yyyy, dd/mm/yy, ...)
+		p_item	: Return Item.
+	*/
+	p_item = arguments[0];
+	if (arguments[1] == null)
+		p_month = new String(gNow.getMonth());
+	else
+		p_month = arguments[1];
+	if (arguments[2] == &quot;&quot; || arguments[2] == null)
+		p_year = new String(gNow.getFullYear().toString());
+	else
+		p_year = arguments[2];
+	if (arguments[3] == null)
+		p_format = &quot;MM/DD/YYYY&quot;;
+	else
+		p_format = arguments[3];
+	vWinCal = window.open(&quot;&quot;, &quot;Calendar&quot;, 
+		&quot;width=250,height=250,status=no,resizable=no,top=200,left=200&quot;);
+	vWinCal.opener = self;
+	ggWinCal = vWinCal;
+	Build(p_item, p_month, p_year, p_format);
+}
+/*
+Yearly Calendar Code Starts here
+*/
+function show_yearly_calendar(p_item, p_year, p_format) {
+	// Load the defaults..
+	if (p_year == null || p_year == &quot;&quot;)
+		p_year = new String(gNow.getFullYear().toString());
+	if (p_format == null || p_format == &quot;&quot;)
+		p_format = &quot;MM/DD/YYYY&quot;;
+	var vWinCal = window.open(&quot;&quot;, &quot;Calendar&quot;, &quot;scrollbars=yes&quot;);
+	vWinCal.opener = self;
+	ggWinCal = vWinCal;
+	Build(p_item, null, p_year, p_format);
+}
+&lt;/script&gt;
+&lt;center&gt;
+&lt;form name=calform&gt;
+&lt;input type=text name=&quot;datebox&quot; size=15&gt;&lt;a href=&quot;javascript:show_calendar('calform.datebox');&quot; onmouseover=&quot;window.status='Date Picker';return true;&quot; onmouseout=&quot;window.status='';return true;&quot;&gt;&lt;img src=&quot;photo/show-calendar.gif&quot; width=24 height=22 border=0&gt;&lt;/a&gt;
+&lt;/form&gt;
+&lt;/center&gt;
+
+
+
+
+&nbsp;
+
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

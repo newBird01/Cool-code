@@ -1,0 +1,1295 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--计算器(五)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body bgcolor=#FFFFFF>
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">计算器(五)</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=1368" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<script language="JavaScript">
+function getinput(func) {
+        var a = document.mainform.total;
+        var b = document.mainform.memory1;
+        var c = document.mainform.memory2;
+        if (document.mainform.mode[0].checked) {
+                var mode = 1 //help mode
+                }
+        else {
+                var mode = 0 //non-help mode
+                }
+        if (func==power) {
+                return power(mode, a)
+                }
+        if (func==equa) {
+                return equa(mode)
+                }
+        if (func==spec) {
+                return spec(mode, a)
+                }
+        if (func==cubed) {
+                return cubed(mode, a)
+                }
+        if (func==squared) {
+                return squared(mode, a)
+                }
+        if (func=="mem1") {
+                return mem(mode, a, b)
+                }
+        if (func=="mem2") {
+                return mem(mode, a, c)
+                }
+        if (func=="rcl1") {
+                return rcl(mode, b, a)
+                }
+        if (func=="rcl2") {
+                return rcl(mode, c, a)
+                }
+        if (func==logrythm) {
+                return logrythm(mode, a)
+                }
+        if (func==sine) {
+                return sine(mode, a)
+                }
+        if (func==cosine) {
+                return cosine(mode, a)
+                }
+        if (func==tangent) {
+                return tangent(mode, a)
+                }
+        if (func==squareroot) {
+                return squareroot(mode, a)
+                }
+        if (func==fractions) {
+                return fractions(mode, a)
+                }
+        if (func==negpos) {
+                return negpos(mode, a)
+                }
+        if (func==mc) {
+                return mc(mode, b, c)
+                }
+        if (func==scie) {
+                return scie(mode, a)
+                }
+        if (func==unscie) {
+                return unscie(mode, a)
+                }
+        }
+
+//enough variables
+
+//evaluate the value in the total textbox
+function calc(obj, objw) {
+        if (objw.value=="") {
+                objw.value=''
+                }
+        objw.value = eval(obj.value)
+        }
+//add more characters to the total textbox
+function more(obj, where) {
+        if (where.value=="" || where.value=="0") {
+                where.value = obj
+                }
+        else {
+                where.value += obj
+                }
+        }
+//clear the total textbox value and start with this new character
+function doit(obj, where) {
+        where.value = obj
+        }
+//clear the value
+function cleart(obj) {
+        obj.value = '0'
+        }
+//oops, backspace
+function less(obj) {
+        obj.value = obj.value.substring(0, obj.value.length - 1)
+        }
+//powers to any given number
+function power(mode, obj) {
+        if (mode==1) {
+                alert("Power allows you to give powers to any given number.")
+                }
+        if (obj.value!="" && obj.value!="0") {
+                aa = prompt("Do you want to use the number in the total textbox as the base number?", "y or n");
+                if (aa=="y") {
+                        a = obj.value
+                        }
+                else {
+                        a = prompt("Enter a base number:", "")
+                        }
+                b = prompt("Enter an exponent:", "");
+                if (aa=="y") {
+                        doit(Math.pow(a, b), obj)
+                        }
+                else {
+                        more('(' + Math.pow(a, b) + ')', obj)
+                        }
+                }
+        else {
+                a = prompt("Enter a base:", "");
+                b = prompt("Enter an exponent:", "");
+                doit(Math.pow(a, b), obj)
+                }
+        }
+//solve for unknown variable ("x") in any given expression
+function equa(mode) {
+        if (mode==1) {
+                alert("Equasion\+ is a handy little tool that will solve for \"x\" in any expression. Ex: 5*x=10, it will alert you this: x=2. But, you have to tell it exactly what you want. Method is what property of math you will be using. Ex: addition, subtraction, division, or multiplication. Remember, *=multiplication, /=division, \+=addition, and -=subtraction.")
+                }
+        a = prompt("What method will you be using? Ex: \/, *, +, or -", "");
+        if (a=="/") {
+                f = prompt("Is \"x\" being divided?", "y or n")
+                if (f=="y") {
+                        b = prompt("\"x\" is being divided by what?", ""); 
+                        c = prompt("And what is the answer?", "");
+                        d = c*b;
+                        }
+                else {
+                        b = prompt("What number is being divided by \"x\"?", "");
+                        c = prompt("And what is the answer?", "");
+                        d = b/c;
+                        }
+                }
+        if (a=="*") {
+                b = prompt("What is being multiplied by \"x\"?", "");
+                c = prompt("And what is the answer?", "");
+                d = c/b;
+                }
+        if (a=="+") {
+                b = prompt("What is being added to \"x\"?", "");
+                c = prompt("And what is the answer?", "");
+                d = c-b
+                }
+        if (a=="-") {
+                f = prompt("Is \"x\" being subtracted?", "y or n")
+                if (f=="y") {
+                        b = prompt("\"x\" is being subtracted from what?", ""); 
+                        c = prompt("And what is the answer?", "");
+                        d = b-c
+                        }
+                else {
+                        b = prompt("What number is being subtracted from \"x\"?", "");
+                        c = prompt("And what is the answer?", "");
+                        d = (b*1)+(c*1)
+                        }
+                }
+        if (a=="") {
+                d = 0
+                }
+        alert("x = "+d+"")
+        }
+//multiply any number by any number, any number of times
+function spec(mode, obj) {
+        if (mode==1) {
+                alert("Spec is handy tool that allows you to multiply a number by another number any number of times. It works kind of like powers, except the only difference is that in powers, you have multiply a number by itself any number of times. This function allows you to multiply any number by any number, any number of times.")
+                }
+        if (obj.value!="" && obj.value!="0") {
+                aa = prompt("Do you want to use the number in the total textbox as the first number?", "y or n") 
+                if (aa=="y") {
+                        a = obj.value
+                        }
+                else {
+                        a = prompt("A number please as the first number:", "")
+                        }
+                b = prompt("And you want to multiply the number by what number?", "");
+                c = prompt("And how many times will you being multiplying the first by the second?", "");
+                d = Math.pow(b,c);
+                if (aa=="y") {
+                        doit(a*d, obj)
+                        }
+                else {
+                        more('(' + a*d + ')', obj)
+                        }
+                }
+        else {
+                a = prompt("A number please as the first number:", "");
+                b = prompt("And you want to multiply the number by what number?", "");
+                c = prompt("And how many times will you being multiplying the first by the second?", "");
+                d = Math.pow(b,c);
+                doit(a*d, obj)
+                }
+        }
+//cube any given number
+function cubed(mode, obj) {
+        if (mode==1) {
+                alert("Cubed allows you to cube any given number.")
+                }
+        if (obj.value!="" && obj.value!="0") {
+                aa = prompt("Do you want to cube the current number in the total textbox?", "y or n");
+                if (aa=="y") {
+                        doit(Math.pow(obj.value, 3), obj)
+                        }
+                else {
+                        a = prompt("Enter a number to cube:", "");
+                        more('(' + Math.pow(a, 3) + ')', obj)
+                        }
+                }
+        else {
+                a = prompt("Enter a number to cube:", "");
+                doit(Math.pow(a, 3), obj)
+                }
+        }
+//square any given number
+function squared(mode, obj) {
+        if (mode==1) {
+                alert("Squared allows you to square any given number")
+                }
+        if (obj.value!="" && obj.value!="0") {
+                aa = prompt("Do you want to square the current number in the total textbox?", "y or n");
+                if (aa=="y") {
+                        doit(Math.pow(obj.value, 2), obj)
+                        }
+                else {
+                        a = prompt("Enter a number to be squared:", "");
+                        more('(' + Math.pow(a, 2) + ')', obj)
+                        }
+                }
+        else {
+                a = prompt("Enter a number to square:", "");
+                doit(Math.pow(a, 2), obj)
+                }
+        }
+//store any number in memory
+function mem(mode, obj, where) {
+        if (mode==1) {
+                alert("Pressing the memory button allows you to save the current number in the total textbox for later use. You can Recall the remembered number by pressing the Rcl button.")
+                }
+        where.value = obj.value
+        }
+//recall any numbers in memory
+function rcl(mode, obj, where) {
+        if (mode==1) {
+                alert("Rcl is a neat function that works with Memory. It recalls and gives you the number you saved in the coresponding memory.")
+                }
+        if (obj.value=="") {
+                more('', where)
+                }
+        else {
+                more('(' + obj.value + ')', where)
+                }
+        }
+//find the logarythm of any given number
+function logrythm(mode, obj) {
+        if (mode==1) {
+                alert("This function returns the natural logarythm of any given number")
+                }
+        if (obj.value!="" && obj.value!="0") {
+                aa = prompt("Do you want to find the logarythm of the number in the total textbox?", "y or n");
+                if (aa=="y") {
+                        doit(Math.log(obj.value), obj)
+                        }
+                else {
+                        a = prompt("Enter a number to find the logarythm of:", "");
+                        more('(' + Math.log(a) + ')', obj)
+                        }
+                }
+        else {
+                a = prompt("Enter a number to find the logarythm of:", "");
+                doit(Math.log(a), obj)
+                }
+        }
+//find the sine of any given number
+function sine(mode, obj) {
+        if (mode==1) {
+                alert("This function returns the sine of any given number")
+                }
+        if (obj.value!="" && obj.value!="0") {
+                aa = prompt("Do you want to find the sine of the number in the total textbox?", "y or n");
+                if (aa=="y") {
+                        doit(Math.sin(obj.value), obj)
+                        }
+                else {
+                        a = prompt("Enter a number to find the sine of:", "");
+                        more('(' + Math.sin(a) + ')', obj)
+                        }
+                }
+        else {
+                a = prompt("Enter a number to find the sine of:", "");
+                doit(Math.sin(a), obj)
+                }
+        }
+//find the cosine of any given number
+function cosine(mode, obj) {
+        if (mode==1) {
+                alert("This function returns the cosine of any given number")
+                }
+        if (obj.value!="" && obj.value!="0") {
+                aa = prompt("Do you want to find the cosine of the number in the total textbox?", "y or n");
+                if (aa=="y") {
+                        doit(Math.cos(obj.value), obj)
+                        }
+                else {
+                        a = prompt("Enter a number to find the cosine of:", "");
+                        more('(' + Math.cos(a) + ')', obj)
+                        }
+                }
+        else {
+                a = prompt("Enter a number to find the cosine of:", "");
+                doit(Math.cos(a), obj)
+                }
+        }
+//find the tangent of any given number
+function tangent(mode, obj) {
+        if (mode==1) {
+                alert("This function returns the tangent of any given number")
+                }
+        if (obj.value!="" && obj.value!="0") {
+                aa = prompt("Do you want to find the tangent of the number in the total textbox?", "y or n");
+                if (aa=="y") {
+                        doit(Math.tan(obj.value), obj)
+                        }
+                else {
+                        a = prompt("Enter a number to find the tangent of:", "");
+                        more('(' + Math.tan(a) + ')', obj)
+                        }
+                }
+        else {
+                a = prompt("Enter a number to find the tangent of:", "");
+                doit(Math.tan(a), obj)
+                }
+        }
+//find the squareroot of any given number
+function squareroot(mode, obj) {
+        if (mode==1) {
+                alert("This function gives you the square root of any given number")
+                }
+        if (obj.value!="" && obj.value!="0") {
+                aa = prompt("Do you want to find the square root of the current number in the total text box?", "y or n");
+                if (aa=="y") {
+                        doit(Math.sqrt(obj.value), obj)
+                        }
+                else {
+                        a = prompt("Enter a number to find the square root of:", "");
+                        more('(' + Math.sqrt(a) + ')', obj)
+                        }
+                }
+        else {
+                a = prompt("Enter a number to find the square root of:", "");
+                doit(Math.sqrt(a), obj)
+                }
+        }
+//fractions are cool............
+function fractions(mode, obj) {
+        if (mode==1) {
+                alert("Frac is a neat function that allows you to input fractions. The script will automaticly convert the fraction you give into a decimal soit will understand it. Just make sure you know the math terms: in 2 and2 fifths, 2 is the base, the next 2 is the numerator, and 5 is the denominator. If there is no base number, leave the prompt box that asks for a base empty. Without a base you can just do simple fractions such as 2 fifths.")
+                }
+        if (obj.value!="" && obj.value!="0") {
+                aa = prompt("Do you want to use the number in the total textbox as the base?", "y or n");
+                if (aa=="y") {
+                        a = obj.value
+                        }
+                else {
+                        a = prompt("Enter a base:", "");
+                        }
+                b = prompt("Enter a numerator:", "");
+                c = prompt("Enter a denominator", "");
+                d = b/c;
+                e = (d*1)+(a*1);
+                if (aa=="y") {
+                        doit(e, obj)
+                        }
+                else {
+                        more('(' + e + ')', obj)
+                        }
+                }
+        else {
+                a = prompt("Enter a base:", "");
+                b = prompt("Enter a numerator:", "");
+                c = prompt("Enter a denominator:", "");
+                d = b/c;
+                e = (d*1)+(a*1);
+                doit(e, obj)
+                }
+        if (e=="nullNaN") {
+                more("", obj)
+                }
+        if (e=="NaN") {
+                more("", obj)
+                }
+        }
+//change the sign of any given number
+function negpos(mode, obj) {
+        if (mode==1) {
+                alert("+/- allows the you to convert a negative(-) number to a positive(+) and a positive number to a negative. And then it puts it in the total textbox with any other number that is already in there.")
+                }
+        obj.value *= (-1)
+        }
+//clear any numbers in memory
+function mc(mode, obj1, obj2) {
+        if (mode==1) {
+                alert("Memory Clear is an easy little function that erases the values of both memorys.")
+                }
+        obj1.value = '';
+        obj2.value = ''
+        }
+//convert any number into scientific notation
+function scie(mode, obj) {
+        if (mode==1) {
+                alert("Scie is cool function that allows you to convert any given number into scientific notation. The format of the answer is as follows: Ex: input:120, output:1.2*10^2, would be 1.2 multiplied by 10 to the second power.")
+                }
+        if (obj.value!="" && obj.value!="0") {
+                aa = prompt("Do you want to convert the current number in the total textbox?", "y or n");
+                if (aa=="y") {
+                        a = obj.value
+                        }
+                else {
+                        a = prompt("Enter a number to convert:", "")
+                        }       
+                }
+        else {
+                a = prompt("Enter a number to convert:", "")
+                }
+        var b = 0;
+        while (a>10) {   //divide by ten until variable is no longer greater han 10
+                a /= 10;
+                b += 1
+                }
+        doit(a + '*10^' + b, obj)
+        }
+//convert any number out of scientific notation to standard form
+function unscie(mode, obj) {
+        if (mode==1) {  alert("UnScie does the exact opposite of Scie. It allows you to input  number in scientific notation and it will output the number in standard notation. Ex: input:1.2*10^2, output:120")
+                }
+        a = prompt("Enter the number that is the decimal:", "");
+        b = prompt("Enter the power that is given to 10:", "");
+        c = Math.pow(10, b);
+        d = a*c;
+        if (obj.value!="" && obj.value!="0") {
+                e = prompt("Do you want to use this result as a part of another calculation in the total textbox?", "y or n");
+                if (e=="y") {
+                        more('(' + d + ')', obj)
+                        }
+                else {
+                        doit(d, obj)
+                        }
+                }
+        else {
+                doit(d, obj)
+                }
+        }
+//HELP!!
+function helpround() {
+        if (document.mainform.mode[0].checked) {
+                alert("Round is an easy function that simply rounds the number in the total textbox to the nearest whole number.")
+                }
+        }
+function helppi () {
+        if (document.mainform.mode[0].checked) {
+                alert("PI is an easy function that just gives you PI. 3.14......")
+                }
+        }
+
+</script>
+<form name="mainform"><center>
+<table border=1 cellspacing=20 cellpadding=1>
+<td><table border=0 cellspacing=1 cellpadding=1>
+<td><b>Scientific Notation:</b><br>
+<input type="button" value="Scie" onClick="getinput(scie)">
+<input type="button" value="UnScie" onClick="getinput(unscie)"></td>
+<tr>
+<td><b>Memory:</b><br>
+<input type="button" value=" M1 " onClick="getinput('mem1')">
+<input type="button" value=" M2 " onClick="getinput('mem2')">
+<input type="button" value=" Rcl1 " onClick="getinput('rcl1')">
+<br>
+<center>
+<input type="button" value=" Rcl2 " onClick="getinput('rcl2')">
+<input type="button" value=" MC " onClick="getinput(mc)">
+<tr>
+<td><b>Special functions:</b><br>
+<input type="button" value=" sin " onClick="getinput(sine)">
+<input type="button" value=" cos " onClick="getinput(cosine)">
+<input type="button" value=" tan " onClick="getinput(tangent)">
+<br>
+<input type="button" value=" log " onClick="getinput(logrythm)">
+<input type="button" value=" Spec " onClick="getinput(spec)">
+<input type="button" value=" PI " onClick="helppi(); more('(' + Math.PI + ')', document.mainform.total)">
+</table><td>
+<table border=1 cellspacing=1 cellpadding=1>
+<td><b>模式:
+<input name="mode" type="radio" checked>帮助 
+<input type="radio" name="mode">不要帮助<tr>
+<td><input type="text" name="total" size=20 value="0">
+<td><input type="button" value="  C  " onClick="cleart(document.mainform.total)">
+</table>
+<table border=1 cellpadding=0 cellspacing=0>
+<td><input type="button" value="  1  " onClick="more(1, document.mainform.total)">
+<td><input type="button" value="  2  " onClick="more(2, document.mainform.total)">
+<td><input type="button" value="  3  " onClick="more(3, document.mainform.total)">
+<td><input type="button" value="  )  " onClick="more(')', document.mainform.total)">
+<td><input type="button" value="  +  " onClick="more('+', document.mainform.total)">
+<tr>
+<td><input type="button" value="  4  " onClick="more(4, document.mainform.total)">
+<td><input type="button" value="  5  " onClick="more(5, document.mainform.total)">
+<td><input type="button" value="  6  " onClick="more(6, document.mainform.total)">
+<td><input type="button" value="  (  " onClick="more('(', document.mainform.total)">
+<td><input type="button" value="  -  " onClick="more('-', document.mainform.total)">
+<tr>
+<td><input type="button" value="  7  " onClick="more(7, document.mainform.total)">
+<td><input type="button" value="  8  " onClick="more(8, document.mainform.total)">
+<td><input type="button" value="  9  " onClick="more(9, document.mainform.total)">
+<td><input type="button" value="  .  " onClick="more('.', document.mainform.total)">
+<td><input type="button" value="  /  " onClick="more('/', document.mainform.total)">
+<tr>
+<td><input type="button" value=" <-- " onClick="less(document.mainform.total)">
+<td><input type="button" value="  0  " onClick="more(0, document.mainform.total)">
+<td><input type="button" value="  =  " onClick="calc(document.mainform.total, document.mainform.total)">
+<td><input type="button" value=" +/- " onClick="getinput(negpos)">
+<td><input type="button" value="  *  " onClick="more('*', document.mainform.total)">
+</table>
+<td>
+<table border=1 cellspacing=1 cellpaddng=1>
+<td><b>Powers:</b><br>
+<input type="button" value=" ^2 " onClick="getinput(squared)">
+<input type="button" value=" ^3 " onClick="getinput(cubed)">
+<input type="button" value=" x^y " onClick="getinput(power)">
+<tr>
+<td><b>Finding "x":</b><br>
+<input type="button" value="Equasion+" onClick="getinput(equa)">
+<tr>
+<td><b>Fractions:</b><br>
+<input type="button" value="Frac" onClick="getinput(fractions)">
+<tr>
+<td><b>Misc:</b><br>
+<input type="button" value="Sqrt" onClick="getinput(squareroot)">
+<input type="button" value="Round" onClick="helpround();
+doit(Math.round(document.mainform.total.value), document.mainform.total)">
+</table>
+</table>
+
+<input type="button" value="About" onClick="alert('南京有线台陆晓庆制作！！')">
+<input type="hidden" name="memory1">
+<input type="hidden" name="memory2">
+ 
+</fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+把如下代码加入<body>区域中
+&nbsp;&lt;script language=&quot;JavaScript&quot;&gt;
+function getinput(func) {
+        var a = document.mainform.total;
+        var b = document.mainform.memory1;
+        var c = document.mainform.memory2;
+        if (document.mainform.mode[0].checked) {
+                var mode = 1 //help mode
+                }
+        else {
+                var mode = 0 //non-help mode
+                }
+        if (func==power) {
+                return power(mode, a)
+                }
+        if (func==equa) {
+                return equa(mode)
+                }
+        if (func==spec) {
+                return spec(mode, a)
+                }
+        if (func==cubed) {
+                return cubed(mode, a)
+                }
+        if (func==squared) {
+                return squared(mode, a)
+                }
+        if (func==&quot;mem1&quot;) {
+                return mem(mode, a, b)
+                }
+        if (func==&quot;mem2&quot;) {
+                return mem(mode, a, c)
+                }
+        if (func==&quot;rcl1&quot;) {
+                return rcl(mode, b, a)
+                }
+        if (func==&quot;rcl2&quot;) {
+                return rcl(mode, c, a)
+                }
+        if (func==logrythm) {
+                return logrythm(mode, a)
+                }
+        if (func==sine) {
+                return sine(mode, a)
+                }
+        if (func==cosine) {
+                return cosine(mode, a)
+                }
+        if (func==tangent) {
+                return tangent(mode, a)
+                }
+        if (func==squareroot) {
+                return squareroot(mode, a)
+                }
+        if (func==fractions) {
+                return fractions(mode, a)
+                }
+        if (func==negpos) {
+                return negpos(mode, a)
+                }
+        if (func==mc) {
+                return mc(mode, b, c)
+                }
+        if (func==scie) {
+                return scie(mode, a)
+                }
+        if (func==unscie) {
+                return unscie(mode, a)
+                }
+        }
+
+//enough variables
+
+//evaluate the value in the total textbox
+function calc(obj, objw) {
+        if (objw.value==&quot;&quot;) {
+                objw.value=''
+                }
+        objw.value = eval(obj.value)
+        }
+//add more characters to the total textbox
+function more(obj, where) {
+        if (where.value==&quot;&quot; || where.value==&quot;0&quot;) {
+                where.value = obj
+                }
+        else {
+                where.value += obj
+                }
+        }
+//clear the total textbox value and start with this new character
+function doit(obj, where) {
+        where.value = obj
+        }
+//clear the value
+function cleart(obj) {
+        obj.value = '0'
+        }
+//oops, backspace
+function less(obj) {
+        obj.value = obj.value.substring(0, obj.value.length - 1)
+        }
+//powers to any given number
+function power(mode, obj) {
+        if (mode==1) {
+                alert(&quot;Power allows you to give powers to any given number.&quot;)
+                }
+        if (obj.value!=&quot;&quot; &amp;&amp; obj.value!=&quot;0&quot;) {
+                aa = prompt(&quot;Do you want to use the number in the total textbox as the base number?&quot;, &quot;y or n&quot;);
+                if (aa==&quot;y&quot;) {
+                        a = obj.value
+                        }
+                else {
+                        a = prompt(&quot;Enter a base number:&quot;, &quot;&quot;)
+                        }
+                b = prompt(&quot;Enter an exponent:&quot;, &quot;&quot;);
+                if (aa==&quot;y&quot;) {
+                        doit(Math.pow(a, b), obj)
+                        }
+                else {
+                        more('(' + Math.pow(a, b) + ')', obj)
+                        }
+                }
+        else {
+                a = prompt(&quot;Enter a base:&quot;, &quot;&quot;);
+                b = prompt(&quot;Enter an exponent:&quot;, &quot;&quot;);
+                doit(Math.pow(a, b), obj)
+                }
+        }
+//solve for unknown variable (&quot;x&quot;) in any given expression
+function equa(mode) {
+        if (mode==1) {
+                alert(&quot;Equasion\+ is a handy little tool that will solve for \&quot;x\&quot; in any expression. Ex: 5*x=10, it will alert you this: x=2. But, you have to tell it exactly what you want. Method is what property of math you will be using. Ex: addition, subtraction, division, or multiplication. Remember, *=multiplication, /=division, \+=addition, and -=subtraction.&quot;)
+                }
+        a = prompt(&quot;What method will you be using? Ex: \/, *, +, or -&quot;, &quot;&quot;);
+        if (a==&quot;/&quot;) {
+                f = prompt(&quot;Is \&quot;x\&quot; being divided?&quot;, &quot;y or n&quot;)
+                if (f==&quot;y&quot;) {
+                        b = prompt(&quot;\&quot;x\&quot; is being divided by what?&quot;, &quot;&quot;); 
+                        c = prompt(&quot;And what is the answer?&quot;, &quot;&quot;);
+                        d = c*b;
+                        }
+                else {
+                        b = prompt(&quot;What number is being divided by \&quot;x\&quot;?&quot;, &quot;&quot;);
+                        c = prompt(&quot;And what is the answer?&quot;, &quot;&quot;);
+                        d = b/c;
+                        }
+                }
+        if (a==&quot;*&quot;) {
+                b = prompt(&quot;What is being multiplied by \&quot;x\&quot;?&quot;, &quot;&quot;);
+                c = prompt(&quot;And what is the answer?&quot;, &quot;&quot;);
+                d = c/b;
+                }
+        if (a==&quot;+&quot;) {
+                b = prompt(&quot;What is being added to \&quot;x\&quot;?&quot;, &quot;&quot;);
+                c = prompt(&quot;And what is the answer?&quot;, &quot;&quot;);
+                d = c-b
+                }
+        if (a==&quot;-&quot;) {
+                f = prompt(&quot;Is \&quot;x\&quot; being subtracted?&quot;, &quot;y or n&quot;)
+                if (f==&quot;y&quot;) {
+                        b = prompt(&quot;\&quot;x\&quot; is being subtracted from what?&quot;, &quot;&quot;); 
+                        c = prompt(&quot;And what is the answer?&quot;, &quot;&quot;);
+                        d = b-c
+                        }
+                else {
+                        b = prompt(&quot;What number is being subtracted from \&quot;x\&quot;?&quot;, &quot;&quot;);
+                        c = prompt(&quot;And what is the answer?&quot;, &quot;&quot;);
+                        d = (b*1)+(c*1)
+                        }
+                }
+        if (a==&quot;&quot;) {
+                d = 0
+                }
+        alert(&quot;x = &quot;+d+&quot;&quot;)
+        }
+//multiply any number by any number, any number of times
+function spec(mode, obj) {
+        if (mode==1) {
+                alert(&quot;Spec is handy tool that allows you to multiply a number by another number any number of times. It works kind of like powers, except the only difference is that in powers, you have multiply a number by itself any number of times. This function allows you to multiply any number by any number, any number of times.&quot;)
+                }
+        if (obj.value!=&quot;&quot; &amp;&amp; obj.value!=&quot;0&quot;) {
+                aa = prompt(&quot;Do you want to use the number in the total textbox as the first number?&quot;, &quot;y or n&quot;) 
+                if (aa==&quot;y&quot;) {
+                        a = obj.value
+                        }
+                else {
+                        a = prompt(&quot;A number please as the first number:&quot;, &quot;&quot;)
+                        }
+                b = prompt(&quot;And you want to multiply the number by what number?&quot;, &quot;&quot;);
+                c = prompt(&quot;And how many times will you being multiplying the first by the second?&quot;, &quot;&quot;);
+                d = Math.pow(b,c);
+                if (aa==&quot;y&quot;) {
+                        doit(a*d, obj)
+                        }
+                else {
+                        more('(' + a*d + ')', obj)
+                        }
+                }
+        else {
+                a = prompt(&quot;A number please as the first number:&quot;, &quot;&quot;);
+                b = prompt(&quot;And you want to multiply the number by what number?&quot;, &quot;&quot;);
+                c = prompt(&quot;And how many times will you being multiplying the first by the second?&quot;, &quot;&quot;);
+                d = Math.pow(b,c);
+                doit(a*d, obj)
+                }
+        }
+//cube any given number
+function cubed(mode, obj) {
+        if (mode==1) {
+                alert(&quot;Cubed allows you to cube any given number.&quot;)
+                }
+        if (obj.value!=&quot;&quot; &amp;&amp; obj.value!=&quot;0&quot;) {
+                aa = prompt(&quot;Do you want to cube the current number in the total textbox?&quot;, &quot;y or n&quot;);
+                if (aa==&quot;y&quot;) {
+                        doit(Math.pow(obj.value, 3), obj)
+                        }
+                else {
+                        a = prompt(&quot;Enter a number to cube:&quot;, &quot;&quot;);
+                        more('(' + Math.pow(a, 3) + ')', obj)
+                        }
+                }
+        else {
+                a = prompt(&quot;Enter a number to cube:&quot;, &quot;&quot;);
+                doit(Math.pow(a, 3), obj)
+                }
+        }
+//square any given number
+function squared(mode, obj) {
+        if (mode==1) {
+                alert(&quot;Squared allows you to square any given number&quot;)
+                }
+        if (obj.value!=&quot;&quot; &amp;&amp; obj.value!=&quot;0&quot;) {
+                aa = prompt(&quot;Do you want to square the current number in the total textbox?&quot;, &quot;y or n&quot;);
+                if (aa==&quot;y&quot;) {
+                        doit(Math.pow(obj.value, 2), obj)
+                        }
+                else {
+                        a = prompt(&quot;Enter a number to be squared:&quot;, &quot;&quot;);
+                        more('(' + Math.pow(a, 2) + ')', obj)
+                        }
+                }
+        else {
+                a = prompt(&quot;Enter a number to square:&quot;, &quot;&quot;);
+                doit(Math.pow(a, 2), obj)
+                }
+        }
+//store any number in memory
+function mem(mode, obj, where) {
+        if (mode==1) {
+                alert(&quot;Pressing the memory button allows you to save the current number in the total textbox for later use. You can Recall the remembered number by pressing the Rcl button.&quot;)
+                }
+        where.value = obj.value
+        }
+//recall any numbers in memory
+function rcl(mode, obj, where) {
+        if (mode==1) {
+                alert(&quot;Rcl is a neat function that works with Memory. It recalls and gives you the number you saved in the coresponding memory.&quot;)
+                }
+        if (obj.value==&quot;&quot;) {
+                more('', where)
+                }
+        else {
+                more('(' + obj.value + ')', where)
+                }
+        }
+//find the logarythm of any given number
+function logrythm(mode, obj) {
+        if (mode==1) {
+                alert(&quot;This function returns the natural logarythm of any given number&quot;)
+                }
+        if (obj.value!=&quot;&quot; &amp;&amp; obj.value!=&quot;0&quot;) {
+                aa = prompt(&quot;Do you want to find the logarythm of the number in the total textbox?&quot;, &quot;y or n&quot;);
+                if (aa==&quot;y&quot;) {
+                        doit(Math.log(obj.value), obj)
+                        }
+                else {
+                        a = prompt(&quot;Enter a number to find the logarythm of:&quot;, &quot;&quot;);
+                        more('(' + Math.log(a) + ')', obj)
+                        }
+                }
+        else {
+                a = prompt(&quot;Enter a number to find the logarythm of:&quot;, &quot;&quot;);
+                doit(Math.log(a), obj)
+                }
+        }
+//find the sine of any given number
+function sine(mode, obj) {
+        if (mode==1) {
+                alert(&quot;This function returns the sine of any given number&quot;)
+                }
+        if (obj.value!=&quot;&quot; &amp;&amp; obj.value!=&quot;0&quot;) {
+                aa = prompt(&quot;Do you want to find the sine of the number in the total textbox?&quot;, &quot;y or n&quot;);
+                if (aa==&quot;y&quot;) {
+                        doit(Math.sin(obj.value), obj)
+                        }
+                else {
+                        a = prompt(&quot;Enter a number to find the sine of:&quot;, &quot;&quot;);
+                        more('(' + Math.sin(a) + ')', obj)
+                        }
+                }
+        else {
+                a = prompt(&quot;Enter a number to find the sine of:&quot;, &quot;&quot;);
+                doit(Math.sin(a), obj)
+                }
+        }
+//find the cosine of any given number
+function cosine(mode, obj) {
+        if (mode==1) {
+                alert(&quot;This function returns the cosine of any given number&quot;)
+                }
+        if (obj.value!=&quot;&quot; &amp;&amp; obj.value!=&quot;0&quot;) {
+                aa = prompt(&quot;Do you want to find the cosine of the number in the total textbox?&quot;, &quot;y or n&quot;);
+                if (aa==&quot;y&quot;) {
+                        doit(Math.cos(obj.value), obj)
+                        }
+                else {
+                        a = prompt(&quot;Enter a number to find the cosine of:&quot;, &quot;&quot;);
+                        more('(' + Math.cos(a) + ')', obj)
+                        }
+                }
+        else {
+                a = prompt(&quot;Enter a number to find the cosine of:&quot;, &quot;&quot;);
+                doit(Math.cos(a), obj)
+                }
+        }
+//find the tangent of any given number
+function tangent(mode, obj) {
+        if (mode==1) {
+                alert(&quot;This function returns the tangent of any given number&quot;)
+                }
+        if (obj.value!=&quot;&quot; &amp;&amp; obj.value!=&quot;0&quot;) {
+                aa = prompt(&quot;Do you want to find the tangent of the number in the total textbox?&quot;, &quot;y or n&quot;);
+                if (aa==&quot;y&quot;) {
+                        doit(Math.tan(obj.value), obj)
+                        }
+                else {
+                        a = prompt(&quot;Enter a number to find the tangent of:&quot;, &quot;&quot;);
+                        more('(' + Math.tan(a) + ')', obj)
+                        }
+                }
+        else {
+                a = prompt(&quot;Enter a number to find the tangent of:&quot;, &quot;&quot;);
+                doit(Math.tan(a), obj)
+                }
+        }
+//find the squareroot of any given number
+function squareroot(mode, obj) {
+        if (mode==1) {
+                alert(&quot;This function gives you the square root of any given number&quot;)
+                }
+        if (obj.value!=&quot;&quot; &amp;&amp; obj.value!=&quot;0&quot;) {
+                aa = prompt(&quot;Do you want to find the square root of the current number in the total text box?&quot;, &quot;y or n&quot;);
+                if (aa==&quot;y&quot;) {
+                        doit(Math.sqrt(obj.value), obj)
+                        }
+                else {
+                        a = prompt(&quot;Enter a number to find the square root of:&quot;, &quot;&quot;);
+                        more('(' + Math.sqrt(a) + ')', obj)
+                        }
+                }
+        else {
+                a = prompt(&quot;Enter a number to find the square root of:&quot;, &quot;&quot;);
+                doit(Math.sqrt(a), obj)
+                }
+        }
+//fractions are cool............
+function fractions(mode, obj) {
+        if (mode==1) {
+                alert(&quot;Frac is a neat function that allows you to input fractions. The script will automaticly convert the fraction you give into a decimal soit will understand it. Just make sure you know the math terms: in 2 and2 fifths, 2 is the base, the next 2 is the numerator, and 5 is the denominator. If there is no base number, leave the prompt box that asks for a base empty. Without a base you can just do simple fractions such as 2 fifths.&quot;)
+                }
+        if (obj.value!=&quot;&quot; &amp;&amp; obj.value!=&quot;0&quot;) {
+                aa = prompt(&quot;Do you want to use the number in the total textbox as the base?&quot;, &quot;y or n&quot;);
+                if (aa==&quot;y&quot;) {
+                        a = obj.value
+                        }
+                else {
+                        a = prompt(&quot;Enter a base:&quot;, &quot;&quot;);
+                        }
+                b = prompt(&quot;Enter a numerator:&quot;, &quot;&quot;);
+                c = prompt(&quot;Enter a denominator&quot;, &quot;&quot;);
+                d = b/c;
+                e = (d*1)+(a*1);
+                if (aa==&quot;y&quot;) {
+                        doit(e, obj)
+                        }
+                else {
+                        more('(' + e + ')', obj)
+                        }
+                }
+        else {
+                a = prompt(&quot;Enter a base:&quot;, &quot;&quot;);
+                b = prompt(&quot;Enter a numerator:&quot;, &quot;&quot;);
+                c = prompt(&quot;Enter a denominator:&quot;, &quot;&quot;);
+                d = b/c;
+                e = (d*1)+(a*1);
+                doit(e, obj)
+                }
+        if (e==&quot;nullNaN&quot;) {
+                more(&quot;&quot;, obj)
+                }
+        if (e==&quot;NaN&quot;) {
+                more(&quot;&quot;, obj)
+                }
+        }
+//change the sign of any given number
+function negpos(mode, obj) {
+        if (mode==1) {
+                alert(&quot;+/- allows the you to convert a negative(-) number to a positive(+) and a positive number to a negative. And then it puts it in the total textbox with any other number that is already in there.&quot;)
+                }
+        obj.value *= (-1)
+        }
+//clear any numbers in memory
+function mc(mode, obj1, obj2) {
+        if (mode==1) {
+                alert(&quot;Memory Clear is an easy little function that erases the values of both memorys.&quot;)
+                }
+        obj1.value = '';
+        obj2.value = ''
+        }
+//convert any number into scientific notation
+function scie(mode, obj) {
+        if (mode==1) {
+                alert(&quot;Scie is cool function that allows you to convert any given number into scientific notation. The format of the answer is as follows: Ex: input:120, output:1.2*10^2, would be 1.2 multiplied by 10 to the second power.&quot;)
+                }
+        if (obj.value!=&quot;&quot; &amp;&amp; obj.value!=&quot;0&quot;) {
+                aa = prompt(&quot;Do you want to convert the current number in the total textbox?&quot;, &quot;y or n&quot;);
+                if (aa==&quot;y&quot;) {
+                        a = obj.value
+                        }
+                else {
+                        a = prompt(&quot;Enter a number to convert:&quot;, &quot;&quot;)
+                        }       
+                }
+        else {
+                a = prompt(&quot;Enter a number to convert:&quot;, &quot;&quot;)
+                }
+        var b = 0;
+        while (a&gt;10) {   //divide by ten until variable is no longer greater han 10
+                a /= 10;
+                b += 1
+                }
+        doit(a + '*10^' + b, obj)
+        }
+//convert any number out of scientific notation to standard form
+function unscie(mode, obj) {
+        if (mode==1) {  alert(&quot;UnScie does the exact opposite of Scie. It allows you to input  number in scientific notation and it will output the number in standard notation. Ex: input:1.2*10^2, output:120&quot;)
+                }
+        a = prompt(&quot;Enter the number that is the decimal:&quot;, &quot;&quot;);
+        b = prompt(&quot;Enter the power that is given to 10:&quot;, &quot;&quot;);
+        c = Math.pow(10, b);
+        d = a*c;
+        if (obj.value!=&quot;&quot; &amp;&amp; obj.value!=&quot;0&quot;) {
+                e = prompt(&quot;Do you want to use this result as a part of another calculation in the total textbox?&quot;, &quot;y or n&quot;);
+                if (e==&quot;y&quot;) {
+                        more('(' + d + ')', obj)
+                        }
+                else {
+                        doit(d, obj)
+                        }
+                }
+        else {
+                doit(d, obj)
+                }
+        }
+//HELP!!
+function helpround() {
+        if (document.mainform.mode[0].checked) {
+                alert(&quot;Round is an easy function that simply rounds the number in the total textbox to the nearest whole number.&quot;)
+                }
+        }
+function helppi () {
+        if (document.mainform.mode[0].checked) {
+                alert(&quot;PI is an easy function that just gives you PI. 3.14......&quot;)
+                }
+        }
+
+&lt;/script&gt;
+&lt;form name=&quot;mainform&quot;&gt;&lt;center&gt;
+&lt;table border=1 cellspacing=20 cellpadding=1&gt;
+&lt;td&gt;&lt;table border=0 cellspacing=1 cellpadding=1&gt;
+&lt;td&gt;&lt;b&gt;Scientific Notation:&lt;/b&gt;&lt;br&gt;
+&lt;input type=&quot;button&quot; value=&quot;Scie&quot; onClick=&quot;getinput(scie)&quot;&gt;
+&lt;input type=&quot;button&quot; value=&quot;UnScie&quot; onClick=&quot;getinput(unscie)&quot;&gt;&lt;/td&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;b&gt;Memory:&lt;/b&gt;&lt;br&gt;
+&lt;input type=&quot;button&quot; value=&quot; M1 &quot; onClick=&quot;getinput('mem1')&quot;&gt;
+&lt;input type=&quot;button&quot; value=&quot; M2 &quot; onClick=&quot;getinput('mem2')&quot;&gt;
+&lt;input type=&quot;button&quot; value=&quot; Rcl1 &quot; onClick=&quot;getinput('rcl1')&quot;&gt;
+&lt;br&gt;
+&lt;center&gt;
+&lt;input type=&quot;button&quot; value=&quot; Rcl2 &quot; onClick=&quot;getinput('rcl2')&quot;&gt;
+&lt;input type=&quot;button&quot; value=&quot; MC &quot; onClick=&quot;getinput(mc)&quot;&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;b&gt;Special functions:&lt;/b&gt;&lt;br&gt;
+&lt;input type=&quot;button&quot; value=&quot; sin &quot; onClick=&quot;getinput(sine)&quot;&gt;
+&lt;input type=&quot;button&quot; value=&quot; cos &quot; onClick=&quot;getinput(cosine)&quot;&gt;
+&lt;input type=&quot;button&quot; value=&quot; tan &quot; onClick=&quot;getinput(tangent)&quot;&gt;
+&lt;br&gt;
+&lt;input type=&quot;button&quot; value=&quot; log &quot; onClick=&quot;getinput(logrythm)&quot;&gt;
+&lt;input type=&quot;button&quot; value=&quot; Spec &quot; onClick=&quot;getinput(spec)&quot;&gt;
+&lt;input type=&quot;button&quot; value=&quot; PI &quot; onClick=&quot;helppi(); more('(' + Math.PI + ')', document.mainform.total)&quot;&gt;
+&lt;/table&gt;&lt;td&gt;
+&lt;table border=1 cellspacing=1 cellpadding=1&gt;
+&lt;td&gt;&lt;b&gt;模式:
+&lt;input name=&quot;mode&quot; type=&quot;radio&quot; checked&gt;帮助 
+&lt;input type=&quot;radio&quot; name=&quot;mode&quot;&gt;不要帮助&lt;tr&gt;
+&lt;td&gt;&lt;input type=&quot;text&quot; name=&quot;total&quot; size=20 value=&quot;0&quot;&gt;
+&lt;td&gt;&lt;input type=&quot;button&quot; value=&quot;  C  &quot; onClick=&quot;cleart(document.mainform.total)&quot;&gt;
+&lt;/table&gt;
+&lt;table border=1 cellpadding=0 cellspacing=0&gt;
+&lt;td&gt;&lt;input type=&quot;button&quot; value=&quot;  1  &quot; onClick=&quot;more(1, document.mainform.total)&quot;&gt;
+&lt;td&gt;&lt;input type=&quot;button&quot; value=&quot;  2  &quot; onClick=&quot;more(2, document.mainform.total)&quot;&gt;
+&lt;td&gt;&lt;input type=&quot;button&quot; value=&quot;  3  &quot; onClick=&quot;more(3, document.mainform.total)&quot;&gt;
+&lt;td&gt;&lt;input type=&quot;button&quot; value=&quot;  )  &quot; onClick=&quot;more(')', document.mainform.total)&quot;&gt;
+&lt;td&gt;&lt;input type=&quot;button&quot; value=&quot;  +  &quot; onClick=&quot;more('+', document.mainform.total)&quot;&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;input type=&quot;button&quot; value=&quot;  4  &quot; onClick=&quot;more(4, document.mainform.total)&quot;&gt;
+&lt;td&gt;&lt;input type=&quot;button&quot; value=&quot;  5  &quot; onClick=&quot;more(5, document.mainform.total)&quot;&gt;
+&lt;td&gt;&lt;input type=&quot;button&quot; value=&quot;  6  &quot; onClick=&quot;more(6, document.mainform.total)&quot;&gt;
+&lt;td&gt;&lt;input type=&quot;button&quot; value=&quot;  (  &quot; onClick=&quot;more('(', document.mainform.total)&quot;&gt;
+&lt;td&gt;&lt;input type=&quot;button&quot; value=&quot;  -  &quot; onClick=&quot;more('-', document.mainform.total)&quot;&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;input type=&quot;button&quot; value=&quot;  7  &quot; onClick=&quot;more(7, document.mainform.total)&quot;&gt;
+&lt;td&gt;&lt;input type=&quot;button&quot; value=&quot;  8  &quot; onClick=&quot;more(8, document.mainform.total)&quot;&gt;
+&lt;td&gt;&lt;input type=&quot;button&quot; value=&quot;  9  &quot; onClick=&quot;more(9, document.mainform.total)&quot;&gt;
+&lt;td&gt;&lt;input type=&quot;button&quot; value=&quot;  .  &quot; onClick=&quot;more('.', document.mainform.total)&quot;&gt;
+&lt;td&gt;&lt;input type=&quot;button&quot; value=&quot;  /  &quot; onClick=&quot;more('/', document.mainform.total)&quot;&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;input type=&quot;button&quot; value=&quot; &lt;-- &quot; onClick=&quot;less(document.mainform.total)&quot;&gt;
+&lt;td&gt;&lt;input type=&quot;button&quot; value=&quot;  0  &quot; onClick=&quot;more(0, document.mainform.total)&quot;&gt;
+&lt;td&gt;&lt;input type=&quot;button&quot; value=&quot;  =  &quot; onClick=&quot;calc(document.mainform.total, document.mainform.total)&quot;&gt;
+&lt;td&gt;&lt;input type=&quot;button&quot; value=&quot; +/- &quot; onClick=&quot;getinput(negpos)&quot;&gt;
+&lt;td&gt;&lt;input type=&quot;button&quot; value=&quot;  *  &quot; onClick=&quot;more('*', document.mainform.total)&quot;&gt;
+&lt;/table&gt;
+&lt;td&gt;
+&lt;table border=1 cellspacing=1 cellpaddng=1&gt;
+&lt;td&gt;&lt;b&gt;Powers:&lt;/b&gt;&lt;br&gt;
+&lt;input type=&quot;button&quot; value=&quot; ^2 &quot; onClick=&quot;getinput(squared)&quot;&gt;
+&lt;input type=&quot;button&quot; value=&quot; ^3 &quot; onClick=&quot;getinput(cubed)&quot;&gt;
+&lt;input type=&quot;button&quot; value=&quot; x^y &quot; onClick=&quot;getinput(power)&quot;&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;b&gt;Finding &quot;x&quot;:&lt;/b&gt;&lt;br&gt;
+&lt;input type=&quot;button&quot; value=&quot;Equasion+&quot; onClick=&quot;getinput(equa)&quot;&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;b&gt;Fractions:&lt;/b&gt;&lt;br&gt;
+&lt;input type=&quot;button&quot; value=&quot;Frac&quot; onClick=&quot;getinput(fractions)&quot;&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;b&gt;Misc:&lt;/b&gt;&lt;br&gt;
+&lt;input type=&quot;button&quot; value=&quot;Sqrt&quot; onClick=&quot;getinput(squareroot)&quot;&gt;
+&lt;input type=&quot;button&quot; value=&quot;Round&quot; onClick=&quot;helpround();
+doit(Math.round(document.mainform.total.value), document.mainform.total)&quot;&gt;
+&lt;/table&gt;
+&lt;/table&gt;
+
+&lt;input type=&quot;button&quot; value=&quot;About&quot; onClick=&quot;alert('南京有线台陆晓庆制作！！')&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;memory1&quot;&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;memory2&quot;&gt;
+ 
+
+
+
+
+&nbsp;
+
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

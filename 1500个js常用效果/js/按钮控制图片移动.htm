@@ -1,0 +1,885 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--按钮控制图片移动</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body bgcolor=#FFFFFF>
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">按钮控制图片移动</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=576" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<script type="text/javascript">
+function Path() {
+	this.concat = int_concat;
+	this.add = int_add;
+	this.rotate = int_rot;
+	
+	function int_concat(p) {
+		return new PathList(new Array(this, p));
+	}
+	
+	function int_add(p) {
+		return new PathAdd(this, p);
+	}
+	
+	function int_rot(xc,yc,v) {
+		return new RotatePath(this, xc, yc, v);
+	}
+}
+
+
+// The following object is used for the concat
+function PathList(inPathList) {
+	// All path objects must have these 5 methods
+	this.x  = 0;	// Retrieves the current x value
+	this.y  = 0;
+	this.step = int_step;			// Move to next step
+	this.reset = int_reset;			// Resets the current position
+
+	// The rest may vary from different path objects
+
+	this.pathList = inPathList;
+	this.currentPath = 0;
+
+	function int_step() {
+		if (this.currentPath >= this.pathList.length) return false;
+		if (this.pathList[this.currentPath].step()) {
+			this.x = this.pathList[this.currentPath].x;
+			this.y = this.pathList[this.currentPath].y;
+		}
+		else {
+			this.currentPath++;
+			if (this.currentPath >= this.pathList.length) return false;
+			this.x = this.pathList[this.currentPath].x;
+			this.y = this.pathList[this.currentPath].y;
+		}
+		return true;
+	}
+	
+	function int_reset() {
+		this.currentPath = 0;
+		for (var i=0; i<this.pathList.length; i++)
+			this.pathList[i].reset();
+		this.x = this.pathList[this.currentPath].x;
+		this.y = this.pathList[this.currentPath].y;		
+	}	
+}
+
+
+// The following object is used for adding two paths
+function PathAdd(p1,p2) {
+	// All path objects must have these 5 methods
+	this.x  = 0;	// Retrieves the current x value
+	this.y  = 0;
+	this.step = int_step;			// Move to next step
+	this.reset = int_reset;			// Resets the current position
+
+	// The rest may vary from different path objects
+
+
+	this._p1 = p1;
+	this._p2 = p2;
+	
+	function int_step() {
+		var c1 = this._p1.step();
+		var c2 = this._p2.step();
+
+		this.x = this._p1.x + this._p2.x;
+		this.y = this._p1.y + this._p2.y;
+
+		return (c1 || c2);
+	}
+	
+	function int_reset() {
+		this._p1.reset();
+		this._p2.reset();
+
+		this.x = this._p1.x + this._p2.x;
+		this.y = this._p1.y + this._p1.y;
+	}	
+}
+
+function RotatePath(p,xc,yc,v) {
+	this.x  = 0;	// Retrieves the current x value
+	this.y  = 0;
+	this.step = int_step;			// Move to next step
+	this.reset = int_reset;			// Resets the current position
+
+
+	// The rest may vary from different path objects
+
+	this._p = p;
+	this._xc = xc;
+	this._yc = yc;
+	this._v = v;
+	
+	function int_step() {
+		var c = this._p.step();
+
+		var pol = toPol(this._p.x - this._xc, this._p.y - this._yc);
+		var rec = toRec(pol.r, pol.v + toRad(this._v));
+
+		this.x = rec.x + this._xc;
+		this.y = rec.y + this._yc;
+
+		return c;
+	}
+	
+	function int_reset() {
+		this._p.reset();
+		var pol = toPol(this._p.x - this._xc, this._p.y - this._yc);
+		var rec = toRec(pol.r, pol.v + toRad(this._v));
+
+		this.x = rec.x - this._xc;
+		this.y = rec.y - this._yc;
+	}	
+
+	function toPol(x,y) {
+		var o = new Object();
+		o.r = Math.sqrt(x*x + y*y);
+		if (x == 0)
+			o.v = Math.PI / 2;
+		else
+			o.v = Math.atan(y/x);
+		if (x < 0)
+			o.v = o.v + Math.PI;
+		return o;
+	}
+	
+	function toRec(r,v) {
+		var o = new Object();
+		o.x = r * Math.cos(v);
+		o.y = r * Math.sin(v);
+		return o;
+	}
+
+	function toRad(deg) {
+		return deg*Math.PI/180;
+	}
+}
+
+PathAdd.prototype    = new Path;
+PathList.prototype   = new Path;
+RotatePath.prototype = new Path;	
+</script>
+<script type="text/javascript">
+function CirclePath(x, y, _xr, _yr, fromV, toV, n) {
+	// All path objects must have these 5 methods
+	this.x  = 0;	// Retrieves the current x value
+	this.y  = 0;
+	this.step = int_step;			// Move to next step
+	this.reset = int_reset;
+
+	// The rest may vary from different path objects
+
+	this.steps = n;			// NN work around. NN can't handle local variables!!!
+	this.stepsLeft = n;
+	this.xp = x;
+	this.yp = y;
+	this.v = -toRad(fromV);
+	this.startV = this.v;
+	this.endV = -toRad(toV);
+	this.xr = _xr;
+	this.yr = _yr;
+	
+	this.x = getX(this.xp,this.xr,this.v);
+	this.y = getY(this.yp,this.yr,this.v);
+
+	function toRad(deg) {
+		return deg*Math.PI/180;
+	}
+	
+	function getX(xp, xr, v) {
+//		alert("xp: " + xp + "\nxr: " + xr + "\nv: " + v);
+		return xp + xr*Math.cos(v);
+	}
+
+	function getY(yp, yr, v) {
+		return yp + yr*Math.sin(v);
+	}
+
+// Initate steps
+	if (this.steps > 0)
+		this.deltaV = (this.endV - this.startV)/n;	// work around netscape bug. Netscape couldn't handle this
+	else {									// as a local variable
+		this.deltaV = 0;
+		this.x = getX(this.xp,this.xr,this.endV);
+		this.y = getY(this.yp,this.yr,this.endV);
+	}
+	
+	function int_step() {
+		if (this.stepsLeft > 0) {
+			this.v += this.deltaV;
+			this.x = getX(this.xp,this.xr,this.v);
+			this.y = getY(this.yp,this.yr,this.v);
+
+			this.stepsLeft--;
+			return true;
+		}
+		return false;
+	}
+	
+	function int_reset() {
+		if (this.steps < 1) {
+			this.x = getX(this.xp,this.xr,this.endV);
+			this.y = getY(this.yp,this.yr,this.endV);
+		}
+		else {
+			this.v = this.startV;
+			this.x = getX(this.xp,this.xr,this.v);
+			this.y = getY(this.yp,this.yr,this.v);
+			this.stepsLeft = this.steps;
+		}
+	}
+}
+
+CirclePath.prototype = new Path;
+</script>
+<script type="text/javascript">
+function StraightPath(fromX, fromY, toX, toY, n) {
+	// All path objects must have these 5 methods
+	this.x  = fromX;	// Retrieves the current x value
+	this.y  = fromY;
+	this.step = int_step;			// Move to next step
+									// Returns true if the step was succesfull
+									// Returns false when the path has been done
+	this.reset = int_reset;
+	// The rest may vary from different path objects
+
+	this.startX = fromX;
+	this.startY = fromY;
+	this.endX = toX;
+	this.endY = toY;
+
+// Initiate steps
+ 	this.steps = n;
+ 	this.totalSteps = n;
+ 	if (this.totalSteps < 1) {	// No Amimation!
+ 		this.x = this.endX;
+ 		this.y = this.endY;
+ 		this.deltaX = 0;	// NN work around
+ 		this.deltaY = 0;
+ 	}
+	else {
+	 	this.deltaX = (this.endX - this.startX) / this.totalSteps;
+		this.deltaY = (this.endY - this.startY) / this.totalSteps;
+	}
+
+	function int_step() {
+		if (this.steps >= 0) {
+			this.steps--;
+			this.x += this.deltaX;
+			this.y += this.deltaY;
+		}
+		return (this.steps >= 0 );
+	}
+	
+	function int_reset() {
+		if (this.totalSteps < 1) {
+			this.steps = 0;
+			this.x = this.endX;
+			this.y = this.endY;
+		}
+		else {
+			this.steps = this.totalSteps;
+			this.x = this.startX;
+			this.y = this.startY;
+		}
+	}
+}
+
+StraightPath.prototype = new Path;
+</script>
+<script type="text/javascript">
+var animIndex = 0;
+var animArray = new Array();
+
+function Animator(id, p, period) {
+	this.play = int_play;
+	this.pause = int_pause;
+	this.stop = int_stop;
+	this.onanimationdone;
+	this.elstyle = null;	
+	this.path = p;
+	this.msec = period;
+	this.id = id;
+	
+	this.index = animIndex;
+	animArray[this.index] = this;
+	this.thisString = "animArray[" + this.index + "]";
+	animIndex++;
+	
+	function int_play() {
+		if (this.elstyle == null) {
+//			this.elstyle = (document.all != null) ? document.all[this.id].style : document.layers[this.id];
+			if (document.all)	// IE4
+				this.elstyle = document.all[this.id].style;
+			else if (document.getElementById)	// NGLayout
+				this.elstyle = document.getElementById(this.id).style;
+			else if (document.layers)	// nn4.x
+				this.elstyle = document.layers[this.id]
+			else
+				return;
+		}
+		if (this.path.step()) {
+			this.elstyle.left = this.path.x;
+			this.elstyle.top  = this.path.y;
+			animArray[this.index].timer = setTimeout(this.thisString + ".play()", this.msec);
+		}
+		else if (this.onanimationdone != null) {
+			if (typeof(this.onanimationdone) == "string")
+				eval(this.onanimationdone);
+			else if (typeof(this.onanimationdone) == "function")
+				this.onanimationdone();
+		}
+	}
+	
+	function int_pause() {
+		clearTimeout(animArray[this.index].timer);
+	}
+	
+	function int_stop() {
+		clearTimeout(animArray[this.index].timer);
+		this.path.reset();
+	}
+}
+</script>
+<INPUT onclick=a.play() type=button value=开始> <INPUT onclick=a.pause() type=button value=暂停> <INPUT onclick=a.stop() type=button value=停止>
+<DIV id=dot 
+style="HEIGHT: 100px; LEFT: 250px; POSITION: absolute; TOP: 150px; WIDTH: 100px"><IMG 
+alt="" border=0 height=32 src="photo/globe.gif" width=32></DIV>
+<SCRIPT type=text/javascript>
+<!--
+p1 = new StraightPath(150,50,250,50,12);
+p2 = new CirclePath(250,150,100,100,90,-90,30);
+p3 = new StraightPath(250,250,150,250,12);
+p4 = new CirclePath(150,150,100,100,270,90,30);
+p = p1.concat(p2).concat(p3).concat(p4);
+p = p.rotate(150,50,45).add(new StraightPath(100,100,100,100,1));
+a = new Animator("dot", p, 50);
+a.onanimationdone = new Function("alert('一遍已经转完，请先按停止键再开始.')");
+//-->
+</SCRIPT>
+</fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+把如下代码加入<body>区域中
+&nbsp;&lt;script type=&quot;text/javascript&quot;&gt;
+function Path() {
+	this.concat = int_concat;
+	this.add = int_add;
+	this.rotate = int_rot;
+	
+	function int_concat(p) {
+		return new PathList(new Array(this, p));
+	}
+	
+	function int_add(p) {
+		return new PathAdd(this, p);
+	}
+	
+	function int_rot(xc,yc,v) {
+		return new RotatePath(this, xc, yc, v);
+	}
+}
+
+
+// The following object is used for the concat
+function PathList(inPathList) {
+	// All path objects must have these 5 methods
+	this.x  = 0;	// Retrieves the current x value
+	this.y  = 0;
+	this.step = int_step;			// Move to next step
+	this.reset = int_reset;			// Resets the current position
+
+	// The rest may vary from different path objects
+
+	this.pathList = inPathList;
+	this.currentPath = 0;
+
+	function int_step() {
+		if (this.currentPath &gt;= this.pathList.length) return false;
+		if (this.pathList[this.currentPath].step()) {
+			this.x = this.pathList[this.currentPath].x;
+			this.y = this.pathList[this.currentPath].y;
+		}
+		else {
+			this.currentPath++;
+			if (this.currentPath &gt;= this.pathList.length) return false;
+			this.x = this.pathList[this.currentPath].x;
+			this.y = this.pathList[this.currentPath].y;
+		}
+		return true;
+	}
+	
+	function int_reset() {
+		this.currentPath = 0;
+		for (var i=0; i&lt;this.pathList.length; i++)
+			this.pathList[i].reset();
+		this.x = this.pathList[this.currentPath].x;
+		this.y = this.pathList[this.currentPath].y;		
+	}	
+}
+
+
+// The following object is used for adding two paths
+function PathAdd(p1,p2) {
+	// All path objects must have these 5 methods
+	this.x  = 0;	// Retrieves the current x value
+	this.y  = 0;
+	this.step = int_step;			// Move to next step
+	this.reset = int_reset;			// Resets the current position
+
+	// The rest may vary from different path objects
+
+
+	this._p1 = p1;
+	this._p2 = p2;
+	
+	function int_step() {
+		var c1 = this._p1.step();
+		var c2 = this._p2.step();
+
+		this.x = this._p1.x + this._p2.x;
+		this.y = this._p1.y + this._p2.y;
+
+		return (c1 || c2);
+	}
+	
+	function int_reset() {
+		this._p1.reset();
+		this._p2.reset();
+
+		this.x = this._p1.x + this._p2.x;
+		this.y = this._p1.y + this._p1.y;
+	}	
+}
+
+function RotatePath(p,xc,yc,v) {
+	this.x  = 0;	// Retrieves the current x value
+	this.y  = 0;
+	this.step = int_step;			// Move to next step
+	this.reset = int_reset;			// Resets the current position
+
+
+	// The rest may vary from different path objects
+
+	this._p = p;
+	this._xc = xc;
+	this._yc = yc;
+	this._v = v;
+	
+	function int_step() {
+		var c = this._p.step();
+
+		var pol = toPol(this._p.x - this._xc, this._p.y - this._yc);
+		var rec = toRec(pol.r, pol.v + toRad(this._v));
+
+		this.x = rec.x + this._xc;
+		this.y = rec.y + this._yc;
+
+		return c;
+	}
+	
+	function int_reset() {
+		this._p.reset();
+		var pol = toPol(this._p.x - this._xc, this._p.y - this._yc);
+		var rec = toRec(pol.r, pol.v + toRad(this._v));
+
+		this.x = rec.x - this._xc;
+		this.y = rec.y - this._yc;
+	}	
+
+	function toPol(x,y) {
+		var o = new Object();
+		o.r = Math.sqrt(x*x + y*y);
+		if (x == 0)
+			o.v = Math.PI / 2;
+		else
+			o.v = Math.atan(y/x);
+		if (x &lt; 0)
+			o.v = o.v + Math.PI;
+		return o;
+	}
+	
+	function toRec(r,v) {
+		var o = new Object();
+		o.x = r * Math.cos(v);
+		o.y = r * Math.sin(v);
+		return o;
+	}
+
+	function toRad(deg) {
+		return deg*Math.PI/180;
+	}
+}
+
+PathAdd.prototype    = new Path;
+PathList.prototype   = new Path;
+RotatePath.prototype = new Path;	
+&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+function CirclePath(x, y, _xr, _yr, fromV, toV, n) {
+	// All path objects must have these 5 methods
+	this.x  = 0;	// Retrieves the current x value
+	this.y  = 0;
+	this.step = int_step;			// Move to next step
+	this.reset = int_reset;
+
+	// The rest may vary from different path objects
+
+	this.steps = n;			// NN work around. NN can't handle local variables!!!
+	this.stepsLeft = n;
+	this.xp = x;
+	this.yp = y;
+	this.v = -toRad(fromV);
+	this.startV = this.v;
+	this.endV = -toRad(toV);
+	this.xr = _xr;
+	this.yr = _yr;
+	
+	this.x = getX(this.xp,this.xr,this.v);
+	this.y = getY(this.yp,this.yr,this.v);
+
+	function toRad(deg) {
+		return deg*Math.PI/180;
+	}
+	
+	function getX(xp, xr, v) {
+//		alert(&quot;xp: &quot; + xp + &quot;\nxr: &quot; + xr + &quot;\nv: &quot; + v);
+		return xp + xr*Math.cos(v);
+	}
+
+	function getY(yp, yr, v) {
+		return yp + yr*Math.sin(v);
+	}
+
+// Initate steps
+	if (this.steps &gt; 0)
+		this.deltaV = (this.endV - this.startV)/n;	// work around netscape bug. Netscape couldn't handle this
+	else {									// as a local variable
+		this.deltaV = 0;
+		this.x = getX(this.xp,this.xr,this.endV);
+		this.y = getY(this.yp,this.yr,this.endV);
+	}
+	
+	function int_step() {
+		if (this.stepsLeft &gt; 0) {
+			this.v += this.deltaV;
+			this.x = getX(this.xp,this.xr,this.v);
+			this.y = getY(this.yp,this.yr,this.v);
+
+			this.stepsLeft--;
+			return true;
+		}
+		return false;
+	}
+	
+	function int_reset() {
+		if (this.steps &lt; 1) {
+			this.x = getX(this.xp,this.xr,this.endV);
+			this.y = getY(this.yp,this.yr,this.endV);
+		}
+		else {
+			this.v = this.startV;
+			this.x = getX(this.xp,this.xr,this.v);
+			this.y = getY(this.yp,this.yr,this.v);
+			this.stepsLeft = this.steps;
+		}
+	}
+}
+
+CirclePath.prototype = new Path;
+&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+function StraightPath(fromX, fromY, toX, toY, n) {
+	// All path objects must have these 5 methods
+	this.x  = fromX;	// Retrieves the current x value
+	this.y  = fromY;
+	this.step = int_step;			// Move to next step
+									// Returns true if the step was succesfull
+									// Returns false when the path has been done
+	this.reset = int_reset;
+	// The rest may vary from different path objects
+
+	this.startX = fromX;
+	this.startY = fromY;
+	this.endX = toX;
+	this.endY = toY;
+
+// Initiate steps
+ 	this.steps = n;
+ 	this.totalSteps = n;
+ 	if (this.totalSteps &lt; 1) {	// No Amimation!
+ 		this.x = this.endX;
+ 		this.y = this.endY;
+ 		this.deltaX = 0;	// NN work around
+ 		this.deltaY = 0;
+ 	}
+	else {
+	 	this.deltaX = (this.endX - this.startX) / this.totalSteps;
+		this.deltaY = (this.endY - this.startY) / this.totalSteps;
+	}
+
+	function int_step() {
+		if (this.steps &gt;= 0) {
+			this.steps--;
+			this.x += this.deltaX;
+			this.y += this.deltaY;
+		}
+		return (this.steps &gt;= 0 );
+	}
+	
+	function int_reset() {
+		if (this.totalSteps &lt; 1) {
+			this.steps = 0;
+			this.x = this.endX;
+			this.y = this.endY;
+		}
+		else {
+			this.steps = this.totalSteps;
+			this.x = this.startX;
+			this.y = this.startY;
+		}
+	}
+}
+
+StraightPath.prototype = new Path;
+&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+var animIndex = 0;
+var animArray = new Array();
+
+function Animator(id, p, period) {
+	this.play = int_play;
+	this.pause = int_pause;
+	this.stop = int_stop;
+	this.onanimationdone;
+	this.elstyle = null;	
+	this.path = p;
+	this.msec = period;
+	this.id = id;
+	
+	this.index = animIndex;
+	animArray[this.index] = this;
+	this.thisString = &quot;animArray[&quot; + this.index + &quot;]&quot;;
+	animIndex++;
+	
+	function int_play() {
+		if (this.elstyle == null) {
+//			this.elstyle = (document.all != null) ? document.all[this.id].style : document.layers[this.id];
+			if (document.all)	// IE4
+				this.elstyle = document.all[this.id].style;
+			else if (document.getElementById)	// NGLayout
+				this.elstyle = document.getElementById(this.id).style;
+			else if (document.layers)	// nn4.x
+				this.elstyle = document.layers[this.id]
+			else
+				return;
+		}
+		if (this.path.step()) {
+			this.elstyle.left = this.path.x;
+			this.elstyle.top  = this.path.y;
+			animArray[this.index].timer = setTimeout(this.thisString + &quot;.play()&quot;, this.msec);
+		}
+		else if (this.onanimationdone != null) {
+			if (typeof(this.onanimationdone) == &quot;string&quot;)
+				eval(this.onanimationdone);
+			else if (typeof(this.onanimationdone) == &quot;function&quot;)
+				this.onanimationdone();
+		}
+	}
+	
+	function int_pause() {
+		clearTimeout(animArray[this.index].timer);
+	}
+	
+	function int_stop() {
+		clearTimeout(animArray[this.index].timer);
+		this.path.reset();
+	}
+}
+&lt;/script&gt;
+&lt;INPUT onclick=a.play() type=button value=开始&gt; &lt;INPUT onclick=a.pause() type=button value=暂停&gt; &lt;INPUT onclick=a.stop() type=button value=停止&gt;
+&lt;DIV id=dot 
+style=&quot;HEIGHT: 100px; LEFT: 250px; POSITION: absolute; TOP: 150px; WIDTH: 100px&quot;&gt;&lt;IMG 
+alt=&quot;&quot; border=0 height=32 src=&quot;photo/globe.gif&quot; width=32&gt;&lt;/DIV&gt;
+&lt;SCRIPT type=text/javascript&gt;
+&lt;!--
+p1 = new StraightPath(150,50,250,50,12);
+p2 = new CirclePath(250,150,100,100,90,-90,30);
+p3 = new StraightPath(250,250,150,250,12);
+p4 = new CirclePath(150,150,100,100,270,90,30);
+p = p1.concat(p2).concat(p3).concat(p4);
+p = p.rotate(150,50,45).add(new StraightPath(100,100,100,100,1));
+a = new Animator(&quot;dot&quot;, p, 50);
+a.onanimationdone = new Function(&quot;alert('一遍已经转完，请先按停止键再开始.')&quot;);
+//--&gt;
+&lt;/SCRIPT&gt;
+
+
+
+
+&nbsp;
+
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

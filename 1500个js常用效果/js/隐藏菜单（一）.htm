@@ -1,0 +1,381 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--隐藏菜单（一）</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body bgcolor=#FFFFFF>
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">隐藏菜单（一）</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=187" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<style>
+#divMenu {font-family:arial,helvetica; font-size:12pt; font-weight:bold}
+#divMenu a{text-decoration:none;}
+#divMenu a:hover{color:red;}
+</style>
+<script language="JavaScript1.2">
+
+ie=document.all?1:0
+n=document.layers?1:0
+
+lshow=60
+
+var move=10;
+
+//At what speed (in milliseconds, lower value is more speed)
+menuSpeed=40
+
+//Do you want it to move with the page if the user scroll the page?
+var moveOnScroll=true
+var tim;
+var ltop;
+
+//Object constructor
+function makeMenu(obj,nest){
+    nest=(!nest) ? '':'document.'+nest+'.'
+    this.css=(n) ? eval(nest+'document.'+obj):eval(obj+'.style')						
+	this.state=1
+	this.go=0
+	this.width=n?this.css.document.width:eval(obj+'.offsetWidth')
+	this.left=b_getleft
+    this.obj = obj + "Object"; 	eval(this.obj + "=this")	
+}
+//Get's the top position.
+function b_getleft(){
+	var gleft=(n) ? eval(this.css.left):eval(this.css.pixelLeft);
+	return gleft;
+}
+
+function moveMenu(){
+	if(!oMenu.state){
+		clearTimeout(tim)
+		mIn()	
+	}else{
+		clearTimeout(tim)
+		mOut()
+	}
+}
+//Menu in
+function mIn(){
+	if(oMenu.left()>-oMenu.width+lshow){
+		oMenu.go=1
+		oMenu.css.left=oMenu.left()-move
+		tim=setTimeout("mIn()",menuSpeed)
+	}else{
+		oMenu.go=0
+		oMenu.state=1
+	}	
+}
+//Menu out
+function mOut(){
+	if(oMenu.left()<0){
+		oMenu.go=1
+		oMenu.css.left=oMenu.left()+move
+		tim=setTimeout("mOut()",menuSpeed)
+	}else{
+		oMenu.go=0
+		oMenu.state=0
+	}	
+}
+/********************************************************************************
+Checking if the page is scrolled, if it is move the menu after
+********************************************************************************/
+function checkScrolled(){
+	if(!oMenu.go) oMenu.css.top=eval(scrolled)+ltop
+	if(n) setTimeout('checkScrolled()',30)
+}
+/********************************************************************************
+Inits the page, makes the menu object, moves it to the right place, 
+show it
+********************************************************************************/
+function menuInit(){
+	oMenu=new makeMenu('divMenu')
+	scrolled=n?"window.pageYOffset":"document.body.scrollTop"
+	oMenu.css.left=-oMenu.width+lshow
+	ltop=(n)?oMenu.css.top:oMenu.css.pixelTop;
+	oMenu.css.visibility='visible'
+	if(moveOnScroll) ie?window.onscroll=checkScrolled:checkScrolled();
+}
+
+//Initing menu on pageload
+onload=menuInit;
+</script>
+<div id="divMenu" style="position:absolute; top:250; left:30; width:200; visibility:hidden; background-color:F0F0F0">
+<nobr>
+	<a href="http://www.1stscript.com">网络编程站</a> -
+	<a href="http://www.163.com">网易</a> - 
+	<a href="http://www.sina.com.cn/">新浪</a> - 
+	<a href="javascript://" onclick="moveMenu()" style="background-color:yellow;text-decoration:none">菜单</a>
+</nobr>
+</div>
+</fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+把如下代码加入<body>区域中
+&nbsp;&lt;style&gt;
+#divMenu {font-family:arial,helvetica; font-size:12pt; font-weight:bold}
+#divMenu a{text-decoration:none;}
+#divMenu a:hover{color:red;}
+&lt;/style&gt;
+&lt;script language=&quot;JavaScript1.2&quot;&gt;
+
+ie=document.all?1:0
+n=document.layers?1:0
+
+lshow=60
+
+var move=10;
+
+//At what speed (in milliseconds, lower value is more speed)
+menuSpeed=40
+
+//Do you want it to move with the page if the user scroll the page?
+var moveOnScroll=true
+var tim;
+var ltop;
+
+//Object constructor
+function makeMenu(obj,nest){
+    nest=(!nest) ? '':'document.'+nest+'.'
+    this.css=(n) ? eval(nest+'document.'+obj):eval(obj+'.style')						
+	this.state=1
+	this.go=0
+	this.width=n?this.css.document.width:eval(obj+'.offsetWidth')
+	this.left=b_getleft
+    this.obj = obj + &quot;Object&quot;; 	eval(this.obj + &quot;=this&quot;)	
+}
+//Get's the top position.
+function b_getleft(){
+	var gleft=(n) ? eval(this.css.left):eval(this.css.pixelLeft);
+	return gleft;
+}
+
+function moveMenu(){
+	if(!oMenu.state){
+		clearTimeout(tim)
+		mIn()	
+	}else{
+		clearTimeout(tim)
+		mOut()
+	}
+}
+//Menu in
+function mIn(){
+	if(oMenu.left()&gt;-oMenu.width+lshow){
+		oMenu.go=1
+		oMenu.css.left=oMenu.left()-move
+		tim=setTimeout(&quot;mIn()&quot;,menuSpeed)
+	}else{
+		oMenu.go=0
+		oMenu.state=1
+	}	
+}
+//Menu out
+function mOut(){
+	if(oMenu.left()&lt;0){
+		oMenu.go=1
+		oMenu.css.left=oMenu.left()+move
+		tim=setTimeout(&quot;mOut()&quot;,menuSpeed)
+	}else{
+		oMenu.go=0
+		oMenu.state=0
+	}	
+}
+/********************************************************************************
+Checking if the page is scrolled, if it is move the menu after
+********************************************************************************/
+function checkScrolled(){
+	if(!oMenu.go) oMenu.css.top=eval(scrolled)+ltop
+	if(n) setTimeout('checkScrolled()',30)
+}
+/********************************************************************************
+Inits the page, makes the menu object, moves it to the right place, 
+show it
+********************************************************************************/
+function menuInit(){
+	oMenu=new makeMenu('divMenu')
+	scrolled=n?&quot;window.pageYOffset&quot;:&quot;document.body.scrollTop&quot;
+	oMenu.css.left=-oMenu.width+lshow
+	ltop=(n)?oMenu.css.top:oMenu.css.pixelTop;
+	oMenu.css.visibility='visible'
+	if(moveOnScroll) ie?window.onscroll=checkScrolled:checkScrolled();
+}
+
+//Initing menu on pageload
+onload=menuInit;
+&lt;/script&gt;
+&lt;div id=&quot;divMenu&quot; style=&quot;position:absolute; top:250; left:30; width:200; visibility:hidden; background-color:F0F0F0&quot;&gt;
+&lt;nobr&gt;
+	&lt;a href=&quot;http://www.1stscript.com&quot;&gt;网络编程站&lt;/a&gt; -
+	&lt;a href=&quot;http://www.163.com&quot;&gt;网易&lt;/a&gt; - 
+	&lt;a href=&quot;http://www.sina.com.cn/&quot;&gt;新浪&lt;/a&gt; - 
+	&lt;a href=&quot;javascript://&quot; onclick=&quot;moveMenu()&quot; style=&quot;background-color:yellow;text-decoration:none&quot;&gt;菜单&lt;/a&gt;
+&lt;/nobr&gt;
+&lt;/div&gt;
+
+
+
+
+&nbsp;
+
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

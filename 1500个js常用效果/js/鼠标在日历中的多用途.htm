@@ -1,0 +1,393 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--鼠标在日历中的多用途</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body bgcolor=#FFFFFF>
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">鼠标在日历中的多用途</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=111" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<script>
+function Year_Month(){ 
+    var now = new Date(); 
+    var yy = now.getYear(); 
+    var mm = now.getMonth()+1; 
+    var cl = '<font color="#0000df">'; 
+    if (now.getDay() == 0) cl = '<font color="#c00000">'; 
+    if (now.getDay() == 6) cl = '<font color="#00c000">'; 
+    return(cl +  yy + '年' + mm + '月</font>'); 
+} 
+
+function Date_of_Today(){ 
+    var now = new Date(); 
+    var cl = '<font color="#0000df">'; 
+    if (now.getDay() == 0) cl = '<font color="#c00000">'; 
+    if (now.getDay() == 6) cl = '<font color="#00c000">'; 
+    return(cl +  now.getDate() + '</font>'); 
+} 
+
+function Day_of_Today(){ 
+    var day = new Array(); 
+    day[0] = "星期日"; 
+    day[1] = "星期一"; 
+    day[2] = "星期二"; 
+    day[3] = "星期三"; 
+    day[4] = "星期四"; 
+    day[5] = "星期五"; 
+    day[6] = "星期六"; 
+    var now = new Date(); 
+    var cl = '<font color="#0000df">'; 
+    if (now.getDay() == 0) cl = '<font color="#c00000">'; 
+    if (now.getDay() == 6) cl = '<font color="#00c000">'; 
+    return(cl +  day[now.getDay()] + '</font>'); 
+} 
+
+function CurentTime(){ 
+    var now = new Date(); 
+    var hh = now.getHours(); 
+    var mm = now.getMinutes(); 
+    var ss = now.getTime() % 60000; 
+    ss = (ss - (ss % 1000)) / 1000; 
+    var clock = hh+':'; 
+    if (mm < 10) clock += '0'; 
+    clock += mm+':'; 
+    if (ss < 10) clock += '0'; 
+    clock += ss; 
+    return(clock); 
+} 
+
+function refreshCalendarClock(){ 
+document.all.calendarClock1.innerHTML = Year_Month(); 
+document.all.calendarClock2.innerHTML = Date_of_Today(); 
+document.all.calendarClock3.innerHTML = Day_of_Today(); 
+document.all.calendarClock4.innerHTML = CurentTime(); 
+} 
+
+function getCalendarClockFreeCodeMsg(nn){ 
+    if (nn == 'off') CalendarClockFreeCode.style.visibility = 'hidden'; 
+    else { 
+       CalendarClockFreeCode.style.visibility = 'visible'; 
+       setTimeout("getCalendarClockFreeCodeMsg('off')",10000); 
+    } 
+} 
+
+var webUrl = webUrl; 
+
+function calendarClockFreeCode(){ 
+    var win = window.open('about:blank','_blank','width=300,height=260,top=0,left=0'); 
+    win.document.writeln('<'+'script language="JavaScript">'); 
+    win.document.writeln('var autoClose = setTimeout("window.close()",30000)'); 
+    win.document.writeln('</'+'script>'); 
+    win.document.writeln('<p align="center"><a style="cursor:hand"');
+    win.document.writeln(' onclick="clearTimeout(autoClose)">请点击此处,否则<br>30秒后此窗口将自动关闭</a></p>'); 
+    win.document.writeln('<p>想在自己的网站上添加带日历时钟的朋友，请将下面框中的代码贴到网页的适当地方就可以了<br>'); 
+    win.document.writeln('<textarea rows="4" cols="30">');
+    win.document.write  ('&lt;script language=&quot;JavaScript&quot; src=&quot;http://5icat.net.ru/clock.js&quot;&gt;&lt;/script&gt;');
+    win.document.writeln('</textarea></p>'); 
+    win.document.writeln('<p align="center"><a style="cursor:hand" onclick="window.close()">'); 
+    win.document.writeln('[关闭窗口]</a></p>'); 
+} 
+
+document.write('<table border="0" cellpadding="0" cellspacing="0"><tr><td>'); 
+document.write('<table id="CalendarClockFreeCode" border="0" cellpadding="0" cellspacing="0" width="60" height="70" ');
+document.write('style="position:absolute;visibility:hidden" bgcolor="#eeeeee">');
+document.write('<tr><td align="center"><font ');
+document.write('style="cursor:hand;color:#ff0000;font-family:宋体;font-size:9pt;line-height:110%" ');
+document.write('onclick=getCalendarClockFreeCodeMsg("off");calendarClockFreeCode()>获取<br>此特效代码</font>'); 
+if (webUrl != 'netflower'){ 
+   document.write('</td></tr><tr><td align="center"><font ');
+   document.write('style="cursor:hand;color:#2000ff;font-family:宋体;font-size:9pt;line-height:110%" ');
+   document.write('onclick=getCalendarClockFreeCodeMsg("off");window.open("http://5icat.net.ru/","_blank","top=0,left=0,width=800,height=500,toolbar=yes,resizable=yes,scrollbars=yes")>欢迎访问<br>仲夏夜</font>'); 
+} 
+document.write('</td></tr></table>'); 
+
+document.write('<table border="0" cellpadding="0" cellspacing="0" width="60" bgcolor="#C0C0C0" height="70">');
+document.write('<tr><td valign="top" width="100%" height="100%">');
+document.write('<table border="1" cellpadding="0" cellspacing="0" width="57" bgcolor="#FEFEEF" height="67">');
+document.write('<tr><td align="center" width="100%" height="100%" onmouseover=getCalendarClockFreeCodeMsg("on")>');
+document.write('<font id="calendarClock1" style="font-family:宋体;font-size:7pt;line-height:120%"> </font><br>');
+document.write('<font id="calendarClock2" style="font-family:Arial;font-size:14pt;line-height:120%"> </font><br>');
+document.write('<font id="calendarClock3" style="font-family:宋体;font-size:9pt;line-height:120%"> </font><br>');
+document.write('<font id="calendarClock4" style="color:#100080;font-family:宋体;font-size:8pt;line-height:120%"><b> </b></font>');
+document.write('</td></tr></table>');
+document.write('</td></tr></table>'); 
+document.write('</td></tr></table>'); 
+setInterval('refreshCalendarClock()',1000);
+</script></fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+把如下代码加入<body>区域中
+&nbsp;&lt;script&gt;
+function Year_Month(){ 
+    var now = new Date(); 
+    var yy = now.getYear(); 
+    var mm = now.getMonth()+1; 
+    var cl = '&lt;font color=&quot;#0000df&quot;&gt;'; 
+    if (now.getDay() == 0) cl = '&lt;font color=&quot;#c00000&quot;&gt;'; 
+    if (now.getDay() == 6) cl = '&lt;font color=&quot;#00c000&quot;&gt;'; 
+    return(cl +  yy + '年' + mm + '月&lt;/font&gt;'); 
+} 
+
+function Date_of_Today(){ 
+    var now = new Date(); 
+    var cl = '&lt;font color=&quot;#0000df&quot;&gt;'; 
+    if (now.getDay() == 0) cl = '&lt;font color=&quot;#c00000&quot;&gt;'; 
+    if (now.getDay() == 6) cl = '&lt;font color=&quot;#00c000&quot;&gt;'; 
+    return(cl +  now.getDate() + '&lt;/font&gt;'); 
+} 
+
+function Day_of_Today(){ 
+    var day = new Array(); 
+    day[0] = &quot;星期日&quot;; 
+    day[1] = &quot;星期一&quot;; 
+    day[2] = &quot;星期二&quot;; 
+    day[3] = &quot;星期三&quot;; 
+    day[4] = &quot;星期四&quot;; 
+    day[5] = &quot;星期五&quot;; 
+    day[6] = &quot;星期六&quot;; 
+    var now = new Date(); 
+    var cl = '&lt;font color=&quot;#0000df&quot;&gt;'; 
+    if (now.getDay() == 0) cl = '&lt;font color=&quot;#c00000&quot;&gt;'; 
+    if (now.getDay() == 6) cl = '&lt;font color=&quot;#00c000&quot;&gt;'; 
+    return(cl +  day[now.getDay()] + '&lt;/font&gt;'); 
+} 
+
+function CurentTime(){ 
+    var now = new Date(); 
+    var hh = now.getHours(); 
+    var mm = now.getMinutes(); 
+    var ss = now.getTime() % 60000; 
+    ss = (ss - (ss % 1000)) / 1000; 
+    var clock = hh+':'; 
+    if (mm &lt; 10) clock += '0'; 
+    clock += mm+':'; 
+    if (ss &lt; 10) clock += '0'; 
+    clock += ss; 
+    return(clock); 
+} 
+
+function refreshCalendarClock(){ 
+document.all.calendarClock1.innerHTML = Year_Month(); 
+document.all.calendarClock2.innerHTML = Date_of_Today(); 
+document.all.calendarClock3.innerHTML = Day_of_Today(); 
+document.all.calendarClock4.innerHTML = CurentTime(); 
+} 
+
+function getCalendarClockFreeCodeMsg(nn){ 
+    if (nn == 'off') CalendarClockFreeCode.style.visibility = 'hidden'; 
+    else { 
+       CalendarClockFreeCode.style.visibility = 'visible'; 
+       setTimeout(&quot;getCalendarClockFreeCodeMsg('off')&quot;,10000); 
+    } 
+} 
+
+var webUrl = webUrl; 
+
+function calendarClockFreeCode(){ 
+    var win = window.open('about:blank','_blank','width=300,height=260,top=0,left=0'); 
+    win.document.writeln('&lt;'+'script language=&quot;JavaScript&quot;&gt;'); 
+    win.document.writeln('var autoClose = setTimeout(&quot;window.close()&quot;,30000)'); 
+    win.document.writeln('&lt;/'+'script&gt;'); 
+    win.document.writeln('&lt;p align=&quot;center&quot;&gt;&lt;a style=&quot;cursor:hand&quot;');
+    win.document.writeln(' onclick=&quot;clearTimeout(autoClose)&quot;&gt;请点击此处,否则&lt;br&gt;30秒后此窗口将自动关闭&lt;/a&gt;&lt;/p&gt;'); 
+    win.document.writeln('&lt;p&gt;想在自己的网站上添加带日历时钟的朋友，请将下面框中的代码贴到网页的适当地方就可以了&lt;br&gt;'); 
+    win.document.writeln('&lt;textarea rows=&quot;4&quot; cols=&quot;30&quot;&gt;');
+    win.document.write  ('&amp;lt;script language=&amp;quot;JavaScript&amp;quot; src=&amp;quot;http://5icat.net.ru/clock.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;');
+    win.document.writeln('&lt;/textarea&gt;&lt;/p&gt;'); 
+    win.document.writeln('&lt;p align=&quot;center&quot;&gt;&lt;a style=&quot;cursor:hand&quot; onclick=&quot;window.close()&quot;&gt;'); 
+    win.document.writeln('[关闭窗口]&lt;/a&gt;&lt;/p&gt;'); 
+} 
+
+document.write('&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot;&gt;&lt;tr&gt;&lt;td&gt;'); 
+document.write('&lt;table id=&quot;CalendarClockFreeCode&quot; border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;60&quot; height=&quot;70&quot; ');
+document.write('style=&quot;position:absolute;visibility:hidden&quot; bgcolor=&quot;#eeeeee&quot;&gt;');
+document.write('&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;&lt;font ');
+document.write('style=&quot;cursor:hand;color:#ff0000;font-family:宋体;font-size:9pt;line-height:110%&quot; ');
+document.write('onclick=getCalendarClockFreeCodeMsg(&quot;off&quot;);calendarClockFreeCode()&gt;获取&lt;br&gt;此特效代码&lt;/font&gt;'); 
+if (webUrl != 'netflower'){ 
+   document.write('&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;&lt;font ');
+   document.write('style=&quot;cursor:hand;color:#2000ff;font-family:宋体;font-size:9pt;line-height:110%&quot; ');
+   document.write('onclick=getCalendarClockFreeCodeMsg(&quot;off&quot;);window.open(&quot;http://5icat.net.ru/&quot;,&quot;_blank&quot;,&quot;top=0,left=0,width=800,height=500,toolbar=yes,resizable=yes,scrollbars=yes&quot;)&gt;欢迎访问&lt;br&gt;仲夏夜&lt;/font&gt;'); 
+} 
+document.write('&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;'); 
+
+document.write('&lt;table border=&quot;0&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;60&quot; bgcolor=&quot;#C0C0C0&quot; height=&quot;70&quot;&gt;');
+document.write('&lt;tr&gt;&lt;td valign=&quot;top&quot; width=&quot;100%&quot; height=&quot;100%&quot;&gt;');
+document.write('&lt;table border=&quot;1&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; width=&quot;57&quot; bgcolor=&quot;#FEFEEF&quot; height=&quot;67&quot;&gt;');
+document.write('&lt;tr&gt;&lt;td align=&quot;center&quot; width=&quot;100%&quot; height=&quot;100%&quot; onmouseover=getCalendarClockFreeCodeMsg(&quot;on&quot;)&gt;');
+document.write('&lt;font id=&quot;calendarClock1&quot; style=&quot;font-family:宋体;font-size:7pt;line-height:120%&quot;&gt; &lt;/font&gt;&lt;br&gt;');
+document.write('&lt;font id=&quot;calendarClock2&quot; style=&quot;font-family:Arial;font-size:14pt;line-height:120%&quot;&gt; &lt;/font&gt;&lt;br&gt;');
+document.write('&lt;font id=&quot;calendarClock3&quot; style=&quot;font-family:宋体;font-size:9pt;line-height:120%&quot;&gt; &lt;/font&gt;&lt;br&gt;');
+document.write('&lt;font id=&quot;calendarClock4&quot; style=&quot;color:#100080;font-family:宋体;font-size:8pt;line-height:120%&quot;&gt;&lt;b&gt; &lt;/b&gt;&lt;/font&gt;');
+document.write('&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;');
+document.write('&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;'); 
+document.write('&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;'); 
+setInterval('refreshCalendarClock()',1000);
+&lt;/script&gt;
+
+
+
+&nbsp;
+
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

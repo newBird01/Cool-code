@@ -1,0 +1,481 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--一款别致的万年历</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body ONLOAD="newCalendar()" OnUnload="window.returnValue = document.all.ret.value;">
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">一款别致的万年历</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=74" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<STYLE TYPE="text/css"> 
+.normal{BACKGROUND: #ffffff} 
+.today {font-weight:bold;BACKGROUND: #6699cc} 
+.satday{color:green} 
+.sunday{color:red} 
+.days {font-weight:bold} 
+</STYLE> 
+<SCRIPT LANGUAGE="JavaScript"> 
+var months = new Array("一月", "二月", "三月", 
+"四月", "五月", "六月", "七月", "八月", "九月", 
+"十月", "十一月", "十二月"); 
+var daysInMonth = new Array(31, 28, 31, 30, 31, 30, 31, 31, 
+30, 31, 30, 31); 
+/*var days = new Array("Sunday", "Monday", "Tuesday", 
+"Wednesday", "Thursday", "Friday", "Saturday");*/ 
+var days = new Array("日","一", "二", "三", 
+"四", "五", "六"); 
+function getDays(month, year) { 
+
+if (1 == month) 
+return ((0 == year % 4) && (0 != (year % 100))) || 
+(0 == year % 400) ? 29 : 28; 
+else 
+return daysInMonth[month]; 
+} 
+
+function getToday() { 
+//得到今天的年,月,日 
+this.now = new Date(); 
+this.year = this.now.getFullYear(); 
+this.month = this.now.getMonth(); 
+this.day = this.now.getDate(); 
+} 
+
+
+today = new getToday(); 
+
+function newCalendar() { 
+
+today = new getToday(); 
+var parseYear = parseInt(document.all.year 
+[document.all.year.selectedIndex].text); 
+var newCal = new Date(parseYear, 
+document.all.month.selectedIndex, 1); 
+var day = -1; 
+var startDay = newCal.getDay(); 
+var daily = 0; 
+if ((today.year == newCal.getFullYear()) &&(today.month == newCal.getMonth())) 
+day = today.day; 
+var tableCal = document.all.calendar.tBodies.dayList; 
+var intDaysInMonth =getDays(newCal.getMonth(), newCal.getFullYear()); 
+for (var intWeek = 0; intWeek < tableCal.rows.length;intWeek++) 
+for (var intDay = 0;intDay < tableCal.rows[intWeek].cells.length;intDay++) 
+{ 
+var cell = tableCal.rows[intWeek].cells[intDay]; 
+if ((intDay == startDay) && (0 == daily)) 
+daily = 1; 
+if(day==daily) 
+//今天，调用今天的Class 
+cell.className = "today"; 
+else if(intDay==6) 
+//周六 
+cell.className = "sunday"; 
+else if (intDay==0) 
+//周日 
+cell.className ="satday"; 
+else 
+//平常 
+cell.className="normal"; 
+
+if ((daily > 0) && (daily <= intDaysInMonth)) 
+{ 
+cell.innerText = daily; 
+daily++; 
+} 
+else 
+cell.innerText = ""; 
+} 
+} 
+
+function getDate() { 
+var sDate; 
+//这段代码处理鼠标点击的情况 
+if ("TD" == event.srcElement.tagName) 
+if ("" != event.srcElement.innerText) 
+{ 
+sDate = document.all.year.value + "年" + document.all.month.value + "月" + event.srcElement.innerText + "日"; 
+alert(sDate); 
+} 
+} 
+</SCRIPT>
+<input type="hidden" name="ret"> 
+<TABLE ID="calendar" cellspacing="0" cellpadding="0" border=1> 
+<THEAD> 
+<TR> 
+<TD COLSPAN=7 ALIGN=CENTER> 
+<SELECT ID="month" ONCHANGE="newCalendar()"> 
+<SCRIPT LANGUAGE="JavaScript"> 
+for (var intLoop = 0; intLoop < months.length; 
+intLoop++) 
+document.write("<OPTION VALUE= " + (intLoop + 1) + " " + 
+(today.month == intLoop ? 
+"Selected" : "") + ">" + 
+months[intLoop]); 
+</SCRIPT> 
+</SELECT> 
+
+<SELECT ID="year" ONCHANGE="newCalendar()"> 
+<SCRIPT LANGUAGE="JavaScript"> 
+for (var intLoop = today.year-100; intLoop < (today.year + 64); 
+intLoop++) 
+document.write("<OPTION VALUE= " + intLoop + " " + 
+(today.year == intLoop ? 
+"Selected" : "") + ">" + 
+intLoop); 
+</SCRIPT> 
+</SELECT> 
+</TD> 
+</TR> 
+<TR CLASS="days"> 
+<SCRIPT LANGUAGE="JavaScript"> 
+
+document.write("<TD class=satday>" + days[0] + "</TD>"); 
+for (var intLoop = 1; intLoop < days.length-1; 
+intLoop++) 
+document.write("<TD>" + days[intLoop] + "</TD>"); 
+document.write("<TD class=sunday>" + days[intLoop] + "</TD>"); 
+</SCRIPT> 
+</TR> 
+</THEAD> 
+<TBODY border=1 cellspacing="0" cellpadding="0" ID="dayList"ALIGN=CENTER ONCLICK="getDate()"> 
+<SCRIPT LANGUAGE="JavaScript"> 
+for (var intWeeks = 0; intWeeks < 6; intWeeks++) { 
+document.write("<TR style='cursor:hand'>"); 
+for (var intDays = 0; intDays < days.length; 
+intDays++) 
+document.write("<TD></TD>"); 
+document.write("</TR>"); 
+} 
+</SCRIPT> 
+</TBODY> 
+</TABLE> 
+<Script Language="JavaScript1.2"> 
+
+function Cancel() { 
+document.all.ret.value = ""; 
+window.close(); 
+} 
+
+</script> 
+</fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+第一步:把如下代码加入<body>区域中
+&nbsp;&lt;STYLE TYPE=&quot;text/css&quot;&gt; 
+.normal{BACKGROUND: #ffffff} 
+.today {font-weight:bold;BACKGROUND: #6699cc} 
+.satday{color:green} 
+.sunday{color:red} 
+.days {font-weight:bold} 
+&lt;/STYLE&gt; 
+&lt;SCRIPT LANGUAGE=&quot;JavaScript&quot;&gt; 
+var months = new Array(&quot;一月&quot;, &quot;二月&quot;, &quot;三月&quot;, 
+&quot;四月&quot;, &quot;五月&quot;, &quot;六月&quot;, &quot;七月&quot;, &quot;八月&quot;, &quot;九月&quot;, 
+&quot;十月&quot;, &quot;十一月&quot;, &quot;十二月&quot;); 
+var daysInMonth = new Array(31, 28, 31, 30, 31, 30, 31, 31, 
+30, 31, 30, 31); 
+/*var days = new Array(&quot;Sunday&quot;, &quot;Monday&quot;, &quot;Tuesday&quot;, 
+&quot;Wednesday&quot;, &quot;Thursday&quot;, &quot;Friday&quot;, &quot;Saturday&quot;);*/ 
+var days = new Array(&quot;日&quot;,&quot;一&quot;, &quot;二&quot;, &quot;三&quot;, 
+&quot;四&quot;, &quot;五&quot;, &quot;六&quot;); 
+function getDays(month, year) { 
+
+if (1 == month) 
+return ((0 == year % 4) &amp;&amp; (0 != (year % 100))) || 
+(0 == year % 400) ? 29 : 28; 
+else 
+return daysInMonth[month]; 
+} 
+
+function getToday() { 
+//得到今天的年,月,日 
+this.now = new Date(); 
+this.year = this.now.getFullYear(); 
+this.month = this.now.getMonth(); 
+this.day = this.now.getDate(); 
+} 
+
+
+today = new getToday(); 
+
+function newCalendar() { 
+
+today = new getToday(); 
+var parseYear = parseInt(document.all.year 
+[document.all.year.selectedIndex].text); 
+var newCal = new Date(parseYear, 
+document.all.month.selectedIndex, 1); 
+var day = -1; 
+var startDay = newCal.getDay(); 
+var daily = 0; 
+if ((today.year == newCal.getFullYear()) &amp;&amp;(today.month == newCal.getMonth())) 
+day = today.day; 
+var tableCal = document.all.calendar.tBodies.dayList; 
+var intDaysInMonth =getDays(newCal.getMonth(), newCal.getFullYear()); 
+for (var intWeek = 0; intWeek &lt; tableCal.rows.length;intWeek++) 
+for (var intDay = 0;intDay &lt; tableCal.rows[intWeek].cells.length;intDay++) 
+{ 
+var cell = tableCal.rows[intWeek].cells[intDay]; 
+if ((intDay == startDay) &amp;&amp; (0 == daily)) 
+daily = 1; 
+if(day==daily) 
+//今天，调用今天的Class 
+cell.className = &quot;today&quot;; 
+else if(intDay==6) 
+//周六 
+cell.className = &quot;sunday&quot;; 
+else if (intDay==0) 
+//周日 
+cell.className =&quot;satday&quot;; 
+else 
+//平常 
+cell.className=&quot;normal&quot;; 
+
+if ((daily &gt; 0) &amp;&amp; (daily &lt;= intDaysInMonth)) 
+{ 
+cell.innerText = daily; 
+daily++; 
+} 
+else 
+cell.innerText = &quot;&quot;; 
+} 
+} 
+
+function getDate() { 
+var sDate; 
+//这段代码处理鼠标点击的情况 
+if (&quot;TD&quot; == event.srcElement.tagName) 
+if (&quot;&quot; != event.srcElement.innerText) 
+{ 
+sDate = document.all.year.value + &quot;年&quot; + document.all.month.value + &quot;月&quot; + event.srcElement.innerText + &quot;日&quot;; 
+alert(sDate); 
+} 
+} 
+&lt;/SCRIPT&gt;
+&lt;input type=&quot;hidden&quot; name=&quot;ret&quot;&gt; 
+&lt;TABLE ID=&quot;calendar&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; border=1&gt; 
+&lt;THEAD&gt; 
+&lt;TR&gt; 
+&lt;TD COLSPAN=7 ALIGN=CENTER&gt; 
+&lt;SELECT ID=&quot;month&quot; ONCHANGE=&quot;newCalendar()&quot;&gt; 
+&lt;SCRIPT LANGUAGE=&quot;JavaScript&quot;&gt; 
+for (var intLoop = 0; intLoop &lt; months.length; 
+intLoop++) 
+document.write(&quot;&lt;OPTION VALUE= &quot; + (intLoop + 1) + &quot; &quot; + 
+(today.month == intLoop ? 
+&quot;Selected&quot; : &quot;&quot;) + &quot;&gt;&quot; + 
+months[intLoop]); 
+&lt;/SCRIPT&gt; 
+&lt;/SELECT&gt; 
+
+&lt;SELECT ID=&quot;year&quot; ONCHANGE=&quot;newCalendar()&quot;&gt; 
+&lt;SCRIPT LANGUAGE=&quot;JavaScript&quot;&gt; 
+for (var intLoop = today.year-100; intLoop &lt; (today.year + 64); 
+intLoop++) 
+document.write(&quot;&lt;OPTION VALUE= &quot; + intLoop + &quot; &quot; + 
+(today.year == intLoop ? 
+&quot;Selected&quot; : &quot;&quot;) + &quot;&gt;&quot; + 
+intLoop); 
+&lt;/SCRIPT&gt; 
+&lt;/SELECT&gt; 
+&lt;/TD&gt; 
+&lt;/TR&gt; 
+&lt;TR CLASS=&quot;days&quot;&gt; 
+&lt;SCRIPT LANGUAGE=&quot;JavaScript&quot;&gt; 
+
+document.write(&quot;&lt;TD class=satday&gt;&quot; + days[0] + &quot;&lt;/TD&gt;&quot;); 
+for (var intLoop = 1; intLoop &lt; days.length-1; 
+intLoop++) 
+document.write(&quot;&lt;TD&gt;&quot; + days[intLoop] + &quot;&lt;/TD&gt;&quot;); 
+document.write(&quot;&lt;TD class=sunday&gt;&quot; + days[intLoop] + &quot;&lt;/TD&gt;&quot;); 
+&lt;/SCRIPT&gt; 
+&lt;/TR&gt; 
+&lt;/THEAD&gt; 
+&lt;TBODY border=1 cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; ID=&quot;dayList&quot;ALIGN=CENTER ONCLICK=&quot;getDate()&quot;&gt; 
+&lt;SCRIPT LANGUAGE=&quot;JavaScript&quot;&gt; 
+for (var intWeeks = 0; intWeeks &lt; 6; intWeeks++) { 
+document.write(&quot;&lt;TR style='cursor:hand'&gt;&quot;); 
+for (var intDays = 0; intDays &lt; days.length; 
+intDays++) 
+document.write(&quot;&lt;TD&gt;&lt;/TD&gt;&quot;); 
+document.write(&quot;&lt;/TR&gt;&quot;); 
+} 
+&lt;/SCRIPT&gt; 
+&lt;/TBODY&gt; 
+&lt;/TABLE&gt; 
+&lt;Script Language=&quot;JavaScript1.2&quot;&gt; 
+
+function Cancel() { 
+document.all.ret.value = &quot;&quot;; 
+window.close(); 
+} 
+
+&lt;/script&gt; 
+
+
+
+
+&nbsp;
+第二步:把如下代码加入<body>区域中<body ONLOAD="newCalendar()" OnUnload="window.returnValue = document.all.ret.value;">
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

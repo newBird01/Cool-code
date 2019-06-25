@@ -1,0 +1,573 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--图片的任意方向移动</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body bgcolor=#FFFFFF>
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">图片的任意方向移动</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=1624" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<table>
+<tr><td style="padding: 5">
+<div id="testDiv" style="border: buttonface 2 solid">
+<img src="photo/2201.jpg">
+</div>
+<script language="JScript">
+function scroll(obj, oWidth, oHeight, direction, drag, zoom, speed)
+{
+	var scrollDiv		= obj
+	var scrollContent	= document.createElement("span")
+	scrollContent.style.position = "absolute"
+	scrollDiv.applyElement(scrollContent, "inside")
+	var displayWidth	= (oWidth  != "auto" && oWidth ) ? oWidth  : scrollContent.offsetWidth  + parseInt(scrollDiv.currentStyle.borderRightWidth)
+	var displayHeight	= (oHeight != "auto" && oHeight) ? oHeight : scrollContent.offsetHeight + parseInt(scrollDiv.currentStyle.borderBottomWidth)
+	var contentWidth	= scrollContent.offsetWidth
+	var contentHeight	= scrollContent.offsetHeight
+	var scrollXItems	= Math.ceil(displayWidth  / contentWidth)  + 1
+	var scrollYItems	= Math.ceil(displayHeight / contentHeight) + 1
+
+	scrollDiv.style.width	 = displayWidth
+	scrollDiv.style.height	 = displayHeight
+	scrollDiv.style.overflow = "hidden"
+	scrollDiv.setAttribute("state", "stop")
+	scrollDiv.setAttribute("drag", drag ? drag : "horizontal")
+	scrollDiv.setAttribute("direction", direction ? direction : "left")
+	scrollDiv.setAttribute("zoom", zoom ? zoom : 1)
+	scrollContent.style.zoom = scrollDiv.zoom
+	
+	var scroll_script =	"var scrollDiv = " + scrollDiv.uniqueID										+"\n"+
+				"var scrollObj = " + scrollContent.uniqueID									+"\n"+
+				"var contentWidth = " + contentWidth + " * (scrollObj.runtimeStyle.zoom ? scrollObj.runtimeStyle.zoom : 1)"	+"\n"+
+				"var contentHeight = " + contentHeight + " * (scrollObj.runtimeStyle.zoom ? scrollObj.runtimeStyle.zoom : 1)"	+"\n"+
+				"var scrollx = scrollObj.runtimeStyle.pixelLeft"								+"\n"+
+				"var scrolly = scrollObj.runtimeStyle.pixelTop"									+"\n"+
+
+				"switch (scrollDiv.state.toLowerCase())"								+"\n"+
+				"{"													+"\n"+
+					"case ('scroll')	:"									+"\n"+
+						"switch (scrollDiv.direction)"								+"\n"+
+						"{"											+"\n"+
+							"case ('left')		:"							+"\n"+
+								"scrollx = (--scrollx) % contentWidth"					+"\n"+
+								"break"									+"\n"+
+							"case ('right')	:"								+"\n"+
+								"scrollx = -contentWidth + (++scrollx) % contentWidth"			+"\n"+
+								"break"									+"\n"+
+							"case ('up')	:"								+"\n"+
+								"scrolly = (--scrolly) % contentHeight"					+"\n"+
+								"break"									+"\n"+
+							"case ('down')	:"								+"\n"+
+								"scrolly = -contentHeight + (++scrolly) % contentHeight"		+"\n"+
+								"break"									+"\n"+
+							"case ('left_up')	:"							+"\n"+
+								"scrollx = (--scrollx) % contentWidth"					+"\n"+
+								"scrolly = (--scrolly) % contentHeight"					+"\n"+
+								"break"									+"\n"+
+							"case ('left_down')	:"							+"\n"+
+								"scrollx = (--scrollx) % contentWidth"					+"\n"+
+								"scrolly = -contentHeight + (++scrolly) % contentHeight"		+"\n"+
+								"break"									+"\n"+
+							"case ('right_up')	:"							+"\n"+
+								"scrollx = -contentWidth + (++scrollx) % contentWidth"			+"\n"+
+								"scrolly = (--scrolly) % contentHeight"					+"\n"+
+								"break"									+"\n"+
+							"case ('right_down')	:"							+"\n"+
+								"scrollx = -contentWidth + (++scrollx) % contentWidth"			+"\n"+
+								"scrolly = -contentHeight + (++scrolly) % contentHeight"		+"\n"+
+								"break"									+"\n"+
+							"default		:"							+"\n"+
+								"return"								+"\n"+
+						"}"											+"\n"+
+						"scrollObj.runtimeStyle.left = scrollx"							+"\n"+
+						"scrollObj.runtimeStyle.top = scrolly"							+"\n"+
+						"break"											+"\n"+
+	
+					"case ('stop')	:"										+"\n"+
+					"case ('drag')	:"										+"\n"+
+					"default	:"										+"\n"+
+						"return"										+"\n"+
+				"}"
+	
+	var contentNode = document.createElement("span")
+	contentNode.runtimeStyle.position = "absolute"
+	contentNode.runtimeStyle.width = contentWidth
+	scrollContent.applyElement(contentNode, "inside")
+	for (var i=0; i <= scrollXItems; i++)
+	{
+		for (var j=0; j <= scrollYItems ; j++)
+		{
+			if (i+j == 0)	continue
+			var tempNode = contentNode.cloneNode(true)
+			var contentLeft, contentTop
+			scrollContent.insertBefore(tempNode)
+			contentLeft = contentWidth * i
+			contentTop = contentHeight * j
+			tempNode.runtimeStyle.left = contentLeft
+			tempNode.runtimeStyle.top  = contentTop
+		}
+	}
+
+	scrollDiv.onpropertychange = function()
+	{
+		var propertyName = window.event.propertyName
+		var propertyValue = eval("this." + propertyName)
+		
+		switch(propertyName)
+		{
+			case "zoom"		:
+				var scrollObj = this.children[0]
+				scrollObj.runtimeStyle.zoom = propertyValue
+				var content_width  = scrollObj.children[0].offsetWidth  * propertyValue
+				var content_height = scrollObj.children[0].offsetHeight * propertyValue
+				scrollObj.runtimeStyle.left = -content_width  + (scrollObj.runtimeStyle.pixelLeft % content_width)
+				scrollObj.runtimeStyle.top  = -content_height + (scrollObj.runtimeStyle.pixelTop  % content_height)
+				break
+		}
+	}
+	
+	scrollDiv.onlosecapture = function()
+	{
+		this.state = this.tempState ? this.tempState : this.state
+		this.runtimeStyle.cursor = ""
+		this.removeAttribute("tempState")
+		this.removeAttribute("start_x")
+		this.removeAttribute("start_y")
+		this.removeAttribute("default_left")
+		this.removeAttribute("default_top")
+	}
+	
+	scrollDiv.onmousedown = function()
+	{
+		if (this.state != "drag")	this.setAttribute("tempState", this.state)
+		this.state = "drag"
+		this.runtimeStyle.cursor = "default"
+		this.setAttribute("start_x", event.clientX)
+		this.setAttribute("start_y", event.clientY)
+		this.setAttribute("default_left", this.children[0].style.pixelLeft)
+		this.setAttribute("default_top", this.children[0].style.pixelTop)
+		this.setCapture()
+	}
+	
+	scrollDiv.onmousemove = function()
+	{
+		if (this.state != "drag")	return
+		var scrollx = scrolly = 0
+		var zoomValue = this.children[0].style.zoom ? this.children[0].style.zoom : 1
+		var content_width = this.children[0].children[0].offsetWidth * zoomValue
+		var content_Height = this.children[0].children[0].offsetHeight * zoomValue
+		if (this.drag == "horizontal" || this.drag == "both")
+		{
+			scrollx = this.default_left + event.clientX - this.start_x
+			scrollx = -content_width + scrollx % content_width
+			this.children[0].runtimeStyle.left = scrollx
+		}
+		if (this.drag == "vertical" || this.drag == "both")
+		{
+			scrolly = this.default_top + event.clientY - this.start_y
+			scrolly = -content_Height + scrolly % content_Height
+			this.children[0].runtimeStyle.top = scrolly
+		}
+	}
+	
+	scrollDiv.onmouseup = function()
+	{
+		this.releaseCapture()
+	}
+	
+	scrollDiv.state = "scroll"
+	setInterval(scroll_script, speed ? speed : 20)
+}
+</script>
+<script language="JScript">
+window.onload = new Function("scroll(document.all['testDiv'], 325)")
+</script>
+<br>
+<button onclick="testDiv.direction='up'; testDiv.state='scroll'"><span style="font-family: Webdings">5</span>向上</button>
+<button onclick="testDiv.direction='left'; testDiv.state='scroll'"><span style="font-family: Webdings">3</span>向左</button>
+<button onclick="testDiv.state='stop'"><span style="font-family: Webdings">;</span>停止</button>
+<button onclick="testDiv.state='scroll'"><span style="font-family: Webdings">8</span>播放</button>
+<button onclick="testDiv.direction='right'; testDiv.state='scroll'"><span style="font-family: Webdings">4</span>向右</button>
+<button onclick="testDiv.direction='down'; testDiv.state='scroll'"><span style="font-family: Webdings">6</span>向下</button>
+<br>
+缩放：
+<select onchange="testDiv.zoom = this.options[selectedIndex].value">
+	<option value=1>100%</option>
+	<option value=2>200%</option>
+	<option value=3>300%</option>
+</select>　　　　　
+托动范围：
+<select onchange="testDiv.drag = this.options[selectedIndex].value">
+	<option value="both">随意</option>
+	<option value="horizontal" selected>横向</option>
+	<option value="vertical">纵向</option>
+</select>
+</td></tr>
+</table>
+</fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+把如下代码加入<body>区域中
+&nbsp;&lt;table&gt;
+&lt;tr&gt;&lt;td style=&quot;padding: 5&quot;&gt;
+&lt;div id=&quot;testDiv&quot; style=&quot;border: buttonface 2 solid&quot;&gt;
+&lt;img src=&quot;photo/2201.jpg&quot;&gt;
+&lt;/div&gt;
+&lt;script language=&quot;JScript&quot;&gt;
+function scroll(obj, oWidth, oHeight, direction, drag, zoom, speed)
+{
+	var scrollDiv		= obj
+	var scrollContent	= document.createElement(&quot;span&quot;)
+	scrollContent.style.position = &quot;absolute&quot;
+	scrollDiv.applyElement(scrollContent, &quot;inside&quot;)
+	var displayWidth	= (oWidth  != &quot;auto&quot; &amp;&amp; oWidth ) ? oWidth  : scrollContent.offsetWidth  + parseInt(scrollDiv.currentStyle.borderRightWidth)
+	var displayHeight	= (oHeight != &quot;auto&quot; &amp;&amp; oHeight) ? oHeight : scrollContent.offsetHeight + parseInt(scrollDiv.currentStyle.borderBottomWidth)
+	var contentWidth	= scrollContent.offsetWidth
+	var contentHeight	= scrollContent.offsetHeight
+	var scrollXItems	= Math.ceil(displayWidth  / contentWidth)  + 1
+	var scrollYItems	= Math.ceil(displayHeight / contentHeight) + 1
+
+	scrollDiv.style.width	 = displayWidth
+	scrollDiv.style.height	 = displayHeight
+	scrollDiv.style.overflow = &quot;hidden&quot;
+	scrollDiv.setAttribute(&quot;state&quot;, &quot;stop&quot;)
+	scrollDiv.setAttribute(&quot;drag&quot;, drag ? drag : &quot;horizontal&quot;)
+	scrollDiv.setAttribute(&quot;direction&quot;, direction ? direction : &quot;left&quot;)
+	scrollDiv.setAttribute(&quot;zoom&quot;, zoom ? zoom : 1)
+	scrollContent.style.zoom = scrollDiv.zoom
+	
+	var scroll_script =	&quot;var scrollDiv = &quot; + scrollDiv.uniqueID										+&quot;\n&quot;+
+				&quot;var scrollObj = &quot; + scrollContent.uniqueID									+&quot;\n&quot;+
+				&quot;var contentWidth = &quot; + contentWidth + &quot; * (scrollObj.runtimeStyle.zoom ? scrollObj.runtimeStyle.zoom : 1)&quot;	+&quot;\n&quot;+
+				&quot;var contentHeight = &quot; + contentHeight + &quot; * (scrollObj.runtimeStyle.zoom ? scrollObj.runtimeStyle.zoom : 1)&quot;	+&quot;\n&quot;+
+				&quot;var scrollx = scrollObj.runtimeStyle.pixelLeft&quot;								+&quot;\n&quot;+
+				&quot;var scrolly = scrollObj.runtimeStyle.pixelTop&quot;									+&quot;\n&quot;+
+
+				&quot;switch (scrollDiv.state.toLowerCase())&quot;								+&quot;\n&quot;+
+				&quot;{&quot;													+&quot;\n&quot;+
+					&quot;case ('scroll')	:&quot;									+&quot;\n&quot;+
+						&quot;switch (scrollDiv.direction)&quot;								+&quot;\n&quot;+
+						&quot;{&quot;											+&quot;\n&quot;+
+							&quot;case ('left')		:&quot;							+&quot;\n&quot;+
+								&quot;scrollx = (--scrollx) % contentWidth&quot;					+&quot;\n&quot;+
+								&quot;break&quot;									+&quot;\n&quot;+
+							&quot;case ('right')	:&quot;								+&quot;\n&quot;+
+								&quot;scrollx = -contentWidth + (++scrollx) % contentWidth&quot;			+&quot;\n&quot;+
+								&quot;break&quot;									+&quot;\n&quot;+
+							&quot;case ('up')	:&quot;								+&quot;\n&quot;+
+								&quot;scrolly = (--scrolly) % contentHeight&quot;					+&quot;\n&quot;+
+								&quot;break&quot;									+&quot;\n&quot;+
+							&quot;case ('down')	:&quot;								+&quot;\n&quot;+
+								&quot;scrolly = -contentHeight + (++scrolly) % contentHeight&quot;		+&quot;\n&quot;+
+								&quot;break&quot;									+&quot;\n&quot;+
+							&quot;case ('left_up')	:&quot;							+&quot;\n&quot;+
+								&quot;scrollx = (--scrollx) % contentWidth&quot;					+&quot;\n&quot;+
+								&quot;scrolly = (--scrolly) % contentHeight&quot;					+&quot;\n&quot;+
+								&quot;break&quot;									+&quot;\n&quot;+
+							&quot;case ('left_down')	:&quot;							+&quot;\n&quot;+
+								&quot;scrollx = (--scrollx) % contentWidth&quot;					+&quot;\n&quot;+
+								&quot;scrolly = -contentHeight + (++scrolly) % contentHeight&quot;		+&quot;\n&quot;+
+								&quot;break&quot;									+&quot;\n&quot;+
+							&quot;case ('right_up')	:&quot;							+&quot;\n&quot;+
+								&quot;scrollx = -contentWidth + (++scrollx) % contentWidth&quot;			+&quot;\n&quot;+
+								&quot;scrolly = (--scrolly) % contentHeight&quot;					+&quot;\n&quot;+
+								&quot;break&quot;									+&quot;\n&quot;+
+							&quot;case ('right_down')	:&quot;							+&quot;\n&quot;+
+								&quot;scrollx = -contentWidth + (++scrollx) % contentWidth&quot;			+&quot;\n&quot;+
+								&quot;scrolly = -contentHeight + (++scrolly) % contentHeight&quot;		+&quot;\n&quot;+
+								&quot;break&quot;									+&quot;\n&quot;+
+							&quot;default		:&quot;							+&quot;\n&quot;+
+								&quot;return&quot;								+&quot;\n&quot;+
+						&quot;}&quot;											+&quot;\n&quot;+
+						&quot;scrollObj.runtimeStyle.left = scrollx&quot;							+&quot;\n&quot;+
+						&quot;scrollObj.runtimeStyle.top = scrolly&quot;							+&quot;\n&quot;+
+						&quot;break&quot;											+&quot;\n&quot;+
+	
+					&quot;case ('stop')	:&quot;										+&quot;\n&quot;+
+					&quot;case ('drag')	:&quot;										+&quot;\n&quot;+
+					&quot;default	:&quot;										+&quot;\n&quot;+
+						&quot;return&quot;										+&quot;\n&quot;+
+				&quot;}&quot;
+	
+	var contentNode = document.createElement(&quot;span&quot;)
+	contentNode.runtimeStyle.position = &quot;absolute&quot;
+	contentNode.runtimeStyle.width = contentWidth
+	scrollContent.applyElement(contentNode, &quot;inside&quot;)
+	for (var i=0; i &lt;= scrollXItems; i++)
+	{
+		for (var j=0; j &lt;= scrollYItems ; j++)
+		{
+			if (i+j == 0)	continue
+			var tempNode = contentNode.cloneNode(true)
+			var contentLeft, contentTop
+			scrollContent.insertBefore(tempNode)
+			contentLeft = contentWidth * i
+			contentTop = contentHeight * j
+			tempNode.runtimeStyle.left = contentLeft
+			tempNode.runtimeStyle.top  = contentTop
+		}
+	}
+
+	scrollDiv.onpropertychange = function()
+	{
+		var propertyName = window.event.propertyName
+		var propertyValue = eval(&quot;this.&quot; + propertyName)
+		
+		switch(propertyName)
+		{
+			case &quot;zoom&quot;		:
+				var scrollObj = this.children[0]
+				scrollObj.runtimeStyle.zoom = propertyValue
+				var content_width  = scrollObj.children[0].offsetWidth  * propertyValue
+				var content_height = scrollObj.children[0].offsetHeight * propertyValue
+				scrollObj.runtimeStyle.left = -content_width  + (scrollObj.runtimeStyle.pixelLeft % content_width)
+				scrollObj.runtimeStyle.top  = -content_height + (scrollObj.runtimeStyle.pixelTop  % content_height)
+				break
+		}
+	}
+	
+	scrollDiv.onlosecapture = function()
+	{
+		this.state = this.tempState ? this.tempState : this.state
+		this.runtimeStyle.cursor = &quot;&quot;
+		this.removeAttribute(&quot;tempState&quot;)
+		this.removeAttribute(&quot;start_x&quot;)
+		this.removeAttribute(&quot;start_y&quot;)
+		this.removeAttribute(&quot;default_left&quot;)
+		this.removeAttribute(&quot;default_top&quot;)
+	}
+	
+	scrollDiv.onmousedown = function()
+	{
+		if (this.state != &quot;drag&quot;)	this.setAttribute(&quot;tempState&quot;, this.state)
+		this.state = &quot;drag&quot;
+		this.runtimeStyle.cursor = &quot;default&quot;
+		this.setAttribute(&quot;start_x&quot;, event.clientX)
+		this.setAttribute(&quot;start_y&quot;, event.clientY)
+		this.setAttribute(&quot;default_left&quot;, this.children[0].style.pixelLeft)
+		this.setAttribute(&quot;default_top&quot;, this.children[0].style.pixelTop)
+		this.setCapture()
+	}
+	
+	scrollDiv.onmousemove = function()
+	{
+		if (this.state != &quot;drag&quot;)	return
+		var scrollx = scrolly = 0
+		var zoomValue = this.children[0].style.zoom ? this.children[0].style.zoom : 1
+		var content_width = this.children[0].children[0].offsetWidth * zoomValue
+		var content_Height = this.children[0].children[0].offsetHeight * zoomValue
+		if (this.drag == &quot;horizontal&quot; || this.drag == &quot;both&quot;)
+		{
+			scrollx = this.default_left + event.clientX - this.start_x
+			scrollx = -content_width + scrollx % content_width
+			this.children[0].runtimeStyle.left = scrollx
+		}
+		if (this.drag == &quot;vertical&quot; || this.drag == &quot;both&quot;)
+		{
+			scrolly = this.default_top + event.clientY - this.start_y
+			scrolly = -content_Height + scrolly % content_Height
+			this.children[0].runtimeStyle.top = scrolly
+		}
+	}
+	
+	scrollDiv.onmouseup = function()
+	{
+		this.releaseCapture()
+	}
+	
+	scrollDiv.state = &quot;scroll&quot;
+	setInterval(scroll_script, speed ? speed : 20)
+}
+&lt;/script&gt;
+&lt;script language=&quot;JScript&quot;&gt;
+window.onload = new Function(&quot;scroll(document.all['testDiv'], 325)&quot;)
+&lt;/script&gt;
+&lt;br&gt;
+&lt;button onclick=&quot;testDiv.direction='up'; testDiv.state='scroll'&quot;&gt;&lt;span style=&quot;font-family: Webdings&quot;&gt;5&lt;/span&gt;向上&lt;/button&gt;
+&lt;button onclick=&quot;testDiv.direction='left'; testDiv.state='scroll'&quot;&gt;&lt;span style=&quot;font-family: Webdings&quot;&gt;3&lt;/span&gt;向左&lt;/button&gt;
+&lt;button onclick=&quot;testDiv.state='stop'&quot;&gt;&lt;span style=&quot;font-family: Webdings&quot;&gt;;&lt;/span&gt;停止&lt;/button&gt;
+&lt;button onclick=&quot;testDiv.state='scroll'&quot;&gt;&lt;span style=&quot;font-family: Webdings&quot;&gt;8&lt;/span&gt;播放&lt;/button&gt;
+&lt;button onclick=&quot;testDiv.direction='right'; testDiv.state='scroll'&quot;&gt;&lt;span style=&quot;font-family: Webdings&quot;&gt;4&lt;/span&gt;向右&lt;/button&gt;
+&lt;button onclick=&quot;testDiv.direction='down'; testDiv.state='scroll'&quot;&gt;&lt;span style=&quot;font-family: Webdings&quot;&gt;6&lt;/span&gt;向下&lt;/button&gt;
+&lt;br&gt;
+缩放：
+&lt;select onchange=&quot;testDiv.zoom = this.options[selectedIndex].value&quot;&gt;
+	&lt;option value=1&gt;100%&lt;/option&gt;
+	&lt;option value=2&gt;200%&lt;/option&gt;
+	&lt;option value=3&gt;300%&lt;/option&gt;
+&lt;/select&gt;　　　　　
+托动范围：
+&lt;select onchange=&quot;testDiv.drag = this.options[selectedIndex].value&quot;&gt;
+	&lt;option value=&quot;both&quot;&gt;随意&lt;/option&gt;
+	&lt;option value=&quot;horizontal&quot; selected&gt;横向&lt;/option&gt;
+	&lt;option value=&quot;vertical&quot;&gt;纵向&lt;/option&gt;
+&lt;/select&gt;
+&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+
+
+
+&nbsp;
+
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

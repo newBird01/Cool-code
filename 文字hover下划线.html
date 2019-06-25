@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>文字hover下划线</title>
+  <style>
+    ul{
+      width: 800px;
+      display: flex;
+      height: 80px;
+      margin: 0 auto;
+    }
+    li{
+      list-style: none;
+      text-align: center;
+      line-height: 80px;
+      position: relative;
+      flex: 1;
+    }
+    /* li:hover::before{
+      width: 100%;
+      left: 0;
+    }
+    li::before{
+      content: '';
+      display: block;
+      width: 0;
+      left: 50%;
+      height: 1px;
+      background: #00aeef;
+      position: absolute;
+      bottom: 2px;
+      transition: all 0.3s ease-out 0s;
+    } */
+    li:hover::before{
+      transform-origin: 50%;
+      transform: scale(1) rotate(3600deg);
+    }
+    li::before{
+      content: '';
+      display: block;
+      width: 100%;
+      left: 0;
+      transform: scale(0);
+      height: 1px;
+      background: red;
+      position: absolute;
+      bottom: 2px;
+      transition: all 0.3s ease-out 0s;
+    }
+    .btn-1 {
+      display: inline-block;
+      height: 44px;
+      line-height: 40px;
+      padding: 0 20px;
+      border-radius: 25px;
+      color: #00aeef;
+      font-size: 15px;
+      border: 2px solid #00aeef;
+      text-align: center;
+      font-family: "Montserrat",sans-serif;
+      font-weight: 400;
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+      transition: all 0.3s ease-out 0s;
+  }
+  .btn-1:hover {
+    border: 2px solid transparent;
+    color: #fff;
+  }
+  .btn-1:hover::before {
+      box-shadow: inset 0 0 0 10em #00aeef;
+  }
+  .btn-1::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: '';
+    border-radius: 50%;
+    display: block;
+    width: 300px;
+    height: 300px;
+    line-height: 20em;
+    left: 50%;
+    margin-left: -150px;
+    text-align: center;
+    transition: box-shadow 0.5s ease-out;
+    z-index: -1;
+}
+  </style>
+</head>
+<body>
+    <div class="btn-1 enquiry-btn">Quick Enquiry</div>
+     
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+  </ul>
+</body>
+</html>

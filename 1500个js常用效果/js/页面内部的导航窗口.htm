@@ -1,0 +1,347 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--页面内部的导航窗口</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body bgcolor=#FFFFFF>
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">页面内部的导航窗口</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=767" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<script>
+
+var dragapproved=false
+var minrestore=0
+var initialwidth,initialheight
+var ie5=document.all&&document.getElementById
+var ns6=document.getElementById&&!document.all
+
+function drag_drop(e){
+if (ie5&&dragapproved&&event.button==1){
+document.getElementById("dwindow").style.left=tempx+event.clientX-offsetx
+document.getElementById("dwindow").style.top=tempy+event.clientY-offsety
+}
+else if (ns6&&dragapproved){
+document.getElementById("dwindow").style.left=tempx+e.clientX-offsetx
+document.getElementById("dwindow").style.top=tempy+e.clientY-offsety
+}
+}
+
+function initializedrag(e){
+offsetx=ie5? event.clientX : e.clientX
+offsety=ie5? event.clientY : e.clientY
+if (ie5)
+document.getElementById("saver").style.display=''
+
+tempx=parseInt(document.getElementById("dwindow").style.left)
+tempy=parseInt(document.getElementById("dwindow").style.top)
+
+dragapproved=true
+document.onmousemove=drag_drop
+}
+
+function loadwindow(url,width,height){
+if (!ie5&&!ns6)
+window.open(url,"","width=width,height=height,scrollbars=1")
+else{
+document.getElementById("dwindow").style.display=''
+document.getElementById("dwindow").style.width=initialwidth=width
+document.getElementById("dwindow").style.height=initialheight=height
+document.getElementById("dwindow").style.left=30
+document.getElementById("dwindow").style.top=ns6? window.pageYOffset*1+30 : document.body.scrollTop*1+30
+document.getElementById("cframe").src=url
+}
+}
+
+function maximize(){
+if (minrestore==0){
+minrestore=1 //maximize window
+document.getElementById("maxname").setAttribute("src","restore.gif")
+document.getElementById("dwindow").style.width=ns6? window.innerWidth-20 : document.body.clientWidth
+document.getElementById("dwindow").style.height=ns6? window.innerHeight-20 : document.body.clientHeight
+}
+else{
+minrestore=0 //restore window
+document.getElementById("maxname").setAttribute("src","max.gif")
+document.getElementById("dwindow").style.width=initialwidth
+document.getElementById("dwindow").style.height=initialheight
+}
+document.getElementById("dwindow").style.left=ns6? window.pageXOffset : document.body.scrollLeft
+document.getElementById("dwindow").style.top=ns6? window.pageYOffset : document.body.scrollTop
+}
+
+function closeit(){
+document.getElementById("dwindow").style.display="none"
+}
+
+if (ie5||ns6)
+document.onmouseup=new Function("dragapproved=false;document.onmousemove=null;document.getElementById('saver').style.display='none'")
+
+</script>
+<div id="dwindow" style="position:absolute;background-color:navy;cursor:hand;left:0;top:0;display:none" onMousedown="initializedrag(event)" onSelectStart="return false">
+<div align="right"><img src="max.gif" id="maxname" onClick="maximize()"><img src="close.gif" onClick="closeit()"></div>
+<iframe id="cframe" src="" width=100% height=100%></iframe>
+<div id="saver" style="width:100%;height:100%;position:absolute;left:0;top:0;display:none"></div>
+</div>
+
+<script>
+//Use below code to load DHTML Window as page loads 
+if (ns6) window.onload=new Function('loadwindow("http://5icat.net.ru",600,400)')
+else
+loadwindow("http://5icat.net.ru",600,400)
+</script>
+<a href="javascript:loadwindow('http://www.cctv.com',600,400)">中央电视台</a>
+<a href="javascript:loadwindow('http://www.163.com',600,400)">网易</a></fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+把如下代码加入<body>区域中
+&nbsp;&lt;script&gt;
+
+var dragapproved=false
+var minrestore=0
+var initialwidth,initialheight
+var ie5=document.all&amp;&amp;document.getElementById
+var ns6=document.getElementById&amp;&amp;!document.all
+
+function drag_drop(e){
+if (ie5&amp;&amp;dragapproved&amp;&amp;event.button==1){
+document.getElementById(&quot;dwindow&quot;).style.left=tempx+event.clientX-offsetx
+document.getElementById(&quot;dwindow&quot;).style.top=tempy+event.clientY-offsety
+}
+else if (ns6&amp;&amp;dragapproved){
+document.getElementById(&quot;dwindow&quot;).style.left=tempx+e.clientX-offsetx
+document.getElementById(&quot;dwindow&quot;).style.top=tempy+e.clientY-offsety
+}
+}
+
+function initializedrag(e){
+offsetx=ie5? event.clientX : e.clientX
+offsety=ie5? event.clientY : e.clientY
+if (ie5)
+document.getElementById(&quot;saver&quot;).style.display=''
+
+tempx=parseInt(document.getElementById(&quot;dwindow&quot;).style.left)
+tempy=parseInt(document.getElementById(&quot;dwindow&quot;).style.top)
+
+dragapproved=true
+document.onmousemove=drag_drop
+}
+
+function loadwindow(url,width,height){
+if (!ie5&amp;&amp;!ns6)
+window.open(url,&quot;&quot;,&quot;width=width,height=height,scrollbars=1&quot;)
+else{
+document.getElementById(&quot;dwindow&quot;).style.display=''
+document.getElementById(&quot;dwindow&quot;).style.width=initialwidth=width
+document.getElementById(&quot;dwindow&quot;).style.height=initialheight=height
+document.getElementById(&quot;dwindow&quot;).style.left=30
+document.getElementById(&quot;dwindow&quot;).style.top=ns6? window.pageYOffset*1+30 : document.body.scrollTop*1+30
+document.getElementById(&quot;cframe&quot;).src=url
+}
+}
+
+function maximize(){
+if (minrestore==0){
+minrestore=1 //maximize window
+document.getElementById(&quot;maxname&quot;).setAttribute(&quot;src&quot;,&quot;restore.gif&quot;)
+document.getElementById(&quot;dwindow&quot;).style.width=ns6? window.innerWidth-20 : document.body.clientWidth
+document.getElementById(&quot;dwindow&quot;).style.height=ns6? window.innerHeight-20 : document.body.clientHeight
+}
+else{
+minrestore=0 //restore window
+document.getElementById(&quot;maxname&quot;).setAttribute(&quot;src&quot;,&quot;max.gif&quot;)
+document.getElementById(&quot;dwindow&quot;).style.width=initialwidth
+document.getElementById(&quot;dwindow&quot;).style.height=initialheight
+}
+document.getElementById(&quot;dwindow&quot;).style.left=ns6? window.pageXOffset : document.body.scrollLeft
+document.getElementById(&quot;dwindow&quot;).style.top=ns6? window.pageYOffset : document.body.scrollTop
+}
+
+function closeit(){
+document.getElementById(&quot;dwindow&quot;).style.display=&quot;none&quot;
+}
+
+if (ie5||ns6)
+document.onmouseup=new Function(&quot;dragapproved=false;document.onmousemove=null;document.getElementById('saver').style.display='none'&quot;)
+
+&lt;/script&gt;
+&lt;div id=&quot;dwindow&quot; style=&quot;position:absolute;background-color:navy;cursor:hand;left:0;top:0;display:none&quot; onMousedown=&quot;initializedrag(event)&quot; onSelectStart=&quot;return false&quot;&gt;
+&lt;div align=&quot;right&quot;&gt;&lt;img src=&quot;max.gif&quot; id=&quot;maxname&quot; onClick=&quot;maximize()&quot;&gt;&lt;img src=&quot;close.gif&quot; onClick=&quot;closeit()&quot;&gt;&lt;/div&gt;
+&lt;iframe id=&quot;cframe&quot; src=&quot;&quot; width=100% height=100%&gt;&lt;/iframe&gt;
+&lt;div id=&quot;saver&quot; style=&quot;width:100%;height:100%;position:absolute;left:0;top:0;display:none&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+//Use below code to load DHTML Window as page loads 
+if (ns6) window.onload=new Function('loadwindow(&quot;http://5icat.net.ru&quot;,600,400)')
+else
+loadwindow(&quot;http://5icat.net.ru&quot;,600,400)
+&lt;/script&gt;
+&lt;a href=&quot;javascript:loadwindow('http://www.cctv.com',600,400)&quot;&gt;中央电视台&lt;/a&gt;
+&lt;a href=&quot;javascript:loadwindow('http://www.163.com',600,400)&quot;&gt;网易&lt;/a&gt;
+
+
+
+&nbsp;
+
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

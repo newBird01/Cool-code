@@ -1,0 +1,559 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--页面中撞击的小球</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body onload="Move()">
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">页面中撞击的小球</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=485" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<script language="JavaScript">
+<!-- 
+
+function link(){
+alert("Demo only - Goes to first page of your site.");
+}
+
+//Size of stationary ball.
+F=90;
+
+//Moving ball sizes. Add to array for more balls, min 2.
+S=new Array(90,20,30,40,50)
+
+//Speeds.
+min=10;
+max=30;
+
+//Alter nothing past here.
+n6=(document.getElementById&&!document.all);
+n4=(document.layers);
+ie=(document.all);
+
+d=(n4||ie)?'document.':'document.getElementById("';
+a=(n4||n6)?'':'all.';
+n6r=(n6)?'")':'';
+s=(n4)?'':'.style'; 
+TY=0;
+TX=0;
+I=new Array();
+P=new Array();
+HT=new Array();
+HY=new Array();
+HX=new Array();
+Y=new Array();
+X=new Array();
+A=new Array();
+PY=new Array();
+PX=new Array();
+CR=new Array();
+D=new Array();
+B=new Array();
+SP=new Array();
+SP2=new Array();
+Q=new Array();
+CY=new Array();
+CX=new Array();
+IL=new Array();
+ILS=new Array();
+TD=new Array();
+SH=new Array();
+L=new Array();
+p1x=new Array();
+p1y=new Array();
+p2x=new Array();
+p2y=new Array();
+CY=new Array();
+CX=new Array();
+FDS=new Array();
+DS=new Array();
+
+if (ie){
+document.write("<a href='javascript:link()'><img src='photo/ballB.gif' border='0' height='"+F+"' width='"+F+"' id='still' style='position:absolute;top:300px;left:438px;width:"+F+";height:"+F+"'></a>");
+}
+if (n6){
+document.write("<div id='still' style='position:absolute;top:179px;left:438px;width:"+F+";height:"+F+";cursor:move'>");
+document.write("<img src='photo/ballB.gif' height='"+F+"' width='"+F+"'>");
+document.write("</div>");
+}
+if (n4){
+document.write("<layer name='still' top=200 left=450>");
+document.write("<img src='photo/ballB.gif' height='"+F+"' width='"+F+"'>");
+document.write("</layer>");
+}
+for (i=0; i < S.length; i++){
+if (ie){
+document.write("<img id='move"+i+"' src='photo/ballA.gif' height='"+S[i]+"' width='"+S[i]+"' style='position:absolute;top:0px;left:0px;height:"+S[i]+";width:"+S[i]+"'>");
+}
+if (n6){
+document.write("<div id='move"+i+"' style='position:absolute;top:0px;left:0px;height:"+S[i]+";width:"+S[i]+"'>");
+document.write("<img src='photo/ballA.gif' height='"+S[i]+"' width='"+S[i]+"'>");
+document.write("</div>");
+}
+if (n4){
+document.write("<layer name='move"+i+"' top=0 left=0>");
+document.write("<img src='photo/ballA.gif' height='"+S[i]+"' width='"+S[i]+"'>");
+document.write("</layer>");
+}
+
+Y[i]=10;
+X[i]=10;
+D[i]=30;
+SP[i]=min+Math.floor(Math.random()*max);
+SP2[i]=SP[i];
+}
+
+
+function Move(){
+H=(n4||n6)?window.innerHeight:document.body.clientHeight;
+W=(n4||n6)?window.innerWidth:document.body.clientWidth;
+T1=eval(d+a+"still"+n6r+s);
+R1=F/2;
+T1.top=H/2-R1;
+T1.left=W/2-R1;
+//center of stationary ball!! 
+TY=(ie)?T1.pixelTop+F/2:parseInt(T1.top)+F/2;
+TX=(ie)?T1.pixelLeft+F/2:parseInt(T1.left)+F/2;
+for (i=0; i < S.length; i++){
+T2=eval(d+a+"move"+i+n6r+s);
+R2=S[i]/2;
+CR[i]=R2+R1;
+//center of moving balls!!
+PY[i]=(ie)?T2.pixelTop+S[i]/2:parseInt(T2.top)+S[i]/2;
+PX[i]=(ie)?T2.pixelLeft+S[i]/2:parseInt(T2.left)+S[i]/2;
+//Angle between center of balls and still!!
+ay=PY[i]-TY;
+ax=PX[i]-TX;
+A[i]=Math.atan2(ay,ax)*180/Math.PI;
+if (A[i] < 0) A[i]+=360;
+//Shortest distance between centre's of stationary and moving balls!!
+dx=TY-PY[i];
+dy=TX-PX[i];
+DS[i]=Math.sqrt(dx*dx+dy*dy);
+FDS[i] = Math.floor(DS[i]);
+Q[i]=(FDS[i]-CR[i]);
+if (Q[i] < 0) Q[i]=0;
+//The following is based on a standard line/circle intersection routine. 
+B[i]=R1/R2+1;
+CY[i]=PY[i]-(DS[i]/B[i])*Math.sin(A[i]*Math.PI/180);
+CX[i]=PX[i]-(DS[i]/B[i])*Math.cos(A[i]*Math.PI/180);
+//Line start point!! 
+p1y[i]=CY[i];
+p1x[i]=CX[i];
+//Line end point!!
+p2y[i]=CY[i]+1*Math.sin(D[i]*Math.PI/180);
+p2x[i]=CX[i]+1*Math.cos(D[i]*Math.PI/180);
+L[i]=(p2x[i]-p1x[i])*(p2x[i]-p1x[i])+(p2y[i]-p1y[i])*(p2y[i]-p1y[i]);
+//Travelling towards if SH is less than zero.
+SH[i]=2*((p2x[i]-p1x[i])*(p1x[i]-TX)+(p2y[i]-p1y[i])*(p1y[i]-TY));
+TD[i]=TX*TX+TY*TY+p1x[i]*p1x[i]+p1y[i]*p1y[i]-2*(TX*p1x[i]+TY*p1y[i])-R1*R1;//OK!
+//Contact possible if IL is greater than zero!
+IL[i]=SH[i]*SH[i]-4*L[i]*TD[i];
+ILS[i]=Math.sqrt(IL[i]);
+HT[i]=(-SH[i]-ILS[i])/(2*L[i]);
+HX[i]=p1x[i]+HT[i]*(p2x[i]-p1x[i]);//Contact point x.
+HY[i]=p1y[i]+HT[i]*(p2y[i]-p1y[i]);//Contact point y.  
+//Required angle.
+a1= HY[i]-TY;
+a2= HX[i]-TX;
+I[i]=Math.atan2(a1,a2)*180/Math.PI;
+if (I[i] < 0) I[i]+=360;
+//Distance to impact point.
+d1=HY[i]-CY[i];
+d2=HX[i]-CX[i];
+P[i]=Math.floor(Math.sqrt(d1*d1+d2*d2)*2);
+//Error adjust. For this situation only!
+if (Q[i] <= 0) Q[i]=0;
+if (SP[i] == 0) Q[i]=0;
+E=(R1 > R2)?SP[i]*2:SP[i];
+
+if ((P[i] <= E) && (IL[i] > 1) && (SH[i] < 0)){
+SP[i]=0;
+Y[i]=(TY-R2)+CR[i]*Math.sin(I[i]*Math.PI/180);
+X[i]=(TX-R2)+CR[i]*Math.cos(I[i]*Math.PI/180);
+}
+if ((Q[i] == 0) && (SH[i] <= -1)){
+D[i]=A[i]*2-180-D[i];
+SP[i]=SP2[i];
+}
+if (D[i] < 0) D[i]+=360;
+Y[i]+=SP[i]*Math.sin(D[i]*Math.PI/180);
+X[i]+=SP[i]*Math.cos(D[i]*Math.PI/180);
+VB=180-D[i];
+HB=0-D[i];
+//Edge rebounds!
+if(Y[i]<1){Y[i]=1;D[i]=HB}  
+if(Y[i]+S[i]>H){Y[i]=H-S[i];D[i]=HB}  
+if(X[i]<1){X[i]=1;D[i]=VB}      
+if(X[i]+S[i]>W){X[i]=W-S[i];D[i]=VB} 
+//Corner rebounds! not necessary but looks nice.
+if((Y[i]<1)&&(X[i]<1)){Y[i]=1;X[i]=1;D[i]=45}
+if((Y[i]<1)&&(X[i]+S[i]>W)){Y[i]=1;X[i]=W-S[i];D[i]=135}
+if((Y[i]+S[i]>H)&&(X[i]<1)){Y[i]=H-S[i];X[i]=1;D[i]=315}
+if((Y[i]+S[i]>H)&&(X[i]+S[i]>W)){Y[i]=H-S[i];X[i]=W-S[i];D[i]=225}
+T2.top=Y[i];
+T2.left=X[i];
+}//end loop!
+setTimeout('Move()',20);
+}
+//-->
+</script></fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+第一步:把如下代码加入<body>区域中
+&nbsp;&lt;script language=&quot;JavaScript&quot;&gt;
+&lt;!-- 
+
+function link(){
+alert(&quot;Demo only - Goes to first page of your site.&quot;);
+}
+
+//Size of stationary ball.
+F=90;
+
+//Moving ball sizes. Add to array for more balls, min 2.
+S=new Array(90,20,30,40,50)
+
+//Speeds.
+min=10;
+max=30;
+
+//Alter nothing past here.
+n6=(document.getElementById&amp;&amp;!document.all);
+n4=(document.layers);
+ie=(document.all);
+
+d=(n4||ie)?'document.':'document.getElementById(&quot;';
+a=(n4||n6)?'':'all.';
+n6r=(n6)?'&quot;)':'';
+s=(n4)?'':'.style'; 
+TY=0;
+TX=0;
+I=new Array();
+P=new Array();
+HT=new Array();
+HY=new Array();
+HX=new Array();
+Y=new Array();
+X=new Array();
+A=new Array();
+PY=new Array();
+PX=new Array();
+CR=new Array();
+D=new Array();
+B=new Array();
+SP=new Array();
+SP2=new Array();
+Q=new Array();
+CY=new Array();
+CX=new Array();
+IL=new Array();
+ILS=new Array();
+TD=new Array();
+SH=new Array();
+L=new Array();
+p1x=new Array();
+p1y=new Array();
+p2x=new Array();
+p2y=new Array();
+CY=new Array();
+CX=new Array();
+FDS=new Array();
+DS=new Array();
+
+if (ie){
+document.write(&quot;&lt;a href='javascript:link()'&gt;&lt;img src='photo/ballB.gif' border='0' height='&quot;+F+&quot;' width='&quot;+F+&quot;' id='still' style='position:absolute;top:300px;left:438px;width:&quot;+F+&quot;;height:&quot;+F+&quot;'&gt;&lt;/a&gt;&quot;);
+}
+if (n6){
+document.write(&quot;&lt;div id='still' style='position:absolute;top:179px;left:438px;width:&quot;+F+&quot;;height:&quot;+F+&quot;;cursor:move'&gt;&quot;);
+document.write(&quot;&lt;img src='photo/ballB.gif' height='&quot;+F+&quot;' width='&quot;+F+&quot;'&gt;&quot;);
+document.write(&quot;&lt;/div&gt;&quot;);
+}
+if (n4){
+document.write(&quot;&lt;layer name='still' top=200 left=450&gt;&quot;);
+document.write(&quot;&lt;img src='photo/ballB.gif' height='&quot;+F+&quot;' width='&quot;+F+&quot;'&gt;&quot;);
+document.write(&quot;&lt;/layer&gt;&quot;);
+}
+for (i=0; i &lt; S.length; i++){
+if (ie){
+document.write(&quot;&lt;img id='move&quot;+i+&quot;' src='photo/ballA.gif' height='&quot;+S[i]+&quot;' width='&quot;+S[i]+&quot;' style='position:absolute;top:0px;left:0px;height:&quot;+S[i]+&quot;;width:&quot;+S[i]+&quot;'&gt;&quot;);
+}
+if (n6){
+document.write(&quot;&lt;div id='move&quot;+i+&quot;' style='position:absolute;top:0px;left:0px;height:&quot;+S[i]+&quot;;width:&quot;+S[i]+&quot;'&gt;&quot;);
+document.write(&quot;&lt;img src='photo/ballA.gif' height='&quot;+S[i]+&quot;' width='&quot;+S[i]+&quot;'&gt;&quot;);
+document.write(&quot;&lt;/div&gt;&quot;);
+}
+if (n4){
+document.write(&quot;&lt;layer name='move&quot;+i+&quot;' top=0 left=0&gt;&quot;);
+document.write(&quot;&lt;img src='photo/ballA.gif' height='&quot;+S[i]+&quot;' width='&quot;+S[i]+&quot;'&gt;&quot;);
+document.write(&quot;&lt;/layer&gt;&quot;);
+}
+
+Y[i]=10;
+X[i]=10;
+D[i]=30;
+SP[i]=min+Math.floor(Math.random()*max);
+SP2[i]=SP[i];
+}
+
+
+function Move(){
+H=(n4||n6)?window.innerHeight:document.body.clientHeight;
+W=(n4||n6)?window.innerWidth:document.body.clientWidth;
+T1=eval(d+a+&quot;still&quot;+n6r+s);
+R1=F/2;
+T1.top=H/2-R1;
+T1.left=W/2-R1;
+//center of stationary ball!! 
+TY=(ie)?T1.pixelTop+F/2:parseInt(T1.top)+F/2;
+TX=(ie)?T1.pixelLeft+F/2:parseInt(T1.left)+F/2;
+for (i=0; i &lt; S.length; i++){
+T2=eval(d+a+&quot;move&quot;+i+n6r+s);
+R2=S[i]/2;
+CR[i]=R2+R1;
+//center of moving balls!!
+PY[i]=(ie)?T2.pixelTop+S[i]/2:parseInt(T2.top)+S[i]/2;
+PX[i]=(ie)?T2.pixelLeft+S[i]/2:parseInt(T2.left)+S[i]/2;
+//Angle between center of balls and still!!
+ay=PY[i]-TY;
+ax=PX[i]-TX;
+A[i]=Math.atan2(ay,ax)*180/Math.PI;
+if (A[i] &lt; 0) A[i]+=360;
+//Shortest distance between centre's of stationary and moving balls!!
+dx=TY-PY[i];
+dy=TX-PX[i];
+DS[i]=Math.sqrt(dx*dx+dy*dy);
+FDS[i] = Math.floor(DS[i]);
+Q[i]=(FDS[i]-CR[i]);
+if (Q[i] &lt; 0) Q[i]=0;
+//The following is based on a standard line/circle intersection routine. 
+B[i]=R1/R2+1;
+CY[i]=PY[i]-(DS[i]/B[i])*Math.sin(A[i]*Math.PI/180);
+CX[i]=PX[i]-(DS[i]/B[i])*Math.cos(A[i]*Math.PI/180);
+//Line start point!! 
+p1y[i]=CY[i];
+p1x[i]=CX[i];
+//Line end point!!
+p2y[i]=CY[i]+1*Math.sin(D[i]*Math.PI/180);
+p2x[i]=CX[i]+1*Math.cos(D[i]*Math.PI/180);
+L[i]=(p2x[i]-p1x[i])*(p2x[i]-p1x[i])+(p2y[i]-p1y[i])*(p2y[i]-p1y[i]);
+//Travelling towards if SH is less than zero.
+SH[i]=2*((p2x[i]-p1x[i])*(p1x[i]-TX)+(p2y[i]-p1y[i])*(p1y[i]-TY));
+TD[i]=TX*TX+TY*TY+p1x[i]*p1x[i]+p1y[i]*p1y[i]-2*(TX*p1x[i]+TY*p1y[i])-R1*R1;//OK!
+//Contact possible if IL is greater than zero!
+IL[i]=SH[i]*SH[i]-4*L[i]*TD[i];
+ILS[i]=Math.sqrt(IL[i]);
+HT[i]=(-SH[i]-ILS[i])/(2*L[i]);
+HX[i]=p1x[i]+HT[i]*(p2x[i]-p1x[i]);//Contact point x.
+HY[i]=p1y[i]+HT[i]*(p2y[i]-p1y[i]);//Contact point y.  
+//Required angle.
+a1= HY[i]-TY;
+a2= HX[i]-TX;
+I[i]=Math.atan2(a1,a2)*180/Math.PI;
+if (I[i] &lt; 0) I[i]+=360;
+//Distance to impact point.
+d1=HY[i]-CY[i];
+d2=HX[i]-CX[i];
+P[i]=Math.floor(Math.sqrt(d1*d1+d2*d2)*2);
+//Error adjust. For this situation only!
+if (Q[i] &lt;= 0) Q[i]=0;
+if (SP[i] == 0) Q[i]=0;
+E=(R1 &gt; R2)?SP[i]*2:SP[i];
+
+if ((P[i] &lt;= E) &amp;&amp; (IL[i] &gt; 1) &amp;&amp; (SH[i] &lt; 0)){
+SP[i]=0;
+Y[i]=(TY-R2)+CR[i]*Math.sin(I[i]*Math.PI/180);
+X[i]=(TX-R2)+CR[i]*Math.cos(I[i]*Math.PI/180);
+}
+if ((Q[i] == 0) &amp;&amp; (SH[i] &lt;= -1)){
+D[i]=A[i]*2-180-D[i];
+SP[i]=SP2[i];
+}
+if (D[i] &lt; 0) D[i]+=360;
+Y[i]+=SP[i]*Math.sin(D[i]*Math.PI/180);
+X[i]+=SP[i]*Math.cos(D[i]*Math.PI/180);
+VB=180-D[i];
+HB=0-D[i];
+//Edge rebounds!
+if(Y[i]&lt;1){Y[i]=1;D[i]=HB}  
+if(Y[i]+S[i]&gt;H){Y[i]=H-S[i];D[i]=HB}  
+if(X[i]&lt;1){X[i]=1;D[i]=VB}      
+if(X[i]+S[i]&gt;W){X[i]=W-S[i];D[i]=VB} 
+//Corner rebounds! not necessary but looks nice.
+if((Y[i]&lt;1)&amp;&amp;(X[i]&lt;1)){Y[i]=1;X[i]=1;D[i]=45}
+if((Y[i]&lt;1)&amp;&amp;(X[i]+S[i]&gt;W)){Y[i]=1;X[i]=W-S[i];D[i]=135}
+if((Y[i]+S[i]&gt;H)&amp;&amp;(X[i]&lt;1)){Y[i]=H-S[i];X[i]=1;D[i]=315}
+if((Y[i]+S[i]&gt;H)&amp;&amp;(X[i]+S[i]&gt;W)){Y[i]=H-S[i];X[i]=W-S[i];D[i]=225}
+T2.top=Y[i];
+T2.left=X[i];
+}//end loop!
+setTimeout('Move()',20);
+}
+//--&gt;
+&lt;/script&gt;
+
+
+
+&nbsp;
+第二步:把如下代码加入<body>区域中<body onload="Move()">
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,805 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--滚动的导航条</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body   onload=eventLoader();>
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">滚动的导航条</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=249" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<SCRIPT language=JavaScript>
+
+
+// Known bugs 10.01.2001
+// Not able to remove browser-scrollbar in netscape 6, if the span "content" is heigher than browserwindow... :-(
+// If ie4.5 mac, please press apple-t to remove sidebar, otherwise everything is pushed 20px to the right...
+
+// Touch me here :-)
+var upH = 13; // Height of up-arrow
+var upW = 13; // Width of up-arrow
+var downH = 13; // Height of down-arrow
+var downW = 13; // Width of down-arrow
+var dragH = 26; // Height of scrollbar
+var dragW = 13; // Width of scrollbar
+var scrollH = 138; // Height of scrollbar
+var speed = 4; // Scroll speed
+
+// And now... go to the bottom of the page...
+
+// Browser detection
+var dom = document.getElementById ? true:false;
+var nn4 = document.layers ? true:false;
+var ie4 = document.all ? true:false;
+
+var mouseY; // Mouse Y position onclick
+var mouseX; // Mouse X position onclick
+
+var clickUp = false; // If click on up-arrow
+var clickDown = false; // If click on down-arrow
+var clickDrag = false; // If click on scrollbar
+var clickAbove = false; // If click above scrollbar
+var clickBelow = false; // If click below scrollbar
+
+var timer = setTimeout("",500); // Repeat variable
+var upL; // Up-arrow X
+var upT; // Up-arrow Y
+var downL; // Down-arrow X
+var downT; // Down-arrow Y
+var dragL; // Scrollbar X
+var dragT; // Scrollbar Y
+var rulerL; // Ruler X
+var rulerT; // Ruler Y
+var contentT; // Content layer Y;
+var contentH; // Content height
+var contentClipH; // Content clip height
+var scrollLength; // Number of pixels scrollbar should move
+var startY; // Keeps track of offset between mouse and span
+
+// Mousedown
+function down(e){
+        if((document.layers && e.which!=1) || (document.all && event.button!=1)) return true; // Enables the right mousebutton          
+        getMouse(e);
+        startY = (mouseY - dragT);
+        
+        // If click on up-arrow
+        if(mouseX >= upL && (mouseX <= (upL + upW)) && mouseY >= upT && (mouseY <= (upT + upH))){
+                clickUp = true;
+                return scrollUp();
+        }       
+        // Else if click on down-arrow
+        else if(mouseX >= downL && (mouseX <= (downL + downW)) && mouseY >= downT && (mouseY <= (downT + downH))){
+                clickDown = true;
+                return scrollDown();
+        }
+        // Else if click on scrollbar
+        else if(mouseX >= dragL && (mouseX <= (dragL + dragW)) && mouseY >= dragT && (mouseY <= (dragT + dragH))){
+                clickDrag = true;
+                return false;
+        }
+        else if(mouseX >= dragL && (mouseX <= (dragL + dragW)) && mouseY >= rulerT && (mouseY <= (rulerT + scrollH))){
+                // If click above drag
+                if(mouseY < dragT){
+                        clickAbove = true;
+                        clickUp = true;
+                        return scrollUp();
+                }
+                // Else click below drag
+                else{
+                        clickBelow = true;
+                        clickDown = true;
+                        return scrollDown();
+                }
+        }
+        // If no scrolling is to take place
+        else{
+                return true;
+        }
+}
+
+// Drag function
+function move(e){
+        if(clickDrag){
+                getMouse(e);
+                dragT = (mouseY - startY);
+                
+                if(dragT < (rulerT))
+                        dragT = rulerT;         
+                if(dragT > (rulerT + scrollH - dragH))
+                        dragT = (rulerT + scrollH - dragH);
+                
+                contentT = ((dragT - rulerT)*(1/scrollLength));
+                contentT = eval('-' + contentT);
+
+                moveTo();
+                
+                // So ie-pc doesn't select gifs
+                if(ie4)
+                        return false;           
+        }
+}
+
+
+function up(){
+        clearTimeout(timer);
+        // Resetting variables
+        clickUp = false;
+        clickDown = false;
+        clickDrag = false;
+        clickAbove = false;
+        clickBelow = false;
+        return true;
+}
+
+// Reads content layer top
+function getT(){
+        if(ie4)
+                contentT = document.all.content.style.pixelTop;
+        else if(nn4)
+                contentT = document.contentClip.document.content.top;
+        else if(dom)
+                contentT = parseInt(document.getElementById("content").style.top);
+}
+
+// Reads mouse X and Y coordinates
+function getMouse(e){
+        if(ie4){
+                mouseY = event.clientY;
+                mouseX = event.clientX;
+        }
+        else if(nn4 || dom){
+                mouseY = e.pageY;
+                mouseX = e.pageX;
+        }
+}
+
+// Moves the layer
+function moveTo(){
+        if(ie4){
+                document.all.content.style.top = contentT;
+                document.all.ruler.style.top = dragT;
+                document.all.drag.style.top = dragT;
+        }
+        else if(nn4){
+                document.contentClip.document.content.top = contentT;
+                document.ruler.top = dragT;
+                document.drag.top = dragT;
+        }
+        else if(dom){
+                document.getElementById("content").style.top = contentT + "px";
+                document.getElementById("drag").style.top = dragT + "px";
+                document.getElementById("ruler").style.top = dragT + "px";
+        }
+}
+
+// Scrolls up
+function scrollUp(){
+        getT();
+        
+        if(clickAbove){
+                if(dragT <= (mouseY-(dragH/2)))
+                        return up();
+        }
+        
+        if(clickUp){
+                if(contentT < 0){               
+                        dragT = dragT - (speed*scrollLength);
+                        
+                        if(dragT < (rulerT))
+                                dragT = rulerT;
+                                
+                        contentT = contentT + speed;
+                        if(contentT > 0)
+                                contentT = 0;
+                        
+                        moveTo();
+                        timer = setTimeout("scrollUp()",25);
+                }
+        }
+        return false;
+}
+
+// Scrolls down
+function scrollDown(){
+        getT();
+        
+        if(clickBelow){
+                if(dragT >= (mouseY-(dragH/2)))
+                        return up();
+        }
+
+        if(clickDown){
+                if(contentT > -(contentH - contentClipH)){                      
+                        dragT = dragT + (speed*scrollLength);
+                        if(dragT > (rulerT + scrollH - dragH))
+                                dragT = (rulerT + scrollH - dragH);
+                        
+                        contentT = contentT - speed;
+                        if(contentT < -(contentH - contentClipH))
+                                contentT = -(contentH - contentClipH);
+                        
+                        moveTo();
+                        timer = setTimeout("scrollDown()",25);
+                }
+        }
+        return false;
+}
+
+// reloads page to position the layers again
+function reloadPage(){
+        location.reload();
+}
+
+// Preload
+function eventLoader(){
+        if(ie4){
+                // Up-arrow X and Y variables
+                upL = document.all.up.style.pixelLeft;
+                upT = document.all.up.style.pixelTop;           
+                // Down-arrow X and Y variables
+                downL = document.all.down.style.pixelLeft;
+                downT = document.all.down.style.pixelTop;
+                // Scrollbar X and Y variables
+                dragL = document.all.drag.style.pixelLeft;
+                dragT = document.all.drag.style.pixelTop;               
+                // Ruler Y variable
+                rulerT = document.all.ruler.style.pixelTop;             
+                // Height of content layer and clip layer
+                contentH = document.all.content.offsetHeight;
+                contentClipH = document.all.contentClip.offsetHeight;
+        }
+        else if(nn4){
+                // Up-arrow X and Y variables
+                upL = document.up.left;
+                upT = document.up.top;          
+                // Down-arrow X and Y variables
+                downL = document.down.left;
+                downT = document.down.top;              
+                // Scrollbar X and Y variables
+                dragL = document.drag.left;
+                dragT = document.drag.top;              
+                // Ruler Y variable
+                rulerT = document.ruler.top;
+                // Height of content layer and clip layer
+                contentH = document.contentClip.document.content.clip.bottom;
+                contentClipH = document.contentClip.clip.bottom;
+        }
+        else if(dom){
+                // Up-arrow X and Y variables
+                upL = parseInt(document.getElementById("up").style.left);
+                upT = parseInt(document.getElementById("up").style.top);
+                // Down-arrow X and Y variables
+                downL = parseInt(document.getElementById("down").style.left);
+                downT = parseInt(document.getElementById("down").style.top);
+                // Scrollbar X and Y variables
+                dragL = parseInt(document.getElementById("drag").style.left);
+                dragT = parseInt(document.getElementById("drag").style.top);
+                // Ruler Y variable
+                rulerT = parseInt(document.getElementById("ruler").style.top);
+                // Height of content layer and clip layer
+                contentH = document.getElementById("content").offsetHeight;
+                contentClipH = document.getElementById("contentClip").offsetHeight;
+                document.getElementById("content").style.top = 0 + "px";
+                
+        }
+        // Number of pixels scrollbar should move
+        scrollLength = ((scrollH-dragH)/(contentH-contentClipH));
+        // Initializes event capturing
+        if(nn4){
+                document.captureEvents(Event.MOUSEDOWN | Event.MOUSEMOVE | Event.MOUSEUP)
+                window.onresize = reloadPage;
+        }
+        document.onmousedown = down;
+        document.onmousemove = move;
+        document.onmouseup = up;
+}
+
+
+</SCRIPT>
+<STYLE type=text/css>
+#content {
+	POSITION: absolute
+}
+</STYLE>
+<SPAN 
+id=up 
+style="Z-INDEX: 1; LEFT: 719px; WIDTH: 1px; POSITION: absolute; TOP: 161px; HEIGHT: 1px"><IMG 
+src="photo/up_001.gif" border=0></SPAN>
+<SPAN id=down 
+style="Z-INDEX: 2; LEFT: 719px; WIDTH: 1px; POSITION: absolute; TOP: 299px; HEIGHT: 1px"><IMG 
+src="photo/down_001.gif" border=0></SPAN>
+<SPAN 
+id=drag 
+style="Z-INDEX: 3; LEFT: 719px; WIDTH: 13px; POSITION: absolute; TOP: 174px; HEIGHT: 100px"><IMG 
+src="photo/drag_001.gif" border=0></SPAN>
+<SPAN 
+id=ruler 
+style="Z-INDEX: 4; LEFT: 719px; WIDTH: 13px; POSITION: absolute; TOP: 174px; HEIGHT: 100px"></SPAN>
+<SPAN 
+id=contentClip 
+style="Z-INDEX: 5; LEFT: 470px; VISIBILITY: visible; OVERFLOW: hidden; WIDTH: 240px; CLIP: rect(0px 240px 151px 0px); POSITION: absolute; TOP: 161px; HEIGHT: 151px"><SPAN 
+id=content>
+<DIV class=news>香港政府财政司司长梁锦松，不久前公布了他就任财政司长后的第一份财政预算案。面对前所未有的经济困难，梁锦松分析了形势，理清了思路，提出了复苏经济、推动发展的方略，并在政府财政赤字庞大的情况下，提出多项纾解民困的新措施。从新的预算案，广大市民既看到了政府着眼香港经济长期繁荣的战略蓝图，更感受到了政府倾听民意、体恤民困、“急民所急”的殷殷真情。而梁锦松在宣读预算案时，以电视剧《狮子山下》主题曲的歌词作为结束语，更表达了政府与全体市民团结拼搏再创辉煌的深切期望与坚定信心。梁锦松的激情，立即得到广大市民的积极回应。不少人重新唱起了这首老歌：“放开彼此心中矛盾，理想一起去追，同舟人，誓相随，无畏更无惧。同处海角天边，携手踏平崎岖，我们大家用艰辛努力，写下那不朽香江名句。”二十多年前，港人们就是唱着这首歌，戮力同心，紧抓机遇，劈波斩浪，携手推动经济转型、进而实现腾飞的。一大批工商才俊，也是在这种团结向上、拼搏奋进的氛围里脱颖而出的。但是，由于较长时间的顺利发展，人们艰苦奋斗的劲头逐渐淡漠；更由于近年来少数政客的恶意挑唆、一味唱衰，香港一度人心涣散，怨气、戾气弥漫。
+</DIV></SPAN></SPAN></fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+第一步:把如下代码加入<body>区域中
+&nbsp;&lt;SCRIPT language=JavaScript&gt;
+
+
+// Known bugs 10.01.2001
+// Not able to remove browser-scrollbar in netscape 6, if the span &quot;content&quot; is heigher than browserwindow... :-(
+// If ie4.5 mac, please press apple-t to remove sidebar, otherwise everything is pushed 20px to the right...
+
+// Touch me here :-)
+var upH = 13; // Height of up-arrow
+var upW = 13; // Width of up-arrow
+var downH = 13; // Height of down-arrow
+var downW = 13; // Width of down-arrow
+var dragH = 26; // Height of scrollbar
+var dragW = 13; // Width of scrollbar
+var scrollH = 138; // Height of scrollbar
+var speed = 4; // Scroll speed
+
+// And now... go to the bottom of the page...
+
+// Browser detection
+var dom = document.getElementById ? true:false;
+var nn4 = document.layers ? true:false;
+var ie4 = document.all ? true:false;
+
+var mouseY; // Mouse Y position onclick
+var mouseX; // Mouse X position onclick
+
+var clickUp = false; // If click on up-arrow
+var clickDown = false; // If click on down-arrow
+var clickDrag = false; // If click on scrollbar
+var clickAbove = false; // If click above scrollbar
+var clickBelow = false; // If click below scrollbar
+
+var timer = setTimeout(&quot;&quot;,500); // Repeat variable
+var upL; // Up-arrow X
+var upT; // Up-arrow Y
+var downL; // Down-arrow X
+var downT; // Down-arrow Y
+var dragL; // Scrollbar X
+var dragT; // Scrollbar Y
+var rulerL; // Ruler X
+var rulerT; // Ruler Y
+var contentT; // Content layer Y;
+var contentH; // Content height
+var contentClipH; // Content clip height
+var scrollLength; // Number of pixels scrollbar should move
+var startY; // Keeps track of offset between mouse and span
+
+// Mousedown
+function down(e){
+        if((document.layers &amp;&amp; e.which!=1) || (document.all &amp;&amp; event.button!=1)) return true; // Enables the right mousebutton          
+        getMouse(e);
+        startY = (mouseY - dragT);
+        
+        // If click on up-arrow
+        if(mouseX &gt;= upL &amp;&amp; (mouseX &lt;= (upL + upW)) &amp;&amp; mouseY &gt;= upT &amp;&amp; (mouseY &lt;= (upT + upH))){
+                clickUp = true;
+                return scrollUp();
+        }       
+        // Else if click on down-arrow
+        else if(mouseX &gt;= downL &amp;&amp; (mouseX &lt;= (downL + downW)) &amp;&amp; mouseY &gt;= downT &amp;&amp; (mouseY &lt;= (downT + downH))){
+                clickDown = true;
+                return scrollDown();
+        }
+        // Else if click on scrollbar
+        else if(mouseX &gt;= dragL &amp;&amp; (mouseX &lt;= (dragL + dragW)) &amp;&amp; mouseY &gt;= dragT &amp;&amp; (mouseY &lt;= (dragT + dragH))){
+                clickDrag = true;
+                return false;
+        }
+        else if(mouseX &gt;= dragL &amp;&amp; (mouseX &lt;= (dragL + dragW)) &amp;&amp; mouseY &gt;= rulerT &amp;&amp; (mouseY &lt;= (rulerT + scrollH))){
+                // If click above drag
+                if(mouseY &lt; dragT){
+                        clickAbove = true;
+                        clickUp = true;
+                        return scrollUp();
+                }
+                // Else click below drag
+                else{
+                        clickBelow = true;
+                        clickDown = true;
+                        return scrollDown();
+                }
+        }
+        // If no scrolling is to take place
+        else{
+                return true;
+        }
+}
+
+// Drag function
+function move(e){
+        if(clickDrag){
+                getMouse(e);
+                dragT = (mouseY - startY);
+                
+                if(dragT &lt; (rulerT))
+                        dragT = rulerT;         
+                if(dragT &gt; (rulerT + scrollH - dragH))
+                        dragT = (rulerT + scrollH - dragH);
+                
+                contentT = ((dragT - rulerT)*(1/scrollLength));
+                contentT = eval('-' + contentT);
+
+                moveTo();
+                
+                // So ie-pc doesn't select gifs
+                if(ie4)
+                        return false;           
+        }
+}
+
+
+function up(){
+        clearTimeout(timer);
+        // Resetting variables
+        clickUp = false;
+        clickDown = false;
+        clickDrag = false;
+        clickAbove = false;
+        clickBelow = false;
+        return true;
+}
+
+// Reads content layer top
+function getT(){
+        if(ie4)
+                contentT = document.all.content.style.pixelTop;
+        else if(nn4)
+                contentT = document.contentClip.document.content.top;
+        else if(dom)
+                contentT = parseInt(document.getElementById(&quot;content&quot;).style.top);
+}
+
+// Reads mouse X and Y coordinates
+function getMouse(e){
+        if(ie4){
+                mouseY = event.clientY;
+                mouseX = event.clientX;
+        }
+        else if(nn4 || dom){
+                mouseY = e.pageY;
+                mouseX = e.pageX;
+        }
+}
+
+// Moves the layer
+function moveTo(){
+        if(ie4){
+                document.all.content.style.top = contentT;
+                document.all.ruler.style.top = dragT;
+                document.all.drag.style.top = dragT;
+        }
+        else if(nn4){
+                document.contentClip.document.content.top = contentT;
+                document.ruler.top = dragT;
+                document.drag.top = dragT;
+        }
+        else if(dom){
+                document.getElementById(&quot;content&quot;).style.top = contentT + &quot;px&quot;;
+                document.getElementById(&quot;drag&quot;).style.top = dragT + &quot;px&quot;;
+                document.getElementById(&quot;ruler&quot;).style.top = dragT + &quot;px&quot;;
+        }
+}
+
+// Scrolls up
+function scrollUp(){
+        getT();
+        
+        if(clickAbove){
+                if(dragT &lt;= (mouseY-(dragH/2)))
+                        return up();
+        }
+        
+        if(clickUp){
+                if(contentT &lt; 0){               
+                        dragT = dragT - (speed*scrollLength);
+                        
+                        if(dragT &lt; (rulerT))
+                                dragT = rulerT;
+                                
+                        contentT = contentT + speed;
+                        if(contentT &gt; 0)
+                                contentT = 0;
+                        
+                        moveTo();
+                        timer = setTimeout(&quot;scrollUp()&quot;,25);
+                }
+        }
+        return false;
+}
+
+// Scrolls down
+function scrollDown(){
+        getT();
+        
+        if(clickBelow){
+                if(dragT &gt;= (mouseY-(dragH/2)))
+                        return up();
+        }
+
+        if(clickDown){
+                if(contentT &gt; -(contentH - contentClipH)){                      
+                        dragT = dragT + (speed*scrollLength);
+                        if(dragT &gt; (rulerT + scrollH - dragH))
+                                dragT = (rulerT + scrollH - dragH);
+                        
+                        contentT = contentT - speed;
+                        if(contentT &lt; -(contentH - contentClipH))
+                                contentT = -(contentH - contentClipH);
+                        
+                        moveTo();
+                        timer = setTimeout(&quot;scrollDown()&quot;,25);
+                }
+        }
+        return false;
+}
+
+// reloads page to position the layers again
+function reloadPage(){
+        location.reload();
+}
+
+// Preload
+function eventLoader(){
+        if(ie4){
+                // Up-arrow X and Y variables
+                upL = document.all.up.style.pixelLeft;
+                upT = document.all.up.style.pixelTop;           
+                // Down-arrow X and Y variables
+                downL = document.all.down.style.pixelLeft;
+                downT = document.all.down.style.pixelTop;
+                // Scrollbar X and Y variables
+                dragL = document.all.drag.style.pixelLeft;
+                dragT = document.all.drag.style.pixelTop;               
+                // Ruler Y variable
+                rulerT = document.all.ruler.style.pixelTop;             
+                // Height of content layer and clip layer
+                contentH = document.all.content.offsetHeight;
+                contentClipH = document.all.contentClip.offsetHeight;
+        }
+        else if(nn4){
+                // Up-arrow X and Y variables
+                upL = document.up.left;
+                upT = document.up.top;          
+                // Down-arrow X and Y variables
+                downL = document.down.left;
+                downT = document.down.top;              
+                // Scrollbar X and Y variables
+                dragL = document.drag.left;
+                dragT = document.drag.top;              
+                // Ruler Y variable
+                rulerT = document.ruler.top;
+                // Height of content layer and clip layer
+                contentH = document.contentClip.document.content.clip.bottom;
+                contentClipH = document.contentClip.clip.bottom;
+        }
+        else if(dom){
+                // Up-arrow X and Y variables
+                upL = parseInt(document.getElementById(&quot;up&quot;).style.left);
+                upT = parseInt(document.getElementById(&quot;up&quot;).style.top);
+                // Down-arrow X and Y variables
+                downL = parseInt(document.getElementById(&quot;down&quot;).style.left);
+                downT = parseInt(document.getElementById(&quot;down&quot;).style.top);
+                // Scrollbar X and Y variables
+                dragL = parseInt(document.getElementById(&quot;drag&quot;).style.left);
+                dragT = parseInt(document.getElementById(&quot;drag&quot;).style.top);
+                // Ruler Y variable
+                rulerT = parseInt(document.getElementById(&quot;ruler&quot;).style.top);
+                // Height of content layer and clip layer
+                contentH = document.getElementById(&quot;content&quot;).offsetHeight;
+                contentClipH = document.getElementById(&quot;contentClip&quot;).offsetHeight;
+                document.getElementById(&quot;content&quot;).style.top = 0 + &quot;px&quot;;
+                
+        }
+        // Number of pixels scrollbar should move
+        scrollLength = ((scrollH-dragH)/(contentH-contentClipH));
+        // Initializes event capturing
+        if(nn4){
+                document.captureEvents(Event.MOUSEDOWN | Event.MOUSEMOVE | Event.MOUSEUP)
+                window.onresize = reloadPage;
+        }
+        document.onmousedown = down;
+        document.onmousemove = move;
+        document.onmouseup = up;
+}
+
+
+&lt;/SCRIPT&gt;
+&lt;STYLE type=text/css&gt;
+#content {
+	POSITION: absolute
+}
+&lt;/STYLE&gt;
+&lt;SPAN 
+id=up 
+style=&quot;Z-INDEX: 1; LEFT: 719px; WIDTH: 1px; POSITION: absolute; TOP: 161px; HEIGHT: 1px&quot;&gt;&lt;IMG 
+src=&quot;photo/up_001.gif&quot; border=0&gt;&lt;/SPAN&gt;
+&lt;SPAN id=down 
+style=&quot;Z-INDEX: 2; LEFT: 719px; WIDTH: 1px; POSITION: absolute; TOP: 299px; HEIGHT: 1px&quot;&gt;&lt;IMG 
+src=&quot;photo/down_001.gif&quot; border=0&gt;&lt;/SPAN&gt;
+&lt;SPAN 
+id=drag 
+style=&quot;Z-INDEX: 3; LEFT: 719px; WIDTH: 13px; POSITION: absolute; TOP: 174px; HEIGHT: 100px&quot;&gt;&lt;IMG 
+src=&quot;photo/drag_001.gif&quot; border=0&gt;&lt;/SPAN&gt;
+&lt;SPAN 
+id=ruler 
+style=&quot;Z-INDEX: 4; LEFT: 719px; WIDTH: 13px; POSITION: absolute; TOP: 174px; HEIGHT: 100px&quot;&gt;&lt;/SPAN&gt;
+&lt;SPAN 
+id=contentClip 
+style=&quot;Z-INDEX: 5; LEFT: 470px; VISIBILITY: visible; OVERFLOW: hidden; WIDTH: 240px; CLIP: rect(0px 240px 151px 0px); POSITION: absolute; TOP: 161px; HEIGHT: 151px&quot;&gt;&lt;SPAN 
+id=content&gt;
+&lt;DIV class=news&gt;香港政府财政司司长梁锦松，不久前公布了他就任财政司长后的第一份财政预算案。面对前所未有的经济困难，梁锦松分析了形势，理清了思路，提出了复苏经济、推动发展的方略，并在政府财政赤字庞大的情况下，提出多项纾解民困的新措施。从新的预算案，广大市民既看到了政府着眼香港经济长期繁荣的战略蓝图，更感受到了政府倾听民意、体恤民困、“急民所急”的殷殷真情。而梁锦松在宣读预算案时，以电视剧《狮子山下》主题曲的歌词作为结束语，更表达了政府与全体市民团结拼搏再创辉煌的深切期望与坚定信心。梁锦松的激情，立即得到广大市民的积极回应。不少人重新唱起了这首老歌：“放开彼此心中矛盾，理想一起去追，同舟人，誓相随，无畏更无惧。同处海角天边，携手踏平崎岖，我们大家用艰辛努力，写下那不朽香江名句。”二十多年前，港人们就是唱着这首歌，戮力同心，紧抓机遇，劈波斩浪，携手推动经济转型、进而实现腾飞的。一大批工商才俊，也是在这种团结向上、拼搏奋进的氛围里脱颖而出的。但是，由于较长时间的顺利发展，人们艰苦奋斗的劲头逐渐淡漠；更由于近年来少数政客的恶意挑唆、一味唱衰，香港一度人心涣散，怨气、戾气弥漫。
+&lt;/DIV&gt;&lt;/SPAN&gt;&lt;/SPAN&gt;
+
+
+
+&nbsp;
+第二步:把如下代码加入<body>区域中<body   onload=eventLoader();>
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

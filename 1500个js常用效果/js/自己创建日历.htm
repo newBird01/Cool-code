@@ -1,0 +1,541 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--自己创建日历</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body bgcolor="#ffffff" ONLOAD="displayCalendar(1)">
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">自己创建日历</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=48" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<SCRIPT LANGUAGE="JavaScript">
+<!-- 
+
+
+
+function displayCalendar(init) {       
+
+   var i;
+
+   var now = new Date();
+
+        var nowYear = now.getYear() - 95;
+
+   var nowMonth = now.getMonth();
+
+   var nowDay   = now.getDate();
+
+
+
+   // on open of document
+
+   if (init==1)  {
+
+        document.calControl.month.selectedIndex = nowMonth;
+
+        document.calControl.year.selectedIndex = nowYear;
+
+   }
+
+        var month=document.calControl.month.selectedIndex
+
+        var year=document.calControl.year.selectedIndex+1995
+
+
+
+        var days=getDaysInMonth(month+1,year);
+
+
+
+        var firstOfMonth = new Date (year, month, 1);
+
+
+
+        var startingPos=firstOfMonth.getDay()+7;
+
+
+
+        days+=startingPos;
+
+
+
+   // label days of week
+
+   i=0;
+
+        document.calButtons.elements[i++].value = " S ";
+
+   document.calButtons.elements[i++].value = " M ";
+
+   document.calButtons.elements[i++].value = " T ";
+
+   document.calButtons.elements[i++].value = " W ";
+
+   document.calButtons.elements[i++].value = " T ";
+
+   document.calButtons.elements[i++].value = " F ";
+
+   document.calButtons.elements[i++].value = " S ";
+
+
+
+   // blank out non date buttons
+
+   for (i=7; i<startingPos; i++) 
+
+         document.calButtons.elements[i].value = "   ";
+
+
+
+        for (i=startingPos; i<days; i++)  
+
+                document.calButtons.elements[i].value = i-startingPos+1;
+
+
+
+   // show focus on today if the calendar is the proper month and year
+
+   if (month==nowMonth && year==nowYear+1995)  
+
+      document.calButtons.elements[nowDay+startingPos-1].focus();
+
+
+
+  
+
+   // blank out rest of non date buttons
+
+        for (i=days; i<49; i++)  
+
+      document.calButtons.elements[i].value = "   ";
+
+}
+
+
+
+function leapYear (Year) {
+
+        if (((Year % 4)==0) && ((Year % 100)!=0) || ((Year % 400)==0))
+
+                return (1);
+
+        else
+
+                return (0);
+
+}
+
+
+
+function getDaysInMonth(month,year)  {
+
+   var days;
+
+   if (month==1 || month==3 || month==5 || month==7 || month==8 ||
+
+      month==10 || month==12)  days=31;
+
+   else if (month==4 || month==6 || month==9 || month==11) days=30;
+
+   else if (month==2)  {
+
+      if (leapYear (year)==1)  days=29;
+
+      else days=28;
+
+   }
+
+        return (days);
+
+}
+
+// -->
+
+
+
+</SCRIPT>
+
+<FORM NAME="calControl">month <SELECT NAME="month"><OPTION>Jan <OPTION>Feb <OPTION>Mar <OPTION>Apr <OPTION>May <OPTION>Jun <OPTION>Jul <OPTION>Aug <OPTION>Sep <OPTION>Oct <OPTION>Nov <OPTION>Dec </SELECT>
+
+year <SELECT NAME="year"><OPTION>1995 <OPTION>1996 <OPTION>1997 <OPTION>1998 <OPTION>1999 <OPTION>2000 </SELECT><INPUT TYPE="button" NAME="button1" VALUE="Create" 
+
+   onClick="displayCalendar(0)"></FORM><FORM NAME="calButtons"><INPUT TYPE="button" NAME="but0"  value="     "><INPUT TYPE="button" NAME="but1"  value="     "><INPUT TYPE="button" NAME="but2"  value="     "><INPUT TYPE="button" NAME="but3"  value="     "><INPUT TYPE="button" NAME="but4"  value="     "><INPUT TYPE="button" NAME="but5"  value="     "><INPUT TYPE="button" NAME="but6"  value="     "></CENTER>
+
+
+
+<CENTER><INPUT TYPE="button" NAME="but7"  value="     "><INPUT TYPE="button" NAME="but8"  value="     "><INPUT TYPE="button" NAME="but9"  value="     "><INPUT TYPE="button" NAME="but10" value="     "><INPUT TYPE="button" NAME="but11" value="     "><INPUT TYPE="button" NAME="but12" value="     "><INPUT TYPE="button" NAME="but13" value="     "></CENTER>
+
+
+
+<CENTER><INPUT TYPE="button" NAME="but14" value="     "><INPUT TYPE="button" NAME="but15" value="     "><INPUT TYPE="button" NAME="but16" value="     "><INPUT TYPE="button" NAME="but17" value="     "><INPUT TYPE="button" NAME="but18" value="     "><INPUT TYPE="button" NAME="but19" value="     "><INPUT TYPE="button" NAME="but20" value="     "></CENTER>
+
+
+
+<CENTER><INPUT TYPE="button" NAME="but21" value="     "><INPUT TYPE="button" NAME="but22" value="     "><INPUT TYPE="button" NAME="but23" value="     "><INPUT TYPE="button" NAME="but24" value="     "><INPUT TYPE="button" NAME="but25" value="     "><INPUT TYPE="button" NAME="but26" value="     "><INPUT TYPE="button" NAME="but27" value="     "></CENTER>
+
+
+
+<CENTER><INPUT TYPE="button" NAME="but28" value="     "><INPUT TYPE="button" NAME="but29" value="     "><INPUT TYPE="button" NAME="but30" value="     "><INPUT TYPE="button" NAME="but31" value="     "><INPUT TYPE="button" NAME="but32" value="     "><INPUT TYPE="button" NAME="but33" value="     "><INPUT TYPE="button" NAME="but34" value="     "></CENTER>
+
+
+
+<CENTER><INPUT TYPE="button" NAME="but35" value="     "><INPUT TYPE="button" NAME="but36" value="     "><INPUT TYPE="button" NAME="but37" value="     "><INPUT TYPE="button" NAME="but38" value="     "><INPUT TYPE="button" NAME="but39" value="     "><INPUT TYPE="button" NAME="but40" value="     "><INPUT TYPE="button" NAME="but41" value="     "></CENTER>
+
+
+
+<CENTER><INPUT TYPE="button" NAME="but42" value="     "><INPUT TYPE="button" NAME="but43" value="     "><INPUT TYPE="button" NAME="but44" value="     "><INPUT TYPE="button" NAME="but45" value="     "><INPUT TYPE="button" NAME="but46" value="     "><INPUT TYPE="button" NAME="but47" value="     "><INPUT TYPE="button" NAME="but48" value="     "></CENTER>
+
+
+
+<CENTER></FORM>
+</fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+第一步:把如下代码加入<body>区域中
+&nbsp;&lt;SCRIPT LANGUAGE=&quot;JavaScript&quot;&gt;
+&lt;!-- 
+
+
+
+function displayCalendar(init) {       
+
+   var i;
+
+   var now = new Date();
+
+        var nowYear = now.getYear() - 95;
+
+   var nowMonth = now.getMonth();
+
+   var nowDay   = now.getDate();
+
+
+
+   // on open of document
+
+   if (init==1)  {
+
+        document.calControl.month.selectedIndex = nowMonth;
+
+        document.calControl.year.selectedIndex = nowYear;
+
+   }
+
+        var month=document.calControl.month.selectedIndex
+
+        var year=document.calControl.year.selectedIndex+1995
+
+
+
+        var days=getDaysInMonth(month+1,year);
+
+
+
+        var firstOfMonth = new Date (year, month, 1);
+
+
+
+        var startingPos=firstOfMonth.getDay()+7;
+
+
+
+        days+=startingPos;
+
+
+
+   // label days of week
+
+   i=0;
+
+        document.calButtons.elements[i++].value = &quot; S &quot;;
+
+   document.calButtons.elements[i++].value = &quot; M &quot;;
+
+   document.calButtons.elements[i++].value = &quot; T &quot;;
+
+   document.calButtons.elements[i++].value = &quot; W &quot;;
+
+   document.calButtons.elements[i++].value = &quot; T &quot;;
+
+   document.calButtons.elements[i++].value = &quot; F &quot;;
+
+   document.calButtons.elements[i++].value = &quot; S &quot;;
+
+
+
+   // blank out non date buttons
+
+   for (i=7; i&lt;startingPos; i++) 
+
+         document.calButtons.elements[i].value = &quot;   &quot;;
+
+
+
+        for (i=startingPos; i&lt;days; i++)  
+
+                document.calButtons.elements[i].value = i-startingPos+1;
+
+
+
+   // show focus on today if the calendar is the proper month and year
+
+   if (month==nowMonth &amp;&amp; year==nowYear+1995)  
+
+      document.calButtons.elements[nowDay+startingPos-1].focus();
+
+
+
+  
+
+   // blank out rest of non date buttons
+
+        for (i=days; i&lt;49; i++)  
+
+      document.calButtons.elements[i].value = &quot;   &quot;;
+
+}
+
+
+
+function leapYear (Year) {
+
+        if (((Year % 4)==0) &amp;&amp; ((Year % 100)!=0) || ((Year % 400)==0))
+
+                return (1);
+
+        else
+
+                return (0);
+
+}
+
+
+
+function getDaysInMonth(month,year)  {
+
+   var days;
+
+   if (month==1 || month==3 || month==5 || month==7 || month==8 ||
+
+      month==10 || month==12)  days=31;
+
+   else if (month==4 || month==6 || month==9 || month==11) days=30;
+
+   else if (month==2)  {
+
+      if (leapYear (year)==1)  days=29;
+
+      else days=28;
+
+   }
+
+        return (days);
+
+}
+
+// --&gt;
+
+
+
+&lt;/SCRIPT&gt;
+
+&lt;FORM NAME=&quot;calControl&quot;&gt;month &lt;SELECT NAME=&quot;month&quot;&gt;&lt;OPTION&gt;Jan &lt;OPTION&gt;Feb &lt;OPTION&gt;Mar &lt;OPTION&gt;Apr &lt;OPTION&gt;May &lt;OPTION&gt;Jun &lt;OPTION&gt;Jul &lt;OPTION&gt;Aug &lt;OPTION&gt;Sep &lt;OPTION&gt;Oct &lt;OPTION&gt;Nov &lt;OPTION&gt;Dec &lt;/SELECT&gt;
+
+year &lt;SELECT NAME=&quot;year&quot;&gt;&lt;OPTION&gt;1995 &lt;OPTION&gt;1996 &lt;OPTION&gt;1997 &lt;OPTION&gt;1998 &lt;OPTION&gt;1999 &lt;OPTION&gt;2000 &lt;/SELECT&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;button1&quot; VALUE=&quot;Create&quot; 
+
+   onClick=&quot;displayCalendar(0)&quot;&gt;&lt;/FORM&gt;&lt;FORM NAME=&quot;calButtons&quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but0&quot;  value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but1&quot;  value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but2&quot;  value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but3&quot;  value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but4&quot;  value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but5&quot;  value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but6&quot;  value=&quot;     &quot;&gt;&lt;/CENTER&gt;
+
+
+
+&lt;CENTER&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but7&quot;  value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but8&quot;  value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but9&quot;  value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but10&quot; value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but11&quot; value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but12&quot; value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but13&quot; value=&quot;     &quot;&gt;&lt;/CENTER&gt;
+
+
+
+&lt;CENTER&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but14&quot; value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but15&quot; value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but16&quot; value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but17&quot; value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but18&quot; value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but19&quot; value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but20&quot; value=&quot;     &quot;&gt;&lt;/CENTER&gt;
+
+
+
+&lt;CENTER&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but21&quot; value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but22&quot; value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but23&quot; value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but24&quot; value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but25&quot; value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but26&quot; value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but27&quot; value=&quot;     &quot;&gt;&lt;/CENTER&gt;
+
+
+
+&lt;CENTER&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but28&quot; value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but29&quot; value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but30&quot; value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but31&quot; value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but32&quot; value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but33&quot; value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but34&quot; value=&quot;     &quot;&gt;&lt;/CENTER&gt;
+
+
+
+&lt;CENTER&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but35&quot; value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but36&quot; value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but37&quot; value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but38&quot; value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but39&quot; value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but40&quot; value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but41&quot; value=&quot;     &quot;&gt;&lt;/CENTER&gt;
+
+
+
+&lt;CENTER&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but42&quot; value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but43&quot; value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but44&quot; value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but45&quot; value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but46&quot; value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but47&quot; value=&quot;     &quot;&gt;&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;but48&quot; value=&quot;     &quot;&gt;&lt;/CENTER&gt;
+
+
+
+&lt;CENTER&gt;&lt;/FORM&gt;
+
+
+
+
+&nbsp;
+第二步:把如下代码加入<body>区域中<body bgcolor="#ffffff" ONLOAD="displayCalendar(1)">
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,1637 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--多种文字效果</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body bgcolor="#ffffff" onload=runMe();>
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">多种文字效果</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=880" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<SCRIPT language=JavaScript1.2>
+var strFaderName = 'Dynamic Text Fader 2.20';
+var strCopyright = 'Copyright (c) Nicholas Poh 2000';
+
+// Check for browser and version
+var g_fBrowser = 0;
+var navName = navigator.appName;
+var navVer  = parseFloat(navigator.appVersion);
+
+if (document.all) {
+	// Microsoft Internet Explorer 5 or compatible
+	g_fBrowser = 2;
+} else if (document.getElementById) {
+	// Netscape 6 or DOM compatible browser
+	g_fBrowser = 3;
+} else if (document.layers) {
+	// Netscape 4 or compatible
+	g_fBrowser = 1;
+} else {
+	// Sometimes Netscape 4 reaches here. So, make sure it still works.
+	if (navName == "Netscape" && navVer >= 4) {
+		g_fBrowser = 1;
+	} else {
+		// unknown and not supported
+		g_fBrowser = 0;
+	}
+}
+// End of check
+
+// Global variables
+var DynFaderList = new Array();		// List of Dynamic Faders
+// End of Global variables
+
+// Create a hex convertor array (Dex2Hex[])
+var hexbase= new Array("0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F");
+var value=0;
+var Dec2Hex=new Array();
+for (x=0; x<16; x++){
+	for (y=0; y<16; y++){
+		Dec2Hex[value]= hexbase[x] + hexbase[y];
+		value++;
+	}
+}
+// End of create a hex convertor array (Dex2Hex[])
+
+// Combine RGB colour 
+function RGB(r, g, b)
+{
+	return ((r&0xFF)<<16) + ((g&0xFF)<<8) + (b&0xFF);
+}
+
+// Convert RGB colour from string to numeric
+function StrRGB2Num(color)
+{
+	var temp;
+	temp = color;
+	return Number('0x'+temp.substr(1,temp.length));
+}
+
+// Convert RGB colour to string base
+function RGB2STR(rgbcolor)
+{
+	return Dec2Hex[rgbcolor>>16] + Dec2Hex[(rgbcolor>>8)&0xFF] + Dec2Hex[rgbcolor&0xFF];
+}
+
+// Find layer
+function findLayer(name, doc)
+{
+	if (document.layers) {
+		var i, layer;
+	
+		for (i = 0; i < doc.layers.length; i++) {
+			layer = doc.layers[i];
+			if (layer.name == name) return layer;
+			if (layer.document.layers.length > 0) {
+				layer = findLayer(name, layer.document);
+				if (layer != null) return layer;
+			}
+		}
+	}
+	return null;
+}
+
+// Change the HTML text
+function changeHTMLText(element, newText, object)
+{
+	if (document.all) {
+		// Microsoft Internet Explorer 5 or compatible
+		element.innerHTML = newText;
+	} else if (document.getElementById) {
+		// Netscape 6 or DOM compatible browser
+		rng = document.createRange();
+		rng.setStartBefore(element);
+		htmlFrag = rng.createContextualFragment(newText);
+		while (element.hasChildNodes()) element.removeChild(element.lastChild);
+		element.appendChild(htmlFrag);
+	} else if (document.layers) {
+		// Netscape 4 or compatible
+		strTemp = '<DIV CLASS="' + object.name + '">' + newText + '</DIV>';
+		
+		element.document.open();
+		element.document.fgColor = object.curcolor & 0xFFFFFF;		
+		element.document.writeln(strTemp);
+		element.document.close();
+	}
+}
+
+function insertPlaceHolder(strName, width, height, align, bgcolor, border, bordercolor)
+{
+	if (String(width)  =="undefined") var width   = "100%";
+	if (String(height) =="undefined") var height  = 100;
+	if (String(align)  =="undefined") var align   = "left";
+	if (String(bgcolor)=="undefined") var bgcolor = "";
+	if (String(border) =="undefined") var border  = 0;
+	if (String(bordercolor)=="undefined") var bordercolor = "";
+	
+	if (g_fBrowser == 0) {
+		document.writeln("Browser not supported");
+		return;
+	}
+
+	switch(g_fBrowser) {
+	case 1:
+		document.writeln(
+			'<TABLE ALIGN="' + align + '" CELLSPACING="0" CELLPADDING="0" BORDER="' + border + '" BORDERCOLOR="' + bordercolor + '">' +
+			'<TR><TD>' +
+			'<ILAYER NAME="' + strName + '" BGCOLOR="' + bgcolor + '" VISIBILITY="inherit">' +
+			'<LAYER NAME="Content" WIDTH=' + width + ' HEIGHT=' + height + ' VISIBILITY="inherit">' +
+			'</LAYER>' +
+			'</ILAYER>' +
+			'</TD></TR>' +
+			'</TABLE>'
+		);
+		break;
+
+	case 2:
+	case 3:
+		document.writeln(
+			'<DIV ALIGN=' + align + '>' +
+			'<DIV ID="'+strName+'" STYLE="width:' + width +'; height:' + height + '; overflow:hidden; background:'+bgcolor+'; border-style:outset; border-width:'+border+'; border-color:'+bordercolor+'">' +
+			'<DIV ID="'+strName+'Content" STYLE="position:relative; width:100%;">' +
+			'</DIV>' +
+			'</DIV>' +
+			'</DIV>'
+		);
+		break;
+	}
+}
+
+function DynFader()
+{
+	this.name;
+	this.width;
+	this.height;
+	this.contentHeight;
+	this.offset  = 20;
+	this.curXPos = 0;
+	this.curYPos = -this.offset;
+	this.curPos = 0;
+	this.midYPos = 0;
+	this.ydir = 1;
+	this.xdir = 0;
+
+	this.placeholder;
+	this.content;
+	this.text = new Array();
+	this.curText = -1;
+	
+	this.loop = -1;
+	this.paused = true;
+	this.started = false;
+	this.pauseInterval = 0;
+	this.pauseTextInterval = 0;
+	this.curpauseInterval = 0;
+	this.fgcolor  = 0x000000;
+	this.bgcolor  = 0xFFFFFF;
+	this.dfcolor  = 0;
+	this.curdfcolor  = 0;
+	this.curcolor = 0;
+	this.dfRed   = 0;
+	this.dfGreen = 0;
+	this.dfBlue  = 0;
+	
+	this.isFade = false;
+	
+	// Define methods
+	this.addText = DynFaderAddText;
+	this.attachPlaceHolder = DynFaderAttachPlaceHolder;
+	this.setTextColor = DynFaderSetTextColor;
+	this.start = DynFaderStart;
+	this.stop = DynFaderStop;
+	this.beginFade = DynFaderBeginFade;
+	this.calcColorDif = DynFaderCalcColorDif;
+	this.getColorDif = DynFaderGetColorDif;
+	this.setFont = DynFaderSetFont;
+	this.setFontSize = DynFaderSetFontSize;
+	this.setBackground = DynFaderSetBackground;
+	this.setDirection = DynFaderSetDirection;
+	this.setSpeed = DynFaderSpeed;
+	this.setPauseMidInterval = DynFaderSetPauseMidInterval;
+	this.setPauseTextInterval = DynFaderSetPauseTextInterval;
+	this.getContentHeight = DynFaderGetContentHeight;
+	this.setLoop = DynFaderSetLoop;
+	this.setGlow = DynFaderSetGlow;
+	
+	DynFaderList[DynFaderList.length] = this;
+}
+
+function DynFaderAddText(newText)
+{
+	this.text[this.text.length] = newText;
+}
+
+function DynFaderAttachPlaceHolder(strPlaceHolder)
+{
+	switch(g_fBrowser) {
+	case 1:
+		this.name = strPlaceHolder;
+		this.placeholder = findLayer(strPlaceHolder, document);
+		this.content = this.placeholder.document.Content;
+		this.width   = this.placeholder.clip.width;
+		this.height  = this.placeholder.clip.height;
+		this.content.top = this.curYPos;
+		break;
+		
+	case 2:
+		this.placeholder = eval('document.all.' + strPlaceHolder);
+		this.content = eval('document.all.' + strPlaceHolder+'Content');
+		this.width   = this.placeholder.style.pixelWidth;
+		this.height  = this.placeholder.style.pixelHeight;
+		this.content.style.pixelTop = this.curYPos;
+		break;
+		
+	case 3:
+		this.placeholder = document.getElementById(strPlaceHolder);
+		this.content = document.getElementById(strPlaceHolder+'Content');
+		this.width   = parseInt(this.placeholder.style.width);
+		this.height  = parseInt(this.placeholder.style.height);
+		this.content.style.top = this.curYPos;
+
+		break;
+	}
+}
+
+function DynFaderSetTextColor(r, g, b)
+{
+	this.fgcolor = RGB(r, g, b);
+	switch(g_fBrowser) {
+	case 1:
+		this.content.document.fgColor = this.fgcolor;
+		break;
+		
+	case 2:
+		this.content.style.color = this.fgcolor;
+		break;
+
+	case 3:
+		this.content.style.color = "#" + RGB2STR(this.fgcolor);
+		break;
+	}
+}
+
+function DynFaderSetTextColor(strColor)
+{
+	if (isNaN(strColor)) this.fgcolor = StrRGB2Num(strColor);
+	this.curcolor = this.fgcolor;
+	switch(g_fBrowser) {
+	case 1:
+		this.content.document.fgColor = this.color;
+		break;
+		
+	case 2:
+		this.content.style.color = this.fgcolor;
+		break;
+
+	case 3:
+		this.content.style.color = "#" + RGB2STR(this.fgcolor);
+		break;
+	}
+}
+
+function DynFaderStart()
+{
+	if (this.ydir > 0) {
+		this.curYPos = this.height + 1;
+	} else {
+		this.curYPos = -this.getContentHeight() - 1;
+	}
+	this.started = true;
+}
+
+function DynFaderStop()
+{
+	this.started = false;
+}
+
+function DynFaderBeginFade()
+{
+	this.calcColorDif();
+	this.isFade = true;
+	this.start();
+}
+
+function DynFaderCalcColorDif()
+{
+	switch(g_fBrowser) {
+	case 1:
+		this.bgcolor = this.placeholder.bgColor;
+		if (this.bgcolor == null) this.bgcolor = StrRGB2Num(document.bgColor);
+		break;
+
+	case 2:
+	case 3:
+		this.bgcolor = StrRGB2Num(this.placeholder.style.backgroundColor);
+		if (isNaN(this.bgcolor)) this.bgcolor = StrRGB2Num(document.bgColor);
+		break;
+	}
+
+	this.dfRed   = ((this.bgcolor>>16) - (this.fgcolor>>16));
+	this.dfGreen = (((this.bgcolor>>8)&0xFF) - ((this.fgcolor>>8)&0xFF));
+	this.dfBlue  = ((this.bgcolor&0xFF) - (this.fgcolor&0xFF));
+	this.curcolor = this.bgcolor;
+}
+
+function DynFaderGetColorDif(steps)
+{
+	steps  += this.height;
+	steps >>= 1;
+	steps  /= Math.abs(this.ydir);
+	this.curdfcolor = this.dfcolor = -(((this.dfRed/steps)<<16) + ((this.dfGreen/steps)<<8) + (this.dfBlue/steps));
+}
+
+function DynFaderSetFont(fontfamily, fontweight, textalign)
+{
+	switch(g_fBrowser) {
+	case 1:
+		if (fontfamily) document.classes[this.name].all.fontFamily = fontfamily;
+		if (fontweight) document.classes[this.name].all.fontWeight = fontweight;
+		if (textalign)  document.classes[this.name].all.textAlign = textalign;
+		break;
+		
+	case 2:
+	case 3:
+		if (fontfamily) this.content.style.fontFamily = fontfamily;
+		if (fontweight) this.content.style.fontWeight = fontweight;
+		if (textalign)  this.content.style.textAlign  = textalign;
+		break;
+	}
+}
+
+function DynFaderSetFontSize(fontsize)
+{
+	// Unit is required for Netscape 6
+	if (!isNaN(fontsize)) fontsize += 'pt';
+
+	switch(g_fBrowser) {
+	case 1:
+		if (fontsize) document.classes[this.name].all.fontSize = fontsize;
+		break;
+		
+	case 2:
+		this.content.style.fontSize = fontsize;
+		break;
+
+	case 3:
+		this.content.style.fontSize = fontsize;
+		break;
+	}
+}
+
+function DynFaderSetBackground(image)
+{
+	switch(g_fBrowser) {
+	case 1:
+		this.placeholder.background.src = image;
+		break;
+		
+	case 2:
+	case 3:
+		this.placeholder.style.backgroundImage = 'url('+image+')';
+		break;
+	}
+}
+
+function DynFaderSetDirection(iDir)
+{
+	switch(iDir) {
+	case 0:
+		this.ydir = Math.abs(this.ydir);
+		break;
+		
+	case 1:
+		this.ydir = -Math.abs(this.ydir);
+		break;
+		
+	default:
+		this.ydir = Math.abs(this.ydir);
+	}
+}
+
+function DynFaderSpeed(Speed)
+{
+	if (this.ydir > 0) {
+		this.ydir = Math.abs(Speed);
+	} else {
+		this.ydir = -Math.abs(Speed);
+	}
+}
+
+function DynFaderSetPauseMidInterval(time)
+{
+	this.pauseInterval = Math.abs(time);
+}
+
+function DynFaderSetPauseTextInterval(time)
+{
+	this.pauseTextInterval = Math.abs(time);
+}
+
+function DynFaderGetContentHeight()
+{
+	switch(g_fBrowser) {
+	case 1:
+		this.contentHeight = this.content.document.height;
+		break;
+
+	case 2:
+		this.contentHeight = this.content.clientHeight;
+		break;
+
+	case 3:
+		this.contentHeight = this.content.offsetHeight;
+		break;
+	}
+	return this.contentHeight;
+}
+
+function DynFaderSetLoop(loops)
+{
+	this.loop = loops;
+}
+
+function DynFaderSetGlow(strength, glowColor, fgColor)
+{
+	switch(g_fBrowser) {
+	case 1:
+		break;
+		
+	case 2:
+		if (String(fgColor) != "undefined") this.setTextColor(fgColor);
+		this.content.style.filter = "glow(color="+glowColor+",strength="+strength+")";
+		break;
+
+	case 3:
+		break;
+	}
+}
+
+// Scrolling section
+function ScrollFader()
+{
+	var fader;
+	if (String(DynFaderList[0]) == "undefined") return;
+	
+	for (var i in DynFaderList) {
+		fader = DynFaderList[i];
+		if (fader.started == false) continue;
+		if (fader.paused) {
+			if (fader.curpauseInterval-- <= 0) {
+				fader.paused = false;
+			}
+		} else {
+			fader.curYPos += fader.ydir;
+//			fader.curXPos += fader.xdir;
+			
+			if (fader.curYPos == fader.midYPos) {
+				if (fader.pauseInterval) {
+					fader.curpauseInterval = fader.pauseInterval;
+					fader.paused = true;
+				}
+				fader.curYPos = (fader.height - fader.contentHeight) >> 1;
+				if (fader.isFade) {
+					fader.curdfcolor = -fader.dfcolor;
+					fader.curcolor = fader.fgcolor;
+				}
+			} 
+
+			if (fader.isFade) {
+				// Change text colour
+				switch(g_fBrowser) {
+				case 1:
+					if (fader.curText >= 0) {
+						changeHTMLText(fader.content, fader.text[fader.curText], fader);
+					}
+					break;
+
+				case 2:
+					fader.content.style.color = fader.curcolor;
+					break;
+					
+				case 3:
+					fader.content.style.color = "#" + RGB2STR(fader.curcolor);
+					break;
+				}
+				
+				fader.curcolor+= fader.curdfcolor;
+			}
+			
+			if (fader.curYPos > fader.height || fader.curYPos < -fader.contentHeight) {
+				// Prepare for next text
+				var ShowCopyright = false;
+				if (++fader.curText > fader.text.length - 1) {
+					// End of text array reached
+					fader.curText = 0;
+					if (this.loop == -1) {
+						// infinite loop
+						if (Math.round(Math.random()*20) == 7) {
+							ShowCopyright = true;
+							fader.curText = -1;
+						}
+					} else {
+						if (--fader.loop == 0) {
+							// Last loop reached
+							fader.stop();
+						}						
+					}
+				}
+
+				// Rewrite the text
+				switch(g_fBrowser) {
+				case 1:
+					fader.content.top = fader.height;
+					break;
+				
+				case 2:
+					fader.content.style.pixelTop = fader.height;
+					
+				case 3:
+					fader.content.style.top = fader.height;
+					break;
+				}
+				if (ShowCopyright) {
+					changeHTMLText(fader.content, strFaderName + '<BR>' + strCopyright, fader);
+				} else {
+					changeHTMLText(fader.content, fader.text[fader.curText], fader);
+				}
+
+				
+				// Reset values
+				fader.getContentHeight();
+				
+				if (fader.isFade) {
+					fader.getColorDif(fader.contentHeight);
+					fader.curcolor = fader.bgcolor;
+				}
+				if (fader.ydir > 0) {
+					fader.midYPos = ((fader.height - fader.contentHeight) >> 1) + fader.contentHeight;
+					fader.midYPos = (Math.round(fader.midYPos / fader.ydir) * fader.ydir) - fader.contentHeight;
+					fader.curYPos = -fader.contentHeight;
+				} else {
+					fader.midYPos = ((fader.height - fader.contentHeight) >> 1) + fader.height;
+					fader.midYPos = (Math.round(fader.midYPos / fader.ydir) * fader.ydir) - fader.height;
+					fader.curYPos = fader.height;
+				}
+
+				if (fader.pauseTextInterval) {
+					fader.curpauseInterval = fader.pauseTextInterval;
+					fader.paused = true;
+				}
+			}
+		
+			// Scroll text
+			switch(g_fBrowser) {
+			case 1:
+				fader.content.top = fader.curYPos;
+				break;
+				
+			case 2:
+				fader.content.style.pixelTop = fader.curYPos;
+				break;
+
+			case 3:
+				fader.content.style.top = fader.curYPos;
+				break;
+			}
+		}
+	}
+}
+
+// Start timer
+var g_timerID;
+
+if (g_fBrowser == 1) {
+	var g_winWidth;
+	var g_winHeight;
+
+	g_winWidth  = window.innerWidth;
+	g_winHeight = window.innerHeight;
+	window.captureEvents(Event.RESIZE);
+	window.onResize = FaderReload;
+}
+
+setTimeout('FaderStart()', 600);
+
+function FaderStart()
+{
+	g_timerID = setInterval(ScrollFader, 20);
+	window.onUnload = FaderUnload;
+}
+
+function FaderUnload(e)
+{
+	clearInterval(g_timerID);
+	return window.routeEvent(e);
+}
+
+function FaderReload(e)
+{
+	if (g_winWidth == window.innerWidth && g_winHeight == window.innerHeight) return;
+	this.location.href = this.location.href;
+	this.focus();
+
+	return window.routeEvent(e);;
+}
+
+</SCRIPT>
+
+<SCRIPT language=JavaScript1.2>
+	function runMe()
+	{
+		// create fader
+		var myFader1 = new DynFader();
+		// add text
+		myFader1.addText('This is the first fader');
+		myFader1.addText('Image as background?');
+		myFader1.attachPlaceHolder("FaderWithBackground");
+		myFader1.setBackground('toad.gif');
+		myFader1.setFont('Comic Sans MS', 'bold', 'center');
+		myFader1.setFontSize(15);
+		myFader1.setTextColor('#0000FF');
+		myFader1.beginFade();
+		// create fader		
+		var myFader2 = new DynFader();	
+		// add text
+		myFader2.addText('This is the second fader');
+		myFader2.addText('The background is transparent');
+		myFader2.addText('Code downloaded from <A HREF="http://www.egroups.com/group/hWinMain">hWinMain List</A>');
+		// initialize fader
+		myFader2.attachPlaceHolder("FaderWithTransparentBackground");
+		myFader2.setDirection(1);
+		myFader2.setTextColor('#FF00FF');
+		myFader2.setFont('Verdana', 'bold', 'center');
+		myFader2.setSpeed(4);
+		myFader2.setPauseMidInterval(30);
+		myFader2.setPauseTextInterval(10);
+		myFader2.beginFade();
+
+
+		// create fader
+		var myFader3 = new DynFader();	
+		// add text
+		myFader3.addText('This is the third fader');
+		myFader3.addText('The background is green');
+		myFader3.addText('Yes! I have border!');
+		// initialize fader
+		myFader3.attachPlaceHolder("FaderWithColourBackground");
+		myFader3.setTextColor('#0000FF');
+		myFader3.setFont('Verdana', 'bold', 'center');
+		myFader3.setSpeed(4);
+		myFader3.setPauseMidInterval(30);
+		myFader3.setPauseTextInterval(10);
+		myFader3.start();
+
+		// create fader
+		var myFader4 = new DynFader();
+		// add text
+		myFader4.addText('This is the fourth fader without fading effect');
+		if (document.all)
+			myFader4.addText("Hey! I'm glowing!");
+		else
+			myFader4.addText("Sigh... I'm not glowing (Netscape)");
+		myFader4.addText('The background is black');
+		myFader4.addText('<DIV ALIGN=LEFT>Left aligned</DIV>');
+		myFader4.addText('<DIV ALIGN=CENTER>Center aligned</DIV>');
+		myFader4.addText('<DIV ALIGN=RIGHT>Right aligned</DIV>');
+		// initialize fader
+		myFader4.attachPlaceHolder("FaderNoFade");
+		myFader4.setTextColor('#9FA06F');
+		myFader4.setTextColor('#ffffff');
+		myFader4.setFont('Verdana', 'bold', 'center');
+		myFader4.setGlow(5, 'white', 'yellow');
+		myFader4.setDirection(1);
+		myFader4.setPauseMidInterval(30);
+		myFader4.start();
+	}
+</SCRIPT>
+<TABLE align=center border=2 cellPadding=2 cellSpacing=2 width=640>
+  <TBODY>
+  <TR>
+    <TD>
+      <SCRIPT>insertPlaceHolder("FaderWithBackground", 640, 50, 'center')</SCRIPT>
+    </TD></TR>
+  <TR>
+    <TD>
+      <TABLE border=1 cellPadding=1 cellSpacing=1 width="100%">
+        <TBODY>
+        <TR>
+          <TD bgColor=yellow width=200>
+            <P><B>警告:</B><BR></P>
+            <P>如果你使用的是NS浏览器的话，你的显示会变得很慢</P></TD>
+          <TD>
+            <TABLE border=0 cellPadding=2 cellSpacing=2 width="100%">
+              <TBODY>
+              <TR>
+                <TD>
+                  <SCRIPT>insertPlaceHolder("FaderWithTransparentBackground", 300, 50, 'center')</SCRIPT>
+                </TD></TR>
+              <TR>
+                <TD>
+                  <HR SIZE=2>
+                </TD>
+              <TR>
+                <TD>
+                  <SCRIPT>insertPlaceHolder("FaderWithColourBackground", 300, 50, 'center', '#00FF00', 4, 'green')</SCRIPT>
+                </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD>
+      <SCRIPT>insertPlaceHolder("FaderNoFade", 640, 20, 'center', '#000000')</SCRIPT>
+    </TD></TR></TBODY></TABLE></fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+第一步:把如下代码加入<body>区域中
+&nbsp;&lt;SCRIPT language=JavaScript1.2&gt;
+var strFaderName = 'Dynamic Text Fader 2.20';
+var strCopyright = 'Copyright (c) Nicholas Poh 2000';
+
+// Check for browser and version
+var g_fBrowser = 0;
+var navName = navigator.appName;
+var navVer  = parseFloat(navigator.appVersion);
+
+if (document.all) {
+	// Microsoft Internet Explorer 5 or compatible
+	g_fBrowser = 2;
+} else if (document.getElementById) {
+	// Netscape 6 or DOM compatible browser
+	g_fBrowser = 3;
+} else if (document.layers) {
+	// Netscape 4 or compatible
+	g_fBrowser = 1;
+} else {
+	// Sometimes Netscape 4 reaches here. So, make sure it still works.
+	if (navName == &quot;Netscape&quot; &amp;&amp; navVer &gt;= 4) {
+		g_fBrowser = 1;
+	} else {
+		// unknown and not supported
+		g_fBrowser = 0;
+	}
+}
+// End of check
+
+// Global variables
+var DynFaderList = new Array();		// List of Dynamic Faders
+// End of Global variables
+
+// Create a hex convertor array (Dex2Hex[])
+var hexbase= new Array(&quot;0&quot;, &quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;, &quot;7&quot;, &quot;8&quot;, &quot;9&quot;, &quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;, &quot;E&quot;, &quot;F&quot;);
+var value=0;
+var Dec2Hex=new Array();
+for (x=0; x&lt;16; x++){
+	for (y=0; y&lt;16; y++){
+		Dec2Hex[value]= hexbase[x] + hexbase[y];
+		value++;
+	}
+}
+// End of create a hex convertor array (Dex2Hex[])
+
+// Combine RGB colour 
+function RGB(r, g, b)
+{
+	return ((r&amp;0xFF)&lt;&lt;16) + ((g&amp;0xFF)&lt;&lt;8) + (b&amp;0xFF);
+}
+
+// Convert RGB colour from string to numeric
+function StrRGB2Num(color)
+{
+	var temp;
+	temp = color;
+	return Number('0x'+temp.substr(1,temp.length));
+}
+
+// Convert RGB colour to string base
+function RGB2STR(rgbcolor)
+{
+	return Dec2Hex[rgbcolor&gt;&gt;16] + Dec2Hex[(rgbcolor&gt;&gt;8)&amp;0xFF] + Dec2Hex[rgbcolor&amp;0xFF];
+}
+
+// Find layer
+function findLayer(name, doc)
+{
+	if (document.layers) {
+		var i, layer;
+	
+		for (i = 0; i &lt; doc.layers.length; i++) {
+			layer = doc.layers[i];
+			if (layer.name == name) return layer;
+			if (layer.document.layers.length &gt; 0) {
+				layer = findLayer(name, layer.document);
+				if (layer != null) return layer;
+			}
+		}
+	}
+	return null;
+}
+
+// Change the HTML text
+function changeHTMLText(element, newText, object)
+{
+	if (document.all) {
+		// Microsoft Internet Explorer 5 or compatible
+		element.innerHTML = newText;
+	} else if (document.getElementById) {
+		// Netscape 6 or DOM compatible browser
+		rng = document.createRange();
+		rng.setStartBefore(element);
+		htmlFrag = rng.createContextualFragment(newText);
+		while (element.hasChildNodes()) element.removeChild(element.lastChild);
+		element.appendChild(htmlFrag);
+	} else if (document.layers) {
+		// Netscape 4 or compatible
+		strTemp = '&lt;DIV CLASS=&quot;' + object.name + '&quot;&gt;' + newText + '&lt;/DIV&gt;';
+		
+		element.document.open();
+		element.document.fgColor = object.curcolor &amp; 0xFFFFFF;		
+		element.document.writeln(strTemp);
+		element.document.close();
+	}
+}
+
+function insertPlaceHolder(strName, width, height, align, bgcolor, border, bordercolor)
+{
+	if (String(width)  ==&quot;undefined&quot;) var width   = &quot;100%&quot;;
+	if (String(height) ==&quot;undefined&quot;) var height  = 100;
+	if (String(align)  ==&quot;undefined&quot;) var align   = &quot;left&quot;;
+	if (String(bgcolor)==&quot;undefined&quot;) var bgcolor = &quot;&quot;;
+	if (String(border) ==&quot;undefined&quot;) var border  = 0;
+	if (String(bordercolor)==&quot;undefined&quot;) var bordercolor = &quot;&quot;;
+	
+	if (g_fBrowser == 0) {
+		document.writeln(&quot;Browser not supported&quot;);
+		return;
+	}
+
+	switch(g_fBrowser) {
+	case 1:
+		document.writeln(
+			'&lt;TABLE ALIGN=&quot;' + align + '&quot; CELLSPACING=&quot;0&quot; CELLPADDING=&quot;0&quot; BORDER=&quot;' + border + '&quot; BORDERCOLOR=&quot;' + bordercolor + '&quot;&gt;' +
+			'&lt;TR&gt;&lt;TD&gt;' +
+			'&lt;ILAYER NAME=&quot;' + strName + '&quot; BGCOLOR=&quot;' + bgcolor + '&quot; VISIBILITY=&quot;inherit&quot;&gt;' +
+			'&lt;LAYER NAME=&quot;Content&quot; WIDTH=' + width + ' HEIGHT=' + height + ' VISIBILITY=&quot;inherit&quot;&gt;' +
+			'&lt;/LAYER&gt;' +
+			'&lt;/ILAYER&gt;' +
+			'&lt;/TD&gt;&lt;/TR&gt;' +
+			'&lt;/TABLE&gt;'
+		);
+		break;
+
+	case 2:
+	case 3:
+		document.writeln(
+			'&lt;DIV ALIGN=' + align + '&gt;' +
+			'&lt;DIV ID=&quot;'+strName+'&quot; STYLE=&quot;width:' + width +'; height:' + height + '; overflow:hidden; background:'+bgcolor+'; border-style:outset; border-width:'+border+'; border-color:'+bordercolor+'&quot;&gt;' +
+			'&lt;DIV ID=&quot;'+strName+'Content&quot; STYLE=&quot;position:relative; width:100%;&quot;&gt;' +
+			'&lt;/DIV&gt;' +
+			'&lt;/DIV&gt;' +
+			'&lt;/DIV&gt;'
+		);
+		break;
+	}
+}
+
+function DynFader()
+{
+	this.name;
+	this.width;
+	this.height;
+	this.contentHeight;
+	this.offset  = 20;
+	this.curXPos = 0;
+	this.curYPos = -this.offset;
+	this.curPos = 0;
+	this.midYPos = 0;
+	this.ydir = 1;
+	this.xdir = 0;
+
+	this.placeholder;
+	this.content;
+	this.text = new Array();
+	this.curText = -1;
+	
+	this.loop = -1;
+	this.paused = true;
+	this.started = false;
+	this.pauseInterval = 0;
+	this.pauseTextInterval = 0;
+	this.curpauseInterval = 0;
+	this.fgcolor  = 0x000000;
+	this.bgcolor  = 0xFFFFFF;
+	this.dfcolor  = 0;
+	this.curdfcolor  = 0;
+	this.curcolor = 0;
+	this.dfRed   = 0;
+	this.dfGreen = 0;
+	this.dfBlue  = 0;
+	
+	this.isFade = false;
+	
+	// Define methods
+	this.addText = DynFaderAddText;
+	this.attachPlaceHolder = DynFaderAttachPlaceHolder;
+	this.setTextColor = DynFaderSetTextColor;
+	this.start = DynFaderStart;
+	this.stop = DynFaderStop;
+	this.beginFade = DynFaderBeginFade;
+	this.calcColorDif = DynFaderCalcColorDif;
+	this.getColorDif = DynFaderGetColorDif;
+	this.setFont = DynFaderSetFont;
+	this.setFontSize = DynFaderSetFontSize;
+	this.setBackground = DynFaderSetBackground;
+	this.setDirection = DynFaderSetDirection;
+	this.setSpeed = DynFaderSpeed;
+	this.setPauseMidInterval = DynFaderSetPauseMidInterval;
+	this.setPauseTextInterval = DynFaderSetPauseTextInterval;
+	this.getContentHeight = DynFaderGetContentHeight;
+	this.setLoop = DynFaderSetLoop;
+	this.setGlow = DynFaderSetGlow;
+	
+	DynFaderList[DynFaderList.length] = this;
+}
+
+function DynFaderAddText(newText)
+{
+	this.text[this.text.length] = newText;
+}
+
+function DynFaderAttachPlaceHolder(strPlaceHolder)
+{
+	switch(g_fBrowser) {
+	case 1:
+		this.name = strPlaceHolder;
+		this.placeholder = findLayer(strPlaceHolder, document);
+		this.content = this.placeholder.document.Content;
+		this.width   = this.placeholder.clip.width;
+		this.height  = this.placeholder.clip.height;
+		this.content.top = this.curYPos;
+		break;
+		
+	case 2:
+		this.placeholder = eval('document.all.' + strPlaceHolder);
+		this.content = eval('document.all.' + strPlaceHolder+'Content');
+		this.width   = this.placeholder.style.pixelWidth;
+		this.height  = this.placeholder.style.pixelHeight;
+		this.content.style.pixelTop = this.curYPos;
+		break;
+		
+	case 3:
+		this.placeholder = document.getElementById(strPlaceHolder);
+		this.content = document.getElementById(strPlaceHolder+'Content');
+		this.width   = parseInt(this.placeholder.style.width);
+		this.height  = parseInt(this.placeholder.style.height);
+		this.content.style.top = this.curYPos;
+
+		break;
+	}
+}
+
+function DynFaderSetTextColor(r, g, b)
+{
+	this.fgcolor = RGB(r, g, b);
+	switch(g_fBrowser) {
+	case 1:
+		this.content.document.fgColor = this.fgcolor;
+		break;
+		
+	case 2:
+		this.content.style.color = this.fgcolor;
+		break;
+
+	case 3:
+		this.content.style.color = &quot;#&quot; + RGB2STR(this.fgcolor);
+		break;
+	}
+}
+
+function DynFaderSetTextColor(strColor)
+{
+	if (isNaN(strColor)) this.fgcolor = StrRGB2Num(strColor);
+	this.curcolor = this.fgcolor;
+	switch(g_fBrowser) {
+	case 1:
+		this.content.document.fgColor = this.color;
+		break;
+		
+	case 2:
+		this.content.style.color = this.fgcolor;
+		break;
+
+	case 3:
+		this.content.style.color = &quot;#&quot; + RGB2STR(this.fgcolor);
+		break;
+	}
+}
+
+function DynFaderStart()
+{
+	if (this.ydir &gt; 0) {
+		this.curYPos = this.height + 1;
+	} else {
+		this.curYPos = -this.getContentHeight() - 1;
+	}
+	this.started = true;
+}
+
+function DynFaderStop()
+{
+	this.started = false;
+}
+
+function DynFaderBeginFade()
+{
+	this.calcColorDif();
+	this.isFade = true;
+	this.start();
+}
+
+function DynFaderCalcColorDif()
+{
+	switch(g_fBrowser) {
+	case 1:
+		this.bgcolor = this.placeholder.bgColor;
+		if (this.bgcolor == null) this.bgcolor = StrRGB2Num(document.bgColor);
+		break;
+
+	case 2:
+	case 3:
+		this.bgcolor = StrRGB2Num(this.placeholder.style.backgroundColor);
+		if (isNaN(this.bgcolor)) this.bgcolor = StrRGB2Num(document.bgColor);
+		break;
+	}
+
+	this.dfRed   = ((this.bgcolor&gt;&gt;16) - (this.fgcolor&gt;&gt;16));
+	this.dfGreen = (((this.bgcolor&gt;&gt;8)&amp;0xFF) - ((this.fgcolor&gt;&gt;8)&amp;0xFF));
+	this.dfBlue  = ((this.bgcolor&amp;0xFF) - (this.fgcolor&amp;0xFF));
+	this.curcolor = this.bgcolor;
+}
+
+function DynFaderGetColorDif(steps)
+{
+	steps  += this.height;
+	steps &gt;&gt;= 1;
+	steps  /= Math.abs(this.ydir);
+	this.curdfcolor = this.dfcolor = -(((this.dfRed/steps)&lt;&lt;16) + ((this.dfGreen/steps)&lt;&lt;8) + (this.dfBlue/steps));
+}
+
+function DynFaderSetFont(fontfamily, fontweight, textalign)
+{
+	switch(g_fBrowser) {
+	case 1:
+		if (fontfamily) document.classes[this.name].all.fontFamily = fontfamily;
+		if (fontweight) document.classes[this.name].all.fontWeight = fontweight;
+		if (textalign)  document.classes[this.name].all.textAlign = textalign;
+		break;
+		
+	case 2:
+	case 3:
+		if (fontfamily) this.content.style.fontFamily = fontfamily;
+		if (fontweight) this.content.style.fontWeight = fontweight;
+		if (textalign)  this.content.style.textAlign  = textalign;
+		break;
+	}
+}
+
+function DynFaderSetFontSize(fontsize)
+{
+	// Unit is required for Netscape 6
+	if (!isNaN(fontsize)) fontsize += 'pt';
+
+	switch(g_fBrowser) {
+	case 1:
+		if (fontsize) document.classes[this.name].all.fontSize = fontsize;
+		break;
+		
+	case 2:
+		this.content.style.fontSize = fontsize;
+		break;
+
+	case 3:
+		this.content.style.fontSize = fontsize;
+		break;
+	}
+}
+
+function DynFaderSetBackground(image)
+{
+	switch(g_fBrowser) {
+	case 1:
+		this.placeholder.background.src = image;
+		break;
+		
+	case 2:
+	case 3:
+		this.placeholder.style.backgroundImage = 'url('+image+')';
+		break;
+	}
+}
+
+function DynFaderSetDirection(iDir)
+{
+	switch(iDir) {
+	case 0:
+		this.ydir = Math.abs(this.ydir);
+		break;
+		
+	case 1:
+		this.ydir = -Math.abs(this.ydir);
+		break;
+		
+	default:
+		this.ydir = Math.abs(this.ydir);
+	}
+}
+
+function DynFaderSpeed(Speed)
+{
+	if (this.ydir &gt; 0) {
+		this.ydir = Math.abs(Speed);
+	} else {
+		this.ydir = -Math.abs(Speed);
+	}
+}
+
+function DynFaderSetPauseMidInterval(time)
+{
+	this.pauseInterval = Math.abs(time);
+}
+
+function DynFaderSetPauseTextInterval(time)
+{
+	this.pauseTextInterval = Math.abs(time);
+}
+
+function DynFaderGetContentHeight()
+{
+	switch(g_fBrowser) {
+	case 1:
+		this.contentHeight = this.content.document.height;
+		break;
+
+	case 2:
+		this.contentHeight = this.content.clientHeight;
+		break;
+
+	case 3:
+		this.contentHeight = this.content.offsetHeight;
+		break;
+	}
+	return this.contentHeight;
+}
+
+function DynFaderSetLoop(loops)
+{
+	this.loop = loops;
+}
+
+function DynFaderSetGlow(strength, glowColor, fgColor)
+{
+	switch(g_fBrowser) {
+	case 1:
+		break;
+		
+	case 2:
+		if (String(fgColor) != &quot;undefined&quot;) this.setTextColor(fgColor);
+		this.content.style.filter = &quot;glow(color=&quot;+glowColor+&quot;,strength=&quot;+strength+&quot;)&quot;;
+		break;
+
+	case 3:
+		break;
+	}
+}
+
+// Scrolling section
+function ScrollFader()
+{
+	var fader;
+	if (String(DynFaderList[0]) == &quot;undefined&quot;) return;
+	
+	for (var i in DynFaderList) {
+		fader = DynFaderList[i];
+		if (fader.started == false) continue;
+		if (fader.paused) {
+			if (fader.curpauseInterval-- &lt;= 0) {
+				fader.paused = false;
+			}
+		} else {
+			fader.curYPos += fader.ydir;
+//			fader.curXPos += fader.xdir;
+			
+			if (fader.curYPos == fader.midYPos) {
+				if (fader.pauseInterval) {
+					fader.curpauseInterval = fader.pauseInterval;
+					fader.paused = true;
+				}
+				fader.curYPos = (fader.height - fader.contentHeight) &gt;&gt; 1;
+				if (fader.isFade) {
+					fader.curdfcolor = -fader.dfcolor;
+					fader.curcolor = fader.fgcolor;
+				}
+			} 
+
+			if (fader.isFade) {
+				// Change text colour
+				switch(g_fBrowser) {
+				case 1:
+					if (fader.curText &gt;= 0) {
+						changeHTMLText(fader.content, fader.text[fader.curText], fader);
+					}
+					break;
+
+				case 2:
+					fader.content.style.color = fader.curcolor;
+					break;
+					
+				case 3:
+					fader.content.style.color = &quot;#&quot; + RGB2STR(fader.curcolor);
+					break;
+				}
+				
+				fader.curcolor+= fader.curdfcolor;
+			}
+			
+			if (fader.curYPos &gt; fader.height || fader.curYPos &lt; -fader.contentHeight) {
+				// Prepare for next text
+				var ShowCopyright = false;
+				if (++fader.curText &gt; fader.text.length - 1) {
+					// End of text array reached
+					fader.curText = 0;
+					if (this.loop == -1) {
+						// infinite loop
+						if (Math.round(Math.random()*20) == 7) {
+							ShowCopyright = true;
+							fader.curText = -1;
+						}
+					} else {
+						if (--fader.loop == 0) {
+							// Last loop reached
+							fader.stop();
+						}						
+					}
+				}
+
+				// Rewrite the text
+				switch(g_fBrowser) {
+				case 1:
+					fader.content.top = fader.height;
+					break;
+				
+				case 2:
+					fader.content.style.pixelTop = fader.height;
+					
+				case 3:
+					fader.content.style.top = fader.height;
+					break;
+				}
+				if (ShowCopyright) {
+					changeHTMLText(fader.content, strFaderName + '&lt;BR&gt;' + strCopyright, fader);
+				} else {
+					changeHTMLText(fader.content, fader.text[fader.curText], fader);
+				}
+
+				
+				// Reset values
+				fader.getContentHeight();
+				
+				if (fader.isFade) {
+					fader.getColorDif(fader.contentHeight);
+					fader.curcolor = fader.bgcolor;
+				}
+				if (fader.ydir &gt; 0) {
+					fader.midYPos = ((fader.height - fader.contentHeight) &gt;&gt; 1) + fader.contentHeight;
+					fader.midYPos = (Math.round(fader.midYPos / fader.ydir) * fader.ydir) - fader.contentHeight;
+					fader.curYPos = -fader.contentHeight;
+				} else {
+					fader.midYPos = ((fader.height - fader.contentHeight) &gt;&gt; 1) + fader.height;
+					fader.midYPos = (Math.round(fader.midYPos / fader.ydir) * fader.ydir) - fader.height;
+					fader.curYPos = fader.height;
+				}
+
+				if (fader.pauseTextInterval) {
+					fader.curpauseInterval = fader.pauseTextInterval;
+					fader.paused = true;
+				}
+			}
+		
+			// Scroll text
+			switch(g_fBrowser) {
+			case 1:
+				fader.content.top = fader.curYPos;
+				break;
+				
+			case 2:
+				fader.content.style.pixelTop = fader.curYPos;
+				break;
+
+			case 3:
+				fader.content.style.top = fader.curYPos;
+				break;
+			}
+		}
+	}
+}
+
+// Start timer
+var g_timerID;
+
+if (g_fBrowser == 1) {
+	var g_winWidth;
+	var g_winHeight;
+
+	g_winWidth  = window.innerWidth;
+	g_winHeight = window.innerHeight;
+	window.captureEvents(Event.RESIZE);
+	window.onResize = FaderReload;
+}
+
+setTimeout('FaderStart()', 600);
+
+function FaderStart()
+{
+	g_timerID = setInterval(ScrollFader, 20);
+	window.onUnload = FaderUnload;
+}
+
+function FaderUnload(e)
+{
+	clearInterval(g_timerID);
+	return window.routeEvent(e);
+}
+
+function FaderReload(e)
+{
+	if (g_winWidth == window.innerWidth &amp;&amp; g_winHeight == window.innerHeight) return;
+	this.location.href = this.location.href;
+	this.focus();
+
+	return window.routeEvent(e);;
+}
+
+&lt;/SCRIPT&gt;
+
+&lt;SCRIPT language=JavaScript1.2&gt;
+	function runMe()
+	{
+		// create fader
+		var myFader1 = new DynFader();
+		// add text
+		myFader1.addText('This is the first fader');
+		myFader1.addText('Image as background?');
+		myFader1.attachPlaceHolder(&quot;FaderWithBackground&quot;);
+		myFader1.setBackground('toad.gif');
+		myFader1.setFont('Comic Sans MS', 'bold', 'center');
+		myFader1.setFontSize(15);
+		myFader1.setTextColor('#0000FF');
+		myFader1.beginFade();
+		// create fader		
+		var myFader2 = new DynFader();	
+		// add text
+		myFader2.addText('This is the second fader');
+		myFader2.addText('The background is transparent');
+		myFader2.addText('Code downloaded from &lt;A HREF=&quot;http://www.egroups.com/group/hWinMain&quot;&gt;hWinMain List&lt;/A&gt;');
+		// initialize fader
+		myFader2.attachPlaceHolder(&quot;FaderWithTransparentBackground&quot;);
+		myFader2.setDirection(1);
+		myFader2.setTextColor('#FF00FF');
+		myFader2.setFont('Verdana', 'bold', 'center');
+		myFader2.setSpeed(4);
+		myFader2.setPauseMidInterval(30);
+		myFader2.setPauseTextInterval(10);
+		myFader2.beginFade();
+
+
+		// create fader
+		var myFader3 = new DynFader();	
+		// add text
+		myFader3.addText('This is the third fader');
+		myFader3.addText('The background is green');
+		myFader3.addText('Yes! I have border!');
+		// initialize fader
+		myFader3.attachPlaceHolder(&quot;FaderWithColourBackground&quot;);
+		myFader3.setTextColor('#0000FF');
+		myFader3.setFont('Verdana', 'bold', 'center');
+		myFader3.setSpeed(4);
+		myFader3.setPauseMidInterval(30);
+		myFader3.setPauseTextInterval(10);
+		myFader3.start();
+
+		// create fader
+		var myFader4 = new DynFader();
+		// add text
+		myFader4.addText('This is the fourth fader without fading effect');
+		if (document.all)
+			myFader4.addText(&quot;Hey! I'm glowing!&quot;);
+		else
+			myFader4.addText(&quot;Sigh... I'm not glowing (Netscape)&quot;);
+		myFader4.addText('The background is black');
+		myFader4.addText('&lt;DIV ALIGN=LEFT&gt;Left aligned&lt;/DIV&gt;');
+		myFader4.addText('&lt;DIV ALIGN=CENTER&gt;Center aligned&lt;/DIV&gt;');
+		myFader4.addText('&lt;DIV ALIGN=RIGHT&gt;Right aligned&lt;/DIV&gt;');
+		// initialize fader
+		myFader4.attachPlaceHolder(&quot;FaderNoFade&quot;);
+		myFader4.setTextColor('#9FA06F');
+		myFader4.setTextColor('#ffffff');
+		myFader4.setFont('Verdana', 'bold', 'center');
+		myFader4.setGlow(5, 'white', 'yellow');
+		myFader4.setDirection(1);
+		myFader4.setPauseMidInterval(30);
+		myFader4.start();
+	}
+&lt;/SCRIPT&gt;
+&lt;TABLE align=center border=2 cellPadding=2 cellSpacing=2 width=640&gt;
+  &lt;TBODY&gt;
+  &lt;TR&gt;
+    &lt;TD&gt;
+      &lt;SCRIPT&gt;insertPlaceHolder(&quot;FaderWithBackground&quot;, 640, 50, 'center')&lt;/SCRIPT&gt;
+    &lt;/TD&gt;&lt;/TR&gt;
+  &lt;TR&gt;
+    &lt;TD&gt;
+      &lt;TABLE border=1 cellPadding=1 cellSpacing=1 width=&quot;100%&quot;&gt;
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD bgColor=yellow width=200&gt;
+            &lt;P&gt;&lt;B&gt;警告:&lt;/B&gt;&lt;BR&gt;&lt;/P&gt;
+            &lt;P&gt;如果你使用的是NS浏览器的话，你的显示会变得很慢&lt;/P&gt;&lt;/TD&gt;
+          &lt;TD&gt;
+            &lt;TABLE border=0 cellPadding=2 cellSpacing=2 width=&quot;100%&quot;&gt;
+              &lt;TBODY&gt;
+              &lt;TR&gt;
+                &lt;TD&gt;
+                  &lt;SCRIPT&gt;insertPlaceHolder(&quot;FaderWithTransparentBackground&quot;, 300, 50, 'center')&lt;/SCRIPT&gt;
+                &lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD&gt;
+                  &lt;HR SIZE=2&gt;
+                &lt;/TD&gt;
+              &lt;TR&gt;
+                &lt;TD&gt;
+                  &lt;SCRIPT&gt;insertPlaceHolder(&quot;FaderWithColourBackground&quot;, 300, 50, 'center', '#00FF00', 4, 'green')&lt;/SCRIPT&gt;
+                &lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/TD&gt;&lt;/TR&gt;
+  &lt;TR&gt;
+    &lt;TD&gt;
+      &lt;SCRIPT&gt;insertPlaceHolder(&quot;FaderNoFade&quot;, 640, 20, 'center', '#000000')&lt;/SCRIPT&gt;
+    &lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;
+
+
+
+&nbsp;
+第二步:把如下代码加入<body>区域中<body bgcolor="#ffffff" onload=runMe();>
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,511 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--小球的跳动</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body bgcolor="#fffff"  onload=init()>
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">小球的跳动</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=559" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<SCRIPT language=JavaScript>
+<!--
+
+// Note: this was written a long time ago
+
+ball_stationary = new Image()
+ball_stationary.src = "photo/ball-stationary.gif"
+ball_animated = new Image()
+ball_animated.src = "photo/ball-animated.gif"
+
+ns4 = (document.layers) ? 1:0
+ie4 = (document.all) ? 1:0
+
+function parabola(obj,type,xDistance,yDistance,xDirection,yDirection,xinc,speed) {
+	if (ns4) this.obj = document.layers[obj]
+	if (ie4) this.obj = document.all[obj].style
+	this.type = type
+	this.xDistance = xDistance
+	this.yDistance = yDistance
+	this.xDirection = xDirection
+	this.yDirection = yDirection
+	this.xinc = xinc
+	this.speed = speed
+	this.active = 0
+	this.i = 0
+	this.multiplier = this.yDistance/Math.pow(this.xDistance/this.type,2)
+	this.startX = parseInt(this.obj.left)
+	this.startY = parseInt(this.obj.top)
+	this.x = this.startX
+	this.y = this.startY
+	// the decreasing values used for the arcing parabola
+	// represents how much less the ball will bounce each time
+	this.xdec = 25
+	this.ydec = 50
+	this.move = moveParabola
+}
+
+function moveParabola() {
+	this.i += this.xDirection*this.xinc
+	this.x = this.startX + this.i
+	this.obj.left = this.x
+	if (this.type == 1) {
+		this.y = this.startY + this.yDirection*this.multiplier*Math.pow(Math.abs(this.i),2)
+		this.obj.top = this.y
+	}
+	if (this.type == 2) {
+		this.y = this.startY - this.yDirection*this.multiplier*Math.pow(this.xDistance/2-Math.abs(this.i),2) + this.yDirection*this.yDistance
+		this.obj.top = this.y
+	}
+}
+
+function init() {
+	ball = new parabola("balldiv",1,125,250,1,1,3,20)
+}
+
+// this is the dropping parabola that first starts the animation
+function bounce1() {
+	if (ball.active) {
+		if (Math.abs(ball.i) < ball.xDistance) {
+			ball.move()
+			setTimeout("bounce1()",ball.speed)
+		}
+		else {
+			// after it drops, the parabola has to change into an arcing parabola
+			// to continue bouncing.  Must reset the following values...
+			ball.type = 2
+			ball.yDirection = -1
+			ball.i = 0
+			ball.yDistance -= ball.ydec
+			ball.startX = ball.x
+			ball.startY = ball.y
+			// Important: the multiplier is used in the calculation of the parabola
+			// if you change the xDistance,yDistance, or type you must recalculate it
+			ball.multiplier = ball.yDistance/Math.pow(ball.xDistance/ball.type,2)
+			setTimeout("bounce2()",ball.speed)
+		}
+	}
+}
+
+// this is the arcing parabola that continually runs after the initial drop
+function bounce2() {
+	if (ball.active) {
+		if (Math.abs(ball.i) < ball.xDistance) {
+			ball.move()
+			setTimeout("bounce2()",ball.speed)
+		}
+		else {
+			// each time the ball hits the ground I decrease both the xDistance
+			// and yDistance to make it appear as if it's slowing down
+			// must also recalculate the multiplier each time
+			ball.i = 0
+			ball.xdec *= 0.9
+			ball.ydec *= 0.9
+			ball.xDistance -= ball.xdec
+			ball.yDistance -= ball.ydec
+			ball.startX = ball.x
+			ball.startY = ball.y
+			ball.multiplier = ball.yDistance/Math.pow(ball.xDistance/ball.type,2)
+			if (ball.yDistance > 0 && ball.xDistance > 0) setTimeout("bounce2()",ball.speed)
+			else {
+				changeImages("off")
+				ball.active = 0
+			}
+		}
+	}
+}
+
+function start() {
+	if (!ball.active) {
+		if (ball.x == 593) {  // if at the end, reset it
+			reset()
+			start()
+		}
+		else {
+			changeImages("on")  // else start the drop
+			ball.active = 1
+			bounce1()
+		}
+	}
+}
+
+function stop() {
+	ball.active = 0
+	changeImages("off")
+}
+
+function reset() {
+	if (!ball.active) {
+	changeImages("off")
+	ball.active = 0
+	ball.i = 0
+	ball.type = 1
+	ball.xdec = 25
+	ball.ydec = 50
+	ball.xDistance = 125
+	ball.yDistance = 250
+	ball.yDirection = 1
+	ball.multiplier = ball.yDistance/Math.pow(ball.xDistance/ball.type,2)
+	ball.startX = 5
+	ball.startY = 40
+	ball.x = ball.startX
+	ball.y = ball.startY
+	ball.obj.left = ball.x
+	ball.obj.top = ball.y
+	}
+	else {
+		ball.active = 0
+		setTimeout("reset()",50)
+	}
+}
+
+function changeImages(which) {
+	if (which == "on") {
+		if (ns4) document.layers["balldiv"].document.images["ballimg"].src = ball_animated.src
+		if (ie4) document.images["ballimg"].src = ball_animated.src
+	}
+	if (which == "off") {
+		if (ns4) document.layers["balldiv"].document.images["ballimg"].src = ball_stationary.src
+		if (ie4) document.images["ballimg"].src = ball_stationary.src
+	}
+}
+
+//-->
+</SCRIPT>
+<A onclick=start() href="#">开始跳动</A> - <A onclick=stop() 
+href="#">停止</A> - <A onclick=reset() href="#">重新开始</A> <DIV id=balldiv style="LEFT: 5px; WIDTH: 50px; POSITION: absolute; TOP: 40px"><IMG height=50 src="photo/ball-stationary.gif" width=50 border=0 name=ballimg> </DIV></fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+第一步:把如下代码加入<body>区域中
+&nbsp;&lt;SCRIPT language=JavaScript&gt;
+&lt;!--
+
+// Note: this was written a long time ago
+
+ball_stationary = new Image()
+ball_stationary.src = &quot;photo/ball-stationary.gif&quot;
+ball_animated = new Image()
+ball_animated.src = &quot;photo/ball-animated.gif&quot;
+
+ns4 = (document.layers) ? 1:0
+ie4 = (document.all) ? 1:0
+
+function parabola(obj,type,xDistance,yDistance,xDirection,yDirection,xinc,speed) {
+	if (ns4) this.obj = document.layers[obj]
+	if (ie4) this.obj = document.all[obj].style
+	this.type = type
+	this.xDistance = xDistance
+	this.yDistance = yDistance
+	this.xDirection = xDirection
+	this.yDirection = yDirection
+	this.xinc = xinc
+	this.speed = speed
+	this.active = 0
+	this.i = 0
+	this.multiplier = this.yDistance/Math.pow(this.xDistance/this.type,2)
+	this.startX = parseInt(this.obj.left)
+	this.startY = parseInt(this.obj.top)
+	this.x = this.startX
+	this.y = this.startY
+	// the decreasing values used for the arcing parabola
+	// represents how much less the ball will bounce each time
+	this.xdec = 25
+	this.ydec = 50
+	this.move = moveParabola
+}
+
+function moveParabola() {
+	this.i += this.xDirection*this.xinc
+	this.x = this.startX + this.i
+	this.obj.left = this.x
+	if (this.type == 1) {
+		this.y = this.startY + this.yDirection*this.multiplier*Math.pow(Math.abs(this.i),2)
+		this.obj.top = this.y
+	}
+	if (this.type == 2) {
+		this.y = this.startY - this.yDirection*this.multiplier*Math.pow(this.xDistance/2-Math.abs(this.i),2) + this.yDirection*this.yDistance
+		this.obj.top = this.y
+	}
+}
+
+function init() {
+	ball = new parabola(&quot;balldiv&quot;,1,125,250,1,1,3,20)
+}
+
+// this is the dropping parabola that first starts the animation
+function bounce1() {
+	if (ball.active) {
+		if (Math.abs(ball.i) &lt; ball.xDistance) {
+			ball.move()
+			setTimeout(&quot;bounce1()&quot;,ball.speed)
+		}
+		else {
+			// after it drops, the parabola has to change into an arcing parabola
+			// to continue bouncing.  Must reset the following values...
+			ball.type = 2
+			ball.yDirection = -1
+			ball.i = 0
+			ball.yDistance -= ball.ydec
+			ball.startX = ball.x
+			ball.startY = ball.y
+			// Important: the multiplier is used in the calculation of the parabola
+			// if you change the xDistance,yDistance, or type you must recalculate it
+			ball.multiplier = ball.yDistance/Math.pow(ball.xDistance/ball.type,2)
+			setTimeout(&quot;bounce2()&quot;,ball.speed)
+		}
+	}
+}
+
+// this is the arcing parabola that continually runs after the initial drop
+function bounce2() {
+	if (ball.active) {
+		if (Math.abs(ball.i) &lt; ball.xDistance) {
+			ball.move()
+			setTimeout(&quot;bounce2()&quot;,ball.speed)
+		}
+		else {
+			// each time the ball hits the ground I decrease both the xDistance
+			// and yDistance to make it appear as if it's slowing down
+			// must also recalculate the multiplier each time
+			ball.i = 0
+			ball.xdec *= 0.9
+			ball.ydec *= 0.9
+			ball.xDistance -= ball.xdec
+			ball.yDistance -= ball.ydec
+			ball.startX = ball.x
+			ball.startY = ball.y
+			ball.multiplier = ball.yDistance/Math.pow(ball.xDistance/ball.type,2)
+			if (ball.yDistance &gt; 0 &amp;&amp; ball.xDistance &gt; 0) setTimeout(&quot;bounce2()&quot;,ball.speed)
+			else {
+				changeImages(&quot;off&quot;)
+				ball.active = 0
+			}
+		}
+	}
+}
+
+function start() {
+	if (!ball.active) {
+		if (ball.x == 593) {  // if at the end, reset it
+			reset()
+			start()
+		}
+		else {
+			changeImages(&quot;on&quot;)  // else start the drop
+			ball.active = 1
+			bounce1()
+		}
+	}
+}
+
+function stop() {
+	ball.active = 0
+	changeImages(&quot;off&quot;)
+}
+
+function reset() {
+	if (!ball.active) {
+	changeImages(&quot;off&quot;)
+	ball.active = 0
+	ball.i = 0
+	ball.type = 1
+	ball.xdec = 25
+	ball.ydec = 50
+	ball.xDistance = 125
+	ball.yDistance = 250
+	ball.yDirection = 1
+	ball.multiplier = ball.yDistance/Math.pow(ball.xDistance/ball.type,2)
+	ball.startX = 5
+	ball.startY = 40
+	ball.x = ball.startX
+	ball.y = ball.startY
+	ball.obj.left = ball.x
+	ball.obj.top = ball.y
+	}
+	else {
+		ball.active = 0
+		setTimeout(&quot;reset()&quot;,50)
+	}
+}
+
+function changeImages(which) {
+	if (which == &quot;on&quot;) {
+		if (ns4) document.layers[&quot;balldiv&quot;].document.images[&quot;ballimg&quot;].src = ball_animated.src
+		if (ie4) document.images[&quot;ballimg&quot;].src = ball_animated.src
+	}
+	if (which == &quot;off&quot;) {
+		if (ns4) document.layers[&quot;balldiv&quot;].document.images[&quot;ballimg&quot;].src = ball_stationary.src
+		if (ie4) document.images[&quot;ballimg&quot;].src = ball_stationary.src
+	}
+}
+
+//--&gt;
+&lt;/SCRIPT&gt;
+&lt;A onclick=start() href=&quot;#&quot;&gt;开始跳动&lt;/A&gt; - &lt;A onclick=stop() 
+href=&quot;#&quot;&gt;停止&lt;/A&gt; - &lt;A onclick=reset() href=&quot;#&quot;&gt;重新开始&lt;/A&gt; &lt;DIV id=balldiv style=&quot;LEFT: 5px; WIDTH: 50px; POSITION: absolute; TOP: 40px&quot;&gt;&lt;IMG height=50 src=&quot;photo/ball-stationary.gif&quot; width=50 border=0 name=ballimg&gt; &lt;/DIV&gt;
+
+
+
+&nbsp;
+第二步:把如下代码加入<body>区域中<body bgcolor="#fffff"  onload=init()>
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

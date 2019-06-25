@@ -1,0 +1,421 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--选择框内容的增减</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body bgcolor=#FFFFFF>
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">选择框内容的增减</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=1301" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+var delimiter = ":";
+function MoveOption (MoveFrom, MoveTo, ToDo) {
+  var SelectFrom = eval('document.main_form.'+MoveFrom);
+  var SelectTo = eval('document.main_form.'+MoveTo);
+  var SelectedIndex = SelectFrom.options.selectedIndex;
+  var container;
+  if (ToDo=='Add') {
+    container=eval('document.main_form.'+ToDo+MoveTo);
+  }
+  if (ToDo=='Remove') {
+    container=eval('document.main_form.'+ToDo+MoveFrom);
+  }
+  if (SelectedIndex == -1) {
+    alert("请选择一个用户");
+  } else {
+    for (i=0; i<SelectFrom.options.length; i++) {
+      if(SelectFrom.options[i].selected) {
+        var name = SelectFrom.options[i].text;
+        var ID = SelectFrom.options[i].value;
+        SelectFrom.options[i] = null;
+        SelectTo.options[SelectTo.options.length]=new Option (name,ID);
+        i=i-1;
+        if(ToDo=='Add'||ToDo=='Remove') {
+          container.value=container.value+name+delimiter;
+          //container.value=container.value+ID+delimiter;
+        }
+      }
+    }
+	}
+}
+function CheckDuplicates (AddListContainer, RemoveListContainer) {
+	var AddList = eval('document.main_form.'+AddListContainer);
+	var RemoveList = eval('document.main_form.'+RemoveListContainer);
+	var TempAddList = AddList.value;
+	var TempRemoveList = RemoveList.value;
+	if (TempAddList>''&&TempRemoveList>'') {
+    TempAddList = TempAddList.substring(0,TempAddList.length-1);
+    TempRemoveList = TempRemoveList.substring(0,TempRemoveList.length-1);
+    var AddArray = TempAddList.split(delimiter);
+    var RemoveArray = TempRemoveList.split(delimiter);
+    for (i=0; i<AddArray.length; i++) {
+      for (j=0; j<RemoveArray.length; j++) {
+        if (AddArray[i]==RemoveArray[j]) {
+          AddArray[i]='';
+          RemoveArray[j]='';
+          break;
+        }
+      }
+    }
+    AddList.value='';
+    for (i=0; i<AddArray.length; i++) {
+      if (AddArray[i]>'') {
+        AddList.value = AddList.value + AddArray[i] + delimiter;
+      }
+    }
+    RemoveList.value='';
+    for (i=0; i<RemoveArray.length; i++) {
+      if (RemoveArray[i]>'') {
+        RemoveList.value = RemoveList.value + RemoveArray[i] + delimiter;
+      }
+    }
+	}
+}
+function LockChanges() {
+	CheckDuplicates('AddAdmins','RemoveAdmins');
+	CheckDuplicates('AddUsers','RemoveUsers');
+}
+//  End -->
+</script>
+<table align="center">
+<tr><td>
+<FORM name=main_form action="" method=post><INPUT type=hidden name=AddAdmins>
+<INPUT type=hidden name=RemoveAdmins> <INPUT type=hidden name=AddUsers> <INPUT
+type=hidden name=RemoveUsers>
+<div align="center">
+<table cellspacing="0" cellpadding="5" border="0">
+<tbody>
+<tr>
+<td valign="top" align="middle" rowspan="2">备选用户<br><select multiple size="12" name="Employees">
+<option>Employee_01<option>Employee_02<option>Employee_03<option>Employee_04<option>Employee_05<option>Employee_06<option>Employee_07<option>Employee_08<option>Employee_09<option>Employee_10</option></select>
+</td>
+<td>
+<p align="center"><input onclick="MoveOption('Employees','Admins','Add');" type="button" value="增加Admin >>" name=add_admin>
+</p>
+<p align="center"><input onclick="MoveOption('Admins','Employees','Remove');" type="button" value="<< 删除Admin" name="remove_admin">
+</p></td>
+<td valign="top" align="middle">Administrators<br><select multiple size="5" name="Admins">
+<option>Admin_01<option>Admin_02<option>Admin_03<option>Admin_04<option>Admin_05</option></select>
+</td></tr>
+<tr>
+<td>
+<p align="center"><input onclick="MoveOption('Employees','Users','Add');" type="button" value="增加User >> " name=add_user>
+</p>
+<p align="center"><input onclick="MoveOption('Users','Employees','Remove');" type="button" value=" << 删除User " name="remove_user">
+</p></td>
+<td valign="top" align="middle">Users<br><select multiple size="5" name="Users">
+<option>User_01<option>User_02<option>User_03<option>User_04<option>User_05</option></select>
+</td></tr>
+</tbody>
+</table>
+</div>
+</FORM>
+</td></tr>
+<tr><td>
+<div align="center"><input onclick="LockChanges();" type="button" value="保存修改"></div>
+<BR>
+<div align="center">
+<a href="javascript:alert(document.main_form.AddAdmins.value);">查询增加的Admin</a>
+<br>
+<a href="javascript:alert(document.main_form.RemoveAdmins.value);">查询删除的Admin</a>
+<br>
+<a href="javascript:alert(document.main_form.AddUsers.value);">查询增加的User</a>
+<br>
+<a href="javascript:alert(document.main_form.RemoveUsers.value);">查询删除的User</a>
+</div>
+</td></tr>
+</td></tr>
+</table>
+</fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+把如下代码加入<body>区域中
+&nbsp;&lt;SCRIPT LANGUAGE=&quot;JavaScript&quot;&gt;
+&lt;!-- Begin
+var delimiter = &quot;:&quot;;
+function MoveOption (MoveFrom, MoveTo, ToDo) {
+  var SelectFrom = eval('document.main_form.'+MoveFrom);
+  var SelectTo = eval('document.main_form.'+MoveTo);
+  var SelectedIndex = SelectFrom.options.selectedIndex;
+  var container;
+  if (ToDo=='Add') {
+    container=eval('document.main_form.'+ToDo+MoveTo);
+  }
+  if (ToDo=='Remove') {
+    container=eval('document.main_form.'+ToDo+MoveFrom);
+  }
+  if (SelectedIndex == -1) {
+    alert(&quot;请选择一个用户&quot;);
+  } else {
+    for (i=0; i&lt;SelectFrom.options.length; i++) {
+      if(SelectFrom.options[i].selected) {
+        var name = SelectFrom.options[i].text;
+        var ID = SelectFrom.options[i].value;
+        SelectFrom.options[i] = null;
+        SelectTo.options[SelectTo.options.length]=new Option (name,ID);
+        i=i-1;
+        if(ToDo=='Add'||ToDo=='Remove') {
+          container.value=container.value+name+delimiter;
+          //container.value=container.value+ID+delimiter;
+        }
+      }
+    }
+	}
+}
+function CheckDuplicates (AddListContainer, RemoveListContainer) {
+	var AddList = eval('document.main_form.'+AddListContainer);
+	var RemoveList = eval('document.main_form.'+RemoveListContainer);
+	var TempAddList = AddList.value;
+	var TempRemoveList = RemoveList.value;
+	if (TempAddList&gt;''&amp;&amp;TempRemoveList&gt;'') {
+    TempAddList = TempAddList.substring(0,TempAddList.length-1);
+    TempRemoveList = TempRemoveList.substring(0,TempRemoveList.length-1);
+    var AddArray = TempAddList.split(delimiter);
+    var RemoveArray = TempRemoveList.split(delimiter);
+    for (i=0; i&lt;AddArray.length; i++) {
+      for (j=0; j&lt;RemoveArray.length; j++) {
+        if (AddArray[i]==RemoveArray[j]) {
+          AddArray[i]='';
+          RemoveArray[j]='';
+          break;
+        }
+      }
+    }
+    AddList.value='';
+    for (i=0; i&lt;AddArray.length; i++) {
+      if (AddArray[i]&gt;'') {
+        AddList.value = AddList.value + AddArray[i] + delimiter;
+      }
+    }
+    RemoveList.value='';
+    for (i=0; i&lt;RemoveArray.length; i++) {
+      if (RemoveArray[i]&gt;'') {
+        RemoveList.value = RemoveList.value + RemoveArray[i] + delimiter;
+      }
+    }
+	}
+}
+function LockChanges() {
+	CheckDuplicates('AddAdmins','RemoveAdmins');
+	CheckDuplicates('AddUsers','RemoveUsers');
+}
+//  End --&gt;
+&lt;/script&gt;
+&lt;table align=&quot;center&quot;&gt;
+&lt;tr&gt;&lt;td&gt;
+&lt;FORM name=main_form action=&quot;&quot; method=post&gt;&lt;INPUT type=hidden name=AddAdmins&gt;
+&lt;INPUT type=hidden name=RemoveAdmins&gt; &lt;INPUT type=hidden name=AddUsers&gt; &lt;INPUT
+type=hidden name=RemoveUsers&gt;
+&lt;div align=&quot;center&quot;&gt;
+&lt;table cellspacing=&quot;0&quot; cellpadding=&quot;5&quot; border=&quot;0&quot;&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td valign=&quot;top&quot; align=&quot;middle&quot; rowspan=&quot;2&quot;&gt;备选用户&lt;br&gt;&lt;select multiple size=&quot;12&quot; name=&quot;Employees&quot;&gt;
+&lt;option&gt;Employee_01&lt;option&gt;Employee_02&lt;option&gt;Employee_03&lt;option&gt;Employee_04&lt;option&gt;Employee_05&lt;option&gt;Employee_06&lt;option&gt;Employee_07&lt;option&gt;Employee_08&lt;option&gt;Employee_09&lt;option&gt;Employee_10&lt;/option&gt;&lt;/select&gt;
+&lt;/td&gt;
+&lt;td&gt;
+&lt;p align=&quot;center&quot;&gt;&lt;input onclick=&quot;MoveOption('Employees','Admins','Add');&quot; type=&quot;button&quot; value=&quot;增加Admin &gt;&gt;&quot; name=add_admin&gt;
+&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;&lt;input onclick=&quot;MoveOption('Admins','Employees','Remove');&quot; type=&quot;button&quot; value=&quot;&lt;&lt; 删除Admin&quot; name=&quot;remove_admin&quot;&gt;
+&lt;/p&gt;&lt;/td&gt;
+&lt;td valign=&quot;top&quot; align=&quot;middle&quot;&gt;Administrators&lt;br&gt;&lt;select multiple size=&quot;5&quot; name=&quot;Admins&quot;&gt;
+&lt;option&gt;Admin_01&lt;option&gt;Admin_02&lt;option&gt;Admin_03&lt;option&gt;Admin_04&lt;option&gt;Admin_05&lt;/option&gt;&lt;/select&gt;
+&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+&lt;p align=&quot;center&quot;&gt;&lt;input onclick=&quot;MoveOption('Employees','Users','Add');&quot; type=&quot;button&quot; value=&quot;增加User &gt;&gt; &quot; name=add_user&gt;
+&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;&lt;input onclick=&quot;MoveOption('Users','Employees','Remove');&quot; type=&quot;button&quot; value=&quot; &lt;&lt; 删除User &quot; name=&quot;remove_user&quot;&gt;
+&lt;/p&gt;&lt;/td&gt;
+&lt;td valign=&quot;top&quot; align=&quot;middle&quot;&gt;Users&lt;br&gt;&lt;select multiple size=&quot;5&quot; name=&quot;Users&quot;&gt;
+&lt;option&gt;User_01&lt;option&gt;User_02&lt;option&gt;User_03&lt;option&gt;User_04&lt;option&gt;User_05&lt;/option&gt;&lt;/select&gt;
+&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/FORM&gt;
+&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;
+&lt;div align=&quot;center&quot;&gt;&lt;input onclick=&quot;LockChanges();&quot; type=&quot;button&quot; value=&quot;保存修改&quot;&gt;&lt;/div&gt;
+&lt;BR&gt;
+&lt;div align=&quot;center&quot;&gt;
+&lt;a href=&quot;javascript:alert(document.main_form.AddAdmins.value);&quot;&gt;查询增加的Admin&lt;/a&gt;
+&lt;br&gt;
+&lt;a href=&quot;javascript:alert(document.main_form.RemoveAdmins.value);&quot;&gt;查询删除的Admin&lt;/a&gt;
+&lt;br&gt;
+&lt;a href=&quot;javascript:alert(document.main_form.AddUsers.value);&quot;&gt;查询增加的User&lt;/a&gt;
+&lt;br&gt;
+&lt;a href=&quot;javascript:alert(document.main_form.RemoveUsers.value);&quot;&gt;查询删除的User&lt;/a&gt;
+&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;
+&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+
+
+
+&nbsp;
+
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

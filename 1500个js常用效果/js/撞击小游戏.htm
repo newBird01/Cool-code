@@ -1,0 +1,411 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--撞击小游戏</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<BODY bgcolor="#ffffff" OnLoad="initgame()">
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">撞击小游戏</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=1444" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<SCRIPT LANGUAGE="JavaScript">
+ 
+ 
+ <!--  to hide script contents from old browsers
+ // rev 0.04
+ var crlf = "\r\n";  
+ // should determine from browser type
+         var x = 1;
+         var y = 1;
+         var dx = 1;
+         var dy = 1;
+         var s = "";
+         var u = 0;
+         var oops_flag = false;
+         var score = 0;
+ 
+ function move1() {
+     x += dx;
+     if (x > 31) { 
+         x -= 2 * Math.abs(dx); 
+     if (dx > 0) dx = -dx; }
+     if (x <  0) { 
+         x += 2 * Math.abs(dx); 
+     if (dx < 0) dx = -dx; }
+         y += dy;
+     if (y > 14) { 
+         y -= 2 * Math.abs(dy); 
+     if (dy > 0) dy = -dy; 
+     if (Math.abs(x - 2*u - 1) > 2) {
+         oops_flag = true;
+     }
+     else {
+         score += 1;               
+         }    
+ 
+     }
+     if (y <  0) { y += 2 * Math.abs(dy); 
+ if (dy < 0) dy = -dy; }
+   }
+ 
+ 
+ function display1() {
+     var s1 = ""
+     var i,j;
+     if (oops_flag) return "对不起，你输了，请重新开始!!!";
+     for (j=0;j<15;j++) {
+ 
+       for (i=0;i<32;i++) {
+         if (j == y && i == x) s1 += "@";
+         else s1 += ".";
+       }
+       s1 += crlf;
+     }
+     var s2 = ""
+     for (i=0;i<16;i++) {
+        if (u == i) s2 += "====";
+        else s2 += "..";
+     }
+     return (s1+s2)
+   }
+   var timerID = null;
+   var timerRunning = false;
+   var myform;
+ 
+ function stopclock (){
+         if(timerRunning) clearTimeout(timerID);
+         timerRunning = false;
+   }
+ 
+ function startclock (form) {
+         myform = form;
+         oops_flag = false;
+         if (navigator.userAgent.indexOf("Mac") > 2) crlf = "\n";
+         // Make sure the clock is stopped
+         stopclock();
+         dotime();
+   }
+ 
+ function dotime () {
+         move1();
+         if (myform != null) {
+           myform.text3.value = display1();        
+           myform.score.value = " " + score;
+         }
+         if (!oops_flag) timerID = setTimeout("dotime()",200);
+         timerRunning = true;
+   }
+ // end hiding contents from old browsers  -->
+ 
+ </SCRIPT> 
+ <FORM NAME="myForm" >
+ <TEXTAREA NAME="text3" ROWS=16 COLS=34 WRAP &rt;
+ [游戏区域]
+  </TEXTAREA &rt;
+<br>
+ Score: <INPUT TYPE="text" NAME="score" SIZE=10 VALUE=0>
+ <p>
+ <a href="#" onMouseOver="u =  0">0</a>
+ <a href="#" onMouseOver="u =  1">1</a>
+ <a href="#" onMouseOver="u =  2">2</a>
+ <a href="#" onMouseOver="u =  3">3</a>
+ <a href="#" onMouseOver="u =  4">4</a>
+ <a href="#" onMouseOver="u =  5">5</a>
+ <a href="#" onMouseOver="u =  6">6</a>
+ <a href="#" onMouseOver="u =  7">7</a>
+ <a href="#" onMouseOver="u =  8">8</a>
+ <a href="#" onMouseOver="u =  9">9</a>
+ <a href="#" onMouseOver="u = 10">10</a>
+ <a href="#" onMouseOver="u = 11">11</a>
+ <a href="#" onMouseOver="u = 12">12</a>
+ <a href="#" onMouseOver="u = 13">13</a>
+ <a href="#" onMouseOver="u = 14">14</a>
+ <a href="#" onMouseOver="u = 15">15</a>
+ <BR><BR>
+ <INPUT TYPE="button" NAME="Button1" VALUE="[开始游戏]" onCLick="startclock(this.form)">
+ </FORM></fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+第一步:把如下代码加入<body>区域中
+&nbsp;&lt;SCRIPT LANGUAGE=&quot;JavaScript&quot;&gt;
+ 
+ 
+ &lt;!--  to hide script contents from old browsers
+ // rev 0.04
+ var crlf = &quot;\r\n&quot;;  
+ // should determine from browser type
+         var x = 1;
+         var y = 1;
+         var dx = 1;
+         var dy = 1;
+         var s = &quot;&quot;;
+         var u = 0;
+         var oops_flag = false;
+         var score = 0;
+ 
+ function move1() {
+     x += dx;
+     if (x &gt; 31) { 
+         x -= 2 * Math.abs(dx); 
+     if (dx &gt; 0) dx = -dx; }
+     if (x &lt;  0) { 
+         x += 2 * Math.abs(dx); 
+     if (dx &lt; 0) dx = -dx; }
+         y += dy;
+     if (y &gt; 14) { 
+         y -= 2 * Math.abs(dy); 
+     if (dy &gt; 0) dy = -dy; 
+     if (Math.abs(x - 2*u - 1) &gt; 2) {
+         oops_flag = true;
+     }
+     else {
+         score += 1;               
+         }    
+ 
+     }
+     if (y &lt;  0) { y += 2 * Math.abs(dy); 
+ if (dy &lt; 0) dy = -dy; }
+   }
+ 
+ 
+ function display1() {
+     var s1 = &quot;&quot;
+     var i,j;
+     if (oops_flag) return &quot;对不起，你输了，请重新开始!!!&quot;;
+     for (j=0;j&lt;15;j++) {
+ 
+       for (i=0;i&lt;32;i++) {
+         if (j == y &amp;&amp; i == x) s1 += &quot;@&quot;;
+         else s1 += &quot;.&quot;;
+       }
+       s1 += crlf;
+     }
+     var s2 = &quot;&quot;
+     for (i=0;i&lt;16;i++) {
+        if (u == i) s2 += &quot;====&quot;;
+        else s2 += &quot;..&quot;;
+     }
+     return (s1+s2)
+   }
+   var timerID = null;
+   var timerRunning = false;
+   var myform;
+ 
+ function stopclock (){
+         if(timerRunning) clearTimeout(timerID);
+         timerRunning = false;
+   }
+ 
+ function startclock (form) {
+         myform = form;
+         oops_flag = false;
+         if (navigator.userAgent.indexOf(&quot;Mac&quot;) &gt; 2) crlf = &quot;\n&quot;;
+         // Make sure the clock is stopped
+         stopclock();
+         dotime();
+   }
+ 
+ function dotime () {
+         move1();
+         if (myform != null) {
+           myform.text3.value = display1();        
+           myform.score.value = &quot; &quot; + score;
+         }
+         if (!oops_flag) timerID = setTimeout(&quot;dotime()&quot;,200);
+         timerRunning = true;
+   }
+ // end hiding contents from old browsers  --&gt;
+ 
+ &lt;/SCRIPT&gt; 
+ &lt;FORM NAME=&quot;myForm&quot; &gt;
+ &lt;TEXTAREA NAME=&quot;text3&quot; ROWS=16 COLS=34 WRAP &amp;rt;
+ [游戏区域]
+  &lt;/TEXTAREA &amp;rt;
+&lt;br&gt;
+ Score: &lt;INPUT TYPE=&quot;text&quot; NAME=&quot;score&quot; SIZE=10 VALUE=0&gt;
+ &lt;p&gt;
+ &lt;a href=&quot;#&quot; onMouseOver=&quot;u =  0&quot;&gt;0&lt;/a&gt;
+ &lt;a href=&quot;#&quot; onMouseOver=&quot;u =  1&quot;&gt;1&lt;/a&gt;
+ &lt;a href=&quot;#&quot; onMouseOver=&quot;u =  2&quot;&gt;2&lt;/a&gt;
+ &lt;a href=&quot;#&quot; onMouseOver=&quot;u =  3&quot;&gt;3&lt;/a&gt;
+ &lt;a href=&quot;#&quot; onMouseOver=&quot;u =  4&quot;&gt;4&lt;/a&gt;
+ &lt;a href=&quot;#&quot; onMouseOver=&quot;u =  5&quot;&gt;5&lt;/a&gt;
+ &lt;a href=&quot;#&quot; onMouseOver=&quot;u =  6&quot;&gt;6&lt;/a&gt;
+ &lt;a href=&quot;#&quot; onMouseOver=&quot;u =  7&quot;&gt;7&lt;/a&gt;
+ &lt;a href=&quot;#&quot; onMouseOver=&quot;u =  8&quot;&gt;8&lt;/a&gt;
+ &lt;a href=&quot;#&quot; onMouseOver=&quot;u =  9&quot;&gt;9&lt;/a&gt;
+ &lt;a href=&quot;#&quot; onMouseOver=&quot;u = 10&quot;&gt;10&lt;/a&gt;
+ &lt;a href=&quot;#&quot; onMouseOver=&quot;u = 11&quot;&gt;11&lt;/a&gt;
+ &lt;a href=&quot;#&quot; onMouseOver=&quot;u = 12&quot;&gt;12&lt;/a&gt;
+ &lt;a href=&quot;#&quot; onMouseOver=&quot;u = 13&quot;&gt;13&lt;/a&gt;
+ &lt;a href=&quot;#&quot; onMouseOver=&quot;u = 14&quot;&gt;14&lt;/a&gt;
+ &lt;a href=&quot;#&quot; onMouseOver=&quot;u = 15&quot;&gt;15&lt;/a&gt;
+ &lt;BR&gt;&lt;BR&gt;
+ &lt;INPUT TYPE=&quot;button&quot; NAME=&quot;Button1&quot; VALUE=&quot;[开始游戏]&quot; onCLick=&quot;startclock(this.form)&quot;&gt;
+ &lt;/FORM&gt;
+
+
+
+&nbsp;
+第二步:把如下代码加入<body>区域中<BODY bgcolor="#ffffff" OnLoad="initgame()">
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+
+
+
+   
+    var os = navigator.platform;
+    var userAgent = navigator.userAgent;
+    var info=new Array();
+    if(os.indexOf('Win') > -1){
+        if(userAgent.indexOf('Windows NT 5.0') > -1){
+            info[0] = 'Win2000';
+        }else if(userAgent.indexOf('Windows NT 5.1') > -1){
+            info[0] =  'WinXP';
+        }else if(userAgent.indexOf('Windows NT 5.2') > -1){
+            info[0] =  'Win2003';
+        }else if(userAgent.indexOf('Windows NT 6.0') > -1){
+            info[0] =  'WindowsVista';
+        }else if(userAgent.indexOf('Windows NT 6.1') > -1 || userAgent.indexOf('Windows 7') > -1){
+            info[0] =  'Win7';
+        }else if(userAgent.indexOf('Windows 8') > -1){
+            info[0] =  'Win8';
+        }else if(userAgent.indexOf('Windows NT 10.0') > -1) {
+            info[0] = 'Win10';
+        }else{
+            info[0] =  'Other';
+        }
+    }else if(os.indexOf('Mac') > -1){
+        info[0] =  'Mac';
+    }else if(os.indexOf('X11') > -1){
+        info[0] =  'Unix';
+    }else if(os.indexOf('Linux') > -1){
+        info[0] =  'Linux';
+    }else{
+        info[0] =  'Other';
+    }
+
+
+    //浏览器及版本号
+    function getExplorerInfo() {
+        var explorer = window.navigator.userAgent.toLowerCase();
+        //ie
+        if (explorer.indexOf('msie') >= 0) {
+            var ver = explorer.match(/msie ([\d.]+)/)[1];
+            return { type: 'IE', version: ver };
+        }
+        //firefox
+        else if (explorer.indexOf('firefox') >= 0) {
+            var ver = explorer.match(/firefox\/([\d.]+)/)[1];
+            return { type: 'Firefox', version: ver };
+        }
+        //Chrome
+        else if (explorer.indexOf('chrome') >= 0) {
+            var ver = explorer.match(/chrome\/([\d.]+)/)[1];
+            return { type: 'Chrome', version: ver };
+        }
+        //Opera
+        else if (explorer.indexOf('opera') >= 0) {
+            var ver = explorer.match(/opera.([\d.]+)/)[1];
+            return { type: 'Opera', version: ver };
+        }
+        //Safari
+        else if (explorer.indexOf('Safari') >= 0) {
+            var ver = explorer.match(/version\/([\d.]+)/)[1];
+            return { type: 'Safari', version: ver };
+        }
+        //Netscape
+        else if(explorer.indexOf('Netscape') >= 0){
+            var ver = explorer.match(/version\/([\d.]+)/)[1];
+            return { type: 'Netscape', version: ver };
+        }
+        else{
+            return { type: '', version: '' };
+        }
+    }
+    var track = {
+        platform:'pc',
+        app_name:'zgzf',//应用名称
+        user_id:user_id,
+        user_phone:user_phone,
+        app_version:'v1.0',//应用版本
+        browser:getExplorerInfo().type,//浏览器
+        browser_version:getExplorerInfo().version,//浏览器版本
+        os:info[0],//操作系统
+        os_version:navigator.userAgent,//系统版本
+        screen_name:screen_name,
+        role_type:role_type,
+        business_line:business_line,
+        select_city:get_cookie('_WEB_city_code'),
+        province:'',
+        carrier:'',//运营商
+        network_type:'',//网络类型
+        device_id:'',//设备标识
+        model:'',//设备型号
+        manufacturer:'',//设备制造商
+    };

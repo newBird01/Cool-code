@@ -1,0 +1,645 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--固定的右上角时钟</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body bgcolor=#FFFFFF>
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">固定的右上角时钟</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=80" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<script language="JavaScript">
+<!--
+//display timer or clock
+var TimerOrClock = "clock";
+
+//layer height
+var layerH = 70;
+
+//layer width
+var layerW = 150;
+
+//location of the layer on the page:
+//top_left, top_right, "bottom_left", "bottom_right"
+var location = "top_right"; 
+
+//background color of the layer:
+//transparent - inherits the background of the page;
+//any color as a word or in hexadecimal
+var bgcolor = "yellow";
+
+//font color
+var text = "black";
+
+//font size
+var font_size = 3;
+
+//font face
+var font_face = "Arial";
+
+//your words
+var message = "现在时间：<br>";
+
+/***************** DO NOT EDIT BELOW THIS LINE ***************/
+var layer;
+var IE = document.all;
+var updateWatch;
+var start = 0;
+
+function writeTime(time)
+{
+    var color, size, face, out;
+	
+	color = (text)? text : "black";
+	size = (font_size)? font_size : 2;
+	face = (font_face)? font_face : "Arial";
+    
+	out = "<font face = \"" + face + "\" size = " + size + " color = \"" + color + "\">";
+	out += (message)? message : "";
+
+	if(!IE)
+      out += "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + time + "</font>";
+	else
+      out +=  time + "</font>";
+		
+	if(IE)
+	  layer.innerHTML = "<table width=\"100%\" height=\"100%\"><tr><td valign=\"middle\" align=\"center\">" + out + "</td></tr></table>";
+    else
+    {		
+	  layer.document.open();
+	  layer.document.write("<br> &nbsp;" + "<b>" + out + "</b>");
+	  layer.document.close();
+	}
+}
+
+function clock()
+{
+  var hh, mm, ss;
+  var time, d, ampm = "am";
+
+  d = new Date();
+  
+  hh = d.getHours();
+  mm = d.getMinutes();
+  ss = d.getSeconds();
+  
+  if(hh > 12)
+  {
+     hh -= 12;
+	 ampm = "pm";
+  }	
+  
+  hh = (hh < 10)? "0" + hh : hh;
+  mm = (mm < 10)? "0" + mm : mm;
+  ss = (ss < 10)? "0" + ss : ss;
+
+  time = hh + ":" + mm + ":" + ss + "  " + ampm;
+  
+  writeTime(time);
+}
+
+function timer()
+{
+   var hh, mm, ss;
+   var time;
+   
+   hh = parseInt("0" + (start / 3600), 10);
+   mm = parseInt("0" + ((start - (hh * 3600)) / 60), 10);
+   ss = start - (hh * 3600) - (mm * 60);
+   
+   if(start < 60)
+     time = ss + " seconds ";
+
+   else if(start < 3600 && start > 60)
+     time = mm + " minutes " + ss + " seconds ";
+   
+   else
+   {
+     time = (hh == 1)? hh + " hour " : hh + " hours ";
+	 time += (mm == 1)? mm + " minute " : mm + " minutes ";	 
+   }
+   writeTime(time);
+   start++;
+}
+
+function scroller()
+{
+  var docH, docW, scrollT, scrollL;
+  	   
+  if(IE)
+  {
+    layer =  document.all.pane;
+
+	if(layerH)
+	{
+	  layer.height = layerH;
+      layer.style.height = layerH;
+	}  
+	else  
+	  layerH = layer.height;
+
+	if(layerW)
+	{
+	  layer.width = layerW;
+	  layer.style.width = layerW;
+	}
+	else  
+	  layerW = layer.width;
+	
+	if(bgcolor)
+	  layer.style.background = bgcolor;
+
+	
+	docH = document.body.clientHeight;
+	docW = document.body.clientWidth;
+	
+	scrollT = document.body.scrollTop;
+	scrollL = document.body.scrollLeft;
+
+    switch(location)	
+	{
+	   case "top_left": 	layer.style.posTop =  scrollT;
+                        	layer.style.posLeft = scrollL;
+							break; 
+
+	   case "top_right":   	layer.style.posTop =  scrollT;
+                        	layer.style.posLeft = scrollL + (docW - layerW);
+                            break;
+
+   	   case "bottom_left":  layer.style.posTop =  scrollT + (docH - layerH);
+                        	layer.style.posLeft = scrollL;
+                            break;
+
+   	   case "bottom_right": layer.style.posTop =  scrollT + (docH - layerH);
+                        	layer.style.posLeft = scrollL + (docW - layerW);
+                            break;
+	  
+	   default:             layer.style.posTop =  scrollT;
+                        	layer.style.posLeft = scrollL;
+	}
+    layer.style.visibility = "visible";  
+  }
+  else
+  {
+
+    layer = document.layers.pane;
+	
+    if(!layerH)
+	  layerH = 200;
+
+	if(!layerW)
+	  layerW = 100;
+
+	  
+	layer.resizeTo(layerW,layerH);
+	  
+    if(bgcolor && bgcolor != "transparent")
+	  layer.bgColor = bgcolor;	
+	
+
+	docH = window.innerHeight;
+	docW = window.innerWidth;
+	
+	scrollT = window.pageYOffset;
+	scrollL = window.pageXOffset;
+	
+	switch(location.toLowerCase())	
+	{
+	   case "top_left": 	layer.moveTo(scrollL,scrollT);
+							break; 
+
+	   case "top_right":   	layer.moveTo(scrollL + (docW - layerW) - 15, scrollT);
+                        	break;
+
+   	   case "bottom_left":  layer.moveTo(scrollL, scrollT + (docH - layerH) - 15);
+                            break;
+
+   	   case "bottom_right": layer.moveTo(scrollL + (docW - layerW) - 15,scrollT + (docH - layerH) - 15);
+	                        break;
+	  
+	   default:             layer.moveTo(scrollL,scrollT);
+	}
+	
+	//make layer visible   
+    layer.visibility = "show";
+  }	
+}
+//-->
+</script>
+<style type="text/css">
+#pane {position: absolute; visibility: hidden;}
+</style>
+<span id="pane"><layer name="pane" width=&{layerW}; height=&{layerH};></layer></span>
+<script>
+<!--
+setInterval("scroller();",100);  
+
+if(TimerOrClock.toLowerCase() == "clock")
+  setInterval("clock();",1000);
+else
+  setInterval("timer();",1000);
+//-->
+</script>
+</fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+把如下代码加入<body>区域中
+&nbsp;&lt;script language=&quot;JavaScript&quot;&gt;
+&lt;!--
+//display timer or clock
+var TimerOrClock = &quot;clock&quot;;
+
+//layer height
+var layerH = 70;
+
+//layer width
+var layerW = 150;
+
+//location of the layer on the page:
+//top_left, top_right, &quot;bottom_left&quot;, &quot;bottom_right&quot;
+var location = &quot;top_right&quot;; 
+
+//background color of the layer:
+//transparent - inherits the background of the page;
+//any color as a word or in hexadecimal
+var bgcolor = &quot;yellow&quot;;
+
+//font color
+var text = &quot;black&quot;;
+
+//font size
+var font_size = 3;
+
+//font face
+var font_face = &quot;Arial&quot;;
+
+//your words
+var message = &quot;现在时间：&lt;br&gt;&quot;;
+
+/***************** DO NOT EDIT BELOW THIS LINE ***************/
+var layer;
+var IE = document.all;
+var updateWatch;
+var start = 0;
+
+function writeTime(time)
+{
+    var color, size, face, out;
+	
+	color = (text)? text : &quot;black&quot;;
+	size = (font_size)? font_size : 2;
+	face = (font_face)? font_face : &quot;Arial&quot;;
+    
+	out = &quot;&lt;font face = \&quot;&quot; + face + &quot;\&quot; size = &quot; + size + &quot; color = \&quot;&quot; + color + &quot;\&quot;&gt;&quot;;
+	out += (message)? message : &quot;&quot;;
+
+	if(!IE)
+      out += &quot;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&quot; + time + &quot;&lt;/font&gt;&quot;;
+	else
+      out +=  time + &quot;&lt;/font&gt;&quot;;
+		
+	if(IE)
+	  layer.innerHTML = &quot;&lt;table width=\&quot;100%\&quot; height=\&quot;100%\&quot;&gt;&lt;tr&gt;&lt;td valign=\&quot;middle\&quot; align=\&quot;center\&quot;&gt;&quot; + out + &quot;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&quot;;
+    else
+    {		
+	  layer.document.open();
+	  layer.document.write(&quot;&lt;br&gt; &amp;nbsp;&quot; + &quot;&lt;b&gt;&quot; + out + &quot;&lt;/b&gt;&quot;);
+	  layer.document.close();
+	}
+}
+
+function clock()
+{
+  var hh, mm, ss;
+  var time, d, ampm = &quot;am&quot;;
+
+  d = new Date();
+  
+  hh = d.getHours();
+  mm = d.getMinutes();
+  ss = d.getSeconds();
+  
+  if(hh &gt; 12)
+  {
+     hh -= 12;
+	 ampm = &quot;pm&quot;;
+  }	
+  
+  hh = (hh &lt; 10)? &quot;0&quot; + hh : hh;
+  mm = (mm &lt; 10)? &quot;0&quot; + mm : mm;
+  ss = (ss &lt; 10)? &quot;0&quot; + ss : ss;
+
+  time = hh + &quot;:&quot; + mm + &quot;:&quot; + ss + &quot;  &quot; + ampm;
+  
+  writeTime(time);
+}
+
+function timer()
+{
+   var hh, mm, ss;
+   var time;
+   
+   hh = parseInt(&quot;0&quot; + (start / 3600), 10);
+   mm = parseInt(&quot;0&quot; + ((start - (hh * 3600)) / 60), 10);
+   ss = start - (hh * 3600) - (mm * 60);
+   
+   if(start &lt; 60)
+     time = ss + &quot; seconds &quot;;
+
+   else if(start &lt; 3600 &amp;&amp; start &gt; 60)
+     time = mm + &quot; minutes &quot; + ss + &quot; seconds &quot;;
+   
+   else
+   {
+     time = (hh == 1)? hh + &quot; hour &quot; : hh + &quot; hours &quot;;
+	 time += (mm == 1)? mm + &quot; minute &quot; : mm + &quot; minutes &quot;;	 
+   }
+   writeTime(time);
+   start++;
+}
+
+function scroller()
+{
+  var docH, docW, scrollT, scrollL;
+  	   
+  if(IE)
+  {
+    layer =  document.all.pane;
+
+	if(layerH)
+	{
+	  layer.height = layerH;
+      layer.style.height = layerH;
+	}  
+	else  
+	  layerH = layer.height;
+
+	if(layerW)
+	{
+	  layer.width = layerW;
+	  layer.style.width = layerW;
+	}
+	else  
+	  layerW = layer.width;
+	
+	if(bgcolor)
+	  layer.style.background = bgcolor;
+
+	
+	docH = document.body.clientHeight;
+	docW = document.body.clientWidth;
+	
+	scrollT = document.body.scrollTop;
+	scrollL = document.body.scrollLeft;
+
+    switch(location)	
+	{
+	   case &quot;top_left&quot;: 	layer.style.posTop =  scrollT;
+                        	layer.style.posLeft = scrollL;
+							break; 
+
+	   case &quot;top_right&quot;:   	layer.style.posTop =  scrollT;
+                        	layer.style.posLeft = scrollL + (docW - layerW);
+                            break;
+
+   	   case &quot;bottom_left&quot;:  layer.style.posTop =  scrollT + (docH - layerH);
+                        	layer.style.posLeft = scrollL;
+                            break;
+
+   	   case &quot;bottom_right&quot;: layer.style.posTop =  scrollT + (docH - layerH);
+                        	layer.style.posLeft = scrollL + (docW - layerW);
+                            break;
+	  
+	   default:             layer.style.posTop =  scrollT;
+                        	layer.style.posLeft = scrollL;
+	}
+    layer.style.visibility = &quot;visible&quot;;  
+  }
+  else
+  {
+
+    layer = document.layers.pane;
+	
+    if(!layerH)
+	  layerH = 200;
+
+	if(!layerW)
+	  layerW = 100;
+
+	  
+	layer.resizeTo(layerW,layerH);
+	  
+    if(bgcolor &amp;&amp; bgcolor != &quot;transparent&quot;)
+	  layer.bgColor = bgcolor;	
+	
+
+	docH = window.innerHeight;
+	docW = window.innerWidth;
+	
+	scrollT = window.pageYOffset;
+	scrollL = window.pageXOffset;
+	
+	switch(location.toLowerCase())	
+	{
+	   case &quot;top_left&quot;: 	layer.moveTo(scrollL,scrollT);
+							break; 
+
+	   case &quot;top_right&quot;:   	layer.moveTo(scrollL + (docW - layerW) - 15, scrollT);
+                        	break;
+
+   	   case &quot;bottom_left&quot;:  layer.moveTo(scrollL, scrollT + (docH - layerH) - 15);
+                            break;
+
+   	   case &quot;bottom_right&quot;: layer.moveTo(scrollL + (docW - layerW) - 15,scrollT + (docH - layerH) - 15);
+	                        break;
+	  
+	   default:             layer.moveTo(scrollL,scrollT);
+	}
+	
+	//make layer visible   
+    layer.visibility = &quot;show&quot;;
+  }	
+}
+//--&gt;
+&lt;/script&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+#pane {position: absolute; visibility: hidden;}
+&lt;/style&gt;
+&lt;span id=&quot;pane&quot;&gt;&lt;layer name=&quot;pane&quot; width=&amp;{layerW}; height=&amp;{layerH};&gt;&lt;/layer&gt;&lt;/span&gt;
+&lt;script&gt;
+&lt;!--
+setInterval(&quot;scroller();&quot;,100);  
+
+if(TimerOrClock.toLowerCase() == &quot;clock&quot;)
+  setInterval(&quot;clock();&quot;,1000);
+else
+  setInterval(&quot;timer();&quot;,1000);
+//--&gt;
+&lt;/script&gt;
+
+
+
+
+&nbsp;
+
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,769 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--简单又酷的菜单条</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body bgcolor=#FFFFFF>
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">简单又酷的菜单条</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=1028" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<script>
+//菜单一 first item----------------------------------------------------------
+
+var item_num=3;  //父层菜单的行数 Hom many rows is the parent item
+var item02_word=new Array();  //菜单的文字 The words of the child item
+for(i=0;i<item_num;i++)
+  item02_word[i]=new Array();
+
+  item02_word[0][0]="市长致词02";
+  item02_word[0][1]="市民意见";
+  item02_word[0][2]="市民投诉";
+
+  item02_word[1][0]="市政领导02";
+  item02_word[1][1]="部门机构";
+  item02_word[1][2]="部门职责";
+
+  item02_word[2][0]="最新发布02";
+  item02_word[2][1]="综合经济";
+  item02_word[2][2]="科教文化";
+
+var item02_link=new Array();  //菜单的链接 The links of the child item 
+for(i=0;i<item_num;i++)
+  item02_link[i]=new Array();
+  item02_link[0][0]="#none";
+  item02_link[0][1]="#none"
+  item02_link[0][2]="#none"
+
+  item02_link[1][0]="#none";
+  item02_link[1][1]="#none";
+  item02_link[1][2]="#none";
+
+  item02_link[2][0]="#none";
+  item02_link[2][1]="#none";
+  item02_link[2][2]="#none";
+
+var item02=new Array();  //菜单的HTML The HTML code of the child item
+for(i=0;i<item_num;i++)
+  item02[i]="";
+for(i=0;i<item_num;i++)
+  for(j=0;j<item02_word[i].length;j++)
+    item02[i]+="   | -<img border=0 src=photo/20020403/list3.gif><a class=childlink href="+item02_link[i][j]+" onclick=javascript:this.blur();>"+item02_word[i][j]+"</a><br>";
+
+//------------定义一个清空各菜单的函数--------------
+function closeItemTable02()
+{
+  for(i=0;i<item_num;i++)
+  {
+    document.all.itemTable02.cells[2*i+1].innerHTML="";
+	item02Img[i].src="photo/20020403/list.gif";
+  }
+}
+//------------------定义结束----------------------
+
+//------------定义一个菜单展开的函数----------------
+function openItemTable02(n)
+{
+  if(document.all.itemTable02.cells[n*2+1].innerHTML=="")
+  {
+    closeItemTable02();
+	item02Img[n].src="photo/20020403/list2.gif";
+    document.all.itemTable02.cells[n*2+1].innerHTML=item02[n];
+  }
+  else
+    closeItemTable02();
+}
+//------------------定义结束----------------------
+
+var item02_view=new Array();
+item02_view[0]="<table id=itemTable02 cellpadding=0 cellspacing=0 border=0>\n";
+item02_view[1]="  <tr><td valign=bottom>  -<img name=item02Img name=treeImg src=photo/20020403/list.gif border=0><a id=item_1 class=parentlink href=javascript: onclick=javascript:openItemTable02(0);this.blur();>市长室</a></td></tr>\n";
+item02_view[2]="  <tr><td class=childlink></td></tr>\n";
+item02_view[3]="  <tr><td valign=bottom>  -<img name=item02Img name=treeImg src=photo/20020403/list.gif border=0><a id=item_2 class=parentlink href=javascript: onclick=javascript:openItemTable02(1);this.blur();>政府政务</a></td></tr>\n";
+item02_view[4]="  <tr><td class=childlink></td></tr>\n";
+item02_view[5]="  <tr><td valign=bottom>  -<img name=item02Img name=treeImg src=photo/20020403/list.gif border=0><a id=item_3 class=parentlink href=javascript: onclick=javascript:openItemTable02(2);this.blur();>政策法规</a></td></tr>\n";
+item02_view[6]="  <tr><td class=childlink></td></tr>\n";
+item02_view[7]="</table>\n";
+
+var item02_all="";
+for(i=0;i<item02_view.length;i++)
+  item02_all+=item02_view[i];
+</script>
+<script>
+//菜单一 first item----------------------------------------------------------
+
+var item_num=3;  //父层菜单的行数 Hom many rows is the parent item
+var item01_word=new Array();  //菜单的文字 The words of the child item
+for(i=0;i<item_num;i++)
+  item01_word[i]=new Array();
+
+  item01_word[0][0]="市长致词01";
+  item01_word[0][1]="市民意见";
+  item01_word[0][2]="市民投诉";
+
+  item01_word[1][0]="市政领导01";
+  item01_word[1][1]="部门机构";
+  item01_word[1][2]="部门职责";
+
+  item01_word[2][0]="最新发布01";
+  item01_word[2][1]="综合经济";
+  item01_word[2][2]="科教文化";
+
+var item01_link=new Array();  //菜单的链接 The links of the child item 
+for(i=0;i<item_num;i++)
+  item01_link[i]=new Array();
+  item01_link[0][0]="#none";
+  item01_link[0][1]="#none"
+  item01_link[0][2]="#none"
+
+  item01_link[1][0]="#none";
+  item01_link[1][1]="#none";
+  item01_link[1][2]="#none";
+
+  item01_link[2][0]="#none";
+  item01_link[2][1]="#none";
+  item01_link[2][2]="#none";
+
+var item01=new Array();  //菜单的HTML The HTML code of the child item
+for(i=0;i<item_num;i++)
+  item01[i]="";
+for(i=0;i<item_num;i++)
+  for(j=0;j<item01_word[i].length;j++)
+    item01[i]+="   | -<img border=0 src=photo/20020403/list3.gif><a class=childlink href="+item01_link[i][j]+" onclick=javascript:this.blur();>"+item01_word[i][j]+"</a><br>";
+
+//------------定义一个清空各菜单的函数--------------
+function closeItemTable01()
+{
+  for(i=0;i<item_num;i++)
+  {
+    document.all.itemTable01.cells[2*i+1].innerHTML="";
+	item01Img[i].src="photo/20020403/list.gif";
+  }
+}
+//------------------定义结束----------------------
+
+//------------定义一个菜单展开的函数----------------
+function openItemTable01(n)
+{
+  if(document.all.itemTable01.cells[n*2+1].innerHTML=="")
+  {
+    closeItemTable01();
+	item01Img[n].src="photo/20020403/list2.gif";
+    document.all.itemTable01.cells[n*2+1].innerHTML=item01[n];
+  }
+  else
+    closeItemTable01();
+}
+//------------------定义结束----------------------
+
+var item01_view=new Array();
+item01_view[0]="<table id=itemTable01 cellpadding=0 cellspacing=0 border=0>\n";
+item01_view[1]="  <tr><td valign=bottom>  -<img name=item01Img name=treeImg src=photo/20020403/list.gif border=0><a id=item_1 class=parentlink href=javascript: onclick=javascript:openItemTable01(0);this.blur();>市长室</a></td></tr>\n";
+item01_view[2]="  <tr><td class=childlink></td></tr>\n";
+item01_view[3]="  <tr><td valign=bottom>  -<img name=item01Img name=treeImg src=photo/20020403/list.gif border=0><a id=item_2 class=parentlink href=javascript: onclick=javascript:openItemTable01(1);this.blur();>政府政务</a></td></tr>\n";
+item01_view[4]="  <tr><td class=childlink></td></tr>\n";
+item01_view[5]="  <tr><td valign=bottom>  -<img name=item01Img name=treeImg src=photo/20020403/list.gif border=0><a id=item_3 class=parentlink href=javascript: onclick=javascript:openItemTable01(2);this.blur();>政策法规</a></td></tr>\n";
+item01_view[6]="  <tr><td class=childlink></td></tr>\n";
+item01_view[7]="</table>\n";
+
+var item01_all="";
+for(i=0;i<item01_view.length;i++)
+  item01_all+=item01_view[i];
+</script>
+<script>
+//菜单一 first item----------------------------------------------------------
+
+var item_num=3;  //父层菜单的行数 Hom many rows is the parent item
+var item00_word=new Array();  //菜单的文字 The words of the child item
+for(i=0;i<item_num;i++)
+  item00_word[i]=new Array();
+
+  item00_word[0][0]="市长致词00";
+  item00_word[0][1]="市民意见";
+  item00_word[0][2]="市民投诉";
+
+  item00_word[1][0]="市政领导00";
+  item00_word[1][1]="部门机构";
+  item00_word[1][2]="部门职责";
+
+  item00_word[2][0]="最新发布00";
+  item00_word[2][1]="综合经济";
+  item00_word[2][2]="科教文化";
+
+var item00_link=new Array();  //菜单的链接 The links of the child item 
+for(i=0;i<item_num;i++)
+  item00_link[i]=new Array();
+  item00_link[0][0]="#none";
+  item00_link[0][1]="#none"
+  item00_link[0][2]="#none"
+
+  item00_link[1][0]="#none";
+  item00_link[1][1]="#none";
+  item00_link[1][2]="#none";
+
+  item00_link[2][0]="#none";
+  item00_link[2][1]="#none";
+  item00_link[2][2]="#none";
+
+var item00=new Array();  //菜单的HTML The HTML code of the child item
+for(i=0;i<item_num;i++)
+  item00[i]="";
+for(i=0;i<item_num;i++)
+  for(j=0;j<item00_word[i].length;j++)
+    item00[i]+="   | -<img border=0 src=photo/20020403/list3.gif><a class=childlink href="+item00_link[i][j]+" onclick=javascript:this.blur();>"+item00_word[i][j]+"</a><br>";
+
+//------------定义一个清空各菜单的函数--------------
+function closeItemTable00()
+{
+  for(i=0;i<item_num;i++)
+  {
+    document.all.itemTable00.cells[2*i+1].innerHTML="";
+	item00Img[i].src="photo/20020403/list.gif";
+  }
+}
+//------------------定义结束----------------------
+
+//------------定义一个菜单展开的函数----------------
+function openItemTable00(n)
+{
+  if(document.all.itemTable00.cells[n*2+1].innerHTML=="")
+  {
+    closeItemTable00();
+	item00Img[n].src="photo/20020403/list2.gif";
+    document.all.itemTable00.cells[n*2+1].innerHTML=item00[n];
+  }
+  else
+    closeItemTable00();
+}
+//------------------定义结束----------------------
+
+var item00_view=new Array();
+item00_view[0]="<table id=itemTable00 cellpadding=0 cellspacing=0 border=0>\n";
+item00_view[1]="  <tr><td valign=bottom>  -<img name=item00Img name=treeImg src=photo/20020403/list.gif border=0><a id=item_1 class=parentlink href=javascript: onclick=javascript:openItemTable00(0);this.blur();>市长室</a></td></tr>\n";
+item00_view[2]="  <tr><td class=childlink></td></tr>\n";
+item00_view[3]="  <tr><td valign=bottom>  -<img name=item00Img name=treeImg src=photo/20020403/list.gif border=0><a id=item_2 class=parentlink href=javascript: onclick=javascript:openItemTable00(1);this.blur();>政府政务</a></td></tr>\n";
+item00_view[4]="  <tr><td class=childlink></td></tr>\n";
+item00_view[5]="  <tr><td valign=bottom>  -<img name=item00Img name=treeImg src=photo/20020403/list.gif border=0><a id=item_3 class=parentlink href=javascript: onclick=javascript:openItemTable00(2);this.blur();>政策法规</a></td></tr>\n";
+item00_view[6]="  <tr><td class=childlink></td></tr>\n";
+item00_view[7]="</table>\n";
+
+var item00_all="";
+for(i=0;i<item00_view.length;i++)
+  item00_all+=item00_view[i];
+</script>
+
+<script language=javascript>
+
+function closeTopTree()
+{
+  for(i=0;i<topTreeTable.cells.length/2;i++)
+  {
+    topTreeTable.cells[2*i+1].innerHTML="";
+	treeImg[i].src="photo/20020403/list.gif";
+  }
+}
+
+function openTopTree(n)
+{
+  if(topTreeTable.cells[2*n+1].innerHTML=="")
+  {
+    closeTopTree();
+	treeImg[n].src="photo/20020403/list2.gif";
+	switch(n)
+	{
+	  case 0 : {topTreeTable.cells[2*n+1].innerHTML=item00_all;break;}
+	  case 1 : {topTreeTable.cells[2*n+1].innerHTML=item01_all;break;}
+	  case 2 : {topTreeTable.cells[2*n+1].innerHTML=item02_all;break;}
+	}
+  }
+  else
+    closeTopTree();
+}
+
+
+</script>
+<table id=topTreeTable background=photo/20020403/line1.gif style="border-collapse: collapse; background-image: url('photo/20020403/line.gif'); background-repeat: repeat-y; background-position-x: 0px" cellpadding=0 cellspacing=0 border=0>
+  <tr>
+    <td height=20><img name=treeImg src=photo/20020403/list.gif border=0><a id=top1 href=#none onclick="openTopTree(0);">顶层一</a></td>
+  </tr>
+  <tr>
+    <td></td>
+  </tr>
+  <tr>
+    <td height=20><img name=treeImg src=photo/20020403/list.gif border=0><a href=#none onclick="openTopTree(1);">顶层二</a></td>
+  </tr>
+  <tr>
+    <td></td>
+  </tr>
+  <tr>
+    <td height=20><img name=treeImg src=photo/20020403/list.gif border=0><a href=#none onclick="openTopTree(2);">顶层三</a></td>
+  </tr>
+  <tr>
+    <td></td>
+  </tr>
+</table>
+</fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+把如下代码加入<body>区域中
+&nbsp;&lt;script&gt;
+//菜单一 first item----------------------------------------------------------
+
+var item_num=3;  //父层菜单的行数 Hom many rows is the parent item
+var item02_word=new Array();  //菜单的文字 The words of the child item
+for(i=0;i&lt;item_num;i++)
+  item02_word[i]=new Array();
+
+  item02_word[0][0]=&quot;市长致词02&quot;;
+  item02_word[0][1]=&quot;市民意见&quot;;
+  item02_word[0][2]=&quot;市民投诉&quot;;
+
+  item02_word[1][0]=&quot;市政领导02&quot;;
+  item02_word[1][1]=&quot;部门机构&quot;;
+  item02_word[1][2]=&quot;部门职责&quot;;
+
+  item02_word[2][0]=&quot;最新发布02&quot;;
+  item02_word[2][1]=&quot;综合经济&quot;;
+  item02_word[2][2]=&quot;科教文化&quot;;
+
+var item02_link=new Array();  //菜单的链接 The links of the child item 
+for(i=0;i&lt;item_num;i++)
+  item02_link[i]=new Array();
+  item02_link[0][0]=&quot;#none&quot;;
+  item02_link[0][1]=&quot;#none&quot;
+  item02_link[0][2]=&quot;#none&quot;
+
+  item02_link[1][0]=&quot;#none&quot;;
+  item02_link[1][1]=&quot;#none&quot;;
+  item02_link[1][2]=&quot;#none&quot;;
+
+  item02_link[2][0]=&quot;#none&quot;;
+  item02_link[2][1]=&quot;#none&quot;;
+  item02_link[2][2]=&quot;#none&quot;;
+
+var item02=new Array();  //菜单的HTML The HTML code of the child item
+for(i=0;i&lt;item_num;i++)
+  item02[i]=&quot;&quot;;
+for(i=0;i&lt;item_num;i++)
+  for(j=0;j&lt;item02_word[i].length;j++)
+    item02[i]+=&quot;   | -&lt;img border=0 src=photo/20020403/list3.gif&gt;&lt;a class=childlink href=&quot;+item02_link[i][j]+&quot; onclick=javascript:this.blur();&gt;&quot;+item02_word[i][j]+&quot;&lt;/a&gt;&lt;br&gt;&quot;;
+
+//------------定义一个清空各菜单的函数--------------
+function closeItemTable02()
+{
+  for(i=0;i&lt;item_num;i++)
+  {
+    document.all.itemTable02.cells[2*i+1].innerHTML=&quot;&quot;;
+	item02Img[i].src=&quot;photo/20020403/list.gif&quot;;
+  }
+}
+//------------------定义结束----------------------
+
+//------------定义一个菜单展开的函数----------------
+function openItemTable02(n)
+{
+  if(document.all.itemTable02.cells[n*2+1].innerHTML==&quot;&quot;)
+  {
+    closeItemTable02();
+	item02Img[n].src=&quot;photo/20020403/list2.gif&quot;;
+    document.all.itemTable02.cells[n*2+1].innerHTML=item02[n];
+  }
+  else
+    closeItemTable02();
+}
+//------------------定义结束----------------------
+
+var item02_view=new Array();
+item02_view[0]=&quot;&lt;table id=itemTable02 cellpadding=0 cellspacing=0 border=0&gt;\n&quot;;
+item02_view[1]=&quot;  &lt;tr&gt;&lt;td valign=bottom&gt;  -&lt;img name=item02Img name=treeImg src=photo/20020403/list.gif border=0&gt;&lt;a id=item_1 class=parentlink href=javascript: onclick=javascript:openItemTable02(0);this.blur();&gt;市长室&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;\n&quot;;
+item02_view[2]=&quot;  &lt;tr&gt;&lt;td class=childlink&gt;&lt;/td&gt;&lt;/tr&gt;\n&quot;;
+item02_view[3]=&quot;  &lt;tr&gt;&lt;td valign=bottom&gt;  -&lt;img name=item02Img name=treeImg src=photo/20020403/list.gif border=0&gt;&lt;a id=item_2 class=parentlink href=javascript: onclick=javascript:openItemTable02(1);this.blur();&gt;政府政务&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;\n&quot;;
+item02_view[4]=&quot;  &lt;tr&gt;&lt;td class=childlink&gt;&lt;/td&gt;&lt;/tr&gt;\n&quot;;
+item02_view[5]=&quot;  &lt;tr&gt;&lt;td valign=bottom&gt;  -&lt;img name=item02Img name=treeImg src=photo/20020403/list.gif border=0&gt;&lt;a id=item_3 class=parentlink href=javascript: onclick=javascript:openItemTable02(2);this.blur();&gt;政策法规&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;\n&quot;;
+item02_view[6]=&quot;  &lt;tr&gt;&lt;td class=childlink&gt;&lt;/td&gt;&lt;/tr&gt;\n&quot;;
+item02_view[7]=&quot;&lt;/table&gt;\n&quot;;
+
+var item02_all=&quot;&quot;;
+for(i=0;i&lt;item02_view.length;i++)
+  item02_all+=item02_view[i];
+&lt;/script&gt;
+&lt;script&gt;
+//菜单一 first item----------------------------------------------------------
+
+var item_num=3;  //父层菜单的行数 Hom many rows is the parent item
+var item01_word=new Array();  //菜单的文字 The words of the child item
+for(i=0;i&lt;item_num;i++)
+  item01_word[i]=new Array();
+
+  item01_word[0][0]=&quot;市长致词01&quot;;
+  item01_word[0][1]=&quot;市民意见&quot;;
+  item01_word[0][2]=&quot;市民投诉&quot;;
+
+  item01_word[1][0]=&quot;市政领导01&quot;;
+  item01_word[1][1]=&quot;部门机构&quot;;
+  item01_word[1][2]=&quot;部门职责&quot;;
+
+  item01_word[2][0]=&quot;最新发布01&quot;;
+  item01_word[2][1]=&quot;综合经济&quot;;
+  item01_word[2][2]=&quot;科教文化&quot;;
+
+var item01_link=new Array();  //菜单的链接 The links of the child item 
+for(i=0;i&lt;item_num;i++)
+  item01_link[i]=new Array();
+  item01_link[0][0]=&quot;#none&quot;;
+  item01_link[0][1]=&quot;#none&quot;
+  item01_link[0][2]=&quot;#none&quot;
+
+  item01_link[1][0]=&quot;#none&quot;;
+  item01_link[1][1]=&quot;#none&quot;;
+  item01_link[1][2]=&quot;#none&quot;;
+
+  item01_link[2][0]=&quot;#none&quot;;
+  item01_link[2][1]=&quot;#none&quot;;
+  item01_link[2][2]=&quot;#none&quot;;
+
+var item01=new Array();  //菜单的HTML The HTML code of the child item
+for(i=0;i&lt;item_num;i++)
+  item01[i]=&quot;&quot;;
+for(i=0;i&lt;item_num;i++)
+  for(j=0;j&lt;item01_word[i].length;j++)
+    item01[i]+=&quot;   | -&lt;img border=0 src=photo/20020403/list3.gif&gt;&lt;a class=childlink href=&quot;+item01_link[i][j]+&quot; onclick=javascript:this.blur();&gt;&quot;+item01_word[i][j]+&quot;&lt;/a&gt;&lt;br&gt;&quot;;
+
+//------------定义一个清空各菜单的函数--------------
+function closeItemTable01()
+{
+  for(i=0;i&lt;item_num;i++)
+  {
+    document.all.itemTable01.cells[2*i+1].innerHTML=&quot;&quot;;
+	item01Img[i].src=&quot;photo/20020403/list.gif&quot;;
+  }
+}
+//------------------定义结束----------------------
+
+//------------定义一个菜单展开的函数----------------
+function openItemTable01(n)
+{
+  if(document.all.itemTable01.cells[n*2+1].innerHTML==&quot;&quot;)
+  {
+    closeItemTable01();
+	item01Img[n].src=&quot;photo/20020403/list2.gif&quot;;
+    document.all.itemTable01.cells[n*2+1].innerHTML=item01[n];
+  }
+  else
+    closeItemTable01();
+}
+//------------------定义结束----------------------
+
+var item01_view=new Array();
+item01_view[0]=&quot;&lt;table id=itemTable01 cellpadding=0 cellspacing=0 border=0&gt;\n&quot;;
+item01_view[1]=&quot;  &lt;tr&gt;&lt;td valign=bottom&gt;  -&lt;img name=item01Img name=treeImg src=photo/20020403/list.gif border=0&gt;&lt;a id=item_1 class=parentlink href=javascript: onclick=javascript:openItemTable01(0);this.blur();&gt;市长室&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;\n&quot;;
+item01_view[2]=&quot;  &lt;tr&gt;&lt;td class=childlink&gt;&lt;/td&gt;&lt;/tr&gt;\n&quot;;
+item01_view[3]=&quot;  &lt;tr&gt;&lt;td valign=bottom&gt;  -&lt;img name=item01Img name=treeImg src=photo/20020403/list.gif border=0&gt;&lt;a id=item_2 class=parentlink href=javascript: onclick=javascript:openItemTable01(1);this.blur();&gt;政府政务&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;\n&quot;;
+item01_view[4]=&quot;  &lt;tr&gt;&lt;td class=childlink&gt;&lt;/td&gt;&lt;/tr&gt;\n&quot;;
+item01_view[5]=&quot;  &lt;tr&gt;&lt;td valign=bottom&gt;  -&lt;img name=item01Img name=treeImg src=photo/20020403/list.gif border=0&gt;&lt;a id=item_3 class=parentlink href=javascript: onclick=javascript:openItemTable01(2);this.blur();&gt;政策法规&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;\n&quot;;
+item01_view[6]=&quot;  &lt;tr&gt;&lt;td class=childlink&gt;&lt;/td&gt;&lt;/tr&gt;\n&quot;;
+item01_view[7]=&quot;&lt;/table&gt;\n&quot;;
+
+var item01_all=&quot;&quot;;
+for(i=0;i&lt;item01_view.length;i++)
+  item01_all+=item01_view[i];
+&lt;/script&gt;
+&lt;script&gt;
+//菜单一 first item----------------------------------------------------------
+
+var item_num=3;  //父层菜单的行数 Hom many rows is the parent item
+var item00_word=new Array();  //菜单的文字 The words of the child item
+for(i=0;i&lt;item_num;i++)
+  item00_word[i]=new Array();
+
+  item00_word[0][0]=&quot;市长致词00&quot;;
+  item00_word[0][1]=&quot;市民意见&quot;;
+  item00_word[0][2]=&quot;市民投诉&quot;;
+
+  item00_word[1][0]=&quot;市政领导00&quot;;
+  item00_word[1][1]=&quot;部门机构&quot;;
+  item00_word[1][2]=&quot;部门职责&quot;;
+
+  item00_word[2][0]=&quot;最新发布00&quot;;
+  item00_word[2][1]=&quot;综合经济&quot;;
+  item00_word[2][2]=&quot;科教文化&quot;;
+
+var item00_link=new Array();  //菜单的链接 The links of the child item 
+for(i=0;i&lt;item_num;i++)
+  item00_link[i]=new Array();
+  item00_link[0][0]=&quot;#none&quot;;
+  item00_link[0][1]=&quot;#none&quot;
+  item00_link[0][2]=&quot;#none&quot;
+
+  item00_link[1][0]=&quot;#none&quot;;
+  item00_link[1][1]=&quot;#none&quot;;
+  item00_link[1][2]=&quot;#none&quot;;
+
+  item00_link[2][0]=&quot;#none&quot;;
+  item00_link[2][1]=&quot;#none&quot;;
+  item00_link[2][2]=&quot;#none&quot;;
+
+var item00=new Array();  //菜单的HTML The HTML code of the child item
+for(i=0;i&lt;item_num;i++)
+  item00[i]=&quot;&quot;;
+for(i=0;i&lt;item_num;i++)
+  for(j=0;j&lt;item00_word[i].length;j++)
+    item00[i]+=&quot;   | -&lt;img border=0 src=photo/20020403/list3.gif&gt;&lt;a class=childlink href=&quot;+item00_link[i][j]+&quot; onclick=javascript:this.blur();&gt;&quot;+item00_word[i][j]+&quot;&lt;/a&gt;&lt;br&gt;&quot;;
+
+//------------定义一个清空各菜单的函数--------------
+function closeItemTable00()
+{
+  for(i=0;i&lt;item_num;i++)
+  {
+    document.all.itemTable00.cells[2*i+1].innerHTML=&quot;&quot;;
+	item00Img[i].src=&quot;photo/20020403/list.gif&quot;;
+  }
+}
+//------------------定义结束----------------------
+
+//------------定义一个菜单展开的函数----------------
+function openItemTable00(n)
+{
+  if(document.all.itemTable00.cells[n*2+1].innerHTML==&quot;&quot;)
+  {
+    closeItemTable00();
+	item00Img[n].src=&quot;photo/20020403/list2.gif&quot;;
+    document.all.itemTable00.cells[n*2+1].innerHTML=item00[n];
+  }
+  else
+    closeItemTable00();
+}
+//------------------定义结束----------------------
+
+var item00_view=new Array();
+item00_view[0]=&quot;&lt;table id=itemTable00 cellpadding=0 cellspacing=0 border=0&gt;\n&quot;;
+item00_view[1]=&quot;  &lt;tr&gt;&lt;td valign=bottom&gt;  -&lt;img name=item00Img name=treeImg src=photo/20020403/list.gif border=0&gt;&lt;a id=item_1 class=parentlink href=javascript: onclick=javascript:openItemTable00(0);this.blur();&gt;市长室&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;\n&quot;;
+item00_view[2]=&quot;  &lt;tr&gt;&lt;td class=childlink&gt;&lt;/td&gt;&lt;/tr&gt;\n&quot;;
+item00_view[3]=&quot;  &lt;tr&gt;&lt;td valign=bottom&gt;  -&lt;img name=item00Img name=treeImg src=photo/20020403/list.gif border=0&gt;&lt;a id=item_2 class=parentlink href=javascript: onclick=javascript:openItemTable00(1);this.blur();&gt;政府政务&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;\n&quot;;
+item00_view[4]=&quot;  &lt;tr&gt;&lt;td class=childlink&gt;&lt;/td&gt;&lt;/tr&gt;\n&quot;;
+item00_view[5]=&quot;  &lt;tr&gt;&lt;td valign=bottom&gt;  -&lt;img name=item00Img name=treeImg src=photo/20020403/list.gif border=0&gt;&lt;a id=item_3 class=parentlink href=javascript: onclick=javascript:openItemTable00(2);this.blur();&gt;政策法规&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;\n&quot;;
+item00_view[6]=&quot;  &lt;tr&gt;&lt;td class=childlink&gt;&lt;/td&gt;&lt;/tr&gt;\n&quot;;
+item00_view[7]=&quot;&lt;/table&gt;\n&quot;;
+
+var item00_all=&quot;&quot;;
+for(i=0;i&lt;item00_view.length;i++)
+  item00_all+=item00_view[i];
+&lt;/script&gt;
+
+&lt;script language=javascript&gt;
+
+function closeTopTree()
+{
+  for(i=0;i&lt;topTreeTable.cells.length/2;i++)
+  {
+    topTreeTable.cells[2*i+1].innerHTML=&quot;&quot;;
+	treeImg[i].src=&quot;photo/20020403/list.gif&quot;;
+  }
+}
+
+function openTopTree(n)
+{
+  if(topTreeTable.cells[2*n+1].innerHTML==&quot;&quot;)
+  {
+    closeTopTree();
+	treeImg[n].src=&quot;photo/20020403/list2.gif&quot;;
+	switch(n)
+	{
+	  case 0 : {topTreeTable.cells[2*n+1].innerHTML=item00_all;break;}
+	  case 1 : {topTreeTable.cells[2*n+1].innerHTML=item01_all;break;}
+	  case 2 : {topTreeTable.cells[2*n+1].innerHTML=item02_all;break;}
+	}
+  }
+  else
+    closeTopTree();
+}
+
+
+&lt;/script&gt;
+&lt;table id=topTreeTable background=photo/20020403/line1.gif style=&quot;border-collapse: collapse; background-image: url('photo/20020403/line.gif'); background-repeat: repeat-y; background-position-x: 0px&quot; cellpadding=0 cellspacing=0 border=0&gt;
+  &lt;tr&gt;
+    &lt;td height=20&gt;&lt;img name=treeImg src=photo/20020403/list.gif border=0&gt;&lt;a id=top1 href=#none onclick=&quot;openTopTree(0);&quot;&gt;顶层一&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td height=20&gt;&lt;img name=treeImg src=photo/20020403/list.gif border=0&gt;&lt;a href=#none onclick=&quot;openTopTree(1);&quot;&gt;顶层二&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td height=20&gt;&lt;img name=treeImg src=photo/20020403/list.gif border=0&gt;&lt;a href=#none onclick=&quot;openTopTree(2);&quot;&gt;顶层三&lt;/a&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+
+
+
+&nbsp;
+
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

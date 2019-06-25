@@ -1,0 +1,371 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--鼠标旋转效果(八)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body bgcolor=#000000">
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">鼠标旋转效果(八)</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=714" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<script language="JavaScript">
+<!--
+var CoLoUrS=new Array('ff0000','ffffff','0000ff','ffffff');//<--Add own/more colours here!
+var dots=16;
+var ThingsInArray;
+var step=0.3;
+var a_StEp=0.05;
+var RunTime=0;
+var currStep = 0;
+var Xpos = 0;
+var Ypos = 0;
+var cntr=70;
+var count_a=0;
+var move_a=1;
+var curColour;
+var count=0;
+var move=1;
+var brwsr=(document.layers)?1:0;
+if (brwsr){
+for (i=0; i < dots; i++){
+document.write('<LAYER NAME="a'+i+'" LEFT=0 TOP=0 BGCOLOR=#ffffff CLIP="0,0,2,2"></LAYER>');
+}
+var x = document; 
+ThingsInArray=new Array(x.a0,x.a1,x.a2,x.a3,x.a4,x.a5,x.a6,x.a7,x.a8,x.a9,x.a10,x.a11,x.a12,x.a13,x.a14,x.a15)
+}
+else{
+document.write('<div id="ieDiv" style="position:absolute;top:0px;left:0px"><div id="c" style="position:relative">');
+for (i=0; i < dots; i++){
+document.write('<div style="position:absolute;top:0px;left:0px;width:2px;height:2px;background:#ffffff;font-size:2px"></div>');
+}
+document.write('</div></div>');
+var x = ieDiv.all.c.all;
+ThingsInArray=new Array(x[0],x[1],x[2],x[3],x[4],x[5],x[6],x[7],x[8],x[9],x[10],x[11],x[12],x[13],x[14],x[15])
+}
+
+function colourStep(){
+count+=move;
+if (count >= ThingsInArray.length) {count=0;count_a+=move}
+if (count_a == CoLoUrS.length) count_a=0;
+if (brwsr) ThingsInArray[count].bgColor=CoLoUrS[count_a];
+else ThingsInArray[count].style.background=CoLoUrS[count_a];
+setTimeout('colourStep()',100)
+}
+function moveAbout(){
+if (brwsr){
+Ypos = window.pageYOffset+window.innerHeight/2 + window.innerHeight/3.1 * Math.cos((RunTime)/3)*Math.cos(RunTime/50);
+Xpos = window.pageXOffset+window.innerWidth/2 + window.innerWidth/2.4 * Math.sin((RunTime)/5)*Math.cos(RunTime/30);
+}
+else{ 
+Ypos = document.body.scrollTop+document.body.offsetHeight/2 + document.body.offsetHeight/2.8*Math.cos((RunTime)/3)*Math.cos(RunTime/10);
+Xpos=  document.body.scrollLeft+document.body.offsetWidth/2 + document.body.offsetWidth/2.4*Math.sin((RunTime)/5)*Math.sin(RunTime/20);
+ }
+RunTime+=a_StEp;
+Tma=setTimeout("moveAbout()", 10);
+}
+
+function TwistnSpin(){
+if (brwsr){
+ for ( i = 0 ; i < 16 ; i++ ) //number of NS layers!
+ {
+  var templayer="a"+i
+  document.layers[templayer].top = Ypos+cntr*Math.cos((currStep + i*4)/10.2)*Math.cos(currStep/10)
+  document.layers[templayer].left =Xpos+cntr*Math.sin((currStep + i*4)/10.2);
+ }
+}
+else{
+ for (i=0;i<ieDiv.all.c.all.length;i++)
+ {                                          
+ ieDiv.all.c.all[i].style.top = Ypos+cntr*Math.cos((currStep + i*4)/10.2)*Math.cos(currStep/10)
+ ieDiv.all.c.all[i].style.left= Xpos+cntr*Math.sin((currStep + i*4)/10.2); 
+ }
+}
+currStep+=step;
+setTimeout("TwistnSpin()",10);
+}
+function Shrink(){
+cntr-=0.5;
+GoShrink=setTimeout('Shrink()',10);
+if (cntr <=20)
+{clearTimeout(GoShrink);Swell()}
+}
+function Swell(){
+cntr+=0.5;
+GoSwell=setTimeout('Swell()',10);
+if (cntr >=70)
+{clearTimeout(GoSwell);Shrink()} 
+}
+function StArTuP(){
+moveAbout();
+TwistnSpin();
+Shrink();
+colourStep();
+}
+StArTuP();
+// -->
+</script></fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+第一步:把如下代码加入<body>区域中
+&nbsp;&lt;script language=&quot;JavaScript&quot;&gt;
+&lt;!--
+var CoLoUrS=new Array('ff0000','ffffff','0000ff','ffffff');//&lt;--Add own/more colours here!
+var dots=16;
+var ThingsInArray;
+var step=0.3;
+var a_StEp=0.05;
+var RunTime=0;
+var currStep = 0;
+var Xpos = 0;
+var Ypos = 0;
+var cntr=70;
+var count_a=0;
+var move_a=1;
+var curColour;
+var count=0;
+var move=1;
+var brwsr=(document.layers)?1:0;
+if (brwsr){
+for (i=0; i &lt; dots; i++){
+document.write('&lt;LAYER NAME=&quot;a'+i+'&quot; LEFT=0 TOP=0 BGCOLOR=#ffffff CLIP=&quot;0,0,2,2&quot;&gt;&lt;/LAYER&gt;');
+}
+var x = document; 
+ThingsInArray=new Array(x.a0,x.a1,x.a2,x.a3,x.a4,x.a5,x.a6,x.a7,x.a8,x.a9,x.a10,x.a11,x.a12,x.a13,x.a14,x.a15)
+}
+else{
+document.write('&lt;div id=&quot;ieDiv&quot; style=&quot;position:absolute;top:0px;left:0px&quot;&gt;&lt;div id=&quot;c&quot; style=&quot;position:relative&quot;&gt;');
+for (i=0; i &lt; dots; i++){
+document.write('&lt;div style=&quot;position:absolute;top:0px;left:0px;width:2px;height:2px;background:#ffffff;font-size:2px&quot;&gt;&lt;/div&gt;');
+}
+document.write('&lt;/div&gt;&lt;/div&gt;');
+var x = ieDiv.all.c.all;
+ThingsInArray=new Array(x[0],x[1],x[2],x[3],x[4],x[5],x[6],x[7],x[8],x[9],x[10],x[11],x[12],x[13],x[14],x[15])
+}
+
+function colourStep(){
+count+=move;
+if (count &gt;= ThingsInArray.length) {count=0;count_a+=move}
+if (count_a == CoLoUrS.length) count_a=0;
+if (brwsr) ThingsInArray[count].bgColor=CoLoUrS[count_a];
+else ThingsInArray[count].style.background=CoLoUrS[count_a];
+setTimeout('colourStep()',100)
+}
+function moveAbout(){
+if (brwsr){
+Ypos = window.pageYOffset+window.innerHeight/2 + window.innerHeight/3.1 * Math.cos((RunTime)/3)*Math.cos(RunTime/50);
+Xpos = window.pageXOffset+window.innerWidth/2 + window.innerWidth/2.4 * Math.sin((RunTime)/5)*Math.cos(RunTime/30);
+}
+else{ 
+Ypos = document.body.scrollTop+document.body.offsetHeight/2 + document.body.offsetHeight/2.8*Math.cos((RunTime)/3)*Math.cos(RunTime/10);
+Xpos=  document.body.scrollLeft+document.body.offsetWidth/2 + document.body.offsetWidth/2.4*Math.sin((RunTime)/5)*Math.sin(RunTime/20);
+ }
+RunTime+=a_StEp;
+Tma=setTimeout(&quot;moveAbout()&quot;, 10);
+}
+
+function TwistnSpin(){
+if (brwsr){
+ for ( i = 0 ; i &lt; 16 ; i++ ) //number of NS layers!
+ {
+  var templayer=&quot;a&quot;+i
+  document.layers[templayer].top = Ypos+cntr*Math.cos((currStep + i*4)/10.2)*Math.cos(currStep/10)
+  document.layers[templayer].left =Xpos+cntr*Math.sin((currStep + i*4)/10.2);
+ }
+}
+else{
+ for (i=0;i&lt;ieDiv.all.c.all.length;i++)
+ {                                          
+ ieDiv.all.c.all[i].style.top = Ypos+cntr*Math.cos((currStep + i*4)/10.2)*Math.cos(currStep/10)
+ ieDiv.all.c.all[i].style.left= Xpos+cntr*Math.sin((currStep + i*4)/10.2); 
+ }
+}
+currStep+=step;
+setTimeout(&quot;TwistnSpin()&quot;,10);
+}
+function Shrink(){
+cntr-=0.5;
+GoShrink=setTimeout('Shrink()',10);
+if (cntr &lt;=20)
+{clearTimeout(GoShrink);Swell()}
+}
+function Swell(){
+cntr+=0.5;
+GoSwell=setTimeout('Swell()',10);
+if (cntr &gt;=70)
+{clearTimeout(GoSwell);Shrink()} 
+}
+function StArTuP(){
+moveAbout();
+TwistnSpin();
+Shrink();
+colourStep();
+}
+StArTuP();
+// --&gt;
+&lt;/script&gt;
+
+
+
+&nbsp;
+第二步:把如下代码加入<body>区域中<body bgcolor=#000000">
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

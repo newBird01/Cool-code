@@ -1,0 +1,503 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--固定的页面时钟</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body onload=javascript:startClock();>
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">固定的页面时钟</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=72" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<STYLE>.num {
+	COLOR: white; WIDTH: 30px
+}
+</STYLE>
+<SCRIPT language=JavaScript>
+<!--
+pX = 100;
+pY = 100;
+obs = new Array(13);
+function ob() {
+for (i = 0; i < 13; i++) {
+if (document.all) obs[i] = new Array (eval('ob'+i).style,-100,-100);
+else obs[i] = new Array (eval('document.ob'+i),-100,-100);
+   }
+}
+function cl(a, b, c) {
+if (document.all) {
+if (a != 0) b += -1;
+eval('c'+a+'.style.pixelTop='+(pY+(c)));
+eval('c'+a+'.style.pixelLeft='+(pX+(b)));
+}
+else {
+if (a != 0) b += 10;
+eval('document.c'+a+'.top='+(pY+(c)));
+eval('document.c'+a+'.left='+(pX+(b)));
+   }
+}
+function runClock() {
+for (i = 0; i < 13; i++) {
+obs[i][0].left=obs[i][1]+pX;
+obs[i][0].top=obs[i][2]+pY;
+   }
+}
+var lastsec;
+function timer() {
+time = new Date ();
+sec = time.getSeconds();
+if (sec != lastsec) {
+lastsec = sec;
+sec = Math.PI * sec / 30;
+min = Math.PI * time.getMinutes() / 30;
+hr = Math.PI * time.getHours() / 6 + Math.PI * parseInt(time.getMinutes()) / 360;
+for (i = 1; i < 6; i++) {
+obs[i][1] = Math.sin(sec) * (44 - (i-1) * 11) - 16;
+if (document.layers)obs[i][1] += 10;
+obs[i][2] = -Math.cos(sec) * (44 - (i-1) * 11) - 27;
+}
+for (i = 6;i < 10; i++) {
+obs[i][1] = Math.sin(min) * (40 - (i-6) * 10) - 16;
+if (document.layers)obs[i][1] += 10;
+obs[i][2] = -Math.cos(min) * (40 - (i-6) * 10) - 27;
+}
+for (i = 10; i < 13; i++) {
+obs[i][1] = Math.sin(hr) * (37 - (i-10) * 11) - 16;
+if (document.layers)obs[i][1] += 10;
+obs[i][2] = -Math.cos(hr) * (37 - (i-10) * 11) - 27;
+      }
+   }
+}
+function setNum() {
+cl (0, -67, -65);
+cl (1, 10, -51);
+cl (2, 28, -33);
+cl (3, 35, -8);
+cl (4, 28, 17);
+cl (5, 10, 35);
+cl (6, -15, 42);
+cl (7, -40, 35);
+cl (8, -58, 17);
+cl (9, -65, -8);
+cl (10, -58, -33);
+cl (11, -40, -51);
+cl (12, -16, -56);
+}
+function startClock() {
+ob();
+setNum();
+setInterval('timer()', 100);
+setInterval('runClock()', 100);
+}
+//-->
+</SCRIPT>
+
+<DIV id=c0 style="LEFT: 36px; POSITION: absolute; TOP: 36px; Z-INDEX: 2">
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD bgColor=#000000 height=120 width=120></TD></TR></TBODY></TABLE></DIV>
+<DIV class=num id=c1 
+style="FONT-SIZE: 11px; LEFT: 20px; POSITION: absolute; TOP: -20px; Z-INDEX: 5"><B>1</B> 
+</DIV>
+<DIV class=num id=c2 
+style="FONT-SIZE: 11px; LEFT: 20px; POSITION: absolute; TOP: -20px; Z-INDEX: 5"><B>2</B> 
+</DIV>
+<DIV class=num id=c3 
+style="FONT-SIZE: 11px; LEFT: 20px; POSITION: absolute; TOP: -20px; Z-INDEX: 5"><B>3</B> 
+</DIV>
+<DIV class=num id=c4 
+style="FONT-SIZE: 11px; LEFT: 20px; POSITION: absolute; TOP: -20px; Z-INDEX: 5"><B>4</B> 
+</DIV>
+<DIV class=num id=c5 
+style="FONT-SIZE: 11px; LEFT: 20px; POSITION: absolute; TOP: -20px; Z-INDEX: 5"><B>5</B> 
+</DIV>
+<DIV class=num id=c6 
+style="FONT-SIZE: 11px; LEFT: 20px; POSITION: absolute; TOP: -20px; Z-INDEX: 5"><B>6</B> 
+</DIV>
+<DIV class=num id=c7 
+style="FONT-SIZE: 11px; LEFT: 20px; POSITION: absolute; TOP: -20px; Z-INDEX: 5"><B>7</B> 
+</DIV>
+<DIV class=num id=c8 
+style="FONT-SIZE: 11px; LEFT: 20px; POSITION: absolute; TOP: -20px; Z-INDEX: 5"><B>8</B> 
+</DIV>
+<DIV class=num id=c9 
+style="FONT-SIZE: 11px; LEFT: 20px; POSITION: absolute; TOP: -20px; Z-INDEX: 5"><B>9</B> 
+</DIV>
+<DIV class=num id=c10 
+style="FONT-SIZE: 11px; LEFT: 20px; POSITION: absolute; TOP: -20px; Z-INDEX: 5"><B>10</B> 
+</DIV>
+<DIV class=num id=c11 
+style="FONT-SIZE: 11px; LEFT: 20px; POSITION: absolute; TOP: -20px; Z-INDEX: 5"><B>11</B> 
+</DIV>
+<DIV class=num id=c12 
+style="FONT-SIZE: 11px; LEFT: 20px; POSITION: absolute; TOP: -20px; Z-INDEX: 5"><B>12</B> 
+</DIV>
+<DIV class=num id=ob0 
+style="LEFT: -20px; POSITION: absolute; TOP: -20px; Z-INDEX: 1"></DIV>
+<DIV class=num id=ob1 
+style="LEFT: -20px; POSITION: absolute; TOP: -20px; Z-INDEX: 8"><FONT 
+color=#0000ff size=+3><B>.</B></FONT> </DIV>
+<DIV class=num id=ob2 
+style="LEFT: -20px; POSITION: absolute; TOP: -20px; Z-INDEX: 8"><FONT 
+color=#0000ff size=+3><B>.</B></FONT> </DIV>
+<DIV class=num id=ob3 
+style="LEFT: -20px; POSITION: absolute; TOP: -20px; Z-INDEX: 8"><FONT 
+color=#0000ff size=+3><B>.</B></FONT> </DIV>
+<DIV class=num id=ob4 
+style="LEFT: -20px; POSITION: absolute; TOP: -20px; Z-INDEX: 8"><FONT 
+color=#0000ff size=+3><B>.</B></FONT> </DIV>
+<DIV class=num id=ob5 
+style="LEFT: -20px; POSITION: absolute; TOP: -20px; Z-INDEX: 8"><FONT 
+color=#0000ff size=+3><B>.</B></FONT> </DIV>
+<DIV class=num id=ob6 
+style="LEFT: -20px; POSITION: absolute; TOP: -20px; Z-INDEX: 7"><FONT 
+color=#00ffff size=+3><B>.</B></FONT> </DIV>
+<DIV class=num id=ob7 
+style="LEFT: -20px; POSITION: absolute; TOP: -20px; Z-INDEX: 7"><FONT 
+color=#00ffff size=+3><B>.</B></FONT> </DIV>
+<DIV class=num id=ob8 
+style="LEFT: -20px; POSITION: absolute; TOP: -20px; Z-INDEX: 7"><FONT 
+color=#00ffff size=+3><B>.</B></FONT> </DIV>
+<DIV class=num id=ob9 
+style="LEFT: -20px; POSITION: absolute; TOP: -20px; Z-INDEX: 7"><FONT 
+color=#00ffff size=+3><B>.</B></FONT> </DIV>
+<DIV class=num id=ob10 
+style="LEFT: -20px; POSITION: absolute; TOP: -20px; Z-INDEX: 6"><FONT 
+color=#ffff00 size=+3><B>.</B></FONT> </DIV>
+<DIV class=num id=ob11 
+style="LEFT: -20px; POSITION: absolute; TOP: -20px; Z-INDEX: 6"><FONT 
+color=#ffff00 size=+3><B>.</B></FONT> </DIV>
+<DIV class=num id=ob12 
+style="LEFT: -20px; POSITION: absolute; TOP: -20px; Z-INDEX: 6"><FONT 
+color=#ffff00 size=+3><B>.</B></FONT> </DIV></fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+第一步:把如下代码加入<body>区域中
+&nbsp;&lt;STYLE&gt;.num {
+	COLOR: white; WIDTH: 30px
+}
+&lt;/STYLE&gt;
+&lt;SCRIPT language=JavaScript&gt;
+&lt;!--
+pX = 100;
+pY = 100;
+obs = new Array(13);
+function ob() {
+for (i = 0; i &lt; 13; i++) {
+if (document.all) obs[i] = new Array (eval('ob'+i).style,-100,-100);
+else obs[i] = new Array (eval('document.ob'+i),-100,-100);
+   }
+}
+function cl(a, b, c) {
+if (document.all) {
+if (a != 0) b += -1;
+eval('c'+a+'.style.pixelTop='+(pY+(c)));
+eval('c'+a+'.style.pixelLeft='+(pX+(b)));
+}
+else {
+if (a != 0) b += 10;
+eval('document.c'+a+'.top='+(pY+(c)));
+eval('document.c'+a+'.left='+(pX+(b)));
+   }
+}
+function runClock() {
+for (i = 0; i &lt; 13; i++) {
+obs[i][0].left=obs[i][1]+pX;
+obs[i][0].top=obs[i][2]+pY;
+   }
+}
+var lastsec;
+function timer() {
+time = new Date ();
+sec = time.getSeconds();
+if (sec != lastsec) {
+lastsec = sec;
+sec = Math.PI * sec / 30;
+min = Math.PI * time.getMinutes() / 30;
+hr = Math.PI * time.getHours() / 6 + Math.PI * parseInt(time.getMinutes()) / 360;
+for (i = 1; i &lt; 6; i++) {
+obs[i][1] = Math.sin(sec) * (44 - (i-1) * 11) - 16;
+if (document.layers)obs[i][1] += 10;
+obs[i][2] = -Math.cos(sec) * (44 - (i-1) * 11) - 27;
+}
+for (i = 6;i &lt; 10; i++) {
+obs[i][1] = Math.sin(min) * (40 - (i-6) * 10) - 16;
+if (document.layers)obs[i][1] += 10;
+obs[i][2] = -Math.cos(min) * (40 - (i-6) * 10) - 27;
+}
+for (i = 10; i &lt; 13; i++) {
+obs[i][1] = Math.sin(hr) * (37 - (i-10) * 11) - 16;
+if (document.layers)obs[i][1] += 10;
+obs[i][2] = -Math.cos(hr) * (37 - (i-10) * 11) - 27;
+      }
+   }
+}
+function setNum() {
+cl (0, -67, -65);
+cl (1, 10, -51);
+cl (2, 28, -33);
+cl (3, 35, -8);
+cl (4, 28, 17);
+cl (5, 10, 35);
+cl (6, -15, 42);
+cl (7, -40, 35);
+cl (8, -58, 17);
+cl (9, -65, -8);
+cl (10, -58, -33);
+cl (11, -40, -51);
+cl (12, -16, -56);
+}
+function startClock() {
+ob();
+setNum();
+setInterval('timer()', 100);
+setInterval('runClock()', 100);
+}
+//--&gt;
+&lt;/SCRIPT&gt;
+
+&lt;DIV id=c0 style=&quot;LEFT: 36px; POSITION: absolute; TOP: 36px; Z-INDEX: 2&quot;&gt;
+&lt;TABLE&gt;
+  &lt;TBODY&gt;
+  &lt;TR&gt;
+    &lt;TD bgColor=#000000 height=120 width=120&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/DIV&gt;
+&lt;DIV class=num id=c1 
+style=&quot;FONT-SIZE: 11px; LEFT: 20px; POSITION: absolute; TOP: -20px; Z-INDEX: 5&quot;&gt;&lt;B&gt;1&lt;/B&gt; 
+&lt;/DIV&gt;
+&lt;DIV class=num id=c2 
+style=&quot;FONT-SIZE: 11px; LEFT: 20px; POSITION: absolute; TOP: -20px; Z-INDEX: 5&quot;&gt;&lt;B&gt;2&lt;/B&gt; 
+&lt;/DIV&gt;
+&lt;DIV class=num id=c3 
+style=&quot;FONT-SIZE: 11px; LEFT: 20px; POSITION: absolute; TOP: -20px; Z-INDEX: 5&quot;&gt;&lt;B&gt;3&lt;/B&gt; 
+&lt;/DIV&gt;
+&lt;DIV class=num id=c4 
+style=&quot;FONT-SIZE: 11px; LEFT: 20px; POSITION: absolute; TOP: -20px; Z-INDEX: 5&quot;&gt;&lt;B&gt;4&lt;/B&gt; 
+&lt;/DIV&gt;
+&lt;DIV class=num id=c5 
+style=&quot;FONT-SIZE: 11px; LEFT: 20px; POSITION: absolute; TOP: -20px; Z-INDEX: 5&quot;&gt;&lt;B&gt;5&lt;/B&gt; 
+&lt;/DIV&gt;
+&lt;DIV class=num id=c6 
+style=&quot;FONT-SIZE: 11px; LEFT: 20px; POSITION: absolute; TOP: -20px; Z-INDEX: 5&quot;&gt;&lt;B&gt;6&lt;/B&gt; 
+&lt;/DIV&gt;
+&lt;DIV class=num id=c7 
+style=&quot;FONT-SIZE: 11px; LEFT: 20px; POSITION: absolute; TOP: -20px; Z-INDEX: 5&quot;&gt;&lt;B&gt;7&lt;/B&gt; 
+&lt;/DIV&gt;
+&lt;DIV class=num id=c8 
+style=&quot;FONT-SIZE: 11px; LEFT: 20px; POSITION: absolute; TOP: -20px; Z-INDEX: 5&quot;&gt;&lt;B&gt;8&lt;/B&gt; 
+&lt;/DIV&gt;
+&lt;DIV class=num id=c9 
+style=&quot;FONT-SIZE: 11px; LEFT: 20px; POSITION: absolute; TOP: -20px; Z-INDEX: 5&quot;&gt;&lt;B&gt;9&lt;/B&gt; 
+&lt;/DIV&gt;
+&lt;DIV class=num id=c10 
+style=&quot;FONT-SIZE: 11px; LEFT: 20px; POSITION: absolute; TOP: -20px; Z-INDEX: 5&quot;&gt;&lt;B&gt;10&lt;/B&gt; 
+&lt;/DIV&gt;
+&lt;DIV class=num id=c11 
+style=&quot;FONT-SIZE: 11px; LEFT: 20px; POSITION: absolute; TOP: -20px; Z-INDEX: 5&quot;&gt;&lt;B&gt;11&lt;/B&gt; 
+&lt;/DIV&gt;
+&lt;DIV class=num id=c12 
+style=&quot;FONT-SIZE: 11px; LEFT: 20px; POSITION: absolute; TOP: -20px; Z-INDEX: 5&quot;&gt;&lt;B&gt;12&lt;/B&gt; 
+&lt;/DIV&gt;
+&lt;DIV class=num id=ob0 
+style=&quot;LEFT: -20px; POSITION: absolute; TOP: -20px; Z-INDEX: 1&quot;&gt;&lt;/DIV&gt;
+&lt;DIV class=num id=ob1 
+style=&quot;LEFT: -20px; POSITION: absolute; TOP: -20px; Z-INDEX: 8&quot;&gt;&lt;FONT 
+color=#0000ff size=+3&gt;&lt;B&gt;.&lt;/B&gt;&lt;/FONT&gt; &lt;/DIV&gt;
+&lt;DIV class=num id=ob2 
+style=&quot;LEFT: -20px; POSITION: absolute; TOP: -20px; Z-INDEX: 8&quot;&gt;&lt;FONT 
+color=#0000ff size=+3&gt;&lt;B&gt;.&lt;/B&gt;&lt;/FONT&gt; &lt;/DIV&gt;
+&lt;DIV class=num id=ob3 
+style=&quot;LEFT: -20px; POSITION: absolute; TOP: -20px; Z-INDEX: 8&quot;&gt;&lt;FONT 
+color=#0000ff size=+3&gt;&lt;B&gt;.&lt;/B&gt;&lt;/FONT&gt; &lt;/DIV&gt;
+&lt;DIV class=num id=ob4 
+style=&quot;LEFT: -20px; POSITION: absolute; TOP: -20px; Z-INDEX: 8&quot;&gt;&lt;FONT 
+color=#0000ff size=+3&gt;&lt;B&gt;.&lt;/B&gt;&lt;/FONT&gt; &lt;/DIV&gt;
+&lt;DIV class=num id=ob5 
+style=&quot;LEFT: -20px; POSITION: absolute; TOP: -20px; Z-INDEX: 8&quot;&gt;&lt;FONT 
+color=#0000ff size=+3&gt;&lt;B&gt;.&lt;/B&gt;&lt;/FONT&gt; &lt;/DIV&gt;
+&lt;DIV class=num id=ob6 
+style=&quot;LEFT: -20px; POSITION: absolute; TOP: -20px; Z-INDEX: 7&quot;&gt;&lt;FONT 
+color=#00ffff size=+3&gt;&lt;B&gt;.&lt;/B&gt;&lt;/FONT&gt; &lt;/DIV&gt;
+&lt;DIV class=num id=ob7 
+style=&quot;LEFT: -20px; POSITION: absolute; TOP: -20px; Z-INDEX: 7&quot;&gt;&lt;FONT 
+color=#00ffff size=+3&gt;&lt;B&gt;.&lt;/B&gt;&lt;/FONT&gt; &lt;/DIV&gt;
+&lt;DIV class=num id=ob8 
+style=&quot;LEFT: -20px; POSITION: absolute; TOP: -20px; Z-INDEX: 7&quot;&gt;&lt;FONT 
+color=#00ffff size=+3&gt;&lt;B&gt;.&lt;/B&gt;&lt;/FONT&gt; &lt;/DIV&gt;
+&lt;DIV class=num id=ob9 
+style=&quot;LEFT: -20px; POSITION: absolute; TOP: -20px; Z-INDEX: 7&quot;&gt;&lt;FONT 
+color=#00ffff size=+3&gt;&lt;B&gt;.&lt;/B&gt;&lt;/FONT&gt; &lt;/DIV&gt;
+&lt;DIV class=num id=ob10 
+style=&quot;LEFT: -20px; POSITION: absolute; TOP: -20px; Z-INDEX: 6&quot;&gt;&lt;FONT 
+color=#ffff00 size=+3&gt;&lt;B&gt;.&lt;/B&gt;&lt;/FONT&gt; &lt;/DIV&gt;
+&lt;DIV class=num id=ob11 
+style=&quot;LEFT: -20px; POSITION: absolute; TOP: -20px; Z-INDEX: 6&quot;&gt;&lt;FONT 
+color=#ffff00 size=+3&gt;&lt;B&gt;.&lt;/B&gt;&lt;/FONT&gt; &lt;/DIV&gt;
+&lt;DIV class=num id=ob12 
+style=&quot;LEFT: -20px; POSITION: absolute; TOP: -20px; Z-INDEX: 6&quot;&gt;&lt;FONT 
+color=#ffff00 size=+3&gt;&lt;B&gt;.&lt;/B&gt;&lt;/FONT&gt; &lt;/DIV&gt;
+
+
+
+&nbsp;
+第二步:把如下代码加入<body>区域中<body onload=javascript:startClock();>
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

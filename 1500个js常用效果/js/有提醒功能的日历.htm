@@ -1,0 +1,745 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--有提醒功能的日历</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body bgcolor=#FFFFFF>
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">有提醒功能的日历</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=78" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<script LANGUAGE="JavaScript">
+<!--
+var caution = false
+
+function setCookie(name, value, expires, path, domain, secure) {
+	var curCookie = name + "=" + escape(value) +
+		((expires) ? "; expires=" + expires.toGMTString() : "") +
+		((path) ? "; path=" + path : "") +
+		((domain) ? "; domain=" + domain : "") +
+		((secure) ? "; secure" : "")
+	if (!caution || (name + "=" + escape(value)).length <= 4000)
+		document.cookie = curCookie
+	else
+		if (confirm("Cookie exceeds 4KB and will be cut!"))
+			document.cookie = curCookie
+}
+
+// name - name of the desired cookie
+// * return string containing value of specified cookie or null if cookie does not exist
+function getCookie(name) {
+	var prefix = name + "="
+	var cookieStartIndex = document.cookie.indexOf(prefix)
+	if (cookieStartIndex == -1)
+		return null
+	var cookieEndIndex = document.cookie.indexOf(";", cookieStartIndex + prefix.length)
+	if (cookieEndIndex == -1)
+		cookieEndIndex = document.cookie.length
+	return unescape(document.cookie.substring(cookieStartIndex + prefix.length, cookieEndIndex))
+}
+
+
+function deleteCookie(name, path, domain) {
+	if (getCookie(name)) {
+		document.cookie = name + "=" + 
+		((path) ? "; path=" + path : "") +
+		((domain) ? "; domain=" + domain : "") +
+		"; expires=Thu, 01-Jan-70 00:00:01 GMT"
+	}
+}
+
+
+function fixDate(date) {
+	var base = new Date(0)
+	var skew = base.getTime()
+	if (skew > 0)
+		date.setTime(date.getTime() - skew)
+}
+
+function initCookie(monthName) {
+	
+	var text = ""
+	for (var i = 1; i <= 31; ++i) {
+		text += "^" + i + "^"
+	}
+
+	var now = new Date()
+	fixDate(now)
+
+	// set time to one month (31 days) in the future
+	now.setTime(now.getTime() + 1000 * 60 * 60 * 24 * 31)
+
+	setCookie(monthName + "Calendar", text, now)
+}
+
+function getSpecificReminder(num, monthName) {
+	var prefix = "^" + num + "^"
+	var totalCookie = getCookie(monthName + "Calendar")
+	var startIndex = totalCookie.indexOf(prefix, 0)
+	var startData = totalCookie.indexOf("^", startIndex + 1) + 1
+	if (num == 31)
+		var endData = totalCookie.length
+	else
+		var endData = totalCookie.indexOf("^", startData)
+	
+	return totalCookie.substring(startData, endData)
+}
+
+function setSpecificReminder(num, monthName, newValue) {
+	var prefix = "^" + num + "^"
+	var totalCookie = getCookie(monthName + "Calendar")
+	var startIndex = totalCookie.indexOf(prefix, 0)
+	var startData = totalCookie.indexOf("^", startIndex + 1) + 1
+		if (num == 31)
+		var endData = totalCookie.length
+	else
+		var endData = totalCookie.indexOf("^", startData)
+	var now = new Date()
+	fixDate(now)
+
+	// set time to one month (31 days) in the future
+	now.setTime(now.getTime() + 1000 * 60 * 60 * 24 * 31)
+
+	setCookie(monthName + "Calendar", totalCookie.substring(0, startData) + newValue + totalCookie.substring(endData, totalCookie.length), now)
+}
+
+function getInput(num, monthName) {
+	if (!getCookie(monthName + "Calendar")) 
+		initCookie(monthName)
+	var newValue = prompt("今天要提醒的事为:", getSpecificReminder(num, monthName))
+	if (newValue) // user did not cancel
+		setSpecificReminder(num, monthName, newValue)
+}
+
+function getTime() {
+	// initialize time-related variables with current time settings
+	var now = new Date()
+	var hour = now.getHours()
+	var minute = now.getMinutes()
+	now = null
+	var ampm = "" 
+
+	// validate hour values	and set value of ampm
+	if (hour >= 12) {
+		hour -= 12
+		ampm = "PM"
+	} else
+		ampm = "AM"
+	hour = (hour == 0) ? 12 : hour
+
+	// add zero digit to a one digit minute
+	if (minute < 10)
+		minute = "0" + minute // do not parse this number!
+
+	// return time string
+	return hour + ":" + minute + " " + ampm
+}
+
+function leapYear(year) {
+	if (year % 4 == 0) // basic rule
+		return true // is leap year
+	return false // is not leap year
+}
+
+function getDays(month, year) {
+	// create array to hold number of days in each month
+	var ar = new Array(12)
+	ar[0] = 31 // January
+	ar[1] = (leapYear(year)) ? 29 : 28 // February
+	ar[2] = 31 // March
+	ar[3] = 30 // April
+	ar[4] = 31 // May
+	ar[5] = 30 // June
+	ar[6] = 31 // July
+	ar[7] = 31 // August
+	ar[8] = 30 // September
+	ar[9] = 31 // October
+	ar[10] = 30 // November
+	ar[11] = 31 // December
+
+	// return number of days in the specified month (parameter)
+	return ar[month]
+}
+
+function getMonthName(month) {
+	// create array to hold name of each month
+	var ar = new Array(12)
+	ar[0] = "一月"
+	ar[1] = "二月"
+	ar[2] = "三月"
+	ar[3] = "四月"
+	ar[4] = "五月"
+	ar[5] = "六月"
+	ar[6] = "七月"
+	ar[7] = "八月"
+	ar[8] = "九月"
+	ar[9] = "十月"
+	ar[10] = "十一月"
+	ar[11] = "十二月"
+
+	// return name of specified month (parameter)
+	return ar[month]
+}
+
+function setCal() {
+	// standard time attributes
+	var now = new Date()
+	var year = now.getYear()
+	var month = now.getMonth()
+	var monthName = getMonthName(month)
+	var date = now.getDate()
+	now = null
+
+	// create instance of first day of month, and extract the day on which it occurs
+	var firstDayInstance = new Date(year, month, 1)
+	var firstDay = firstDayInstance.getDay()
+	firstDayInstance = null
+
+	// number of days in current month
+	var days = getDays(month, year)
+
+	// call function to draw calendar
+	drawCal(firstDay + 1, days, date, monthName, year)
+}
+
+function drawCal(firstDay, lastDate, date, monthName, year) {
+	// constant table settings
+	var headerHeight = 30 // height of the table's header cell
+	var border = 1 // 3D height of table's border
+	var cellspacing = 2 // width of table's border
+	var headerColor = "midnightblue" // color of table's header
+	var headerSize = "+3" // size of tables header font
+	var colWidth = 50 // width of columns in table
+	var dayCellHeight = 25 // height of cells containing days of the week
+	var dayColor = "darkblue" // color of font representing week days
+	var cellHeight = 20 // height of cells representing dates in the calendar
+	var todayColor = "red" // color specifying today's date in the calendar
+	var timeColor = "purple" // color of font representing current time
+
+	// create basic table structure
+	var text = "" // initialize accumulative variable to empty string
+	text += '<CENTER>'
+	text += '<TABLE BORDER=' + border + ' CELLSPACING=' + cellspacing + '>' // table settings
+	text += 	'<TH COLSPAN=7 ALIGN="center" VALIGN="center" HEIGHT=' + headerHeight + '>' // create table header cell
+	text += 		'<FONT COLOR="' + headerColor + '" SIZE=' + headerSize + '>' // set font for table header
+	text += 			monthName + ' ' + year 
+	text += 		'</FONT>' // close table header's font settings
+	text += 	'</TH>' // close header cell
+
+	// variables to hold constant settings
+	var openCol = '<TD ALIGN="center" VALIGN="center" WIDTH=' + colWidth + ' HEIGHT=' + dayCellHeight + '>'
+	openCol += '<FONT COLOR="' + dayColor + '">'
+	var closeCol = '</FONT></TD>'
+
+	// create array of abbreviated day names
+	var weekDay = new Array(7)
+	weekDay[0] = "星期日"
+	weekDay[1] = "星期一"
+	weekDay[2] = "星期二"
+	weekDay[3] = "星期三"
+	weekDay[4] = "星期四"
+	weekDay[5] = "星期五"
+	weekDay[6] = "星期六"
+	
+	// create first row of table to set column width and specify week day
+	text += '<TR ALIGN="center" VALIGN="center">'
+	for (var dayNum = 0; dayNum < 7; ++dayNum) {
+		text += openCol + weekDay[dayNum] + closeCol 
+	}
+	text += '</TR>'
+	
+	// declaration and initialization of two variables to help with tables
+	var digit = 1
+	var curCell = 1
+	
+	for (var row = 1; row <= Math.ceil((lastDate + firstDay - 1) / 7); ++row) {
+		text += '<TR ALIGN="center" VALIGN="top">'
+		for (var col = 1; col <= 7; ++col) {
+			if (digit > lastDate)
+				break
+			if (curCell < firstDay) {
+				text += '<TD></TD>';
+				curCell++
+			} else {
+				if (digit == date) { // current cell represent today's date
+					text += '<TD HEIGHT=' + cellHeight + '>'
+					text += '<FONT COLOR="' + todayColor + '">'
+					text += '<A HREF="javascript:getInput(' + digit + ', \'' + monthName + '\')" onMouseOver="window.status = \'Store or retrieve data for ' + monthName + ' ' + digit + '\'; return true"><FONT COLOR="' + todayColor + '">' + digit + '</FONT></A>'
+					text += '<BR>'
+					text += '<FONT COLOR="' + timeColor + '" SIZE=2>'
+					text += '<CENTER>' + getTime() + '</CENTER>'
+					text += '</FONT>'
+					text += '</TD>'
+				} else
+					text += '<TD HEIGHT=' + cellHeight + '><A HREF="javascript:getInput(' + digit + ', \'' + monthName + '\')" onMouseOver="window.status = \'Store or retrieve data for ' + monthName + ' ' + digit + '\'; return true">' + digit + '</A></TD>'
+				digit++
+			}
+		}
+		text += '</TR>'
+	}
+	
+	// close all basic table tags
+	text += '</TABLE>'
+	text += '</CENTER>'
+
+	// print accumulative HTML string
+	document.write(text) 
+}
+
+setCal()
+
+// -->
+</script>
+</fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+把如下代码加入<body>区域中
+&nbsp;&lt;script LANGUAGE=&quot;JavaScript&quot;&gt;
+&lt;!--
+var caution = false
+
+function setCookie(name, value, expires, path, domain, secure) {
+	var curCookie = name + &quot;=&quot; + escape(value) +
+		((expires) ? &quot;; expires=&quot; + expires.toGMTString() : &quot;&quot;) +
+		((path) ? &quot;; path=&quot; + path : &quot;&quot;) +
+		((domain) ? &quot;; domain=&quot; + domain : &quot;&quot;) +
+		((secure) ? &quot;; secure&quot; : &quot;&quot;)
+	if (!caution || (name + &quot;=&quot; + escape(value)).length &lt;= 4000)
+		document.cookie = curCookie
+	else
+		if (confirm(&quot;Cookie exceeds 4KB and will be cut!&quot;))
+			document.cookie = curCookie
+}
+
+// name - name of the desired cookie
+// * return string containing value of specified cookie or null if cookie does not exist
+function getCookie(name) {
+	var prefix = name + &quot;=&quot;
+	var cookieStartIndex = document.cookie.indexOf(prefix)
+	if (cookieStartIndex == -1)
+		return null
+	var cookieEndIndex = document.cookie.indexOf(&quot;;&quot;, cookieStartIndex + prefix.length)
+	if (cookieEndIndex == -1)
+		cookieEndIndex = document.cookie.length
+	return unescape(document.cookie.substring(cookieStartIndex + prefix.length, cookieEndIndex))
+}
+
+
+function deleteCookie(name, path, domain) {
+	if (getCookie(name)) {
+		document.cookie = name + &quot;=&quot; + 
+		((path) ? &quot;; path=&quot; + path : &quot;&quot;) +
+		((domain) ? &quot;; domain=&quot; + domain : &quot;&quot;) +
+		&quot;; expires=Thu, 01-Jan-70 00:00:01 GMT&quot;
+	}
+}
+
+
+function fixDate(date) {
+	var base = new Date(0)
+	var skew = base.getTime()
+	if (skew &gt; 0)
+		date.setTime(date.getTime() - skew)
+}
+
+function initCookie(monthName) {
+	
+	var text = &quot;&quot;
+	for (var i = 1; i &lt;= 31; ++i) {
+		text += &quot;^&quot; + i + &quot;^&quot;
+	}
+
+	var now = new Date()
+	fixDate(now)
+
+	// set time to one month (31 days) in the future
+	now.setTime(now.getTime() + 1000 * 60 * 60 * 24 * 31)
+
+	setCookie(monthName + &quot;Calendar&quot;, text, now)
+}
+
+function getSpecificReminder(num, monthName) {
+	var prefix = &quot;^&quot; + num + &quot;^&quot;
+	var totalCookie = getCookie(monthName + &quot;Calendar&quot;)
+	var startIndex = totalCookie.indexOf(prefix, 0)
+	var startData = totalCookie.indexOf(&quot;^&quot;, startIndex + 1) + 1
+	if (num == 31)
+		var endData = totalCookie.length
+	else
+		var endData = totalCookie.indexOf(&quot;^&quot;, startData)
+	
+	return totalCookie.substring(startData, endData)
+}
+
+function setSpecificReminder(num, monthName, newValue) {
+	var prefix = &quot;^&quot; + num + &quot;^&quot;
+	var totalCookie = getCookie(monthName + &quot;Calendar&quot;)
+	var startIndex = totalCookie.indexOf(prefix, 0)
+	var startData = totalCookie.indexOf(&quot;^&quot;, startIndex + 1) + 1
+		if (num == 31)
+		var endData = totalCookie.length
+	else
+		var endData = totalCookie.indexOf(&quot;^&quot;, startData)
+	var now = new Date()
+	fixDate(now)
+
+	// set time to one month (31 days) in the future
+	now.setTime(now.getTime() + 1000 * 60 * 60 * 24 * 31)
+
+	setCookie(monthName + &quot;Calendar&quot;, totalCookie.substring(0, startData) + newValue + totalCookie.substring(endData, totalCookie.length), now)
+}
+
+function getInput(num, monthName) {
+	if (!getCookie(monthName + &quot;Calendar&quot;)) 
+		initCookie(monthName)
+	var newValue = prompt(&quot;今天要提醒的事为:&quot;, getSpecificReminder(num, monthName))
+	if (newValue) // user did not cancel
+		setSpecificReminder(num, monthName, newValue)
+}
+
+function getTime() {
+	// initialize time-related variables with current time settings
+	var now = new Date()
+	var hour = now.getHours()
+	var minute = now.getMinutes()
+	now = null
+	var ampm = &quot;&quot; 
+
+	// validate hour values	and set value of ampm
+	if (hour &gt;= 12) {
+		hour -= 12
+		ampm = &quot;PM&quot;
+	} else
+		ampm = &quot;AM&quot;
+	hour = (hour == 0) ? 12 : hour
+
+	// add zero digit to a one digit minute
+	if (minute &lt; 10)
+		minute = &quot;0&quot; + minute // do not parse this number!
+
+	// return time string
+	return hour + &quot;:&quot; + minute + &quot; &quot; + ampm
+}
+
+function leapYear(year) {
+	if (year % 4 == 0) // basic rule
+		return true // is leap year
+	return false // is not leap year
+}
+
+function getDays(month, year) {
+	// create array to hold number of days in each month
+	var ar = new Array(12)
+	ar[0] = 31 // January
+	ar[1] = (leapYear(year)) ? 29 : 28 // February
+	ar[2] = 31 // March
+	ar[3] = 30 // April
+	ar[4] = 31 // May
+	ar[5] = 30 // June
+	ar[6] = 31 // July
+	ar[7] = 31 // August
+	ar[8] = 30 // September
+	ar[9] = 31 // October
+	ar[10] = 30 // November
+	ar[11] = 31 // December
+
+	// return number of days in the specified month (parameter)
+	return ar[month]
+}
+
+function getMonthName(month) {
+	// create array to hold name of each month
+	var ar = new Array(12)
+	ar[0] = &quot;一月&quot;
+	ar[1] = &quot;二月&quot;
+	ar[2] = &quot;三月&quot;
+	ar[3] = &quot;四月&quot;
+	ar[4] = &quot;五月&quot;
+	ar[5] = &quot;六月&quot;
+	ar[6] = &quot;七月&quot;
+	ar[7] = &quot;八月&quot;
+	ar[8] = &quot;九月&quot;
+	ar[9] = &quot;十月&quot;
+	ar[10] = &quot;十一月&quot;
+	ar[11] = &quot;十二月&quot;
+
+	// return name of specified month (parameter)
+	return ar[month]
+}
+
+function setCal() {
+	// standard time attributes
+	var now = new Date()
+	var year = now.getYear()
+	var month = now.getMonth()
+	var monthName = getMonthName(month)
+	var date = now.getDate()
+	now = null
+
+	// create instance of first day of month, and extract the day on which it occurs
+	var firstDayInstance = new Date(year, month, 1)
+	var firstDay = firstDayInstance.getDay()
+	firstDayInstance = null
+
+	// number of days in current month
+	var days = getDays(month, year)
+
+	// call function to draw calendar
+	drawCal(firstDay + 1, days, date, monthName, year)
+}
+
+function drawCal(firstDay, lastDate, date, monthName, year) {
+	// constant table settings
+	var headerHeight = 30 // height of the table's header cell
+	var border = 1 // 3D height of table's border
+	var cellspacing = 2 // width of table's border
+	var headerColor = &quot;midnightblue&quot; // color of table's header
+	var headerSize = &quot;+3&quot; // size of tables header font
+	var colWidth = 50 // width of columns in table
+	var dayCellHeight = 25 // height of cells containing days of the week
+	var dayColor = &quot;darkblue&quot; // color of font representing week days
+	var cellHeight = 20 // height of cells representing dates in the calendar
+	var todayColor = &quot;red&quot; // color specifying today's date in the calendar
+	var timeColor = &quot;purple&quot; // color of font representing current time
+
+	// create basic table structure
+	var text = &quot;&quot; // initialize accumulative variable to empty string
+	text += '&lt;CENTER&gt;'
+	text += '&lt;TABLE BORDER=' + border + ' CELLSPACING=' + cellspacing + '&gt;' // table settings
+	text += 	'&lt;TH COLSPAN=7 ALIGN=&quot;center&quot; VALIGN=&quot;center&quot; HEIGHT=' + headerHeight + '&gt;' // create table header cell
+	text += 		'&lt;FONT COLOR=&quot;' + headerColor + '&quot; SIZE=' + headerSize + '&gt;' // set font for table header
+	text += 			monthName + ' ' + year 
+	text += 		'&lt;/FONT&gt;' // close table header's font settings
+	text += 	'&lt;/TH&gt;' // close header cell
+
+	// variables to hold constant settings
+	var openCol = '&lt;TD ALIGN=&quot;center&quot; VALIGN=&quot;center&quot; WIDTH=' + colWidth + ' HEIGHT=' + dayCellHeight + '&gt;'
+	openCol += '&lt;FONT COLOR=&quot;' + dayColor + '&quot;&gt;'
+	var closeCol = '&lt;/FONT&gt;&lt;/TD&gt;'
+
+	// create array of abbreviated day names
+	var weekDay = new Array(7)
+	weekDay[0] = &quot;星期日&quot;
+	weekDay[1] = &quot;星期一&quot;
+	weekDay[2] = &quot;星期二&quot;
+	weekDay[3] = &quot;星期三&quot;
+	weekDay[4] = &quot;星期四&quot;
+	weekDay[5] = &quot;星期五&quot;
+	weekDay[6] = &quot;星期六&quot;
+	
+	// create first row of table to set column width and specify week day
+	text += '&lt;TR ALIGN=&quot;center&quot; VALIGN=&quot;center&quot;&gt;'
+	for (var dayNum = 0; dayNum &lt; 7; ++dayNum) {
+		text += openCol + weekDay[dayNum] + closeCol 
+	}
+	text += '&lt;/TR&gt;'
+	
+	// declaration and initialization of two variables to help with tables
+	var digit = 1
+	var curCell = 1
+	
+	for (var row = 1; row &lt;= Math.ceil((lastDate + firstDay - 1) / 7); ++row) {
+		text += '&lt;TR ALIGN=&quot;center&quot; VALIGN=&quot;top&quot;&gt;'
+		for (var col = 1; col &lt;= 7; ++col) {
+			if (digit &gt; lastDate)
+				break
+			if (curCell &lt; firstDay) {
+				text += '&lt;TD&gt;&lt;/TD&gt;';
+				curCell++
+			} else {
+				if (digit == date) { // current cell represent today's date
+					text += '&lt;TD HEIGHT=' + cellHeight + '&gt;'
+					text += '&lt;FONT COLOR=&quot;' + todayColor + '&quot;&gt;'
+					text += '&lt;A HREF=&quot;javascript:getInput(' + digit + ', \'' + monthName + '\')&quot; onMouseOver=&quot;window.status = \'Store or retrieve data for ' + monthName + ' ' + digit + '\'; return true&quot;&gt;&lt;FONT COLOR=&quot;' + todayColor + '&quot;&gt;' + digit + '&lt;/FONT&gt;&lt;/A&gt;'
+					text += '&lt;BR&gt;'
+					text += '&lt;FONT COLOR=&quot;' + timeColor + '&quot; SIZE=2&gt;'
+					text += '&lt;CENTER&gt;' + getTime() + '&lt;/CENTER&gt;'
+					text += '&lt;/FONT&gt;'
+					text += '&lt;/TD&gt;'
+				} else
+					text += '&lt;TD HEIGHT=' + cellHeight + '&gt;&lt;A HREF=&quot;javascript:getInput(' + digit + ', \'' + monthName + '\')&quot; onMouseOver=&quot;window.status = \'Store or retrieve data for ' + monthName + ' ' + digit + '\'; return true&quot;&gt;' + digit + '&lt;/A&gt;&lt;/TD&gt;'
+				digit++
+			}
+		}
+		text += '&lt;/TR&gt;'
+	}
+	
+	// close all basic table tags
+	text += '&lt;/TABLE&gt;'
+	text += '&lt;/CENTER&gt;'
+
+	// print accumulative HTML string
+	document.write(text) 
+}
+
+setCal()
+
+// --&gt;
+&lt;/script&gt;
+
+
+
+
+&nbsp;
+
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

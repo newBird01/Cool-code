@@ -1,0 +1,493 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--滚动导航条</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body bgcolor=#FFFFFF>
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">滚动导航条</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=278" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<style type="text/css">
+#divMenu a       {color:#999999; text-decoration:underline;}
+#divMenu a:hover {color:#333333; text-decoration:underline;}
+
+#divBg           {position:absolute; z-index:10; width:2000px; left:0px; height:100px; clip:rect(0px 10px 10px 0px); visibility:hidden;}
+#divMenu         {position:absolute; z-index:11; left:11px; top:1px; color:#333333; font-size:13px; font-family:verdana,arial,helvetica,sans-serif; visibility:inherit;}
+#divArrowLeft    {position:absolute; z-index:12; width:11px; height:20px; left:0px; top:0px; visibility:inherit;}
+#divArrowRight   {position:absolute; z-index:12; width:11px; height:20px; top:0px; visibility:inherit;} 
+</style>
+<script language="JavaScript" type="text/javascript">
+
+function lib_bwcheck(){ //Browsercheck (needed)
+	this.ver=navigator.appVersion
+	this.agent=navigator.userAgent
+	this.dom=document.getElementById?1:0
+	this.opera5=this.agent.indexOf("Opera 5")>-1
+	this.ie5=(this.ver.indexOf("MSIE 5")>-1 && this.dom && !this.opera5)?1:0; 
+	this.ie6=(this.ver.indexOf("MSIE 6")>-1 && this.dom && !this.opera5)?1:0;
+	this.ie4=(document.all && !this.dom && !this.opera5)?1:0;
+	this.ie=this.ie4||this.ie5||this.ie6
+	this.mac=this.agent.indexOf("Mac")>-1
+	this.ns6=(this.dom && parseInt(this.ver) >= 5) ?1:0; 
+	this.ns4=(document.layers && !this.dom)?1:0;
+	this.bw=(this.ie6 || this.ie5 || this.ie4 || this.ns4 || this.ns6 || this.opera5)
+	return this
+}
+var bw=new lib_bwcheck()
+sLeft = 0         //The left placement of the menu
+sTop = 120        //The top placement of the menu
+sMenuheight = 30  //The height of the menu
+sArrowwidth = 11  //Width of the arrows
+sScrollspeed = 20 //Scroll speed: (in milliseconds, change this one and the next variable to change the speed)
+sScrollPx = 8     //Pixels to scroll per timeout.
+sScrollExtra = 15 //Extra speed to scroll onmousedown (pixels)
+
+/**************************************************************************
+Scrolling functions
+***************************************************************************/
+var tim = 0
+var noScroll = true
+function mLeft(){
+	if (!noScroll && oMenu.x<sArrowwidth){
+		oMenu.moveBy(sScrollPx,0)
+		tim = setTimeout("mLeft()",sScrollspeed)
+	}
+}
+function mRight(){
+	if (!noScroll && oMenu.x>-(oMenu.scrollWidth-(pageWidth))-sArrowwidth){
+		oMenu.moveBy(-sScrollPx,0)
+		tim = setTimeout("mRight()",sScrollspeed)
+	}
+}
+function noMove(){
+	clearTimeout(tim);
+	noScroll = true;
+	sScrollPx = sScrollPxOriginal;
+}
+/**************************************************************************
+Object part
+***************************************************************************/
+function makeObj(obj,nest,menu){
+	nest = (!nest) ? "":'document.'+nest+'.';
+	this.elm = bw.ns4?eval(nest+"document.layers." +obj):bw.ie4?document.all[obj]:document.getElementById(obj);
+   	this.css = bw.ns4?this.elm:this.elm.style;
+	this.scrollWidth = bw.ns4?this.css.document.width:this.elm.offsetWidth;
+	this.x = bw.ns4?this.css.left:this.elm.offsetLeft;
+	this.y = bw.ns4?this.css.top:this.elm.offsetTop;
+	this.moveBy = b_moveBy;
+	this.moveIt = b_moveIt;
+	this.clipTo = b_clipTo;
+	return this;
+}
+var px = bw.ns4||window.opera?"":"px";
+function b_moveIt(x,y){
+	if (x!=null){this.x=x; this.css.left=this.x+px;}
+	if (y!=null){this.y=y; this.css.top=this.y+px;}
+}
+function b_moveBy(x,y){this.x=this.x+x; this.y=this.y+y; this.css.left=this.x+px; this.css.top=this.y+px;}
+function b_clipTo(t,r,b,l){
+	if(bw.ns4){this.css.clip.top=t; this.css.clip.right=r; this.css.clip.bottom=b; this.css.clip.left=l;}
+	else this.css.clip="rect("+t+"px "+r+"px "+b+"px "+l+"px)";
+}
+/**************************************************************************
+Object part end
+***************************************************************************/
+
+/**************************************************************************
+Init function. Set the placements of the objects here.
+***************************************************************************/
+var sScrollPxOriginal = sScrollPx;
+function sideInit(){
+	//Width of the menu, Currently set to the width of the document.
+	//If you want the menu to be 500px wide for instance, just 
+	//set the pageWidth=500 in stead.
+	pageWidth = (bw.ns4 || bw.ns6 || window.opera)?innerWidth:document.body.clientWidth;
+	
+	//Making the objects...
+	oBg = new makeObj('divBg')
+	oMenu = new makeObj('divMenu','divBg',1)
+	oArrowRight = new makeObj('divArrowRight','divBg')
+	
+	//Placing the menucontainer, the layer with links, and the right arrow.
+	oBg.moveIt(sLeft,sTop) //Main div, holds all the other divs.
+	oMenu.moveIt(sArrowwidth,null)
+	oArrowRight.css.width = sArrowwidth;
+	oArrowRight.moveIt(pageWidth-sArrowwidth,null)
+	
+	//Setting the width and the visible area of the links.
+	if (!bw.ns4) oBg.css.overflow = "hidden";
+	if (bw.ns6) oMenu.css.position = "relative";
+	oBg.css.width = pageWidth+px;
+	oBg.clipTo(0,pageWidth,sMenuheight,0)
+	oBg.css.visibility = "visible";
+}
+
+//executing the init function on pageload if the browser is ok.
+if (bw.bw) onload = sideInit;
+</script>
+<div id="divBg">
+	<div id="divMenu">
+		<nobr>
+		[<a href="#">link 1</a>] 
+		[<a href="#">link 2</a>] 
+		[<a href="#">link 3</a>] 
+		[<a href="#">link 4</a>] 
+		[<a href="#">link 5</a>]  
+		[<a href="#">link 6</a>]  
+		[<a href="#">link 7</a>]  
+		[<a href="#">link 8</a>]  
+		[<a href="#">link 9</a>]  
+		[<a href="#">link 10</a>] 
+		[<a href="#">link 11</a>] 
+		[<a href="#">link 12</a>] 
+		[<a href="#">link 13</a>] 
+		[<a href="#">link 14</a>]
+		[<a href="#">link 15</a>] 
+		[<a href="#">link 16</a>] 
+		[<a href="#">link 17</a>] 
+		[<a href="#">link 18</a>] 
+		[<a href="#">link 19</a>] 
+		[<a href="#">link 20</a>] 
+		[<a href="#">link 21</a>] 
+		[<a href="#">link 22</a>] 
+		[<a href="#">link 23</a>] 
+		[<a href="#">link 24</a>] 
+		[<a href="#">link 25</a>] 
+		[<a href="#">link 26</a>] 
+		[<a href="#">link 27</a>] 
+		[<a href="#">link 28</a>] 
+		[<a href="#">link 29</a>] 
+		[<a href="#">link 30</a>]
+		</nobr>	
+	</div>
+	<div id="divArrowLeft"><a href="#" onmouseover="noScroll=false; mLeft()" onmouseout="noMove()" onclick="sScrollPx-=sScrollExtra; return false" onfocus="if(this.blur)this.blur()" onmousedown="sScrollPx+=sScrollExtra"><img src="photo/arrowleft.gif" width="11" height="21" alt="" border="0"></a></div>
+	<div id="divArrowRight"><a href="#" onmouseover="noScroll=false; mRight()" onmouseout="noMove()" onclick="sScrollPx-=sScrollExtra; return false" onfocus="if(this.blur)this.blur()" onmousedown="sScrollPx+=sScrollExtra"><img src="photo/arrowright.gif" width="11" height="21" alt="" border="0"></a></div>
+</div>
+</fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+把如下代码加入<body>区域中
+&nbsp;&lt;style type=&quot;text/css&quot;&gt;
+#divMenu a       {color:#999999; text-decoration:underline;}
+#divMenu a:hover {color:#333333; text-decoration:underline;}
+
+#divBg           {position:absolute; z-index:10; width:2000px; left:0px; height:100px; clip:rect(0px 10px 10px 0px); visibility:hidden;}
+#divMenu         {position:absolute; z-index:11; left:11px; top:1px; color:#333333; font-size:13px; font-family:verdana,arial,helvetica,sans-serif; visibility:inherit;}
+#divArrowLeft    {position:absolute; z-index:12; width:11px; height:20px; left:0px; top:0px; visibility:inherit;}
+#divArrowRight   {position:absolute; z-index:12; width:11px; height:20px; top:0px; visibility:inherit;} 
+&lt;/style&gt;
+&lt;script language=&quot;JavaScript&quot; type=&quot;text/javascript&quot;&gt;
+
+function lib_bwcheck(){ //Browsercheck (needed)
+	this.ver=navigator.appVersion
+	this.agent=navigator.userAgent
+	this.dom=document.getElementById?1:0
+	this.opera5=this.agent.indexOf(&quot;Opera 5&quot;)&gt;-1
+	this.ie5=(this.ver.indexOf(&quot;MSIE 5&quot;)&gt;-1 &amp;&amp; this.dom &amp;&amp; !this.opera5)?1:0; 
+	this.ie6=(this.ver.indexOf(&quot;MSIE 6&quot;)&gt;-1 &amp;&amp; this.dom &amp;&amp; !this.opera5)?1:0;
+	this.ie4=(document.all &amp;&amp; !this.dom &amp;&amp; !this.opera5)?1:0;
+	this.ie=this.ie4||this.ie5||this.ie6
+	this.mac=this.agent.indexOf(&quot;Mac&quot;)&gt;-1
+	this.ns6=(this.dom &amp;&amp; parseInt(this.ver) &gt;= 5) ?1:0; 
+	this.ns4=(document.layers &amp;&amp; !this.dom)?1:0;
+	this.bw=(this.ie6 || this.ie5 || this.ie4 || this.ns4 || this.ns6 || this.opera5)
+	return this
+}
+var bw=new lib_bwcheck()
+sLeft = 0         //The left placement of the menu
+sTop = 120        //The top placement of the menu
+sMenuheight = 30  //The height of the menu
+sArrowwidth = 11  //Width of the arrows
+sScrollspeed = 20 //Scroll speed: (in milliseconds, change this one and the next variable to change the speed)
+sScrollPx = 8     //Pixels to scroll per timeout.
+sScrollExtra = 15 //Extra speed to scroll onmousedown (pixels)
+
+/**************************************************************************
+Scrolling functions
+***************************************************************************/
+var tim = 0
+var noScroll = true
+function mLeft(){
+	if (!noScroll &amp;&amp; oMenu.x&lt;sArrowwidth){
+		oMenu.moveBy(sScrollPx,0)
+		tim = setTimeout(&quot;mLeft()&quot;,sScrollspeed)
+	}
+}
+function mRight(){
+	if (!noScroll &amp;&amp; oMenu.x&gt;-(oMenu.scrollWidth-(pageWidth))-sArrowwidth){
+		oMenu.moveBy(-sScrollPx,0)
+		tim = setTimeout(&quot;mRight()&quot;,sScrollspeed)
+	}
+}
+function noMove(){
+	clearTimeout(tim);
+	noScroll = true;
+	sScrollPx = sScrollPxOriginal;
+}
+/**************************************************************************
+Object part
+***************************************************************************/
+function makeObj(obj,nest,menu){
+	nest = (!nest) ? &quot;&quot;:'document.'+nest+'.';
+	this.elm = bw.ns4?eval(nest+&quot;document.layers.&quot; +obj):bw.ie4?document.all[obj]:document.getElementById(obj);
+   	this.css = bw.ns4?this.elm:this.elm.style;
+	this.scrollWidth = bw.ns4?this.css.document.width:this.elm.offsetWidth;
+	this.x = bw.ns4?this.css.left:this.elm.offsetLeft;
+	this.y = bw.ns4?this.css.top:this.elm.offsetTop;
+	this.moveBy = b_moveBy;
+	this.moveIt = b_moveIt;
+	this.clipTo = b_clipTo;
+	return this;
+}
+var px = bw.ns4||window.opera?&quot;&quot;:&quot;px&quot;;
+function b_moveIt(x,y){
+	if (x!=null){this.x=x; this.css.left=this.x+px;}
+	if (y!=null){this.y=y; this.css.top=this.y+px;}
+}
+function b_moveBy(x,y){this.x=this.x+x; this.y=this.y+y; this.css.left=this.x+px; this.css.top=this.y+px;}
+function b_clipTo(t,r,b,l){
+	if(bw.ns4){this.css.clip.top=t; this.css.clip.right=r; this.css.clip.bottom=b; this.css.clip.left=l;}
+	else this.css.clip=&quot;rect(&quot;+t+&quot;px &quot;+r+&quot;px &quot;+b+&quot;px &quot;+l+&quot;px)&quot;;
+}
+/**************************************************************************
+Object part end
+***************************************************************************/
+
+/**************************************************************************
+Init function. Set the placements of the objects here.
+***************************************************************************/
+var sScrollPxOriginal = sScrollPx;
+function sideInit(){
+	//Width of the menu, Currently set to the width of the document.
+	//If you want the menu to be 500px wide for instance, just 
+	//set the pageWidth=500 in stead.
+	pageWidth = (bw.ns4 || bw.ns6 || window.opera)?innerWidth:document.body.clientWidth;
+	
+	//Making the objects...
+	oBg = new makeObj('divBg')
+	oMenu = new makeObj('divMenu','divBg',1)
+	oArrowRight = new makeObj('divArrowRight','divBg')
+	
+	//Placing the menucontainer, the layer with links, and the right arrow.
+	oBg.moveIt(sLeft,sTop) //Main div, holds all the other divs.
+	oMenu.moveIt(sArrowwidth,null)
+	oArrowRight.css.width = sArrowwidth;
+	oArrowRight.moveIt(pageWidth-sArrowwidth,null)
+	
+	//Setting the width and the visible area of the links.
+	if (!bw.ns4) oBg.css.overflow = &quot;hidden&quot;;
+	if (bw.ns6) oMenu.css.position = &quot;relative&quot;;
+	oBg.css.width = pageWidth+px;
+	oBg.clipTo(0,pageWidth,sMenuheight,0)
+	oBg.css.visibility = &quot;visible&quot;;
+}
+
+//executing the init function on pageload if the browser is ok.
+if (bw.bw) onload = sideInit;
+&lt;/script&gt;
+&lt;div id=&quot;divBg&quot;&gt;
+	&lt;div id=&quot;divMenu&quot;&gt;
+		&lt;nobr&gt;
+		[&lt;a href=&quot;#&quot;&gt;link 1&lt;/a&gt;] 
+		[&lt;a href=&quot;#&quot;&gt;link 2&lt;/a&gt;] 
+		[&lt;a href=&quot;#&quot;&gt;link 3&lt;/a&gt;] 
+		[&lt;a href=&quot;#&quot;&gt;link 4&lt;/a&gt;] 
+		[&lt;a href=&quot;#&quot;&gt;link 5&lt;/a&gt;]  
+		[&lt;a href=&quot;#&quot;&gt;link 6&lt;/a&gt;]  
+		[&lt;a href=&quot;#&quot;&gt;link 7&lt;/a&gt;]  
+		[&lt;a href=&quot;#&quot;&gt;link 8&lt;/a&gt;]  
+		[&lt;a href=&quot;#&quot;&gt;link 9&lt;/a&gt;]  
+		[&lt;a href=&quot;#&quot;&gt;link 10&lt;/a&gt;] 
+		[&lt;a href=&quot;#&quot;&gt;link 11&lt;/a&gt;] 
+		[&lt;a href=&quot;#&quot;&gt;link 12&lt;/a&gt;] 
+		[&lt;a href=&quot;#&quot;&gt;link 13&lt;/a&gt;] 
+		[&lt;a href=&quot;#&quot;&gt;link 14&lt;/a&gt;]
+		[&lt;a href=&quot;#&quot;&gt;link 15&lt;/a&gt;] 
+		[&lt;a href=&quot;#&quot;&gt;link 16&lt;/a&gt;] 
+		[&lt;a href=&quot;#&quot;&gt;link 17&lt;/a&gt;] 
+		[&lt;a href=&quot;#&quot;&gt;link 18&lt;/a&gt;] 
+		[&lt;a href=&quot;#&quot;&gt;link 19&lt;/a&gt;] 
+		[&lt;a href=&quot;#&quot;&gt;link 20&lt;/a&gt;] 
+		[&lt;a href=&quot;#&quot;&gt;link 21&lt;/a&gt;] 
+		[&lt;a href=&quot;#&quot;&gt;link 22&lt;/a&gt;] 
+		[&lt;a href=&quot;#&quot;&gt;link 23&lt;/a&gt;] 
+		[&lt;a href=&quot;#&quot;&gt;link 24&lt;/a&gt;] 
+		[&lt;a href=&quot;#&quot;&gt;link 25&lt;/a&gt;] 
+		[&lt;a href=&quot;#&quot;&gt;link 26&lt;/a&gt;] 
+		[&lt;a href=&quot;#&quot;&gt;link 27&lt;/a&gt;] 
+		[&lt;a href=&quot;#&quot;&gt;link 28&lt;/a&gt;] 
+		[&lt;a href=&quot;#&quot;&gt;link 29&lt;/a&gt;] 
+		[&lt;a href=&quot;#&quot;&gt;link 30&lt;/a&gt;]
+		&lt;/nobr&gt;	
+	&lt;/div&gt;
+	&lt;div id=&quot;divArrowLeft&quot;&gt;&lt;a href=&quot;#&quot; onmouseover=&quot;noScroll=false; mLeft()&quot; onmouseout=&quot;noMove()&quot; onclick=&quot;sScrollPx-=sScrollExtra; return false&quot; onfocus=&quot;if(this.blur)this.blur()&quot; onmousedown=&quot;sScrollPx+=sScrollExtra&quot;&gt;&lt;img src=&quot;photo/arrowleft.gif&quot; width=&quot;11&quot; height=&quot;21&quot; alt=&quot;&quot; border=&quot;0&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+	&lt;div id=&quot;divArrowRight&quot;&gt;&lt;a href=&quot;#&quot; onmouseover=&quot;noScroll=false; mRight()&quot; onmouseout=&quot;noMove()&quot; onclick=&quot;sScrollPx-=sScrollExtra; return false&quot; onfocus=&quot;if(this.blur)this.blur()&quot; onmousedown=&quot;sScrollPx+=sScrollExtra&quot;&gt;&lt;img src=&quot;photo/arrowright.gif&quot; width=&quot;11&quot; height=&quot;21&quot; alt=&quot;&quot; border=&quot;0&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+&nbsp;
+
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

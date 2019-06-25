@@ -1,0 +1,747 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--改变背景前景颜色</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body bgcolor=#FFFFFF>
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">改变背景前景颜色</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=360" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+redValue = 255;
+blueValue = 255;
+greenValue = 255;
+redForeValue = 0;
+blueForeValue = 0;
+greenForeValue = 0;
+maxValue = 255;
+hexValues = new Array("0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F");
+i = 0;
+function toHex(integer) {
+hexDigit1 = Math.floor(integer / 16);
+hexDigit2 = (integer % 16);
+return hexValues[hexDigit1] + hexValues[hexDigit2];
+}
+function shiftFG() {
+redFGHex = toHex(redForeValue);
+blueFGHex = toHex(blueForeValue);
+greenFGHex = toHex(greenForeValue);
+bigFGHex = redFGHex + greenFGHex + blueFGHex;
+document.fgColor = bigFGHex;
+document.Interface.fgHex.value = bigFGHex;
+document.Interface.redFG.value = redForeValue;
+document.Interface.blueFG.value = blueForeValue;
+document.Interface.greenFG.value = greenForeValue;
+}
+function shiftBG() {
+redHex = toHex(redValue);
+blueHex = toHex(blueValue);
+greenHex = toHex(greenValue);
+bigHex = redHex + greenHex + blueHex;
+document.bgColor = bigHex;
+document.Interface.bgHex.value = bigHex;
+document.Interface.red.value = redValue;
+document.Interface.blue.value = blueValue;
+document.Interface.green.value = greenValue;
+}
+function incrementRed(isBackground) {
+if (isBackground == true ) {
+redValue = redValue + 8;
+if (redValue > maxValue) { 
+redValue = 0;
+}
+shiftBG();
+}
+if (isBackground == false) { 
+redForeValue = redForeValue + 8;
+if (redForeValue > maxValue) {
+redForeValue = 0;
+}
+shiftFG();
+   }
+}
+function decrementRed(isBackground) {
+if (isBackground == true) {
+redValue = redValue - 8;
+if (redValue < 0 ) {
+redValue = 255;
+}
+shiftBG();
+}
+else {
+redForeValue = redForeValue - 8;
+if (redForeValue < 0) {
+redForeValue = 255;
+}
+shiftFG();
+   }
+}
+function setRed(value, isBackground) {
+if(value > -1 && value < 256) {
+if( isBackground == true ) {
+redValue = value;
+shiftBG();
+}
+else {
+redForeValue = value;
+shiftFG();
+      }
+   }
+}
+function incrementBlue(isBackground) {
+if ( isBackground == true ) {
+blueValue = blueValue + 8;
+if (blueValue > maxValue) {
+blueValue = 0;
+}			
+shiftBG();
+}
+else { 
+blueForeValue = blueForeValue + 8;
+if ( blueForeValue > maxValue ) {
+blueForeValue = 0;
+}
+shiftFG();
+   }
+}
+function decrementBlue(isBackground) {
+if (isBackground == true) {
+blueValue = blueValue - 8;
+if (blueValue < 0) {
+blueValue = 255;
+}
+shiftBG();
+}
+else {
+blueForeValue = blueForeValue - 8;
+if (blueForeValue < 0) {
+blueForeValue = 255;
+}
+shiftFG();
+   }
+}
+function setBlue(value, isBackground) {
+if (value > -1 && value < 256) {
+if ( isBackground == true ) {
+blueValue = value;
+shiftBG();
+}
+else {
+blueForeValue = value;
+shiftFG();
+      }
+   }
+}
+function incrementGreen(isBackground) {
+if (isBackground == true) {
+greenValue = greenValue + 8;
+if (greenValue > maxValue) {
+greenValue = 0;
+}
+shiftBG();
+}
+else {
+greenForeValue = greenForeValue + 8;
+if (greenForeValue > maxValue) {
+greenForeValue = 0;
+}
+shiftFG();
+   }
+}
+function decrementGreen(isBackground) {
+if (isBackground == true) {
+greenValue = greenValue - 8;
+if (greenValue < 0 ) {
+greenValue = 255;
+}
+shiftBG();
+}
+else {
+greenForeValue = greenForeValue - 8;
+if (greenForeValue < 0) {
+greenForeValue = 255;
+}
+shiftFG();
+   }
+}
+function setGreen(value, isBackground) {
+if ( value > -1 && value < 256 ) {
+if ( isBackground == true ) {
+greenValue = value;
+shiftBG();
+}
+else {
+greenForeValue = value;
+shiftFG();
+      }
+   }
+}
+function unHex(string, fgbg) {
+hex = string.toUpperCase();
+counter = 0;
+while (hex.charAt(0) != hexValues[counter])
+counter++;
+r = 16 * counter;
+counter = 0;
+while (hex.charAt(1) !=  hexValues[counter])
+counter++;
+r = r + counter;
+counter = 0;
+while (hex.charAt(2) != hexValues[counter])
+counter++;
+g = 16 * counter;
+counter = 0;
+while (hex.charAt(3) != hexValues[counter])
+counter++;
+g = g + counter;
+counter = 0;
+while (hex.charAt(4) != hexValues[counter])
+counter++;
+b = 16 * counter;
+counter = 0;
+while (hex.charAt(5) != hexValues[counter])
+counter++;
+b = b + counter;
+if (fgbg == "bg") {
+redValue = r;
+blueValue = b;
+greenValue = g;
+document.Interface.red.value = redValue;
+document.Interface.blue.value = blueValue;
+document.Interface.green.value = greenValue;
+}
+if (fgbg == "fg") {
+redForeValue = r;
+blueForeValue = b;
+greenForeValue = g;
+document.Interface.redFG.value = redForeValue;
+document.Interface.blueFG.value = blueForeValue;
+document.Interface.greenFG.value = greenForeValue;
+   }
+}	
+function validChar(char) {
+for (j = 0; j < hexValues.length; j++) {
+if (char == hexValues[j]) {
+return true;
+   }
+}
+return false;
+}
+function isHex(string) {
+if (string.length != 6) { 
+return false;
+}
+for (k = 0; k < 6; k++) {
+if (! validChar(string.charAt(k))) {
+return false;
+   }
+}
+return true;
+}
+function setBGHex(value) {
+if (isHex(value.toUpperCase())) {
+document.bgColor = value;
+unHex(value, "bg");
+   }
+}
+function setFGHex(value) {
+if (isHex(value.toUpperCase())) {
+document.fgColor = value;
+unHex(value, "fg");
+   }
+}
+//  End -->
+</script>
+<form name=Interface>
+<table border=4 cellspacing=0 cellpadding=4>
+<tr>
+<td colspan=3 align=center>背景色</td>
+<td><input type=text name=bgHex onKeyup="setBGHex(this.value)"></td>
+<td colspan=2 align=center>前景色</td>
+<td><input type=text name=fgHex onKeyup="setFGHex(this.value)"></td>
+</tr>
+<tr>
+<td>Red</td>
+<td><input type=button value=" + " onClick="incrementRed(true)"></td>
+<td><input type=button value=" - " onClick="decrementRed(true)"></td>
+<td><input type=text name="red" onKeyup="setRed(this.value, true)"></td>
+<td><input type=button value=" + " onClick="incrementRed(false)"></td>
+<td><input type=button value=" - " onClick="decrementRed(false)"></td>
+<td><input type=text name=redFG onKeyup="setRed(this.value, false)"></td>
+</tr>
+<tr>
+<td>Green</td>
+<td><input type=button value=" + " onClick="incrementGreen(true)"></td>
+<td><input type=button value=" - " onClick="decrementGreen(true)"></td>
+<td><input type=text name="green" onKeyup="setGreen(this.value, true)"></td>
+<td><input type=button value=" + " onClick="incrementGreen(false)"></td>
+<td><input type=button value=" - " onClick="decrementGreen(false)"></td>
+<td><input type=text name=greenFG onKeyup="setGreen(this.value, false)"></td>
+</tr>
+<tr>
+<td>Blue</td>
+<td><input type=button value=" + " onClick="incrementBlue(true)"></td>
+<td><input type=button value=" - " onClick="decrementBlue(true)"></td>
+<td><input type=text name="blue" onKeyup="setBlue(this.value, true)"></td>
+<td><input type=button value=" + " onClick="incrementBlue(false)"></td>
+<td><input type=button value=" - " onClick="decrementBlue(false)"></td>
+<td><input type=text name=blueFG onKeyup="setBlue(this.value, false)"></td>
+</tr>
+</table>
+</form>
+</fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+把如下代码加入<body>区域中
+&nbsp;&lt;SCRIPT LANGUAGE=&quot;JavaScript&quot;&gt;
+&lt;!-- Begin
+redValue = 255;
+blueValue = 255;
+greenValue = 255;
+redForeValue = 0;
+blueForeValue = 0;
+greenForeValue = 0;
+maxValue = 255;
+hexValues = new Array(&quot;0&quot;,&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,&quot;5&quot;,&quot;6&quot;,&quot;7&quot;,&quot;8&quot;,&quot;9&quot;,&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;D&quot;,&quot;E&quot;,&quot;F&quot;);
+i = 0;
+function toHex(integer) {
+hexDigit1 = Math.floor(integer / 16);
+hexDigit2 = (integer % 16);
+return hexValues[hexDigit1] + hexValues[hexDigit2];
+}
+function shiftFG() {
+redFGHex = toHex(redForeValue);
+blueFGHex = toHex(blueForeValue);
+greenFGHex = toHex(greenForeValue);
+bigFGHex = redFGHex + greenFGHex + blueFGHex;
+document.fgColor = bigFGHex;
+document.Interface.fgHex.value = bigFGHex;
+document.Interface.redFG.value = redForeValue;
+document.Interface.blueFG.value = blueForeValue;
+document.Interface.greenFG.value = greenForeValue;
+}
+function shiftBG() {
+redHex = toHex(redValue);
+blueHex = toHex(blueValue);
+greenHex = toHex(greenValue);
+bigHex = redHex + greenHex + blueHex;
+document.bgColor = bigHex;
+document.Interface.bgHex.value = bigHex;
+document.Interface.red.value = redValue;
+document.Interface.blue.value = blueValue;
+document.Interface.green.value = greenValue;
+}
+function incrementRed(isBackground) {
+if (isBackground == true ) {
+redValue = redValue + 8;
+if (redValue &gt; maxValue) { 
+redValue = 0;
+}
+shiftBG();
+}
+if (isBackground == false) { 
+redForeValue = redForeValue + 8;
+if (redForeValue &gt; maxValue) {
+redForeValue = 0;
+}
+shiftFG();
+   }
+}
+function decrementRed(isBackground) {
+if (isBackground == true) {
+redValue = redValue - 8;
+if (redValue &lt; 0 ) {
+redValue = 255;
+}
+shiftBG();
+}
+else {
+redForeValue = redForeValue - 8;
+if (redForeValue &lt; 0) {
+redForeValue = 255;
+}
+shiftFG();
+   }
+}
+function setRed(value, isBackground) {
+if(value &gt; -1 &amp;&amp; value &lt; 256) {
+if( isBackground == true ) {
+redValue = value;
+shiftBG();
+}
+else {
+redForeValue = value;
+shiftFG();
+      }
+   }
+}
+function incrementBlue(isBackground) {
+if ( isBackground == true ) {
+blueValue = blueValue + 8;
+if (blueValue &gt; maxValue) {
+blueValue = 0;
+}			
+shiftBG();
+}
+else { 
+blueForeValue = blueForeValue + 8;
+if ( blueForeValue &gt; maxValue ) {
+blueForeValue = 0;
+}
+shiftFG();
+   }
+}
+function decrementBlue(isBackground) {
+if (isBackground == true) {
+blueValue = blueValue - 8;
+if (blueValue &lt; 0) {
+blueValue = 255;
+}
+shiftBG();
+}
+else {
+blueForeValue = blueForeValue - 8;
+if (blueForeValue &lt; 0) {
+blueForeValue = 255;
+}
+shiftFG();
+   }
+}
+function setBlue(value, isBackground) {
+if (value &gt; -1 &amp;&amp; value &lt; 256) {
+if ( isBackground == true ) {
+blueValue = value;
+shiftBG();
+}
+else {
+blueForeValue = value;
+shiftFG();
+      }
+   }
+}
+function incrementGreen(isBackground) {
+if (isBackground == true) {
+greenValue = greenValue + 8;
+if (greenValue &gt; maxValue) {
+greenValue = 0;
+}
+shiftBG();
+}
+else {
+greenForeValue = greenForeValue + 8;
+if (greenForeValue &gt; maxValue) {
+greenForeValue = 0;
+}
+shiftFG();
+   }
+}
+function decrementGreen(isBackground) {
+if (isBackground == true) {
+greenValue = greenValue - 8;
+if (greenValue &lt; 0 ) {
+greenValue = 255;
+}
+shiftBG();
+}
+else {
+greenForeValue = greenForeValue - 8;
+if (greenForeValue &lt; 0) {
+greenForeValue = 255;
+}
+shiftFG();
+   }
+}
+function setGreen(value, isBackground) {
+if ( value &gt; -1 &amp;&amp; value &lt; 256 ) {
+if ( isBackground == true ) {
+greenValue = value;
+shiftBG();
+}
+else {
+greenForeValue = value;
+shiftFG();
+      }
+   }
+}
+function unHex(string, fgbg) {
+hex = string.toUpperCase();
+counter = 0;
+while (hex.charAt(0) != hexValues[counter])
+counter++;
+r = 16 * counter;
+counter = 0;
+while (hex.charAt(1) !=  hexValues[counter])
+counter++;
+r = r + counter;
+counter = 0;
+while (hex.charAt(2) != hexValues[counter])
+counter++;
+g = 16 * counter;
+counter = 0;
+while (hex.charAt(3) != hexValues[counter])
+counter++;
+g = g + counter;
+counter = 0;
+while (hex.charAt(4) != hexValues[counter])
+counter++;
+b = 16 * counter;
+counter = 0;
+while (hex.charAt(5) != hexValues[counter])
+counter++;
+b = b + counter;
+if (fgbg == &quot;bg&quot;) {
+redValue = r;
+blueValue = b;
+greenValue = g;
+document.Interface.red.value = redValue;
+document.Interface.blue.value = blueValue;
+document.Interface.green.value = greenValue;
+}
+if (fgbg == &quot;fg&quot;) {
+redForeValue = r;
+blueForeValue = b;
+greenForeValue = g;
+document.Interface.redFG.value = redForeValue;
+document.Interface.blueFG.value = blueForeValue;
+document.Interface.greenFG.value = greenForeValue;
+   }
+}	
+function validChar(char) {
+for (j = 0; j &lt; hexValues.length; j++) {
+if (char == hexValues[j]) {
+return true;
+   }
+}
+return false;
+}
+function isHex(string) {
+if (string.length != 6) { 
+return false;
+}
+for (k = 0; k &lt; 6; k++) {
+if (! validChar(string.charAt(k))) {
+return false;
+   }
+}
+return true;
+}
+function setBGHex(value) {
+if (isHex(value.toUpperCase())) {
+document.bgColor = value;
+unHex(value, &quot;bg&quot;);
+   }
+}
+function setFGHex(value) {
+if (isHex(value.toUpperCase())) {
+document.fgColor = value;
+unHex(value, &quot;fg&quot;);
+   }
+}
+//  End --&gt;
+&lt;/script&gt;
+&lt;form name=Interface&gt;
+&lt;table border=4 cellspacing=0 cellpadding=4&gt;
+&lt;tr&gt;
+&lt;td colspan=3 align=center&gt;背景色&lt;/td&gt;
+&lt;td&gt;&lt;input type=text name=bgHex onKeyup=&quot;setBGHex(this.value)&quot;&gt;&lt;/td&gt;
+&lt;td colspan=2 align=center&gt;前景色&lt;/td&gt;
+&lt;td&gt;&lt;input type=text name=fgHex onKeyup=&quot;setFGHex(this.value)&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Red&lt;/td&gt;
+&lt;td&gt;&lt;input type=button value=&quot; + &quot; onClick=&quot;incrementRed(true)&quot;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;input type=button value=&quot; - &quot; onClick=&quot;decrementRed(true)&quot;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;input type=text name=&quot;red&quot; onKeyup=&quot;setRed(this.value, true)&quot;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;input type=button value=&quot; + &quot; onClick=&quot;incrementRed(false)&quot;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;input type=button value=&quot; - &quot; onClick=&quot;decrementRed(false)&quot;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;input type=text name=redFG onKeyup=&quot;setRed(this.value, false)&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Green&lt;/td&gt;
+&lt;td&gt;&lt;input type=button value=&quot; + &quot; onClick=&quot;incrementGreen(true)&quot;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;input type=button value=&quot; - &quot; onClick=&quot;decrementGreen(true)&quot;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;input type=text name=&quot;green&quot; onKeyup=&quot;setGreen(this.value, true)&quot;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;input type=button value=&quot; + &quot; onClick=&quot;incrementGreen(false)&quot;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;input type=button value=&quot; - &quot; onClick=&quot;decrementGreen(false)&quot;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;input type=text name=greenFG onKeyup=&quot;setGreen(this.value, false)&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Blue&lt;/td&gt;
+&lt;td&gt;&lt;input type=button value=&quot; + &quot; onClick=&quot;incrementBlue(true)&quot;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;input type=button value=&quot; - &quot; onClick=&quot;decrementBlue(true)&quot;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;input type=text name=&quot;blue&quot; onKeyup=&quot;setBlue(this.value, true)&quot;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;input type=button value=&quot; + &quot; onClick=&quot;incrementBlue(false)&quot;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;input type=button value=&quot; - &quot; onClick=&quot;decrementBlue(false)&quot;&gt;&lt;/td&gt;
+&lt;td&gt;&lt;input type=text name=blueFG onKeyup=&quot;setBlue(this.value, false)&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/form&gt;
+
+
+
+
+&nbsp;
+
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

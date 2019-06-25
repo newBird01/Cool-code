@@ -1,0 +1,499 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--万年历</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body bgcolor="#ffffff" onLoad="setToday()">
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">万年历</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=66" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function setToday() {
+var now   = new Date();
+var day   = now.getDate();
+var month = now.getMonth();
+var year  = now.getYear();
+if (year < 2000)    // Y2K Fix, Isaac Powell
+year = year + 1900; 
+this.focusDay = day;
+document.calControl.month.selectedIndex = month;
+document.calControl.year.value = year;
+displayCalendar(month, year);
+}
+function isFourDigitYear(year) {
+if (year.length != 4) {
+alert ("Sorry, the year must be four-digits in length.");
+document.calControl.year.select();
+document.calControl.year.focus();
+} else { return true; }
+}
+function selectDate() {
+var year  = document.calControl.year.value;
+if (isFourDigitYear(year)) {
+var day   = 0;
+var month = document.calControl.month.selectedIndex;
+displayCalendar(month, year);
+    }
+}
+
+function setPreviousYear() {
+var year  = document.calControl.year.value;
+if (isFourDigitYear(year)) {
+var day   = 0;
+var month = document.calControl.month.selectedIndex;
+year--;
+document.calControl.year.value = year;
+displayCalendar(month, year);
+   }
+}
+function setPreviousMonth() {
+var year  = document.calControl.year.value;
+if (isFourDigitYear(year)) {
+var day   = 0;
+var month = document.calControl.month.selectedIndex;
+if (month == 0) {
+month = 11;
+if (year > 1000) {
+year--;
+document.calControl.year.value = year;
+}
+} else { month--; }
+document.calControl.month.selectedIndex = month;
+displayCalendar(month, year);
+   }
+}
+function setNextMonth() {
+var year  = document.calControl.year.value;
+if (isFourDigitYear(year)) {
+var day   = 0;
+var month = document.calControl.month.selectedIndex;
+if (month == 11) {
+month = 0;
+year++;
+document.calControl.year.value = year;
+} else { month++; }
+document.calControl.month.selectedIndex = month;
+displayCalendar(month, year);
+   }
+}
+function setNextYear() {
+var year = document.calControl.year.value;
+if (isFourDigitYear(year)) {
+var day = 0;
+var month = document.calControl.month.selectedIndex;
+year++;
+document.calControl.year.value = year;
+displayCalendar(month, year);
+   }
+}
+function displayCalendar(month, year) {       
+month = parseInt(month);
+year = parseInt(year);
+var i = 0;
+var days = getDaysInMonth(month+1,year);
+var firstOfMonth = new Date (year, month, 1);
+var startingPos = firstOfMonth.getDay();
+days += startingPos;
+document.calButtons.calPage.value  =   " Su Mo Tu We Th Fr Sa";
+document.calButtons.calPage.value += "\n --------------------";
+for (i = 0; i < startingPos; i++) {
+if ( i%7 == 0 ) document.calButtons.calPage.value += "\n ";
+document.calButtons.calPage.value += "   ";
+}
+for (i = startingPos; i < days; i++) {
+if ( i%7 == 0 ) document.calButtons.calPage.value += "\n ";
+if (i-startingPos+1 < 10)
+document.calButtons.calPage.value += "0";
+document.calButtons.calPage.value += i-startingPos+1;
+document.calButtons.calPage.value += " ";
+}
+for (i=days; i<42; i++)  {
+if ( i%7 == 0 ) document.calButtons.calPage.value += "\n ";
+document.calButtons.calPage.value += "   ";
+}
+document.calControl.Go.focus();
+}
+function getDaysInMonth(month,year)  {
+var days;
+if (month==1 || month==3 || month==5 || month==7 || month==8 || month==10 || month==12)  days=31;
+else if (month==4 || month==6 || month==9 || month==11) days=30;
+else if (month==2)  {
+if (isLeapYear(year)) { days=29; }
+else { days=28; }
+}
+return (days);
+}
+function isLeapYear (Year) {
+if (((Year % 4)==0) && ((Year % 100)!=0) || ((Year % 400)==0)) {
+return (true);
+} else { return (false); }
+}
+// End -->
+</SCRIPT>
+<CENTER>
+<H2>万年历</H2>
+<FORM NAME="calControl" onSubmit="return false;">
+<TABLE CELLPADDING=0 CELLSPACING=0 BORDER=0>
+<TR><TD COLSPAN=7>
+<CENTER>
+<SELECT NAME="month" onChange="selectDate()">
+<OPTION>一月
+<OPTION>二月
+<OPTION>三月
+<OPTION>四月
+<OPTION>五月
+<OPTION>六月
+<OPTION>七月
+<OPTION>八月
+<OPTION>九月
+<OPTION>十月
+<OPTION>十一月
+<OPTION>十二月
+</SELECT>
+<INPUT NAME="year" TYPE=TEXT SIZE=4 MAXLENGTH=4>
+<INPUT TYPE="button" NAME="Go" value="创建" onClick="selectDate()">
+</CENTER>
+</TD>
+</TR>
+</FORM>
+<FORM NAME="calButtons">
+<TR><TD align="center"><textarea FONT="Courier" NAME="calPage" WRAP=no ROWS=8 COLS=22></textarea></TD><TR><TD><CENTER>
+<INPUT TYPE=BUTTON NAME="previousYear" VALUE="<<"    onClick="setPreviousYear()">
+<INPUT TYPE=BUTTON NAME="previousYear" VALUE="< "    onClick="setPreviousMonth()">
+<INPUT TYPE=BUTTON NAME="previousYear" VALUE="Today"    onClick="setToday()">
+<INPUT TYPE=BUTTON NAME="previousYear" VALUE="> "    onClick="setNextMonth()">
+<INPUT TYPE=BUTTON NAME="previousYear" VALUE=">>"    onClick="setNextYear()">
+</CENTER></TD></TR>
+</TABLE></FORM></FONT>
+</fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+第一步:把如下代码加入<body>区域中
+&nbsp;&lt;SCRIPT LANGUAGE=&quot;JavaScript&quot;&gt;
+&lt;!-- Begin
+function setToday() {
+var now   = new Date();
+var day   = now.getDate();
+var month = now.getMonth();
+var year  = now.getYear();
+if (year &lt; 2000)    // Y2K Fix, Isaac Powell
+year = year + 1900; 
+this.focusDay = day;
+document.calControl.month.selectedIndex = month;
+document.calControl.year.value = year;
+displayCalendar(month, year);
+}
+function isFourDigitYear(year) {
+if (year.length != 4) {
+alert (&quot;Sorry, the year must be four-digits in length.&quot;);
+document.calControl.year.select();
+document.calControl.year.focus();
+} else { return true; }
+}
+function selectDate() {
+var year  = document.calControl.year.value;
+if (isFourDigitYear(year)) {
+var day   = 0;
+var month = document.calControl.month.selectedIndex;
+displayCalendar(month, year);
+    }
+}
+
+function setPreviousYear() {
+var year  = document.calControl.year.value;
+if (isFourDigitYear(year)) {
+var day   = 0;
+var month = document.calControl.month.selectedIndex;
+year--;
+document.calControl.year.value = year;
+displayCalendar(month, year);
+   }
+}
+function setPreviousMonth() {
+var year  = document.calControl.year.value;
+if (isFourDigitYear(year)) {
+var day   = 0;
+var month = document.calControl.month.selectedIndex;
+if (month == 0) {
+month = 11;
+if (year &gt; 1000) {
+year--;
+document.calControl.year.value = year;
+}
+} else { month--; }
+document.calControl.month.selectedIndex = month;
+displayCalendar(month, year);
+   }
+}
+function setNextMonth() {
+var year  = document.calControl.year.value;
+if (isFourDigitYear(year)) {
+var day   = 0;
+var month = document.calControl.month.selectedIndex;
+if (month == 11) {
+month = 0;
+year++;
+document.calControl.year.value = year;
+} else { month++; }
+document.calControl.month.selectedIndex = month;
+displayCalendar(month, year);
+   }
+}
+function setNextYear() {
+var year = document.calControl.year.value;
+if (isFourDigitYear(year)) {
+var day = 0;
+var month = document.calControl.month.selectedIndex;
+year++;
+document.calControl.year.value = year;
+displayCalendar(month, year);
+   }
+}
+function displayCalendar(month, year) {       
+month = parseInt(month);
+year = parseInt(year);
+var i = 0;
+var days = getDaysInMonth(month+1,year);
+var firstOfMonth = new Date (year, month, 1);
+var startingPos = firstOfMonth.getDay();
+days += startingPos;
+document.calButtons.calPage.value  =   &quot; Su Mo Tu We Th Fr Sa&quot;;
+document.calButtons.calPage.value += &quot;\n --------------------&quot;;
+for (i = 0; i &lt; startingPos; i++) {
+if ( i%7 == 0 ) document.calButtons.calPage.value += &quot;\n &quot;;
+document.calButtons.calPage.value += &quot;   &quot;;
+}
+for (i = startingPos; i &lt; days; i++) {
+if ( i%7 == 0 ) document.calButtons.calPage.value += &quot;\n &quot;;
+if (i-startingPos+1 &lt; 10)
+document.calButtons.calPage.value += &quot;0&quot;;
+document.calButtons.calPage.value += i-startingPos+1;
+document.calButtons.calPage.value += &quot; &quot;;
+}
+for (i=days; i&lt;42; i++)  {
+if ( i%7 == 0 ) document.calButtons.calPage.value += &quot;\n &quot;;
+document.calButtons.calPage.value += &quot;   &quot;;
+}
+document.calControl.Go.focus();
+}
+function getDaysInMonth(month,year)  {
+var days;
+if (month==1 || month==3 || month==5 || month==7 || month==8 || month==10 || month==12)  days=31;
+else if (month==4 || month==6 || month==9 || month==11) days=30;
+else if (month==2)  {
+if (isLeapYear(year)) { days=29; }
+else { days=28; }
+}
+return (days);
+}
+function isLeapYear (Year) {
+if (((Year % 4)==0) &amp;&amp; ((Year % 100)!=0) || ((Year % 400)==0)) {
+return (true);
+} else { return (false); }
+}
+// End --&gt;
+&lt;/SCRIPT&gt;
+&lt;CENTER&gt;
+&lt;H2&gt;万年历&lt;/H2&gt;
+&lt;FORM NAME=&quot;calControl&quot; onSubmit=&quot;return false;&quot;&gt;
+&lt;TABLE CELLPADDING=0 CELLSPACING=0 BORDER=0&gt;
+&lt;TR&gt;&lt;TD COLSPAN=7&gt;
+&lt;CENTER&gt;
+&lt;SELECT NAME=&quot;month&quot; onChange=&quot;selectDate()&quot;&gt;
+&lt;OPTION&gt;一月
+&lt;OPTION&gt;二月
+&lt;OPTION&gt;三月
+&lt;OPTION&gt;四月
+&lt;OPTION&gt;五月
+&lt;OPTION&gt;六月
+&lt;OPTION&gt;七月
+&lt;OPTION&gt;八月
+&lt;OPTION&gt;九月
+&lt;OPTION&gt;十月
+&lt;OPTION&gt;十一月
+&lt;OPTION&gt;十二月
+&lt;/SELECT&gt;
+&lt;INPUT NAME=&quot;year&quot; TYPE=TEXT SIZE=4 MAXLENGTH=4&gt;
+&lt;INPUT TYPE=&quot;button&quot; NAME=&quot;Go&quot; value=&quot;创建&quot; onClick=&quot;selectDate()&quot;&gt;
+&lt;/CENTER&gt;
+&lt;/TD&gt;
+&lt;/TR&gt;
+&lt;/FORM&gt;
+&lt;FORM NAME=&quot;calButtons&quot;&gt;
+&lt;TR&gt;&lt;TD align=&quot;center&quot;&gt;&lt;textarea FONT=&quot;Courier&quot; NAME=&quot;calPage&quot; WRAP=no ROWS=8 COLS=22&gt;&lt;/textarea&gt;&lt;/TD&gt;&lt;TR&gt;&lt;TD&gt;&lt;CENTER&gt;
+&lt;INPUT TYPE=BUTTON NAME=&quot;previousYear&quot; VALUE=&quot;&lt;&lt;&quot;    onClick=&quot;setPreviousYear()&quot;&gt;
+&lt;INPUT TYPE=BUTTON NAME=&quot;previousYear&quot; VALUE=&quot;&lt; &quot;    onClick=&quot;setPreviousMonth()&quot;&gt;
+&lt;INPUT TYPE=BUTTON NAME=&quot;previousYear&quot; VALUE=&quot;Today&quot;    onClick=&quot;setToday()&quot;&gt;
+&lt;INPUT TYPE=BUTTON NAME=&quot;previousYear&quot; VALUE=&quot;&gt; &quot;    onClick=&quot;setNextMonth()&quot;&gt;
+&lt;INPUT TYPE=BUTTON NAME=&quot;previousYear&quot; VALUE=&quot;&gt;&gt;&quot;    onClick=&quot;setNextYear()&quot;&gt;
+&lt;/CENTER&gt;&lt;/TD&gt;&lt;/TR&gt;
+&lt;/TABLE&gt;&lt;/FORM&gt;&lt;/FONT&gt;
+
+
+
+
+&nbsp;
+第二步:把如下代码加入<body>区域中<body bgcolor="#ffffff" onLoad="setToday()">
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

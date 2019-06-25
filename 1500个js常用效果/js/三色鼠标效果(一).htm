@@ -1,0 +1,383 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--三色鼠标效果(一)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body bgcolor=#000000">
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">三色鼠标效果(一)</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=706" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<script language="JavaScript">
+<!-- 
+//Choose colours and size of effect !!
+var a_Colour='fff000';
+var b_Colour='00ff00';
+var c_Colour='ff00ff';
+var Size=120;
+//Alter nothing below !!
+
+var YDummy=new Array(),XDummy=new Array(),xpos=0,ypos=0,ThisStep=0;step=0.6;
+if (document.layers){
+window.captureEvents(Event.MOUSEMOVE);
+function nsMouse(evnt){
+xpos = window.pageYOffset+evnt.pageX+6;
+ypos = window.pageYOffset+evnt.pageY+16;
+}
+window.onMouseMove = nsMouse;
+}
+else if (document.all)
+{
+function ieMouse(){
+xpos = document.body.scrollLeft+event.x+6;
+ypos = document.body.scrollTop+event.y+16;
+}
+document.onmousemove = ieMouse;
+}
+
+function swirl(){
+for (i = 0; i < 3; i++)
+ { 
+ YDummy[i]=ypos+Size*Math.sin((1*Math.sin((ThisStep)/10))+i*2)*Math.sin((ThisStep)/4);
+ XDummy[i]=xpos+Size*Math.cos((1*Math.sin((ThisStep)/10))+i*2)*Math.sin((ThisStep)/4);
+ }
+ThisStep+=step;
+setTimeout('swirl()',10);
+}
+
+var amount=10;
+if (document.layers){
+for (i = 0; i < amount; i++)
+{
+document.write('<layer name=nsa'+i+' top=0 left=0 width='+i/2+' height='+i/2+' bgcolor='+a_Colour+'></layer>');
+document.write('<layer name=nsb'+i+' top=0 left=0 width='+i/2+' height='+i/2+' bgcolor='+b_Colour+'></layer>');
+document.write('<layer name=nsc'+i+' top=0 left=0 width='+i/2+' height='+i/2+' bgcolor='+c_Colour+'></layer>');
+}
+}
+else if (document.all){
+document.write('<div id="ODiv" style="position:absolute;top:0px;left:0px">'
++'<div id="IDiv" style="position:relative">');
+for (i = 0; i < amount; i++)
+{
+document.write('<div id=x style="position:absolute;top:0px;left:0px;width:'+i/2+';height:'+i/2+';background:'+a_Colour+';font-size:'+i/2+'"></div>');
+document.write('<div id=y style="position:absolute;top:0px;left:0px;width:'+i/2+';height:'+i/2+';background:'+b_Colour+';font-size:'+i/2+'"></div>');
+document.write('<div id=z style="position:absolute;top:0px;left:0px;width:'+i/2+';height:'+i/2+';background:'+c_Colour+';font-size:'+i/2+'"></div>');
+}
+document.write('</div></div>');
+}
+function prepos(){
+var ntscp=document.layers;
+var msie=document.all;
+if (document.layers){
+for (i = 0; i < amount; i++)
+{
+ if (i < amount-1) 
+ {
+ ntscp['nsa'+i].top=ntscp['nsa'+(i+1)].top;ntscp['nsa'+i].left=ntscp['nsa'+(i+1)].left;
+ ntscp['nsb'+i].top=ntscp['nsb'+(i+1)].top;ntscp['nsb'+i].left=ntscp['nsb'+(i+1)].left;
+ ntscp['nsc'+i].top=ntscp['nsc'+(i+1)].top;ntscp['nsc'+i].left=ntscp['nsc'+(i+1)].left;
+ } 
+else  
+ {
+ ntscp['nsa'+i].top=YDummy[0];ntscp['nsa'+i].left=XDummy[0];
+ ntscp['nsb'+i].top=YDummy[1];ntscp['nsb'+i].left=XDummy[1];
+ ntscp['nsc'+i].top=YDummy[2];ntscp['nsc'+i].left=XDummy[2];
+ }
+}
+}
+else if (document.all){
+for (i = 0; i <  amount; i++)
+{
+ if (i < amount-1) 
+ {
+ msie.x[i].style.top=msie.x[i+1].style.top;msie.x[i].style.left=msie.x[i+1].style.left;
+ msie.y[i].style.top=msie.y[i+1].style.top;msie.y[i].style.left=msie.y[i+1].style.left;
+ msie.z[i].style.top=msie.z[i+1].style.top;msie.z[i].style.left=msie.z[i+1].style.left;
+ } 
+else 
+ {
+ msie.x[i].style.top=YDummy[0];msie.x[i].style.left=XDummy[0];
+ msie.y[i].style.top=YDummy[1];msie.y[i].style.left=XDummy[1];
+ msie.z[i].style.top=YDummy[2];msie.z[i].style.left=XDummy[2];
+ }
+}
+}
+setTimeout("prepos()",10);
+}
+function Start(){
+swirl(),prepos()
+}
+window.onload=Start;
+// -->
+</script></fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+第一步:把如下代码加入<body>区域中
+&nbsp;&lt;script language=&quot;JavaScript&quot;&gt;
+&lt;!-- 
+//Choose colours and size of effect !!
+var a_Colour='fff000';
+var b_Colour='00ff00';
+var c_Colour='ff00ff';
+var Size=120;
+//Alter nothing below !!
+
+var YDummy=new Array(),XDummy=new Array(),xpos=0,ypos=0,ThisStep=0;step=0.6;
+if (document.layers){
+window.captureEvents(Event.MOUSEMOVE);
+function nsMouse(evnt){
+xpos = window.pageYOffset+evnt.pageX+6;
+ypos = window.pageYOffset+evnt.pageY+16;
+}
+window.onMouseMove = nsMouse;
+}
+else if (document.all)
+{
+function ieMouse(){
+xpos = document.body.scrollLeft+event.x+6;
+ypos = document.body.scrollTop+event.y+16;
+}
+document.onmousemove = ieMouse;
+}
+
+function swirl(){
+for (i = 0; i &lt; 3; i++)
+ { 
+ YDummy[i]=ypos+Size*Math.sin((1*Math.sin((ThisStep)/10))+i*2)*Math.sin((ThisStep)/4);
+ XDummy[i]=xpos+Size*Math.cos((1*Math.sin((ThisStep)/10))+i*2)*Math.sin((ThisStep)/4);
+ }
+ThisStep+=step;
+setTimeout('swirl()',10);
+}
+
+var amount=10;
+if (document.layers){
+for (i = 0; i &lt; amount; i++)
+{
+document.write('&lt;layer name=nsa'+i+' top=0 left=0 width='+i/2+' height='+i/2+' bgcolor='+a_Colour+'&gt;&lt;/layer&gt;');
+document.write('&lt;layer name=nsb'+i+' top=0 left=0 width='+i/2+' height='+i/2+' bgcolor='+b_Colour+'&gt;&lt;/layer&gt;');
+document.write('&lt;layer name=nsc'+i+' top=0 left=0 width='+i/2+' height='+i/2+' bgcolor='+c_Colour+'&gt;&lt;/layer&gt;');
+}
+}
+else if (document.all){
+document.write('&lt;div id=&quot;ODiv&quot; style=&quot;position:absolute;top:0px;left:0px&quot;&gt;'
++'&lt;div id=&quot;IDiv&quot; style=&quot;position:relative&quot;&gt;');
+for (i = 0; i &lt; amount; i++)
+{
+document.write('&lt;div id=x style=&quot;position:absolute;top:0px;left:0px;width:'+i/2+';height:'+i/2+';background:'+a_Colour+';font-size:'+i/2+'&quot;&gt;&lt;/div&gt;');
+document.write('&lt;div id=y style=&quot;position:absolute;top:0px;left:0px;width:'+i/2+';height:'+i/2+';background:'+b_Colour+';font-size:'+i/2+'&quot;&gt;&lt;/div&gt;');
+document.write('&lt;div id=z style=&quot;position:absolute;top:0px;left:0px;width:'+i/2+';height:'+i/2+';background:'+c_Colour+';font-size:'+i/2+'&quot;&gt;&lt;/div&gt;');
+}
+document.write('&lt;/div&gt;&lt;/div&gt;');
+}
+function prepos(){
+var ntscp=document.layers;
+var msie=document.all;
+if (document.layers){
+for (i = 0; i &lt; amount; i++)
+{
+ if (i &lt; amount-1) 
+ {
+ ntscp['nsa'+i].top=ntscp['nsa'+(i+1)].top;ntscp['nsa'+i].left=ntscp['nsa'+(i+1)].left;
+ ntscp['nsb'+i].top=ntscp['nsb'+(i+1)].top;ntscp['nsb'+i].left=ntscp['nsb'+(i+1)].left;
+ ntscp['nsc'+i].top=ntscp['nsc'+(i+1)].top;ntscp['nsc'+i].left=ntscp['nsc'+(i+1)].left;
+ } 
+else  
+ {
+ ntscp['nsa'+i].top=YDummy[0];ntscp['nsa'+i].left=XDummy[0];
+ ntscp['nsb'+i].top=YDummy[1];ntscp['nsb'+i].left=XDummy[1];
+ ntscp['nsc'+i].top=YDummy[2];ntscp['nsc'+i].left=XDummy[2];
+ }
+}
+}
+else if (document.all){
+for (i = 0; i &lt;  amount; i++)
+{
+ if (i &lt; amount-1) 
+ {
+ msie.x[i].style.top=msie.x[i+1].style.top;msie.x[i].style.left=msie.x[i+1].style.left;
+ msie.y[i].style.top=msie.y[i+1].style.top;msie.y[i].style.left=msie.y[i+1].style.left;
+ msie.z[i].style.top=msie.z[i+1].style.top;msie.z[i].style.left=msie.z[i+1].style.left;
+ } 
+else 
+ {
+ msie.x[i].style.top=YDummy[0];msie.x[i].style.left=XDummy[0];
+ msie.y[i].style.top=YDummy[1];msie.y[i].style.left=XDummy[1];
+ msie.z[i].style.top=YDummy[2];msie.z[i].style.left=XDummy[2];
+ }
+}
+}
+setTimeout(&quot;prepos()&quot;,10);
+}
+function Start(){
+swirl(),prepos()
+}
+window.onload=Start;
+// --&gt;
+&lt;/script&gt;
+
+
+
+&nbsp;
+第二步:把如下代码加入<body>区域中<body bgcolor=#000000">
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

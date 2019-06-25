@@ -1,0 +1,989 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--多层下拉菜单</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body bgcolor=#FFFFFF>
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">多层下拉菜单</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=1034" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<style rel=stylesheet type=text/css>
+.favMenu {
+	BACKGROUND: buttonface; COLOR: windowtext; CURSOR: hand; FONT: menu
+}
+.favMenu DIV {
+	WIDTH: 100%
+}
+.favMenu A {
+	COLOR: windowtext; TEXT-DECORATION: none
+}
+.favMenu A:hover {
+	COLOR: windowtext; TEXT-DECORATION: underline
+}
+.topFolder {
+	BORDER-BOTTOM: buttonface 1px solid; BORDER-LEFT: buttonface 1px solid; BORDER-RIGHT: buttonface 1px solid; BORDER-TOP: buttonface 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; PADDING-TOP: 2px
+}
+.topItem {
+	BORDER-BOTTOM: buttonface 1px solid; BORDER-LEFT: buttonface 1px solid; BORDER-RIGHT: buttonface 1px solid; BORDER-TOP: buttonface 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; PADDING-TOP: 2px
+}
+.subFolder {
+	PADDING-BOTTOM: 3px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; PADDING-TOP: 3px
+}
+.subItem {
+	PADDING-BOTTOM: 3px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; PADDING-TOP: 3px
+}
+.sub {
+	BACKGROUND: url(/images/tileback.gif) buttonface; BORDER-BOTTOM: buttonhighlight 1px solid; BORDER-LEFT: buttonshadow 1px solid; BORDER-RIGHT: buttonhighlight 1px solid; DISPLAY: none; PADDING-TOP: 1px
+}
+.sub .sub {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-RIGHT: 0px; BORDER-TOP: 0px
+}
+.icon {
+	HEIGHT: 16px; MARGIN-RIGHT: 5px; VERTICAL-ALIGN: top; WIDTH: 16px
+}
+.outer {
+	BACKGROUND: buttonface; BORDER-BOTTOM: buttonhighlight 1px solid; BORDER-LEFT: buttonshadow 1px solid; BORDER-RIGHT: buttonhighlight 1px solid; BORDER-TOP: buttonshadow 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.inner {
+	BORDER-BOTTOM: buttonshadow 1px solid; BORDER-LEFT: buttonhighlight 1px solid; BORDER-RIGHT: buttonshadow 1px solid; BORDER-TOP: buttonhighlight 1px solid; OVERFLOW: hidden; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.scrollButton {
+	BACKGROUND: buttonface; BORDER-BOTTOM: buttonface 1px solid; BORDER-LEFT: buttonface 1px solid; BORDER-RIGHT: buttonface 1px solid; BORDER-TOP: buttonface 1px solid; COLOR: buttontext; CURSOR: default; DISPLAY: none; FONT-FAMILY: webdings; FONT-SIZE: 10px; HEIGHT: 16px; OVERFLOW: hidden; POSITION: absolute; TEXT-ALIGN: center; WIDTH: 50px
+}
+.flat {
+	BORDER-BOTTOM: buttonface 1px solid; BORDER-LEFT: buttonface 1px solid; BORDER-RIGHT: buttonface 1px solid; BORDER-TOP: buttonface 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+</style>
+<SCRIPT type=text/javascript>
+var selectedItem = null;
+
+var targetWin;
+
+document.onclick = handleClick;
+document.onmouseover = handleOver;
+document.onmouseout = handleOut;
+document.onmousedown = handleDown;
+document.onmouseup = handleUp;
+
+document.write(writeSubPadding(10));  //write the stylesheet for the sub. Getting the indention right
+
+function handleClick() {
+	el = getReal(window.event.srcElement, "tagName", "DIV");
+	
+	if ((el.className == "topFolder") || (el.className == "subFolder")) {
+//		if (el.sub == null) el.sub = eval(el.id + "Sub");
+//		alert(el.sub);
+		el.sub = eval(el.id + "Sub");
+		if (el.sub.style.display == null) el.sub.style.display = "none";
+		if (el.sub.style.display != "block") { //hidden
+			//any other sub open?
+			if (el.parentElement.openedSub != null) {
+				var opener = eval(el.parentElement.openedSub + ".opener");
+				hide(el.parentElement.openedSub);
+				if (opener.className == "topFolder")
+					outTopItem(opener);
+			}
+			el.sub.style.display = "block";
+			el.sub.parentElement.openedSub = el.sub.id;
+			el.sub.opener = el;
+		}
+		else {
+			if (el.sub.openedSub != null) hide(el.sub.openedSub);
+			else hide(el.sub.id);
+		}
+	}
+	
+	if ((el.className == "subItem") || (el.className == "subFolder")) {
+		if (selectedItem != null)
+			restoreSubItem(selectedItem);
+		highlightSubItem(el);
+	}
+	
+	if ((el.className == "topItem") || (el.className == "topFolder")) {
+		if (selectedItem != null)
+			restoreSubItem(selectedItem);
+	}
+
+	if ((el.className == "topItem") || (el.className == "subItem")) {
+		if ((el.href != null) && (el.href != "")) {
+			if ((el.target == null) || (el.target == "")) {
+				if (window.opener == null) {
+//					alert(document.all.tags("BASE").item(0));
+					if (document.all.tags("BASE").item(0) != null)
+//						eval(document.all.tags("BASE").item(0).target + ".location = el.href");
+						window.open(el.href, document.all.tags("BASE").item(0).target);
+					else 
+						window.location = el.href;					// HERE IS THE LOADING!!!
+				}
+				else {
+					window.opener.location =  el.href;
+				}
+			}
+			else {
+				window.open(el.href, el.target);
+//				eval(el.target + ".location = el.href");
+			}
+		}
+	}
+	
+	var tmp  = getReal(el, "className", "favMenu");
+	if (tmp.className == "favMenu") fixScroll(tmp);
+
+}
+
+function handleOver() {
+	var fromEl = getReal(window.event.fromElement, "tagName", "DIV");
+	var toEl = getReal(window.event.toElement, "tagName", "DIV");
+	if (fromEl == toEl) return;
+	
+	el = toEl;
+	
+	if ((el.className == "topFolder") || (el.className == "topItem")) overTopItem(el);
+	if ((el.className == "subFolder") || (el.className == "subItem")) overSubItem(el);
+	
+	if ((el.className == "topItem") || (el.className == "subItem")) {
+		if (el.href != null) {
+			if (el.oldtitle == null) el.oldtitle = el.title;
+			if (el.oldtitle != "")
+				el.title = el.oldtitle + "\n" + el.href;
+			else
+				el.title = el.oldtitle + el.href;
+		}
+	}
+	
+	if (el.className == "scrollButton") overscrollButton(el);
+}
+
+function handleOut() {
+	var fromEl = getReal(window.event.fromElement, "tagName", "DIV");
+	var toEl = getReal(window.event.toElement, "tagName", "DIV");
+	if (fromEl == toEl) return;
+	
+	el = fromEl;
+
+	if ((el.className == "topFolder") || (el.className == "topItem")) outTopItem(el);
+	if ((el.className == "subFolder") || (el.className == "subItem")) outSubItem(el);
+	if (el.className == "scrollButton") outscrollButton(el);
+}
+
+function handleDown() {
+	el = getReal(window.event.srcElement, "tagName", "DIV");
+		
+	if (el.className == "scrollButton") {
+		downscrollButton(el);
+		var mark = Math.max(el.id.indexOf("Up"), el.id.indexOf("Down"));
+		var type = el.id.substr(mark);
+		var menuID = el.id.substring(0,mark);
+		eval("scroll" + type + "(" + menuID + ")");
+	}
+}
+
+function handleUp() {
+	el = getReal(window.event.srcElement, "tagName", "DIV");
+		
+	if (el.className == "scrollButton") {
+		upscrollButton(el);
+		window.clearTimeout(scrolltimer);
+	}
+}
+
+////////////////////// EVERYTHING IS HANDLED ////////////////////////////
+
+function hide(elID) {
+	var el = eval(elID);
+	el.style.display = "none";
+	el.parentElement.openedSub = null;
+	if (el.openedSub != null) hide(el.openedSub);
+}
+
+function writeSubPadding(depth) {
+	var str, str2, val;
+
+	var str = "<style type='text/css'>\n";
+	
+	for (var i=0; i < depth; i++) {
+		str2 = "";
+		val  = 0;
+		for (var j=0; j < i; j++) {
+			str2 += ".sub "
+			val += 22;
+		}
+		str += str2 + ".subFolder {padding-left: " + val + "px;}\n";
+		str += str2 + ".subItem   {padding-left: " + val + "px;}\n";
+	}
+	
+	str += "</style>\n";
+	return str;
+}
+
+//If you wan't to change colors do so below
+
+function overTopItem(el) {
+	with (el.style) {
+		background   = "buttonface";
+		borderLeft   = "1px solid buttonhighlight";
+		borderRight  = "1px solid buttonshadow";
+		borderTop    = "1px solid buttonhighlight";
+		borderBottom = "1px solid buttonshadow";
+		paddingBottom = "2px";
+	}
+}
+
+function outTopItem(el) {
+	if ((el.sub != null) && (el.parentElement.openedSub == el.sub.id)) { //opened
+		with(el.style) {
+			borderTop = "1px solid buttonshadow";
+			borderLeft  = "1px solid buttonshadow";
+			borderRight    = "1px solid buttonhighlight";
+			borderBottom = "0px";
+			paddingBottom = "3px";
+			background = "url(/images/tileback.gif) buttonface";
+		}
+	}
+	else {
+		with (el.style) {
+			border = "1px solid buttonface";
+			background = "buttonface";
+			padding = "2px";
+		}
+	}
+}
+
+function overSubItem(el) {
+	el.style.textDecoration = "underline";
+}
+
+function outSubItem(el) {
+	el.style.textDecoration = "none";
+}
+
+function highlightSubItem(el) {
+	el.style.background = "buttonshadow";
+	el.style.color      = "white"; //"highlighttext";
+	selectedItem = el;
+}
+
+function restoreSubItem(el) {
+	el.style.background = "url(/images/tileback.gif) buttonface";
+	el.style.color      = "menutext";
+	selectedItem = null;
+}
+
+function overscrollButton(el) {
+	overTopItem(el);
+	el.style.padding = "0px";
+}
+
+function outscrollButton(el) {
+	outTopItem(el);
+	el.style.padding = "0px";
+}
+
+function downscrollButton(el) {
+	with (el.style) {
+		borderRight   = "1px solid buttonhighlight";
+		borderLeft  = "1px solid buttonshadow";
+		borderBottom    = "1px solid buttonhighlight";
+		borderTop = "1px solid buttonshadow";
+	}
+}
+
+function upscrollButton(el) {
+	overTopItem(el);
+	el.style.padding = "0px";
+}
+
+// ...till here
+
+function getReal(el, type, value) {
+	var temp = el;
+	while ((temp != null) && (temp.tagName != "BODY")) {
+		if (eval("temp." + type) == value) {
+			el = temp;
+			return el;
+		}
+		temp = temp.parentElement;
+	}
+	return el;
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+// Fix the scrollbars
+
+var globalScrollContainer;	// Needed because the object is called through windwow.setTimeout
+var overflowTimeout = 1;
+
+function fixScroll(el) {
+	globalScrollContainer = el;
+	window.setTimeout('changeOverflow(globalScrollContainer)', overflowTimeout);
+}
+
+
+function changeOverflow(el) {
+	if (el.offsetHeight > el.parentElement.clientHeight)
+		window.setTimeout('globalScrollContainer.parentElement.style.overflow = "auto";', overflowTimeout);
+	else
+		window.setTimeout('globalScrollContainer.parentElement.style.overflow = "hidden";', overflowTimeout);
+}
+</SCRIPT>
+<!-- Favorite Bar Starts Here -->
+<DIV class=outer style="HEIGHT: 280px; MARGIN: 10px; WIDTH: 180px">
+<DIV class=inner style="HEIGHT: 280px; WIDTH: 180px">
+<DIV class=favMenu id=aMenu>
+<DIV class=topFolder id=samples><IMG class=icon height=16 
+src="photo/foldericon1.gif" width=16>Samples</DIV>
+<DIV class=sub id=samplesSub>
+<DIV class=subItem title="(Updated: 980701)" 
+href="/dhtml/favbar/fav2.shtml"></SPAN><IMG class=icon height=16 
+src="photo/htmlicon.gif" width=16>Favorite Bar</DIV>
+<DIV class=subItem title="(Updated: 980701)" href="/dhtml/testBlink.shtml"><IMG 
+class=icon height=16 src="photo/htmlicon.gif" width=16><BLINK> Behavior 
+(IE5)</DIV>
+<DIV class=subItem title="(Updated: 980630)" 
+href="/dhtml/genericMove.shtml"><IMG class=icon height=16 
+src="photo/htmlicon.gif" width=16>genericMove</DIV>
+<DIV class=subItem title="(Updated: 980628)" 
+href="/dhtml/genericResize.shtml"><IMG class=icon height=16 
+src="photo/htmlicon.gif" width=16>Resizeable DIV</DIV>
+<DIV class=subItem title="(Updated: 980605)" 
+href="/dhtml/dhtmlmenu/menu.shtml"><IMG class=icon height=16 
+src="photo/htmlicon.gif" width=16>DHTML Menu</DIV>
+<DIV class=subItem 
+title="Uses one <TEXTAREA> and one <IFRAME> for preview. (Updated: 980318)" 
+href="/dhtml/DHTMLeditor.shtml"><IMG class=icon height=16 
+src="photo/htmlicon.gif" width=16>DHTML Editor</DIV>
+<DIV class=subItem title="Use rich text tooltips. (Updated: Way back!)" 
+href="/dhtml/tooltip/tooltip.shtml"><IMG class=icon height=16 
+src="photo/htmlicon.gif" width=16>ToolTips</DIV></DIV>
+<DIV class=topFolder id=docs><IMG class=icon height=16 
+src="photo/foldericon1.gif" width=16>Docs</DIV>
+<DIV class=sub id=docsSub>
+<DIV class=subFolder id=subdocs><IMG class=icon height=16 
+src="photo/foldericon1.gif" width=16>more Docs</DIV>
+<DIV class=sub id=subdocsSub>
+<DIV class=subFolder id=evendocs><IMG class=icon height=16 
+src="photo/foldericon1.gif" width=16>even more Docs</DIV>
+<DIV class=sub id=evendocsSub>
+<DIV class=subItem><IMG class=icon height=16 src="photo/htmlicon.gif" 
+width=16>doc 3.1</DIV>
+<DIV class=subItem><IMG class=icon height=16 src="photo/htmlicon.gif" 
+width=16>doc 3.2</DIV></DIV>
+<DIV class=subItem><IMG class=icon height=16 src="photo/htmlicon.gif" 
+width=16>doc 2.1</DIV>
+<DIV class=subItem><IMG class=icon height=16 src="photo/htmlicon.gif" 
+width=16>doc 2.2</DIV></DIV>
+<DIV class=subItem><IMG class=icon height=16 src="photo/htmlicon.gif" 
+width=16>doc 1</DIV>
+<DIV class=subItem><IMG class=icon height=16 src="photo/htmlicon.gif" 
+width=16>doc 2</DIV>
+<DIV class=subFolder id=subdocs2><IMG class=icon height=16 
+src="photo/foldericon1.gif" width=16>more Docs</DIV>
+<DIV class=sub id=subdocs2Sub>
+<DIV class=subItem><IMG class=icon height=16 src="photo/htmlicon.gif" 
+width=16>doc 2.1</DIV>
+<DIV class=subItem><IMG class=icon height=16 src="photo/htmlicon.gif" 
+width=16>doc 2.2</DIV>
+<DIV class=subFolder id=evendocs2><IMG class=icon height=16 
+src="photo/foldericon1.gif" width=16>even more Docs</DIV>
+<DIV class=sub id=evendocs2Sub>
+<DIV class=subItem><IMG class=icon height=16 src="photo/htmlicon.gif" 
+width=16>doc 3.1</DIV>
+<DIV class=subItem><IMG class=icon height=16 src="photo/htmlicon.gif" 
+width=16>doc 3.2</DIV></DIV></DIV>
+<DIV class=subItem><IMG class=icon height=16 src="photo/htmlicon.gif" 
+width=16>doc 3</DIV>
+<DIV class=subItem><IMG class=icon height=16 src="photo/htmlicon.gif" 
+width=16>doc 4</DIV></DIV><!-- for docsSub-->
+<DIV class=topFolder id=links><IMG class=icon height=16 
+src="photo/foldericon1.gif" width=16>Links</DIV>
+<DIV class=sub id=linksSub>
+<DIV class=subItem href="http://www.insidedhtml.com"><IMG class=icon height=16 
+src="photo/htmlicon.gif" width=16>InsideDHTML</DIV>
+<DIV class=subItem href="http://members.xoom.com/dynduo/"><IMG class=icon 
+height=16 src="photo/htmlicon.gif" width=16>The Dynamic Duo</DIV>
+<DIV class=subItem href="http://www.ircweb.net/eae/fx/"><IMG class=icon 
+height=16 src="photo/htmlicon.gif" width=16>WebFX</DIV></DIV>
+<DIV class=topFolder id=todo style="FONT-WEIGHT: bold"><IMG class=icon height=16 
+src="photo/sched.gif" width=16><font color=red>警告：</font></DIV>
+<DIV class=sub id=todoSub style="PADDING-LEFT: 22px">
+<DIV>此特效未经允许请不要随便使用</DIV></DIV>
+<DIV class=topItem href="http://www.163.net/"><IMG class=icon height=17 
+src="photo/home.gif" style="HEIGHT: 17px" width=16>Back to 
+163.net</DIV></DIV>
+</fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+把如下代码加入<body>区域中
+&nbsp;&lt;style rel=stylesheet type=text/css&gt;
+.favMenu {
+	BACKGROUND: buttonface; COLOR: windowtext; CURSOR: hand; FONT: menu
+}
+.favMenu DIV {
+	WIDTH: 100%
+}
+.favMenu A {
+	COLOR: windowtext; TEXT-DECORATION: none
+}
+.favMenu A:hover {
+	COLOR: windowtext; TEXT-DECORATION: underline
+}
+.topFolder {
+	BORDER-BOTTOM: buttonface 1px solid; BORDER-LEFT: buttonface 1px solid; BORDER-RIGHT: buttonface 1px solid; BORDER-TOP: buttonface 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; PADDING-TOP: 2px
+}
+.topItem {
+	BORDER-BOTTOM: buttonface 1px solid; BORDER-LEFT: buttonface 1px solid; BORDER-RIGHT: buttonface 1px solid; BORDER-TOP: buttonface 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; PADDING-TOP: 2px
+}
+.subFolder {
+	PADDING-BOTTOM: 3px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; PADDING-TOP: 3px
+}
+.subItem {
+	PADDING-BOTTOM: 3px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; PADDING-TOP: 3px
+}
+.sub {
+	BACKGROUND: url(/images/tileback.gif) buttonface; BORDER-BOTTOM: buttonhighlight 1px solid; BORDER-LEFT: buttonshadow 1px solid; BORDER-RIGHT: buttonhighlight 1px solid; DISPLAY: none; PADDING-TOP: 1px
+}
+.sub .sub {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-RIGHT: 0px; BORDER-TOP: 0px
+}
+.icon {
+	HEIGHT: 16px; MARGIN-RIGHT: 5px; VERTICAL-ALIGN: top; WIDTH: 16px
+}
+.outer {
+	BACKGROUND: buttonface; BORDER-BOTTOM: buttonhighlight 1px solid; BORDER-LEFT: buttonshadow 1px solid; BORDER-RIGHT: buttonhighlight 1px solid; BORDER-TOP: buttonshadow 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.inner {
+	BORDER-BOTTOM: buttonshadow 1px solid; BORDER-LEFT: buttonhighlight 1px solid; BORDER-RIGHT: buttonshadow 1px solid; BORDER-TOP: buttonhighlight 1px solid; OVERFLOW: hidden; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.scrollButton {
+	BACKGROUND: buttonface; BORDER-BOTTOM: buttonface 1px solid; BORDER-LEFT: buttonface 1px solid; BORDER-RIGHT: buttonface 1px solid; BORDER-TOP: buttonface 1px solid; COLOR: buttontext; CURSOR: default; DISPLAY: none; FONT-FAMILY: webdings; FONT-SIZE: 10px; HEIGHT: 16px; OVERFLOW: hidden; POSITION: absolute; TEXT-ALIGN: center; WIDTH: 50px
+}
+.flat {
+	BORDER-BOTTOM: buttonface 1px solid; BORDER-LEFT: buttonface 1px solid; BORDER-RIGHT: buttonface 1px solid; BORDER-TOP: buttonface 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+&lt;/style&gt;
+&lt;SCRIPT type=text/javascript&gt;
+var selectedItem = null;
+
+var targetWin;
+
+document.onclick = handleClick;
+document.onmouseover = handleOver;
+document.onmouseout = handleOut;
+document.onmousedown = handleDown;
+document.onmouseup = handleUp;
+
+document.write(writeSubPadding(10));  //write the stylesheet for the sub. Getting the indention right
+
+function handleClick() {
+	el = getReal(window.event.srcElement, &quot;tagName&quot;, &quot;DIV&quot;);
+	
+	if ((el.className == &quot;topFolder&quot;) || (el.className == &quot;subFolder&quot;)) {
+//		if (el.sub == null) el.sub = eval(el.id + &quot;Sub&quot;);
+//		alert(el.sub);
+		el.sub = eval(el.id + &quot;Sub&quot;);
+		if (el.sub.style.display == null) el.sub.style.display = &quot;none&quot;;
+		if (el.sub.style.display != &quot;block&quot;) { //hidden
+			//any other sub open?
+			if (el.parentElement.openedSub != null) {
+				var opener = eval(el.parentElement.openedSub + &quot;.opener&quot;);
+				hide(el.parentElement.openedSub);
+				if (opener.className == &quot;topFolder&quot;)
+					outTopItem(opener);
+			}
+			el.sub.style.display = &quot;block&quot;;
+			el.sub.parentElement.openedSub = el.sub.id;
+			el.sub.opener = el;
+		}
+		else {
+			if (el.sub.openedSub != null) hide(el.sub.openedSub);
+			else hide(el.sub.id);
+		}
+	}
+	
+	if ((el.className == &quot;subItem&quot;) || (el.className == &quot;subFolder&quot;)) {
+		if (selectedItem != null)
+			restoreSubItem(selectedItem);
+		highlightSubItem(el);
+	}
+	
+	if ((el.className == &quot;topItem&quot;) || (el.className == &quot;topFolder&quot;)) {
+		if (selectedItem != null)
+			restoreSubItem(selectedItem);
+	}
+
+	if ((el.className == &quot;topItem&quot;) || (el.className == &quot;subItem&quot;)) {
+		if ((el.href != null) &amp;&amp; (el.href != &quot;&quot;)) {
+			if ((el.target == null) || (el.target == &quot;&quot;)) {
+				if (window.opener == null) {
+//					alert(document.all.tags(&quot;BASE&quot;).item(0));
+					if (document.all.tags(&quot;BASE&quot;).item(0) != null)
+//						eval(document.all.tags(&quot;BASE&quot;).item(0).target + &quot;.location = el.href&quot;);
+						window.open(el.href, document.all.tags(&quot;BASE&quot;).item(0).target);
+					else 
+						window.location = el.href;					// HERE IS THE LOADING!!!
+				}
+				else {
+					window.opener.location =  el.href;
+				}
+			}
+			else {
+				window.open(el.href, el.target);
+//				eval(el.target + &quot;.location = el.href&quot;);
+			}
+		}
+	}
+	
+	var tmp  = getReal(el, &quot;className&quot;, &quot;favMenu&quot;);
+	if (tmp.className == &quot;favMenu&quot;) fixScroll(tmp);
+
+}
+
+function handleOver() {
+	var fromEl = getReal(window.event.fromElement, &quot;tagName&quot;, &quot;DIV&quot;);
+	var toEl = getReal(window.event.toElement, &quot;tagName&quot;, &quot;DIV&quot;);
+	if (fromEl == toEl) return;
+	
+	el = toEl;
+	
+	if ((el.className == &quot;topFolder&quot;) || (el.className == &quot;topItem&quot;)) overTopItem(el);
+	if ((el.className == &quot;subFolder&quot;) || (el.className == &quot;subItem&quot;)) overSubItem(el);
+	
+	if ((el.className == &quot;topItem&quot;) || (el.className == &quot;subItem&quot;)) {
+		if (el.href != null) {
+			if (el.oldtitle == null) el.oldtitle = el.title;
+			if (el.oldtitle != &quot;&quot;)
+				el.title = el.oldtitle + &quot;\n&quot; + el.href;
+			else
+				el.title = el.oldtitle + el.href;
+		}
+	}
+	
+	if (el.className == &quot;scrollButton&quot;) overscrollButton(el);
+}
+
+function handleOut() {
+	var fromEl = getReal(window.event.fromElement, &quot;tagName&quot;, &quot;DIV&quot;);
+	var toEl = getReal(window.event.toElement, &quot;tagName&quot;, &quot;DIV&quot;);
+	if (fromEl == toEl) return;
+	
+	el = fromEl;
+
+	if ((el.className == &quot;topFolder&quot;) || (el.className == &quot;topItem&quot;)) outTopItem(el);
+	if ((el.className == &quot;subFolder&quot;) || (el.className == &quot;subItem&quot;)) outSubItem(el);
+	if (el.className == &quot;scrollButton&quot;) outscrollButton(el);
+}
+
+function handleDown() {
+	el = getReal(window.event.srcElement, &quot;tagName&quot;, &quot;DIV&quot;);
+		
+	if (el.className == &quot;scrollButton&quot;) {
+		downscrollButton(el);
+		var mark = Math.max(el.id.indexOf(&quot;Up&quot;), el.id.indexOf(&quot;Down&quot;));
+		var type = el.id.substr(mark);
+		var menuID = el.id.substring(0,mark);
+		eval(&quot;scroll&quot; + type + &quot;(&quot; + menuID + &quot;)&quot;);
+	}
+}
+
+function handleUp() {
+	el = getReal(window.event.srcElement, &quot;tagName&quot;, &quot;DIV&quot;);
+		
+	if (el.className == &quot;scrollButton&quot;) {
+		upscrollButton(el);
+		window.clearTimeout(scrolltimer);
+	}
+}
+
+////////////////////// EVERYTHING IS HANDLED ////////////////////////////
+
+function hide(elID) {
+	var el = eval(elID);
+	el.style.display = &quot;none&quot;;
+	el.parentElement.openedSub = null;
+	if (el.openedSub != null) hide(el.openedSub);
+}
+
+function writeSubPadding(depth) {
+	var str, str2, val;
+
+	var str = &quot;&lt;style type='text/css'&gt;\n&quot;;
+	
+	for (var i=0; i &lt; depth; i++) {
+		str2 = &quot;&quot;;
+		val  = 0;
+		for (var j=0; j &lt; i; j++) {
+			str2 += &quot;.sub &quot;
+			val += 22;
+		}
+		str += str2 + &quot;.subFolder {padding-left: &quot; + val + &quot;px;}\n&quot;;
+		str += str2 + &quot;.subItem   {padding-left: &quot; + val + &quot;px;}\n&quot;;
+	}
+	
+	str += &quot;&lt;/style&gt;\n&quot;;
+	return str;
+}
+
+//If you wan't to change colors do so below
+
+function overTopItem(el) {
+	with (el.style) {
+		background   = &quot;buttonface&quot;;
+		borderLeft   = &quot;1px solid buttonhighlight&quot;;
+		borderRight  = &quot;1px solid buttonshadow&quot;;
+		borderTop    = &quot;1px solid buttonhighlight&quot;;
+		borderBottom = &quot;1px solid buttonshadow&quot;;
+		paddingBottom = &quot;2px&quot;;
+	}
+}
+
+function outTopItem(el) {
+	if ((el.sub != null) &amp;&amp; (el.parentElement.openedSub == el.sub.id)) { //opened
+		with(el.style) {
+			borderTop = &quot;1px solid buttonshadow&quot;;
+			borderLeft  = &quot;1px solid buttonshadow&quot;;
+			borderRight    = &quot;1px solid buttonhighlight&quot;;
+			borderBottom = &quot;0px&quot;;
+			paddingBottom = &quot;3px&quot;;
+			background = &quot;url(/images/tileback.gif) buttonface&quot;;
+		}
+	}
+	else {
+		with (el.style) {
+			border = &quot;1px solid buttonface&quot;;
+			background = &quot;buttonface&quot;;
+			padding = &quot;2px&quot;;
+		}
+	}
+}
+
+function overSubItem(el) {
+	el.style.textDecoration = &quot;underline&quot;;
+}
+
+function outSubItem(el) {
+	el.style.textDecoration = &quot;none&quot;;
+}
+
+function highlightSubItem(el) {
+	el.style.background = &quot;buttonshadow&quot;;
+	el.style.color      = &quot;white&quot;; //&quot;highlighttext&quot;;
+	selectedItem = el;
+}
+
+function restoreSubItem(el) {
+	el.style.background = &quot;url(/images/tileback.gif) buttonface&quot;;
+	el.style.color      = &quot;menutext&quot;;
+	selectedItem = null;
+}
+
+function overscrollButton(el) {
+	overTopItem(el);
+	el.style.padding = &quot;0px&quot;;
+}
+
+function outscrollButton(el) {
+	outTopItem(el);
+	el.style.padding = &quot;0px&quot;;
+}
+
+function downscrollButton(el) {
+	with (el.style) {
+		borderRight   = &quot;1px solid buttonhighlight&quot;;
+		borderLeft  = &quot;1px solid buttonshadow&quot;;
+		borderBottom    = &quot;1px solid buttonhighlight&quot;;
+		borderTop = &quot;1px solid buttonshadow&quot;;
+	}
+}
+
+function upscrollButton(el) {
+	overTopItem(el);
+	el.style.padding = &quot;0px&quot;;
+}
+
+// ...till here
+
+function getReal(el, type, value) {
+	var temp = el;
+	while ((temp != null) &amp;&amp; (temp.tagName != &quot;BODY&quot;)) {
+		if (eval(&quot;temp.&quot; + type) == value) {
+			el = temp;
+			return el;
+		}
+		temp = temp.parentElement;
+	}
+	return el;
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+// Fix the scrollbars
+
+var globalScrollContainer;	// Needed because the object is called through windwow.setTimeout
+var overflowTimeout = 1;
+
+function fixScroll(el) {
+	globalScrollContainer = el;
+	window.setTimeout('changeOverflow(globalScrollContainer)', overflowTimeout);
+}
+
+
+function changeOverflow(el) {
+	if (el.offsetHeight &gt; el.parentElement.clientHeight)
+		window.setTimeout('globalScrollContainer.parentElement.style.overflow = &quot;auto&quot;;', overflowTimeout);
+	else
+		window.setTimeout('globalScrollContainer.parentElement.style.overflow = &quot;hidden&quot;;', overflowTimeout);
+}
+&lt;/SCRIPT&gt;
+&lt;!-- Favorite Bar Starts Here --&gt;
+&lt;DIV class=outer style=&quot;HEIGHT: 280px; MARGIN: 10px; WIDTH: 180px&quot;&gt;
+&lt;DIV class=inner style=&quot;HEIGHT: 280px; WIDTH: 180px&quot;&gt;
+&lt;DIV class=favMenu id=aMenu&gt;
+&lt;DIV class=topFolder id=samples&gt;&lt;IMG class=icon height=16 
+src=&quot;photo/foldericon1.gif&quot; width=16&gt;Samples&lt;/DIV&gt;
+&lt;DIV class=sub id=samplesSub&gt;
+&lt;DIV class=subItem title=&quot;(Updated: 980701)&quot; 
+href=&quot;/dhtml/favbar/fav2.shtml&quot;&gt;&lt;/SPAN&gt;&lt;IMG class=icon height=16 
+src=&quot;photo/htmlicon.gif&quot; width=16&gt;Favorite Bar&lt;/DIV&gt;
+&lt;DIV class=subItem title=&quot;(Updated: 980701)&quot; href=&quot;/dhtml/testBlink.shtml&quot;&gt;&lt;IMG 
+class=icon height=16 src=&quot;photo/htmlicon.gif&quot; width=16&gt;&lt;BLINK&gt; Behavior 
+(IE5)&lt;/DIV&gt;
+&lt;DIV class=subItem title=&quot;(Updated: 980630)&quot; 
+href=&quot;/dhtml/genericMove.shtml&quot;&gt;&lt;IMG class=icon height=16 
+src=&quot;photo/htmlicon.gif&quot; width=16&gt;genericMove&lt;/DIV&gt;
+&lt;DIV class=subItem title=&quot;(Updated: 980628)&quot; 
+href=&quot;/dhtml/genericResize.shtml&quot;&gt;&lt;IMG class=icon height=16 
+src=&quot;photo/htmlicon.gif&quot; width=16&gt;Resizeable DIV&lt;/DIV&gt;
+&lt;DIV class=subItem title=&quot;(Updated: 980605)&quot; 
+href=&quot;/dhtml/dhtmlmenu/menu.shtml&quot;&gt;&lt;IMG class=icon height=16 
+src=&quot;photo/htmlicon.gif&quot; width=16&gt;DHTML Menu&lt;/DIV&gt;
+&lt;DIV class=subItem 
+title=&quot;Uses one &lt;TEXTAREA&gt; and one &lt;IFRAME&gt; for preview. (Updated: 980318)&quot; 
+href=&quot;/dhtml/DHTMLeditor.shtml&quot;&gt;&lt;IMG class=icon height=16 
+src=&quot;photo/htmlicon.gif&quot; width=16&gt;DHTML Editor&lt;/DIV&gt;
+&lt;DIV class=subItem title=&quot;Use rich text tooltips. (Updated: Way back!)&quot; 
+href=&quot;/dhtml/tooltip/tooltip.shtml&quot;&gt;&lt;IMG class=icon height=16 
+src=&quot;photo/htmlicon.gif&quot; width=16&gt;ToolTips&lt;/DIV&gt;&lt;/DIV&gt;
+&lt;DIV class=topFolder id=docs&gt;&lt;IMG class=icon height=16 
+src=&quot;photo/foldericon1.gif&quot; width=16&gt;Docs&lt;/DIV&gt;
+&lt;DIV class=sub id=docsSub&gt;
+&lt;DIV class=subFolder id=subdocs&gt;&lt;IMG class=icon height=16 
+src=&quot;photo/foldericon1.gif&quot; width=16&gt;more Docs&lt;/DIV&gt;
+&lt;DIV class=sub id=subdocsSub&gt;
+&lt;DIV class=subFolder id=evendocs&gt;&lt;IMG class=icon height=16 
+src=&quot;photo/foldericon1.gif&quot; width=16&gt;even more Docs&lt;/DIV&gt;
+&lt;DIV class=sub id=evendocsSub&gt;
+&lt;DIV class=subItem&gt;&lt;IMG class=icon height=16 src=&quot;photo/htmlicon.gif&quot; 
+width=16&gt;doc 3.1&lt;/DIV&gt;
+&lt;DIV class=subItem&gt;&lt;IMG class=icon height=16 src=&quot;photo/htmlicon.gif&quot; 
+width=16&gt;doc 3.2&lt;/DIV&gt;&lt;/DIV&gt;
+&lt;DIV class=subItem&gt;&lt;IMG class=icon height=16 src=&quot;photo/htmlicon.gif&quot; 
+width=16&gt;doc 2.1&lt;/DIV&gt;
+&lt;DIV class=subItem&gt;&lt;IMG class=icon height=16 src=&quot;photo/htmlicon.gif&quot; 
+width=16&gt;doc 2.2&lt;/DIV&gt;&lt;/DIV&gt;
+&lt;DIV class=subItem&gt;&lt;IMG class=icon height=16 src=&quot;photo/htmlicon.gif&quot; 
+width=16&gt;doc 1&lt;/DIV&gt;
+&lt;DIV class=subItem&gt;&lt;IMG class=icon height=16 src=&quot;photo/htmlicon.gif&quot; 
+width=16&gt;doc 2&lt;/DIV&gt;
+&lt;DIV class=subFolder id=subdocs2&gt;&lt;IMG class=icon height=16 
+src=&quot;photo/foldericon1.gif&quot; width=16&gt;more Docs&lt;/DIV&gt;
+&lt;DIV class=sub id=subdocs2Sub&gt;
+&lt;DIV class=subItem&gt;&lt;IMG class=icon height=16 src=&quot;photo/htmlicon.gif&quot; 
+width=16&gt;doc 2.1&lt;/DIV&gt;
+&lt;DIV class=subItem&gt;&lt;IMG class=icon height=16 src=&quot;photo/htmlicon.gif&quot; 
+width=16&gt;doc 2.2&lt;/DIV&gt;
+&lt;DIV class=subFolder id=evendocs2&gt;&lt;IMG class=icon height=16 
+src=&quot;photo/foldericon1.gif&quot; width=16&gt;even more Docs&lt;/DIV&gt;
+&lt;DIV class=sub id=evendocs2Sub&gt;
+&lt;DIV class=subItem&gt;&lt;IMG class=icon height=16 src=&quot;photo/htmlicon.gif&quot; 
+width=16&gt;doc 3.1&lt;/DIV&gt;
+&lt;DIV class=subItem&gt;&lt;IMG class=icon height=16 src=&quot;photo/htmlicon.gif&quot; 
+width=16&gt;doc 3.2&lt;/DIV&gt;&lt;/DIV&gt;&lt;/DIV&gt;
+&lt;DIV class=subItem&gt;&lt;IMG class=icon height=16 src=&quot;photo/htmlicon.gif&quot; 
+width=16&gt;doc 3&lt;/DIV&gt;
+&lt;DIV class=subItem&gt;&lt;IMG class=icon height=16 src=&quot;photo/htmlicon.gif&quot; 
+width=16&gt;doc 4&lt;/DIV&gt;&lt;/DIV&gt;&lt;!-- for docsSub--&gt;
+&lt;DIV class=topFolder id=links&gt;&lt;IMG class=icon height=16 
+src=&quot;photo/foldericon1.gif&quot; width=16&gt;Links&lt;/DIV&gt;
+&lt;DIV class=sub id=linksSub&gt;
+&lt;DIV class=subItem href=&quot;http://www.insidedhtml.com&quot;&gt;&lt;IMG class=icon height=16 
+src=&quot;photo/htmlicon.gif&quot; width=16&gt;InsideDHTML&lt;/DIV&gt;
+&lt;DIV class=subItem href=&quot;http://members.xoom.com/dynduo/&quot;&gt;&lt;IMG class=icon 
+height=16 src=&quot;photo/htmlicon.gif&quot; width=16&gt;The Dynamic Duo&lt;/DIV&gt;
+&lt;DIV class=subItem href=&quot;http://www.ircweb.net/eae/fx/&quot;&gt;&lt;IMG class=icon 
+height=16 src=&quot;photo/htmlicon.gif&quot; width=16&gt;WebFX&lt;/DIV&gt;&lt;/DIV&gt;
+&lt;DIV class=topFolder id=todo style=&quot;FONT-WEIGHT: bold&quot;&gt;&lt;IMG class=icon height=16 
+src=&quot;photo/sched.gif&quot; width=16&gt;&lt;font color=red&gt;警告：&lt;/font&gt;&lt;/DIV&gt;
+&lt;DIV class=sub id=todoSub style=&quot;PADDING-LEFT: 22px&quot;&gt;
+&lt;DIV&gt;此特效未经允许请不要随便使用&lt;/DIV&gt;&lt;/DIV&gt;
+&lt;DIV class=topItem href=&quot;http://www.163.net/&quot;&gt;&lt;IMG class=icon height=17 
+src=&quot;photo/home.gif&quot; style=&quot;HEIGHT: 17px&quot; width=16&gt;Back to 
+163.net&lt;/DIV&gt;&lt;/DIV&gt;
+
+
+
+
+&nbsp;
+
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

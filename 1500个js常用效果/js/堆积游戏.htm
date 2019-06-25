@@ -1,0 +1,435 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--堆积游戏</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body bgcolor=#FFFFFF>
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">堆积游戏</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=1440" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Original:  陆晓庆 (xiaoqinglu@263.net) -->
+
+
+
+<!-- Begin
+var MAXHEIGHT = 8;
+var ndisk;
+var timer = null;
+var mvfrom = new Array(255);
+var mvto = new Array(255);
+var mv, imv;
+var tower = new Array(3);
+var h = new Array(3);
+var spc = "        ";
+var dname = new Array(
+"|",
+"111",
+"22222",
+"3333333",
+"444444444",
+"55555555555",
+"6666666666666",
+"777777777777777",
+"88888888888888888");
+
+function init() {
+if (!timer) {
+s = document.formHanoi.disk.options[document.formHanoi.disk.selectedIndex].value;
+if (s == "random") {
+now = new Date();
+ndisk = parseInt(now.getTime() / 1000) % 8 + 1;
+delete now;
+}
+else ndisk = s;
+mv = 0;
+hanoi(0, 2, 1, ndisk);
+for (i = 0; i < 3; i++)
+tower[i] = new Array(MAXHEIGHT);
+for (i = 0; i < ndisk; i++)
+tower[0][i] = ndisk - i;
+h[0] = ndisk;
+h[1] = h[2] = 0;
+imv = 0;
+document.formHanoi.display.value = gentower();
+timer = window.setTimeout("gennexttower()", document.formHanoi.delay.options[document.formHanoi.delay.selectedIndex].value);
+   }
+}
+function stop() {
+if (timer) {
+window.clearTimeout(timer);
+timer = null;
+   }
+}
+function hanoi(from,to,buf,nmv) {
+if (nmv > 1) {
+hanoi(from, buf, to, nmv - 1);
+mvfrom[mv] = from;
+mvto[mv++] = to;
+hanoi(buf, to, from, nmv - 1);
+}
+else {
+mvfrom[mv] = from;
+mvto[mv++] = to;
+   }
+}
+function gennexttower() {
+tower[mvto[imv]][h[mvto[imv]]++] = tower[mvfrom[imv]][--h[mvfrom[imv]]];
+document.formHanoi.display.value = gentower();
+if (++imv < mv)
+timer = window.setTimeout("gennexttower()", document.formHanoi.delay.options[document.formHanoi.delay.selectedIndex].value);
+else {
+for (i = 0; i < 3; i++)
+delete tower[i];
+timer = null;
+    }
+}
+function gentower() {
+s = " \n";
+for (i = MAXHEIGHT - 1; i >= 0; i--) {
+for (j = 0; j < tower.length; j++) {
+len = i < h[j] ? tower[j][i] : 0;
+width = MAXHEIGHT - len;
+s += " " + spc.substring(0, width) + dname[len] + spc.substring(0, width);
+}
+s += "\n";
+}
+return s+"=======================================================";
+}
+//  End -->
+</script>
+<form name=formHanoi>
+<textarea name=display rows=10 cols=56></textarea><br>
+<table border=0 cellspacing=10 cellpadding=0>
+<tr>
+<td>堆积层数</td>
+<td><select name=disk>
+<option selected value=random>Random
+<option value=1>1
+<option value=2>2
+<option value=3>3
+<option value=4>4
+<option value=5>5
+<option value=6>6
+<option value=7>7
+<option value=8>8
+</select></td>
+</tr>
+<tr>
+<td>延迟时间</td>
+<td><select name=delay>
+<option value=100>100 milliseconds
+<option value=200>200 milliseconds
+<option value=300>300 milliseconds
+<option value=400>400 milliseconds
+<option selected value=500>500 milliseconds
+<option value=600>600 milliseconds
+<option value=700>700 milliseconds
+<option value=800>800 milliseconds
+<option value=900>900 milliseconds
+<option value=1000>1000 milliseconds
+</select></td>
+</tr>
+</table>
+<input type=button value="Start" onClick="init();">
+<input type=button value="Stop" onClick="stop();">
+</form>
+</fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+把如下代码加入<body>区域中
+&nbsp;&lt;SCRIPT LANGUAGE=&quot;JavaScript&quot;&gt;
+&lt;!-- Original:  陆晓庆 (xiaoqinglu@263.net) --&gt;
+
+
+
+&lt;!-- Begin
+var MAXHEIGHT = 8;
+var ndisk;
+var timer = null;
+var mvfrom = new Array(255);
+var mvto = new Array(255);
+var mv, imv;
+var tower = new Array(3);
+var h = new Array(3);
+var spc = &quot;        &quot;;
+var dname = new Array(
+&quot;|&quot;,
+&quot;111&quot;,
+&quot;22222&quot;,
+&quot;3333333&quot;,
+&quot;444444444&quot;,
+&quot;55555555555&quot;,
+&quot;6666666666666&quot;,
+&quot;777777777777777&quot;,
+&quot;88888888888888888&quot;);
+
+function init() {
+if (!timer) {
+s = document.formHanoi.disk.options[document.formHanoi.disk.selectedIndex].value;
+if (s == &quot;random&quot;) {
+now = new Date();
+ndisk = parseInt(now.getTime() / 1000) % 8 + 1;
+delete now;
+}
+else ndisk = s;
+mv = 0;
+hanoi(0, 2, 1, ndisk);
+for (i = 0; i &lt; 3; i++)
+tower[i] = new Array(MAXHEIGHT);
+for (i = 0; i &lt; ndisk; i++)
+tower[0][i] = ndisk - i;
+h[0] = ndisk;
+h[1] = h[2] = 0;
+imv = 0;
+document.formHanoi.display.value = gentower();
+timer = window.setTimeout(&quot;gennexttower()&quot;, document.formHanoi.delay.options[document.formHanoi.delay.selectedIndex].value);
+   }
+}
+function stop() {
+if (timer) {
+window.clearTimeout(timer);
+timer = null;
+   }
+}
+function hanoi(from,to,buf,nmv) {
+if (nmv &gt; 1) {
+hanoi(from, buf, to, nmv - 1);
+mvfrom[mv] = from;
+mvto[mv++] = to;
+hanoi(buf, to, from, nmv - 1);
+}
+else {
+mvfrom[mv] = from;
+mvto[mv++] = to;
+   }
+}
+function gennexttower() {
+tower[mvto[imv]][h[mvto[imv]]++] = tower[mvfrom[imv]][--h[mvfrom[imv]]];
+document.formHanoi.display.value = gentower();
+if (++imv &lt; mv)
+timer = window.setTimeout(&quot;gennexttower()&quot;, document.formHanoi.delay.options[document.formHanoi.delay.selectedIndex].value);
+else {
+for (i = 0; i &lt; 3; i++)
+delete tower[i];
+timer = null;
+    }
+}
+function gentower() {
+s = &quot; \n&quot;;
+for (i = MAXHEIGHT - 1; i &gt;= 0; i--) {
+for (j = 0; j &lt; tower.length; j++) {
+len = i &lt; h[j] ? tower[j][i] : 0;
+width = MAXHEIGHT - len;
+s += &quot; &quot; + spc.substring(0, width) + dname[len] + spc.substring(0, width);
+}
+s += &quot;\n&quot;;
+}
+return s+&quot;=======================================================&quot;;
+}
+//  End --&gt;
+&lt;/script&gt;
+&lt;form name=formHanoi&gt;
+&lt;textarea name=display rows=10 cols=56&gt;&lt;/textarea&gt;&lt;br&gt;
+&lt;table border=0 cellspacing=10 cellpadding=0&gt;
+&lt;tr&gt;
+&lt;td&gt;堆积层数&lt;/td&gt;
+&lt;td&gt;&lt;select name=disk&gt;
+&lt;option selected value=random&gt;Random
+&lt;option value=1&gt;1
+&lt;option value=2&gt;2
+&lt;option value=3&gt;3
+&lt;option value=4&gt;4
+&lt;option value=5&gt;5
+&lt;option value=6&gt;6
+&lt;option value=7&gt;7
+&lt;option value=8&gt;8
+&lt;/select&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;延迟时间&lt;/td&gt;
+&lt;td&gt;&lt;select name=delay&gt;
+&lt;option value=100&gt;100 milliseconds
+&lt;option value=200&gt;200 milliseconds
+&lt;option value=300&gt;300 milliseconds
+&lt;option value=400&gt;400 milliseconds
+&lt;option selected value=500&gt;500 milliseconds
+&lt;option value=600&gt;600 milliseconds
+&lt;option value=700&gt;700 milliseconds
+&lt;option value=800&gt;800 milliseconds
+&lt;option value=900&gt;900 milliseconds
+&lt;option value=1000&gt;1000 milliseconds
+&lt;/select&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;input type=button value=&quot;Start&quot; onClick=&quot;init();&quot;&gt;
+&lt;input type=button value=&quot;Stop&quot; onClick=&quot;stop();&quot;&gt;
+&lt;/form&gt;
+
+
+
+
+&nbsp;
+
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

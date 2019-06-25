@@ -1,0 +1,601 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--鼠标点击效果</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body bgcolor="#ffffff" OnLoad="initMouseEvents()">
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">鼠标点击效果</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=740" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+
+<SCRIPT LANGUAGE="JavaScript1.2">
+
+<!-- Begin
+
+var ver  = navigator.appVersion;
+
+var dom  = document.getElementById ? 1 : 0;
+
+var ie5  = (ver.indexOf("MSIE 5") > -1 && dom) ? 1 : 0;
+
+var n  = (document.layers);
+
+var ie = (document.all);
+
+
+
+var sparksAflyin = 0;
+
+var totalSparks = 0;
+
+var sparksOn = 1;
+
+function initMouseEvents() {
+
+document.onmousedown = mouseDown;
+
+if (n) document.captureEvents(Event.MOUSEDOWN | Event.MOUSEMOVE);
+
+}
+
+function mouseDown(e) {
+
+if (sparksOn) {
+
+var mousex = (n) ? e.pageX : event.x+document.body.scrollLeft;
+
+var mousey = (n) ? e.pageY : event.y+document.body.scrollTop;
+
+if (!sparksAflyin) {
+
+for (var k = 0; k <= 9; k++)
+
+   eval('SHOW("sDiv'+k+'")');
+
+sparksAflyin = 1;
+
+totalSparks = 0;
+
+for(i = 0;i <= 9; i++)
+
+eval('moveTo('+i+',0,'+mousex+','+mousey+')');
+
+      }
+
+   }
+
+}
+
+function moveTo(i,j, mousex, mousey){
+
+if (j < eval('anim_'+i+'_x.length') ){
+
+var tempx = eval('anim_'+i+'_x[j]+mousex');
+
+var tempy = eval('anim_'+i+'_y[j]+mousey');
+
+if (ie) {
+
+if(tempy+30 > (document.body.offsetHeight+document.body.scrollTop))
+
+tempy = document.body.offsetHeight+document.body.scrollTop-30;
+
+if(tempx+30 > (document.body.offsetWidth+document.body.scrollLeft))
+
+tempx = document.body.offsetWidth+document.body.scrollLeft-30;
+
+eval('document.all.sDiv'+i+'.style.left = tempx;');
+
+eval('document.all.sDiv'+i+'.style.top  = tempy;');
+
+}
+
+if (n) {
+
+eval('document.layers.sDiv'+i+'.left = tempx;');
+
+eval('document.layers.sDiv'+i+'.top  = tempy;');
+
+}
+
+j++;
+
+//  timeout: 50 = fireworks speed, larger number = slower speed
+
+    setTimeout("moveTo("+i+","+j+","+mousex+","+mousey+")",50)
+
+}
+
+else {
+
+eval('HIDE("sDiv'+i+'")');
+
+totalSparks++;
+
+}
+
+if (totalSparks == 10) {
+
+sparksAflyin = 0;
+
+totalSparks  = 0;
+
+   }
+
+}
+
+function SHOW(divName){
+
+if (document.all)
+
+eval('document.all.'+divName+'.style.visibility = "visible";');
+
+else if (document.layers)
+
+eval('document.layers["'+divName+'"].visibility = "visible";');
+
+}
+
+function HIDE(divName){
+
+if (document.all)
+
+eval('document.all.'+divName+'.style.visibility = "hidden";');
+
+else if (document.layers)
+
+eval('document.layers["'+divName+'"].visibility = "hide";');
+
+}
+
+anim_0_x=new Array(20,20,10,0,0,0,0,0,0,0,0,0);
+
+anim_0_y=new Array(-20,-40,-60,-80,-60,-40,-20,0,20,40,60,80);
+
+anim_1_x=new Array(20,20,17,36,60,78,90,92,93,98,108,120,133,152,181);
+
+anim_1_y=new Array(-20,-20,-33,-38,-38,-27,-2,25,51,84,113,141,162,212,253);
+
+anim_2_x=new Array(20,20,2,3,4,5,6,7,8,9,10,12,13,15,18);
+
+anim_2_y=new Array(-20,-20,-33,-38,-38,-27,-2,25,51,84,113,141,162,212,253);
+
+anim_3_x=new Array(-20,-20,-2,-1,7,10,18,35,60,102,94,94,93,97,108,111,117,127);
+
+anim_3_y=new Array(-20,-25,-64,-89,-104,-150,-173,-197,-213,-199,-151,-101,-66,-17,27,87,140,189);
+
+anim_4_x=new Array(-20,-20,-10,-39,-30,-69,-64,-138,-154,-200,-181,-209,-191,-207,-203,-213,-202,-221,-211);
+
+anim_4_y=new Array(-20,-20,-28,-51,-79,-100,-135,-154,-193,-183,-149,-134,-89,-60,8,51,107,157,201);
+
+anim_5_x=new Array(-20,-29,-51,-72,-105,-133,-164,-189,-209,-229,-247,-270,-279,-282,-283,-283,-285,-286,-288);
+
+anim_5_y=new Array(-20,-55,-86,-116,-154,-183,-205,-217,-217,-198,-169,-120,-44,-8,40,87,144,190,248);
+
+anim_6_x=new Array(-20,-20,-7,14,44,79,143,186,217,226,234,244,250,259,265,274);
+
+anim_6_y=new Array(-20,-21,-72,-113,-139,-166,-188,-181,-126,-68,-3,54,134,187,215,257);
+
+anim_7_x=new Array(20,20,-3,-9,-13,-27,-33,-44,-54,-66,-77,-95,-107,-136,-150,-160,-164,-168,-171,-172,-172,-176,-175);
+
+anim_7_y=new Array(-20,-26,-43,-63,-89,-116,-145,-169,-201,-222,-240,-253,-254,-245,-220,-195,-160,-124,-81,-53,-26,19,68);
+
+anim_8_x=new Array(-20,20,-35,39,0,45,-1,24,-15,14,-20,35,-18,38,-11,16,49,64,81,93,100,103,109);
+
+anim_8_y=new Array(-20,-20,-32,-42,-62,-76,-89,-107,-132,-147,-173,-180,-192,-209,-236,-193,-119,-73,-24,51,95,130,188);
+
+anim_9_x=new Array(-20,-51,-89,-110,-165,-191,-228,-240,-259,-271,-277,-281,-287);
+
+anim_9_y=new Array(-20,-20,-35,-37,-34,-16,10,47,105,150,189,227,273);
+
+//  End -->
+
+</script>
+
+
+<div id="sparks">
+
+<div id="sDiv0" style="position:absolute; visibility: hidden;"><font face="arial black" color="red">a</font></div>
+
+<div id="sDiv1" style="position:absolute; visibility: hidden;"><font face="arial black" color="yellow">b</font></div>
+
+<div id="sDiv2" style="position:absolute; visibility: hidden;"><font face="arial black" color="blue">c</font></div>
+
+<div id="sDiv3" style="position:absolute; visibility: hidden;"><font face="arial black" color="red">d</font></div>
+
+<div id="sDiv4" style="position:absolute; visibility: hidden;"><font face="arial black" color="orange">e</font></div>
+
+<div id="sDiv5" style="position:absolute; visibility: hidden;"><font face="arial black" color="white">f</font></div>
+
+<div id="sDiv6" style="position:absolute; visibility: hidden;"><font face="arial black" color="green">g</font></div>
+
+<div id="sDiv7" style="position:absolute; visibility: hidden;"><font face="arial black" color="skyblue">h</font></div>
+
+<div id="sDiv8" style="position:absolute; visibility: hidden;"><font face="arial black" color="yellow">i</font></div>
+
+<div id="sDiv9" style="position:absolute; visibility: hidden;"><font face="arial black" color="white">j</font></div>
+
+</div>
+
+</fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+第一步:把如下代码加入<body>区域中
+&nbsp;
+&lt;SCRIPT LANGUAGE=&quot;JavaScript1.2&quot;&gt;
+
+&lt;!-- Begin
+
+var ver  = navigator.appVersion;
+
+var dom  = document.getElementById ? 1 : 0;
+
+var ie5  = (ver.indexOf(&quot;MSIE 5&quot;) &gt; -1 &amp;&amp; dom) ? 1 : 0;
+
+var n  = (document.layers);
+
+var ie = (document.all);
+
+
+
+var sparksAflyin = 0;
+
+var totalSparks = 0;
+
+var sparksOn = 1;
+
+function initMouseEvents() {
+
+document.onmousedown = mouseDown;
+
+if (n) document.captureEvents(Event.MOUSEDOWN | Event.MOUSEMOVE);
+
+}
+
+function mouseDown(e) {
+
+if (sparksOn) {
+
+var mousex = (n) ? e.pageX : event.x+document.body.scrollLeft;
+
+var mousey = (n) ? e.pageY : event.y+document.body.scrollTop;
+
+if (!sparksAflyin) {
+
+for (var k = 0; k &lt;= 9; k++)
+
+   eval('SHOW(&quot;sDiv'+k+'&quot;)');
+
+sparksAflyin = 1;
+
+totalSparks = 0;
+
+for(i = 0;i &lt;= 9; i++)
+
+eval('moveTo('+i+',0,'+mousex+','+mousey+')');
+
+      }
+
+   }
+
+}
+
+function moveTo(i,j, mousex, mousey){
+
+if (j &lt; eval('anim_'+i+'_x.length') ){
+
+var tempx = eval('anim_'+i+'_x[j]+mousex');
+
+var tempy = eval('anim_'+i+'_y[j]+mousey');
+
+if (ie) {
+
+if(tempy+30 &gt; (document.body.offsetHeight+document.body.scrollTop))
+
+tempy = document.body.offsetHeight+document.body.scrollTop-30;
+
+if(tempx+30 &gt; (document.body.offsetWidth+document.body.scrollLeft))
+
+tempx = document.body.offsetWidth+document.body.scrollLeft-30;
+
+eval('document.all.sDiv'+i+'.style.left = tempx;');
+
+eval('document.all.sDiv'+i+'.style.top  = tempy;');
+
+}
+
+if (n) {
+
+eval('document.layers.sDiv'+i+'.left = tempx;');
+
+eval('document.layers.sDiv'+i+'.top  = tempy;');
+
+}
+
+j++;
+
+//  timeout: 50 = fireworks speed, larger number = slower speed
+
+    setTimeout(&quot;moveTo(&quot;+i+&quot;,&quot;+j+&quot;,&quot;+mousex+&quot;,&quot;+mousey+&quot;)&quot;,50)
+
+}
+
+else {
+
+eval('HIDE(&quot;sDiv'+i+'&quot;)');
+
+totalSparks++;
+
+}
+
+if (totalSparks == 10) {
+
+sparksAflyin = 0;
+
+totalSparks  = 0;
+
+   }
+
+}
+
+function SHOW(divName){
+
+if (document.all)
+
+eval('document.all.'+divName+'.style.visibility = &quot;visible&quot;;');
+
+else if (document.layers)
+
+eval('document.layers[&quot;'+divName+'&quot;].visibility = &quot;visible&quot;;');
+
+}
+
+function HIDE(divName){
+
+if (document.all)
+
+eval('document.all.'+divName+'.style.visibility = &quot;hidden&quot;;');
+
+else if (document.layers)
+
+eval('document.layers[&quot;'+divName+'&quot;].visibility = &quot;hide&quot;;');
+
+}
+
+anim_0_x=new Array(20,20,10,0,0,0,0,0,0,0,0,0);
+
+anim_0_y=new Array(-20,-40,-60,-80,-60,-40,-20,0,20,40,60,80);
+
+anim_1_x=new Array(20,20,17,36,60,78,90,92,93,98,108,120,133,152,181);
+
+anim_1_y=new Array(-20,-20,-33,-38,-38,-27,-2,25,51,84,113,141,162,212,253);
+
+anim_2_x=new Array(20,20,2,3,4,5,6,7,8,9,10,12,13,15,18);
+
+anim_2_y=new Array(-20,-20,-33,-38,-38,-27,-2,25,51,84,113,141,162,212,253);
+
+anim_3_x=new Array(-20,-20,-2,-1,7,10,18,35,60,102,94,94,93,97,108,111,117,127);
+
+anim_3_y=new Array(-20,-25,-64,-89,-104,-150,-173,-197,-213,-199,-151,-101,-66,-17,27,87,140,189);
+
+anim_4_x=new Array(-20,-20,-10,-39,-30,-69,-64,-138,-154,-200,-181,-209,-191,-207,-203,-213,-202,-221,-211);
+
+anim_4_y=new Array(-20,-20,-28,-51,-79,-100,-135,-154,-193,-183,-149,-134,-89,-60,8,51,107,157,201);
+
+anim_5_x=new Array(-20,-29,-51,-72,-105,-133,-164,-189,-209,-229,-247,-270,-279,-282,-283,-283,-285,-286,-288);
+
+anim_5_y=new Array(-20,-55,-86,-116,-154,-183,-205,-217,-217,-198,-169,-120,-44,-8,40,87,144,190,248);
+
+anim_6_x=new Array(-20,-20,-7,14,44,79,143,186,217,226,234,244,250,259,265,274);
+
+anim_6_y=new Array(-20,-21,-72,-113,-139,-166,-188,-181,-126,-68,-3,54,134,187,215,257);
+
+anim_7_x=new Array(20,20,-3,-9,-13,-27,-33,-44,-54,-66,-77,-95,-107,-136,-150,-160,-164,-168,-171,-172,-172,-176,-175);
+
+anim_7_y=new Array(-20,-26,-43,-63,-89,-116,-145,-169,-201,-222,-240,-253,-254,-245,-220,-195,-160,-124,-81,-53,-26,19,68);
+
+anim_8_x=new Array(-20,20,-35,39,0,45,-1,24,-15,14,-20,35,-18,38,-11,16,49,64,81,93,100,103,109);
+
+anim_8_y=new Array(-20,-20,-32,-42,-62,-76,-89,-107,-132,-147,-173,-180,-192,-209,-236,-193,-119,-73,-24,51,95,130,188);
+
+anim_9_x=new Array(-20,-51,-89,-110,-165,-191,-228,-240,-259,-271,-277,-281,-287);
+
+anim_9_y=new Array(-20,-20,-35,-37,-34,-16,10,47,105,150,189,227,273);
+
+//  End --&gt;
+
+&lt;/script&gt;
+
+
+&lt;div id=&quot;sparks&quot;&gt;
+
+&lt;div id=&quot;sDiv0&quot; style=&quot;position:absolute; visibility: hidden;&quot;&gt;&lt;font face=&quot;arial black&quot; color=&quot;red&quot;&gt;a&lt;/font&gt;&lt;/div&gt;
+
+&lt;div id=&quot;sDiv1&quot; style=&quot;position:absolute; visibility: hidden;&quot;&gt;&lt;font face=&quot;arial black&quot; color=&quot;yellow&quot;&gt;b&lt;/font&gt;&lt;/div&gt;
+
+&lt;div id=&quot;sDiv2&quot; style=&quot;position:absolute; visibility: hidden;&quot;&gt;&lt;font face=&quot;arial black&quot; color=&quot;blue&quot;&gt;c&lt;/font&gt;&lt;/div&gt;
+
+&lt;div id=&quot;sDiv3&quot; style=&quot;position:absolute; visibility: hidden;&quot;&gt;&lt;font face=&quot;arial black&quot; color=&quot;red&quot;&gt;d&lt;/font&gt;&lt;/div&gt;
+
+&lt;div id=&quot;sDiv4&quot; style=&quot;position:absolute; visibility: hidden;&quot;&gt;&lt;font face=&quot;arial black&quot; color=&quot;orange&quot;&gt;e&lt;/font&gt;&lt;/div&gt;
+
+&lt;div id=&quot;sDiv5&quot; style=&quot;position:absolute; visibility: hidden;&quot;&gt;&lt;font face=&quot;arial black&quot; color=&quot;white&quot;&gt;f&lt;/font&gt;&lt;/div&gt;
+
+&lt;div id=&quot;sDiv6&quot; style=&quot;position:absolute; visibility: hidden;&quot;&gt;&lt;font face=&quot;arial black&quot; color=&quot;green&quot;&gt;g&lt;/font&gt;&lt;/div&gt;
+
+&lt;div id=&quot;sDiv7&quot; style=&quot;position:absolute; visibility: hidden;&quot;&gt;&lt;font face=&quot;arial black&quot; color=&quot;skyblue&quot;&gt;h&lt;/font&gt;&lt;/div&gt;
+
+&lt;div id=&quot;sDiv8&quot; style=&quot;position:absolute; visibility: hidden;&quot;&gt;&lt;font face=&quot;arial black&quot; color=&quot;yellow&quot;&gt;i&lt;/font&gt;&lt;/div&gt;
+
+&lt;div id=&quot;sDiv9&quot; style=&quot;position:absolute; visibility: hidden;&quot;&gt;&lt;font face=&quot;arial black&quot; color=&quot;white&quot;&gt;j&lt;/font&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+
+
+
+
+
+&nbsp;
+第二步:把如下代码加入<body>区域中<body bgcolor="#ffffff" OnLoad="initMouseEvents()">
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

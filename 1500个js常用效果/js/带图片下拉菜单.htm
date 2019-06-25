@@ -1,0 +1,1169 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--带图片下拉菜单</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body bgcolor=#FFFFFF>
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">带图片下拉菜单</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=216" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<style type=text/css>
+.select {
+	BORDER-BOTTOM: buttonface 0px inset; BORDER-LEFT: buttonface 0px inset; BORDER-RIGHT: buttonface 0px inset; BORDER-TOP: buttonface 0px inset; CURSOR: default; FONT: icon; WIDTH: 100px
+}
+.selected {
+	BACKGROUND: window; BORDER-BOTTOM: buttonface 0px inset; BORDER-LEFT: buttonface 0px inset; BORDER-RIGHT: buttonface 0px inset; BORDER-TOP: buttonface 0px inset; FONT: icon; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.selectTable {
+	BACKGROUND: buttonface; BORDER-BOTTOM: buttonhighlight 2px inset; BORDER-LEFT: buttonhighlight 2px inset; BORDER-RIGHT: buttonhighlight 2px inset; BORDER-TOP: buttonhighlight 2px inset; HEIGHT: 100%; WIDTH: 100%
+}
+.option {
+	FONT: icon; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; PADDING-TOP: 1px; WIDTH: 100%
+}
+.dropDown {
+	BACKGROUND: window; BORDER-BOTTOM: windowtext 1px solid; BORDER-LEFT: windowtext 1px solid; BORDER-RIGHT: windowtext 1px solid; BORDER-TOP: windowtext 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px; POSITION: absolute; VISIBILITY: hidden; WIDTH: 100%
+}
+.select .button {
+	BORDER-BOTTOM: buttonhighlight 2px outset; BORDER-LEFT: buttonhighlight 2px outset; BORDER-RIGHT: buttonhighlight 2px outset; BORDER-TOP: buttonhighlight 2px outset; FONT-FAMILY: webdings; FONT-SIZE: 11px; HEIGHT: 5px; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px; WIDTH: 16px
+}
+</style>
+
+<SCRIPT type=text/javascript>
+var overOptionCss = "background: highlight; color: highlighttext";
+var sizedBorderCss = "2 inset buttonhighlight";
+
+var globalSelect;	//This is used when calling an unnamed selectbox with onclick="this.PROPERTY"
+
+var ie4 = (document.all != null);
+
+var q = 0;
+
+
+function initSelectBox(el) {
+	copySelected(el);
+	
+	var size = el.getAttribute("size");
+
+// These two lines combined with execution in optionClick() allow you to write:
+//		onchange="alert(this.options[this.selectedIndex].value)"
+	el.options = el.children[1].children;
+	el.selectedIndex = findSelected(el);	//Set the index now!
+// Some methods that are supported on the real SELECT box
+	el.remove = new Function("i", "int_remove(this,i)");
+	el.item   = new Function("i", "return this.options[i]");
+	el.add    = new Function("e", "i", "int_add(this, e, i)");
+// The real select box let you have lot of options with the same NAME. In that case the item
+// needs two arguments. When using DIVs you can't have two with the same NAME (or ID) and
+// then there is no need for the second argument
+	
+	el.options[el.selectedIndex].selected = true;
+
+	dropdown = el.children[1];
+
+	if (size != null) {
+		if (size > 1) {
+			el.size = size;
+			dropdown.style.zIndex = 0;
+			initSized(el);
+		}
+		else {
+			el.size = 1;
+			dropdown.style.zIndex = 99;
+			if (dropdown.offsetHeight > 200) {
+				dropdown.style.height = "200";
+				dropdown.style.overflow = "auto";
+			}
+		}
+	}
+	
+	highlightSelected(el,true);
+}
+
+function int_remove(el,i) {
+	if (el.options[i] != null)
+		el.options[i].outerHTML = "";
+}
+
+function int_add(el, e, i) {
+	var html = "<div class='option' noWrap";
+	if (e.value != null)
+		html += " value='" + e.value + "'";
+	if (e.style.cssText != null)
+		html += " style='" + e.style.cssText + "'";
+	html += ">";
+	if (e.text != null)
+		html += e.text;
+	html += "</div>"
+
+	if ((i == null) || (i >= el.options.length))
+		i = el.options.length-1;
+
+	el.options[i].insertAdjacentHTML("AfterEnd", html);
+}
+	
+function initSized(el) {
+//alert("initSized -------->");
+	var h = 0;
+	el.children[0].style.display = "none";
+
+	dropdown = el.children[1];
+	dropdown.style.visibility = "visible";
+
+	if (dropdown.children.length > el.size) {
+		dropdown.style.overflow = "auto";
+		for (var i=0; i<el.size; i++) {
+			h += dropdown.children[i].offsetHeight;
+		}
+
+		if (dropdown.style.borderWidth != null) {
+			dropdown.style.pixelHeight = h + 4; //2 * parseInt(dropdown.style.borderWidth);
+		}
+
+		else
+			dropdown.style.height = h;
+
+	}
+
+	dropdown.style.border = sizedBorderCss;
+
+
+	el.style.height = dropdown.style.pixelHeight;
+}
+
+function copySelected(el) {
+	var selectedIndex = findSelected(el);
+
+	selectedCell = el.children[0].rows[0].cells[0];
+	selectedDiv  = 	el.children[1].children[selectedIndex];
+	
+	selectedCell.innerHTML = selectedDiv.outerHTML;
+}
+
+// This function returns the first selected option and resets the rest
+// in case some idiot has set more than one to selcted :-)
+function findSelected(el) {
+	var selected = null;
+
+
+	ec = el.children[1].children;	//the table is the first child
+	var ecl = ec.length;
+	
+	for (var i=0; i<ecl; i++) {
+		if (ec[i].getAttribute("selected") != null) {
+			if (selected == null) {	// Found first selected
+				selected = i;
+			}
+			else
+				ec[i].removeAttribute("selected");	//Like I said. Only one selected!
+		}
+	}
+	if (selected == null)
+		selected = 0;	//When starting this is the most logic start value if none is present
+
+	return selected;
+}
+
+function toggleDropDown(el) {
+	if (el.size == 1) {
+		dropDown = el.children[1];
+		
+		if (dropDown.style.visibility == "")
+			dropDown.style.visibility = "hidden";
+			
+		if (dropDown.style.visibility == "hidden")
+			showDropDown(dropDown);
+		else
+			hideDropDown(dropDown);
+	}
+}
+
+function optionClick() {
+	el = getReal(window.event.srcElement, "className", "option");
+
+	if (el.className == "option") {
+		dropdown  = el.parentElement;
+		selectBox = dropdown.parentElement;
+		
+		oldSelected = dropdown.children[findSelected(selectBox)]
+
+		if(oldSelected != el) {
+			oldSelected.removeAttribute("selected");
+			el.setAttribute("selected", 1);
+			selectBox.selectedIndex = findSelected(selectBox);
+		}
+
+		if (selectBox.onchange != null) {	// This executes the onchange when you chnage the option
+			if (selectBox.id != "") {		// For this to work you need to replace this with an ID or name
+				eval(selectBox.onchange.replace(/this/g, selectBox.id));
+			}
+			else {
+				globalSelect = selectBox;
+				eval(selectBox.onchange.replace(/this/g, "globalSelect"));
+			}
+		}
+		
+		if (el.backupCss != null)
+			el.style.cssText = el.backupCss;
+		copySelected(selectBox);
+		toggleDropDown(selectBox);
+		highlightSelected(selectBox, true);
+	}
+}
+
+function optionOver() {
+	var toEl = getReal(window.event.toElement, "className", "option");
+	var fromEl = getReal(window.event.fromElement, "className", "option");
+	if (toEl == fromEl) return;
+	var el = toEl;
+	
+	if (el.className == "option") {
+		if (el.backupCss == null)
+			el.backupCss = el.style.cssText;
+		highlightSelected(el.parentElement.parentElement, false);
+		el.style.cssText = el.backupCss + "; " + overOptionCss;
+		this.highlighted = true;
+	}
+}
+
+function optionOut() {
+	var toEl = getReal(window.event.toElement, "className", "option");
+	var fromEl = getReal(window.event.fromElement, "className", "option");
+
+	if (fromEl == fromEl.parentElement.children[findSelected(fromEl.parentElement.parentElement)]) {
+		if (toEl == null)
+			return;
+		if (toEl.className != "option")
+			return;
+	}
+	
+	if (toEl != null) {
+		if (toEl.className != "option") {
+			if (fromEl.className == "option")
+				highlightSelected(fromEl.parentElement.parentElement, true);
+		}
+	}
+	
+	if (toEl == fromEl) return;
+	var el = fromEl;
+
+	if (el.className == "option") {
+		if (el.backupCss != null)
+			el.style.cssText = el.backupCss;
+	}
+
+}
+
+function highlightSelected(el,add) {
+	var selectedIndex = findSelected(el);
+	
+	selected = el.children[1].children[selectedIndex];
+	
+	if (add) {
+		if (selected.backupCss == null)
+			selected.backupCss = selected.style.cssText;
+		selected.style.cssText = selected.backupCss + "; " + overOptionCss;
+	}
+	else if (!add) {
+		if (selected.backupCss != null)
+			selected.style.cssText = selected.backupCss;
+	}
+}
+
+function hideShownDropDowns() {
+	var el = getReal(window.event.srcElement, "className", "select");
+	
+	var spans = document.all.tags("SPAN");
+	var selects = new Array();
+	var index = 0;
+	
+	for (var i=0; i<spans.length; i++) {
+		if ((spans[i].className == "select") && (spans[i] != el)) {
+			dropdown = spans[i].children[1];
+			if ((spans[i].size == 1) && (dropdown.style.visibility == "visible"))
+				selects[index++] = dropdown;
+		}
+	}
+	
+	for (var j=0; j<selects.length; j++) {
+		hideDropDown(selects[j]);
+	}	
+
+}
+
+function hideDropDown(el) {
+	if (typeof(fade) == "function")
+		fade(el, false);
+	else
+		el.style.visibility = "hidden";
+}
+
+function showDropDown(el) {
+	if (typeof(fade) == "function")
+		fade(el, true);
+	else if (typeof(swipe) == "function")
+		swipe(el, 2);
+	else
+		el.style.visibility = "visible";
+}
+
+function initSelectBoxes() {
+	var spans = document.all.tags("SPAN");
+	var selects = new Array();
+	var index = 0;
+	
+	for (var i=0; i<spans.length; i++) {
+		if (spans[i].className == "select")
+			selects[index++] = spans[i];
+	}
+	
+	for (var j=0; j<selects.length; j++) {
+		initSelectBox(selects[j]);
+	}	
+}
+
+function getReal(el, type, value) {
+	temp = el;
+	while ((temp != null) && (temp.tagName != "BODY")) {
+		if (eval("temp." + type) == value) {
+			el = temp;
+			return el;
+		}
+		temp = temp.parentElement;
+	}
+	return el;
+}
+
+if (ie4) {
+	window.onload = initSelectBoxes;
+	document.onclick = hideShownDropDowns;
+}
+
+</SCRIPT>
+
+<SCRIPT type=text/javascript>
+function writeSelectBox(matrix, id, size, onchange, css) {
+	var d = window.document;
+
+	var ie4 = (document.all != null);
+
+	if (ie4) {
+//		alert("Before!");
+		var s = createIEString(matrix, id, size, onchange, css);
+		document.write(s);
+//		alert("After!");
+//		alert(s);
+	}
+
+	else {
+		document.write(createXString(matrix, id, size, onchange, css));
+	}
+}
+
+function createIEString(matrix, id, size, onchange, css) {
+	var str = "";
+	// Span startTag	
+		str += '<span class="select"';
+		if (size == null)
+			size = 1;
+		str += ' size="' + size + '"';	
+		if (id != null)
+			str += ' id="' + id + '"';
+		if (onchange != null)
+			str += ' onchange="' + onchange + '"';
+		if (css != null)
+			str += ' style="' + css + '"';
+		str += '>\n';
+	
+	// Table Tag
+		str += '<table class="selectTable" cellspacing="0" cellpadding="0"\n';
+		str += ' onclick="toggleDropDown(this.parentElement)">\n';
+		str += '<tr>\n';
+		str += '<td class="selected">&nbsp;</td>\n';
+		str += '<td align="CENTER" valign="MIDDLE" class="Button"\n';
+		str += ' onmousedown="this.style.border=\'2 inset buttonhighlight\'"\n';
+		str += ' onmouseup="this.style.border=\'2 outset buttonhighlight\'">\n';
+		str += '<span style="position: relative; left: 0; top: -2; width: 100%;">6</span></td>\n';
+		str += '</tr>\n';
+		str += '</table>\n';
+		
+	// DropDown startTag
+		str += '<div class="dropDown" onclick="optionClick()" onmouseover="optionOver()" onmouseout="optionOut()">\n';
+		
+		for (var i=0; i<matrix.length; i++) {
+			html     = matrix[i].html;
+			value    = matrix[i].value;
+			css      = matrix[i].css;
+			selected = matrix[i].selected;
+			
+		// Write option starttag
+			str += '<div class="option"';
+			if (value != null)
+				str += ' value="' + value + '"';
+			if (css != null)
+				str += ' style="' + css + '"';
+			if (selected != null)
+				str += ' selected';
+			str += '>\n';
+			
+		// Write HTML contents
+			str += html;
+		// Write end tag
+			str += '</div>\n';
+		}
+	
+	//DropDown endtag
+		str += '</div>\n';
+		
+	// Span endTag
+		str += '</span>\n';
+		
+	return str;
+}
+
+function createXString(matrix, id, size, onchange, css) {
+//	var str = "\n";
+	// form startTag
+	var str = '<form>\n';
+	// Select startTag
+	str += '<select';
+	if (size == null)
+		size = 1;
+	str += ' size="' + size + '"';	
+	if (id != null)
+		str += ' id="' + id + '"';
+	if (onchange != null)
+		str += ' onchange="' + onchange + '"';
+//	if (css != null)
+//		str += ' style="' + css + '"';
+	str += '>\n';
+	// write options
+	for (var i=0; i<matrix.length; i++) {
+		html     = matrix[i].html;
+		value    = matrix[i].value;
+		css      = matrix[i].css;
+		selected = matrix[i].selected;
+		
+	// Write option starttag
+		str += '\n<option';
+		if (value != null)
+			str += ' value="' + value + '"';
+//		if (css != null)
+//			str += ' style="' + css + '"';
+		if (selected != null)
+			str += ' selected';
+		str += '>';
+		
+	// Write HTML contents
+		str += stripTags(html);
+	// Write end tag
+		str += '</option>\n';
+	}
+	str += '\n</select>\n';
+	str += '</form>\n';
+
+	return str;
+}
+
+function stripTags(str) {
+	var s = 0;
+	var e = -1;
+	var r = "";
+
+	s = str.indexOf("<",e);	
+
+	do {
+		r += str.substring(e + 1,s);
+		e = str.indexOf(">",s);
+		s = str.indexOf("<",e);
+	}
+	while ((s != -1) && (e != -1))
+
+	r += str.substring(e + 1,str.length);
+
+	return r;
+}
+
+function Option(html, value, css, selected) {
+	this.html = html;
+	this.value = value;
+	this.css = css;
+	this.selected = selected;
+}
+</SCRIPT>
+
+<SCRIPT>
+
+topArray = new Array();
+topArray[0] = new Option('<nobr title="javascript2000"><img src="photo/home.gif" width=16 height=17 border=0 align="absmiddle"> <span style="font-family: arial black; font-style: italic; font-weight: bold;">JavaScript</span></nobr>', "http://www.javascript2000.com/");
+topArray[1] = new Option('<nobr title="新浪"><img src="photo/htmlicon.gif" width=16 height=16 border=0 align="absmiddle">www.sina.com.cn</nobr>', "http://www.sina.com.cn");
+topArray[2] = new Option('<nobr title="网易"><img src="photo/htmlicon.gif" width=16 height=16 border=0 align="absmiddle">www.163.com</nobr>', "http://www.163.com");
+topArray[3] = new Option('<nobr title="搜狐"><img src="photo/htmlicon.gif" width=16 height=16 border=0 align="absmiddle">www.sohu.com</nobr>', "http://www.sohu.com");
+
+writeSelectBox(topArray, "select2", 1, "window.open(this.options[this.selectedIndex].value, '_top')", "margin-left: 10; width: 140;");
+
+</SCRIPT></fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+把如下代码加入<body>区域中
+&nbsp;&lt;style type=text/css&gt;
+.select {
+	BORDER-BOTTOM: buttonface 0px inset; BORDER-LEFT: buttonface 0px inset; BORDER-RIGHT: buttonface 0px inset; BORDER-TOP: buttonface 0px inset; CURSOR: default; FONT: icon; WIDTH: 100px
+}
+.selected {
+	BACKGROUND: window; BORDER-BOTTOM: buttonface 0px inset; BORDER-LEFT: buttonface 0px inset; BORDER-RIGHT: buttonface 0px inset; BORDER-TOP: buttonface 0px inset; FONT: icon; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.selectTable {
+	BACKGROUND: buttonface; BORDER-BOTTOM: buttonhighlight 2px inset; BORDER-LEFT: buttonhighlight 2px inset; BORDER-RIGHT: buttonhighlight 2px inset; BORDER-TOP: buttonhighlight 2px inset; HEIGHT: 100%; WIDTH: 100%
+}
+.option {
+	FONT: icon; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; PADDING-TOP: 1px; WIDTH: 100%
+}
+.dropDown {
+	BACKGROUND: window; BORDER-BOTTOM: windowtext 1px solid; BORDER-LEFT: windowtext 1px solid; BORDER-RIGHT: windowtext 1px solid; BORDER-TOP: windowtext 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px; POSITION: absolute; VISIBILITY: hidden; WIDTH: 100%
+}
+.select .button {
+	BORDER-BOTTOM: buttonhighlight 2px outset; BORDER-LEFT: buttonhighlight 2px outset; BORDER-RIGHT: buttonhighlight 2px outset; BORDER-TOP: buttonhighlight 2px outset; FONT-FAMILY: webdings; FONT-SIZE: 11px; HEIGHT: 5px; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px; WIDTH: 16px
+}
+&lt;/style&gt;
+
+&lt;SCRIPT type=text/javascript&gt;
+var overOptionCss = &quot;background: highlight; color: highlighttext&quot;;
+var sizedBorderCss = &quot;2 inset buttonhighlight&quot;;
+
+var globalSelect;	//This is used when calling an unnamed selectbox with onclick=&quot;this.PROPERTY&quot;
+
+var ie4 = (document.all != null);
+
+var q = 0;
+
+
+function initSelectBox(el) {
+	copySelected(el);
+	
+	var size = el.getAttribute(&quot;size&quot;);
+
+// These two lines combined with execution in optionClick() allow you to write:
+//		onchange=&quot;alert(this.options[this.selectedIndex].value)&quot;
+	el.options = el.children[1].children;
+	el.selectedIndex = findSelected(el);	//Set the index now!
+// Some methods that are supported on the real SELECT box
+	el.remove = new Function(&quot;i&quot;, &quot;int_remove(this,i)&quot;);
+	el.item   = new Function(&quot;i&quot;, &quot;return this.options[i]&quot;);
+	el.add    = new Function(&quot;e&quot;, &quot;i&quot;, &quot;int_add(this, e, i)&quot;);
+// The real select box let you have lot of options with the same NAME. In that case the item
+// needs two arguments. When using DIVs you can't have two with the same NAME (or ID) and
+// then there is no need for the second argument
+	
+	el.options[el.selectedIndex].selected = true;
+
+	dropdown = el.children[1];
+
+	if (size != null) {
+		if (size &gt; 1) {
+			el.size = size;
+			dropdown.style.zIndex = 0;
+			initSized(el);
+		}
+		else {
+			el.size = 1;
+			dropdown.style.zIndex = 99;
+			if (dropdown.offsetHeight &gt; 200) {
+				dropdown.style.height = &quot;200&quot;;
+				dropdown.style.overflow = &quot;auto&quot;;
+			}
+		}
+	}
+	
+	highlightSelected(el,true);
+}
+
+function int_remove(el,i) {
+	if (el.options[i] != null)
+		el.options[i].outerHTML = &quot;&quot;;
+}
+
+function int_add(el, e, i) {
+	var html = &quot;&lt;div class='option' noWrap&quot;;
+	if (e.value != null)
+		html += &quot; value='&quot; + e.value + &quot;'&quot;;
+	if (e.style.cssText != null)
+		html += &quot; style='&quot; + e.style.cssText + &quot;'&quot;;
+	html += &quot;&gt;&quot;;
+	if (e.text != null)
+		html += e.text;
+	html += &quot;&lt;/div&gt;&quot;
+
+	if ((i == null) || (i &gt;= el.options.length))
+		i = el.options.length-1;
+
+	el.options[i].insertAdjacentHTML(&quot;AfterEnd&quot;, html);
+}
+	
+function initSized(el) {
+//alert(&quot;initSized --------&gt;&quot;);
+	var h = 0;
+	el.children[0].style.display = &quot;none&quot;;
+
+	dropdown = el.children[1];
+	dropdown.style.visibility = &quot;visible&quot;;
+
+	if (dropdown.children.length &gt; el.size) {
+		dropdown.style.overflow = &quot;auto&quot;;
+		for (var i=0; i&lt;el.size; i++) {
+			h += dropdown.children[i].offsetHeight;
+		}
+
+		if (dropdown.style.borderWidth != null) {
+			dropdown.style.pixelHeight = h + 4; //2 * parseInt(dropdown.style.borderWidth);
+		}
+
+		else
+			dropdown.style.height = h;
+
+	}
+
+	dropdown.style.border = sizedBorderCss;
+
+
+	el.style.height = dropdown.style.pixelHeight;
+}
+
+function copySelected(el) {
+	var selectedIndex = findSelected(el);
+
+	selectedCell = el.children[0].rows[0].cells[0];
+	selectedDiv  = 	el.children[1].children[selectedIndex];
+	
+	selectedCell.innerHTML = selectedDiv.outerHTML;
+}
+
+// This function returns the first selected option and resets the rest
+// in case some idiot has set more than one to selcted :-)
+function findSelected(el) {
+	var selected = null;
+
+
+	ec = el.children[1].children;	//the table is the first child
+	var ecl = ec.length;
+	
+	for (var i=0; i&lt;ecl; i++) {
+		if (ec[i].getAttribute(&quot;selected&quot;) != null) {
+			if (selected == null) {	// Found first selected
+				selected = i;
+			}
+			else
+				ec[i].removeAttribute(&quot;selected&quot;);	//Like I said. Only one selected!
+		}
+	}
+	if (selected == null)
+		selected = 0;	//When starting this is the most logic start value if none is present
+
+	return selected;
+}
+
+function toggleDropDown(el) {
+	if (el.size == 1) {
+		dropDown = el.children[1];
+		
+		if (dropDown.style.visibility == &quot;&quot;)
+			dropDown.style.visibility = &quot;hidden&quot;;
+			
+		if (dropDown.style.visibility == &quot;hidden&quot;)
+			showDropDown(dropDown);
+		else
+			hideDropDown(dropDown);
+	}
+}
+
+function optionClick() {
+	el = getReal(window.event.srcElement, &quot;className&quot;, &quot;option&quot;);
+
+	if (el.className == &quot;option&quot;) {
+		dropdown  = el.parentElement;
+		selectBox = dropdown.parentElement;
+		
+		oldSelected = dropdown.children[findSelected(selectBox)]
+
+		if(oldSelected != el) {
+			oldSelected.removeAttribute(&quot;selected&quot;);
+			el.setAttribute(&quot;selected&quot;, 1);
+			selectBox.selectedIndex = findSelected(selectBox);
+		}
+
+		if (selectBox.onchange != null) {	// This executes the onchange when you chnage the option
+			if (selectBox.id != &quot;&quot;) {		// For this to work you need to replace this with an ID or name
+				eval(selectBox.onchange.replace(/this/g, selectBox.id));
+			}
+			else {
+				globalSelect = selectBox;
+				eval(selectBox.onchange.replace(/this/g, &quot;globalSelect&quot;));
+			}
+		}
+		
+		if (el.backupCss != null)
+			el.style.cssText = el.backupCss;
+		copySelected(selectBox);
+		toggleDropDown(selectBox);
+		highlightSelected(selectBox, true);
+	}
+}
+
+function optionOver() {
+	var toEl = getReal(window.event.toElement, &quot;className&quot;, &quot;option&quot;);
+	var fromEl = getReal(window.event.fromElement, &quot;className&quot;, &quot;option&quot;);
+	if (toEl == fromEl) return;
+	var el = toEl;
+	
+	if (el.className == &quot;option&quot;) {
+		if (el.backupCss == null)
+			el.backupCss = el.style.cssText;
+		highlightSelected(el.parentElement.parentElement, false);
+		el.style.cssText = el.backupCss + &quot;; &quot; + overOptionCss;
+		this.highlighted = true;
+	}
+}
+
+function optionOut() {
+	var toEl = getReal(window.event.toElement, &quot;className&quot;, &quot;option&quot;);
+	var fromEl = getReal(window.event.fromElement, &quot;className&quot;, &quot;option&quot;);
+
+	if (fromEl == fromEl.parentElement.children[findSelected(fromEl.parentElement.parentElement)]) {
+		if (toEl == null)
+			return;
+		if (toEl.className != &quot;option&quot;)
+			return;
+	}
+	
+	if (toEl != null) {
+		if (toEl.className != &quot;option&quot;) {
+			if (fromEl.className == &quot;option&quot;)
+				highlightSelected(fromEl.parentElement.parentElement, true);
+		}
+	}
+	
+	if (toEl == fromEl) return;
+	var el = fromEl;
+
+	if (el.className == &quot;option&quot;) {
+		if (el.backupCss != null)
+			el.style.cssText = el.backupCss;
+	}
+
+}
+
+function highlightSelected(el,add) {
+	var selectedIndex = findSelected(el);
+	
+	selected = el.children[1].children[selectedIndex];
+	
+	if (add) {
+		if (selected.backupCss == null)
+			selected.backupCss = selected.style.cssText;
+		selected.style.cssText = selected.backupCss + &quot;; &quot; + overOptionCss;
+	}
+	else if (!add) {
+		if (selected.backupCss != null)
+			selected.style.cssText = selected.backupCss;
+	}
+}
+
+function hideShownDropDowns() {
+	var el = getReal(window.event.srcElement, &quot;className&quot;, &quot;select&quot;);
+	
+	var spans = document.all.tags(&quot;SPAN&quot;);
+	var selects = new Array();
+	var index = 0;
+	
+	for (var i=0; i&lt;spans.length; i++) {
+		if ((spans[i].className == &quot;select&quot;) &amp;&amp; (spans[i] != el)) {
+			dropdown = spans[i].children[1];
+			if ((spans[i].size == 1) &amp;&amp; (dropdown.style.visibility == &quot;visible&quot;))
+				selects[index++] = dropdown;
+		}
+	}
+	
+	for (var j=0; j&lt;selects.length; j++) {
+		hideDropDown(selects[j]);
+	}	
+
+}
+
+function hideDropDown(el) {
+	if (typeof(fade) == &quot;function&quot;)
+		fade(el, false);
+	else
+		el.style.visibility = &quot;hidden&quot;;
+}
+
+function showDropDown(el) {
+	if (typeof(fade) == &quot;function&quot;)
+		fade(el, true);
+	else if (typeof(swipe) == &quot;function&quot;)
+		swipe(el, 2);
+	else
+		el.style.visibility = &quot;visible&quot;;
+}
+
+function initSelectBoxes() {
+	var spans = document.all.tags(&quot;SPAN&quot;);
+	var selects = new Array();
+	var index = 0;
+	
+	for (var i=0; i&lt;spans.length; i++) {
+		if (spans[i].className == &quot;select&quot;)
+			selects[index++] = spans[i];
+	}
+	
+	for (var j=0; j&lt;selects.length; j++) {
+		initSelectBox(selects[j]);
+	}	
+}
+
+function getReal(el, type, value) {
+	temp = el;
+	while ((temp != null) &amp;&amp; (temp.tagName != &quot;BODY&quot;)) {
+		if (eval(&quot;temp.&quot; + type) == value) {
+			el = temp;
+			return el;
+		}
+		temp = temp.parentElement;
+	}
+	return el;
+}
+
+if (ie4) {
+	window.onload = initSelectBoxes;
+	document.onclick = hideShownDropDowns;
+}
+
+&lt;/SCRIPT&gt;
+
+&lt;SCRIPT type=text/javascript&gt;
+function writeSelectBox(matrix, id, size, onchange, css) {
+	var d = window.document;
+
+	var ie4 = (document.all != null);
+
+	if (ie4) {
+//		alert(&quot;Before!&quot;);
+		var s = createIEString(matrix, id, size, onchange, css);
+		document.write(s);
+//		alert(&quot;After!&quot;);
+//		alert(s);
+	}
+
+	else {
+		document.write(createXString(matrix, id, size, onchange, css));
+	}
+}
+
+function createIEString(matrix, id, size, onchange, css) {
+	var str = &quot;&quot;;
+	// Span startTag	
+		str += '&lt;span class=&quot;select&quot;';
+		if (size == null)
+			size = 1;
+		str += ' size=&quot;' + size + '&quot;';	
+		if (id != null)
+			str += ' id=&quot;' + id + '&quot;';
+		if (onchange != null)
+			str += ' onchange=&quot;' + onchange + '&quot;';
+		if (css != null)
+			str += ' style=&quot;' + css + '&quot;';
+		str += '&gt;\n';
+	
+	// Table Tag
+		str += '&lt;table class=&quot;selectTable&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;\n';
+		str += ' onclick=&quot;toggleDropDown(this.parentElement)&quot;&gt;\n';
+		str += '&lt;tr&gt;\n';
+		str += '&lt;td class=&quot;selected&quot;&gt;&amp;nbsp;&lt;/td&gt;\n';
+		str += '&lt;td align=&quot;CENTER&quot; valign=&quot;MIDDLE&quot; class=&quot;Button&quot;\n';
+		str += ' onmousedown=&quot;this.style.border=\'2 inset buttonhighlight\'&quot;\n';
+		str += ' onmouseup=&quot;this.style.border=\'2 outset buttonhighlight\'&quot;&gt;\n';
+		str += '&lt;span style=&quot;position: relative; left: 0; top: -2; width: 100%;&quot;&gt;6&lt;/span&gt;&lt;/td&gt;\n';
+		str += '&lt;/tr&gt;\n';
+		str += '&lt;/table&gt;\n';
+		
+	// DropDown startTag
+		str += '&lt;div class=&quot;dropDown&quot; onclick=&quot;optionClick()&quot; onmouseover=&quot;optionOver()&quot; onmouseout=&quot;optionOut()&quot;&gt;\n';
+		
+		for (var i=0; i&lt;matrix.length; i++) {
+			html     = matrix[i].html;
+			value    = matrix[i].value;
+			css      = matrix[i].css;
+			selected = matrix[i].selected;
+			
+		// Write option starttag
+			str += '&lt;div class=&quot;option&quot;';
+			if (value != null)
+				str += ' value=&quot;' + value + '&quot;';
+			if (css != null)
+				str += ' style=&quot;' + css + '&quot;';
+			if (selected != null)
+				str += ' selected';
+			str += '&gt;\n';
+			
+		// Write HTML contents
+			str += html;
+		// Write end tag
+			str += '&lt;/div&gt;\n';
+		}
+	
+	//DropDown endtag
+		str += '&lt;/div&gt;\n';
+		
+	// Span endTag
+		str += '&lt;/span&gt;\n';
+		
+	return str;
+}
+
+function createXString(matrix, id, size, onchange, css) {
+//	var str = &quot;\n&quot;;
+	// form startTag
+	var str = '&lt;form&gt;\n';
+	// Select startTag
+	str += '&lt;select';
+	if (size == null)
+		size = 1;
+	str += ' size=&quot;' + size + '&quot;';	
+	if (id != null)
+		str += ' id=&quot;' + id + '&quot;';
+	if (onchange != null)
+		str += ' onchange=&quot;' + onchange + '&quot;';
+//	if (css != null)
+//		str += ' style=&quot;' + css + '&quot;';
+	str += '&gt;\n';
+	// write options
+	for (var i=0; i&lt;matrix.length; i++) {
+		html     = matrix[i].html;
+		value    = matrix[i].value;
+		css      = matrix[i].css;
+		selected = matrix[i].selected;
+		
+	// Write option starttag
+		str += '\n&lt;option';
+		if (value != null)
+			str += ' value=&quot;' + value + '&quot;';
+//		if (css != null)
+//			str += ' style=&quot;' + css + '&quot;';
+		if (selected != null)
+			str += ' selected';
+		str += '&gt;';
+		
+	// Write HTML contents
+		str += stripTags(html);
+	// Write end tag
+		str += '&lt;/option&gt;\n';
+	}
+	str += '\n&lt;/select&gt;\n';
+	str += '&lt;/form&gt;\n';
+
+	return str;
+}
+
+function stripTags(str) {
+	var s = 0;
+	var e = -1;
+	var r = &quot;&quot;;
+
+	s = str.indexOf(&quot;&lt;&quot;,e);	
+
+	do {
+		r += str.substring(e + 1,s);
+		e = str.indexOf(&quot;&gt;&quot;,s);
+		s = str.indexOf(&quot;&lt;&quot;,e);
+	}
+	while ((s != -1) &amp;&amp; (e != -1))
+
+	r += str.substring(e + 1,str.length);
+
+	return r;
+}
+
+function Option(html, value, css, selected) {
+	this.html = html;
+	this.value = value;
+	this.css = css;
+	this.selected = selected;
+}
+&lt;/SCRIPT&gt;
+
+&lt;SCRIPT&gt;
+
+topArray = new Array();
+topArray[0] = new Option('&lt;nobr title=&quot;javascript2000&quot;&gt;&lt;img src=&quot;photo/home.gif&quot; width=16 height=17 border=0 align=&quot;absmiddle&quot;&gt; &lt;span style=&quot;font-family: arial black; font-style: italic; font-weight: bold;&quot;&gt;JavaScript&lt;/span&gt;&lt;/nobr&gt;', &quot;http://www.javascript2000.com/&quot;);
+topArray[1] = new Option('&lt;nobr title=&quot;新浪&quot;&gt;&lt;img src=&quot;photo/htmlicon.gif&quot; width=16 height=16 border=0 align=&quot;absmiddle&quot;&gt;www.sina.com.cn&lt;/nobr&gt;', &quot;http://www.sina.com.cn&quot;);
+topArray[2] = new Option('&lt;nobr title=&quot;网易&quot;&gt;&lt;img src=&quot;photo/htmlicon.gif&quot; width=16 height=16 border=0 align=&quot;absmiddle&quot;&gt;www.163.com&lt;/nobr&gt;', &quot;http://www.163.com&quot;);
+topArray[3] = new Option('&lt;nobr title=&quot;搜狐&quot;&gt;&lt;img src=&quot;photo/htmlicon.gif&quot; width=16 height=16 border=0 align=&quot;absmiddle&quot;&gt;www.sohu.com&lt;/nobr&gt;', &quot;http://www.sohu.com&quot;);
+
+writeSelectBox(topArray, &quot;select2&quot;, 1, &quot;window.open(this.options[this.selectedIndex].value, '_top')&quot;, &quot;margin-left: 10; width: 140;&quot;);
+
+&lt;/SCRIPT&gt;
+
+
+
+&nbsp;
+
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

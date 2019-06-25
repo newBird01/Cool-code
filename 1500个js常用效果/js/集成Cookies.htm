@@ -1,0 +1,617 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--集成Cookies</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body bgcolor="#ffffff" onLoad="startclock()">
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">集成Cookies</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=1408" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<SCRIPT language="JavaScript"><!--
+function getCookieVal (offset) 
+   {
+   var endstr = document.cookie.indexOf (";", offset);
+   if (endstr == -1)
+      endstr = document.cookie.length;
+   return unescape(document.cookie.substring(offset, endstr));
+   }
+function GetCookie (name) 
+   {
+   var arg = name + "=";
+   var alen = arg.length;
+   var clen = document.cookie.length;
+   var i = 0;
+   while (i < clen) 
+      {
+      var j = i + alen;
+      if (document.cookie.substring(i, j) == arg)
+         return getCookieVal (j);
+      i = document.cookie.indexOf(" ", i) + 1;
+      if (i == 0) 
+         break; 
+      }
+   return null;
+   }
+function SetCookie (name, value) 
+   {
+   var argv = SetCookie.arguments;
+   var argc = SetCookie.arguments.length;
+   var expires = (2 < argc) ? argv[2] : null;
+   var path = (3 < argc) ? argv[3] : null;
+   var domain = (4 < argc) ? argv[4] : null;
+   var secure = (5 < argc) ? argv[5] : false;
+   document.cookie = name + "=" + escape (value) +
+     ((expires == null) ? "" : ("; expires=" + expires.toGMTString())) +
+     ((path == null) ? "" : ("; path=" + path)) +
+     ((domain == null) ? "" : ("; domain=" + domain)) +
+	((secure == true) ? "; secure" : "");
+   }
+function ResetCounts(name)
+   {
+   visits = 0;
+   SetCookie("visits", visits, expdate , "java2000.wol.com.html", null, false);
+   location.reload();
+   }
+//-->
+</SCRIPT><br><SCRIPT language="JavaScript"><!--
+var expdate = new Date();
+
+var visits;
+
+// Set expiration date to a year from now.
+
+expdate.setTime(expdate.getTime() +  (24 * 60 * 60 * 1000 * 365)); 
+
+if(!(visits = GetCookie("visits"))) 
+
+   visits = 0;
+
+visits++;
+
+SetCookie("visits", visits, expdate, "java2000.wol.com.html", null, false);
+
+   if(visits == 1) 
+
+      document.write('<P><CENTER>Welcome Cadet '+username+'</CENTER>');
+
+   if(visits == 2) 
+
+      document.write('<P><CENTER>Welcome Ensign '+username+'</CENTER>');
+
+   if(visits == 3) 
+
+      document.write('<P><CENTER>Welcome Lieutenant '+username+'</CENTER>');
+
+   if(visits == 4) 
+
+      document.write('<P><CENTER>Welcome Lieutenant-Commander '+username+'</CENTER>');
+
+   if(visits == 5) 
+
+      document.write('<P><CENTER>Welcome Commander '+username+'</CENTER>');
+
+   if(visits == 6) 
+
+      document.write('<P><CENTER>Welcome Vice-Admiral '+username+'</CENTER>');
+
+   if(visits == 7) 
+
+      document.write('<P><CENTER>Welcome Admiral '+username+'</CENTER>');
+
+   if(visits== 8) 
+
+      document.write('<P><CENTER>Welcome Demi-God '+username+'</CENTER>');
+
+   if(visits== 9) 
+
+      document.write('<P><CENTER>Welcome Demi-God '+username+'</CENTER>');
+
+   if(visits>=10) 
+
+      document.write('<P><CENTER>Welcome Master '+username+'</CENTER>');
+
+
+
+//-->
+
+</SCRIPT><br>
+
+<FONT FACE=ARIAL size="2">
+
+<b>Your access was granted from
+<SCRIPT language="javascript">document.write(document.referrer)</SCRIPT><br>
+Using <SCRIPT language="javascript">document.write(navigator.userAgent)</SCRIPT>
+</b></font><br><SCRIPT language="JavaScript"><!--
+var expdate = new Date();
+
+var visits;
+
+expdate.setTime(expdate.getTime() +  (24 * 60 * 60 * 1000 * 365)); 
+
+if(!(visits = GetCookie("visits"))) 
+
+   visits = 0;
+
+visits++;
+
+SetCookie("visits", visits, expdate, "www.njcatv.net.html", null, false);
+
+document.write(""+"你已经光临本页"+visits+" 次了.谢谢!");
+
+
+//-->
+
+</SCRIPT><br>
+You arrived at <br><SCRIPT language="JavaScript"><!--
+Stamp = new Date();
+	var Hours;
+	var Mins;
+	var Time;
+	Hours = Stamp.getHours();
+	if (Hours >= 12) {
+	        Time = " P.M.";
+	}
+        else {
+                Time = " A.M.";
+        }
+	
+	if (Hours > 12) {
+        	Hours -= 12;
+        }
+	if (Hours == 0) {
+        	Hours = 12;
+        }
+	Mins = Stamp.getMinutes();
+	if (Mins < 10) {
+        	Mins = "0" + Mins;
+        }
+	
+	document.write('<font size="2" face="Arial"><B>' + Hours + ":" + Mins + Time + '</B></font>');
+//-->
+
+</SCRIPT><br>
+The current time is:<br><SCRIPT language="JavaScript"><!--
+function goback(){
+alert("Good Bye!");
+history.go(-1);
+}
+function gettheDate() {
+Todays = new Date();
+TheDate = "" + (Todays.getMonth()+ 1) +" / "+ Todays.getDate() + " / " + 
+Todays.getYear() 
+document.clock.date.value = TheDate;
+}
+// Navigation - Stop
+// Netscapes Clock - Start
+// this code was taken from Netscapes JavaScript documentation at
+// www.netscape.com on Jan.25.96
+
+var timerID = null;
+var timerRunning = false;
+function stopclock (){
+        if(timerRunning)
+                clearTimeout(timerID);
+        timerRunning = false;
+}
+
+function startclock () {
+        // Make sure the clock is stopped
+        stopclock();
+        gettheDate()
+        showtime();
+}
+
+function showtime () {
+        var now = new Date();
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        var seconds = now.getSeconds()
+        var timeValue = "" + ((hours >12) ? hours -12 :hours)
+        timeValue += ((minutes < 10) ? ":0" : ":") + minutes
+        timeValue += ((seconds < 10) ? ":0" : ":") + seconds
+        timeValue += (hours >= 12) ? " P.M." : " A.M."
+        document.clock.face.value = timeValue;
+        // you could replace the above with this
+        // and have a clock on the status bar:
+        // window.status = timeValue;
+        timerID = setTimeout("showtime()",1000);
+        timerRunning = true;
+}
+//-->
+
+</SCRIPT><br><form name="clock" onSubmit="0">
+<div align=center>
+<b><font size="-1"></font></b>
+<input type="text" name="date" size=12 value="">
+<input type="text" name="face" size=12 value="">
+</div>
+</form></fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+第一步:把如下代码加入<body>区域中
+&nbsp;&lt;SCRIPT language=&quot;JavaScript&quot;&gt;&lt;!--
+function getCookieVal (offset) 
+   {
+   var endstr = document.cookie.indexOf (&quot;;&quot;, offset);
+   if (endstr == -1)
+      endstr = document.cookie.length;
+   return unescape(document.cookie.substring(offset, endstr));
+   }
+function GetCookie (name) 
+   {
+   var arg = name + &quot;=&quot;;
+   var alen = arg.length;
+   var clen = document.cookie.length;
+   var i = 0;
+   while (i &lt; clen) 
+      {
+      var j = i + alen;
+      if (document.cookie.substring(i, j) == arg)
+         return getCookieVal (j);
+      i = document.cookie.indexOf(&quot; &quot;, i) + 1;
+      if (i == 0) 
+         break; 
+      }
+   return null;
+   }
+function SetCookie (name, value) 
+   {
+   var argv = SetCookie.arguments;
+   var argc = SetCookie.arguments.length;
+   var expires = (2 &lt; argc) ? argv[2] : null;
+   var path = (3 &lt; argc) ? argv[3] : null;
+   var domain = (4 &lt; argc) ? argv[4] : null;
+   var secure = (5 &lt; argc) ? argv[5] : false;
+   document.cookie = name + &quot;=&quot; + escape (value) +
+     ((expires == null) ? &quot;&quot; : (&quot;; expires=&quot; + expires.toGMTString())) +
+     ((path == null) ? &quot;&quot; : (&quot;; path=&quot; + path)) +
+     ((domain == null) ? &quot;&quot; : (&quot;; domain=&quot; + domain)) +
+	((secure == true) ? &quot;; secure&quot; : &quot;&quot;);
+   }
+function ResetCounts(name)
+   {
+   visits = 0;
+   SetCookie(&quot;visits&quot;, visits, expdate , &quot;java2000.wol.com.html&quot;, null, false);
+   location.reload();
+   }
+//--&gt;
+&lt;/SCRIPT&gt;&lt;br&gt;&lt;SCRIPT language=&quot;JavaScript&quot;&gt;&lt;!--
+var expdate = new Date();
+
+var visits;
+
+// Set expiration date to a year from now.
+
+expdate.setTime(expdate.getTime() +  (24 * 60 * 60 * 1000 * 365)); 
+
+if(!(visits = GetCookie(&quot;visits&quot;))) 
+
+   visits = 0;
+
+visits++;
+
+SetCookie(&quot;visits&quot;, visits, expdate, &quot;java2000.wol.com.html&quot;, null, false);
+
+   if(visits == 1) 
+
+      document.write('&lt;P&gt;&lt;CENTER&gt;Welcome Cadet '+username+'&lt;/CENTER&gt;');
+
+   if(visits == 2) 
+
+      document.write('&lt;P&gt;&lt;CENTER&gt;Welcome Ensign '+username+'&lt;/CENTER&gt;');
+
+   if(visits == 3) 
+
+      document.write('&lt;P&gt;&lt;CENTER&gt;Welcome Lieutenant '+username+'&lt;/CENTER&gt;');
+
+   if(visits == 4) 
+
+      document.write('&lt;P&gt;&lt;CENTER&gt;Welcome Lieutenant-Commander '+username+'&lt;/CENTER&gt;');
+
+   if(visits == 5) 
+
+      document.write('&lt;P&gt;&lt;CENTER&gt;Welcome Commander '+username+'&lt;/CENTER&gt;');
+
+   if(visits == 6) 
+
+      document.write('&lt;P&gt;&lt;CENTER&gt;Welcome Vice-Admiral '+username+'&lt;/CENTER&gt;');
+
+   if(visits == 7) 
+
+      document.write('&lt;P&gt;&lt;CENTER&gt;Welcome Admiral '+username+'&lt;/CENTER&gt;');
+
+   if(visits== 8) 
+
+      document.write('&lt;P&gt;&lt;CENTER&gt;Welcome Demi-God '+username+'&lt;/CENTER&gt;');
+
+   if(visits== 9) 
+
+      document.write('&lt;P&gt;&lt;CENTER&gt;Welcome Demi-God '+username+'&lt;/CENTER&gt;');
+
+   if(visits&gt;=10) 
+
+      document.write('&lt;P&gt;&lt;CENTER&gt;Welcome Master '+username+'&lt;/CENTER&gt;');
+
+
+
+//--&gt;
+
+&lt;/SCRIPT&gt;&lt;br&gt;
+
+&lt;FONT FACE=ARIAL size=&quot;2&quot;&gt;
+
+&lt;b&gt;Your access was granted from
+&lt;SCRIPT language=&quot;javascript&quot;&gt;document.write(document.referrer)&lt;/SCRIPT&gt;&lt;br&gt;
+Using &lt;SCRIPT language=&quot;javascript&quot;&gt;document.write(navigator.userAgent)&lt;/SCRIPT&gt;
+&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;SCRIPT language=&quot;JavaScript&quot;&gt;&lt;!--
+var expdate = new Date();
+
+var visits;
+
+expdate.setTime(expdate.getTime() +  (24 * 60 * 60 * 1000 * 365)); 
+
+if(!(visits = GetCookie(&quot;visits&quot;))) 
+
+   visits = 0;
+
+visits++;
+
+SetCookie(&quot;visits&quot;, visits, expdate, &quot;www.njcatv.net.html&quot;, null, false);
+
+document.write(&quot;&quot;+&quot;你已经光临本页&quot;+visits+&quot; 次了.谢谢!&quot;);
+
+
+//--&gt;
+
+&lt;/SCRIPT&gt;&lt;br&gt;
+You arrived at &lt;br&gt;&lt;SCRIPT language=&quot;JavaScript&quot;&gt;&lt;!--
+Stamp = new Date();
+	var Hours;
+	var Mins;
+	var Time;
+	Hours = Stamp.getHours();
+	if (Hours &gt;= 12) {
+	        Time = &quot; P.M.&quot;;
+	}
+        else {
+                Time = &quot; A.M.&quot;;
+        }
+	
+	if (Hours &gt; 12) {
+        	Hours -= 12;
+        }
+	if (Hours == 0) {
+        	Hours = 12;
+        }
+	Mins = Stamp.getMinutes();
+	if (Mins &lt; 10) {
+        	Mins = &quot;0&quot; + Mins;
+        }
+	
+	document.write('&lt;font size=&quot;2&quot; face=&quot;Arial&quot;&gt;&lt;B&gt;' + Hours + &quot;:&quot; + Mins + Time + '&lt;/B&gt;&lt;/font&gt;');
+//--&gt;
+
+&lt;/SCRIPT&gt;&lt;br&gt;
+The current time is:&lt;br&gt;&lt;SCRIPT language=&quot;JavaScript&quot;&gt;&lt;!--
+function goback(){
+alert(&quot;Good Bye!&quot;);
+history.go(-1);
+}
+function gettheDate() {
+Todays = new Date();
+TheDate = &quot;&quot; + (Todays.getMonth()+ 1) +&quot; / &quot;+ Todays.getDate() + &quot; / &quot; + 
+Todays.getYear() 
+document.clock.date.value = TheDate;
+}
+// Navigation - Stop
+// Netscapes Clock - Start
+// this code was taken from Netscapes JavaScript documentation at
+// www.netscape.com on Jan.25.96
+
+var timerID = null;
+var timerRunning = false;
+function stopclock (){
+        if(timerRunning)
+                clearTimeout(timerID);
+        timerRunning = false;
+}
+
+function startclock () {
+        // Make sure the clock is stopped
+        stopclock();
+        gettheDate()
+        showtime();
+}
+
+function showtime () {
+        var now = new Date();
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        var seconds = now.getSeconds()
+        var timeValue = &quot;&quot; + ((hours &gt;12) ? hours -12 :hours)
+        timeValue += ((minutes &lt; 10) ? &quot;:0&quot; : &quot;:&quot;) + minutes
+        timeValue += ((seconds &lt; 10) ? &quot;:0&quot; : &quot;:&quot;) + seconds
+        timeValue += (hours &gt;= 12) ? &quot; P.M.&quot; : &quot; A.M.&quot;
+        document.clock.face.value = timeValue;
+        // you could replace the above with this
+        // and have a clock on the status bar:
+        // window.status = timeValue;
+        timerID = setTimeout(&quot;showtime()&quot;,1000);
+        timerRunning = true;
+}
+//--&gt;
+
+&lt;/SCRIPT&gt;&lt;br&gt;&lt;form name=&quot;clock&quot; onSubmit=&quot;0&quot;&gt;
+&lt;div align=center&gt;
+&lt;b&gt;&lt;font size=&quot;-1&quot;&gt;&lt;/font&gt;&lt;/b&gt;
+&lt;input type=&quot;text&quot; name=&quot;date&quot; size=12 value=&quot;&quot;&gt;
+&lt;input type=&quot;text&quot; name=&quot;face&quot; size=12 value=&quot;&quot;&gt;
+&lt;/div&gt;
+&lt;/form&gt;
+
+
+
+&nbsp;
+第二步:把如下代码加入<body>区域中<body bgcolor="#ffffff" onLoad="startclock()">
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

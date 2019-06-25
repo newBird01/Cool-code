@@ -1,0 +1,753 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--选择路线游戏</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<BODY bgcolor="#ffffff" onLoad="timerONE=window.setTimeout('scrollit_r2l(100)',500);initBoard();">
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">选择路线游戏</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=1441" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<script>
+ var line = "";
+ var x = 0;
+ var y = 0;
+ var full="*";
+ var blank = ".";
+ var wall = "#";
+ var goal = "$";
+ 
+ var fill = "";
+ 
+ // Functions to create the board
+ 
+ function makeboard() {
+         for (var i=1; i<= 10; i++)
+                 this[i] = new makeRow();
+         return this;
+ }
+ 
+ function makeRow() {
+         for (var i=1; i<= 10; i++)
+                 this[i]=blank;
+ 
+         return this;
+ }
+ 
+ // Functions to fill & clear the board.
+ 
+ function clearBoard (form) {
+ // Clears & resets the board
+         x = 0;
+ 
+         y = 0;
+ 
+         form.xval.value = 1;
+ 
+         form.yval.value = 1;
+ 
+         for (var i=1; i<= 10; i++)
+                 for (var j=1; j<= 10; j++)
+                         theBoard[i][j]=blank;
+ 
+         drawMaze();
+         fillBoard(form);
+         return;
+ }
+ 
+ function fillBoard (form) {
+         // Clear board buffer
+         line = "";
+         form.grid.value = "";
+         // Fill board buffer
+         for (var i=1; i<= 10; i++)
+                 for (var j=1; j<= 10; j++)
+                         line += theBoard[i][j];
+ 
+         // Move buffer contents to board
+         form.grid.value=line;
+ 
+ }
+ 
+ function plot (v, h) {
+         theBoard[v][h] = fill;
+ 
+ }
+ 
+ function drawMaze() {
+ // Plots the walls of the maze
+ //
+ // Ideally, a function should do this automatically,
+ // or maybe I should write a maze generating function in JS!
+ // Note: This program operates in Y,X co-ordinates (not standard X,Y).
+ 
+         theBoard[10][10] = goal;
+ 
+         theBoard[1][2] = wall;
+ 
+         theBoard[2][2] = wall;
+ 
+         theBoard[4][1] = wall;
+ 
+         theBoard[4][2] = wall;
+ 
+         theBoard[4][3] = wall;
+ 
+         theBoard[2][3] = wall;
+ 
+         theBoard[5][2] = wall;
+ 
+         theBoard[6][2] = wall;
+ 
+         theBoard[2][5] = wall;
+ 
+         theBoard[4][5] = wall;
+ 
+         theBoard[5][5] = wall;
+ 
+         theBoard[2][6] = wall;
+ 
+         theBoard[2][7] = wall;
+ 
+         theBoard[9][10] = wall;
+ 
+         theBoard[9][9] = wall;
+ 
+         theBoard[8][9] = wall;
+ 
+         theBoard[7][9] = wall;
+ 
+         theBoard[10][7] = wall;
+ 
+         theBoard[9][7] = wall;
+ 
+         theBoard[8][7] = wall;
+ 
+         theBoard[6][7] = wall;
+ 
+         theBoard[9][2] = wall;
+ 
+         theBoard[9][3] = wall;
+ 
+         theBoard[9][4] = wall;
+ 
+         theBoard[8][2] = wall;
+ 
+         theBoard[7][4] = wall;
+ 
+         theBoard[7][5] = wall;
+ 
+         theBoard[6][5] = wall;
+
+         theBoard[6][6] = wall;
+
+theBoard[6][7] = wall;
+
+theBoard[6][8] = wall;
+
+theBoard[6][9] = wall;
+ 
+         theBoard[5][7] = wall;
+ 
+         theBoard[5][8] = wall;
+ 
+         theBoard[5][9] = wall;
+ 
+         theBoard[4][9] = wall;
+ 
+ }
+ 
+ function update(form) {
+         var horiz = eval(form.xval.value);
+ 
+         var vert = eval(form.yval.value);
+ 
+         plot(vert,horiz);
+         fillBoard(form);
+         return;
+ }
+ 
+ function initBoard() {
+         theBoard = new makeboard();
+         fill = full;
+ 
+         clearBoard(document.board);
+         update(document.board);
+ }
+ 
+ // Functions to handle the player piece
+ // 
+ // I suppose I could have written one function to handle this, 
+ // but it was getting too complex.  Feel free to try. :)
+ //
+ 
+ function decx(form) {
+         fill = blank;
+ 
+         update(form);
+         checkx = eval(form.xval.value - 1);
+         checky = form.yval.value;
+ 
+         if (form.xval.value > 1) {
+                 if (theBoard[checky][checkx] != wall) {
+                         form.xval.value=eval(form.xval.value - 1);
+                 }
+                 else {
+                         alert("THUD!\nYou hit a wall.");
+                 }
+                 if (theBoard[checky][checkx] == goal) {
+                         alert("YOU WIN!");
+                 }
+         }
+         fill = full;
+         update(form);
+ }
+ 
+ function incx(form) {
+         fill = blank;
+         update(form);
+         checkx = eval(1 * form.xval.value + 1);
+         checky = form.yval.value;
+         if (form.xval.value < 10) {
+                 if (theBoard[checky][checkx] != wall) {
+                         form.xval.value=eval(1 * form.xval.value + 1);
+                 }
+                 else {
+                         alert("THUD!\nYou hit a wall.");
+                 }
+                 if (theBoard[checky][checkx] == goal) {
+                         alert("YOU WIN!");
+                 }
+         }
+         fill = full;
+ 
+         update(form);
+ }
+ 
+ function decy(form) {
+         fill = blank;
+ 
+         update(form);
+         checkx = form.xval.value;
+ 
+         checky = eval(form.yval.value - 1);
+         if (form.yval.value > 1) {
+                 if (theBoard[checky][checkx] != wall) {
+                         form.yval.value=eval(form.yval.value - 1);
+                 }
+                 else {
+                         alert("THUD!\nYou hit a wall.");
+                 }
+                 if (theBoard[checky][checkx] == goal) {
+                         alert("YOU WIN!");
+                 }
+         }
+         fill = full;
+         update(form);
+ }
+ 
+ function incy(form) {
+         fill = blank;
+         update(form);
+         checkx = form.xval.value;
+         checky = eval(1 * form.yval.value + 1);
+         if (form.yval.value < 10) {
+                 if (theBoard[checky][checkx] != wall) {
+                         form.yval.value=eval(1 * form.yval.value + 1);
+                 }
+                 else {
+                         alert("THUD!\nYou hit a wall.");
+                 }
+                 if (theBoard[checky][checkx] == goal) {
+                         alert("YOU WIN!");
+                 }
+         }
+         fill = full;
+ 
+         update(form);
+ }
+ 
+ // Various Functions
+ 
+ function cheater (form) {
+ // Refuse to change values manually, and start over. CHEATER!
+         alert("You can't change this value manually.\nPlease use the buttons.");
+         clearBoard(form);
+         update(form);
+ }
+ 
+ 
+ </script>
+
+ <form method="post" name="board">
+ <input type='button' value='Reset' onClick='clearBoard(this.form);update(document.board);'>
+ <br>
+ <textarea name="grid" rows="12" cols="10" wrap=virtual&rt;</textarea&rt;<br>
+ <!-- virtual-wrap is the key! Now one text line becomes a grid! -->
+ <table>
+ <tr>
+   <td><input type='button' value='UP' onClick='decy(this.form)'></td>
+   <td><input type='text' value='1' size=5 name='yval' onChange='cheater(this.form);'></td>
+   <td><input type='button' value='DOWN' onClick='incy(this.form)'></td>
+ <tr>
+   <td><input type='button' value='LEFT' onClick='decx(this.form)'></td>
+   <td><input type='text' value='1' size=5 name='xval' onChange='cheater(this.form);'></td>
+   <td><input type='button' value='RIGHT' onClick='incx(this.form)'></td>
+ </table>
+ </form></fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+第一步:把如下代码加入<body>区域中
+&nbsp;&lt;script&gt;
+ var line = &quot;&quot;;
+ var x = 0;
+ var y = 0;
+ var full=&quot;*&quot;;
+ var blank = &quot;.&quot;;
+ var wall = &quot;#&quot;;
+ var goal = &quot;$&quot;;
+ 
+ var fill = &quot;&quot;;
+ 
+ // Functions to create the board
+ 
+ function makeboard() {
+         for (var i=1; i&lt;= 10; i++)
+                 this[i] = new makeRow();
+         return this;
+ }
+ 
+ function makeRow() {
+         for (var i=1; i&lt;= 10; i++)
+                 this[i]=blank;
+ 
+         return this;
+ }
+ 
+ // Functions to fill &amp; clear the board.
+ 
+ function clearBoard (form) {
+ // Clears &amp; resets the board
+         x = 0;
+ 
+         y = 0;
+ 
+         form.xval.value = 1;
+ 
+         form.yval.value = 1;
+ 
+         for (var i=1; i&lt;= 10; i++)
+                 for (var j=1; j&lt;= 10; j++)
+                         theBoard[i][j]=blank;
+ 
+         drawMaze();
+         fillBoard(form);
+         return;
+ }
+ 
+ function fillBoard (form) {
+         // Clear board buffer
+         line = &quot;&quot;;
+         form.grid.value = &quot;&quot;;
+         // Fill board buffer
+         for (var i=1; i&lt;= 10; i++)
+                 for (var j=1; j&lt;= 10; j++)
+                         line += theBoard[i][j];
+ 
+         // Move buffer contents to board
+         form.grid.value=line;
+ 
+ }
+ 
+ function plot (v, h) {
+         theBoard[v][h] = fill;
+ 
+ }
+ 
+ function drawMaze() {
+ // Plots the walls of the maze
+ //
+ // Ideally, a function should do this automatically,
+ // or maybe I should write a maze generating function in JS!
+ // Note: This program operates in Y,X co-ordinates (not standard X,Y).
+ 
+         theBoard[10][10] = goal;
+ 
+         theBoard[1][2] = wall;
+ 
+         theBoard[2][2] = wall;
+ 
+         theBoard[4][1] = wall;
+ 
+         theBoard[4][2] = wall;
+ 
+         theBoard[4][3] = wall;
+ 
+         theBoard[2][3] = wall;
+ 
+         theBoard[5][2] = wall;
+ 
+         theBoard[6][2] = wall;
+ 
+         theBoard[2][5] = wall;
+ 
+         theBoard[4][5] = wall;
+ 
+         theBoard[5][5] = wall;
+ 
+         theBoard[2][6] = wall;
+ 
+         theBoard[2][7] = wall;
+ 
+         theBoard[9][10] = wall;
+ 
+         theBoard[9][9] = wall;
+ 
+         theBoard[8][9] = wall;
+ 
+         theBoard[7][9] = wall;
+ 
+         theBoard[10][7] = wall;
+ 
+         theBoard[9][7] = wall;
+ 
+         theBoard[8][7] = wall;
+ 
+         theBoard[6][7] = wall;
+ 
+         theBoard[9][2] = wall;
+ 
+         theBoard[9][3] = wall;
+ 
+         theBoard[9][4] = wall;
+ 
+         theBoard[8][2] = wall;
+ 
+         theBoard[7][4] = wall;
+ 
+         theBoard[7][5] = wall;
+ 
+         theBoard[6][5] = wall;
+
+         theBoard[6][6] = wall;
+
+theBoard[6][7] = wall;
+
+theBoard[6][8] = wall;
+
+theBoard[6][9] = wall;
+ 
+         theBoard[5][7] = wall;
+ 
+         theBoard[5][8] = wall;
+ 
+         theBoard[5][9] = wall;
+ 
+         theBoard[4][9] = wall;
+ 
+ }
+ 
+ function update(form) {
+         var horiz = eval(form.xval.value);
+ 
+         var vert = eval(form.yval.value);
+ 
+         plot(vert,horiz);
+         fillBoard(form);
+         return;
+ }
+ 
+ function initBoard() {
+         theBoard = new makeboard();
+         fill = full;
+ 
+         clearBoard(document.board);
+         update(document.board);
+ }
+ 
+ // Functions to handle the player piece
+ // 
+ // I suppose I could have written one function to handle this, 
+ // but it was getting too complex.  Feel free to try. :)
+ //
+ 
+ function decx(form) {
+         fill = blank;
+ 
+         update(form);
+         checkx = eval(form.xval.value - 1);
+         checky = form.yval.value;
+ 
+         if (form.xval.value &gt; 1) {
+                 if (theBoard[checky][checkx] != wall) {
+                         form.xval.value=eval(form.xval.value - 1);
+                 }
+                 else {
+                         alert(&quot;THUD!\nYou hit a wall.&quot;);
+                 }
+                 if (theBoard[checky][checkx] == goal) {
+                         alert(&quot;YOU WIN!&quot;);
+                 }
+         }
+         fill = full;
+         update(form);
+ }
+ 
+ function incx(form) {
+         fill = blank;
+         update(form);
+         checkx = eval(1 * form.xval.value + 1);
+         checky = form.yval.value;
+         if (form.xval.value &lt; 10) {
+                 if (theBoard[checky][checkx] != wall) {
+                         form.xval.value=eval(1 * form.xval.value + 1);
+                 }
+                 else {
+                         alert(&quot;THUD!\nYou hit a wall.&quot;);
+                 }
+                 if (theBoard[checky][checkx] == goal) {
+                         alert(&quot;YOU WIN!&quot;);
+                 }
+         }
+         fill = full;
+ 
+         update(form);
+ }
+ 
+ function decy(form) {
+         fill = blank;
+ 
+         update(form);
+         checkx = form.xval.value;
+ 
+         checky = eval(form.yval.value - 1);
+         if (form.yval.value &gt; 1) {
+                 if (theBoard[checky][checkx] != wall) {
+                         form.yval.value=eval(form.yval.value - 1);
+                 }
+                 else {
+                         alert(&quot;THUD!\nYou hit a wall.&quot;);
+                 }
+                 if (theBoard[checky][checkx] == goal) {
+                         alert(&quot;YOU WIN!&quot;);
+                 }
+         }
+         fill = full;
+         update(form);
+ }
+ 
+ function incy(form) {
+         fill = blank;
+         update(form);
+         checkx = form.xval.value;
+         checky = eval(1 * form.yval.value + 1);
+         if (form.yval.value &lt; 10) {
+                 if (theBoard[checky][checkx] != wall) {
+                         form.yval.value=eval(1 * form.yval.value + 1);
+                 }
+                 else {
+                         alert(&quot;THUD!\nYou hit a wall.&quot;);
+                 }
+                 if (theBoard[checky][checkx] == goal) {
+                         alert(&quot;YOU WIN!&quot;);
+                 }
+         }
+         fill = full;
+ 
+         update(form);
+ }
+ 
+ // Various Functions
+ 
+ function cheater (form) {
+ // Refuse to change values manually, and start over. CHEATER!
+         alert(&quot;You can't change this value manually.\nPlease use the buttons.&quot;);
+         clearBoard(form);
+         update(form);
+ }
+ 
+ 
+ &lt;/script&gt;
+
+ &lt;form method=&quot;post&quot; name=&quot;board&quot;&gt;
+ &lt;input type='button' value='Reset' onClick='clearBoard(this.form);update(document.board);'&gt;
+ &lt;br&gt;
+ &lt;textarea name=&quot;grid&quot; rows=&quot;12&quot; cols=&quot;10&quot; wrap=virtual&amp;rt;&lt;/textarea&amp;rt;&lt;br&gt;
+ &lt;!-- virtual-wrap is the key! Now one text line becomes a grid! --&gt;
+ &lt;table&gt;
+ &lt;tr&gt;
+   &lt;td&gt;&lt;input type='button' value='UP' onClick='decy(this.form)'&gt;&lt;/td&gt;
+   &lt;td&gt;&lt;input type='text' value='1' size=5 name='yval' onChange='cheater(this.form);'&gt;&lt;/td&gt;
+   &lt;td&gt;&lt;input type='button' value='DOWN' onClick='incy(this.form)'&gt;&lt;/td&gt;
+ &lt;tr&gt;
+   &lt;td&gt;&lt;input type='button' value='LEFT' onClick='decx(this.form)'&gt;&lt;/td&gt;
+   &lt;td&gt;&lt;input type='text' value='1' size=5 name='xval' onChange='cheater(this.form);'&gt;&lt;/td&gt;
+   &lt;td&gt;&lt;input type='button' value='RIGHT' onClick='incx(this.form)'&gt;&lt;/td&gt;
+ &lt;/table&gt;
+ &lt;/form&gt;
+
+
+
+&nbsp;
+第二步:把如下代码加入<body>区域中<BODY bgcolor="#ffffff" onLoad="timerONE=window.setTimeout('scrollit_r2l(100)',500);initBoard();">
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,1367 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--右侧展开酷导航条</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body bgcolor=#FFFFFF>
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">右侧展开酷导航条</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=255" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<style>
+#base {
+	OVERFLOW: hidden; WIDTH: 215px; POSITION: relative; HEIGHT: 40px
+}
+#cover {
+	VISIBILITY: hidden; OVERFLOW: hidden; WIDTH: 215px; POSITION: absolute; HEIGHT: 40px
+}
+#cuscroll {
+	LEFT: 0px; VISIBILITY: inherit; WIDTH: 202px; POSITION: absolute; TOP: 0px; HEIGHT: 40px
+}
+.border {
+	BORDER-RIGHT: #fcdf58 1pt dashed; BORDER-TOP: #fcdf58 1pt dashed; BORDER-LEFT: #fcdf58 1pt dashed; BORDER-BOTTOM: #fcdf58 1pt dashed
+}
+A:link {
+	FONT-SIZE: 12px; COLOR: #000000; TEXT-DECORATION: none
+}
+A:visited {
+	FONT-SIZE: 12px; COLOR: #000000; TEXT-DECORATION: none
+}
+A:active {
+	FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-SIZE: 12px; COLOR: #83830e
+}
+A.z:active {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.z:hover {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+A.z:link {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.font9pt {
+	FONT-SIZE: 9pt; FONT-FAMILY: "宋体"
+}
+.border1px {
+	FONT-SIZE: 1pt
+}
+</style>
+<SCRIPT language=javascript>
+function openme(object)
+
+{ object.style.background="#f7edcc";}
+
+function closeme(object)
+
+{ object.style.background="#FFCB8C";} 
+
+function extand( )
+
+{ sel.filters.alpha.opacity=78;sel.style.visibility="visible";}
+
+function pinch(obj )
+
+{sel.style.visibility="hidden";bb=1;sel.filters.alpha.opacity=0;logic=true;clearTimeout(timeid)}
+
+  var timeid;
+
+  var bb = 1;
+
+  var logic = true;
+
+  var sel;
+
+function sele(obj)
+
+  {sel=obj}
+
+function fade(){
+
+ if(document.all);
+
+  if (logic==true)
+
+{sel.style.visibility="visible";
+
+     bb+=6;
+
+  if(bb>75) {logic = false}
+
+  sel.filters.alpha.opacity=bb;
+
+if (bb<75) timeid=setTimeout("fade()",1);}
+
+}</SCRIPT>
+
+      <DIV style="POSITION: relative; HEIGHT: 400px"> 
+        <DIV id=talayer 
+      style="Z-INDEX: 7; FILTER: alpha(opacity=68); LEFT: -2px; VISIBILITY: visible; WIDTH: 91px; COLOR: #ffffff; POSITION: absolute; TOP: 100px; HEIGHT: 287px; TEXT-DECORATION: none">
+      <TABLE style="FONT-SIZE: 12px; FONT-FAMILY: " height=285 cellSpacing=0 
+      borderColorDark=#f2b600 cellPadding=0 width="99%" bgColor=#ffffff 
+      borderColorLight=#f2b600 border=0 name="atable">
+        <TBODY>
+        <TR>
+          <TD borderColor=#ffffff width=0 background=20020107/button.gif 
+          bgColor=#ffcb8c height=0>
+            <DIV onmouseover=sele(a);fade() onmouseout=pinch() 
+            align=center><FONT color=#000000><FONT color=black><A 
+            href="http://www.hust.edu.cn/chinese/generalview/index.htm">学校概况</A></FONT></FONT></DIV></TD></TR>
+        <TR>
+          <TD onmouseover=sele(b);fade() onmouseout=pinch() borderColor=#ffffff 
+          width=0 background=20020107/button.gif bgColor=#ffcb8c height=0>
+            <DIV align=center><FONT color=#000000><FONT color=black><A 
+            href="http://www.hust.edu.cn/chinese/research/index.htm">科学研究</A></FONT></FONT></DIV></TD></TR>
+        <TR>
+          <TD onmouseover=sele(c);fade() onmouseout=pinch() borderColor=#ffffff 
+          width=0 background=20020107/button.gif bgColor=#ffcb8c height=0>
+            <DIV align=center><FONT color=#000000><FONT color=black><A 
+            href="http://www.hust.edu.cn/chinese/discipline/index.htm">学科建设</A></FONT></FONT></DIV></TD></TR>
+        <TR>
+          <TD onmouseover=sele(d);fade() onmouseout=pinch() borderColor=#ffffff 
+          width=0 background=20020107/button.gif bgColor=#ffcb8c height=0>
+            <DIV align=center><FONT color=#000000><FONT color=black><A 
+            href="http://www.hust.edu.cn/chinese/intl_exchange/index.htm">国际交流</A></FONT></FONT></DIV></TD></TR>
+        <TR>
+          <TD onmouseover=sele(e);fade() onmouseout=pinch() borderColor=#ffffff 
+          width=0 background=20020107/button.gif bgColor=#ffcb8c height=0>
+            <DIV align=center><FONT color=#000000><FONT color=black><A 
+            href="http://www.hust.edu.cn/chinese/administration/ind_group/index.htm">校办产业</A></FONT></FONT></DIV></TD></TR>
+        <TR>
+          <TD onmouseover=sele(f);fade() onmouseout=pinch() borderColor=#ffffff 
+          width=0 background=20020107/button.gif bgColor=#ffcb8c height=0>
+            <DIV align=center><FONT color=#000000><FONT color=black><A 
+            href="http://www.hust.edu.cn/chinese/pers_cult/index.htm">人才培养</A></FONT></FONT></DIV></TD></TR>
+        <TR>
+          <TD onmouseover=sele(g);fade() onmouseout=pinch() borderColor=#ffffff 
+          width=0 background=20020107/button.gif bgColor=#ffcb8c height=0>
+            <DIV align=center><FONT color=#000000><FONT color=black><A 
+            href="http://www.hust.edu.cn/chinese/hr/index.htm">人才招聘</A></FONT></FONT></DIV></TD></TR>
+        <TR>
+          <TD onmouseover=sele(h);fade() onmouseout=pinch() borderColor=#ffffff 
+          width=0 background=20020107/button.gif bgColor=#ffcb8c height=22>
+            <DIV align=center><FONT color=#000000><FONT color=black><A 
+            href="http://www.hust.edu.cn/chinese/enrl_employ/index.htm">招生就业</A></FONT></FONT></DIV></TD></TR>
+        <TR>
+          <TD onmouseover=sele(i);fade() onmouseout=pinch() borderColor=#ffffff 
+          width=0 background=20020107/button.gif bgColor=#ffcb8c height=0>
+            <DIV align=center><FONT color=#000000><FONT color=black><A 
+            href="http://www.hust.edu.cn/chinese/campus_cultrue/index.htm">校园文化</A></FONT></FONT></DIV></TD></TR>
+        <TR>
+          <TD onmouseover=sele(j);fade() onmouseout=pinch() borderColor=#ffffff 
+          width=0 background=20020107/button.gif bgColor=#ffcb8c height=0>
+            <DIV align=center><FONT color=#000000><FONT color=black><A 
+            href="http://www.hust.edu.cn/chinese/alumni/index.htm">校友服务</A></FONT></FONT></DIV></TD></TR>
+        <TR>
+          <TD onmouseover=sele(k);fade() onmouseout=pinch() borderColor=#ffffff 
+          width=0 background=20020107/button.gif bgColor=#ffcb8c height=0>
+            <DIV align=center><FONT color=#000000><FONT color=black><A 
+            href="http://www.hust.edu.cn/chinese/info_serv/index.htm">信息服务</A></FONT></FONT></DIV></TD></TR>
+        <TR>
+          <TD borderColor=#ffffff width=0 background=20020107/button.gif 
+          bgColor=#ffcb8c height=0>
+            <DIV align=center><A href="http://hq.hust.edu.cn/" 
+            target=_blank>后勤集团</A></DIV></TD></TR>
+        <TR>
+          <TD onmouseover=sele(m);fade() onmouseout=pinch() borderColor=#ffffff 
+          width=0 background=20020107/button.gif bgColor=#ffcb8c height=0>
+            <DIV align=center><A 
+            href="http://www.hust.edu.cn/chinese/units/yx.htm">单位网页</A></DIV></TD></TR>
+        <TR>
+          <TD onmouseover=sele(ssst);fade() onmouseout=pinch() 
+          borderColor=#ffffff align=middle width=0 background=20020107/button.gif 
+          bgColor=#ffcb8c height=0>热点网站</TD></TR></TBODY></TABLE></DIV>
+      <DIV id=a onmouseover=extand(this) 
+      style="BORDER-RIGHT: #000000 1px; BORDER-TOP: #000000 1px; Z-INDEX: 27; FILTER: alpha(opacity=0); LEFT: 85px;   VISIBILITY: hidden; BORDER-LEFT: #000000 1px; WIDTH: 93px; BORDER-BOTTOM: #000000 1px; POSITION: absolute; TOP: 101px; HEIGHT: 119px; " 
+      onmouseout=pinch(this)>
+      <TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width="100%" 
+      border=1>
+        <TBODY>
+        <TR>
+          <TD>
+            <TABLE class=font9pt cellSpacing=0 borderColorDark=#000000 
+            cellPadding=0 width="100%" borderColorLight=#ffffff border=1>
+              <TBODY>
+              <TR>
+                <TD borderColor=#ffcb8c height=20>
+                  <DIV onmouseover=openme(this) onmouseout=closeme(this) 
+                  align=center><A 
+                  href="http://www.hust.edu.cn/chinese/generalview/index.htm">学校简介</A></DIV></TD></TR>
+              <TR>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20>
+                  <DIV align=center><A 
+                  href="http://www.hust.edu.cn/chinese/generalview/history.htm">历史沿革</A></DIV></TD></TR>
+              <TR>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20>
+                  <DIV align=center><A 
+                  href="http://www.hust.edu.cn/chinese/generalview/leaders.htm">学校领导</A></DIV></TD></TR>
+              <TR>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20>
+                  <DIV align=center><A 
+                  href="http://www.hust.edu.cn/chinese/generalview/famous.htm">学者名人</A></DIV></TD></TR>
+              <TR>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20>
+                  <DIV align=center><A 
+                  href="http://www.hust.edu.cn/chinese/generalview/admi.htm">管理机构</A></DIV></TD></TR>
+              <TR>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20>
+                  <DIV align=center><A 
+                  href="http://www.hust.edu.cn/chinese/generalview/stat.htm">统计资料</A></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV>
+      <DIV id=b onmouseover=extand(this) 
+      style="BORDER-RIGHT: #000000 1px; BORDER-TOP: #000000 1px; Z-INDEX: 26; FILTER: alpha(opacity=68); LEFT: 84px;   VISIBILITY: hidden; BORDER-LEFT: #000000 1px; WIDTH: 89px; BORDER-BOTTOM: #000000 1px; POSITION: absolute; TOP: 122px; HEIGHT: 41px; " 
+      onmouseout=pinch(this)>
+      <TABLE borderColor=#000000 height=45 cellSpacing=0 cellPadding=0 
+      width="100%" border=1>
+        <TBODY>
+        <TR o>
+          <TD>
+            <TABLE height=42 cellSpacing=0 borderColorDark=#000000 cellPadding=0 
+            width=88 borderColorLight=#ffffff border=1>
+              <TBODY>
+              <TR class=font9pt>
+                <TD borderColor=#ffcb8c height=20>
+                  <DIV onmouseover=openme(this) onmouseout=closeme(this) 
+                  align=center><A 
+                  href="http://www.hust.edu.cn/chinese/research/index.htm">科研机构</A></DIV></TD></TR>
+              <TR class=font9pt>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=18>
+                  <DIV align=center><A 
+                  href="http://www2.hust.edu.cn/administration/r&d/kjcindex.asp">科技处</A></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV>
+      <DIV id=c onmouseover=extand(c) 
+      style="BORDER-RIGHT: #000000 1px; BORDER-TOP: #000000 1px; Z-INDEX: 25; FILTER: alpha(opacity=68); LEFT: 84px;   VISIBILITY: hidden; BORDER-LEFT: #000000 1px; WIDTH: 88px; BORDER-BOTTOM: #000000 1px; POSITION: absolute; TOP: 144px; HEIGHT: 76px; " 
+      onmouseout=pinch(c)>
+      <TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width="100%" 
+      border=1>
+        <TBODY>
+        <TR>
+          <TD>
+            <TABLE cellSpacing=0 borderColorDark=#000000 cellPadding=0 
+            width="100%" borderColorLight=#ffffff border=1>
+              <TBODY>
+              <TR class=font9pt>
+                <TD borderColor=#ffcb8c height=20>
+                  <DIV onmouseover=openme(this) onmouseout=closeme(this) 
+                  align=center><A 
+                  href="http://www.hust.edu.cn/chinese/discipline/keydispl.htm">重点学科</A></DIV></TD></TR>
+              <TR class=font9pt>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20>
+                  <DIV align=center><A 
+                  href="http://www.hust.edu.cn/chinese/discipline/bs.htm">博士点</A></DIV></TD></TR>
+              <TR class=font9pt>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20>
+                  <DIV align=center><A 
+                  href="http://www.hust.edu.cn/chinese/discipline/master.htm">硕士点</A></DIV></TD></TR>
+              <TR class=font9pt>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20>
+                  <DIV align=center><A 
+                  href="http://www.hust.edu.cn/chinese/discipline/bach.htm">本科专业</A></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV>
+      <DIV id=d onmouseover=extand(d) 
+      style="Z-INDEX: 24; FILTER: alpha(opacity=68); LEFT: 85px;   VISIBILITY: hidden; WIDTH: 87px; POSITION: absolute; TOP: 166px; HEIGHT: 38px; " 
+      onmouseout=pinch(d)>
+      <TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width="100%" 
+      border=1>
+        <TBODY>
+        <TR>
+          <TD>
+            <TABLE cellSpacing=0 borderColorDark=#000000 cellPadding=0 
+            width="100%" borderColorLight=#ffffff border=1>
+              <TBODY>
+              <TR class=font9pt>
+                <TD borderColor=#ffcb8c height=20>
+                  <DIV onmouseover=openme(this) onmouseout=closeme(this) 
+                  align=center><A 
+                  href="http://www.hust.edu.cn/chinese/intl_exchange/index.htm">国际会议</A></DIV></TD></TR>
+              <TR class=font9pt>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20>
+                  <DIV align=center><A 
+                  href="http://www2.hust.edu.cn/administration/iec/index.asp">国际交流处</A></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV>
+      <DIV id=e onmouseover=extand(e) 
+      style="BORDER-RIGHT: #000000 1px; BORDER-TOP: #000000 1px; Z-INDEX: 23; FILTER: alpha(opacity=68); LEFT: 85px;   VISIBILITY: hidden; BORDER-LEFT: #000000 1px; WIDTH: 79px; BORDER-BOTTOM: #000000 1px; POSITION: absolute; TOP: 187px; HEIGHT: 24px; " 
+      onmouseout=pinch(e)>
+      <TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width="100%" 
+      border=1>
+        <TBODY>
+        <TR>
+          <TD>
+            <TABLE cellSpacing=0 borderColorDark=#000000 cellPadding=0 width=79 
+            borderColorLight=#ffffff border=0>
+              <TBODY>
+              <TR>
+                <TD borderColor=#000000 height=22>
+                  <DIV onmouseover=openme(this) onmouseout=closeme(this) 
+                  align=center><A 
+                  href="http://www.hust.edu.cn/chinese/administration/ind_group/index.htm">产业集团</A></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV>
+      <DIV id=f onmouseover=extand(f) 
+      style="BORDER-RIGHT: #000000 1px; BORDER-TOP: #000000 1px; Z-INDEX: 22; FILTER: alpha(opacity=68); LEFT: 84px;   VISIBILITY: hidden; BORDER-LEFT: #000000 1px; WIDTH: 96px; BORDER-BOTTOM: #000000 1px; POSITION: absolute; TOP: 210px; HEIGHT: 100px; " 
+      onmouseout=pinch(f)>
+      <TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width="100%" 
+      border=1>
+        <TBODY>
+        <TR>
+          <TD>
+            <TABLE cellSpacing=0 borderColorDark=#000000 cellPadding=0 
+            width="100%" borderColorLight=#ffffff border=1>
+              <TBODY>
+              <TR class=font9pt>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20>
+                  <DIV align=center><FONT color=#000000><A 
+                  href="http://jwc.hust.edu.cn/" 
+                  target=_blank>本科教育</A></FONT></DIV></TD></TR>
+              <TR class=font9pt>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20>
+                  <DIV align=center><FONT color=#000000>研究生教育</FONT></DIV></TD></TR>
+              <TR class=font9pt>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20>
+                  <DIV align=center><FONT color=#000000>留学生</FONT></DIV></TD></TR>
+              <TR class=font9pt>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20>
+                  <DIV align=center><FONT color=#000000>成人教育</FONT></DIV></TD></TR>
+              <TR class=font9pt>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20>
+                  <DIV align=center><FONT color=#000000><A 
+                  href="http://210.42.100.100/">网络教育</A></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV>
+      <DIV id=g onmouseover=extand(g) 
+      style="BORDER-RIGHT: #000000 1px; BORDER-TOP: #000000 1px; Z-INDEX: 21; FILTER: alpha(opacity=68); LEFT: 85px;   VISIBILITY: hidden; BORDER-LEFT: #000000 1px; WIDTH: 86px; BORDER-BOTTOM: #000000 1px; POSITION: absolute; TOP: 231px; HEIGHT: 39px; " 
+      onmouseout=pinch(g)>
+      <TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width="100%" 
+      border=1>
+        <TBODY>
+        <TR>
+          <TD>
+            <TABLE cellSpacing=0 borderColorDark=#000000 cellPadding=0 
+            width="100%" borderColorLight=#ffffff border=1>
+              <TBODY>
+              <TR class=font9pt>
+                <TD borderColor=#ffcb8c height=20>
+                  <DIV onmouseover=openme(this) onmouseout=closeme(this) 
+                  align=center><A 
+                  href="http://www.hust.edu.cn/chinese/hr/index.htm">人才招聘</A></DIV></TD></TR>
+              <TR class=font9pt>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20>
+                  <DIV 
+      align=center>人事处</DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV>
+      <DIV id=h onmouseover=extand(h) 
+      style="BORDER-RIGHT: #000000 1px; BORDER-TOP: #000000 1px; Z-INDEX: 20; FILTER: alpha(opacity=68); LEFT: 86px;   VISIBILITY: hidden; BORDER-LEFT: #000000 1px; WIDTH: 87px; BORDER-BOTTOM: #000000 1px; POSITION: absolute; TOP: 255px; HEIGHT: 100px; " 
+      onmouseout=pinch(h)>
+      <TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width="100%" 
+      border=1>
+        <TBODY>
+        <TR>
+          <TD>
+            <TABLE cellSpacing=0 borderColorDark=#000000 cellPadding=0 
+            width="100%" borderColorLight=#ffffff border=1>
+              <TBODY>
+              <TR class=font9pt>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20>
+                  <DIV align=center><A 
+                  href="http://student.hust.edu.cn/zhaosheng/index.asp" 
+                  target=_blank>本科招生</A></DIV></TD></TR>
+              <TR class=font9pt>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20>
+                  <DIV align=center><A href="http://gs.hust.edu.cn/" 
+                  target=_blank>研究生招生</A></DIV></TD></TR>
+              <TR class=font9pt>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20>
+                  <DIV align=center><A 
+                  href="http://snde.hust.edu.cn/cjxy/index.htm" 
+                  target=_blank>成教招生</A></DIV></TD></TR>
+              <TR class=font9pt>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20>
+                  <DIV align=center><A 
+                  href="http://www2.hust.edu.cn/administration/iec/index.asp" 
+                  target=_blank>留学生招生</A></DIV></TD></TR>
+              <TR class=font9pt>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20>
+                  <DIV align=center><A href="http://210.42.100.100/" 
+                  target=_blank>网络招生</A></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV>
+      <DIV id=i onmouseover=extand(i) 
+      style="BORDER-RIGHT: #000000 1px; BORDER-TOP: #000000 1px; Z-INDEX: 19; FILTER: alpha(opacity=68); LEFT: 83px;   VISIBILITY: hidden; BORDER-LEFT: #000000 1px; WIDTH: 95px; BORDER-BOTTOM: #000000 1px; POSITION: absolute; TOP: 276px; HEIGHT: 99px; " 
+      onmouseout=pinch(i)>
+      <TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width="100%" 
+      border=1>
+        <TBODY>
+        <TR>
+          <TD>
+            <TABLE cellSpacing=0 borderColorDark=#000000 cellPadding=0 
+            width="100%" borderColorLight=#ffffff border=1>
+              <TBODY>
+              <TR class=font9pt>
+                <TD borderColor=#ffcb8c height=20>
+                  <DIV onmouseover=openme(this) onmouseout=closeme(this) 
+                  align=center><A 
+                href="http://renw.hust.edu.cn/">人文讲座</A></DIV></TD></TR>
+              <TR class=font9pt>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20>
+                  <DIV align=center><A 
+                  href="http://www.hust.edu.cn/chinese/campus_cultrue/stfc.htm">社团风采</A></DIV></TD></TR>
+              <TR class=font9pt>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20>
+                  <DIV align=center><A 
+                  href="http://su.hust.edu.cn/">学生会</A></DIV></TD></TR>
+              <TR class=font9pt>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20>
+                  <DIV align=center><A 
+                  href="http://sunshine.hust.edu.cn/">研究生会</A></DIV></TD></TR>
+              <TR class=font9pt>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20>
+                  <DIV align=center><A 
+                  href="http://student.hust.edu.cn/">校团委</A></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV>
+      <DIV id=j onmouseover=extand(j);openme(this) 
+      style="Z-INDEX: 18; FILTER: alpha(opacity=68); LEFT: 85px;   VISIBILITY: hidden; WIDTH: 82px; POSITION: absolute; TOP: 295px; HEIGHT: 19px; " 
+      onmouseout=pinch(j);closeme(this)>
+      <TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width="100%" 
+      border=1>
+        <TBODY>
+        <TR>
+          <TD>
+            <TABLE height=17 cellSpacing=0 borderColorDark=#000000 cellPadding=0 
+            width="100%" borderColorLight=#ffffff border=1>
+              <TBODY>
+              <TR>
+                <TD borderColor=#ffcb8c>
+                  <DIV>
+                  <DIV align=center><A 
+                  href="http://www.hust.edu.cn/chinese/alumni/index.htm">校友总会</A> </DIV></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV>
+      <DIV id=k onmouseover=extand() 
+      style="BORDER-RIGHT: #000000 1px; BORDER-TOP: #000000 1px; Z-INDEX: 17; FILTER: alpha(opacity=68); LEFT: 86px;   VISIBILITY: hidden; BORDER-LEFT: #000000 1px; WIDTH: 94px; BORDER-BOTTOM: #000000 1px; POSITION: absolute; TOP: 303px; HEIGHT: 120px; " 
+      onmouseout=pinch()>
+      <TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width="100%" 
+      border=1>
+        <TBODY>
+        <TR>
+          <TD>
+            <TABLE cellSpacing=0 borderColorDark=#000000 cellPadding=0 
+            width="100%" borderColorLight=#ffffff border=1>
+              <TBODY>
+              <TR class=font9pt>
+                <TD borderColor=#ffcb8c height=20>
+                  <DIV onmouseover=openme(this) onmouseout=closeme(this) 
+                  align=center><A 
+                  href="http://www.hust.edu.cn/chinese/info_serv/prdtmail/president.htm">校长信箱</A></DIV></TD></TR>
+              <TR class=font9pt>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20>
+                  <DIV align=center><A 
+                  href="http://www2.hust.edu.cn/phone/default.asp">电话查询</A></DIV></TD></TR>
+              <TR class=font9pt>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20>
+                  <DIV align=center><A 
+                  href="http://www.hust.edu.cn/chinese/info_serv/papers99/index.htm">论文索引</A></DIV></TD></TR>
+              <TR class=font9pt>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20>
+                  <DIV align=center><A 
+                  href="http://www2.hust.edu.cn/stud/index98.htm">学生信息</A></DIV></TD></TR>
+              <TR class=font9pt>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20>
+                  <DIV align=center><A 
+                  href="http://www.hust.edu.cn/chinese/info_serv/navigator/index.htm">网站导航</A></DIV></TD></TR>
+              <TR class=font9pt>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20>
+                  <DIV 
+      align=center>办公信息</DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV>
+        <FONT 
+      size=2></FONT><SPAN class=border></SPAN> 
+        <DIV id=ssst onmouseover=extand(ssst);extand(m) 
+      style="BORDER-RIGHT: #000000 1px; BORDER-TOP: #000000 1px; Z-INDEX: 12; FILTER: alpha(opacity=80); LEFT: 86px;   VISIBILITY: hidden; BORDER-LEFT: #000000 1px; WIDTH: 125px; BORDER-BOTTOM: #000000 1px; POSITION: absolute; TOP: 195px; HEIGHT: 115px; " 
+      onmouseout=pinch(ssst);pinch(m)>
+      <TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width="100%" 
+      border=1>
+        <TBODY>
+        <TR>
+          <TD>
+            <TABLE cellSpacing=0 borderColorDark=#000000 cellPadding=0 
+            width="100%" borderColorLight=#ffffff border=1>
+              <TBODY>
+              <TR>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c>
+                  <DIV align=center><A href="http://www.lib.hust.edu.cn/" 
+                  target=_blank>图书馆</A></DIV></TD></TR>
+              <TR>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c>
+                  <DIV align=center><A href="http://www.whnet.edu.cn/" 
+                  target=_blank>地区网络中心</A></DIV></TD></TR>
+              <TR>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c>
+                  <DIV align=center><A href="http://bbs.whnet.edu.cn/" 
+                  target=_blank>白云黄鹤</A></DIV></TD></TR>
+              <TR>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c align=middle><A 
+                  href="http://gs.hust.edu.cn/" target=_blank>研究生院</A></TD></TR>
+              <TR>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c align=middle><A 
+                  href="http://www.ca.hust.edu.cn/">计算机协会</A></TD></TR>
+              <TR>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=4>
+                  <DIV align=center><A 
+                  href="http://www2.hust.edu.cn/hustjb/index.asp">华中大简报</A></DIV>
+                  <DIV onmouseover=openme(this) onmouseout=closeme(this) 
+                  align=center></DIV></TD></TR>
+              <TR>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c>
+                  <DIV align=center><A 
+                  href="http://su.hust.edu.cn/">醉晚亭</A></DIV></TD></TR>
+              <TR>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c>
+                  <DIV align=center><A 
+                  href="http://ibmur.hust.edu.cn/">IBM大学合作部</A></DIV></TD></TR>
+              <TR>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c>
+                  <DIV align=center><A 
+                  href="http://www.whnet.edu.cn/exchange/main.htm">大鹏证券</A></DIV></TD></TR>
+              <TR>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c>
+                  <DIV align=center><A 
+                  href="http://www.cn.ibm.com/developerWorks">开发者园地</A></DIV></TD></TR>
+              <TR>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c>
+                  <DIV align=center><A 
+                  href="http://211.69.197.37/">英语夏令营</A></DIV></TD></TR>
+              <TR>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c>
+                  <DIV align=center><A 
+                  href="http://www2.hust.edu.cn/readclub/index.htm">华夏读书网</A></DIV></TD></TR>
+              <TR>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c>
+                  <DIV align=right><A 
+                  href="http://www.hust.edu.cn/chinese/units/index.htm">更多单位...</A></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV>
+      <DIV id=m onmouseover=extand(m) 
+      style="BORDER-RIGHT: #000000 1px; BORDER-TOP: #000000 1px; Z-INDEX: 13; FILTER: alpha(opacity=68); LEFT: 85px;   VISIBILITY: hidden; BORDER-LEFT: #000000 1px; WIDTH: 92px; BORDER-BOTTOM: #000000 1px; POSITION: absolute; TOP: 262px; HEIGHT: 25px; " 
+      onmouseout=pinch(m)>
+      <TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width="100%" 
+      border=1>
+        <TBODY>
+        <TR>
+          <TD>
+            <TABLE borderColor=#ffffff height=100 cellSpacing=0 cellPadding=0 
+            width=92 border=1>
+              <TBODY>
+              <TR>
+                <TD borderColor=#ffcb8c background=20020107/Bg1.gif height=7>
+                  <DIV onmouseover=openme(this) onmouseout=closeme(this) 
+                  align=center>
+                  <DIV align=center><A 
+                  href="http://www.hust.edu.cn/chinese/units/yx.htm">院系网页</A></DIV></DIV></TD></TR>
+              <TR>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c background=20020107/Bg1.gif height=7>
+                  <DIV align=center><A 
+                  href="http://www.hust.edu.cn/chinese/units/ky.htm">科研机构</A></DIV></TD></TR>
+              <TR>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c background=20020107/Bg1.gif height=17>
+                  <DIV align=center><A 
+                  href="http://www.hust.edu.cn/chinese/units/index.htm">机关部处</A></DIV></TD></TR>
+              <TR>
+                <TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c background=20020107/Bg1.gif height=3>
+                  <DIV align=center><A 
+                  href="http://www.hust.edu.cn/chinese/units/st.htm">学生社团</A></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV></DIV>
+
+</fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+把如下代码加入<body>区域中
+&nbsp;&lt;style&gt;
+#base {
+	OVERFLOW: hidden; WIDTH: 215px; POSITION: relative; HEIGHT: 40px
+}
+#cover {
+	VISIBILITY: hidden; OVERFLOW: hidden; WIDTH: 215px; POSITION: absolute; HEIGHT: 40px
+}
+#cuscroll {
+	LEFT: 0px; VISIBILITY: inherit; WIDTH: 202px; POSITION: absolute; TOP: 0px; HEIGHT: 40px
+}
+.border {
+	BORDER-RIGHT: #fcdf58 1pt dashed; BORDER-TOP: #fcdf58 1pt dashed; BORDER-LEFT: #fcdf58 1pt dashed; BORDER-BOTTOM: #fcdf58 1pt dashed
+}
+A:link {
+	FONT-SIZE: 12px; COLOR: #000000; TEXT-DECORATION: none
+}
+A:visited {
+	FONT-SIZE: 12px; COLOR: #000000; TEXT-DECORATION: none
+}
+A:active {
+	FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-SIZE: 12px; COLOR: #83830e
+}
+A.z:active {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.z:hover {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+A.z:link {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.font9pt {
+	FONT-SIZE: 9pt; FONT-FAMILY: &quot;宋体&quot;
+}
+.border1px {
+	FONT-SIZE: 1pt
+}
+&lt;/style&gt;
+&lt;SCRIPT language=javascript&gt;
+function openme(object)
+
+{ object.style.background=&quot;#f7edcc&quot;;}
+
+function closeme(object)
+
+{ object.style.background=&quot;#FFCB8C&quot;;} 
+
+function extand( )
+
+{ sel.filters.alpha.opacity=78;sel.style.visibility=&quot;visible&quot;;}
+
+function pinch(obj )
+
+{sel.style.visibility=&quot;hidden&quot;;bb=1;sel.filters.alpha.opacity=0;logic=true;clearTimeout(timeid)}
+
+  var timeid;
+
+  var bb = 1;
+
+  var logic = true;
+
+  var sel;
+
+function sele(obj)
+
+  {sel=obj}
+
+function fade(){
+
+ if(document.all);
+
+  if (logic==true)
+
+{sel.style.visibility=&quot;visible&quot;;
+
+     bb+=6;
+
+  if(bb&gt;75) {logic = false}
+
+  sel.filters.alpha.opacity=bb;
+
+if (bb&lt;75) timeid=setTimeout(&quot;fade()&quot;,1);}
+
+}&lt;/SCRIPT&gt;
+
+      &lt;DIV style=&quot;POSITION: relative; HEIGHT: 400px&quot;&gt; 
+        &lt;DIV id=talayer 
+      style=&quot;Z-INDEX: 7; FILTER: alpha(opacity=68); LEFT: -2px; VISIBILITY: visible; WIDTH: 91px; COLOR: #ffffff; POSITION: absolute; TOP: 100px; HEIGHT: 287px; TEXT-DECORATION: none&quot;&gt;
+      &lt;TABLE style=&quot;FONT-SIZE: 12px; FONT-FAMILY: &quot; height=285 cellSpacing=0 
+      borderColorDark=#f2b600 cellPadding=0 width=&quot;99%&quot; bgColor=#ffffff 
+      borderColorLight=#f2b600 border=0 name=&quot;atable&quot;&gt;
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD borderColor=#ffffff width=0 background=20020107/button.gif 
+          bgColor=#ffcb8c height=0&gt;
+            &lt;DIV onmouseover=sele(a);fade() onmouseout=pinch() 
+            align=center&gt;&lt;FONT color=#000000&gt;&lt;FONT color=black&gt;&lt;A 
+            href=&quot;http://www.hust.edu.cn/chinese/generalview/index.htm&quot;&gt;学校概况&lt;/A&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR&gt;
+          &lt;TD onmouseover=sele(b);fade() onmouseout=pinch() borderColor=#ffffff 
+          width=0 background=20020107/button.gif bgColor=#ffcb8c height=0&gt;
+            &lt;DIV align=center&gt;&lt;FONT color=#000000&gt;&lt;FONT color=black&gt;&lt;A 
+            href=&quot;http://www.hust.edu.cn/chinese/research/index.htm&quot;&gt;科学研究&lt;/A&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR&gt;
+          &lt;TD onmouseover=sele(c);fade() onmouseout=pinch() borderColor=#ffffff 
+          width=0 background=20020107/button.gif bgColor=#ffcb8c height=0&gt;
+            &lt;DIV align=center&gt;&lt;FONT color=#000000&gt;&lt;FONT color=black&gt;&lt;A 
+            href=&quot;http://www.hust.edu.cn/chinese/discipline/index.htm&quot;&gt;学科建设&lt;/A&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR&gt;
+          &lt;TD onmouseover=sele(d);fade() onmouseout=pinch() borderColor=#ffffff 
+          width=0 background=20020107/button.gif bgColor=#ffcb8c height=0&gt;
+            &lt;DIV align=center&gt;&lt;FONT color=#000000&gt;&lt;FONT color=black&gt;&lt;A 
+            href=&quot;http://www.hust.edu.cn/chinese/intl_exchange/index.htm&quot;&gt;国际交流&lt;/A&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR&gt;
+          &lt;TD onmouseover=sele(e);fade() onmouseout=pinch() borderColor=#ffffff 
+          width=0 background=20020107/button.gif bgColor=#ffcb8c height=0&gt;
+            &lt;DIV align=center&gt;&lt;FONT color=#000000&gt;&lt;FONT color=black&gt;&lt;A 
+            href=&quot;http://www.hust.edu.cn/chinese/administration/ind_group/index.htm&quot;&gt;校办产业&lt;/A&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR&gt;
+          &lt;TD onmouseover=sele(f);fade() onmouseout=pinch() borderColor=#ffffff 
+          width=0 background=20020107/button.gif bgColor=#ffcb8c height=0&gt;
+            &lt;DIV align=center&gt;&lt;FONT color=#000000&gt;&lt;FONT color=black&gt;&lt;A 
+            href=&quot;http://www.hust.edu.cn/chinese/pers_cult/index.htm&quot;&gt;人才培养&lt;/A&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR&gt;
+          &lt;TD onmouseover=sele(g);fade() onmouseout=pinch() borderColor=#ffffff 
+          width=0 background=20020107/button.gif bgColor=#ffcb8c height=0&gt;
+            &lt;DIV align=center&gt;&lt;FONT color=#000000&gt;&lt;FONT color=black&gt;&lt;A 
+            href=&quot;http://www.hust.edu.cn/chinese/hr/index.htm&quot;&gt;人才招聘&lt;/A&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR&gt;
+          &lt;TD onmouseover=sele(h);fade() onmouseout=pinch() borderColor=#ffffff 
+          width=0 background=20020107/button.gif bgColor=#ffcb8c height=22&gt;
+            &lt;DIV align=center&gt;&lt;FONT color=#000000&gt;&lt;FONT color=black&gt;&lt;A 
+            href=&quot;http://www.hust.edu.cn/chinese/enrl_employ/index.htm&quot;&gt;招生就业&lt;/A&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR&gt;
+          &lt;TD onmouseover=sele(i);fade() onmouseout=pinch() borderColor=#ffffff 
+          width=0 background=20020107/button.gif bgColor=#ffcb8c height=0&gt;
+            &lt;DIV align=center&gt;&lt;FONT color=#000000&gt;&lt;FONT color=black&gt;&lt;A 
+            href=&quot;http://www.hust.edu.cn/chinese/campus_cultrue/index.htm&quot;&gt;校园文化&lt;/A&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR&gt;
+          &lt;TD onmouseover=sele(j);fade() onmouseout=pinch() borderColor=#ffffff 
+          width=0 background=20020107/button.gif bgColor=#ffcb8c height=0&gt;
+            &lt;DIV align=center&gt;&lt;FONT color=#000000&gt;&lt;FONT color=black&gt;&lt;A 
+            href=&quot;http://www.hust.edu.cn/chinese/alumni/index.htm&quot;&gt;校友服务&lt;/A&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR&gt;
+          &lt;TD onmouseover=sele(k);fade() onmouseout=pinch() borderColor=#ffffff 
+          width=0 background=20020107/button.gif bgColor=#ffcb8c height=0&gt;
+            &lt;DIV align=center&gt;&lt;FONT color=#000000&gt;&lt;FONT color=black&gt;&lt;A 
+            href=&quot;http://www.hust.edu.cn/chinese/info_serv/index.htm&quot;&gt;信息服务&lt;/A&gt;&lt;/FONT&gt;&lt;/FONT&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR&gt;
+          &lt;TD borderColor=#ffffff width=0 background=20020107/button.gif 
+          bgColor=#ffcb8c height=0&gt;
+            &lt;DIV align=center&gt;&lt;A href=&quot;http://hq.hust.edu.cn/&quot; 
+            target=_blank&gt;后勤集团&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR&gt;
+          &lt;TD onmouseover=sele(m);fade() onmouseout=pinch() borderColor=#ffffff 
+          width=0 background=20020107/button.gif bgColor=#ffcb8c height=0&gt;
+            &lt;DIV align=center&gt;&lt;A 
+            href=&quot;http://www.hust.edu.cn/chinese/units/yx.htm&quot;&gt;单位网页&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+        &lt;TR&gt;
+          &lt;TD onmouseover=sele(ssst);fade() onmouseout=pinch() 
+          borderColor=#ffffff align=middle width=0 background=20020107/button.gif 
+          bgColor=#ffcb8c height=0&gt;热点网站&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/DIV&gt;
+      &lt;DIV id=a onmouseover=extand(this) 
+      style=&quot;BORDER-RIGHT: #000000 1px; BORDER-TOP: #000000 1px; Z-INDEX: 27; FILTER: alpha(opacity=0); LEFT: 85px;   VISIBILITY: hidden; BORDER-LEFT: #000000 1px; WIDTH: 93px; BORDER-BOTTOM: #000000 1px; POSITION: absolute; TOP: 101px; HEIGHT: 119px; &quot; 
+      onmouseout=pinch(this)&gt;
+      &lt;TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width=&quot;100%&quot; 
+      border=1&gt;
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD&gt;
+            &lt;TABLE class=font9pt cellSpacing=0 borderColorDark=#000000 
+            cellPadding=0 width=&quot;100%&quot; borderColorLight=#ffffff border=1&gt;
+              &lt;TBODY&gt;
+              &lt;TR&gt;
+                &lt;TD borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV onmouseover=openme(this) onmouseout=closeme(this) 
+                  align=center&gt;&lt;A 
+                  href=&quot;http://www.hust.edu.cn/chinese/generalview/index.htm&quot;&gt;学校简介&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV align=center&gt;&lt;A 
+                  href=&quot;http://www.hust.edu.cn/chinese/generalview/history.htm&quot;&gt;历史沿革&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV align=center&gt;&lt;A 
+                  href=&quot;http://www.hust.edu.cn/chinese/generalview/leaders.htm&quot;&gt;学校领导&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV align=center&gt;&lt;A 
+                  href=&quot;http://www.hust.edu.cn/chinese/generalview/famous.htm&quot;&gt;学者名人&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV align=center&gt;&lt;A 
+                  href=&quot;http://www.hust.edu.cn/chinese/generalview/admi.htm&quot;&gt;管理机构&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV align=center&gt;&lt;A 
+                  href=&quot;http://www.hust.edu.cn/chinese/generalview/stat.htm&quot;&gt;统计资料&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/DIV&gt;
+      &lt;DIV id=b onmouseover=extand(this) 
+      style=&quot;BORDER-RIGHT: #000000 1px; BORDER-TOP: #000000 1px; Z-INDEX: 26; FILTER: alpha(opacity=68); LEFT: 84px;   VISIBILITY: hidden; BORDER-LEFT: #000000 1px; WIDTH: 89px; BORDER-BOTTOM: #000000 1px; POSITION: absolute; TOP: 122px; HEIGHT: 41px; &quot; 
+      onmouseout=pinch(this)&gt;
+      &lt;TABLE borderColor=#000000 height=45 cellSpacing=0 cellPadding=0 
+      width=&quot;100%&quot; border=1&gt;
+        &lt;TBODY&gt;
+        &lt;TR o&gt;
+          &lt;TD&gt;
+            &lt;TABLE height=42 cellSpacing=0 borderColorDark=#000000 cellPadding=0 
+            width=88 borderColorLight=#ffffff border=1&gt;
+              &lt;TBODY&gt;
+              &lt;TR class=font9pt&gt;
+                &lt;TD borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV onmouseover=openme(this) onmouseout=closeme(this) 
+                  align=center&gt;&lt;A 
+                  href=&quot;http://www.hust.edu.cn/chinese/research/index.htm&quot;&gt;科研机构&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR class=font9pt&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=18&gt;
+                  &lt;DIV align=center&gt;&lt;A 
+                  href=&quot;http://www2.hust.edu.cn/administration/r&amp;d/kjcindex.asp&quot;&gt;科技处&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/DIV&gt;
+      &lt;DIV id=c onmouseover=extand(c) 
+      style=&quot;BORDER-RIGHT: #000000 1px; BORDER-TOP: #000000 1px; Z-INDEX: 25; FILTER: alpha(opacity=68); LEFT: 84px;   VISIBILITY: hidden; BORDER-LEFT: #000000 1px; WIDTH: 88px; BORDER-BOTTOM: #000000 1px; POSITION: absolute; TOP: 144px; HEIGHT: 76px; &quot; 
+      onmouseout=pinch(c)&gt;
+      &lt;TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width=&quot;100%&quot; 
+      border=1&gt;
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD&gt;
+            &lt;TABLE cellSpacing=0 borderColorDark=#000000 cellPadding=0 
+            width=&quot;100%&quot; borderColorLight=#ffffff border=1&gt;
+              &lt;TBODY&gt;
+              &lt;TR class=font9pt&gt;
+                &lt;TD borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV onmouseover=openme(this) onmouseout=closeme(this) 
+                  align=center&gt;&lt;A 
+                  href=&quot;http://www.hust.edu.cn/chinese/discipline/keydispl.htm&quot;&gt;重点学科&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR class=font9pt&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV align=center&gt;&lt;A 
+                  href=&quot;http://www.hust.edu.cn/chinese/discipline/bs.htm&quot;&gt;博士点&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR class=font9pt&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV align=center&gt;&lt;A 
+                  href=&quot;http://www.hust.edu.cn/chinese/discipline/master.htm&quot;&gt;硕士点&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR class=font9pt&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV align=center&gt;&lt;A 
+                  href=&quot;http://www.hust.edu.cn/chinese/discipline/bach.htm&quot;&gt;本科专业&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/DIV&gt;
+      &lt;DIV id=d onmouseover=extand(d) 
+      style=&quot;Z-INDEX: 24; FILTER: alpha(opacity=68); LEFT: 85px;   VISIBILITY: hidden; WIDTH: 87px; POSITION: absolute; TOP: 166px; HEIGHT: 38px; &quot; 
+      onmouseout=pinch(d)&gt;
+      &lt;TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width=&quot;100%&quot; 
+      border=1&gt;
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD&gt;
+            &lt;TABLE cellSpacing=0 borderColorDark=#000000 cellPadding=0 
+            width=&quot;100%&quot; borderColorLight=#ffffff border=1&gt;
+              &lt;TBODY&gt;
+              &lt;TR class=font9pt&gt;
+                &lt;TD borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV onmouseover=openme(this) onmouseout=closeme(this) 
+                  align=center&gt;&lt;A 
+                  href=&quot;http://www.hust.edu.cn/chinese/intl_exchange/index.htm&quot;&gt;国际会议&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR class=font9pt&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV align=center&gt;&lt;A 
+                  href=&quot;http://www2.hust.edu.cn/administration/iec/index.asp&quot;&gt;国际交流处&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/DIV&gt;
+      &lt;DIV id=e onmouseover=extand(e) 
+      style=&quot;BORDER-RIGHT: #000000 1px; BORDER-TOP: #000000 1px; Z-INDEX: 23; FILTER: alpha(opacity=68); LEFT: 85px;   VISIBILITY: hidden; BORDER-LEFT: #000000 1px; WIDTH: 79px; BORDER-BOTTOM: #000000 1px; POSITION: absolute; TOP: 187px; HEIGHT: 24px; &quot; 
+      onmouseout=pinch(e)&gt;
+      &lt;TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width=&quot;100%&quot; 
+      border=1&gt;
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD&gt;
+            &lt;TABLE cellSpacing=0 borderColorDark=#000000 cellPadding=0 width=79 
+            borderColorLight=#ffffff border=0&gt;
+              &lt;TBODY&gt;
+              &lt;TR&gt;
+                &lt;TD borderColor=#000000 height=22&gt;
+                  &lt;DIV onmouseover=openme(this) onmouseout=closeme(this) 
+                  align=center&gt;&lt;A 
+                  href=&quot;http://www.hust.edu.cn/chinese/administration/ind_group/index.htm&quot;&gt;产业集团&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/DIV&gt;
+      &lt;DIV id=f onmouseover=extand(f) 
+      style=&quot;BORDER-RIGHT: #000000 1px; BORDER-TOP: #000000 1px; Z-INDEX: 22; FILTER: alpha(opacity=68); LEFT: 84px;   VISIBILITY: hidden; BORDER-LEFT: #000000 1px; WIDTH: 96px; BORDER-BOTTOM: #000000 1px; POSITION: absolute; TOP: 210px; HEIGHT: 100px; &quot; 
+      onmouseout=pinch(f)&gt;
+      &lt;TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width=&quot;100%&quot; 
+      border=1&gt;
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD&gt;
+            &lt;TABLE cellSpacing=0 borderColorDark=#000000 cellPadding=0 
+            width=&quot;100%&quot; borderColorLight=#ffffff border=1&gt;
+              &lt;TBODY&gt;
+              &lt;TR class=font9pt&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV align=center&gt;&lt;FONT color=#000000&gt;&lt;A 
+                  href=&quot;http://jwc.hust.edu.cn/&quot; 
+                  target=_blank&gt;本科教育&lt;/A&gt;&lt;/FONT&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR class=font9pt&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV align=center&gt;&lt;FONT color=#000000&gt;研究生教育&lt;/FONT&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR class=font9pt&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV align=center&gt;&lt;FONT color=#000000&gt;留学生&lt;/FONT&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR class=font9pt&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV align=center&gt;&lt;FONT color=#000000&gt;成人教育&lt;/FONT&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR class=font9pt&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV align=center&gt;&lt;FONT color=#000000&gt;&lt;A 
+                  href=&quot;http://210.42.100.100/&quot;&gt;网络教育&lt;/A&gt;&lt;/FONT&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/DIV&gt;
+      &lt;DIV id=g onmouseover=extand(g) 
+      style=&quot;BORDER-RIGHT: #000000 1px; BORDER-TOP: #000000 1px; Z-INDEX: 21; FILTER: alpha(opacity=68); LEFT: 85px;   VISIBILITY: hidden; BORDER-LEFT: #000000 1px; WIDTH: 86px; BORDER-BOTTOM: #000000 1px; POSITION: absolute; TOP: 231px; HEIGHT: 39px; &quot; 
+      onmouseout=pinch(g)&gt;
+      &lt;TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width=&quot;100%&quot; 
+      border=1&gt;
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD&gt;
+            &lt;TABLE cellSpacing=0 borderColorDark=#000000 cellPadding=0 
+            width=&quot;100%&quot; borderColorLight=#ffffff border=1&gt;
+              &lt;TBODY&gt;
+              &lt;TR class=font9pt&gt;
+                &lt;TD borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV onmouseover=openme(this) onmouseout=closeme(this) 
+                  align=center&gt;&lt;A 
+                  href=&quot;http://www.hust.edu.cn/chinese/hr/index.htm&quot;&gt;人才招聘&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR class=font9pt&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV 
+      align=center&gt;人事处&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/DIV&gt;
+      &lt;DIV id=h onmouseover=extand(h) 
+      style=&quot;BORDER-RIGHT: #000000 1px; BORDER-TOP: #000000 1px; Z-INDEX: 20; FILTER: alpha(opacity=68); LEFT: 86px;   VISIBILITY: hidden; BORDER-LEFT: #000000 1px; WIDTH: 87px; BORDER-BOTTOM: #000000 1px; POSITION: absolute; TOP: 255px; HEIGHT: 100px; &quot; 
+      onmouseout=pinch(h)&gt;
+      &lt;TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width=&quot;100%&quot; 
+      border=1&gt;
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD&gt;
+            &lt;TABLE cellSpacing=0 borderColorDark=#000000 cellPadding=0 
+            width=&quot;100%&quot; borderColorLight=#ffffff border=1&gt;
+              &lt;TBODY&gt;
+              &lt;TR class=font9pt&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV align=center&gt;&lt;A 
+                  href=&quot;http://student.hust.edu.cn/zhaosheng/index.asp&quot; 
+                  target=_blank&gt;本科招生&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR class=font9pt&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV align=center&gt;&lt;A href=&quot;http://gs.hust.edu.cn/&quot; 
+                  target=_blank&gt;研究生招生&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR class=font9pt&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV align=center&gt;&lt;A 
+                  href=&quot;http://snde.hust.edu.cn/cjxy/index.htm&quot; 
+                  target=_blank&gt;成教招生&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR class=font9pt&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV align=center&gt;&lt;A 
+                  href=&quot;http://www2.hust.edu.cn/administration/iec/index.asp&quot; 
+                  target=_blank&gt;留学生招生&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR class=font9pt&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV align=center&gt;&lt;A href=&quot;http://210.42.100.100/&quot; 
+                  target=_blank&gt;网络招生&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/DIV&gt;
+      &lt;DIV id=i onmouseover=extand(i) 
+      style=&quot;BORDER-RIGHT: #000000 1px; BORDER-TOP: #000000 1px; Z-INDEX: 19; FILTER: alpha(opacity=68); LEFT: 83px;   VISIBILITY: hidden; BORDER-LEFT: #000000 1px; WIDTH: 95px; BORDER-BOTTOM: #000000 1px; POSITION: absolute; TOP: 276px; HEIGHT: 99px; &quot; 
+      onmouseout=pinch(i)&gt;
+      &lt;TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width=&quot;100%&quot; 
+      border=1&gt;
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD&gt;
+            &lt;TABLE cellSpacing=0 borderColorDark=#000000 cellPadding=0 
+            width=&quot;100%&quot; borderColorLight=#ffffff border=1&gt;
+              &lt;TBODY&gt;
+              &lt;TR class=font9pt&gt;
+                &lt;TD borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV onmouseover=openme(this) onmouseout=closeme(this) 
+                  align=center&gt;&lt;A 
+                href=&quot;http://renw.hust.edu.cn/&quot;&gt;人文讲座&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR class=font9pt&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV align=center&gt;&lt;A 
+                  href=&quot;http://www.hust.edu.cn/chinese/campus_cultrue/stfc.htm&quot;&gt;社团风采&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR class=font9pt&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV align=center&gt;&lt;A 
+                  href=&quot;http://su.hust.edu.cn/&quot;&gt;学生会&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR class=font9pt&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV align=center&gt;&lt;A 
+                  href=&quot;http://sunshine.hust.edu.cn/&quot;&gt;研究生会&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR class=font9pt&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV align=center&gt;&lt;A 
+                  href=&quot;http://student.hust.edu.cn/&quot;&gt;校团委&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/DIV&gt;
+      &lt;DIV id=j onmouseover=extand(j);openme(this) 
+      style=&quot;Z-INDEX: 18; FILTER: alpha(opacity=68); LEFT: 85px;   VISIBILITY: hidden; WIDTH: 82px; POSITION: absolute; TOP: 295px; HEIGHT: 19px; &quot; 
+      onmouseout=pinch(j);closeme(this)&gt;
+      &lt;TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width=&quot;100%&quot; 
+      border=1&gt;
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD&gt;
+            &lt;TABLE height=17 cellSpacing=0 borderColorDark=#000000 cellPadding=0 
+            width=&quot;100%&quot; borderColorLight=#ffffff border=1&gt;
+              &lt;TBODY&gt;
+              &lt;TR&gt;
+                &lt;TD borderColor=#ffcb8c&gt;
+                  &lt;DIV&gt;
+                  &lt;DIV align=center&gt;&lt;A 
+                  href=&quot;http://www.hust.edu.cn/chinese/alumni/index.htm&quot;&gt;校友总会&lt;/A&gt; &lt;/DIV&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/DIV&gt;
+      &lt;DIV id=k onmouseover=extand() 
+      style=&quot;BORDER-RIGHT: #000000 1px; BORDER-TOP: #000000 1px; Z-INDEX: 17; FILTER: alpha(opacity=68); LEFT: 86px;   VISIBILITY: hidden; BORDER-LEFT: #000000 1px; WIDTH: 94px; BORDER-BOTTOM: #000000 1px; POSITION: absolute; TOP: 303px; HEIGHT: 120px; &quot; 
+      onmouseout=pinch()&gt;
+      &lt;TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width=&quot;100%&quot; 
+      border=1&gt;
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD&gt;
+            &lt;TABLE cellSpacing=0 borderColorDark=#000000 cellPadding=0 
+            width=&quot;100%&quot; borderColorLight=#ffffff border=1&gt;
+              &lt;TBODY&gt;
+              &lt;TR class=font9pt&gt;
+                &lt;TD borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV onmouseover=openme(this) onmouseout=closeme(this) 
+                  align=center&gt;&lt;A 
+                  href=&quot;http://www.hust.edu.cn/chinese/info_serv/prdtmail/president.htm&quot;&gt;校长信箱&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR class=font9pt&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV align=center&gt;&lt;A 
+                  href=&quot;http://www2.hust.edu.cn/phone/default.asp&quot;&gt;电话查询&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR class=font9pt&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV align=center&gt;&lt;A 
+                  href=&quot;http://www.hust.edu.cn/chinese/info_serv/papers99/index.htm&quot;&gt;论文索引&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR class=font9pt&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV align=center&gt;&lt;A 
+                  href=&quot;http://www2.hust.edu.cn/stud/index98.htm&quot;&gt;学生信息&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR class=font9pt&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV align=center&gt;&lt;A 
+                  href=&quot;http://www.hust.edu.cn/chinese/info_serv/navigator/index.htm&quot;&gt;网站导航&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR class=font9pt&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=20&gt;
+                  &lt;DIV 
+      align=center&gt;办公信息&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/DIV&gt;
+        &lt;FONT 
+      size=2&gt;&lt;/FONT&gt;&lt;SPAN class=border&gt;&lt;/SPAN&gt; 
+        &lt;DIV id=ssst onmouseover=extand(ssst);extand(m) 
+      style=&quot;BORDER-RIGHT: #000000 1px; BORDER-TOP: #000000 1px; Z-INDEX: 12; FILTER: alpha(opacity=80); LEFT: 86px;   VISIBILITY: hidden; BORDER-LEFT: #000000 1px; WIDTH: 125px; BORDER-BOTTOM: #000000 1px; POSITION: absolute; TOP: 195px; HEIGHT: 115px; &quot; 
+      onmouseout=pinch(ssst);pinch(m)&gt;
+      &lt;TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width=&quot;100%&quot; 
+      border=1&gt;
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD&gt;
+            &lt;TABLE cellSpacing=0 borderColorDark=#000000 cellPadding=0 
+            width=&quot;100%&quot; borderColorLight=#ffffff border=1&gt;
+              &lt;TBODY&gt;
+              &lt;TR&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c&gt;
+                  &lt;DIV align=center&gt;&lt;A href=&quot;http://www.lib.hust.edu.cn/&quot; 
+                  target=_blank&gt;图书馆&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c&gt;
+                  &lt;DIV align=center&gt;&lt;A href=&quot;http://www.whnet.edu.cn/&quot; 
+                  target=_blank&gt;地区网络中心&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c&gt;
+                  &lt;DIV align=center&gt;&lt;A href=&quot;http://bbs.whnet.edu.cn/&quot; 
+                  target=_blank&gt;白云黄鹤&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c align=middle&gt;&lt;A 
+                  href=&quot;http://gs.hust.edu.cn/&quot; target=_blank&gt;研究生院&lt;/A&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c align=middle&gt;&lt;A 
+                  href=&quot;http://www.ca.hust.edu.cn/&quot;&gt;计算机协会&lt;/A&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c height=4&gt;
+                  &lt;DIV align=center&gt;&lt;A 
+                  href=&quot;http://www2.hust.edu.cn/hustjb/index.asp&quot;&gt;华中大简报&lt;/A&gt;&lt;/DIV&gt;
+                  &lt;DIV onmouseover=openme(this) onmouseout=closeme(this) 
+                  align=center&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c&gt;
+                  &lt;DIV align=center&gt;&lt;A 
+                  href=&quot;http://su.hust.edu.cn/&quot;&gt;醉晚亭&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c&gt;
+                  &lt;DIV align=center&gt;&lt;A 
+                  href=&quot;http://ibmur.hust.edu.cn/&quot;&gt;IBM大学合作部&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c&gt;
+                  &lt;DIV align=center&gt;&lt;A 
+                  href=&quot;http://www.whnet.edu.cn/exchange/main.htm&quot;&gt;大鹏证券&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c&gt;
+                  &lt;DIV align=center&gt;&lt;A 
+                  href=&quot;http://www.cn.ibm.com/developerWorks&quot;&gt;开发者园地&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c&gt;
+                  &lt;DIV align=center&gt;&lt;A 
+                  href=&quot;http://211.69.197.37/&quot;&gt;英语夏令营&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c&gt;
+                  &lt;DIV align=center&gt;&lt;A 
+                  href=&quot;http://www2.hust.edu.cn/readclub/index.htm&quot;&gt;华夏读书网&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c&gt;
+                  &lt;DIV align=right&gt;&lt;A 
+                  href=&quot;http://www.hust.edu.cn/chinese/units/index.htm&quot;&gt;更多单位...&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/DIV&gt;
+      &lt;DIV id=m onmouseover=extand(m) 
+      style=&quot;BORDER-RIGHT: #000000 1px; BORDER-TOP: #000000 1px; Z-INDEX: 13; FILTER: alpha(opacity=68); LEFT: 85px;   VISIBILITY: hidden; BORDER-LEFT: #000000 1px; WIDTH: 92px; BORDER-BOTTOM: #000000 1px; POSITION: absolute; TOP: 262px; HEIGHT: 25px; &quot; 
+      onmouseout=pinch(m)&gt;
+      &lt;TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width=&quot;100%&quot; 
+      border=1&gt;
+        &lt;TBODY&gt;
+        &lt;TR&gt;
+          &lt;TD&gt;
+            &lt;TABLE borderColor=#ffffff height=100 cellSpacing=0 cellPadding=0 
+            width=92 border=1&gt;
+              &lt;TBODY&gt;
+              &lt;TR&gt;
+                &lt;TD borderColor=#ffcb8c background=20020107/Bg1.gif height=7&gt;
+                  &lt;DIV onmouseover=openme(this) onmouseout=closeme(this) 
+                  align=center&gt;
+                  &lt;DIV align=center&gt;&lt;A 
+                  href=&quot;http://www.hust.edu.cn/chinese/units/yx.htm&quot;&gt;院系网页&lt;/A&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c background=20020107/Bg1.gif height=7&gt;
+                  &lt;DIV align=center&gt;&lt;A 
+                  href=&quot;http://www.hust.edu.cn/chinese/units/ky.htm&quot;&gt;科研机构&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c background=20020107/Bg1.gif height=17&gt;
+                  &lt;DIV align=center&gt;&lt;A 
+                  href=&quot;http://www.hust.edu.cn/chinese/units/index.htm&quot;&gt;机关部处&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;
+              &lt;TR&gt;
+                &lt;TD onmouseover=openme(this) onmouseout=closeme(this) 
+                borderColor=#ffcb8c background=20020107/Bg1.gif height=3&gt;
+                  &lt;DIV align=center&gt;&lt;A 
+                  href=&quot;http://www.hust.edu.cn/chinese/units/st.htm&quot;&gt;学生社团&lt;/A&gt;&lt;/DIV&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/TD&gt;&lt;/TR&gt;&lt;/TBODY&gt;&lt;/TABLE&gt;&lt;/DIV&gt;&lt;/DIV&gt;
+
+
+
+
+
+&nbsp;
+
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,467 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--二十四小时时钟</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body bgcolor=#FFFFFF>
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">二十四小时时钟</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=100" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<script language="JavaScript">
+<!--
+
+ClockFace=new Image();
+ClockFace.src="photo/glass.gif";
+
+milCol='#ffffff';
+civCol='#ffffff';
+dotCol='#ddeefe';//dot colour.
+hCol='#0000ff';//hours colour.
+mCol='#0000ff';//minutes colour.
+sCol='#ff0000';//seconds colour.
+ampmCol='#ddeefe';
+
+//Alter nothing below! Alignments will be lost!
+ns=(document.layers);
+ns6=(document.getElementById&&!document.all);
+ie=(document.all);
+h=3;
+m=4;
+s=5;
+civ='1 2 3 4 5 6 7 8 9 10 11 12';
+civ=civ.split(' ');
+mil='13 14 15 16 17 18 19 20 21 22 23 24';
+mil=mil.split(' ');
+n=civ.length;
+ClockHeight=30;
+ClockWidth=30;
+f24="<font face='Arial' size=1 color="+milCol+">";
+f12="<font face='Arial' size=1 color="+civCol+">";
+e=360/n;
+HandHeight=ClockHeight/4;
+HandWidth=ClockWidth/4;
+y=0;
+x=0;
+if (!ns)
+document.write('<div id="glass" style="position:absolute"><img src='+ClockFace.src+' height=142 width=142></div>');
+else
+document.write("<layer name='glass' top=0 left=0><img src='+ClockFace.src+' height=142 width=142></layer>");
+if (!ns)
+document.write("<div id='disp' style='position:absolute;width:50px;height:20px;text-align:center'> </div>");
+else
+document.write("<layer name=disp top=0 left=0></layer>");
+for (i=0; i < n; i++){
+if (!ns)
+document.write('<div id="Mil'+i+'" style="position:absolute;width:15px;height:15px;text-align:center;color:#0000dd">'+f24+mil[i]+'</font></div>');
+else
+document.write('<layer name="Mil'+i+'" width=15 height=15><center>'+f24+mil[i]+'</font></center></layer>');
+}
+for (i=0; i < n; i++){
+if (!ns)
+document.write('<div id="Civ'+i+'" style="position:absolute;width:15px;height:15px;text-align:center;color:#0000dd">'+f12+civ[i]+'</font></div>');
+else
+document.write('<layer name="Civ'+i+'" width=15 height=15><center>'+f12+civ[i]+'</font></center></layer>');
+}
+for (i=0; i < n; i++){
+if (!ns)
+document.write('<div id="D'+i+'" style="position:absolute;width:2px;height:2px;font-size:2px;background:'+dotCol+'"></div>');
+else
+document.write('<layer name="D'+i+'" bgcolor='+dotCol+' width=2 height=2></layer>');
+}
+for (i=0; i < h; i++){
+if (!ns)
+document.write('<div id="H'+i+'" style="position:absolute;width:2px;height:2px;font-size:2px;background:'+hCol+'"></div>');
+else
+document.write('<layer name="H'+i+'" bgcolor='+hCol+' width=2 height=2></layer>');
+}
+for (i=0; i < m; i++){
+if (!ns)
+document.write('<div id="M'+i+'" style="position:absolute;width:2px;height:2px;font-size:2px;background:'+mCol+'"></div>');
+else
+document.write('<layer name="M'+i+'" bgcolor='+mCol+' width=2 height=2></layer>');
+}
+for (i=0; i < s; i++){
+if (!ns)
+document.write('<div id="S'+i+'" style="position:absolute;width:2px;height:2px;font-size:2px;background:'+sCol+'"></div>');
+else
+document.write('<layer name="S'+i+'" bgcolor='+sCol+' width=2 height=2></layer>');
+}
+function ClockAndAssign(){
+time = new Date ();
+secs = time.getSeconds();
+sec = -1.57 + Math.PI * secs/30;
+mins = time.getMinutes();
+min = -1.57 + Math.PI * mins/30;
+hr = time.getHours();
+hrs = -1.575 + Math.PI * hr/6+Math.PI*parseInt(time.getMinutes())/360;
+ampm=(hr > 11)?"PM":"AM";
+y=(ie)?document.body.scrollTop+window.document.body.clientHeight-ClockHeight*2.4:window.pageYOffset+window.innerHeight-ClockHeight*2.4;
+x=(ie)?document.body.scrollLeft+window.document.body.clientWidth-ClockWidth*2.4:window.pageXOffset+window.innerWidth-ClockWidth*2.9;
+Dspf=(ie)?glass.style:(ns6)?document.getElementById("glass").style:document.glass;
+Dspf.top=y-71;
+Dspf.left=x-70;
+Dsp=(ie)?disp.style:(ns6)?document.getElementById("disp").style:document.disp;
+Dsp.top=y-17;
+Dsp.left=x-24;
+for (i=0; i < s; i++){
+CS=(ie)?document.all["S"+i].style:(ns6)?document.getElementById("S"+i).style:document.layers["S"+i];
+CS.top=y+(i*HandHeight)*Math.sin(sec);
+CS.left=x+(i*HandWidth)*Math.cos(sec);
+}
+for (i=0; i < m; i++){
+CM=(ie)?document.all["M"+i].style:(ns6)?document.getElementById("M"+i).style:document.layers["M"+i];
+CM.top=y+(i*HandHeight)*Math.sin(min);
+CM.left=x+(i*HandWidth)*Math.cos(min);
+}
+for (i=0; i < h; i++){
+CH=(ie)?document.all["H"+i].style:(ns6)?document.getElementById("H"+i).style:document.layers["H"+i];
+CH.top=y+(i*HandHeight)*Math.sin(hrs);
+CH.left=x+(i*HandWidth)*Math.cos(hrs);
+}
+for (i=0; i < n; i++){
+CD=(ie)?document.all["D"+i].style:(ns6)?document.getElementById("D"+i).style:document.layers["D"+i];
+CD.top=y+ ClockHeight*Math.sin(-1.0471 + i*e*Math.PI/180);
+CD.left=x+ ClockWidth*Math.cos(-1.0471 + i*e*Math.PI/180);
+}
+for (i=0; i < n; i++){
+CC=(ie)?document.all["Civ"+i].style:(ns6)?document.getElementById("Civ"+i).style:document.layers["Civ"+i];
+CC.top=y-6 + ClockHeight*1.4*Math.sin(-1.0471 + i*e*Math.PI/180);
+CC.left=x-6 + ClockWidth*1.4*Math.cos(-1.0471 + i*e*Math.PI/180);
+}
+for (i=0; i < n; i++){ 
+CM=(ie)?document.all["Mil"+i].style:(ns6)?document.getElementById("Mil"+i).style:document.layers["Mil"+i];
+CM.top=y-6 + ClockHeight*1.9*Math.sin(-1.0471 + i*e*Math.PI/180);
+CM.left=x-6 + ClockWidth*1.9*Math.cos(-1.0471 + i*e*Math.PI/180);
+}
+setTimeout('ClockAndAssign()',100);
+if (ie)disp.innerHTML='<font face=Arial size=6 color='+ampmCol+'>'+ampm+'</font>';
+if (ns){
+document.disp.document.open();
+document.disp.document.write('<font face=Arial size=6 color='+ampmCol+'>'+ampm+'</font>');
+document.disp.document.close();
+}
+}
+function aorp(){
+if (ns6)
+document.getElementById("disp").innerHTML='<font face=Arial size=6 color='+ampmCol+'>'+ampm+'</font>';
+setTimeout('aorp()',60000);
+}
+ClockAndAssign();
+if (ns6)aorp();
+//-->
+</script>
+</fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+把如下代码加入<body>区域中
+&nbsp;&lt;script language=&quot;JavaScript&quot;&gt;
+&lt;!--
+
+ClockFace=new Image();
+ClockFace.src=&quot;photo/glass.gif&quot;;
+
+milCol='#ffffff';
+civCol='#ffffff';
+dotCol='#ddeefe';//dot colour.
+hCol='#0000ff';//hours colour.
+mCol='#0000ff';//minutes colour.
+sCol='#ff0000';//seconds colour.
+ampmCol='#ddeefe';
+
+//Alter nothing below! Alignments will be lost!
+ns=(document.layers);
+ns6=(document.getElementById&amp;&amp;!document.all);
+ie=(document.all);
+h=3;
+m=4;
+s=5;
+civ='1 2 3 4 5 6 7 8 9 10 11 12';
+civ=civ.split(' ');
+mil='13 14 15 16 17 18 19 20 21 22 23 24';
+mil=mil.split(' ');
+n=civ.length;
+ClockHeight=30;
+ClockWidth=30;
+f24=&quot;&lt;font face='Arial' size=1 color=&quot;+milCol+&quot;&gt;&quot;;
+f12=&quot;&lt;font face='Arial' size=1 color=&quot;+civCol+&quot;&gt;&quot;;
+e=360/n;
+HandHeight=ClockHeight/4;
+HandWidth=ClockWidth/4;
+y=0;
+x=0;
+if (!ns)
+document.write('&lt;div id=&quot;glass&quot; style=&quot;position:absolute&quot;&gt;&lt;img src='+ClockFace.src+' height=142 width=142&gt;&lt;/div&gt;');
+else
+document.write(&quot;&lt;layer name='glass' top=0 left=0&gt;&lt;img src='+ClockFace.src+' height=142 width=142&gt;&lt;/layer&gt;&quot;);
+if (!ns)
+document.write(&quot;&lt;div id='disp' style='position:absolute;width:50px;height:20px;text-align:center'&gt; &lt;/div&gt;&quot;);
+else
+document.write(&quot;&lt;layer name=disp top=0 left=0&gt;&lt;/layer&gt;&quot;);
+for (i=0; i &lt; n; i++){
+if (!ns)
+document.write('&lt;div id=&quot;Mil'+i+'&quot; style=&quot;position:absolute;width:15px;height:15px;text-align:center;color:#0000dd&quot;&gt;'+f24+mil[i]+'&lt;/font&gt;&lt;/div&gt;');
+else
+document.write('&lt;layer name=&quot;Mil'+i+'&quot; width=15 height=15&gt;&lt;center&gt;'+f24+mil[i]+'&lt;/font&gt;&lt;/center&gt;&lt;/layer&gt;');
+}
+for (i=0; i &lt; n; i++){
+if (!ns)
+document.write('&lt;div id=&quot;Civ'+i+'&quot; style=&quot;position:absolute;width:15px;height:15px;text-align:center;color:#0000dd&quot;&gt;'+f12+civ[i]+'&lt;/font&gt;&lt;/div&gt;');
+else
+document.write('&lt;layer name=&quot;Civ'+i+'&quot; width=15 height=15&gt;&lt;center&gt;'+f12+civ[i]+'&lt;/font&gt;&lt;/center&gt;&lt;/layer&gt;');
+}
+for (i=0; i &lt; n; i++){
+if (!ns)
+document.write('&lt;div id=&quot;D'+i+'&quot; style=&quot;position:absolute;width:2px;height:2px;font-size:2px;background:'+dotCol+'&quot;&gt;&lt;/div&gt;');
+else
+document.write('&lt;layer name=&quot;D'+i+'&quot; bgcolor='+dotCol+' width=2 height=2&gt;&lt;/layer&gt;');
+}
+for (i=0; i &lt; h; i++){
+if (!ns)
+document.write('&lt;div id=&quot;H'+i+'&quot; style=&quot;position:absolute;width:2px;height:2px;font-size:2px;background:'+hCol+'&quot;&gt;&lt;/div&gt;');
+else
+document.write('&lt;layer name=&quot;H'+i+'&quot; bgcolor='+hCol+' width=2 height=2&gt;&lt;/layer&gt;');
+}
+for (i=0; i &lt; m; i++){
+if (!ns)
+document.write('&lt;div id=&quot;M'+i+'&quot; style=&quot;position:absolute;width:2px;height:2px;font-size:2px;background:'+mCol+'&quot;&gt;&lt;/div&gt;');
+else
+document.write('&lt;layer name=&quot;M'+i+'&quot; bgcolor='+mCol+' width=2 height=2&gt;&lt;/layer&gt;');
+}
+for (i=0; i &lt; s; i++){
+if (!ns)
+document.write('&lt;div id=&quot;S'+i+'&quot; style=&quot;position:absolute;width:2px;height:2px;font-size:2px;background:'+sCol+'&quot;&gt;&lt;/div&gt;');
+else
+document.write('&lt;layer name=&quot;S'+i+'&quot; bgcolor='+sCol+' width=2 height=2&gt;&lt;/layer&gt;');
+}
+function ClockAndAssign(){
+time = new Date ();
+secs = time.getSeconds();
+sec = -1.57 + Math.PI * secs/30;
+mins = time.getMinutes();
+min = -1.57 + Math.PI * mins/30;
+hr = time.getHours();
+hrs = -1.575 + Math.PI * hr/6+Math.PI*parseInt(time.getMinutes())/360;
+ampm=(hr &gt; 11)?&quot;PM&quot;:&quot;AM&quot;;
+y=(ie)?document.body.scrollTop+window.document.body.clientHeight-ClockHeight*2.4:window.pageYOffset+window.innerHeight-ClockHeight*2.4;
+x=(ie)?document.body.scrollLeft+window.document.body.clientWidth-ClockWidth*2.4:window.pageXOffset+window.innerWidth-ClockWidth*2.9;
+Dspf=(ie)?glass.style:(ns6)?document.getElementById(&quot;glass&quot;).style:document.glass;
+Dspf.top=y-71;
+Dspf.left=x-70;
+Dsp=(ie)?disp.style:(ns6)?document.getElementById(&quot;disp&quot;).style:document.disp;
+Dsp.top=y-17;
+Dsp.left=x-24;
+for (i=0; i &lt; s; i++){
+CS=(ie)?document.all[&quot;S&quot;+i].style:(ns6)?document.getElementById(&quot;S&quot;+i).style:document.layers[&quot;S&quot;+i];
+CS.top=y+(i*HandHeight)*Math.sin(sec);
+CS.left=x+(i*HandWidth)*Math.cos(sec);
+}
+for (i=0; i &lt; m; i++){
+CM=(ie)?document.all[&quot;M&quot;+i].style:(ns6)?document.getElementById(&quot;M&quot;+i).style:document.layers[&quot;M&quot;+i];
+CM.top=y+(i*HandHeight)*Math.sin(min);
+CM.left=x+(i*HandWidth)*Math.cos(min);
+}
+for (i=0; i &lt; h; i++){
+CH=(ie)?document.all[&quot;H&quot;+i].style:(ns6)?document.getElementById(&quot;H&quot;+i).style:document.layers[&quot;H&quot;+i];
+CH.top=y+(i*HandHeight)*Math.sin(hrs);
+CH.left=x+(i*HandWidth)*Math.cos(hrs);
+}
+for (i=0; i &lt; n; i++){
+CD=(ie)?document.all[&quot;D&quot;+i].style:(ns6)?document.getElementById(&quot;D&quot;+i).style:document.layers[&quot;D&quot;+i];
+CD.top=y+ ClockHeight*Math.sin(-1.0471 + i*e*Math.PI/180);
+CD.left=x+ ClockWidth*Math.cos(-1.0471 + i*e*Math.PI/180);
+}
+for (i=0; i &lt; n; i++){
+CC=(ie)?document.all[&quot;Civ&quot;+i].style:(ns6)?document.getElementById(&quot;Civ&quot;+i).style:document.layers[&quot;Civ&quot;+i];
+CC.top=y-6 + ClockHeight*1.4*Math.sin(-1.0471 + i*e*Math.PI/180);
+CC.left=x-6 + ClockWidth*1.4*Math.cos(-1.0471 + i*e*Math.PI/180);
+}
+for (i=0; i &lt; n; i++){ 
+CM=(ie)?document.all[&quot;Mil&quot;+i].style:(ns6)?document.getElementById(&quot;Mil&quot;+i).style:document.layers[&quot;Mil&quot;+i];
+CM.top=y-6 + ClockHeight*1.9*Math.sin(-1.0471 + i*e*Math.PI/180);
+CM.left=x-6 + ClockWidth*1.9*Math.cos(-1.0471 + i*e*Math.PI/180);
+}
+setTimeout('ClockAndAssign()',100);
+if (ie)disp.innerHTML='&lt;font face=Arial size=6 color='+ampmCol+'&gt;'+ampm+'&lt;/font&gt;';
+if (ns){
+document.disp.document.open();
+document.disp.document.write('&lt;font face=Arial size=6 color='+ampmCol+'&gt;'+ampm+'&lt;/font&gt;');
+document.disp.document.close();
+}
+}
+function aorp(){
+if (ns6)
+document.getElementById(&quot;disp&quot;).innerHTML='&lt;font face=Arial size=6 color='+ampmCol+'&gt;'+ampm+'&lt;/font&gt;';
+setTimeout('aorp()',60000);
+}
+ClockAndAssign();
+if (ns6)aorp();
+//--&gt;
+&lt;/script&gt;
+
+
+
+
+&nbsp;
+
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>

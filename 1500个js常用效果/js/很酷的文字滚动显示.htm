@@ -1,0 +1,699 @@
+<style>
+<!--
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 12.6px;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+td,form,select {FONT-SIZE: 12px; LINE-HEIGHT: 20px}
+input {FONT-SIZE: 12px; BORDER: #000000 1px solid;height: 18px; BACKGROUND-color: #f7f7ff; COLOR: #000000;}
+.small {FONT-SIZE: 1px; LINE-HEIGHT: 1px}
+.mid {FONT-SIZE: 12px;LINE-HEIGHT: 20px}
+A:active {COLOR: #ff0000; TEXT-DECORATION: none}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+-->
+</style>
+ 
+<html>
+<head>
+<title>仲夏夜--js特效--很酷的文字滚动显示</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="css/the9.css" 
+rel=stylesheet type=text/css>
+<style type="text/css">
+<!--
+.zf {  border: #999999; border-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+-->
+</style>
+<script src="ad.js"></script>
+</head>
+<body bgcolor="#ffffff" onload="eventLoader()">
+
+<div align="center" > 
+****************
+    <tr> 
+      **********
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr>
+      ***********
+      ************
+      *************
+          <tr>
+**************
+ <SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+function addbookmark()
+{
+bookmarkurl="http://5icat.net.ru"
+bookmarktitle="欢迎光临仲夏夜"
+if (document.all)
+window.external.AddFavorite(bookmarkurl,bookmarktitle)
+}
+//  End -->
+</script>
+***************</div></td>
+          </tr>
+          <tr>
+            <td height="15"><div align="center"><img src="images/little2.gif" width="9" height="9">
+ <span  onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://5icat.net.ru');"  style="CURSOR: hand"> 设为首页</a></span></div></td>
+          </tr>
+          <tr>
+            <td><div align="center"><img src="images/little3.gif" width="9" height="9"><script src="../mail.js"></script></div></td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+   <table width="770" border="0" cellspacing="0" cellpadding="0" class="zf1">
+    <tr> 
+      <td  height="20"><table width="768" height="19" border="0" align="center" cellpadding="0" cellspacing="0" background="images/menubg.gif">    
+          <script src="js.js"></script>
+        </table></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC"class="zf1">
+    <tr>
+      <td class="zf3"><script language="JavaScript">
+<!--
+var enabled = 0; today = new Date();
+var day; var date;
+if(today.getDay()==0) day = "星期日"
+if(today.getDay()==1) day = "星期一"
+if(today.getDay()==2) day = "星期二"
+if(today.getDay()==3) day = "星期三"
+if(today.getDay()==4) day = "星期四"
+if(today.getDay()==5) day = "星期五"
+if(today.getDay()==6) day = "星期六"
+date = "" + (today.getYear()) + "年" + (today.getMonth() + 1 ) + "月" + today.getDate() + "日  " + day +"";
+document.write("<font color=black>" + date + "</font>");
+-->
+</script></td><td align=right>****************</td>
+    </tr>
+  </table>
+<!--<IFRAME width=770 height=60 style="backgroundcolor: #CCCCCC" marginwidth="0" marginheight="0"  frameborder="0" scrolling="NO"   src="ad_top.htm"></IFRAME> -->
+  <table width="770" border="0" cellspacing="0" cellpadding="0" >
+    <tr>
+      <td height="2"></td>
+    </tr>
+  </table>
+  <table width="770" border="0" cellspacing="10" cellpadding="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#FFFFFF" height="501" valign="top"> 
+        <div align="center"> <br>
+          
+          
+ <table width="700" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="200">&nbsp;</td>
+              <td> 
+                <table width="300" border="1" cellspacing="0" cellpadding="0" align="center">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" height="20" width="15">&nbsp;</td>
+                    <td bgcolor="#999999" height="20" width="260"> 
+					
+                      <div align="center"><font color="#FFFFFF" size="3">很酷的文字滚动显示</font></div>
+                    </td>
+                    <td bgcolor="#CCCCCC" height="20" width="17">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+              <td width="10"><a href="UserCollect.asp?action=add&id=827" target="Collect">****************</a></td>
+            </tr>
+          </table>
+          <br>
+          <fieldset style="width:500;height:50"><legend>效果显示区</legend> 
+         
+<STYLE type=text/css>
+#scrollerContent {POSITION: absolute}
+body {font-size:9pt;color:#660000;text-decoration: none}
+</STYLE>
+<script>
+var upH = 13;//向上的箭头的高度
+var upW = 9; //向上的箭头的宽度
+var downH = 13;//向下的箭头的高度
+var downW = 9;//向下的箭头的宽度
+var dragH = 26; //滚动条的高度
+var dragW = 9; //滚动条的宽度
+var scrollH =68; //滚动体的高度
+var speed =9; //滚动的速度
+var dom = document.getElementById ? true:false;
+var nn4 = document.layers ? true:false;
+var ie4 = document.all ? true:false;
+var mouseY;
+var mouseX;
+var clickUp = false;
+var clickDown = false;
+var clickDrag = false;
+var clickAbove = false;
+var clickBelow = false;
+var timer = setTimeout("",500);
+var upL;
+var upT;
+var downL;
+var downT;
+var dragL;
+var dragT;
+var rulerL;
+var rulerT;
+var contentT;
+var contentH;
+var contentClipH;
+var scrollLength;
+var startY;
+function down(e){
+if((document.layers && e.which!=1) || (document.all && event.button!=1)) return true;
+getMouse(e);
+startY = (mouseY - dragT);
+if(mouseX >= upL && (mouseX <= (upL + upW)) && mouseY >= upT && (mouseY <= (upT + upH))){
+clickUp = true;
+return scrollUp();
+}
+else if(mouseX >= downL && (mouseX <= (downL + downW)) && mouseY >= downT && (mouseY <= (downT + downH))){
+clickDown = true;
+return scrollDown();
+}
+else if(mouseX >= dragL && (mouseX <= (dragL + dragW)) && mouseY >= dragT && (mouseY <= (dragT + dragH))){
+clickDrag = true;
+return false;
+}
+else if(mouseX >= dragL && (mouseX <= (dragL + dragW)) && mouseY >= rulerT && (mouseY <= (rulerT + scrollH))){
+if(mouseY < dragT){
+clickAbove = true;
+clickUp = true;
+return scrollUp();
+}
+else{
+clickBelow = true;
+clickDown = true;
+return scrollDown();
+}
+}
+else{
+return true;
+}
+}
+function move(e){
+if(clickDrag && contentH > contentClipH){
+getMouse(e);
+dragT = (mouseY - startY);
+if(dragT < (rulerT))
+dragT = rulerT;
+if(dragT > (rulerT + scrollH - dragH))
+dragT = (rulerT + scrollH - dragH);
+contentT = ((dragT - rulerT)*(1/scrollLength));
+contentT = eval('-' + contentT);
+moveTo();
+if(ie4)
+return false;
+}
+}
+function up(){
+clearTimeout(timer);
+clickUp = false;
+clickDown = false;
+clickDrag = false;
+clickAbove = false;
+clickBelow = false;
+return true;
+}
+function getT(){
+if(ie4)
+contentT = document.all.scrollerContent.style.pixelTop;
+else if(nn4)
+contentT = document.scrollerContentClip.document.scrollerContent.top;
+else if(dom)
+contentT = parseInt(document.getElementById("scrollerContent").style.top);
+}
+function getMouse(e){
+if(ie4){
+mouseY = event.clientY + document.body.scrollTop;
+mouseX = event.clientX + document.body.scrollLeft;
+}
+else if(nn4 || dom){
+mouseY = e.pageY;
+mouseX = e.pageX;
+}
+}
+function moveTo(){
+if(ie4){
+document.all.scrollerContent.style.top = contentT;
+document.all.ruler.style.top = dragT;
+document.all.drag.style.top = dragT;
+}
+else if(nn4){
+document.scrollerContentClip.document.scrollerContent.top = contentT;
+document.ruler.top = dragT;
+document.drag.top = dragT;
+}
+else if(dom){
+document.getElementById("scrollerContent").style.top = contentT + "px";
+document.getElementById("drag").style.top = dragT + "px";
+document.getElementById("ruler").style.top = dragT + "px";
+}
+}
+function scrollUp(){
+getT();
+if(clickAbove){
+if(dragT <= (mouseY-(dragH/2)))
+return up();
+}
+if(clickUp){
+if(contentT < 0){
+dragT = dragT - (speed*scrollLength);
+if(dragT < (rulerT))
+dragT = rulerT;
+contentT = contentT + speed;
+if(contentT > 0)
+contentT = 0;
+moveTo();
+timer = setTimeout("scrollUp()",25);
+}
+}
+return false;
+}
+function scrollDown(){
+getT();
+if(clickBelow){
+if(dragT >= (mouseY-(dragH/2)))
+return up();
+}
+if(clickDown){
+if(contentT > -(contentH - contentClipH)){
+dragT = dragT + (speed*scrollLength);
+if(dragT > (rulerT + scrollH - dragH))
+dragT = (rulerT + scrollH - dragH);
+contentT = contentT - speed;
+if(contentT < -(contentH - contentClipH))
+contentT = -(contentH - contentClipH);
+moveTo();
+timer = setTimeout("scrollDown()",25);
+}
+}
+return false;
+}
+function reloadPage(){
+location.reload();
+}
+function eventLoader(){
+if(ie4){
+upL = document.all.up.style.pixelLeft;
+upT = document.all.up.style.pixelTop;
+downL = document.all.down.style.pixelLeft;
+downT = document.all.down.style.pixelTop;
+dragL = document.all.drag.style.pixelLeft;
+dragT = document.all.drag.style.pixelTop;
+rulerT = document.all.ruler.style.pixelTop;
+contentH = parseInt(document.all.scrollerContent.scrollHeight);
+contentClipH = parseInt(document.all.scrollerContentClip.style.height);
+}
+else if(nn4){
+upL = document.up.left;
+upT = document.up.top;
+downL = document.down.left;
+downT = document.down.top;
+dragL = document.drag.left;
+dragT = document.drag.top;
+rulerT = document.ruler.top;
+contentH = document.scrollerContentClip.document.scrollerContent.clip.bottom;
+contentClipH = document.scrollerContentClip.clip.bottom;
+}
+else if(dom){
+upL = parseInt(document.getElementById("up").style.left);
+upT = parseInt(document.getElementById("up").style.top);
+downL = parseInt(document.getElementById("down").style.left);
+downT = parseInt(document.getElementById("down").style.top);
+dragL = parseInt(document.getElementById("drag").style.left);
+dragT = parseInt(document.getElementById("drag").style.top);
+rulerT = parseInt(document.getElementById("ruler").style.top);
+contentH = parseInt(document.getElementById("scrollerContent").offsetHeight);
+contentClipH = parseInt(document.getElementById("scrollerContentClip").offsetHeight);
+document.getElementById("scrollerContent").style.top = 0 + "px";
+}
+scrollLength = ((scrollH-dragH)/(contentH-contentClipH));
+if(nn4){
+document.captureEvents(Event.MOUSEDOWN | Event.MOUSEMOVE | Event.MOUSEUP);
+window.onresize = reloadPage;
+}
+document.onmousedown = down;
+document.onmousemove = move;
+document.onmouseup = up;
+}
+</script>
+<SPAN
+id=drag
+style="LEFT: 203px;POSITION: absolute; TOP: 116px"><IMG
+height=26 src="photo/slider.gif" width=9></SPAN> <SPAN
+id=ruler
+style="TOP: 116px"></SPAN> <SPAN
+id=up
+style="LEFT: 203px; POSITION: absolute; TOP: 100px"><IMG
+height=13 alt="" src="photo/scrollup.gif" width=9 border=0></SPAN> <SPAN id=down
+style="LEFT: 203px; POSITION: absolute; TOP: 186px"><IMG
+height=13 alt="" src="photo/scrolldown.gif" width=9 border=0></SPAN> <SPAN
+id=scrollerContentClip
+style=" LEFT: 100; VISIBILITY: visible; OVERFLOW: hidden; WIDTH: 100; CLIP: rect(0px 140px 194px 0px); POSITION: absolute; TOP: 100; HEIGHT: 100;border:#CC6600 1px solid"><SPAN
+id=scrollerContent style="width: 100; height: 100">
+<p>asdfasdfasdfasdf<br>
+asdfasdfasdfasdf<br>
+asdfasdfasdfasf<br>
+ASdfasdfasdfas<br>
+Asdfasdfasdf<br>
+Asdfasdfasdf<br>
+asdfasdfasdfasdf<br>
+asdfasdfasdfa<br>
+asdf<br>
+asdf<br>
+ASdfa<br>
+Sdfas<br>
+Dfasd<br>
+FasdFasdf<br>
+asdf<br>
+asdf<br>
+sadf<br>
+asdfasdf<br>
+asdf<br>
+asdf<br>
+asdf<br>
+asdf<br>
+asdf<br>
+asdf<br>
+asdf<br>
+asdf<br>
+asdfsdf<br>
+Asdfa<br>
+SdfsadFasdf</p>
+</SPAN></SPAN></fieldset>
+
+<br><br><br>
+          <table width="500" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                  <tr> 
+                    <td bgcolor="#CCCCCC" width="15" height="16">&nbsp;</td>
+                    <td width="96" bgcolor="#000000" height="16"> 
+                      <div align="center"><font color="#FFFFFF">脚本说明：</font></div>
+                    </td>
+                    <td width="389" height="16">&nbsp;</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="zf">
+                <textarea name="textfield" cols="80" rows="10" class="textfield">脚本说明: 
+&nbsp;
+第一步:把如下代码加入<body>区域中
+&nbsp;&lt;STYLE type=text/css&gt;
+#scrollerContent {POSITION: absolute}
+body {font-size:9pt;color:#660000;text-decoration: none}
+&lt;/STYLE&gt;
+&lt;script&gt;
+var upH = 13;//向上的箭头的高度
+var upW = 9; //向上的箭头的宽度
+var downH = 13;//向下的箭头的高度
+var downW = 9;//向下的箭头的宽度
+var dragH = 26; //滚动条的高度
+var dragW = 9; //滚动条的宽度
+var scrollH =68; //滚动体的高度
+var speed =9; //滚动的速度
+var dom = document.getElementById ? true:false;
+var nn4 = document.layers ? true:false;
+var ie4 = document.all ? true:false;
+var mouseY;
+var mouseX;
+var clickUp = false;
+var clickDown = false;
+var clickDrag = false;
+var clickAbove = false;
+var clickBelow = false;
+var timer = setTimeout(&quot;&quot;,500);
+var upL;
+var upT;
+var downL;
+var downT;
+var dragL;
+var dragT;
+var rulerL;
+var rulerT;
+var contentT;
+var contentH;
+var contentClipH;
+var scrollLength;
+var startY;
+function down(e){
+if((document.layers &amp;&amp; e.which!=1) || (document.all &amp;&amp; event.button!=1)) return true;
+getMouse(e);
+startY = (mouseY - dragT);
+if(mouseX &gt;= upL &amp;&amp; (mouseX &lt;= (upL + upW)) &amp;&amp; mouseY &gt;= upT &amp;&amp; (mouseY &lt;= (upT + upH))){
+clickUp = true;
+return scrollUp();
+}
+else if(mouseX &gt;= downL &amp;&amp; (mouseX &lt;= (downL + downW)) &amp;&amp; mouseY &gt;= downT &amp;&amp; (mouseY &lt;= (downT + downH))){
+clickDown = true;
+return scrollDown();
+}
+else if(mouseX &gt;= dragL &amp;&amp; (mouseX &lt;= (dragL + dragW)) &amp;&amp; mouseY &gt;= dragT &amp;&amp; (mouseY &lt;= (dragT + dragH))){
+clickDrag = true;
+return false;
+}
+else if(mouseX &gt;= dragL &amp;&amp; (mouseX &lt;= (dragL + dragW)) &amp;&amp; mouseY &gt;= rulerT &amp;&amp; (mouseY &lt;= (rulerT + scrollH))){
+if(mouseY &lt; dragT){
+clickAbove = true;
+clickUp = true;
+return scrollUp();
+}
+else{
+clickBelow = true;
+clickDown = true;
+return scrollDown();
+}
+}
+else{
+return true;
+}
+}
+function move(e){
+if(clickDrag &amp;&amp; contentH &gt; contentClipH){
+getMouse(e);
+dragT = (mouseY - startY);
+if(dragT &lt; (rulerT))
+dragT = rulerT;
+if(dragT &gt; (rulerT + scrollH - dragH))
+dragT = (rulerT + scrollH - dragH);
+contentT = ((dragT - rulerT)*(1/scrollLength));
+contentT = eval('-' + contentT);
+moveTo();
+if(ie4)
+return false;
+}
+}
+function up(){
+clearTimeout(timer);
+clickUp = false;
+clickDown = false;
+clickDrag = false;
+clickAbove = false;
+clickBelow = false;
+return true;
+}
+function getT(){
+if(ie4)
+contentT = document.all.scrollerContent.style.pixelTop;
+else if(nn4)
+contentT = document.scrollerContentClip.document.scrollerContent.top;
+else if(dom)
+contentT = parseInt(document.getElementById(&quot;scrollerContent&quot;).style.top);
+}
+function getMouse(e){
+if(ie4){
+mouseY = event.clientY + document.body.scrollTop;
+mouseX = event.clientX + document.body.scrollLeft;
+}
+else if(nn4 || dom){
+mouseY = e.pageY;
+mouseX = e.pageX;
+}
+}
+function moveTo(){
+if(ie4){
+document.all.scrollerContent.style.top = contentT;
+document.all.ruler.style.top = dragT;
+document.all.drag.style.top = dragT;
+}
+else if(nn4){
+document.scrollerContentClip.document.scrollerContent.top = contentT;
+document.ruler.top = dragT;
+document.drag.top = dragT;
+}
+else if(dom){
+document.getElementById(&quot;scrollerContent&quot;).style.top = contentT + &quot;px&quot;;
+document.getElementById(&quot;drag&quot;).style.top = dragT + &quot;px&quot;;
+document.getElementById(&quot;ruler&quot;).style.top = dragT + &quot;px&quot;;
+}
+}
+function scrollUp(){
+getT();
+if(clickAbove){
+if(dragT &lt;= (mouseY-(dragH/2)))
+return up();
+}
+if(clickUp){
+if(contentT &lt; 0){
+dragT = dragT - (speed*scrollLength);
+if(dragT &lt; (rulerT))
+dragT = rulerT;
+contentT = contentT + speed;
+if(contentT &gt; 0)
+contentT = 0;
+moveTo();
+timer = setTimeout(&quot;scrollUp()&quot;,25);
+}
+}
+return false;
+}
+function scrollDown(){
+getT();
+if(clickBelow){
+if(dragT &gt;= (mouseY-(dragH/2)))
+return up();
+}
+if(clickDown){
+if(contentT &gt; -(contentH - contentClipH)){
+dragT = dragT + (speed*scrollLength);
+if(dragT &gt; (rulerT + scrollH - dragH))
+dragT = (rulerT + scrollH - dragH);
+contentT = contentT - speed;
+if(contentT &lt; -(contentH - contentClipH))
+contentT = -(contentH - contentClipH);
+moveTo();
+timer = setTimeout(&quot;scrollDown()&quot;,25);
+}
+}
+return false;
+}
+function reloadPage(){
+location.reload();
+}
+function eventLoader(){
+if(ie4){
+upL = document.all.up.style.pixelLeft;
+upT = document.all.up.style.pixelTop;
+downL = document.all.down.style.pixelLeft;
+downT = document.all.down.style.pixelTop;
+dragL = document.all.drag.style.pixelLeft;
+dragT = document.all.drag.style.pixelTop;
+rulerT = document.all.ruler.style.pixelTop;
+contentH = parseInt(document.all.scrollerContent.scrollHeight);
+contentClipH = parseInt(document.all.scrollerContentClip.style.height);
+}
+else if(nn4){
+upL = document.up.left;
+upT = document.up.top;
+downL = document.down.left;
+downT = document.down.top;
+dragL = document.drag.left;
+dragT = document.drag.top;
+rulerT = document.ruler.top;
+contentH = document.scrollerContentClip.document.scrollerContent.clip.bottom;
+contentClipH = document.scrollerContentClip.clip.bottom;
+}
+else if(dom){
+upL = parseInt(document.getElementById(&quot;up&quot;).style.left);
+upT = parseInt(document.getElementById(&quot;up&quot;).style.top);
+downL = parseInt(document.getElementById(&quot;down&quot;).style.left);
+downT = parseInt(document.getElementById(&quot;down&quot;).style.top);
+dragL = parseInt(document.getElementById(&quot;drag&quot;).style.left);
+dragT = parseInt(document.getElementById(&quot;drag&quot;).style.top);
+rulerT = parseInt(document.getElementById(&quot;ruler&quot;).style.top);
+contentH = parseInt(document.getElementById(&quot;scrollerContent&quot;).offsetHeight);
+contentClipH = parseInt(document.getElementById(&quot;scrollerContentClip&quot;).offsetHeight);
+document.getElementById(&quot;scrollerContent&quot;).style.top = 0 + &quot;px&quot;;
+}
+scrollLength = ((scrollH-dragH)/(contentH-contentClipH));
+if(nn4){
+document.captureEvents(Event.MOUSEDOWN | Event.MOUSEMOVE | Event.MOUSEUP);
+window.onresize = reloadPage;
+}
+document.onmousedown = down;
+document.onmousemove = move;
+document.onmouseup = up;
+}
+&lt;/script&gt;
+&lt;SPAN
+id=drag
+style=&quot;LEFT: 203px;POSITION: absolute; TOP: 116px&quot;&gt;&lt;IMG
+height=26 src=&quot;photo/slider.gif&quot; width=9&gt;&lt;/SPAN&gt; &lt;SPAN
+id=ruler
+style=&quot;TOP: 116px&quot;&gt;&lt;/SPAN&gt; &lt;SPAN
+id=up
+style=&quot;LEFT: 203px; POSITION: absolute; TOP: 100px&quot;&gt;&lt;IMG
+height=13 alt=&quot;&quot; src=&quot;photo/scrollup.gif&quot; width=9 border=0&gt;&lt;/SPAN&gt; &lt;SPAN id=down
+style=&quot;LEFT: 203px; POSITION: absolute; TOP: 186px&quot;&gt;&lt;IMG
+height=13 alt=&quot;&quot; src=&quot;photo/scrolldown.gif&quot; width=9 border=0&gt;&lt;/SPAN&gt; &lt;SPAN
+id=scrollerContentClip
+style=&quot; LEFT: 100; VISIBILITY: visible; OVERFLOW: hidden; WIDTH: 100; CLIP: rect(0px 140px 194px 0px); POSITION: absolute; TOP: 100; HEIGHT: 100;border:#CC6600 1px solid&quot;&gt;&lt;SPAN
+id=scrollerContent style=&quot;width: 100; height: 100&quot;&gt;
+&lt;p&gt;asdfasdfasdfasdf&lt;br&gt;
+asdfasdfasdfasdf&lt;br&gt;
+asdfasdfasdfasf&lt;br&gt;
+ASdfasdfasdfas&lt;br&gt;
+Asdfasdfasdf&lt;br&gt;
+Asdfasdfasdf&lt;br&gt;
+asdfasdfasdfasdf&lt;br&gt;
+asdfasdfasdfa&lt;br&gt;
+asdf&lt;br&gt;
+asdf&lt;br&gt;
+ASdfa&lt;br&gt;
+Sdfas&lt;br&gt;
+Dfasd&lt;br&gt;
+FasdFasdf&lt;br&gt;
+asdf&lt;br&gt;
+asdf&lt;br&gt;
+sadf&lt;br&gt;
+asdfasdf&lt;br&gt;
+asdf&lt;br&gt;
+asdf&lt;br&gt;
+asdf&lt;br&gt;
+asdf&lt;br&gt;
+asdf&lt;br&gt;
+asdf&lt;br&gt;
+asdf&lt;br&gt;
+asdf&lt;br&gt;
+asdfsdf&lt;br&gt;
+Asdfa&lt;br&gt;
+SdfsadFasdf&lt;/p&gt;
+&lt;/SPAN&gt;&lt;/SPAN&gt;
+
+
+
+&nbsp;
+第二步:把如下代码加入<body>区域中<body bgcolor="#ffffff" onload="eventLoader()">
+</textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </table>
+  <hr width="770">
+   <table width="770" border="0" cellspacing="0" cellpadding="0" height="21">
+    <tr>
+      <td bgcolor="#CCCCCC" valign="middle">
+        <div align="center"><script language=javascript src=buttom.js></script></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"></div>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
