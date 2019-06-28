@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>3d旋转</title>
+  <style lang="">
+    .gwd-page-size {
+    width: 160px;
+    height: 600px;
+}
+.gwd-page-content {
+    background-color: transparent;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    perspective: 1400px;
+    transform-style: preserve-3d;
+    position: absolute;
+}
+.box {
+    display: block;
+    width: 160px;
+}
+.box .big {
+    transform-style: preserve-3d;
+    width: 160px;
+    height: 600px;
+    transition: 2s;
+}
+.box .big>div {
+    position: absolute;
+    perspective: 1000px;
+    width: 160px;
+    height: 600px;
+    transform-origin: center center 0px;
+}
+.red {
+    background: url(https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/13557545581714465641/1.jpg);
+    transform: rotateY(0deg) translateZ(46px);
+}
+.blue {
+    background: url(https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/13557545581714465641/2.jpg);
+    transform: rotateY(120deg) translateZ(46px);
+}
+.green {
+    background: url(https://tpc.googlesyndication.com/sadbundle/$csp%3Der3$/13557545581714465641/3.jpg);
+    transform: rotateY(240deg) translateZ(46px);
+}
+  </style>
+</head>
+<body>
+    <div class="gwd-page-content gwd-page-size">
+        <a class="box" >
+          <div class="big" >
+            <div class="red"></div>
+            <div class="blue"></div>
+            <div class="green"></div>
+          </div>
+        </a>
+      </div>
+      <script>
+        
+        var big = document.querySelector('.box .big');
+        var t = 0;
+        setInterval(function() {
+          t += 120;
+          big.style.transform = `rotateY(${t}deg)`;
+        }, 3000);
+      
+      </script>
+</body>
+</html>
