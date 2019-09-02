@@ -1,0 +1,11 @@
+.one{
+            width: 200px;
+            height: 200px;
+            background: red;
+            border: 1px solid #000000;
+            overflow: auto;
+        }
+        
+/*可读可写属性
+
+所谓的可读可写属性指的是不仅能通过js获取该属性的值，还能够通过js为该属性赋值。*/

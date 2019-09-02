@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		 <style>
+        .one{
+            width: 100px;
+            height: 100px;
+            overflow: auto;
+        }
+    </style>
+	</head>
+	<body>
+		<!--scrollTop和scrollLeft
+
+这对属性是可读写的，指的是当元素其中的内容超出其宽高的时候，元素被卷起的高度和宽度。
+该属性还可以通过赋值内容自动滚动到某个位置，
+-->
+		<div class="one">
+		    我是内容<br>
+		    我是内容<br>
+		    我是内容<br>
+		    我是内容<br>
+		    我是内容<br>
+		    我是内容<br>
+		    我是内容<br>
+		    我是内容<br>
+		    我是内容<br>
+		    我是内容<br>
+		    我是内容<br>
+		    我是内容<br>
+		    我是内容<br>
+		</div>
+</body>
+<script>
+    var oDiv=document.querySelector('.one');
+    oDiv.onscroll=function(){
+        console.log(this.scrollHeight+":"+this.scrollWidth);
+    }
+</script>
+
+<!--通过直接设定div的scrollTop,让它直接显示在滚动条在20垂直方向上20的位置。-->
+<script>
+    var oDiv=document.querySelector('.one');
+    oDiv.scrollTop=20;
+    oDiv.onscroll=function(){
+        console.log(this.scrollTop+":"+this.scrollLeft);
+    }
+</script>
+</html>

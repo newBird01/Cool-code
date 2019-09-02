@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		 <style>
+        .one{
+            width: 100px;
+            height: 100px;
+            overflow: auto;
+        }
+    </style>
+	</head>
+	<body>
+		<!--
+        	顾名思义，这两个属性指的是当元素内部的内容超出其宽度和高度的时候，
+        	元素内部内容的实际宽度和高度，需要注意的是，当元素其中内容没有超过其高度或者宽度的时候，
+        	该属性是取不到的。
+        	
+        	 尽管该div的宽高都是100，
+        	 但是其scrollheight为239显示的是其中内容的实际高度，
+        	 scrollWidth为79（由于滚动条占据了宽度）
+        -->
+		<div class="one">
+		    我是内容<br>
+		    我是内容<br>
+		    我是内容<br>
+		    我是内容<br>
+		    我是内容<br>
+		    我是内容<br>
+		    我是内容<br>
+		    我是内容<br>
+		    我是内容<br>
+		    我是内容<br>
+		    我是内容<br>
+		    我是内容<br>
+		    我是内容<br>
+		</div>
+</body>
+<script>
+    var oDiv=document.querySelector('.one');
+    oDiv.onscroll=function(){
+        console.log(this.scrollHeight+":"+this.scrollWidth);
+    }
+</script>
+</html>

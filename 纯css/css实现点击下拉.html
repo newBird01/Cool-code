@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>css实现点击下拉</title>
+  <style lang="">
+    ul>li>ul{
+      display: none;
+    }
+    input[type=checkbox]{
+      display: none;
+    }
+    ul li input[type=checkbox]:checked+ul{
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>
+      <label for="checkbox1" >选择一</label>
+      <input type="checkbox" id='checkbox1' checked="true">
+      <ul>
+        <li>选择一 ---1</li>
+        <li>选择一 ---2</li>
+        <li>选择一 ---3</li>
+      </ul>
+    </li>
+    <li>
+        <label for="checkbox2">选择二</label>
+        <input type="checkbox" id='checkbox2'>
+        <ul>
+          <li>选择二 ---1</li>
+          <li>选择二 ---2</li>
+          <li>选择二 ---3</li>
+        </ul>
+    </li>
+    <li>
+        <label for="checkbox3">选择三</label>
+        <input type="checkbox" id='checkbox3'>
+        <ul>
+          <li>选择三 ---1</li>
+          <li>选择三 ---2</li>
+          <li>选择三 ---3</li>
+        </ul>
+    </li>
+  </ul>
+</body>
+</html>

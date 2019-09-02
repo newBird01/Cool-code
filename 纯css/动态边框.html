@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .box{
+      width: 100px;
+      height: 180px;
+      position: relative;
+      margin: 100px auto;
+      background: rgb(211, 211, 212,0.2);
+    }
+    .box::after,.box::before{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: '';
+      transition: all 0.3s ease-out 0s; 
+
+    }
+    .box::after{
+      border-left: 1px solid red;
+      border-right: 1px solid red;
+      transform:  scale(1,0);
+    } 
+    .box::before{
+      border-top: 1px solid red;
+      border-bottom: 1px solid red;
+      transform:  scale(0,1);
+    } 
+   
+    .box:hover::after,.box:hover::before{
+      transform:  scale(1,1);
+    } 
+   
+  </style>
+</head>
+<body>
+    <div class="box">鼠标划过来</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="jquery-1.11.0.js"></script>
+	</head>
+	<body>
+	</body>
+	<script>
+		if(document.addEventListener){//firefox
+			document.addEventListener('DOMMouseScroll',scrollFunc)//添加鼠标滚动事件
+		}
+		window.onmousewheel = document.onmousewheel = scrollFunc;//添加鼠标滚动事件
+		function scrollFunc(e){
+			e=e||window.event;
+			if (e.wheelDelta) {
+				if (e.wheelDelta>0) {
+					console.log('up')
+					console.log(e.wheelDelta)
+					
+				} else{
+					console.log('down')
+					console.log(e.wheelDelta)
+				}
+			} else if(e.detail){
+				if (e.detail<0) {
+					console.log('up')
+					console.log(e.detail)
+				} else{
+					console.log('down')
+					console.log(e.detail)
+				}
+			};
+		}
+		
+	</script>
+</html>

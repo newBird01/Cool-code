@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.one{
+            width: 100px;
+            height: 100px;
+            background: red;
+            overflow: auto;
+        }
+		</style>
+		
+	</head>
+	<!--clientX和clientY，这对属性是当事件发生时，
+		鼠标点击位置相对于浏览器（可视区）的坐标，
+		即浏览器左上角坐标的（0,0），
+		该属性以浏览器左上角坐标为原点，
+		计算鼠标点击位置距离其左上角的位置，
+
+不管浏览器窗口大小如何变化，都不会影响点击位置的坐标。-->
+	<body>
+		<div class="one">
+			
+		</div>
+	</body>
+	<script>
+    var oDiv=document.querySelector('.one');
+    oDiv.onclick=function(ev){
+        var evt=ev||event;
+        console.log(evt.clientX+":"+evt.clientY);  
+    }
+</script>
+
+</html>

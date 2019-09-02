@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+        body{
+            border: 2px solid #000000;
+        }
+        .one{
+            border: 63px solid red;/*如果是3px,则显示2px,大于3不会*/
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+    </style>
+	</head>
+	<body>
+		<div class="one">
+			clientTop和clientLeft
+
+这一对属性是用来读取元素的border的宽度和高度的。
+		</div>
+	</body>
+	<script>
+    var oDiv=document.getElementsByClassName('one')[0];
+    console.log(oDiv.clientLeft+":"+oDiv.clientTop);
+</script>
+</html>

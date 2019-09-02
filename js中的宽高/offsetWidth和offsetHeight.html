@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="common.css"/>
+	</head>
+	<body>
+		<div class="one">
+			offsetWidth和offsetHeight
+			这一对属性指的是元素的border+padding+content的宽度和高度，
+			该属性和其内部的内容是否超出元素大小无关，
+			只和本来设定的border以及width和height有关!
+			可以看到该属性和clientWidth以及clientHeight相比，多了设定的边框border的宽度和高度。
+		</div>
+	</body>
+	<script>
+        window.onload=function(){
+            var oDiv=document.getElementsByTagName('div')[0];
+            console.log(oDiv.offsetWidth+":"+oDiv.offsetHeight);
+            document.getElementsByTagName("title")[0].innerHTML=oDiv.offsetWidth+":"+oDiv.offsetHeight
+        }
+    </script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.one{
+            width: 100px;
+            height: 100px;
+            background: red;
+            overflow: auto;
+        }
+		</style>
+	</head>
+	<body>
+		<div class="one">
+			
+		</div>
+	</body>
+	<script>
+    var oDiv=document.querySelector('.one');
+    oDiv.onclick=function(ev){
+        var evt=ev||event;
+        console.log(evt.screenX+":"+evt.screenY);  
+    }
+</script>
+</html>

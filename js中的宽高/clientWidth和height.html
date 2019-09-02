@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="common.css"/>
+	</head>
+	<body>
+		<div class="one">
+		    clientWidth和clientHeight是只读属性
+			所谓的只读属性指的是DOM节点的固有属性，
+			该属性只能通过js去获取而不能通过js去设置，
+			而且获取的值是只有数字并不带单位的（px,em等）;
+			
+			该属性指的是元素的可视部分宽度和高度，
+			即padding+content，如果没有滚动条，
+			即为元素设定的高度和宽度，如果出现滚动条，
+			滚动条会遮盖元素的宽高，那么该属性就是其本
+			来宽高减去滚动条的宽高;!
+			本例中x
+			元素本来设定为宽高都是200，
+			即可视部分宽高都是200，
+			但是由于出现了垂直方向的滚动条，
+			占据了可视部分的宽度，所以clientWidth变成了183
+			，而clientHeight依然是200.
+		</div>
+</body>
+<script>
+        window.onload=function(){
+            var oDiv=document.getElementsByTagName('div')[0];
+            document.getElementsByTagName("title")[0].innerHTML=oDiv.clientWidth+":"+oDiv.clientHeight
+            console.log(oDiv.clientWidth+":"+oDiv.clientHeight);
+        }
+    </script>
+</html>
