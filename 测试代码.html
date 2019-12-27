@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-</head>
-
-<body>
-  <canvas id="myCanvas" width="200" height="100"></canvas>
-  <div id='box'>lfdakj</div>
-  <script type="text/javascript">
-    var div = document.querySelector('#box');
-    console.log(div);
-    var dis = 0;
-    function animation() {
-      requestAnimationFrame(function () {
-        console.log(dis, 'dis')
-        console.log(this, '--')
-        dis++;
-        div.style.marginLeft = dis + 'px';
-        if (dis < 50) animation();
-      })
+  <style>
+    input{
+      border: 10px solid red;
     }
-    animation();
-
-  </script>
+  </style>
+</head>
+<body>
+  <input type="text">
+  <input type="text">
+  <input type="text">
+  <input type="text">
+  <input type="text">
 </body>
+<script>
+  var inputs = document.querySelectorAll('input');
+  for(var i=0,len=inputs.length;i < len;i++){
+    i && (inputs[i].disabled = true);
+    (function(i){
+        inputs[i].onkeyup = function() {
+          this.disabled = false;
+          console.log(i,'-');
+          console.log(inputs[i+1],'inputs[i+1]');
+        (i+1<len) && (inputs[i+1].disabled = false);
+        (i+1<len) && (inputs[i+1].focus());
+      }
+    })(i)
+  }
 
+</script>
 </html>

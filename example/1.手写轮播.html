@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="./jq.js"></script>
+  <title>手写轮播</title>
+  <style>
+    .ibanner{
+      width: 600px;
+      height: 400px;
+      background: red;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+    }
+    .ibanner a{
+      position: absolute;
+      top: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .ibanner img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="ibanner">
+    <div id="ibanner_pic">
+    </div>
+  </div>
+  <script>
+    $(function(){
+      function Banner(options){
+        // 初始化配置
+        var defaultOpt = {
+          duration:1000,
+          interval:3000,
+          autoplay:true,
+          current:0,
+          list:[]
+        }
+        var that = this;
+        var mergeOtp = Object.assign(defaultOpt,options)
+        for(var key in mergeOtp) {
+          that[key] = mergeOtp[key];
+        }
+        // 初始化 轮播图
+        that.maxLength = that.list.length;
+        if(!that.list.length) {
+          throw Error('轮播图数量必须大于一张')
+        }
+        var _fragment = document.createDocumentFragment();
+        that.list.forEach((item,index) => {
+          _fragment.appendChild($('<a style="left:'+ (that.current !== index ? '600px' :0)+'"> <img src='+item+' /></a>')[0])
+        });
+        $('#ibanner_pic').append(_fragment);
+        
+        // 
+        function moveElement(index) {
+          $('#ibanner_pic a').eq(index).css({
+            transition:'all 1s ease-in-out',
+            left:'0',
+            zIndex:1
+          })
+        }
+        function removeTransition() {
+          window.addEventListener('transitionend',function(ev) {
+            $(ev.target).prev().css({transition:'none',left:'600px'})
+          })
+        }
+        this.init = function () {
+          moveElement(that.current++);
+          setInterval(function(){
+            if(that.current === that.maxLength)  {
+              that.current = index = 0;
+            }
+            moveElement(that.current++);
+          },this.interval);
+          removeTransition()
+        }
+        this.init()
+      }
+      
+      var banner = new Banner({list:['./imgs/1.jpeg','./imgs/2.jpeg','./imgs/3.jpeg','./imgs/4.jpeg']});
+    })
+  </script>
+</body>
+</html>
